@@ -1,0 +1,62 @@
+<!-- Search bar at top of navigation -->
+<div class="nav-search-container">
+    <input type="text" id="nav-search-input" class="nav-search-input" placeholder="Search" aria-label="Search navigation">
+</div>
+
+<!-- Original navigation -->
+<cds-side-nav aria-label="Side navigation" collapse-mode="rail" expanded>
+  <cds-side-nav-items>
+    <cds-side-nav-link href="{{ config.site_url | url }}">
+      Home
+    </cds-side-nav-link>
+    {% for nav_item in nav %}
+      {% include "nav.html.j2" %}
+    {% endfor %}
+  </cds-side-nav-items>
+</cds-side-nav>
+
+<script>
+(function() {
+    var searchInput = document.getElementById('nav-search-input');
+    if (searchInput) {
+        searchInput.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') {
+                var query = searchInput.value.trim();
+                if (query) {
+                    window.location.href = '{{ config.site_url | url }}search.html?q=' + encodeURIComponent(query);
+                }
+            }
+        });
+        
+        // Filter navigation items as user types
+        searchInput.addEventListener('input', function(e) {
+            var query = searchInput.value.toLowerCase().trim();
+            var navItems = document.querySelectorAll('cds-side-nav-menu-item, cds-side-nav-menu');
+            
+            if (query === '') {
+                // Show all items when search is empty
+                navItems.forEach(function(item) {
+                    item.style.display = '';
+                });
+            } else {
+                // Filter items based on search query
+                navItems.forEach(function(item) {
+                    var text = item.textContent.toLowerCase();
+                    if (text.includes(query)) {
+                        item.style.display = '';
+                        // Expand parent menus if item matches
+                        if (item.tagName === 'CDS-SIDE-NAV-MENU-ITEM') {
+                            var parent = item.closest('cds-side-nav-menu');
+                            if (parent) {
+                                parent.setAttribute('expanded', '');
+                            }
+                        }
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            }
+        });
+    }
+})();
+</script>

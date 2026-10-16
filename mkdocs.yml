@@ -1,0 +1,162 @@
+site_name: Maximo Application Suite Select help center
+site_url: https://pages.github.ibm.com/WCE-ID/mas_select/
+site_description: Journey-based documentation for Maximo Application Suite Select
+site_author: Yvette Harrington
+use_directory_urls: false
+
+# GitHub Pages configuration
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://pages.github.ibm.com/WCE-ID/mas_select
+
+# Repository
+repo_name: WCE-ID/mas_select
+repo_url: https://pages.github.ibm.com/WCE-ID/mas_select
+edit_uri: edit/main/docs/
+
+# Theme configuration - Carbon Design System theme
+theme:
+  name: carbon
+  prefix: IBM
+  custom_dir: tools/overrides
+  features:
+    - content.code.copy
+
+# Extra CSS for custom styling
+extra_css:
+  - assets/stylesheets/extra.css
+
+# Extra JavaScript for tooltips and navigation search
+extra_javascript:
+  - assets/javascripts/role-selector.js
+  - assets/javascripts/abbr-tooltips.js
+  - assets/javascripts/lifecycle-tooltips.js
+  - assets/javascripts/tips-wrapper.js
+  - assets/javascripts/page-feedback.js
+  - assets/javascripts/copy-table.js
+  - assets/javascripts/copy-inline-code.js
+
+# Plugins
+plugins:
+  - search:
+      lang: en
+      separator: '[\s\-\.]+'
+      min_search_length: 2
+  - glightbox:
+      skip_classes:
+        - no-lightbox
+        - info-icon
+      shadow: true
+      caption_position: bottom
+      auto_caption: true
+      touchNavigation: false
+      background: black
+
+# Extensions
+markdown_extensions:
+  - toc:
+      permalink: "¤"
+  - admonition
+  - attr_list
+  - md_in_html
+  - abbr
+  - pymdownx.snippets:
+      base_path: docs
+      auto_append:
+        - .snippets
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+
+# Page tree - Journey-based navigation
+nav:
+  - Home: index.md
+  - Start fast:
+    - Your role: start-fast/what-can-i-do/overview.md
+    - First task:
+      - "Technician: Complete your first work order": start-fast/first-task/technician-first-task.md
+      - "Supervisor: Assign and track work": start-fast/first-task/supervisor-first-task.md
+      - "Inventory clerk: Issue a part": start-fast/first-task/inventory-clerk-first-task.md
+      - "Administrator: Add users": start-fast/first-task/administrator-first-task.md
+      - Get Maximo Mobile: start-fast/first-task/get-maximo-mobile.md
+    - Basic concepts:
+      - Overview: start-fast/basics/what-are-basic-concepts.md
+      - Locations: start-fast/basics/what-is-location.md
+      - Assets: start-fast/basics/what-is-asset.md
+      - Work orders: start-fast/basics/what-is-work-order.md
+      - How concepts work together: start-fast/basics/how-concepts-work-together.md
+      - Term differences: start-fast/basics/why-do-terms-differ.md
+      - Keyboard shortcuts: start-fast/basics/keyboard-shortcuts.md
+  
+  - Get work done:
+    - Set up and control:
+      - Add users: get-work-done/setup-control/add-users.md
+      - Get data into system: get-work-done/setup-control/get-data-into-system.md
+      - Automate communication: get-work-done/setup-control/automate-communication.md
+      - Set up labor, crafts, and crews: get-work-done/setup-control/set-up-labor-crafts-crews.md
+      - Set up maps: get-work-done/setup-control/set-up-maps.md
+      - Prepare data for import: get-work-done/setup-control/prepare-data-for-import.md
+      - Correct load order: get-work-done/setup-control/correct-load-order.md
+      - Fix import errors: get-work-done/setup-control/why-does-asset-import-fail.md
+      - Data types: get-work-done/setup-control/object-structure-data-types.md
+      - Configure Maximo Mobile: get-work-done/setup-control/configure-maximo-mobile.md
+    - Plan work:
+      - Recurring maintenance: get-work-done/plan-work/plan-recurring-maintenance.md
+      - Decide what work: get-work-done/plan-work/decide-what-work.md
+      - Schedule work: get-work-done/plan-work/schedule-work.md
+    - Complete work:
+      - Find work: get-work-done/complete-work/find-work.md
+      - Complete work order: get-work-done/complete-work/complete-job.md
+      - Can't complete task: get-work-done/complete-work/cant-complete-task.md
+      - Can't complete work order: get-work-done/complete-work/why-cant-complete-work-order.md
+    - Manage assets:
+      - Asset history: get-work-done/manage-assets/track-asset-history.md
+      - Classify assets: get-work-done/manage-assets/classify-assets.md
+      - Asset failures: get-work-done/manage-assets/asset-fails.md
+    - Manage inventory:
+      - Issue parts: get-work-done/manage-inventory/issue-parts.md
+      - Track stock levels: get-work-done/manage-inventory/track-stock-levels.md
+      - Incorrect stock: get-work-done/manage-inventory/stock-incorrect.md
+      - Can't issue materials: get-work-done/manage-inventory/why-cant-issue-materials.md
+    - Monitor and respond:
+      - Detect issues early: get-work-done/monitor-respond/detect-issues-early.md
+      - Important metrics: get-work-done/monitor-respond/what-metrics-matter.md
+      - Act on alerts: get-work-done/monitor-respond/act-on-alerts.md
+    - Organize people and work:
+      - Assign people: get-work-done/organize-people/assign-right-people.md
+      - Customize dropdown values: get-work-done/organize-people/standardize-data.md
+      - Technicians can't see work: get-work-done/organize-people/why-cant-see-assigned-work.md
+  
+  - Improve results:
+    - Improve work:
+      - Reduce downtime: improve-results/improve-work/reduce-downtime.md
+      - Improve completion rates: improve-results/improve-work/improve-completion-rates.md
+    - Improve data quality:
+      - Data looks wrong: improve-results/improve-data/data-looks-wrong.md
+      - Make data reliable: improve-results/improve-data/make-data-reliable.md
+    - Improve adoption:
+      - Technicians not using system: improve-results/improve-adoption/technicians-not-using.md
+      - Simplify workflows: improve-results/improve-adoption/simplify-workflows.md
+  
+  - Work smarter:
+    - AI and automation:
+      - AI improves maintenance: work-smarter/ai-automation/ai-improve-maintenance.md
+      - Automate tasks: work-smarter/ai-automation/what-can-automate.md
+    - Scale operation:
+      - Manage more assets: work-smarter/scale-operation/manage-more-assets.md
+      - Standardize across teams: work-smarter/scale-operation/standardize-across-teams.md
+    - Insights to outcomes:
+      - Data into decisions: work-smarter/insights-outcomes/data-into-decisions.md
+      - Optimize performance: work-smarter/insights-outcomes/optimize-performance.md
+  
+  - Get answers:
+    - Overview: get-answers/index.md
+    - Starting out: get-answers/starting-out.md
+    - Getting work done: get-answers/getting-work-done.md
+    - Improving results: get-answers/improving-results.md
+    - Working smarter: get-answers/working-smarter.md
+    - Security: get-answers/security.md
+
+# Made with Bob

@@ -1,0 +1,18 @@
+{% if not nav_item.children %}
+  {% if nav_level == 1 %}
+    <cds-side-nav-link href="{{ nav_item.url | url }}" {% if nav_item.active or (page.meta and nav_item.title == page.meta.nav_title) %}active{% endif %}>{{ nav_item.title }}</cds-side-nav-link>
+  {% else %}
+    <cds-side-nav-menu-item href="{{ nav_item.url | url }}" {% if nav_item.active or (page.meta and nav_item.title == page.meta.nav_title) %}active expanded{% endif %} class="nav-level-{{ nav_level }}">
+      {{ nav_item.title }}
+    </cds-side-nav-menu-item>
+  {% endif %}
+{% else %}
+  <cds-side-nav-menu title="{{ nav_item.title }}" {% if nav_item.active or (page.meta and nav_item.title == page.meta.nav_title) %}active expanded{% endif %} class="nav-level-{{ nav_level }}">
+    {% for child_item in nav_item.children %}
+      {% set child_level = nav_level + 1 %}
+      {% with nav_item=child_item, nav_level=child_level %}
+        {% include "nav.html.j2" %}
+      {% endwith %}
+    {% endfor %}
+  </cds-side-nav-menu>
+{% endif %}

@@ -1,0 +1,1527 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Fix import errors - Maximo Application Suite Select help center</title>
+
+    <!-- Pure CSS (https://pure-css.github.io/) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/theme.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+    <script src="../../js/theme.js"></script>
+
+    <!-- Carbon theme zones (white, g10, g90, g100) -->
+    <link rel="stylesheet" href="https://1.www.s81c.com/common/carbon/web-components/tag/latest/themes.css">
+
+    <!-- The Carbon web-components/framework -->
+    <script type="module" src="https://1.www.s81c.com/common/carbon/web-components/version/v2.15.0/ui-shell.min.js"></script>
+    <script type="module" src="https://1.www.s81c.com/common/carbon/web-components/version/v2.15.0/accordion.min.js"></script>
+    <script type="module" src="https://1.www.s81c.com/common/carbon/web-components/version/v2.15.0/breadcrumb.min.js"></script>
+    <script type="module" src="https://1.www.s81c.com/common/carbon/web-components/version/v2.15.0/select.min.js"></script>
+    <script type="module" src="https://1.www.s81c.com/common/carbon/web-components/version/v2.15.0/tabs.min.js"></script>
+    <script type="module" src="https://1.www.s81c.com/common/carbon/web-components/version/v2.15.0/search.min.js"></script>
+
+    <!-- HighlightJS code formatting support -->
+    <link rel="stylesheet" id="hljs-light" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+    <link rel="stylesheet" id="hljs-dark" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled="">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- Required by MkDocs search -->
+    <script>var base_url = "../..";</script>
+
+    <!-- User defined extras -->
+    
+    
+
+    
+    <link href="../../assets/stylesheets/extra.css" rel="stylesheet">
+    
+
+    
+    <script src="../../assets/javascripts/role-selector.js"></script>
+    
+    <script src="../../assets/javascripts/abbr-tooltips.js"></script>
+    
+    <script src="../../assets/javascripts/lifecycle-tooltips.js"></script>
+    
+    <script src="../../assets/javascripts/tips-wrapper.js"></script>
+    
+    <script src="../../assets/javascripts/page-feedback.js"></script>
+    
+    <script src="../../assets/javascripts/copy-table.js"></script>
+    
+    <script src="../../assets/javascripts/copy-inline-code.js"></script>
+    
+    <script src="../../search/main.js"></script>
+    
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: black; }
+        </style></head>
+
+  <body class="md-grid" data-theme-default="g90">
+    <!-- Header -->
+    <cds-header aria-label="Maximo Application Suite Select help center" class="md-header">
+      <cds-header-menu-button button-label-active="Close menu" button-label-inactive="Open menu"></cds-header-menu-button>
+      <cds-header-name href="../.." prefix="IBM">Maximo Application Suite Select help center</cds-header-name>
+
+      <div class="cds--header__global">
+<div class="md-theme-toggle" data-theme-default="g90">
+  <button class="md-theme-toggle__button" aria-label="Toggle theme" title="Toggle theme">
+    <svg class="md-theme-toggle__icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"></path>
+    </svg>
+  </button>
+  <div class="md-theme-toggle__menu" hidden="">
+    <button class="md-theme-toggle__option" data-theme="white">
+      <span class="md-theme-toggle__label">Light</span>
+      <span class="md-theme-toggle__preview md-theme-toggle__preview--white"></span>
+    </button>
+    <button class="md-theme-toggle__option" data-theme="g10">
+      <span class="md-theme-toggle__label">Light Gray</span>
+      <span class="md-theme-toggle__preview md-theme-toggle__preview--g10"></span>
+    </button>
+    <button class="md-theme-toggle__option" data-theme="g90">
+      <span class="md-theme-toggle__label">Dark Gray</span>
+      <span class="md-theme-toggle__preview md-theme-toggle__preview--g90"></span>
+    </button>
+    <button class="md-theme-toggle__option" data-theme="g100">
+      <span class="md-theme-toggle__label">Dark</span>
+      <span class="md-theme-toggle__preview md-theme-toggle__preview--g100"></span>
+    </button>
+  </div>
+</div>
+        
+      </div>
+
+      
+        <cds-header-nav>
+          <cds-header-nav-item href="https://pages.github.ibm.com/WCE-ID/mas_select/edit/main/docs/get-work-done/setup-control/why-does-asset-import-fail.md">Edit on WCE-ID/mas_select</cds-header-nav-item>
+        </cds-header-nav>
+      
+    </cds-header>
+
+    <!-- Main container with three-column layout -->
+    <div class="md-container">
+      <!-- Left sidebar - Navigation -->
+      <aside class="md-sidebar md-sidebar--primary" data-md-component="sidebar">
+        <div class="md-sidebar__scrollwrap">
+          <div class="md-sidebar__inner">
+            <cds-side-nav aria-label="Side navigation">
+              <div class="nav-search-container">
+                <input type="text" id="nav-search-input" class="nav-search-input" placeholder="Search" aria-label="Search navigation">
+              </div>
+              <cds-side-nav-items>
+                
+                  
+                  
+  
+    <cds-side-nav-link href="../../index.html">Home</cds-side-nav-link>
+  
+
+                
+                  
+                  
+  <cds-side-nav-menu title="Start fast" class="nav-level-1">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/what-can-i-do/overview.html" class="nav-level-2">
+      Your role
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="First task" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/first-task/technician-first-task.html" class="nav-level-3">
+      Technician: Complete your first work order
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/first-task/supervisor-first-task.html" class="nav-level-3">
+      Supervisor: Assign and track work
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/first-task/inventory-clerk-first-task.html" class="nav-level-3">
+      Inventory clerk: Issue a part
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/first-task/administrator-first-task.html" class="nav-level-3">
+      Administrator: Add users
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/first-task/get-maximo-mobile.html" class="nav-level-3">
+      Get Maximo Mobile
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Basic concepts" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/basics/what-are-basic-concepts.html" class="nav-level-3">
+      Overview
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/basics/what-is-location.html" class="nav-level-3">
+      Locations
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/basics/what-is-asset.html" class="nav-level-3">
+      Assets
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/basics/what-is-work-order.html" class="nav-level-3">
+      Work orders
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/basics/how-concepts-work-together.html" class="nav-level-3">
+      How concepts work together
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/basics/why-do-terms-differ.html" class="nav-level-3">
+      Term differences
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/basics/keyboard-shortcuts.html" class="nav-level-3">
+      Keyboard shortcuts
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+  </cds-side-nav-menu>
+
+                
+                  
+                  
+  <cds-side-nav-menu title="Get work done" active="" expanded="" class="nav-level-1">
+    
+      
+      
+        
+  <cds-side-nav-menu title="Set up and control" active="" expanded="" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="add-users.html" class="nav-level-3">
+      Add users
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="get-data-into-system.html" class="nav-level-3">
+      Get data into system
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="automate-communication.html" class="nav-level-3">
+      Automate communication
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="set-up-labor-crafts-crews.html" class="nav-level-3">
+      Set up labor, crafts, and crews
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="set-up-maps.html" class="nav-level-3">
+      Set up maps
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="prepare-data-for-import.html" class="nav-level-3">
+      Prepare data for import
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="correct-load-order.html" class="nav-level-3">
+      Correct load order
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="why-does-asset-import-fail.html" active="" expanded="" class="nav-level-3">
+      Fix import errors
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="object-structure-data-types.html" class="nav-level-3">
+      Data types
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="configure-maximo-mobile.html" class="nav-level-3">
+      Configure Maximo Mobile
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Plan work" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../plan-work/plan-recurring-maintenance.html" class="nav-level-3">
+      Recurring maintenance
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../plan-work/decide-what-work.html" class="nav-level-3">
+      Decide what work
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../plan-work/schedule-work.html" class="nav-level-3">
+      Schedule work
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Complete work" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../complete-work/find-work.html" class="nav-level-3">
+      Find work
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../complete-work/complete-job.html" class="nav-level-3">
+      Complete work order
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../complete-work/cant-complete-task.html" class="nav-level-3">
+      Can't complete task
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../complete-work/why-cant-complete-work-order.html" class="nav-level-3">
+      Can't complete work order
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Manage assets" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../manage-assets/track-asset-history.html" class="nav-level-3">
+      Asset history
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../manage-assets/classify-assets.html" class="nav-level-3">
+      Classify assets
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../manage-assets/asset-fails.html" class="nav-level-3">
+      Asset failures
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Manage inventory" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../manage-inventory/issue-parts.html" class="nav-level-3">
+      Issue parts
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../manage-inventory/track-stock-levels.html" class="nav-level-3">
+      Track stock levels
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../manage-inventory/stock-incorrect.html" class="nav-level-3">
+      Incorrect stock
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../manage-inventory/why-cant-issue-materials.html" class="nav-level-3">
+      Can't issue materials
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Monitor and respond" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../monitor-respond/detect-issues-early.html" class="nav-level-3">
+      Detect issues early
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../monitor-respond/what-metrics-matter.html" class="nav-level-3">
+      Important metrics
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../monitor-respond/act-on-alerts.html" class="nav-level-3">
+      Act on alerts
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Organize people and work" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../organize-people/assign-right-people.html" class="nav-level-3">
+      Assign people
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../organize-people/standardize-data.html" class="nav-level-3">
+      Customize dropdown values
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../organize-people/why-cant-see-assigned-work.html" class="nav-level-3">
+      Technicians can't see work
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+  </cds-side-nav-menu>
+
+                
+                  
+                  
+  <cds-side-nav-menu title="Improve results" class="nav-level-1">
+    
+      
+      
+        
+  <cds-side-nav-menu title="Improve work" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../improve-results/improve-work/reduce-downtime.html" class="nav-level-3">
+      Reduce downtime
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../improve-results/improve-work/improve-completion-rates.html" class="nav-level-3">
+      Improve completion rates
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Improve data quality" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../improve-results/improve-data/data-looks-wrong.html" class="nav-level-3">
+      Data looks wrong
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../improve-results/improve-data/make-data-reliable.html" class="nav-level-3">
+      Make data reliable
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Improve adoption" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../improve-results/improve-adoption/technicians-not-using.html" class="nav-level-3">
+      Technicians not using system
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../improve-results/improve-adoption/simplify-workflows.html" class="nav-level-3">
+      Simplify workflows
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+  </cds-side-nav-menu>
+
+                
+                  
+                  
+  <cds-side-nav-menu title="Work smarter" class="nav-level-1">
+    
+      
+      
+        
+  <cds-side-nav-menu title="AI and automation" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../work-smarter/ai-automation/ai-improve-maintenance.html" class="nav-level-3">
+      AI improves maintenance
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../work-smarter/ai-automation/what-can-automate.html" class="nav-level-3">
+      Automate tasks
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Scale operation" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../work-smarter/scale-operation/manage-more-assets.html" class="nav-level-3">
+      Manage more assets
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../work-smarter/scale-operation/standardize-across-teams.html" class="nav-level-3">
+      Standardize across teams
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Insights to outcomes" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../work-smarter/insights-outcomes/data-into-decisions.html" class="nav-level-3">
+      Data into decisions
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../work-smarter/insights-outcomes/optimize-performance.html" class="nav-level-3">
+      Optimize performance
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+  </cds-side-nav-menu>
+
+                
+                  
+                  
+  <cds-side-nav-menu title="Get answers" class="nav-level-1">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-answers/index.html" class="nav-level-2">
+      Overview
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-answers/starting-out.html" class="nav-level-2">
+      Starting out
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-answers/getting-work-done.html" class="nav-level-2">
+      Getting work done
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-answers/improving-results.html" class="nav-level-2">
+      Improving results
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-answers/working-smarter.html" class="nav-level-2">
+      Working smarter
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-answers/security.html" class="nav-level-2">
+      Security
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+                
+              </cds-side-nav-items>
+            </cds-side-nav>
+          </div>
+        </div>
+      </aside>
+      <script>
+      (function() {
+          var input = document.getElementById('nav-search-input');
+          if (!input) return;
+          input.addEventListener('keydown', function(e) {
+              if (e.key === 'Enter') {
+                  var query = input.value.trim();
+                  if (query) {
+                      window.location.href = 'https://pages.github.ibm.com/WCE-ID/mas_select/search.html?q=' + encodeURIComponent(query);
+                  }
+              }
+          });
+          input.addEventListener('input', function() {
+              var query = input.value.toLowerCase().trim();
+              var navItems = document.querySelectorAll('cds-side-nav-menu-item, cds-side-nav-menu');
+              navItems.forEach(function(item) {
+                  if (query === '' || item.textContent.toLowerCase().includes(query)) {
+                      item.style.display = '';
+                      if (query && item.tagName === 'CDS-SIDE-NAV-MENU-ITEM') {
+                          var parent = item.closest('cds-side-nav-menu');
+                          if (parent) parent.setAttribute('expanded', '');
+                      }
+                  } else {
+                      item.style.display = 'none';
+                  }
+              });
+          });
+      })();
+      </script>
+
+      <!-- Main content area -->
+      <div class="md-content" data-md-component="content">
+        <article class="md-content__inner">
+          <!-- Breadcrumbs -->
+          <div class="md-breadcrumbs"><cds-breadcrumb no-trailing-slash="">
+  <cds-breadcrumb-item>
+    <cds-breadcrumb-link href="../../index.html">Home</cds-breadcrumb-link>
+  </cds-breadcrumb-item>
+      <cds-breadcrumb-item>Get work done</cds-breadcrumb-item>
+      <cds-breadcrumb-item>Set up and control</cds-breadcrumb-item>
+  <cds-breadcrumb-item>
+    <cds-breadcrumb-link href="#how-do-i-fix-import-errors">How do I fix import errors?</cds-breadcrumb-link>
+  </cds-breadcrumb-item>
+
+  <cds-breadcrumb-item aria-current="page">
+    <cds-select id="breadcrumbs-toc" inline="" placeholder="..." oninput="changeAnchor(this.value)">
+    
+    
+      <cds-select-item value="#quick-navigation">Quick navigation</cds-select-item>
+    
+      <cds-select-item value="#location-import-errors">Location import errors</cds-select-item>
+    
+      <cds-select-item value="#asset-import-errors">Asset import errors</cds-select-item>
+    
+      <cds-select-item value="#common-issues-across-all-import-types">Common issues across all import types</cds-select-item>
+    
+      <cds-select-item value="#why-shouldnt-i-load-very-large-datasets-in-a-single-file">Why shouldn't I load very large datasets in a single file?</cds-select-item>
+    
+      <cds-select-item value="#what-happens-next">What happens next?</cds-select-item>
+    
+      <cds-select-item value="#continue-building-your-skills">Continue building your skills</cds-select-item>
+    
+      <cds-select-item value="#related-topics">Related topics</cds-select-item>
+    
+      <cds-select-item value="#still-stuck">Still stuck?</cds-select-item>
+    
+    </cds-select>
+  </cds-breadcrumb-item>
+</cds-breadcrumb>
+          </div>
+
+          <!-- Page content -->
+          <div class="rst-content">
+            
+            <h1 id="how-do-i-fix-import-errors">How do I fix import errors?<a class="headerlink" href="#how-do-i-fix-import-errors" title="Permanent link">¤</a></h1>
+<p>Import errors can occur with <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr> or <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">assets</abbr>. This guide helps you troubleshoot and fix common import problems.</p>
+<h2 id="quick-navigation">Quick navigation<a class="headerlink" href="#quick-navigation" title="Permanent link">¤</a></h2>
+<p>Jump to the section you need:</p>
+<ul>
+<li><a href="#location-import-errors"><abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">Location</abbr> import errors</a></li>
+<li><a href="#location-hierarchy-errors"><abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">Location</abbr> hierarchy errors</a></li>
+<li><a href="#location-referenced-data-does-not-exist"><abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">Location</abbr> referenced data errors</a></li>
+<li><a href="#asset-import-errors"><abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">Asset</abbr> import errors</a></li>
+<li><a href="#asset-hierarchy-errors"><abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">Asset</abbr> hierarchy errors</a></li>
+<li><a href="#asset-referenced-data-does-not-exist"><abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">Asset</abbr> referenced data errors</a></li>
+<li><a href="#common-issues-across-all-import-types">Common issues across all import types</a></li>
+<li><a href="#date-values-are-invalid-or-reformatted">Date and CSV formatting errors</a></li>
+</ul>
+<hr>
+<h2 id="location-import-errors"><abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">Location</abbr> import errors<a class="headerlink" href="#location-import-errors" title="Permanent link">¤</a></h2>
+<p><abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">Location</abbr> imports are error-prone because of parent-child relationships and hierarchies.</p>
+<h3 id="location-hierarchy-errors"><abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">Location</abbr> hierarchy errors<a class="headerlink" href="#location-hierarchy-errors" title="Permanent link">¤</a></h3>
+<p>Hierarchy imports require careful attention to parent-child relationships.</p>
+<h4 id="parent-locations-not-created-first">Parent <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr> not created first<a class="headerlink" href="#parent-locations-not-created-first" title="Permanent link">¤</a></h4>
+<p>Child <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr> can't be created if their parent doesn't exist yet.</p>
+<p><strong>Example</strong>: You can't create "Ice Cream Plant A &gt; Production Building &gt; Filling Line 2" if "Ice Cream Plant A" and "Production Building" don't exist.</p>
+<p><strong>What to do</strong>: Import <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr> in order:</p>
+<ol>
+<li>Top-level <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr> first (Ice Cream Plant A)</li>
+<li>Second-level <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr> next (Production Building)</li>
+<li>Lowest-level <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr> last (Filling Line 2)</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">TODO: Add visual content</p>
+<p>A diagram showing <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> hierarchy structure (parent → child relationships) would be useful here.</p>
+</div>
+<h4 id="incorrect-object-structure">Incorrect <abbr title="Defines the records and related fields that are available for importing, exporting, or exchanging data.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; data structure, import template, or record definition">object structure</abbr><a class="headerlink" href="#incorrect-object-structure" title="Permanent link">¤</a></h4>
+<p><abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">Location</abbr> hierarchies require specific <abbr title="Defines the records and related fields that are available for importing, exporting, or exchanging data. You might know this as: data structure, import template, or record definition"><abbr title="Defines the records and related fields that are available for importing, exporting, or exchanging data.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; data structure, import template, or record definition">object structure</abbr></abbr> in the import file.</p>
+<p><strong>What to do</strong>: Use the system's <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> hierarchy template or export an existing hierarchy to see the correct format.</p>
+<h4 id="incorrect-hierarchy-relationships">Incorrect hierarchy relationships<a class="headerlink" href="#incorrect-hierarchy-relationships" title="Permanent link">¤</a></h4>
+<p>Parent-child relationships must be defined correctly in the import file.</p>
+<p><strong>What to check</strong>:</p>
+<ul>
+<li>Parent <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> IDs are correct</li>
+<li>Hierarchy levels are properly defined</li>
+<li>System <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> references are valid</li>
+</ul>
+<p><strong>What to do</strong>: Verify all parent <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr> exist before importing child <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Import hierarchies sequentially</p>
+<p>Hierarchies require sequential loading (top → down). Import parent <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr> first, then their children.</p>
+</div>
+<h3 id="location-referenced-data-does-not-exist"><abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">Location</abbr> referenced data does not exist<a class="headerlink" href="#location-referenced-data-does-not-exist" title="Permanent link">¤</a></h3>
+<p><abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">Location</abbr> imports fail when they reference supporting records that don't exist in the system.</p>
+<p><strong>What to check</strong>:</p>
+<ul>
+<li>GL account exists and is valid</li>
+<li>Service address is defined</li>
+<li>Calendar and shift are configured</li>
+<li>Failure class is set up</li>
+<li>Bill-to or ship-to address for the <abbr title="A data partitioning concept that represents a plant, facility, or business unit.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; plant, facility, or business unit">site</abbr> is correct</li>
+<li>Classification or specification is available</li>
+</ul>
+<p><strong>What to do</strong>:</p>
+<ul>
+<li>Create or correct the referenced record, or update the import file to use an existing value</li>
+<li>Make sure values in the import file match system values exactly (case-sensitive)</li>
+<li>Verify spelling and IDs are correct</li>
+</ul>
+<h3 id="tips-for-successful-location-imports">💡 Tips for successful <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> imports<a class="headerlink" href="#tips-for-successful-location-imports" title="Permanent link">¤</a></h3>
+<ul>
+<li><strong>Import hierarchies in order</strong>: Parents before children</li>
+<li><strong>Verify referenced data</strong>: Check that supporting records exist</li>
+<li><strong>Start with a template</strong>: Export existing records to see correct format</li>
+<li><strong>Validate data first</strong>: Check all values against system data</li>
+<li><strong>Use text format</strong>: Prevent Excel from corrupting data</li>
+<li><strong>Test with small batches</strong>: Verify format before importing thousands of records</li>
+</ul>
+<hr>
+<h2 id="asset-import-errors"><abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">Asset</abbr> import errors<a class="headerlink" href="#asset-import-errors" title="Permanent link">¤</a></h2>
+<p><abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">Asset</abbr> imports fail due to <abbr title="Defines the records and related fields that are available for importing, exporting, or exchanging data.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; data structure, import template, or record definition">object structure</abbr>, data issues, or missing referenced records.</p>
+<div class="admonition warning">
+<p class="admonition-title">TODO: Add visual content</p>
+<p>A screenshot showing typical <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> import error messages would be useful here.</p>
+</div>
+<h3 id="common-asset-import-problems-and-solutions">Common <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> import problems and solutions<a class="headerlink" href="#common-asset-import-problems-and-solutions" title="Permanent link">¤</a></h3>
+<h3 id="table-1-common-asset-import-problems-and-solutions">Table 1. Common <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> import problems and solutions<a class="headerlink" href="#table-1-common-asset-import-problems-and-solutions" title="Permanent link">¤</a></h3>
+<table>
+<thead>
+<tr>
+<th>Problem</th>
+<th>What happens</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Parent doesn't exist</td>
+<td>Child <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> fails</td>
+<td>Import parents first</td>
+</tr>
+<tr>
+<td>Excel corrupts IDs</td>
+<td>Leading zeros removed</td>
+<td>Format as text in Excel</td>
+</tr>
+<tr>
+<td>Missing required fields</td>
+<td>Record skipped</td>
+<td>Validate all required fields</td>
+</tr>
+<tr>
+<td>Invalid <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr> codes</td>
+<td>Import fails</td>
+<td>Use valid <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr> values</td>
+</tr>
+<tr>
+<td>File too large</td>
+<td>Timeout or failure</td>
+<td>Break into smaller batches</td>
+</tr>
+</tbody>
+</table>
+<h3 id="asset-hierarchy-errors"><abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">Asset</abbr> hierarchy errors<a class="headerlink" href="#asset-hierarchy-errors" title="Permanent link">¤</a></h3>
+<p>If using parent-child <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> relationships, hierarchy errors can cause import failures.</p>
+<p><strong>What to check</strong>:</p>
+<ul>
+<li>Parent <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> exists before importing child <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">assets</abbr></li>
+<li>Parent <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> ID is correct in the import file</li>
+<li>Parent <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> exists at the expected <abbr title="A data partitioning concept that represents a plant, facility, or business unit.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; plant, facility, or business unit">site</abbr> and <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr></li>
+</ul>
+<p><strong>What to do</strong>:</p>
+<ul>
+<li>Import parent <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">assets</abbr> before child <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">assets</abbr> or subassemblies</li>
+<li>Verify that each child <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> references the correct parent <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr></li>
+<li>Confirm the parent <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> matches expectations</li>
+</ul>
+<h3 id="asset-referenced-data-does-not-exist"><abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">Asset</abbr> referenced data does not exist<a class="headerlink" href="#asset-referenced-data-does-not-exist" title="Permanent link">¤</a></h3>
+<p><abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">Asset</abbr> imports fail when they reference supporting records that don't exist in the system.</p>
+<p><strong>What to check</strong>:</p>
+<ul>
+<li>GL account exists and is valid</li>
+<li>Service address is defined</li>
+<li>Calendar and shift are configured</li>
+<li>Failure class is set up</li>
+<li><abbr title="A repairable spare part that can be tracked individually by serial number.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; repairable spare, rotable, or serialized spare">Rotating item</abbr> is created (if applicable)</li>
+<li>Vendor or manufacturer exists</li>
+<li>Type value is valid</li>
+<li>Classification or specification is available</li>
+</ul>
+<p><strong>What to do</strong>:</p>
+<ul>
+<li>Verify that referenced records exist in the system</li>
+<li>Correct spelling, IDs, and values in the import file</li>
+<li>Create missing referenced records before importing <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">assets</abbr></li>
+<li>Revalidate the file before importing again</li>
+</ul>
+<h3 id="tips-for-successful-asset-imports">💡 Tips for successful <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> imports<a class="headerlink" href="#tips-for-successful-asset-imports" title="Permanent link">¤</a></h3>
+<ul>
+<li><strong>Verify referenced data</strong>: Check that supporting records exist</li>
+<li><strong>Start with a template</strong>: Export existing records to see correct format</li>
+<li><strong>Validate data first</strong>: Check all values against system data</li>
+<li><strong>Use text format</strong>: Prevent Excel from corrupting data</li>
+<li><strong>Test with small batches</strong>: Verify format before importing thousands of records</li>
+</ul>
+<h3 id="common-causes-of-asset-import-failures">Common causes of <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> import failures<a class="headerlink" href="#common-causes-of-asset-import-failures" title="Permanent link">¤</a></h3>
+<h4 id="wrong-object-structure">Wrong <abbr title="Defines the records and related fields that are available for importing, exporting, or exchanging data.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; data structure, import template, or record definition">object structure</abbr><a class="headerlink" href="#wrong-object-structure" title="Permanent link">¤</a></h4>
+<p>The import file must match the expected <abbr title="Defines the records and related fields that are available for importing, exporting, or exchanging data.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; data structure, import template, or record definition">object structure</abbr> exactly.</p>
+<p><strong>What to check</strong>:</p>
+<ul>
+<li>File structure matches ASSET object</li>
+<li>All required fields are included</li>
+<li>Field names are correct</li>
+</ul>
+<p><strong>What to do</strong>: Use a template or export an existing <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> to see the correct structure.</p>
+<h4 id="missing-mandatory-fields">Missing mandatory fields<a class="headerlink" href="#missing-mandatory-fields" title="Permanent link">¤</a></h4>
+<p><abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">Assets</abbr> have required fields that must be populated.</p>
+<p><strong>Common required fields</strong>:</p>
+<ul>
+<li><abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">Asset</abbr> ID</li>
+<li>Description</li>
+<li><abbr title="A data partitioning concept that represents a plant, facility, or business unit.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; plant, facility, or business unit">Site</abbr></li>
+<li><abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">Status</abbr></li>
+</ul>
+<p><strong>What to do</strong>: Review the import file to ensure all mandatory fields have values.</p>
+<h4 id="data-errors-in-file">Data errors in file<a class="headerlink" href="#data-errors-in-file" title="Permanent link">¤</a></h4>
+<p>Problems with the data itself cause import failures.</p>
+<p><strong>Common data errors</strong>:</p>
+<ul>
+<li>Invalid <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr> codes</li>
+<li>Non-existent <abbr title="A data partitioning concept that represents a plant, facility, or business unit.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; plant, facility, or business unit">site</abbr> references</li>
+<li>Incorrect data types (text in number fields)</li>
+<li>Invalid dates</li>
+</ul>
+<p><strong>What to do</strong>: Validate data against system values before importing.</p>
+<div class="admonition warning">
+<p class="admonition-title">TODO: Add visual content</p>
+<p>A screenshot of an error file showing validation failures would be helpful.</p>
+</div>
+<h3 id="why-are-only-some-asset-records-imported">Why are only some <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> records imported?<a class="headerlink" href="#why-are-only-some-asset-records-imported" title="Permanent link">¤</a></h3>
+<p>Partial imports happen when some records pass validation and others don't.</p>
+<p><strong>Import limits are exceeded</strong>: Some systems have limits on:</p>
+<ul>
+<li>Number of records per import</li>
+<li>File size</li>
+<li>Processing time</li>
+</ul>
+<p><strong>What to do</strong>: Break large imports into smaller batches (for example, 1,000-5,000 records at a time).</p>
+<p><strong>Errors stop processing mid-file</strong>: If a critical error occurs, the import might stop processing remaining records.</p>
+<p><strong>What to do</strong>: Review error logs to identify where processing stopped, fix the error, and re-import remaining records.</p>
+<p><strong>Validation failures block individual records</strong>: Each record is validated independently. Invalid records are skipped while valid ones are imported.</p>
+<p><strong>What to do</strong>: Review the error file, fix failed records, and import them separately.</p>
+<hr>
+<h2 id="common-issues-across-all-import-types">Common issues across all import types<a class="headerlink" href="#common-issues-across-all-import-types" title="Permanent link">¤</a></h2>
+<h3 id="date-values-are-invalid-or-reformatted">Date values are invalid or reformatted<a class="headerlink" href="#date-values-are-invalid-or-reformatted" title="Permanent link">¤</a></h3>
+<p>Date formatting is a common source of import errors across all record types.</p>
+<p><strong>Common causes</strong>:</p>
+<ul>
+<li>Excel changed the date format automatically</li>
+<li>The file uses mixed date formats (for example, MM/DD/YYYY and DD/MM/YYYY)</li>
+<li>The date format is ambiguous (for example, 01/02/2026)</li>
+<li>Date values do not match the expected import format</li>
+</ul>
+<p><strong>What to do</strong>:</p>
+<ul>
+<li>Format date columns as text in Excel before entering values</li>
+<li>Use one consistent date format throughout the file</li>
+<li>Re-export or use a template to confirm the expected format</li>
+<li>Test a small import that includes date values before importing the full file</li>
+</ul>
+<h3 id="excel-formatting-corrupts-data">Excel formatting corrupts data<a class="headerlink" href="#excel-formatting-corrupts-data" title="Permanent link">¤</a></h3>
+<p>Excel can corrupt data in several ways:</p>
+<ul>
+<li><strong>Dates</strong>: Converts text to dates (01-02 becomes Jan 2)</li>
+<li><strong>IDs</strong>: Removes leading zeros (001 becomes 1)</li>
+<li><strong>Long numbers</strong>: Converts to scientific notation</li>
+</ul>
+<p><strong>What to do</strong>: Format all columns as text in Excel before entering data, or use a plain text editor to create the CSV.</p>
+<div class="admonition warning">
+<p class="admonition-title">TODO: Add visual content</p>
+<p>A screenshot showing Excel formatting options (Format Cells → Text) would be helpful.</p>
+</div>
+<h3 id="lack-of-pre-validation-leads-to-late-errors">Lack of pre-validation leads to late errors<a class="headerlink" href="#lack-of-pre-validation-leads-to-late-errors" title="Permanent link">¤</a></h3>
+<p>Without validation, errors aren't discovered until after processing starts.</p>
+<p><strong>What to do</strong>: Always use the preview/validation function before committing the import.</p>
+<h3 id="parent-child-relationships-missing-or-loaded-in-wrong-order">Parent-child relationships missing or loaded in wrong order<a class="headerlink" href="#parent-child-relationships-missing-or-loaded-in-wrong-order" title="Permanent link">¤</a></h3>
+<p>Importing child records before parents causes failures.</p>
+<p><strong>What to do</strong>: Sort your import file so parent records come before child records.</p>
+<hr>
+<h2 id="why-shouldnt-i-load-very-large-datasets-in-a-single-file">Why shouldn't I load very large datasets in a single file?<a class="headerlink" href="#why-shouldnt-i-load-very-large-datasets-in-a-single-file" title="Permanent link">¤</a></h2>
+<p>Bulk imports have constraints when loading very large volumes in a single batch.</p>
+<h3 id="constraints">Constraints<a class="headerlink" href="#constraints" title="Permanent link">¤</a></h3>
+<p><strong>UI session timeouts</strong>: Long-running imports can time out in the web interface.</p>
+<p><strong>Not designed for massive single-file batches</strong>: CSV imports work best with manageable batch sizes (typically under 5,000 records per file).</p>
+<p><strong>Better suited for smaller datasets</strong>: For large imports, consider:</p>
+<ul>
+<li>Breaking into smaller batches (files under 5,000 records)</li>
+<li>Loading parent records before child records in separate files</li>
+<li>Using Data Management to monitor and track import <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr></li>
+</ul>
+<hr>
+<h2 id="what-happens-next">What happens next?<a class="headerlink" href="#what-happens-next" title="Permanent link">¤</a></h2>
+<p>To resolve import failures:</p>
+<ol>
+<li>Review error logs and error file</li>
+<li>Fix data issues in source file</li>
+<li>Ensure parent records exist for hierarchies</li>
+<li>Verify referenced data exists</li>
+<li>Preview/validate before importing</li>
+<li>Process the corrected import</li>
+<li>Verify records were created successfully</li>
+</ol>
+<hr>
+<h2 id="continue-building-your-skills">Continue building your skills<a class="headerlink" href="#continue-building-your-skills" title="Permanent link">¤</a></h2>
+<h3 id="verify-the-system-is-working">Verify the system is working<a class="headerlink" href="#verify-the-system-is-working" title="Permanent link">¤</a></h3>
+<p>Once your data is loaded, check whether the system is performing as expected.</p>
+<p><a href="../monitor-respond/what-metrics-matter.html">What metrics matter?</a></p>
+<hr>
+<h2 id="related-topics">Related topics<a class="headerlink" href="#related-topics" title="Permanent link">¤</a></h2>
+<ul>
+<li><a href="prepare-data-for-import.html">How do I prepare data for import?</a></li>
+<li><a href="correct-load-order.html">What is the correct load order?</a></li>
+<li><a href="get-data-into-system.html">How do I get data into the system?</a></li>
+<li><a href="../organize-people/standardize-data.html">How do I standardize data?</a></li>
+</ul>
+<hr>
+<h2 id="still-stuck">Still stuck?<a class="headerlink" href="#still-stuck" title="Permanent link">¤</a></h2>
+<p>If this page did not answer your question:</p>
+<ul>
+<li><strong>Browse all Q&amp;A:</strong> <a href="../../get-answers/index.html">Get answers</a></li>
+<li><strong>In the product:</strong> Click the help icon (?) in the top right</li>
+<li><strong>For a specific field:</strong> Click the field name or press Alt+F1</li>
+</ul>
+            
+          </div>
+
+          <!-- Navigation footer (prev/next) -->
+<nav class="md-footer-nav" aria-label="Footer navigation">
+  <div class="md-footer-nav__inner">
+    <a href="correct-load-order.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+      <div class="md-footer-nav__direction">
+        <svg class="md-footer-nav__icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"></path>
+        </svg>
+        <span>Previous</span>
+      </div>
+      <div class="md-footer-nav__title">
+        <span class="md-footer-nav__title-text">Correct load order</span>
+      </div>
+    </a>
+    <a href="object-structure-data-types.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+      <div class="md-footer-nav__direction">
+        <span>Next</span>
+        <svg class="md-footer-nav__icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+        </svg>
+      </div>
+      <div class="md-footer-nav__title">
+        <span class="md-footer-nav__title-text">Data types</span>
+      </div>
+    </a>
+  </div>
+</nav>
+        </article>
+      </div>
+
+      <!-- Right sidebar - Table of Contents -->
+      <aside class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+<nav class="md-sidebar md-sidebar--secondary" aria-label="Table of contents">
+  <div class="md-sidebar__scrollwrap">
+    <div class="md-sidebar__inner">
+      <div class="md-toc">
+        <div class="md-toc__title">On this page</div>
+        <ul class="md-toc__list">
+              <li class="md-toc__item">
+                <a href="#quick-navigation" class="md-toc__link" data-md-level="1">
+                  Quick navigation
+                </a>
+              </li>
+              <li class="md-toc__item">
+                <a href="#location-import-errors" class="md-toc__link" data-md-level="1">
+                  Location import errors
+                </a>
+                  <ul class="md-toc__list">
+                      <li class="md-toc__item">
+                        <a href="#location-hierarchy-errors" class="md-toc__link" data-md-level="2">
+                          Location hierarchy errors
+                        </a>
+                      </li>
+                      <li class="md-toc__item">
+                        <a href="#location-referenced-data-does-not-exist" class="md-toc__link" data-md-level="2">
+                          Location referenced data does not exist
+                        </a>
+                      </li>
+                      <li class="md-toc__item">
+                        <a href="#tips-for-successful-location-imports" class="md-toc__link" data-md-level="2">
+                          💡 Tips for successful location imports
+                        </a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="md-toc__item">
+                <a href="#asset-import-errors" class="md-toc__link" data-md-level="1">
+                  Asset import errors
+                </a>
+                  <ul class="md-toc__list">
+                      <li class="md-toc__item">
+                        <a href="#common-asset-import-problems-and-solutions" class="md-toc__link" data-md-level="2">
+                          Common asset import problems and solutions
+                        </a>
+                      </li>
+                      <li class="md-toc__item">
+                        <a href="#table-1-common-asset-import-problems-and-solutions" class="md-toc__link" data-md-level="2">
+                          Table 1. Common asset import problems and solutions
+                        </a>
+                      </li>
+                      <li class="md-toc__item">
+                        <a href="#asset-hierarchy-errors" class="md-toc__link" data-md-level="2">
+                          Asset hierarchy errors
+                        </a>
+                      </li>
+                      <li class="md-toc__item">
+                        <a href="#asset-referenced-data-does-not-exist" class="md-toc__link" data-md-level="2">
+                          Asset referenced data does not exist
+                        </a>
+                      </li>
+                      <li class="md-toc__item">
+                        <a href="#tips-for-successful-asset-imports" class="md-toc__link" data-md-level="2">
+                          💡 Tips for successful asset imports
+                        </a>
+                      </li>
+                      <li class="md-toc__item">
+                        <a href="#common-causes-of-asset-import-failures" class="md-toc__link" data-md-level="2">
+                          Common causes of asset import failures
+                        </a>
+                      </li>
+                      <li class="md-toc__item">
+                        <a href="#why-are-only-some-asset-records-imported" class="md-toc__link" data-md-level="2">
+                          Why are only some asset records imported?
+                        </a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="md-toc__item">
+                <a href="#common-issues-across-all-import-types" class="md-toc__link" data-md-level="1">
+                  Common issues across all import types
+                </a>
+                  <ul class="md-toc__list">
+                      <li class="md-toc__item">
+                        <a href="#date-values-are-invalid-or-reformatted" class="md-toc__link" data-md-level="2">
+                          Date values are invalid or reformatted
+                        </a>
+                      </li>
+                      <li class="md-toc__item">
+                        <a href="#excel-formatting-corrupts-data" class="md-toc__link" data-md-level="2">
+                          Excel formatting corrupts data
+                        </a>
+                      </li>
+                      <li class="md-toc__item">
+                        <a href="#lack-of-pre-validation-leads-to-late-errors" class="md-toc__link" data-md-level="2">
+                          Lack of pre-validation leads to late errors
+                        </a>
+                      </li>
+                      <li class="md-toc__item">
+                        <a href="#parent-child-relationships-missing-or-loaded-in-wrong-order" class="md-toc__link" data-md-level="2">
+                          Parent-child relationships missing or loaded in wrong order
+                        </a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="md-toc__item">
+                <a href="#why-shouldnt-i-load-very-large-datasets-in-a-single-file" class="md-toc__link" data-md-level="1">
+                  Why shouldn't I load very large datasets in a single file?
+                </a>
+                  <ul class="md-toc__list">
+                      <li class="md-toc__item">
+                        <a href="#constraints" class="md-toc__link" data-md-level="2">
+                          Constraints
+                        </a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="md-toc__item">
+                <a href="#what-happens-next" class="md-toc__link" data-md-level="1">
+                  What happens next?
+                </a>
+              </li>
+              <li class="md-toc__item">
+                <a href="#continue-building-your-skills" class="md-toc__link" data-md-level="1">
+                  Continue building your skills
+                </a>
+                  <ul class="md-toc__list">
+                      <li class="md-toc__item">
+                        <a href="#verify-the-system-is-working" class="md-toc__link" data-md-level="2">
+                          Verify the system is working
+                        </a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="md-toc__item">
+                <a href="#related-topics" class="md-toc__link" data-md-level="1">
+                  Related topics
+                </a>
+              </li>
+              <li class="md-toc__item">
+                <a href="#still-stuck" class="md-toc__link" data-md-level="1">
+                  Still stuck?
+                </a>
+              </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+      </aside>
+    </div>
+
+    <!-- Footer - Full width outside container -->
+    <footer class="md-footer">
+      Built with <a href="https://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/durera/mkdocs-carbon">Carbon theme</a>
+    </footer>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": false, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+</script></body></html>

@@ -1,0 +1,75 @@
+Level 1,Level 2,Level 3,Level 4,Page Title,File Path
+Home,,,,Home,index.md
+Start fast,,,,Start fast,
+,What can I do in my role?,,,What can I do in my role?,start-fast/what-can-i-do/overview.md
+,What is my first task?,,,What is my first task?,
+,,Technician: Complete a work order,,Technician: Complete a work order,start-fast/first-task/technician-first-task.md
+,,Supervisor: Assign and track work,,Supervisor: Assign and track work,start-fast/first-task/supervisor-first-task.md
+,,Inventory clerk: Issue a part,,Inventory clerk: Issue a part,start-fast/first-task/inventory-clerk-first-task.md
+,,Administrator: Load user data,,Administrator: Load user data,start-fast/first-task/administrator-first-task.md
+,Basic concepts,,,Basic concepts,
+,,What are the basic concepts?,,What are the basic concepts?,start-fast/basics/what-are-basic-concepts.md
+,,What is a location?,,What is a location?,start-fast/basics/what-is-location.md
+,,What is an asset?,,What is an asset?,start-fast/basics/what-is-asset.md
+,,What is a work order?,,What is a work order?,start-fast/basics/what-is-work-order.md
+,,How do assets work orders and locations work together?,,How do assets work orders and locations work together?,start-fast/basics/how-concepts-work-together.md
+,,Why don't these terms match what I'm used to?,,Why don't these terms match what I'm used to?,start-fast/basics/why-do-terms-differ.md
+Get work done,,,,Get work done,
+,Plan work,,,Plan work,
+,,Plan recurring maintenance,,Plan recurring maintenance,get-work-done/plan-work/plan-recurring-maintenance.md
+,,Decide what work to do,,Decide what work to do,get-work-done/plan-work/decide-what-work.md
+,,Schedule work,,Schedule work,get-work-done/plan-work/schedule-work.md
+,Complete work,,,Complete work,
+,,Find my work,,Find my work,get-work-done/complete-work/find-work.md
+,,Complete a work order,,Complete a work order,get-work-done/complete-work/complete-job.md
+,,Can't complete a task,,Can't complete a task,get-work-done/complete-work/cant-complete-task.md
+,,Why can't I complete a work order?,,Why can't I complete a work order?,get-work-done/complete-work/why-cant-complete-work-order.md
+,Manage assets,,,Manage assets,
+,,Track asset history,,Track asset history,get-work-done/manage-assets/track-asset-history.md
+,,Classify assets,,Classify assets,get-work-done/manage-assets/classify-assets.md
+,,When an asset fails,,When an asset fails,get-work-done/manage-assets/asset-fails.md
+,Manage inventory,,,Manage inventory,
+,,Issue parts to a job,,Issue parts to a job,get-work-done/manage-inventory/issue-parts.md
+,,Track stock levels,,Track stock levels,get-work-done/manage-inventory/track-stock-levels.md
+,,Stock is incorrect,,Stock is incorrect,get-work-done/manage-inventory/stock-incorrect.md
+,,Why can't I issue materials?,,Why can't I issue materials?,get-work-done/manage-inventory/why-cant-issue-materials.md
+,Monitor and respond,,,Monitor and respond,
+,,Detect issues early,,Detect issues early,get-work-done/monitor-respond/detect-issues-early.md
+,,What metrics matter,,What metrics matter,get-work-done/monitor-respond/what-metrics-matter.md
+,,Act on alerts,,Act on alerts,get-work-done/monitor-respond/act-on-alerts.md
+,Organize people and work,,,Organize people and work,
+,,Assign the right people,,Assign the right people,get-work-done/organize-people/assign-right-people.md
+,,Standardize data,,Standardize data,get-work-done/organize-people/standardize-data.md
+,,Why don't technicians see their work?,,Why don't technicians see their work?,get-work-done/organize-people/why-cant-see-assigned-work.md
+,Set up and control,,,Set up and control,
+,,Get data into the system,,Get data into the system,get-work-done/setup-control/get-data-into-system.md
+,,Automate communication,,Automate communication,get-work-done/setup-control/automate-communication.md
+,,Why does my user import fail?,,Why does my user import fail?,get-work-done/setup-control/why-does-user-import-fail.md
+,,Why does my asset import fail?,,Why does my asset import fail?,get-work-done/setup-control/why-does-asset-import-fail.md
+Improve results,,,,Improve results,
+,Improve how work gets done,,,Improve how work gets done,
+,,Reduce downtime,,Reduce downtime,improve-results/improve-work/reduce-downtime.md
+,,Improve completion rates,,Improve completion rates,improve-results/improve-work/improve-completion-rates.md
+,Improve data quality,,,Improve data quality,
+,,Why data looks wrong,,Why data looks wrong,improve-results/improve-data/data-looks-wrong.md
+,,Make data reliable,,Make data reliable,improve-results/improve-data/make-data-reliable.md
+,Improve team adoption,,,Improve team adoption,
+,,Technicians not using system,,Technicians not using system,improve-results/improve-adoption/technicians-not-using.md
+,,Simplify workflows,,Simplify workflows,improve-results/improve-adoption/simplify-workflows.md
+Work smarter,,,,Work smarter,
+,Use AI and automation,,,Use AI and automation,
+,,How AI improves maintenance,,How AI improves maintenance,work-smarter/ai-automation/ai-improve-maintenance.md
+,,What can I automate,,What can I automate,work-smarter/ai-automation/what-can-automate.md
+,Scale your operation,,,Scale your operation,
+,,Manage more assets,,Manage more assets,work-smarter/scale-operation/manage-more-assets.md
+,,Standardize across teams,,Standardize across teams,work-smarter/scale-operation/standardize-across-teams.md
+,Connect insights to outcomes,,,Connect insights to outcomes,
+,,Turn data into decisions,,Turn data into decisions,work-smarter/insights-outcomes/data-into-decisions.md
+,,Optimize performance,,Optimize performance,work-smarter/insights-outcomes/optimize-performance.md
+Get answers,,,,Get answers,
+,Overview,,,Overview,get-answers/index.md
+,Starting out,,,Starting out,get-answers/starting-out.md
+,Getting work done,,,Getting work done,get-answers/getting-work-done.md
+,Improving results,,,Improving results,get-answers/improving-results.md
+,Working smarter,,,Working smarter,get-answers/working-smarter.md
+,Security,,,Security,get-answers/security.md

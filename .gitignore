@@ -1,0 +1,18 @@
+# Internal QA reference material (Figma exports, field spreadsheets).
+# Kept locally for the field/UI audit; never publish.
+_context/qa/
+
+# Internal AI context (working notes, prompts, wiki — not for public consumption)
+_context/
+
+# Internal strategy and planning documents — never publish
+project-docs/PRFAQ MAS SaaS Select (Draft).docx
+project-docs/IA_Maximo_Select.docx
+
+# Local tooling
+.bob/
+.DS_Store
+
+# Root-level working spreadsheets
+QA fields.xlsx
+Locations.xlsx

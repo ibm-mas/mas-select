@@ -1,0 +1,155 @@
+================================================================================
+MAS SELECT HELP CENTER - COMPREHENSIVE LINK CHECK
+================================================================================
+
+📊 Found 60 markdown files
+
+================================================================================
+🔍 LINK ANALYSIS RESULTS
+================================================================================
+
+📈 Statistics:
+  - Total internal links: 259
+  - External links: 1
+  - Anchor-only links: 11
+  - Broken links: 0
+  - Potential title mismatches: 0
+
+✅ No broken links found!
+
+✅ All link texts appear appropriate!
+
+================================================================================
+🌐 EXTERNAL LINKS
+================================================================================
+
+File: docs/get-work-done/setup-control/automate-communication.md:82
+  Text: 'https://pushnotification.suite.maximo.com'
+  URL: https://pushnotification.suite.maximo.com
+
+================================================================================
+🔗 LINKING OPPORTUNITIES ANALYSIS
+================================================================================
+
+⚠️  Pages with NO incoming links (potential orphans):
+
+  - docs/about/export-pdf.md
+    Title: How to export the documentation as PDF
+  - docs/get-answers/getting-work-done.md
+    Title: Getting work done
+  - docs/get-answers/improving-results.md
+    Title: Improving results
+  - docs/get-answers/security.md
+    Title: Security
+  - docs/get-answers/starting-out.md
+    Title: Starting out
+  - docs/get-answers/working-smarter.md
+    Title: Working smarter
+  - docs/get-work-done/complete-work/cant-complete-task.md
+    Title: What if I can't complete a task?
+  - docs/get-work-done/complete-work/complete-job.md
+    Title: How do I complete a work order?
+  - docs/get-work-done/complete-work/find-work.md
+    Title: How do I find my work?
+  - docs/get-work-done/complete-work/why-cant-complete-work-order.md
+    Title: Why can't I complete a work order?
+  - docs/get-work-done/manage-assets/asset-fails.md
+    Title: What happens when an asset fails?
+  - docs/get-work-done/manage-assets/classify-assets.md
+    Title: How do I classify assets?
+  - docs/get-work-done/manage-assets/track-asset-history.md
+    Title: How do I track asset history?
+  - docs/get-work-done/manage-inventory/issue-parts.md
+    Title: How do I issue parts to a job?
+  - docs/get-work-done/manage-inventory/stock-incorrect.md
+    Title: What happens if stock is incorrect?
+  - docs/get-work-done/manage-inventory/track-stock-levels.md
+    Title: How do I track stock levels?
+  - docs/get-work-done/manage-inventory/why-cant-issue-materials.md
+    Title: Why can't I issue materials to a work order?
+  - docs/get-work-done/monitor-respond/act-on-alerts.md
+    Title: How do I act on alerts?
+  - docs/get-work-done/monitor-respond/detect-issues-early.md
+    Title: How do I detect issues early?
+  - docs/get-work-done/monitor-respond/what-metrics-matter.md
+    Title: What metrics matter?
+  - docs/get-work-done/organize-people/assign-right-people.md
+    Title: How do I assign the correct people?
+  - docs/get-work-done/organize-people/standardize-data.md
+    Title: How do I customize dropdown values?
+  - docs/get-work-done/organize-people/why-cant-see-assigned-work.md
+    Title: Why don't technicians see their assigned work?
+  - docs/get-work-done/plan-work/decide-what-work.md
+    Title: How do I decide what work should be done?
+  - docs/get-work-done/plan-work/plan-recurring-maintenance.md
+    Title: How do I plan recurring maintenance?
+  - docs/get-work-done/plan-work/schedule-work.md
+    Title: How do I schedule work?
+  - docs/get-work-done/setup-control/automate-communication.md
+    Title: How do I automate communication?
+  - docs/get-work-done/setup-control/correct-load-order.md
+    Title: What is the correct load order?
+  - docs/get-work-done/setup-control/get-data-into-system.md
+    Title: How do I get data into the system?
+  - docs/get-work-done/setup-control/prepare-data-for-import.md
+    Title: How do I prepare data for import?
+  - docs/get-work-done/setup-control/set-up-labor-crafts-crews.md
+    Title: How do I set up labor, crafts, and crews?
+  - docs/get-work-done/setup-control/set-up-maps.md
+    Title: How do I set up maps?
+  - docs/get-work-done/setup-control/why-does-asset-import-fail.md
+    Title: How do I fix import errors?
+  - docs/improve-results/improve-adoption/simplify-workflows.md
+    Title: How do I simplify workflows?
+  - docs/improve-results/improve-adoption/technicians-not-using.md
+    Title: Why aren't technicians using the system?
+  - docs/improve-results/improve-data/data-looks-wrong.md
+    Title: Why does my data look wrong?
+  - docs/improve-results/improve-data/make-data-reliable.md
+    Title: How do I make data reliable?
+  - docs/improve-results/improve-work/improve-completion-rates.md
+    Title: How do I improve completion rates?
+  - docs/improve-results/improve-work/reduce-downtime.md
+    Title: How do I reduce downtime?
+  - docs/start-fast/basics/how-concepts-work-together.md
+    Title: How do locations, assets, and work orders work together?
+  - docs/start-fast/basics/what-are-basic-concepts.md
+    Title: What are the basic concepts?
+  - docs/start-fast/basics/what-is-asset.md
+    Title: What is an asset?
+  - docs/start-fast/basics/what-is-location.md
+    Title: What is a location?
+  - docs/start-fast/basics/what-is-work-order.md
+    Title: What is a work order?
+  - docs/start-fast/basics/why-do-terms-differ.md
+    Title: Why do some terms differ from what I'm used to?
+  - docs/start-fast/first-task/admin-first-task.md
+    Title: How do I load user data?
+  - docs/start-fast/first-task/administrator-first-task.md
+    Title: Administrator: Add users
+  - docs/start-fast/first-task/clerk-first-task.md
+    Title: How do I issue a part?
+  - docs/start-fast/first-task/inventory-clerk-first-task.md
+    Title: Inventory clerk: Issue a part
+  - docs/start-fast/first-task/supervisor-first-task.md
+    Title: Supervisor: Assign and track work
+  - docs/start-fast/first-task/technician-first-task.md
+    Title: Technician: Complete a work order
+  - docs/start-fast/what-can-i-do/overview.md
+    Title: What can I do in my role?
+  - docs/work-smarter/ai-automation/ai-improve-maintenance.md
+    Title: How can AI improve maintenance?
+  - docs/work-smarter/ai-automation/what-can-automate.md
+    Title: What can I automate?
+  - docs/work-smarter/insights-outcomes/data-into-decisions.md
+    Title: How do I turn data into decisions?
+  - docs/work-smarter/insights-outcomes/optimize-performance.md
+    Title: How do I optimize performance?
+  - docs/work-smarter/scale-operation/manage-more-assets.md
+    Title: How do I manage more assets?
+  - docs/work-smarter/scale-operation/standardize-across-teams.md
+    Title: How do I standardize across teams?
+
+================================================================================
+✅ LINK CHECK COMPLETE
+================================================================================

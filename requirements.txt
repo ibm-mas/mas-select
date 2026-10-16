@@ -1,0 +1,5 @@
+mkdocs>=1.5.0
+mkdocs-carbon>=2.1.0
+mkdocs-glightbox>=0.3.0
+playwright>=1.40.0
+pymdown-extensions>=10.0
