@@ -1,5 +1,5 @@
 site_name: Maximo Application Suite Select help center
-site_url: https://pages.github.ibm.com/WCE-ID/mas_select/
+site_url: https://ibm-mas.github.io/mas-select/
 site_description: Journey-based documentation for Maximo Application Suite Select
 site_author: Yvette Harrington
 use_directory_urls: false
@@ -8,12 +8,12 @@ use_directory_urls: false
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://pages.github.ibm.com/WCE-ID/mas_select
+      link: https://github.com/ibm-mas/mas-select
 
 # Repository
-repo_name: WCE-ID/mas_select
-repo_url: https://pages.github.ibm.com/WCE-ID/mas_select
-edit_uri: edit/main/docs/
+repo_name: ibm-mas/mas-select
+repo_url: https://github.com/ibm-mas/mas-select
+edit_uri: edit/master/docs/
 
 # Theme configuration - Carbon Design System theme
 theme:

@@ -2,6 +2,8 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="robots" content="noindex, nofollow">
     <title>How to export the documentation as PDF - Maximo Application Suite Select help center</title>
 
     <!-- Pure CSS (https://pure-css.github.io/) -->
@@ -101,7 +103,7 @@
 
       
         <cds-header-nav>
-          <cds-header-nav-item href="https://pages.github.ibm.com/WCE-ID/mas_select/edit/main/docs/about/export-pdf.md">Edit on WCE-ID/mas_select</cds-header-nav-item>
+          <cds-header-nav-item href="https://github.com/ibm-mas/mas-select/edit/master/docs/about/export-pdf.md">Edit on ibm-mas/mas-select</cds-header-nav-item>
         </cds-header-nav>
       
     </cds-header>
@@ -979,7 +981,7 @@
               if (e.key === 'Enter') {
                   var query = input.value.trim();
                   if (query) {
-                      window.location.href = 'https://pages.github.ibm.com/WCE-ID/mas_select/search.html?q=' + encodeURIComponent(query);
+                      window.location.href = 'https://ibm-mas.github.io/mas-select/search.html?q=' + encodeURIComponent(query);
                   }
               }
           });
@@ -1071,7 +1073,7 @@
 <h2 id="method-2-print-the-entire-site-recommended">Method 2: Print the entire <abbr title="A data partitioning concept that represents a plant, facility, or business unit.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; plant, facility, or business unit">site</abbr> (Recommended)<a class="headerlink" href="#method-2-print-the-entire-site-recommended" title="Permanent link">¤</a></h2>
 <p>To create a comprehensive PDF of all documentation:</p>
 <ol>
-<li>Open the deployed <abbr title="A data partitioning concept that represents a plant, facility, or business unit.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; plant, facility, or business unit">site</abbr>: https://pages.github.ibm.com/LUAIDEMP/user_centered_doc/</li>
+<li>Open the deployed <abbr title="A data partitioning concept that represents a plant, facility, or business unit.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; plant, facility, or business unit">site</abbr> (<code>&lt;live site URL&gt;</code>)</li>
 <li>Open your browser's Developer Tools (F12)</li>
 <li>Run this JavaScript in the console to create a single-page version:</li>
 </ol>
@@ -1108,7 +1110,7 @@
 <a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="k">with</span> <span class="n">sync_playwright</span><span class="p">()</span> <span class="k">as</span> <span class="n">p</span><span class="p">:</span>
 <a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    <span class="n">browser</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">chromium</span><span class="o">.</span><span class="n">launch</span><span class="p">()</span>
 <a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="n">page</span> <span class="o">=</span> <span class="n">browser</span><span class="o">.</span><span class="n">new_page</span><span class="p">()</span>
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="n">page</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="s1">'https://pages.github.ibm.com/LUAIDEMP/user_centered_doc/'</span><span class="p">)</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="n">page</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="s1">'&lt;live site URL&gt;'</span><span class="p">)</span>
 <a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    <span class="n">page</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="s1">'maximo-application-suite-select-docs.pdf'</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s1">'A4'</span><span class="p">)</span>
 <a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>    <span class="n">browser</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </code></pre></div>

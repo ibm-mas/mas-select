@@ -12,7 +12,7 @@ For detailed project information, working preferences, and AI guidance, see the 
 ## Repository Structure
 
 ```
-mas_select/
+mas-select/
 ├── docs/                    # Documentation source files (Markdown)
 │   ├── get-work-done/      # Task-based content by user journey
 │   ├── improve-results/    # Optimization and troubleshooting
@@ -44,7 +44,7 @@ See **[LOCAL_DEPLOYMENT_GUIDE.md](LOCAL_DEPLOYMENT_GUIDE.md)** for detailed setu
    ```bash
    python3 -m mkdocs serve -a 127.0.0.1:8001
    ```
-   Then open: http://localhost:8001/WCE-ID/mas_select/
+   Then open: http://localhost:8001/mas-select/
 
 3. **Build site:**
    ```bash
@@ -54,8 +54,6 @@ See **[LOCAL_DEPLOYMENT_GUIDE.md](LOCAL_DEPLOYMENT_GUIDE.md)** for detailed setu
 ## Deployment
 
 See **[GITHUB_PAGES_DEPLOYMENT_GUIDE.md](GITHUB_PAGES_DEPLOYMENT_GUIDE.md)** for deployment instructions.
-
-**Live Site:** https://pages.github.ibm.com/WCE-ID/mas_select/
 
 ## Working with Content
 

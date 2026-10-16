@@ -40,7 +40,7 @@ This will:
 
 To create a comprehensive PDF of all documentation:
 
-1. Open the deployed site: https://pages.github.ibm.com/LUAIDEMP/user_centered_doc/
+1. Open the deployed site (`<live site URL>`)
 2. Open your browser's Developer Tools (F12)
 3. Run this JavaScript in the console to create a single-page version:
 
@@ -81,7 +81,7 @@ from playwright.sync_api import sync_playwright
 with sync_playwright() as p:
     browser = p.chromium.launch()
     page = browser.new_page()
-    page.goto('https://pages.github.ibm.com/LUAIDEMP/user_centered_doc/')
+    page.goto('<live site URL>')
     page.pdf(path='maximo-application-suite-select-docs.pdf', format='A4')
     browser.close()
 ```

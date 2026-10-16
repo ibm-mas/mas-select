@@ -1,17 +1,19 @@
 # GitHub Pages Deployment Guide for MAS Select Documentation
 
 ## Live Site URL
-**Production Site:** https://pages.github.ibm.com/WCE-ID/mas_select/index.html
+**Preview site:** `<live site URL>`/index.html
+
+> **Preview only:** Every page carries `<meta name="robots" content="noindex, nofollow">`, added in `tools/overrides/base.html.j2`, so search engines do not list the site. Do not publish the URL. At GA, remove that tag and redeploy.
 
 ## Overview
 
-This documentation site is deployed to IBM GitHub Enterprise Pages using MkDocs. The deployment process automatically builds the site and publishes it to the `gh-pages` branch, which GitHub Pages serves as a static website.
+This documentation site is deployed to GitHub Pages (`ibm-mas/mas-select`) using MkDocs. The deployment process automatically builds the site and publishes it to the `gh-pages` branch, which GitHub Pages serves as a static website.
 
 ## Prerequisites
 
 Before deploying, ensure you have:
 
-1. **Git access** to the repository: `https://github.ibm.com/WCE-ID/mas_select.git`
+1. **Git access** to the repository: `https://github.com/ibm-mas/mas-select.git`
 2. **Push permissions** to the repository
 3. **Python 3.7+** installed
 4. **MkDocs and dependencies** installed (see Installation section)
@@ -21,8 +23,8 @@ Before deploying, ensure you have:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.ibm.com/WCE-ID/mas_select.git
-cd mas_select
+git clone https://github.com/ibm-mas/mas-select.git
+cd mas-select
 ```
 
 ### 2. Install Dependencies
@@ -46,7 +48,7 @@ This is the simplest and most reliable method:
 
 ```bash
 # Navigate to project directory
-cd /Users/yvetteharrington/Documents/GitHub/mas_select
+cd /Users/yvetteharrington/Documents/GitHub/mas-select
 
 # Deploy to GitHub Pages
 python3 -m mkdocs gh-deploy --force
@@ -61,10 +63,10 @@ python3 -m mkdocs gh-deploy --force
 **Expected output:**
 ```
 INFO    -  Cleaning site directory
-INFO    -  Building documentation to directory: /path/to/mas_select/site
+INFO    -  Building documentation to directory: /path/to/mas-select/site
 INFO    -  Documentation built in 1.23 seconds
-INFO    -  Copying '/path/to/mas_select/site' to 'gh-pages' branch and pushing to GitHub.
-INFO    -  Your documentation should shortly be available at: https://pages.github.ibm.com/WCE-ID/mas_select/
+INFO    -  Copying '/path/to/mas-select/site' to 'gh-pages' branch and pushing to GitHub.
+INFO    -  Your documentation should shortly be available at: `<live site URL>`
 ```
 
 ### Method 2: Using the Build Script
@@ -87,7 +89,7 @@ The project includes a comprehensive build script with additional features:
 **Interactive prompts:**
 - If you have uncommitted changes, it will ask if you want to commit them
 - You can provide a commit message
-- Changes are pushed to `main` branch before deploying
+- Changes are pushed to `master` branch before deploying
 
 ### Method 3: Manual Deployment
 
@@ -113,18 +115,18 @@ python3 -m mkdocs gh-deploy --force
    ```bash
    python3 -m mkdocs serve -a localhost:8001
    ```
-3. **Review changes** at http://localhost:8001/WCE-ID/mas_select/
-4. **Commit changes** to the `main` branch:
+3. **Review changes** at http://localhost:8001/mas-select/
+4. **Commit changes** to the `master` branch:
    ```bash
    git add .
    git commit -m "docs: update documentation"
-   git push origin main
+   git push origin master
    ```
 5. **Deploy to GitHub Pages**:
    ```bash
    python3 -m mkdocs gh-deploy --force
    ```
-6. **Verify deployment** at https://pages.github.ibm.com/WCE-ID/mas_select/
+6. **Verify deployment** at `<live site URL>`
 
 ### Quick Deployment (No Testing)
 
@@ -134,7 +136,7 @@ If you're confident in your changes:
 # Commit and deploy in one go
 git add .
 git commit -m "docs: update documentation"
-git push origin main
+git push origin master
 python3 -m mkdocs gh-deploy --force
 ```
 
@@ -157,12 +159,12 @@ python3 -m mkdocs gh-deploy --force
 
 3. **GitHub Pages Phase:**
    - GitHub detects changes to `gh-pages` branch
-   - Serves the content at https://pages.github.ibm.com/WCE-ID/mas_select/
+   - Serves the content at `<live site URL>`
    - Changes appear within 1-2 minutes
 
 ### Branch Structure
 
-- **`main` branch:** Source code and documentation files
+- **`master` branch:** Source code and documentation files
   - `docs/` - Markdown source files
   - `mkdocs.yml` - Configuration
   - `scripts/` - Build scripts
@@ -181,15 +183,15 @@ Key settings for GitHub Pages deployment:
 
 ```yaml
 site_name: Maximo Application Suite Select help center
-site_url: https://pages.github.ibm.com/WCE-ID/mas_select/
+site_url: https://ibm-mas.github.io/mas-select/
 site_description: Journey-based documentation for Maximo Application Suite Select
 site_author: Yvette Harrington
 use_directory_urls: false
 
 # Repository
-repo_name: WCE-ID/mas_select
-repo_url: https://pages.github.ibm.com/WCE-ID/mas_select
-edit_uri: edit/main/docs/
+repo_name: ibm-mas/mas-select
+repo_url: https://github.com/ibm-mas/mas-select
+edit_uri: edit/master/docs/
 ```
 
 **Important settings:**
@@ -201,9 +203,9 @@ edit_uri: edit/main/docs/
 
 To verify GitHub Pages is enabled:
 
-1. Go to repository settings: https://github.ibm.com/WCE-ID/mas_select/settings/pages
+1. Go to repository settings: https://github.com/ibm-mas/mas-select/settings/pages
 2. Ensure **Source** is set to `gh-pages` branch
-3. The site should be published at: https://pages.github.ibm.com/WCE-ID/mas_select/
+3. The site should be published at: `<live site URL>`
 
 ## Troubleshooting
 
@@ -259,7 +261,7 @@ python3 -m mkdocs gh-deploy --force
 # Commit changes first
 git add .
 git commit -m "docs: describe your changes"
-git push origin main
+git push origin master
 
 # Then deploy
 python3 -m mkdocs gh-deploy --force
@@ -270,7 +272,7 @@ python3 -m mkdocs gh-deploy --force
 ### After Deployment
 
 1. **Check the live site:**
-   - Visit: https://pages.github.ibm.com/WCE-ID/mas_select/
+   - Visit: `<live site URL>`
    - Verify your changes appear
    - Test navigation and links
 
@@ -278,7 +280,7 @@ python3 -m mkdocs gh-deploy --force
    ```bash
    git checkout gh-pages
    ls -la
-   git checkout main
+   git checkout master
    ```
 
 3. **View deployment history:**
@@ -293,7 +295,7 @@ python3 -m mkdocs gh-deploy --force
 1. ✅ **Test locally** using `mkdocs serve`
 2. ✅ **Review all changes** in the browser
 3. ✅ **Check for broken links** and images
-4. ✅ **Commit to main branch** first
+4. ✅ **Commit to master branch** first
 5. ✅ **Write descriptive commit messages**
 
 ### During Deployment
@@ -322,8 +324,8 @@ git checkout gh-pages
 git reset --hard <commit-hash>
 git push origin gh-pages --force
 
-# 3. Return to main branch
-git checkout main
+# 3. Return to master branch
+git checkout master
 ```
 
 ## Automation Options
@@ -338,7 +340,7 @@ name: Deploy Documentation
 on:
   push:
     branches:
-      - main
+      - master
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -351,7 +353,7 @@ jobs:
       - run: mkdocs gh-deploy --force
 ```
 
-This would automatically deploy whenever you push to `main`.
+This would automatically deploy whenever you push to `master`.
 
 ## Quick Reference Commands
 
@@ -389,9 +391,9 @@ git remote -v
 - **Carbon Theme:** https://github.com/carbon-design-system/mkdocs-carbon
 
 ### Repository
-- **Source Code:** https://github.ibm.com/WCE-ID/mas_select
-- **Live Site:** https://pages.github.ibm.com/WCE-ID/mas_select/
-- **Issues:** https://github.ibm.com/WCE-ID/mas_select/issues
+- **Source Code:** https://github.com/ibm-mas/mas-select
+- **Live Site:** `<live site URL>`
+- **Issues:** https://github.com/ibm-mas/mas-select/issues
 
 ### Local Documentation
 - **Local Deployment Guide:** `LOCAL_DEPLOYMENT_GUIDE.md`
@@ -408,7 +410,7 @@ python3 -m mkdocs gh-deploy --force
 ```
 
 **Live site will be available at:**
-https://pages.github.ibm.com/WCE-ID/mas_select/index.html
+`<live site URL>`/index.html
 
 **Deployment takes:** 1-2 minutes to go live after pushing
 

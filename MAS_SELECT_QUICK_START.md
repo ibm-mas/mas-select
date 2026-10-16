@@ -7,14 +7,14 @@ Use this prompt to quickly get Bob working on the MAS Select documentation proje
 ## **Recommended Prompt:**
 
 ```
-I'm working on the MAS Select documentation project at /Users/yvetteharrington/Documents/GitHub/mas_select.
+I'm working on the MAS Select documentation project at /Users/yvetteharrington/Documents/GitHub/mas-select.
 
 Project context:
 - Read LOCAL_DEPLOYMENT_GUIDE.md for local development setup
 - Read GITHUB_PAGES_DEPLOYMENT_GUIDE.md for deployment process
 - Site uses MkDocs with Carbon theme
-- Local server: http://localhost:8001/WCE-ID/mas_select/
-- Live site: https://pages.github.ibm.com/WCE-ID/mas_select/
+- Local server: http://localhost:8001/mas-select/
+- Live site: <live site URL> (preview is not indexed by search engines)
 
 Task: [describe what you need]
 ```

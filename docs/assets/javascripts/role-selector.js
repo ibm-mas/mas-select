@@ -109,7 +109,7 @@
         // Check if we're on the homepage
         return window.location.pathname.endsWith('/') || 
                window.location.pathname.endsWith('/index.html') ||
-               window.location.pathname.includes('/mas_select/index.html');
+               window.location.pathname.includes('/mas-select/index.html');
     }
     
     function createRoleSelector() {

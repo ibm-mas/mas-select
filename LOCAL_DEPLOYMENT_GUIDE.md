@@ -2,7 +2,7 @@
 
 ## Quick Reference
 
-**Current Local Server:** http://localhost:8001/WCE-ID/mas_select/index.html
+**Current Local Server:** http://localhost:8001/mas-select/index.html
 
 **Status:** ✅ Server is currently running on port 8001
 
@@ -19,7 +19,7 @@ This guide explains how to build and deploy the Maximo Application Suite Select 
 ## Project Structure
 
 ```
-mas_select/
+mas-select/
 ├── docs/                    # Documentation source (Markdown files)
 ├── site/                    # Built HTML output (generated)
 ├── mkdocs.yml              # MkDocs configuration
@@ -35,7 +35,7 @@ mas_select/
 
 ```bash
 # Navigate to project directory
-cd /Users/yvetteharrington/Documents/GitHub/mas_select
+cd /Users/yvetteharrington/Documents/GitHub/mas-select
 
 # Install Python packages
 pip3 install -r requirements.txt
@@ -58,7 +58,7 @@ python3 -m mkdocs build
 ```
 - Generates static HTML in `/site` directory
 - Takes ~1 second to build
-- Output: `/Users/yvetteharrington/Documents/GitHub/mas_select/site`
+- Output: `/Users/yvetteharrington/Documents/GitHub/mas-select/site`
 
 #### Serve Locally (Development Server)
 ```bash
@@ -73,7 +73,7 @@ python3 -m mkdocs serve -a localhost:8001
 - Live reload on file changes
 - Watches `docs/` and `mkdocs.yml`
 - Auto-rebuilds when you save changes
-- Access at: http://localhost:8001/WCE-ID/mas_select/
+- Access at: http://localhost:8001/mas-select/
 
 #### Clean Build
 ```bash
@@ -112,7 +112,7 @@ The project includes a comprehensive build script with additional features:
 ## Current Setup
 
 ### Active Server
-- **URL:** http://localhost:8001/WCE-ID/mas_select/
+- **URL:** http://localhost:8001/mas-select/
 - **Port:** 8001 (custom, avoiding default 8000)
 - **Status:** Running in Terminal 1
 - **Features:** Live reload enabled
@@ -121,7 +121,7 @@ The project includes a comprehensive build script with additional features:
 
 ```yaml
 site_name: Maximo Application Suite Select help center
-site_url: https://pages.github.ibm.com/WCE-ID/mas_select/
+site_url: https://ibm-mas.github.io/mas-select/
 theme:
   name: carbon
   prefix: IBM
@@ -170,7 +170,7 @@ Press `Ctrl+C` in the terminal
 
 ### Local Deployment (Current)
 
-**Already running at:** http://localhost:8001/WCE-ID/mas_select/
+**Already running at:** http://localhost:8001/mas-select/
 
 To restart if stopped:
 ```bash
@@ -187,7 +187,7 @@ python3 -m mkdocs gh-deploy --force
 **What happens:**
 1. Builds the site
 2. Pushes to `gh-pages` branch
-3. Available at: https://pages.github.ibm.com/WCE-ID/mas_select/
+3. Available at: `<live site URL>`
 4. Takes 1-2 minutes to go live
 
 ### Static Build (for hosting elsewhere)
@@ -261,12 +261,12 @@ Typical build:
 ## URLs & Access Points
 
 ### Local Development
-- **Homepage:** http://localhost:8001/WCE-ID/mas_select/index.html
-- **Any page:** http://localhost:8001/WCE-ID/mas_select/[path]/[page].html
+- **Homepage:** http://localhost:8001/mas-select/index.html
+- **Any page:** http://localhost:8001/mas-select/[path]/[page].html
 
 ### GitHub Pages (Production)
-- **Homepage:** https://pages.github.ibm.com/WCE-ID/mas_select/
-- **Any page:** https://pages.github.ibm.com/WCE-ID/mas_select/[path]/[page].html
+- **Homepage:** `<live site URL>`
+- **Any page:** `<live site URL>`/[path]/[page].html
 
 ## Quick Commands Reference
 
@@ -301,7 +301,7 @@ python3 -m mkdocs --version
 ## Next Steps
 
 1. **Edit content** in `docs/` directory
-2. **View changes** at http://localhost:8001/WCE-ID/mas_select/
+2. **View changes** at http://localhost:8001/mas-select/
 3. **Commit changes** to Git
 4. **Deploy** with `python3 -m mkdocs gh-deploy --force`
 

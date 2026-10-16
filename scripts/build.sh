@@ -255,7 +255,7 @@ deploy_site() {
     print_info "Deploying to gh-pages branch..."
     if python3 -m mkdocs gh-deploy --force; then
         print_success "Site deployed successfully to GitHub Pages"
-        print_info "Site URL: https://pages.github.ibm.com/LUAIDEMP/user_centered_doc/"
+        print_info "Deployed to the gh-pages branch"
         print_info "Note: It may take 1-2 minutes for changes to appear"
     else
         print_error "Deployment failed"
