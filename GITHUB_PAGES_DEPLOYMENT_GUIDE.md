@@ -191,7 +191,7 @@ use_directory_urls: false
 # Repository
 repo_name: ibm-mas/mas-select
 repo_url: https://github.com/ibm-mas/mas-select
-edit_uri: edit/master/docs/
+edit_uri: ''
 ```
 
 **Important settings:**

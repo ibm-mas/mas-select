@@ -13,7 +13,8 @@ extra:
 # Repository
 repo_name: ibm-mas/mas-select
 repo_url: https://github.com/ibm-mas/mas-select
-edit_uri: edit/master/docs/
+# Empty string disables the "Edit on ..." link (MkDocs otherwise defaults it for github.com repos)
+edit_uri: ''
 
 # Theme configuration - Carbon Design System theme
 theme:
