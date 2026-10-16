@@ -311,10 +311,19 @@ def check_links():
         print()
     
     print("=" * 80)
-    print("✅ LINK CHECK COMPLETE")
-    print("=" * 80)
+    if broken_links or privacy_violations:
+        print("❌ VALIDATION FAILED: Found broken links or privacy violations.")
+        print("=" * 80)
+        return False
+    else:
+        print("✅ VALIDATION PASSED: All links and privacy checks clean!")
+        print("=" * 80)
+        return True
 
 if __name__ == "__main__":
-    check_links()
+    import sys
+    passed = check_links()
+    if not passed:
+        sys.exit(1)
 
 # Made with Bob
