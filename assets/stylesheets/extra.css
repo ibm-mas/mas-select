@@ -1,0 +1,1398 @@
+/* Force bold text to display properly in procedural steps */
+/* Target bold text in ordered lists (where UI instructions appear) */
+ol li strong,
+ol li b {
+    font-weight: 700 !important;
+}
+
+/* Custom styles for clickable abbreviation tooltips */
+abbr[title],
+abbr[data-title],
+abbr[data-tooltip] {
+    text-decoration: none !important;
+    border-bottom: 1px dashed #0f62fe !important;
+    cursor: pointer !important;
+    position: relative;
+}
+
+/* Hover state */
+abbr[title]:hover,
+abbr[data-title]:hover,
+abbr[data-tooltip]:hover {
+    border-bottom: 1px dashed #0043ce !important;
+}
+
+/* Remove tooltips from headings, table headers, admonitions (tips), and links */
+h1 abbr[title], h1 abbr[data-title], h1 abbr[data-tooltip],
+h2 abbr[title], h2 abbr[data-title], h2 abbr[data-tooltip],
+h3 abbr[title], h3 abbr[data-title], h3 abbr[data-tooltip],
+h4 abbr[title], h4 abbr[data-title], h4 abbr[data-tooltip],
+h5 abbr[title], h5 abbr[data-title], h5 abbr[data-tooltip],
+h6 abbr[title], h6 abbr[data-title], h6 abbr[data-tooltip],
+th abbr[title], th abbr[data-title], th abbr[data-tooltip],
+.admonition abbr[title], .admonition abbr[data-title], .admonition abbr[data-tooltip],
+a abbr[title], a abbr[data-title], a abbr[data-tooltip] {
+    border-bottom: none !important;
+    cursor: inherit !important;
+    text-decoration: none !important;
+}
+
+/* Fix bullet list formatting - ensure proper display */
+ul {
+    list-style-type: disc !important;
+    padding-left: 2em !important;
+    margin: 1em 0 !important;
+}
+
+ul li {
+    display: list-item !important;
+    margin: 0.5em 0 !important;
+}
+
+/* Ensure bullets show after bold text */
+p + ul,
+strong + ul {
+    margin-top: 0.5em !important;
+}
+
+/* Tooltip popup */
+.abbr-tooltip {
+    position: absolute;
+    background: #161616;
+    color: #f4f4f4;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 1.4;
+    max-width: 300px;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.abbr-tooltip.show {
+    opacity: 1;
+}
+
+.abbr-tooltip strong {
+    font-weight: 600;
+}
+
+/* Arrow for tooltip */
+.abbr-tooltip::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid #161616;
+}
+
+/* Keep markdown table headers in sentence/lower case */
+.rst-content table th,
+.md-typeset table th,
+table th {
+    text-transform: none !important;
+    letter-spacing: normal !important;
+}
+
+/* TOC Navigation - Nested child items styling for Carbon Design System web components */
+
+/* Target Carbon web components directly */
+cds-side-nav-menu {
+    display: block;
+}
+
+/* Minimal indentation for visual hierarchy without causing truncation */
+/* Level-based classes from custom template */
+.nav-level-1 {
+    padding-left: 0 !important;
+}
+
+.nav-level-2 {
+    padding-left: 0.5rem !important;
+}
+
+.nav-level-3 {
+    padding-left: 1rem !important;
+}
+/* Fix Home navigation link visibility and alignment */
+cds-side-nav-link {
+    display: block !important;
+}
+
+cds-side-nav-link::part(link) {
+    display: flex !important;
+    align-items: center !important;
+    color: var(--cds-text-secondary, #525252) !important;
+    text-decoration: none !important;
+    padding: 0 1rem !important;
+    font-size: 0.875rem !important;
+    line-height: 1.28572 !important;
+    block-size: 2rem !important;
+    height: 2rem !important;
+}
+
+cds-side-nav-link::part(title) {
+    color: var(--cds-text-secondary, #525252) !important;
+    font-size: 0.875rem !important;
+    line-height: 1.25rem !important;
+}
+
+cds-side-nav-link[active]::part(link) {
+    background-color: var(--cds-layer-selected-01, #e0e0e0) !important;
+    color: var(--cds-text-primary, #161616) !important;
+}
+
+cds-side-nav-link[active]::part(title) {
+    color: var(--cds-text-primary, #161616) !important;
+}
+
+
+/* Made with Bob */
+/* Style guided steps icon for inline paragraph use */
+p img[src*="guided_steps_final"] {
+    display: inline-block !important;
+    vertical-align: text-bottom !important;
+    margin-right: 0.3em !important;
+    margin-bottom: 0 !important;
+    height: 1em !important;
+    width: auto !important;
+}
+
+/* Remove extra spacing from lightbox wrapper around guided steps icon */
+p a[href*="guided_steps_final"] {
+    display: inline-block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1 !important;
+    vertical-align: text-bottom !important;
+}
+
+/* Light themes use black guided steps icon */
+body[data-carbon-theme="white"] p img[src*="guided_steps_final"],
+body[data-carbon-theme="g10"] p img[src*="guided_steps_final"] {
+    content: url("../../images/guided_steps_final_black.png");
+}
+
+/* Dark themes use white guided steps icon */
+body[data-carbon-theme="g90"] p img[src*="guided_steps_final"],
+body[data-carbon-theme="g100"] p img[src*="guided_steps_final"] {
+    content: url("../../images/guided_steps_final.png");
+}
+
+
+/* Home page subtitle styling */
+.subtitle-help-center {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 0;
+    color: inherit;
+}
+
+/* Remove paragraph margins around subtitle on homepage */
+.md-content h1 + p {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+
+/* Prominent search bar for home page */
+.home-search-container {
+    width: 100%;
+    margin: 32px 0 40px;
+    padding: 0;
+    text-align: center;
+    display: block;
+}
+
+.home-search-label {
+    display: block;
+    font-size: 24px;
+    font-weight: 500;
+    color: #161616;
+    margin-bottom: 24px;
+    letter-spacing: 0.02em;
+}
+
+.home-search-wrapper {
+    display: flex;
+    gap: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    background: white;
+    width: 100%;
+    margin: 0;
+}
+
+.home-search-input {
+    flex: 1;
+    padding: 16px 20px;
+    font-size: 16px;
+    border: 2px solid #e0e0e0;
+    border-right: none;
+    border-radius: 6px 0 0 6px;
+    outline: none;
+    font-family: inherit;
+    background: white;
+    min-height: 40px;
+}
+
+.home-search-input:focus {
+    border-color: #0f62fe;
+    box-shadow: inset 0 0 0 2px #0f62fe;
+}
+
+.home-search-input::placeholder {
+    color: #8d8d8d;
+    font-size: 16px;
+}
+
+.home-search-button {
+    padding: 16px 28px;
+    background-color: #0f62fe;
+    color: #ffffff;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-family: inherit;
+    white-space: nowrap;
+    min-height: 40px;
+}
+
+.home-search-button:hover {
+    background-color: #0043ce;
+}
+
+.home-search-button:active {
+    background-color: #002d9c;
+}
+
+/* Navigation search bar */
+.md-sidebar__inner {
+    padding: 0 !important;
+    position: relative;
+}
+
+/* Search container inside cds-side-nav */
+.nav-search-container {
+    padding: 8px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #e0e0e0;
+    margin: 0;
+}
+
+[data-carbon-theme="g90"] .nav-search-container,
+[data-carbon-theme="g100"] .nav-search-container {
+    background-color: #393939;
+    border-bottom-color: #525252;
+}
+
+.nav-search-input {
+    width: 100%;
+    padding: 6px 8px;
+    font-size: 14px;
+    background-color: var(--cds-field-01, #ffffff);
+    color: var(--cds-text-01, #161616);
+    border: none;
+    border-bottom: 1px solid var(--cds-ui-04, #8d8d8d);
+    border-radius: 0;
+    outline: none;
+    font-family: inherit;
+    box-sizing: border-box;
+    caret-color: #0f62fe;
+}
+
+.nav-search-input::placeholder {
+    color: var(--cds-text-03, #a8a8a8);
+}
+
+.nav-search-input:focus {
+    outline: 2px solid var(--cds-focus, #0f62fe);
+    outline-offset: -2px;
+}
+
+/* Enhanced styling for Tip admonitions - stand out more in both light and dark modes */
+.md-content .admonition.tip,
+.admonition.tip {
+    background-color: #f4f4f4 !important;
+    border-left: 4px solid #198038 !important;
+    padding: 16px !important;
+    border-radius: 4px !important;
+}
+
+/* Dark mode styling for tips - use Carbon theme selectors, not media query */
+body[data-carbon-theme="g90"] .md-content .admonition.tip,
+body[data-carbon-theme="g90"] .admonition.tip,
+body[data-carbon-theme="g100"] .md-content .admonition.tip,
+body[data-carbon-theme="g100"] .admonition.tip {
+    background-color: #393939 !important;
+}
+
+
+/* Reduce spacing between images and figure captions */
+img + p {
+    margin-top: 8px !important;
+}
+
+/* Reduce bottom margin on images when followed by caption */
+img {
+    margin-bottom: 0 !important;
+}
+
+/* Style for figure captions (italic text after images) */
+p > em,
+p[style*="font-style: italic"] {
+    display: block;
+    margin-top: 8px !important;
+}
+
+/* Ensure "On this page" title uses sentence case (already correct in HTML) */
+.md-toc__title {
+    text-transform: none !important;
+}
+
+/* Remove extra indentation from L1 items to align with "On this page" heading */
+/* The theme sets padding-left: var(--spacing-03) (8px) on .md-toc__link */
+/* Override this for L1 links only to align with "On this page" title */
+.md-toc__link[data-md-level="1"] {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+}
+
+/* Tighten homepage spacing */
+.md-content h1:first-of-type {
+    margin-bottom: 8px !important;
+    margin-top: 16px !important;
+}
+
+.subtitle-help-center {
+    margin-top: 0 !important;
+    margin-bottom: 16px !important;
+}
+
+/* Reduce spacing around lifecycle diagram */
+/* Target the paragraph containing the image */
+p:has(img[usemap="#lifecycle-map"]) {
+    margin-top: 4px !important;
+    margin-bottom: 4px !important;
+}
+
+img[usemap="#lifecycle-map"] {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/* Target the figure caption paragraph after the image */
+img[usemap="#lifecycle-map"] + map + p {
+    margin-top: 4px !important;
+    margin-bottom: 8px !important;
+}
+
+/* Also target the paragraph before the diagram */
+p + p:has(img[usemap="#lifecycle-map"]) {
+    margin-top: 4px !important;
+}
+
+.md-content > p:first-of-type {
+    margin-top: 0 !important;
+}
+
+/* See also callout styling */
+.see-also {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+    margin-top: 8px;
+    margin-left: 0;
+    line-height: 1.5;
+}
+
+.see-also .info-icon {
+    width: 16px;
+    height: 16px;
+    display: block;
+    flex: 0 0 16px;
+    margin-top: 2px;
+}
+
+.see-also .see-also-text {
+    display: block;
+    flex: 1;
+}
+
+/* Light themes use light mode icon */
+body[data-carbon-theme="white"] .see-also .info-icon,
+body[data-carbon-theme="g10"] .see-also .info-icon {
+    content: url("../../images/info_light_mode.png");
+}
+
+/* Dark themes use dark mode icon */
+body[data-carbon-theme="g90"] .see-also .info-icon,
+body[data-carbon-theme="g100"] .see-also .info-icon {
+    content: url("../../images/info_dark_mode.png");
+}
+
+
+/* Tips for success sections - unified callout block styling */
+/* Applied to wrapper created by tips-wrapper.js */
+.tips-callout {
+    background-color: #F9F9F9;   /* Lighter gray for subtle background */
+    border-left: 4px solid #0F62FE;  /* IBM Blue 60 for emphasis */
+    padding: 16px 20px 16px 24px;   /* Increased left padding for breathing room */
+    margin: 24px 0;
+    border-radius: 6px;   /* Slightly softer corners */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);   /* Subtle depth */
+}
+
+/* Dark mode styling */
+body[data-carbon-theme="g90"] .tips-callout,
+body[data-carbon-theme="g100"] .tips-callout {
+    background-color: #262626;   /* IBM Gray 80 */
+    border-left: 4px solid #78A9FF;  /* Lighter blue for dark mode */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);   /* Slightly stronger shadow for dark mode */
+}
+
+/* Remove top margin from heading inside callout */
+.tips-callout h2,
+.tips-callout h3 {
+    margin-top: 0;
+}
+
+/* Tips icon image */
+.tips-icon {
+    display: inline !important;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin: 0 8px 0 0 !important;
+}
+
+/* Light themes use black tips icon */
+body[data-carbon-theme="white"] .tips-icon,
+body[data-carbon-theme="g10"] .tips-icon {
+    content: url("../../images/tips_final_black.png");
+}
+
+/* Dark themes use white tips icon */
+body[data-carbon-theme="g90"] .tips-icon,
+body[data-carbon-theme="g100"] .tips-icon {
+    content: url("../../images/tips_final.png");
+}
+
+/* Share callout - "Share with your team" sections */
+.share-callout {
+    background-color: #F9F9F9;
+    border-left: 4px solid #198038;  /* IBM Green 50 */
+    padding: 16px 20px 16px 24px;
+    margin: 24px 0;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+body[data-carbon-theme="g90"] .share-callout,
+body[data-carbon-theme="g100"] .share-callout {
+    background-color: #262626;
+    border-left: 4px solid #42be65;  /* IBM Green 40 for dark mode */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.share-callout h2,
+.share-callout h3 {
+    margin-top: 0;
+}
+
+.share-callout h2,
+.share-callout h3,
+.share-callout p,
+.share-callout ul,
+.share-callout ol {
+    background: none !important;
+    border: none !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.share-callout p {
+    margin-top: 12px;
+}
+
+.share-callout ul,
+.share-callout ol {
+    padding-left: 20px !important;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.share-callout li {
+    margin-bottom: 6px;
+    margin-left: 4px;
+}
+
+/* Share icon image */
+.share-icon {
+    display: inline !important;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin: 0 8px 0 0 !important;
+}
+
+/* Light themes use black share icon */
+body[data-carbon-theme="white"] .share-icon,
+body[data-carbon-theme="g10"] .share-icon {
+    content: url("../../images/Share_black.png");
+}
+
+/* Dark themes use white share icon */
+body[data-carbon-theme="g90"] .share-icon,
+body[data-carbon-theme="g100"] .share-icon {
+    content: url("../../images/Share_white.png");
+}
+
+/* Skills callout - "Continue building your skills" sections */
+/* Same background as tips-callout, distinct purple left border */
+.skills-callout {
+    background-color: #F9F9F9;   /* Same as tips-callout */
+    border-left: 4px solid #8A3FFC;  /* IBM Purple 60 */
+    padding: 16px 20px 16px 24px;
+    margin: 24px 0;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* Dark mode styling */
+body[data-carbon-theme="g90"] .skills-callout,
+body[data-carbon-theme="g100"] .skills-callout {
+    background-color: #262626;   /* Same as tips-callout dark */
+    border-left: 4px solid #BE95FF;  /* IBM Purple 40 for dark mode */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Remove top margin from heading inside skills callout */
+.skills-callout h2,
+.skills-callout h3 {
+    margin-top: 0;
+}
+
+/* Skills icon image */
+.skills-icon {
+    display: inline !important;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin: 0 8px 0 0 !important;
+}
+
+/* Light themes use original Education icon */
+body[data-carbon-theme="white"] .skills-icon,
+body[data-carbon-theme="g10"] .skills-icon {
+    content: url("../../images/Education.png");
+}
+
+/* Dark themes use white Education icon */
+body[data-carbon-theme="g90"] .skills-icon,
+body[data-carbon-theme="g100"] .skills-icon {
+    content: url("../../images/Education_white.png");
+}
+
+/* Remove duplicate backgrounds/borders from inner elements */
+.skills-callout h2,
+.skills-callout h3,
+.skills-callout p,
+.skills-callout ul,
+.skills-callout ol {
+    background: none !important;
+    border: none !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* Spacing inside skills callout */
+.skills-callout p {
+    margin-top: 12px;
+}
+
+.skills-callout ul,
+.skills-callout ol {
+    padding-left: 20px !important;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.skills-callout li {
+    margin-bottom: 6px;
+    margin-left: 4px;
+}
+
+/* Sub-headings inside skills callout — each h3 is a distinct step */
+.skills-callout h3 {
+    margin-top: 20px !important;
+    margin-bottom: 4px !important;
+    padding-top: 16px !important;
+    border-top: 1px solid #e0e0e0 !important;  /* neutral rule, same weight as tips */
+    font-size: 0.9375rem !important;
+    font-weight: 600 !important;
+    color: inherit !important;  /* same colour as body text */
+}
+
+/* Dark mode h3 separator */
+body[data-carbon-theme="g90"] .skills-callout h3,
+body[data-carbon-theme="g100"] .skills-callout h3 {
+    border-top-color: #393939 !important;
+    color: inherit !important;
+}
+
+/* First h3 gets no top border — it follows immediately after the intro paragraph */
+.skills-callout h3:first-of-type {
+    border-top: none !important;
+    padding-top: 8px !important;
+    margin-top: 12px !important;
+}
+
+/* Quick reference icon image */
+.quick-ref-icon {
+    display: inline !important;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin: 0 8px 0 0 !important;
+}
+
+/* Light themes use black quick reference icon */
+body[data-carbon-theme="white"] .quick-ref-icon,
+body[data-carbon-theme="g10"] .quick-ref-icon {
+    content: url("../../images/quick_ref_final_black.png");
+}
+
+/* Dark themes use white quick reference icon */
+body[data-carbon-theme="g90"] .quick-ref-icon,
+body[data-carbon-theme="g100"] .quick-ref-icon {
+    content: url("../../images/quick_ref_final.png");
+}
+
+/* Adjust spacing for paragraphs inside callout */
+.tips-callout p {
+    margin-top: 12px;   /* Increased vertical rhythm */
+}
+
+/* Adjust spacing for lists inside callout */
+.tips-callout ul {
+    padding-left: 20px;   /* Controls bullet distance from text edge */
+    margin-top: 8px;   /* Increased spacing from heading */
+    margin-bottom: 0;
+}
+
+/* Adjust spacing for list items inside callout */
+.tips-callout li {
+    margin-bottom: 6px;   /* Increased vertical spacing between items */
+    margin-left: 4px;   /* Slight additional indent for visual balance */
+}
+
+/* Remove any duplicate backgrounds or borders from inner elements */
+.tips-callout h2,
+.tips-callout h3,
+.tips-callout p,
+.tips-callout ul {
+    background: none !important;
+    border: none !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+
+/* Role Selector Styles - Light Mode Default */
+.role-selector-container {
+    margin: 24px 0;
+    padding: 20px 32px 16px;
+    background: #ffffff !important;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0 !important;
+}
+
+.role-selector-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0 0 6px 0;
+    color: #161616 !important;
+}
+
+.role-selector-subtitle {
+    text-align: center;
+    font-size: 16px;
+    color: #d4d4d4;
+    margin: 0 0 20px 0;
+}
+
+.role-selector-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin: 0;
+}
+
+.role-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 12px;
+    background: white !important;
+    border: 2px solid #e0e0e0 !important;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: inherit;
+}
+
+.role-button:hover {
+    border-color: #0f62fe;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.role-button:active {
+    transform: translateY(0);
+}
+
+.role-icon {
+    font-size: 36px;
+    line-height: 1;
+}
+
+.role-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #161616 !important;
+}
+
+.role-reset-button {
+    display: block;
+    margin: 16px auto 0;
+    padding: 10px 24px;
+    background: transparent;
+    border: 1px solid #8d8d8d;
+    border-radius: 4px;
+    color: #161616;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: inherit;
+}
+
+.role-reset-button:hover {
+    background: #f4f4f4;
+    border-color: #161616;
+}
+
+/* Personalized Content Styles - Unified Card */
+.role-personalized-content {
+    margin: 24px 0;
+}
+
+.role-unified-card {
+    background: #ffffff !important;
+    border: 1px solid #e0e0e0 !important;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.role-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 24px;
+    background: #f4f4f4 !important;
+    border-bottom: 1px solid #e0e0e0 !important;
+}
+
+.role-card-header h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    color: #161616 !important;
+    font-weight: 400;
+    border: none;
+    border-bottom: none;
+}
+
+.role-header-icon {
+    font-size: 28px;
+}
+
+.role-header-img {
+    display: inline !important;
+    width: 28px;
+    height: 28px;
+    vertical-align: middle;
+    margin: 0 !important;
+}
+
+.role-header-text {
+    font-weight: 600;
+    color: inherit;
+}
+
+.role-change-button {
+    padding: 8px 16px;
+    background: transparent;
+    border: 1px solid #0f62fe;
+    border-radius: 4px;
+    color: #0f62fe;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: inherit;
+    white-space: nowrap;
+}
+
+.role-change-button:hover {
+    background: #0f62fe;
+    color: white;
+}
+
+.role-card-body {
+    padding: 24px;
+    background: #ffffff !important;
+}
+
+.role-first-task-section {
+    margin-bottom: 24px;
+}
+
+.role-first-task-section h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 12px 0;
+    color: #161616 !important;
+}
+
+.role-task-card {
+    display: block;
+    padding: 16px 20px;
+    background: linear-gradient(135deg, #0f62fe 0%, #0043ce 100%);
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.role-task-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(15, 98, 254, 0.3);
+}
+
+.role-task-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #ffffff;
+}
+
+.role-task-description {
+    font-size: 14px;
+    opacity: 0.95;
+    line-height: 1.4;
+    color: #ffffff;
+}
+
+.role-quick-links-section h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 12px 0;
+    color: #161616 !important;
+}
+
+.role-links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+}
+
+.role-quick-link {
+    display: block;
+    padding: 12px 16px;
+    background: #f4f4f4 !important;
+    border: 1px solid #e0e0e0 !important;
+    border-radius: 4px;
+    color: #161616 !important;
+    text-decoration: none;
+    font-weight: 400;
+    transition: all 0.2s ease;
+    font-size: 14px;
+}
+
+.role-quick-link:hover {
+    border-color: #0f62fe !important;
+    background: #e8f4ff !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .role-selector-container {
+        background: #262626 !important;
+        border-color: #525252 !important;
+    }
+    
+    .role-selector-title {
+        color: #f4f4f4 !important;
+    }
+    
+    .role-button {
+        background: #262626 !important;
+        border-color: #525252 !important;
+    }
+    
+    .role-button:hover {
+        border-color: #78a9ff !important;
+    }
+    
+    .role-name {
+        color: #f4f4f4 !important;
+    }
+    
+    .role-unified-card {
+        background: #262626;
+        border-color: #525252;
+    }
+    
+    .role-card-header {
+        background: #393939 !important;
+        border-bottom-color: #525252 !important;
+    }
+    
+    .role-card-header h2 {
+        color: #f4f4f4 !important;
+    }
+    
+    .role-card-body {
+        background: #262626 !important;
+    }
+    
+    .role-change-button {
+        border-color: #78a9ff !important;
+        color: #78a9ff !important;
+    }
+    
+    .role-change-button:hover {
+        background: #78a9ff !important;
+        color: #161616 !important;
+    }
+    
+    .role-first-task-section h3,
+    .role-quick-links-section h3 {
+        color: #f4f4f4 !important;
+    }
+    
+    .role-quick-link {
+        background: #393939 !important;
+        border-color: #525252 !important;
+        color: #f4f4f4 !important;
+    }
+    
+    .role-quick-link:hover {
+        background: #474747 !important;
+        border-color: #78a9ff !important;
+    }
+}
+
+/* ─── Was this page helpful? feedback widget ─────────────────────────────── */
+.page-feedback {
+    margin: 32px 0 16px;
+    padding: 16px 20px;
+    background: #f4f4f4;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+body[data-carbon-theme="g90"] .page-feedback,
+body[data-carbon-theme="g100"] .page-feedback {
+    background: #262626;
+}
+
+.page-feedback__question {
+    margin: 0;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: #161616;
+    flex-shrink: 0;
+}
+
+body[data-carbon-theme="g90"] .page-feedback__question,
+body[data-carbon-theme="g100"] .page-feedback__question {
+    color: #f4f4f4;
+}
+
+.page-feedback__buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.page-feedback__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    font-size: 0.875rem;
+    font-family: inherit;
+    font-weight: 400;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    border: 1px solid #e0e0e0;
+    background: #ffffff;
+    color: #161616;
+}
+
+.page-feedback__btn--yes:hover {
+    border-color: #198038;
+    background: #defbe6;
+    color: #0e6027;
+}
+
+.page-feedback__btn--no:hover {
+    border-color: #da1e28;
+    background: #fff1f1;
+    color: #a2191f;
+}
+
+body[data-carbon-theme="g90"] .page-feedback__btn,
+body[data-carbon-theme="g100"] .page-feedback__btn {
+    background: #393939;
+    border-color: #525252;
+    color: #f4f4f4;
+}
+
+body[data-carbon-theme="g90"] .page-feedback__btn--yes:hover,
+body[data-carbon-theme="g100"] .page-feedback__btn--yes:hover {
+    background: #071908;
+    border-color: #42be65;
+    color: #42be65;
+}
+
+body[data-carbon-theme="g90"] .page-feedback__btn--no:hover,
+body[data-carbon-theme="g100"] .page-feedback__btn--no:hover {
+    background: #2d0709;
+    border-color: #ff8389;
+    color: #ff8389;
+}
+
+.page-feedback__thanks {
+    margin: 0;
+    font-size: 0.9375rem;
+    color: #525252;
+    font-style: italic;
+}
+
+body[data-carbon-theme="g90"] .page-feedback__thanks,
+body[data-carbon-theme="g100"] .page-feedback__thanks {
+    color: #a8a8a8;
+}
+/* ── Feedback dialog ────────────────────────────────────────────────────── */
+
+.pf-dialog {
+    margin-top: 12px;
+    width: 100%;
+}
+
+.pf-dialog__inner {
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 20px 24px 16px;
+    max-width: 520px;
+}
+
+body[data-carbon-theme="g90"] .pf-dialog__inner,
+body[data-carbon-theme="g100"] .pf-dialog__inner {
+    background: #262626;
+    border-color: #393939;
+}
+
+.pf-dialog__close {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    line-height: 1;
+    cursor: pointer;
+    color: #525252;
+    padding: 2px 6px;
+}
+
+.pf-dialog__close:hover { color: #161616; }
+
+body[data-carbon-theme="g90"] .pf-dialog__close,
+body[data-carbon-theme="g100"] .pf-dialog__close { color: #a8a8a8; }
+
+body[data-carbon-theme="g90"] .pf-dialog__close:hover,
+body[data-carbon-theme="g100"] .pf-dialog__close:hover { color: #f4f4f4; }
+
+.pf-dialog__fieldset {
+    border: none;
+    margin: 0 0 16px;
+    padding: 0;
+}
+
+.pf-dialog__legend {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: #161616;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+body[data-carbon-theme="g90"] .pf-dialog__legend,
+body[data-carbon-theme="g100"] .pf-dialog__legend { color: #f4f4f4; }
+
+.pf-dialog__options {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.pf-dialog__options--hidden { display: none; }
+
+.pf-dialog__option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.875rem;
+    color: #161616;
+    cursor: pointer;
+}
+
+body[data-carbon-theme="g90"] .pf-dialog__option,
+body[data-carbon-theme="g100"] .pf-dialog__option { color: #f4f4f4; }
+
+.pf-dialog__option--inline { display: inline-flex; margin-right: 16px; }
+
+.pf-dialog__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+
+.pf-dialog__field {
+    margin-bottom: 16px;
+}
+
+.pf-dialog__label {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: #161616;
+    display: block;
+    margin-bottom: 6px;
+}
+
+body[data-carbon-theme="g90"] .pf-dialog__label,
+body[data-carbon-theme="g100"] .pf-dialog__label { color: #f4f4f4; }
+
+.pf-dialog__optional {
+    font-weight: 400;
+    color: #525252;
+    font-size: 0.8125rem;
+}
+
+body[data-carbon-theme="g90"] .pf-dialog__optional,
+body[data-carbon-theme="g100"] .pf-dialog__optional { color: #a8a8a8; }
+
+.pf-dialog__textarea {
+    width: 100%;
+    font-family: inherit;
+    font-size: 0.875rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 8px 10px;
+    resize: vertical;
+    background: #f4f4f4;
+    color: #161616;
+    box-sizing: border-box;
+}
+
+.pf-dialog__textarea:focus {
+    outline: 2px solid #0f62fe;
+    outline-offset: 0;
+    border-color: transparent;
+}
+
+body[data-carbon-theme="g90"] .pf-dialog__textarea,
+body[data-carbon-theme="g100"] .pf-dialog__textarea {
+    background: #393939;
+    border-color: #525252;
+    color: #f4f4f4;
+}
+
+.pf-dialog__actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 4px;
+}
+
+.pf-dialog__skip {
+    background: none;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 7px 16px;
+    font-size: 0.875rem;
+    font-family: inherit;
+    cursor: pointer;
+    color: #525252;
+}
+
+.pf-dialog__skip:hover { border-color: #8d8d8d; color: #161616; }
+
+body[data-carbon-theme="g90"] .pf-dialog__skip,
+body[data-carbon-theme="g100"] .pf-dialog__skip {
+    border-color: #525252;
+    color: #a8a8a8;
+}
+
+body[data-carbon-theme="g90"] .pf-dialog__skip:hover,
+body[data-carbon-theme="g100"] .pf-dialog__skip:hover { color: #f4f4f4; }
+
+.pf-dialog__submit {
+    background: #0f62fe;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 7px 16px;
+    font-size: 0.875rem;
+    font-family: inherit;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.pf-dialog__submit:hover { background: #0353e9; }
+
+/* ─────────────────────────────────────────────────────────────────────────── */
+
+/* ─── Copy table button ──────────────────────────────────────────────────── */
+.copy-table-wrapper {
+    position: relative;
+}
+
+.copy-table-btn {
+    position: absolute;
+    top: 4px;
+    right: 0;
+    padding: 3px 10px;
+    font-size: 0.75rem;
+    font-family: inherit;
+    font-weight: 500;
+    color: #525252;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+    /* Keep button above table content */
+    z-index: 1;
+}
+
+.copy-table-btn:hover {
+    background: #f4f4f4;
+    border-color: #8d8d8d;
+    color: #161616;
+}
+
+.copy-table-btn--copied {
+    color: #198038;
+    border-color: #198038;
+    background: #defbe6;
+}
+
+/* Dark mode */
+body[data-carbon-theme="g90"] .copy-table-btn,
+body[data-carbon-theme="g100"] .copy-table-btn {
+    background: #393939;
+    border-color: #525252;
+    color: #c6c6c6;
+}
+
+body[data-carbon-theme="g90"] .copy-table-btn:hover,
+body[data-carbon-theme="g100"] .copy-table-btn:hover {
+    background: #474747;
+    border-color: #a8a8a8;
+    color: #f4f4f4;
+}
+
+body[data-carbon-theme="g90"] .copy-table-btn--copied,
+body[data-carbon-theme="g100"] .copy-table-btn--copied {
+    color: #42be65;
+    border-color: #42be65;
+    background: #071908;
+}
+/* ─────────────────────────────────────────────────────────────────────────── */
+
+/* ─── Click-to-copy inline code ─────────────────────────────────────────── */
+.copy-inline-code {
+    cursor: pointer;
+    position: relative;
+}
+
+.copy-inline-code:hover {
+    outline: 1px solid #0f62fe;
+    outline-offset: 1px;
+}
+
+/* Confirmation tooltip */
+.copy-inline-tooltip {
+    position: absolute;
+    bottom: calc(100% + 4px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: #161616;
+    color: #f4f4f4;
+    font-size: 0.6875rem;
+    font-family: inherit;
+    font-style: normal;
+    padding: 2px 7px;
+    border-radius: 3px;
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.15s;
+    z-index: 100;
+}
+
+.copy-inline-tooltip--show {
+    opacity: 1;
+}
+
+/* Dark mode */
+body[data-carbon-theme="g90"] .copy-inline-code:hover,
+body[data-carbon-theme="g100"] .copy-inline-code:hover {
+    outline-color: #78a9ff;
+}
+
+body[data-carbon-theme="g90"] .copy-inline-tooltip,
+body[data-carbon-theme="g100"] .copy-inline-tooltip {
+    background: #f4f4f4;
+    color: #161616;
+}
+/* ─────────────────────────────────────────────────────────────────────────── */
