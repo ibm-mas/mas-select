@@ -57,6 +57,12 @@
     
     <script src="../../assets/javascripts/copy-inline-code.js"></script>
     
+    <script src="../../assets/javascripts/scroll-spy.js"></script>
+    
+    <script src="../../assets/javascripts/search-highlight.js"></script>
+    
+    <script src="../../assets/javascripts/csh.js"></script>
+    
     <script src="../../search/main.js"></script>
     
   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
@@ -67,8 +73,11 @@
         </style></head>
 
   <body class="md-grid" data-theme-default="g90">
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="cds--skip-to-content" tabindex="0">Skip to main content</a>
+
     <!-- Header -->
-    <cds-header aria-label="Maximo Application Suite Select help center" class="md-header">
+    <cds-header aria-label="Maximo Application Suite Select help center" class="md-header" role="banner">
       <cds-header-menu-button button-label-active="Close menu" button-label-inactive="Open menu"></cds-header-menu-button>
       <cds-header-name href="../.." prefix="IBM">Maximo Application Suite Select help center</cds-header-name>
 
@@ -107,7 +116,7 @@
     <!-- Main container with three-column layout -->
     <div class="md-container">
       <!-- Left sidebar - Navigation -->
-      <aside class="md-sidebar md-sidebar--primary" data-md-component="sidebar">
+      <aside class="md-sidebar md-sidebar--primary" data-md-component="sidebar" role="navigation" aria-label="Main Navigation">
         <div class="md-sidebar__scrollwrap">
           <div class="md-sidebar__inner">
             <cds-side-nav aria-label="Side navigation">
@@ -996,11 +1005,23 @@
                   }
               });
           });
+          document.querySelectorAll('cds-side-nav-menu-item').forEach(function(item) {
+              item.addEventListener('click', function() {
+                  var query = input.value.trim();
+                  if (query) {
+                      var href = item.getAttribute('href');
+                      if (href && !href.includes('highlight=')) {
+                          var sep = href.includes('?') ? '&' : '?';
+                          item.setAttribute('href', href + sep + 'highlight=' + encodeURIComponent(query));
+                      }
+                  }
+              });
+          });
       })();
       </script>
 
       <!-- Main content area -->
-      <div class="md-content" data-md-component="content">
+      <main id="main-content" class="md-content" data-md-component="content" tabindex="-1">
         <article class="md-content__inner">
           <!-- Breadcrumbs -->
           <div class="md-breadcrumbs"><cds-breadcrumb no-trailing-slash="">
@@ -1059,7 +1080,7 @@
 <li>Go to your work queue or mobile app</li>
 <li>Look for work assigned to you</li>
 <li>Open the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr>
-  <span class="see-also"><img src="../../images/info_light_mode.png" class="no-lightbox info-icon" alt=""> <span class="see-also-text">Need help finding your work? See <a href="find-work.md">How do I find my work?</a></span></span></li>
+  <span class="see-also"><img src="../../images/info_light_mode.png" class="no-lightbox info-icon" alt=""> <span class="see-also-text">Need help finding your work? See <a href="find-work.html">How do I find my work?</a></span></span></li>
 </ul>
 <h3 id="step-2-start-the-work">Step 2: Start the work<a class="headerlink" href="#step-2-start-the-work" title="Permanent link">¤</a></h3>
 <ul>
@@ -1087,7 +1108,7 @@
 <li>Add parts from <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">inventory</abbr></li>
 <li>System tracks costs automatically</li>
 <li>Request more parts if needed
-  <span class="see-also"><img src="../../images/info_light_mode.png" class="no-lightbox info-icon" alt=""> <span class="see-also-text">Learn how to <a href="../manage-inventory/issue-parts.md">issue parts to a job</a> for detailed instructions on recording materials.</span></span></li>
+  <span class="see-also"><img src="../../images/info_light_mode.png" class="no-lightbox info-icon" alt=""> <span class="see-also-text">Learn how to <a href="../manage-inventory/issue-parts.html">issue parts to a job</a> for detailed instructions on recording materials.</span></span></li>
 </ul>
 <p><strong>Confirm time:</strong></p>
 <ul>
@@ -1169,7 +1190,7 @@
 <li>Poor data leads to repeated failures and inefficient maintenance</li>
 </ul>
 <hr>
-<p><span class="see-also"><img src="../../images/info_light_mode.png" class="no-lightbox info-icon" alt=""> <span class="see-also-text">Having trouble completing work? Check <a href="cant-complete-task.md">What if I can't complete a task?</a> for common issues and solutions.</span></span></p>
+<p><span class="see-also"><img src="../../images/info_light_mode.png" class="no-lightbox info-icon" alt=""> <span class="see-also-text">Having trouble completing work? Check <a href="cant-complete-task.html">What if I can't complete a task?</a> for common issues and solutions.</span></span></p>
 <hr>
 <p>Once this feels routine, you'll move through your work queue with confidence — and spend less time wondering what to do next.</p>
 <h2 id="continue-building-your-skills">Continue building your skills<a class="headerlink" href="#continue-building-your-skills" title="Permanent link">¤</a></h2>
@@ -1213,10 +1234,10 @@
   </div>
 </nav>
         </article>
-      </div>
+      </main>
 
       <!-- Right sidebar - Table of Contents -->
-      <aside class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+      <aside class="md-sidebar md-sidebar--secondary" data-md-component="toc" role="complementary" aria-label="Table of contents">
 <nav class="md-sidebar md-sidebar--secondary" aria-label="Table of contents">
   <div class="md-sidebar__scrollwrap">
     <div class="md-sidebar__inner">
@@ -1316,7 +1337,7 @@
     </div>
 
     <!-- Footer - Full width outside container -->
-    <footer class="md-footer">
+    <footer class="md-footer" role="contentinfo">
       Built with <a href="https://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/durera/mkdocs-carbon">Carbon theme</a>
     </footer>
   
