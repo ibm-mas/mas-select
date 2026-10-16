@@ -1,7 +1,7 @@
 site_name: Maximo Application Suite Select help center
 site_url: https://ibm-mas.github.io/mas-select/
 site_description: Journey-based documentation for Maximo Application Suite Select
-site_author: Yvette Harrington
+site_author: IBM
 use_directory_urls: false
 
 # GitHub Pages configuration
@@ -28,7 +28,7 @@ theme:
 extra_css:
   - assets/stylesheets/extra.css
 
-# Extra JavaScript for tooltips and navigation search
+# Extra JavaScript for tooltips, search enhancements, CSH, and navigation
 extra_javascript:
   - assets/javascripts/role-selector.js
   - assets/javascripts/abbr-tooltips.js
@@ -37,6 +37,9 @@ extra_javascript:
   - assets/javascripts/page-feedback.js
   - assets/javascripts/copy-table.js
   - assets/javascripts/copy-inline-code.js
+  - assets/javascripts/scroll-spy.js
+  - assets/javascripts/search-highlight.js
+  - assets/javascripts/csh.js
 
 # Plugins
 plugins:

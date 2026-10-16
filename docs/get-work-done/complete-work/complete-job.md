@@ -27,7 +27,7 @@ The system tracks your time and parts automatically. Good records help everyone.
 - Go to your work queue or mobile app
 - Look for work assigned to you
 - Open the work order
-  <span class="see-also"><img src="../../images/info_light_mode.png" class="no-lightbox info-icon" alt=""> <span class="see-also-text">Need help finding your work? See <a href="find-work.md">How do I find my work?</a></span></span>
+  <span class="see-also"><img src="../../images/info_light_mode.png" class="no-lightbox info-icon" alt=""> <span class="see-also-text">Need help finding your work? See <a href="find-work.html">How do I find my work?</a></span></span>
 
 ### Step 2: Start the work
 
@@ -56,7 +56,7 @@ The system tracks your time and parts automatically. Good records help everyone.
 - Add parts from inventory
 - System tracks costs automatically
 - Request more parts if needed
-  <span class="see-also"><img src="../../images/info_light_mode.png" class="no-lightbox info-icon" alt=""> <span class="see-also-text">Learn how to <a href="../manage-inventory/issue-parts.md">issue parts to a job</a> for detailed instructions on recording materials.</span></span>
+  <span class="see-also"><img src="../../images/info_light_mode.png" class="no-lightbox info-icon" alt=""> <span class="see-also-text">Learn how to <a href="../manage-inventory/issue-parts.html">issue parts to a job</a> for detailed instructions on recording materials.</span></span>
 
 **Confirm time:**
 
@@ -151,7 +151,7 @@ After you mark complete:
 
 ---
 
-<span class="see-also"><img src="../../images/info_light_mode.png" class="no-lightbox info-icon" alt=""> <span class="see-also-text">Having trouble completing work? Check <a href="cant-complete-task.md">What if I can't complete a task?</a> for common issues and solutions.</span></span>
+<span class="see-also"><img src="../../images/info_light_mode.png" class="no-lightbox info-icon" alt=""> <span class="see-also-text">Having trouble completing work? Check <a href="cant-complete-task.html">What if I can't complete a task?</a> for common issues and solutions.</span></span>
 
 ---
 

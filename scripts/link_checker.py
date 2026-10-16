@@ -21,7 +21,7 @@ def extract_title(content: str) -> str:
     return ""
 
 def extract_links(content: str, filepath: str) -> List[Tuple[str, str, int]]:
-    """Extract all markdown links from content.
+    """Extract all markdown and HTML links from content.
     Returns list of (link_text, link_url, line_number)
     """
     links = []
@@ -32,21 +32,33 @@ def extract_links(content: str, filepath: str) -> List[Tuple[str, str, int]]:
             link_text = match.group(1)
             link_url = match.group(2)
             links.append((link_text, link_url, i))
+        
+        # Find all <a href="..."> patterns
+        for match in re.finditer(r'<a\s+[^>]*href=["\']([^"\']+)["\'][^>]*>(.*?)</a>', line, re.IGNORECASE):
+            link_url = match.group(1)
+            link_text = re.sub(r'<[^>]+>', '', match.group(2)).strip()
+            links.append((link_text or link_url, link_url, i))
     return links
 
 def resolve_link_path(source_file: Path, link_url: str) -> Path:
     """Resolve a relative link URL to an absolute path."""
-    if link_url.startswith('http://') or link_url.startswith('https://'):
+    if link_url.startswith('http://') or link_url.startswith('https://') or link_url.startswith('mailto:') or link_url.startswith('javascript:'):
         return None  # External link
     
-    # Remove anchor if present
-    link_path = link_url.split('#')[0]
-    if not link_path:
+    # Remove query and anchor if present
+    link_path = link_url.split('#')[0].split('?')[0]
+    if not link_path or link_path == '#':
         return None  # Just an anchor
     
     # Resolve relative to source file
     source_dir = source_file.parent
     target_path = (source_dir / link_path).resolve()
+
+    # If referencing .html, check if either .html or .md exists in docs
+    if not target_path.exists() and link_path.endswith('.html'):
+        md_variant = target_path.with_suffix('.md')
+        if md_variant.exists():
+            return md_variant
     
     return target_path
 
@@ -158,7 +170,10 @@ def check_links():
         print("=" * 80)
         print()
         for source, text, url, line in sorted(broken_links):
-            rel_source = source.relative_to(Path.cwd())
+            try:
+                rel_source = source.resolve().relative_to(Path.cwd().resolve())
+            except ValueError:
+                rel_source = source
             print(f"File: {rel_source}:{line}")
             print(f"  Link text: '{text}'")
             print(f"  Target: {url}")

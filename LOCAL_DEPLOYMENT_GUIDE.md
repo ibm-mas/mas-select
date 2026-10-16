@@ -35,7 +35,7 @@ mas-select/
 
 ```bash
 # Navigate to project directory
-cd /Users/yvetteharrington/Documents/GitHub/mas-select
+cd mas-select
 
 # Install Python packages
 pip3 install -r requirements.txt
@@ -58,7 +58,7 @@ python3 -m mkdocs build
 ```
 - Generates static HTML in `/site` directory
 - Takes ~1 second to build
-- Output: `/Users/yvetteharrington/Documents/GitHub/mas-select/site`
+- Output: `./site`
 
 #### Serve Locally (Development Server)
 ```bash

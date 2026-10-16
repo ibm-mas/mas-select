@@ -9,7 +9,7 @@ The easiest way to generate a complete PDF with all pages is to use the provided
 **What to do:**
 
 ```bash
-cd /Users/yvetteharrington/Documents/GitHub/user_centered_doc
+cd mas-select
 python3 scripts/generate-pdf-complete.py
 ```
 

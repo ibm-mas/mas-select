@@ -72,6 +72,20 @@
                 });
             }
         });
+
+        // Pass highlight parameter when clicking a filtered navigation item
+        document.querySelectorAll('cds-side-nav-menu-item').forEach(function(item) {
+            item.addEventListener('click', function(e) {
+                var query = searchInput.value.trim();
+                if (query) {
+                    var href = item.getAttribute('href');
+                    if (href && !href.includes('highlight=')) {
+                        var separator = href.includes('?') ? '&' : '?';
+                        item.setAttribute('href', href + separator + 'highlight=' + encodeURIComponent(query));
+                    }
+                }
+            });
+        });
     }
     
     // Start trying to add the search bar

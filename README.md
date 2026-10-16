@@ -2,13 +2,6 @@
 
 User-facing documentation for **IBM Maximo Application Suite Select** — a task-based, search-first help experience designed for field technicians, supervisors, inventory clerks, and administrators.
 
-## Project Context
-
-For detailed project information, working preferences, and AI guidance, see the **[wiki](_context/wiki/index.md)**:
-
-- **[project.md](_context/wiki/project.md)** — What the project is, goals, users, IA model, tech stack
-- **[preferences.md](_context/wiki/preferences.md)** — Working standards, tone, content conventions, AI guidance
-
 ## Repository Structure
 
 ```
@@ -20,10 +13,8 @@ mas-select/
 │   ├── start-fast/         # Onboarding and basics
 │   ├── get-answers/        # Quick reference pages
 │   └── assets/             # JS, CSS, images
-├── _context/               # Project context and AI guidance
-│   ├── wiki/               # Project documentation
-│   └── prompts/            # Content creation templates
 ├── scripts/                # Build and utility scripts
+├── tools/                  # Theme overrides and templates
 ├── mkdocs.yml              # MkDocs configuration
 ├── requirements.txt        # Python dependencies
 └── README.md               # This file
@@ -57,50 +48,30 @@ See **[GITHUB_PAGES_DEPLOYMENT_GUIDE.md](GITHUB_PAGES_DEPLOYMENT_GUIDE.md)** for
 
 ## Working with Content
 
-### Creating New Topics
-
-See **[_context/prompts/new-topic.md](_context/prompts/new-topic.md)** for the content creation template.
-
 ### Editing Content
 
 1. Edit Markdown files in `docs/`
-2. Follow conventions in **[preferences.md](_context/wiki/preferences.md)**
-3. Test locally with `mkdocs serve`
-4. Commit and push changes
+2. Test locally with `python3 -m mkdocs serve`
+3. Commit and push changes
 
 ### Navigation Structure
 
-The navigation in `mkdocs.yml` is **journey-based and intentional**. Do not reorganize without understanding the IA model. See [project.md](_context/wiki/project.md) for details.
+The navigation in `mkdocs.yml` is **journey-based and intentional**.
 
 ## Tech Stack
 
-- **MkDocs Material** with Carbon theme
-- **Custom JavaScript** for role filtering, search, tooltips
-- **Custom CSS** for visual enhancements
-- **Markdown** for all content
-
-See [project.md](_context/wiki/project.md) for complete tech details.
+- **MkDocs** with Carbon Design System styling
+- **Custom JavaScript** for role filtering, search, and tooltips
+- **Custom CSS** for layout and Carbon token alignment
+- **Markdown** for all documentation content
 
 ## Key Features
 
-- **Role-based filtering** — Users can filter content by their role
-- **Search-first design** — Optimized for how users actually search
-- **Journey-based navigation** — Organized by job-to-be-done, not features
+- **Role-based filtering** — Users can filter content by their role (technician, supervisor, clerk, administrator)
+- **Search-first design** — Optimized for direct search queries
+- **Journey-based navigation** — Organized by job-to-be-done rather than system menus
 - **Question-based page titles** — Pages answer user questions directly
-
-## Working with AI
-
-This project is designed to work with AI assistants. See **[preferences.md](_context/wiki/preferences.md)** for:
-
-- Tone and voice guidelines
-- Content conventions
-- IA rules
-- What's useful vs. what to avoid
 
 ## Project Status
 
-Pre-release. MAS Select has not yet launched publicly.
-
----
-
-**For detailed guidance, always check the [wiki](_context/wiki/index.md) first.**
+Pre-release documentation.

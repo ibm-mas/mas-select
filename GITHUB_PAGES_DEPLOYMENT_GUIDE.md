@@ -48,7 +48,7 @@ This is the simplest and most reliable method:
 
 ```bash
 # Navigate to project directory
-cd /Users/yvetteharrington/Documents/GitHub/mas-select
+cd mas-select
 
 # Deploy to GitHub Pages
 python3 -m mkdocs gh-deploy --force
@@ -185,7 +185,7 @@ Key settings for GitHub Pages deployment:
 site_name: Maximo Application Suite Select help center
 site_url: https://ibm-mas.github.io/mas-select/
 site_description: Journey-based documentation for Maximo Application Suite Select
-site_author: Yvette Harrington
+site_author: IBM
 use_directory_urls: false
 
 # Repository

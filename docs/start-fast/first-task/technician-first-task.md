@@ -25,7 +25,7 @@ Prefer to learn in the application? Log in and open your Operational dashboard t
 1. Log into Maximo Application Suite Select.
 2. Go to Work Orders or My Assigned Work.
 3. Choose a simple work order to start (look for status "Assigned" or "In Progress").
-   <span class="see-also"><img src="../../images/info_light_mode.png" class="no-lightbox info-icon" alt=""> <span class="see-also-text">New to work orders? Learn <a href="../basics/what-is-work-order.md">What is a work order?</a> to understand the basics.</span></span>
+   <span class="see-also"><img src="../../images/info_light_mode.png" class="no-lightbox info-icon" alt=""> <span class="see-also-text">New to work orders? Learn <a href="../basics/what-is-work-order.html">What is a work order?</a> to understand the basics.</span></span>
 
 4. Click to open the work order details.
 5. Change status to "In Progress".
@@ -35,7 +35,7 @@ Prefer to learn in the application? Log in and open your Operational dashboard t
 9. Add notes about what you did.
 10. Record time spent (labor hours).
 11. Add any parts you used.
-    <span class="see-also"><img src="../../images/info_light_mode.png" class="no-lightbox info-icon" alt=""> <span class="see-also-text">Need to request parts? See <a href="../../get-work-done/manage-inventory/issue-parts.md">How do I issue parts to a job?</a></span></span>
+    <span class="see-also"><img src="../../images/info_light_mode.png" class="no-lightbox info-icon" alt=""> <span class="see-also-text">Need to request parts? See <a href="../../get-work-done/manage-inventory/issue-parts.html">How do I issue parts to a job?</a></span></span>
 
 12. Update meter readings if applicable.
 13. Change status to "Completed".

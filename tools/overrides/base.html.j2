@@ -50,8 +50,11 @@
   </head>
 
   <body class="md-grid" data-theme-default="{{ config.theme.theme_default | default('g90') }}">
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="cds--skip-to-content" tabindex="0">Skip to main content</a>
+
     <!-- Header -->
-    <cds-header aria-label="{{ config.site_name }}" class="md-header">
+    <cds-header aria-label="{{ config.site_name }}" class="md-header" role="banner">
       <cds-header-menu-button button-label-active="Close menu" button-label-inactive="Open menu"></cds-header-menu-button>
       <cds-header-name href="{{ base_url }}" prefix="{{ config.theme.prefix }}">{{ config.site_name }}</cds-header-name>
 
@@ -78,7 +81,7 @@
     <!-- Main container with three-column layout -->
     <div class="md-container" {% if page and page.meta and page.meta.widescreen %}data-widescreen="true"{% endif %}>
       <!-- Left sidebar - Navigation -->
-      <aside class="md-sidebar md-sidebar--primary" data-md-component="sidebar">
+      <aside class="md-sidebar md-sidebar--primary" data-md-component="sidebar" role="navigation" aria-label="Main Navigation">
         <div class="md-sidebar__scrollwrap">
           <div class="md-sidebar__inner">
             <cds-side-nav aria-label="Side navigation">
@@ -122,11 +125,23 @@
                   }
               });
           });
+          document.querySelectorAll('cds-side-nav-menu-item').forEach(function(item) {
+              item.addEventListener('click', function() {
+                  var query = input.value.trim();
+                  if (query) {
+                      var href = item.getAttribute('href');
+                      if (href && !href.includes('highlight=')) {
+                          var sep = href.includes('?') ? '&' : '?';
+                          item.setAttribute('href', href + sep + 'highlight=' + encodeURIComponent(query));
+                      }
+                  }
+              });
+          });
       })();
       </script>
 
       <!-- Main content area -->
-      <div class="md-content" data-md-component="content">
+      <main id="main-content" class="md-content" data-md-component="content" tabindex="-1">
         <article class="md-content__inner">
           <!-- Breadcrumbs -->
           <div class="md-breadcrumbs">
@@ -143,18 +158,18 @@
           <!-- Navigation footer (prev/next) -->
           {%- include "nav-footer.html.j2" %}
         </article>
-      </div>
+      </main>
 
       <!-- Right sidebar - Table of Contents -->
       {%- if page and page.toc and page.toc.items and not (page.meta and page.meta.widescreen) %}
-      <aside class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+      <aside class="md-sidebar md-sidebar--secondary" data-md-component="toc" role="complementary" aria-label="Table of contents">
         {%- include "toc.html.j2" %}
       </aside>
       {%- endif %}
     </div>
 
     <!-- Footer - Full width outside container -->
-    <footer class="md-footer">
+    <footer class="md-footer" role="contentinfo">
       Built with <a href="https://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/durera/mkdocs-carbon">Carbon theme</a>
     </footer>
   </body>

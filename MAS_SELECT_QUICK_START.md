@@ -7,7 +7,7 @@ Use this prompt to quickly get Bob working on the MAS Select documentation proje
 ## **Recommended Prompt:**
 
 ```
-I'm working on the MAS Select documentation project at /Users/yvetteharrington/Documents/GitHub/mas-select.
+I'm working on the MAS Select documentation project in the mas-select repository.
 
 Project context:
 - Read LOCAL_DEPLOYMENT_GUIDE.md for local development setup
