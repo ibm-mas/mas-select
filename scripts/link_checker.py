@@ -84,17 +84,39 @@ def check_links():
     print(f"📊 Found {len(all_files)} markdown files")
     print()
     
-    # Second pass: check all links
+    # Second pass: check all links and privacy/sensitivity violations
     broken_links = []
     title_mismatches = []
     external_links = []
     anchor_only_links = []
     all_internal_links = []
+    privacy_violations = []
+
+    internal_url_patterns = [
+        re.compile(r'https?://[a-zA-Z0-9.-]*ibm\.com[^\s\)]*', re.IGNORECASE),
+        re.compile(r'https?://[a-zA-Z0-9.-]*box\.com[^\s\)]*', re.IGNORECASE),
+        re.compile(r'https?://[a-zA-Z0-9.-]*slack\.com[^\s\)]*', re.IGNORECASE)
+    ]
+    allowed_domains = ['ibm.com/docs', 'www.ibm.com/docs', 'www.ibm.com/brand', 'pushnotification.suite.maximo.com']
+    email_pattern = re.compile(r'[a-zA-Z0-9._%+-]+@(?:[a-zA-Z0-9-]+\.)*ibm\.com', re.IGNORECASE)
     
     for source_file in sorted(all_files):
         with open(source_file, 'r', encoding='utf-8') as f:
             content = f.read()
             links = extract_links(content, str(source_file))
+
+            # Check for privacy / PPI violations in file lines
+            for line_idx, line_text in enumerate(content.split('\n'), 1):
+                # Check for internal emails
+                for email_match in email_pattern.finditer(line_text):
+                    privacy_violations.append((source_file, line_idx, f"Internal email address detected: {email_match.group(0)}"))
+                
+                # Check for internal URLs
+                for pattern in internal_url_patterns:
+                    for match in pattern.finditer(line_text):
+                        url = match.group(0)
+                        if not any(allowed in url for allowed in allowed_domains):
+                            privacy_violations.append((source_file, line_idx, f"Internal or non-allowlisted URL detected: {url}"))
             
             for link_text, link_url, line_num in links:
                 # Skip images
@@ -202,6 +224,24 @@ def check_links():
         print("✅ All link texts appear appropriate!")
         print()
     
+    # Report privacy / sensitivity violations
+    if privacy_violations:
+        print("=" * 80)
+        print("🔒 PRIVACY & SENSITIVITY VIOLATIONS")
+        print("=" * 80)
+        print()
+        for source, line_num, msg in sorted(privacy_violations):
+            try:
+                rel_source = source.resolve().relative_to(Path.cwd().resolve())
+            except ValueError:
+                rel_source = source
+            print(f"File: {rel_source}:{line_num}")
+            print(f"  ⚠️  {msg}")
+            print()
+    else:
+        print("🔒 Privacy & Sensitivity: No internal emails or restricted internal URLs found!")
+        print()
+
     # Report external links
     if external_links:
         print("=" * 80)
@@ -210,7 +250,7 @@ def check_links():
         print()
         for source, text, url, line in sorted(external_links):
             try:
-                rel_source = source.relative_to(Path.cwd())
+                rel_source = source.resolve().relative_to(Path.cwd().resolve())
             except ValueError:
                 rel_source = source
             print(f"File: {rel_source}:{line}")

@@ -35,6 +35,29 @@
 3. **Validation**:
    - Run `python3 scripts/link_checker.py` before committing to verify all internal and HTML links.
 
+---
+
+## 🔒 Public Repository Content & Privacy Policy
+
+This repository is publicly accessible on GitHub. All contributors and documentation authors must strictly adhere to the following rules:
+
+### 1. No Personally Identifiable Information (PPI / PII)
+- **No employee names**: Never use real employee names, author bylines, or team member names in public documentation files.
+- **No internal email addresses**: Never include `@ibm.com`, `@ie.ibm.com`, or personal email addresses.
+- **Generic Personas Only**: Always use role-based titles (*Technician*, *Supervisor*, *Inventory Clerk*, *Administrator*).
+- **Example Data**: When writing examples that require names or emails, always use standard RFC dummy values (e.g., `user@example.com`, `alex.technician@example.com`).
+
+### 2. No Internal URLs or Hostnames
+- Never reference internal IBM intranet URLs (`w3.ibm.com`, `github.ibm.com`, `cww.ibm.com`, `*.internal`).
+- Never link to internal Box, Slack channels, internal Jira boards, or pre-GA staging instances.
+- All public external links must point to official public IBM Documentation (`ibm.com/docs`) or public GitHub resources.
+
+### 3. No Secrets or Environment Credentials
+- Never commit API keys, webhook URLs, personal access tokens (PATs), passwords, recovery codes, or private certificates.
+- Never commit internal strategy documents (`.docx`, `.pptx`, `.xlsx`) or planning drafts containing unannounced product details or customer confidential data.
+
+---
+
 ## Writing Examples
 
 ### Example 1: Basic Concept
