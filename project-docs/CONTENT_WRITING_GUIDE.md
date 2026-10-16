@@ -21,6 +21,20 @@
 - [Link to advanced topic]
 ```
 
+### Linking Rules
+
+1. **Standard Markdown Links**:
+   - Always use `.md` extension in markdown syntax: `[What is an asset?](../basics/what-is-asset.md)`.
+   - MkDocs will automatically convert these to `.html` in the build output.
+
+2. **Raw HTML Blocks & Custom Spans**:
+   - When writing links inside HTML tags (such as `<span class="see-also">` or `<div>`), **always use `.html`**:
+     `<span class="see-also">Learn more in <a href="../basics/what-is-asset.html">What is an asset?</a></span>`
+   - *Reason*: MkDocs does not convert URLs inside raw HTML tags. Using `.md` inside `<a href="...">` causes 404 errors on the live site.
+
+3. **Validation**:
+   - Run `python3 scripts/link_checker.py` before committing to verify all internal and HTML links.
+
 ## Writing Examples
 
 ### Example 1: Basic Concept

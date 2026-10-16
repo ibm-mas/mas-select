@@ -50,8 +50,11 @@ This is the simplest and most reliable method:
 # Navigate to project directory
 cd mas-select
 
-# Deploy to GitHub Pages
-python3 -m mkdocs gh-deploy --force
+# 1. Run link checker to verify all links
+python3 scripts/link_checker.py
+
+# 2. Deploy to GitHub Pages (Note: IBM Vault Radar security scan runs in the background and takes ~60-90s)
+python3 -m mkdocs gh-deploy
 ```
 
 **What this does:**
@@ -209,7 +212,17 @@ To verify GitHub Pages is enabled:
 
 ## Troubleshooting
 
+### Terminal Appears Paused During `git push` or `gh-deploy`
+
+**Cause:** IBM Vault Radar pre-push security hook is scanning repository commits for credentials before transmitting.
+
+**Solution:** Do not terminate the process. Allow 60–90 seconds for Vault Radar to complete and exit cleanly.
+
 ### Deployment Fails
+
+**Error:** `! [remote rejected] gh-pages -> gh-pages (failure)` or `fatal error in commit_refs`
+
+**Solution:** Remove `--force`. Use standard `python3 -m mkdocs gh-deploy` which fast-forwards commits cleanly.
 
 **Error:** `Permission denied (publickey)`
 

@@ -108,6 +108,12 @@ clean_build() {
 # Function to build the site
 build_site() {
     print_header "Building Documentation Site"
+
+    # Run link checker before build
+    if [ -f "scripts/link_checker.py" ]; then
+        print_info "Running link checker..."
+        python3 scripts/link_checker.py
+    fi
     
     # Create a temporary file to track file changes
     local temp_file_list="/tmp/mkdocs_files_before.txt"
@@ -247,13 +253,14 @@ deploy_site() {
             read -p "Enter commit message: " commit_msg
             git add -A
             git commit -m "$commit_msg"
-            git push origin main
-            print_success "Changes committed and pushed to main branch"
+            print_info "Pushing master branch (IBM Vault Radar pre-push scan may take ~60-90s)..."
+            git push origin master
+            print_success "Changes committed and pushed to master branch"
         fi
     fi
     
-    print_info "Deploying to gh-pages branch..."
-    if python3 -m mkdocs gh-deploy --force; then
+    print_info "Deploying to gh-pages branch (IBM Vault Radar scan will run in background)..."
+    if python3 -m mkdocs gh-deploy; then
         print_success "Site deployed successfully to GitHub Pages"
         print_info "Deployed to the gh-pages branch"
         print_info "Note: It may take 1-2 minutes for changes to appear"
