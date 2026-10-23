@@ -10,8 +10,9 @@ Whether you're fixing equipment, tracking parts, or planning preventive maintena
 
 ## What can I do as a technician?
 
-- View your assigned work orders
+- View your assigned work orders in the Technician app
 - Complete tasks and record what you did
+- Complete inspections in the Inspections app
 - Report time and materials used
 - Request parts from inventory
 - Add notes and photos to work orders
@@ -23,7 +24,7 @@ Whether you're fixing equipment, tracking parts, or planning preventive maintena
 
 ## What can I do as a supervisor?
 
-- Create and assign work orders
+- Create and assign work orders in the Work Orders application
 - Schedule preventive maintenance
 - Track work progress and completion
 - Monitor team workload
@@ -36,12 +37,14 @@ Whether you're fixing equipment, tracking parts, or planning preventive maintena
 
 ## What can I do as an inventory clerk?
 
-- Issue parts to work orders
+- Issue parts to work orders in the Issues and Transfers app
 - Track stock levels and locations
 - Receive new inventory
-- Perform stock counts
+- Perform stock counts in the Inventory Counting app
 - Monitor part usage
 - [Issue parts and receive inventory on the go with IBM Maximo Mobile](../first-task/get-maximo-mobile.md)
+
+`[TO DO: Confirm whether MAS Select includes the Receiving app. If not, remove "receive inventory" here.]`
 
 **First task**: [Issue a part](../first-task/inventory-clerk-first-task.md)
 

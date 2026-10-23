@@ -1,0 +1,60 @@
+# Glossary and do-not-translate list for the MAS Select help center.
+#
+# DRAFT for the French pilot. Terms must be reviewed by a native speaker and
+# aligned with the localized MAS Select UI strings once those are available.
+
+version: 1
+
+# Terms that must appear exactly as written in every translation of a segment
+# that contains them. The script rejects a translation that changes them.
+do_not_translate:
+  product_names:
+    - Maximo Application Suite Select
+    - Maximo Application Suite
+    - IBM Maximo Mobile
+    - Maximo Mobile
+    - IBM
+    - SaaS
+    - App Store
+    - Google Play
+  # UI labels stay in English until the localized UI strings are available
+  # (open question 4 in project-docs/translation-plan.md).
+  ui_labels:
+    - Create user
+    - Select groups
+    - Work Orders
+    - My Assigned Work
+    - Operational dashboard
+    - '"Assigned"'
+    - '"In Progress"'
+    - '"Completed"'
+
+# Approved translations. Used as guidance when translating. Draft values.
+terms:
+  fr:
+    work order: ordre de travail
+    work orders: ordres de travail
+    asset: actif
+    assets: actifs
+    parent asset: actif parent
+    child asset: actif enfant
+    location: emplacement
+    locations: emplacements
+    preventive maintenance: maintenance préventive
+    corrective maintenance: maintenance corrective
+    job plan: plan de travail
+    labor: main-d'œuvre
+    craft: métier
+    crew: équipe
+    security group: groupe de sécurité
+    storeroom: magasin
+    inventory: inventaire
+    inventory clerk: magasinier
+    technician: technicien
+    supervisor: superviseur
+    administrator: administrateur
+    requester: demandeur
+    meter reading: relevé de compteur
+    downtime: temps d'arrêt
+    help center: centre d'aide
+    status: statut

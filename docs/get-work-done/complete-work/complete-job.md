@@ -24,7 +24,7 @@ The system tracks your time and parts automatically. Good records help everyone.
 
 ### Step 1: Find and open your work order
 
-- Go to your work queue or mobile app
+- Go to the Technician app, from **Work Orders > Technician** on the desktop or in IBM Maximo Mobile. You can also use the Work Orders application.
 - Look for work assigned to you
 - Open the work order
   <span class="see-also"><img src="../../images/info_light_mode.png" class="no-lightbox info-icon" alt=""> <span class="see-also-text">Need help finding your work? See <a href="find-work.html">How do I find my work?</a></span></span>
@@ -109,6 +109,8 @@ Good notes help everyone:
 
 ## Using checklists
 
+For inspections, go to the Inspections app, from **Work Orders > Inspections** on the desktop or in IBM Maximo Mobile. For more information, see [How do inspections work?](../../start-fast/basics/how-inspections-work.md)
+
 If your work order has a checklist:
 
 - Complete each item as you go
@@ -127,6 +129,10 @@ On the mobile app:
 - Complete tasks and add notes offline
 - Take photos (saved on your device)
 - Changes sync when you're back online
+
+For more detail, see [What happens when I'm offline in IBM Maximo Mobile?](../../start-fast/basics/what-happens-offline.md)
+
+To see the whole job in IBM Maximo Mobile, watch the video on [Technician: Complete your first work order](../../start-fast/first-task/technician-first-task.md).
 
 ---
 

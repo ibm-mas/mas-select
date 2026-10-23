@@ -62,6 +62,8 @@ You've successfully issued your first part when:
 
 Take your work with you. IBM Maximo Mobile lets you issue parts, receive inventory, and transfer items between storerooms from your phone or tablet.
 
+`[TO DO: Confirm whether MAS Select includes the Receiving app. If not, remove "receive inventory" here.]`
+
 [How do I get IBM Maximo Mobile?](get-maximo-mobile.md)
 
 Every part you issue accurately means one less discrepancy to chase down later — good habits here make inventory reliable for everyone.

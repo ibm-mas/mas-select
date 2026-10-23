@@ -21,6 +21,8 @@ theme:
   name: carbon
   prefix: IBM
   custom_dir: tools/overrides
+  # One search page per language (docs/search.md, tools/overrides/search.html)
+  include_search_page: false
   features:
     - content.code.copy
 
@@ -43,6 +45,106 @@ extra_javascript:
 
 # Plugins
 plugins:
+  - i18n:
+      docs_structure: suffix
+      fallback_to_default: true
+      reconfigure_material: false
+      languages:
+        - locale: en
+          name: English
+          default: true
+          build: true
+        - locale: fr
+          name: Français
+          build: true
+          site_name: Centre d'aide de Maximo Application Suite Select
+          site_description: Documentation orientée parcours pour Maximo Application Suite Select
+          nav_translations:
+            Home: Accueil
+            Start fast: Démarrer rapidement
+            Your role: Votre rôle
+            First task: Première tâche
+            'Technician: Complete your first work order': 'Technicien : terminer votre premier ordre de travail'
+            'Supervisor: Assign and track work': 'Superviseur : affecter et suivre le travail'
+            'Inventory clerk: Issue a part': 'Magasinier : sortir une pièce'
+            'Administrator: Add users': 'Administrateur : ajouter des utilisateurs'
+            Get Maximo Mobile: Obtenir Maximo Mobile
+            Basic concepts: Concepts de base
+            Overview: Vue d'ensemble
+            Locations: Emplacements
+            Assets: Actifs
+            Work orders: Ordres de travail
+            Why apps overlap: Pourquoi des applications se chevauchent
+            How inspections work: Fonctionnement des inspections
+            Working offline: Travailler hors ligne
+            How concepts work together: Articulation des concepts
+            Term differences: Différences de terminologie
+            Keyboard shortcuts: Raccourcis clavier
+            Get work done: Accomplir le travail
+            Set up and control: Configurer et contrôler
+            Add users: Ajouter des utilisateurs
+            Get data into system: Charger des données dans le système
+            Automate communication: Automatiser la communication
+            Set up labor, crafts, and crews: Configurer la main-d'œuvre, les métiers et les équipes
+            Set up maps: Configurer les cartes
+            Prepare data for import: Préparer les données à importer
+            Correct load order: Ordre de chargement correct
+            Fix import errors: Corriger les erreurs d'importation
+            Data types: Types de données
+            Configure Maximo Mobile: Configurer Maximo Mobile
+            Plan work: Planifier le travail
+            Recurring maintenance: Maintenance récurrente
+            Decide what work: Décider du travail à effectuer
+            Schedule work: Planifier le travail
+            Complete work: Terminer le travail
+            Find work: Trouver du travail
+            Complete work order: Terminer un ordre de travail
+            Can't complete task: Impossible de terminer une tâche
+            Can't complete work order: Impossible de terminer un ordre de travail
+            Can't see new work on phone: Impossible de voir le nouveau travail sur le téléphone
+            Manage assets: Gérer les actifs
+            Asset history: Historique des actifs
+            Classify assets: Classer les actifs
+            Asset failures: Pannes d'actifs
+            Manage inventory: Gérer l'inventaire
+            Issue parts: Sortir des pièces
+            Track stock levels: Suivre les niveaux de stock
+            Incorrect stock: Stock incorrect
+            Can't issue materials: Impossible de sortir des matériaux
+            Monitor and respond: Surveiller et réagir
+            Detect issues early: Détecter les problèmes tôt
+            Important metrics: Indicateurs importants
+            Act on alerts: Réagir aux alertes
+            Organize people and work: Organiser les personnes et le travail
+            Assign people: Affecter des personnes
+            Customize dropdown values: Personnaliser les valeurs de liste déroulante
+            Technicians can't see work: Les techniciens ne voient pas leur travail
+            Improve results: Améliorer les résultats
+            Improve work: Améliorer le travail
+            Reduce downtime: Réduire les temps d'arrêt
+            Improve completion rates: Améliorer les taux d'achèvement
+            Improve data quality: Améliorer la qualité des données
+            Data looks wrong: Les données semblent incorrectes
+            Make data reliable: Fiabiliser les données
+            Improve adoption: Améliorer l'adoption
+            Technicians not using system: Les techniciens n'utilisent pas le système
+            Simplify workflows: Simplifier les flux de travail
+            Work smarter: Travailler plus intelligemment
+            AI and automation: IA et automatisation
+            AI improves maintenance: L'IA améliore la maintenance
+            Automate tasks: Automatiser les tâches
+            Scale operation: Passer à l'échelle
+            Manage more assets: Gérer davantage d'actifs
+            Standardize across teams: Standardiser entre les équipes
+            Insights to outcomes: Des analyses aux résultats
+            Data into decisions: Transformer les données en décisions
+            Optimize performance: Optimiser les performances
+            Get answers: Obtenir des réponses
+            Starting out: Pour commencer
+            Getting work done: Accomplir le travail
+            Improving results: Améliorer les résultats
+            Working smarter: Travailler plus intelligemment
+            Security: Sécurité
   - search:
       lang: en
       separator: '[\s\-\.]+'
@@ -67,12 +169,14 @@ markdown_extensions:
   - abbr
   - pymdownx.snippets:
       base_path: docs
-      auto_append:
-        - .snippets
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
   - pymdownx.superfences
+
+# Abbreviation tooltips: appended per page language by this hook
+hooks:
+  - tools/hooks/abbreviations.py
 
 # Page tree - Journey-based navigation
 nav:
@@ -90,6 +194,9 @@ nav:
       - Locations: start-fast/basics/what-is-location.md
       - Assets: start-fast/basics/what-is-asset.md
       - Work orders: start-fast/basics/what-is-work-order.md
+      - Why apps overlap: start-fast/basics/why-apps-overlap.md
+      - How inspections work: start-fast/basics/how-inspections-work.md
+      - Working offline: start-fast/basics/what-happens-offline.md
       - How concepts work together: start-fast/basics/how-concepts-work-together.md
       - Term differences: start-fast/basics/why-do-terms-differ.md
       - Keyboard shortcuts: start-fast/basics/keyboard-shortcuts.md
@@ -115,6 +222,7 @@ nav:
       - Complete work order: get-work-done/complete-work/complete-job.md
       - Can't complete task: get-work-done/complete-work/cant-complete-task.md
       - Can't complete work order: get-work-done/complete-work/why-cant-complete-work-order.md
+      - Can't see new work on phone: get-work-done/complete-work/why-cant-see-new-work-on-phone.md
     - Manage assets:
       - Asset history: get-work-done/manage-assets/track-asset-history.md
       - Classify assets: get-work-done/manage-assets/classify-assets.md

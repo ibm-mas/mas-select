@@ -26,6 +26,8 @@ Each data category offers the same three options. Choose the option that balance
 | **Update recent changes** | Downloads only data that changed since the last sync. Faster and lighter on bandwidth. Suitable for most teams. |
 | **Do not download data** | Skips this data category during sync. Use when the data is not needed on the device. |
 
+`[SME confirmation required: Confirm the option labels and where you set them in Select. The Maximo Manage documentation calls the options "Complete", "Only delta", and "Do not download", and lists them under "Worklist data" and "Supporting data" in the Mobile administration app. This page uses "Record data" and "Supporting data".]`
+
 ## Before you start
 
 - Confirm that your role has permission to update mobile configuration settings in Maximo Application Suite Select.

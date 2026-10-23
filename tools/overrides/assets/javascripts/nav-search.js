@@ -36,8 +36,7 @@
             if (e.key === 'Enter') {
                 var query = searchInput.value.trim();
                 if (query) {
-                    var baseUrl = window.location.origin + window.location.pathname.replace(/[^\/]*$/, '');
-                    window.location.href = baseUrl + 'search.html?q=' + encodeURIComponent(query);
+                    window.location.href = search_url + '?q=' + encodeURIComponent(query);
                 }
             }
         });

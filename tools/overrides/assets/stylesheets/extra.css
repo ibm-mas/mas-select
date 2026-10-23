@@ -238,4 +238,44 @@ table th {
     outline-offset: -2px;
 }
 
+
+/* Language switcher (header) */
+.language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 0 16px;
+    height: 100%;
+}
+
+.language-switcher a {
+    color: #c6c6c6;
+    font-size: 0.875rem;
+    text-decoration: none;
+}
+
+.language-switcher a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.language-switcher a[aria-current="true"] {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.language-switcher a:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
+}
+
+/* Machine translation notice */
+.mt-notice {
+    border-left: 4px solid #0f62fe;
+    background: var(--cds-layer-01, #f4f4f4);
+    padding: 8px 16px;
+    margin: 0 0 16px 0;
+    font-size: 0.875rem;
+}
+
 /* Made with Bob */

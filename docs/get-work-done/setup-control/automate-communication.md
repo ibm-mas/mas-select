@@ -88,6 +88,18 @@ Setting up push notifications is a two-step process: generate an API key from th
 
 To confirm the setup is working, ask a user to log in via the IBM Maximo Mobile app and trigger a relevant event such as a workflow assignment. The notification should arrive on their device within a few seconds.
 
+### When users receive push notifications
+
+A user receives push notifications only when all of the following are true:
+
+- The user has an active session in IBM Maximo Mobile.
+- The user has not signed out of the app.
+- The app has not been reset.
+
+If a user's session expires, notifications stop until the user signs in again. The network on the device must also allow connections to the Apple and Google push notification services.
+
+`[SME confirmation required: Confirm that these conditions apply to MAS Select, including the session length and whether the network must allow connections to the Apple and Google push notification services.]`
+
 ---
 
 ## Continue building your skills

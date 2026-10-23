@@ -108,6 +108,8 @@ Use this when managing inventory directly.
 
 The system updates inventory balance, shows the material on the work order, and records the cost.
 
+Inventory clerks can also use the Issues and Transfers app, from **Inventory > Issues and Transfers** on the desktop or in IBM Maximo Mobile. Use it to issue items that are reserved for approved work orders, issue items that are not reserved, and transfer items between storerooms.
+
 ### Method 3: Use mobile app
 
 On mobile devices:

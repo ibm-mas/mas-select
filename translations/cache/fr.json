@@ -1,0 +1,1197 @@
+{
+  "00a93548fddb1599": {
+    "glossary_version": 1,
+    "source": "[How do I configure IBM Maximo Mobile for my team?⟦1⟧ - Mobile configuration",
+    "target": "[Comment configurer IBM Maximo Mobile pour mon équipe ?⟦1⟧ - Configuration du mobile"
+  },
+  "00d6152eeffa5f49": {
+    "glossary_version": 1,
+    "source": "Understand how equipment is related",
+    "target": "Comprendre comment les équipements sont reliés"
+  },
+  "020744a3d34a5e49": {
+    "glossary_version": 1,
+    "source": "Work smarter",
+    "target": "Travailler plus intelligemment"
+  },
+  "041aa2fbac5f9e55": {
+    "glossary_version": 1,
+    "source": "Check [Getting work done⟦1⟧ for answers to common questions",
+    "target": "Consultez [Accomplir le travail⟦1⟧ pour obtenir des réponses aux questions courantes"
+  },
+  "058af4f033820171": {
+    "glossary_version": 1,
+    "source": "Equipment history now shows your work",
+    "target": "L'historique de l'équipement affiche désormais votre travail"
+  },
+  "06765cfbf933a134": {
+    "glossary_version": 1,
+    "source": "Add a new user to the system and assign them appropriate access, for example, add users for Ice cream plant A.",
+    "target": "Ajoutez un nouvel utilisateur au système et accordez-lui les accès appropriés, par exemple ajoutez des utilisateurs pour Ice cream plant A."
+  },
+  "069400e53c7f914a": {
+    "glossary_version": 1,
+    "source": "Maximo Application Suite Select is a ready-to-use Software-as-a-Service (SaaS) solution.",
+    "target": "Maximo Application Suite Select est une solution SaaS (Software as a Service) prête à l'emploi."
+  },
+  "0818240de524f9c0": {
+    "glossary_version": 1,
+    "source": "Get work done",
+    "target": "Accomplir le travail"
+  },
+  "086daee13bf1ad31": {
+    "glossary_version": 1,
+    "source": "Monitor asset condition and performance",
+    "target": "Surveiller l'état et les performances des actifs"
+  },
+  "088b5f3d9c07b9ba": {
+    "glossary_version": 1,
+    "source": "Using asset hierarchies has many benefits:",
+    "target": "L'utilisation de hiérarchies d'actifs présente de nombreux avantages :"
+  },
+  "09dc919610eb4ecc": {
+    "glossary_version": 1,
+    "source": "When your work order needs materials, record them as you go so inventory stays accurate.",
+    "target": "Lorsque votre ordre de travail nécessite des matériaux, enregistrez-les au fur et à mesure afin que l'inventaire reste exact."
+  },
+  "09fbcf6edc122a5c": {
+    "glossary_version": 1,
+    "source": "Verify all information is recorded.",
+    "target": "Vérifiez que toutes les informations sont enregistrées."
+  },
+  "0bd46aa93bdb2d04": {
+    "glossary_version": 1,
+    "source": "[What is a ⟦1⟧⟦2⟧Physical places where work is performed⟦3⟧⟦4⟧location⟦5⟧?⟦6⟧ - Physical places where work is performed",
+    "target": "[Qu'est-ce qu'un ⟦1⟧⟦2⟧Lieux physiques où le travail est effectué⟦3⟧⟦4⟧emplacement⟦5⟧ ?⟦6⟧ - Lieux physiques où le travail est effectué"
+  },
+  "0cf59ec51d2f6d2f": {
+    "glossary_version": 1,
+    "source": "All required fields are completed such as notes, labor hours, or parts used",
+    "target": "Toutes les zones obligatoires sont renseignées, comme les notes, les heures de main-d'œuvre ou les pièces utilisées"
+  },
+  "0d1336b3c395e626": {
+    "glossary_version": 1,
+    "source": "⟦1⟧Maximo Application Suite Select⟦2⟧",
+    "target": "⟦1⟧Maximo Application Suite Select⟦2⟧"
+  },
+  "0d4b4ae8b5b59a2e": {
+    "glossary_version": 1,
+    "source": "[Learn the basics⟦1⟧",
+    "target": "[Découvrir les notions de base⟦1⟧"
+  },
+  "0d569066af0aff7b": {
+    "glossary_version": 1,
+    "source": "⟦1⟧Download IBM Maximo Mobile from the App Store or Google Play, then sign in with your Maximo Application Suite Select credentials.⟦2⟧",
+    "target": "⟦1⟧Téléchargez IBM Maximo Mobile depuis l'App Store ou Google Play, puis connectez-vous avec vos identifiants Maximo Application Suite Select.⟦2⟧"
+  },
+  "10080dadf3f3c2e9": {
+    "glossary_version": 1,
+    "source": "Find what you need",
+    "target": "Trouvez ce dont vous avez besoin"
+  },
+  "102a9636dee7663b": {
+    "glossary_version": 1,
+    "source": "Find quick answers to common questions.",
+    "target": "Trouvez rapidement des réponses aux questions courantes."
+  },
+  "11784f686981866e": {
+    "glossary_version": 1,
+    "source": "Time and costs are recorded for planning",
+    "target": "Le temps et les coûts sont enregistrés à des fins de planification"
+  },
+  "1281c9a7d23644c4": {
+    "glossary_version": 1,
+    "source": "An asset is a physical piece of equipment that you maintain. You can organize assets in a parent-child hierarchy to show how equipment is connected and to track maintenance at the correct level.",
+    "target": "Un actif est un équipement physique que vous entretenez. Vous pouvez organiser les actifs selon une hiérarchie parent-enfant afin de montrer comment les équipements sont reliés et de suivre la maintenance au bon niveau."
+  },
+  "12e58109a6ceb977": {
+    "glossary_version": 1,
+    "source": "[Complete your first task⟦1⟧",
+    "target": "[Effectuer votre première tâche⟦1⟧"
+  },
+  "142f2647c6a9292f": {
+    "glossary_version": 1,
+    "source": "Choose a simple work order to start (look for status \"Assigned\" or \"In Progress\").",
+    "target": "Choisissez un ordre de travail simple pour commencer (recherchez le statut \"Assigned\" ou \"In Progress\")."
+  },
+  "15b2a24b79b693d8": {
+    "glossary_version": 1,
+    "source": "[How do I automate communication?⟦1⟧ - Push notifications administration",
+    "target": "[Comment automatiser la communication ?⟦1⟧ - Administration des notifications push"
+  },
+  "1634afc4d7c6386b": {
+    "glossary_version": 1,
+    "source": "**Facilities**: HVAC systems, refrigeration units, lighting systems",
+    "target": "**Installations** : systèmes de chauffage, ventilation et climatisation, unités de réfrigération, systèmes d'éclairage"
+  },
+  "16a97d19604b4789": {
+    "glossary_version": 1,
+    "source": "Understand the equipment you're working on",
+    "target": "Comprendre l'équipement sur lequel vous travaillez"
+  },
+  "176a39004fa8bb9f": {
+    "glossary_version": 1,
+    "source": "What success looks like",
+    "target": "À quoi ressemble la réussite"
+  },
+  "196692ec08fd16d3": {
+    "glossary_version": 1,
+    "source": "Perform the maintenance task.",
+    "target": "Effectuez la tâche de maintenance."
+  },
+  "1a199ab2c130ed6c": {
+    "glossary_version": 1,
+    "source": "⟦1⟧Welcome to Maximo Application Suite Select, a streamlined maintenance management system for tracking equipment, managing work, and keeping operations running smoothly.⟦2⟧",
+    "target": "⟦1⟧Bienvenue dans Maximo Application Suite Select, un système de gestion de la maintenance simplifié pour suivre les équipements, gérer le travail et assurer le bon fonctionnement des opérations.⟦2⟧"
+  },
+  "1b9476188e052844": {
+    "glossary_version": 1,
+    "source": "⟦1⟧Help center⟦2⟧",
+    "target": "⟦1⟧Centre d'aide⟦2⟧"
+  },
+  "1eefeb64522021f7": {
+    "glossary_version": 1,
+    "source": "**Vehicles**: Trucks, forklifts, pallet jacks",
+    "target": "**Véhicules** : camions, chariots élévateurs, transpalettes"
+  },
+  "210622c80cdc6831": {
+    "glossary_version": 1,
+    "source": "Start with a simple preventive maintenance task",
+    "target": "Commencez par une tâche de maintenance préventive simple"
+  },
+  "2164cf7ea775a069": {
+    "glossary_version": 1,
+    "source": "Use Artificial Intelligence (AI), automation, and insights to scale.",
+    "target": "Utilisez l'intelligence artificielle (IA), l'automatisation et les analyses pour passer à l'échelle."
+  },
+  "222bc8ff84fca38f": {
+    "glossary_version": 1,
+    "source": "Open the Users application.",
+    "target": "Ouvrez l'application Users."
+  },
+  "224cdeee65e363e4": {
+    "glossary_version": 1,
+    "source": "⟦1⟧⟦2⟧Search⟦3⟧⟦4⟧Search⟦5⟧",
+    "target": "⟦1⟧⟦2⟧Rechercher⟦3⟧⟦4⟧Rechercher⟦5⟧"
+  },
+  "225c21a6f573dde2": {
+    "glossary_version": 1,
+    "source": "**For a specific field**: Click the field name or press Alt+F1",
+    "target": "**Pour une zone précise** : cliquez sur le nom de la zone ou appuyez sur Alt+F1"
+  },
+  "231b1a8c711dfb5d": {
+    "glossary_version": 1,
+    "source": "A security group is a collection of users who share the same access. Security group permissions determine which applications, actions, and data they can access.",
+    "target": "Un groupe de sécurité est un ensemble d'utilisateurs qui disposent des mêmes accès. Les droits d'un groupe de sécurité déterminent les applications, les actions et les données auxquelles ses membres peuvent accéder."
+  },
+  "24c98ae1d9effa0d": {
+    "glossary_version": 1,
+    "source": "Keep security group assignments organized",
+    "target": "Gardez les affectations de groupes de sécurité organisées"
+  },
+  "24cb94a97c7e125b": {
+    "glossary_version": 1,
+    "source": "**Requester**",
+    "target": "**Requester**"
+  },
+  "2891a9439746fea8": {
+    "glossary_version": 1,
+    "source": "Your supervisor can see what you did and why",
+    "target": "Votre superviseur peut voir ce que vous avez fait et pourquoi"
+  },
+  "28b4a97adae54a7e": {
+    "glossary_version": 1,
+    "source": "After creating your first user, try:",
+    "target": "Après avoir créé votre premier utilisateur, essayez de :"
+  },
+  "29621e09fa8797e3": {
+    "glossary_version": 1,
+    "source": "[How do I assign the correct people?⟦1⟧",
+    "target": "[Comment affecter les bonnes personnes ?⟦1⟧"
+  },
+  "2975694ee0b89d6b": {
+    "glossary_version": 1,
+    "source": "Work order status changed from \"Assigned\" to \"Completed\"",
+    "target": "Le statut de l'ordre de travail est passé de \"Assigned\" à \"Completed\""
+  },
+  "2a7ee49ffd695004": {
+    "glossary_version": 1,
+    "source": "⟦1⟧⟦2⟧Try: why can't I complete a work order⟦3⟧⟦4⟧⟦5⟧Search documentation⟦6⟧⟦7⟧",
+    "target": "⟦1⟧⟦2⟧Essayez : pourquoi ne puis-je pas terminer un ordre de travail⟦3⟧⟦4⟧⟦5⟧Rechercher dans la documentation⟦6⟧⟦7⟧"
+  },
+  "2b22170f0c377376": {
+    "glossary_version": 1,
+    "source": "Manages system configuration and user access. System administrators can configure domains, communication templates, AI settings, create users, and set up security groups, but typically do not perform day-to-day operational work.⟦1⟧⟦2⟧**Example tasks:** Set up notification templates, manage user roles, set up security groups, configure system settings, and maintain data structures.",
+    "target": "Gère la configuration du système et les accès des utilisateurs. Les administrateurs système peuvent configurer les domaines, les modèles de communication et les paramètres d'IA, créer des utilisateurs et définir des groupes de sécurité, mais ils n'effectuent généralement pas de travail opérationnel au quotidien.⟦1⟧⟦2⟧**Exemples de tâches :** configurer des modèles de notification, gérer les rôles des utilisateurs, définir des groupes de sécurité, configurer les paramètres système et gérer les structures de données."
+  },
+  "2dfcb2f9e0b65544": {
+    "glossary_version": 1,
+    "source": "**Supervisor**",
+    "target": "**Supervisor**"
+  },
+  "2f7f10a105688d39": {
+    "glossary_version": 1,
+    "source": "Change status to \"In Progress\".",
+    "target": "Changez le statut en \"In Progress\"."
+  },
+  "31a2748602d19d3f": {
+    "glossary_version": 1,
+    "source": "Parts inventory updated automatically",
+    "target": "L'inventaire des pièces est mis à jour automatiquement"
+  },
+  "32823e7943ad3a4b": {
+    "glossary_version": 1,
+    "source": "💡 Tips for success",
+    "target": "💡 Conseils pour réussir"
+  },
+  "332c3424ce968018": {
+    "glossary_version": 1,
+    "source": "Security group permissions work as expected",
+    "target": "Les droits du groupe de sécurité fonctionnent comme prévu"
+  },
+  "3345b2d79009a2b5": {
+    "glossary_version": 1,
+    "source": "Optionally, add a note in the **memo**. Example: Temporary access for contractor at ice cream plant A",
+    "target": "Si vous le souhaitez, ajoutez une note dans le champ **mémo**. Exemple : accès temporaire pour un sous-traitant de l'usine de crèmes glacées A"
+  },
+  "34a0cb14ea386650": {
+    "glossary_version": 1,
+    "source": "Get started quickly with a task designed for technicians like you. Learn the basics while accomplishing something useful.",
+    "target": "Démarrez rapidement avec une tâche conçue pour les techniciens comme vous. Apprenez les notions de base tout en accomplissant quelque chose d'utile."
+  },
+  "34cd39143d980342": {
+    "glossary_version": 1,
+    "source": "[Why can't I complete a work order?⟦1⟧",
+    "target": "[Pourquoi ne puis-je pas terminer un ordre de travail ?⟦1⟧"
+  },
+  "35501dbc06780af9": {
+    "glossary_version": 1,
+    "source": "Table 1. Security groups",
+    "target": "Tableau 1. Groupes de sécurité"
+  },
+  "365d5002d5fefba8": {
+    "glossary_version": 1,
+    "source": "Examples of assets",
+    "target": "Exemples d'actifs"
+  },
+  "37bee24e6f7f3e40": {
+    "glossary_version": 1,
+    "source": "Security group",
+    "target": "Groupe de sécurité"
+  },
+  "39c4dfa140a76593": {
+    "glossary_version": 1,
+    "source": "[What is a location?⟦1⟧",
+    "target": "[Qu'est-ce qu'un emplacement ?⟦1⟧"
+  },
+  "3aca0c21a6264f13": {
+    "glossary_version": 1,
+    "source": "⟦1⟧⟦2⟧Supervisors:⟦3⟧ Assign and approve work from the field.⟦4⟧",
+    "target": "⟦1⟧⟦2⟧Superviseurs :⟦3⟧ affectez et approuvez le travail depuis le terrain.⟦4⟧"
+  },
+  "3d2b63c551139d74": {
+    "glossary_version": 1,
+    "source": "**Technicians** can find and complete work orders, for example, complete work on Filler FL-02.",
+    "target": "Les **techniciens** peuvent rechercher et terminer des ordres de travail, par exemple terminer le travail sur Filler FL-02."
+  },
+  "3fbbcb9b2cde5c90": {
+    "glossary_version": 1,
+    "source": "Go to Work Orders or My Assigned Work.",
+    "target": "Accédez à Work Orders ou à My Assigned Work."
+  },
+  "3fc6d74b8411c416": {
+    "glossary_version": 1,
+    "source": "⟦1⟧⟦2⟧Administrators:⟦3⟧ ⟦4⟧Configure IBM Maximo Mobile⟦5⟧ for your team before anyone signs in.⟦6⟧",
+    "target": "⟦1⟧⟦2⟧Administrateurs :⟦3⟧ ⟦4⟧configurez IBM Maximo Mobile⟦5⟧ pour votre équipe avant que quiconque ne se connecte.⟦6⟧"
+  },
+  "427f2dbf4044d5b7": {
+    "glossary_version": 1,
+    "source": "Oversees operations and team activities. Supervisors can plan and approve work, review technician work, monitor assets and performance, and access analytics to track progress.⟦1⟧⟦2⟧**Example tasks:** Assign and approve work orders, review KPIs, review inspection results, manage job plans, and monitor asset condition and maintenance schedules.",
+    "target": "Supervise les opérations et les activités de l'équipe. Les superviseurs peuvent planifier et approuver le travail, examiner le travail des techniciens, surveiller les actifs et les performances, et accéder aux analyses pour suivre l'avancement.⟦1⟧⟦2⟧**Exemples de tâches :** affecter et approuver des ordres de travail, examiner les indicateurs clés de performance, examiner les résultats d'inspection, gérer les plans de travail, et surveiller l'état des actifs et les calendriers de maintenance."
+  },
+  "431eb8178c9a19e2": {
+    "glossary_version": 1,
+    "source": "Who is this for?",
+    "target": "À qui s'adresse-t-il ?"
+  },
+  "4496c205514fb7ab": {
+    "glossary_version": 1,
+    "source": "**✗ Don't**",
+    "target": "**✗ À éviter**"
+  },
+  "45e0490fe39a0fca": {
+    "glossary_version": 1,
+    "source": "![Maximo Application Suite Select⟦1⟧",
+    "target": "![Maximo Application Suite Select⟦1⟧"
+  },
+  "4ead78f164febb88": {
+    "glossary_version": 1,
+    "source": "Schedule preventive maintenance",
+    "target": "Planifier la maintenance préventive"
+  },
+  "4feaba59ecc8c7e7": {
+    "glossary_version": 1,
+    "source": "Get started quickly with a task designed for administrators like you. Learn the basics while accomplishing something useful.",
+    "target": "Démarrez rapidement avec une tâche conçue pour les administrateurs comme vous. Apprenez les notions de base tout en accomplissant quelque chose d'utile."
+  },
+  "50cca5ab25b95247": {
+    "glossary_version": 1,
+    "source": "Plan for replacements and upgrades",
+    "target": "Planifier les remplacements et les mises à niveau"
+  },
+  "5106f4f4818b1af7": {
+    "glossary_version": 1,
+    "source": "[Why aren't technicians using the system?⟦1⟧",
+    "target": "[Pourquoi les techniciens n'utilisent-ils pas le système ?⟦1⟧"
+  },
+  "5161cce6217e358e": {
+    "glossary_version": 1,
+    "source": "What they can do",
+    "target": "Ce qu'ils peuvent faire"
+  },
+  "519919dabf9e3ad8": {
+    "glossary_version": 1,
+    "source": "Click **Create user**.",
+    "target": "Cliquez sur **Create user**."
+  },
+  "51e2bf98cdcba4b3": {
+    "glossary_version": 1,
+    "source": "[What if I can't complete a task?⟦1⟧",
+    "target": "[Que faire si je ne peux pas terminer une tâche ?⟦1⟧"
+  },
+  "53405c782fe412d4": {
+    "glossary_version": 1,
+    "source": "Get IBM Maximo Mobile",
+    "target": "Obtenir IBM Maximo Mobile"
+  },
+  "55548493b466b660": {
+    "glossary_version": 1,
+    "source": "**System admin**",
+    "target": "**System admin**"
+  },
+  "55802f756617998a": {
+    "glossary_version": 1,
+    "source": "Ask your supervisor if you're unsure about anything",
+    "target": "Demandez à votre superviseur en cas de doute"
+  },
+  "55a44e4028c2ed71": {
+    "glossary_version": 1,
+    "source": "[How do I set up maps?⟦1⟧ - Map manager",
+    "target": "[Comment configurer les cartes ?⟦1⟧ - Gestionnaire de cartes"
+  },
+  "5696504eb562ae88": {
+    "glossary_version": 1,
+    "source": "Administrator: Add users",
+    "target": "Administrateur : ajouter des utilisateurs"
+  },
+  "5750fdf414b59214": {
+    "glossary_version": 1,
+    "source": "Performs maintenance and operational work. Technicians can view and update assigned work, complete inspections, record labor hours, report materials used, and record asset data such as meter readings and condition details.⟦1⟧⟦2⟧**Example tasks:** Complete work orders, enter inspection results, update asset condition, record labor hours, report materials used, and report meter readings.",
+    "target": "Effectue le travail de maintenance et le travail opérationnel. Les techniciens peuvent consulter et mettre à jour le travail qui leur est affecté, effectuer des inspections, enregistrer les heures de main-d'œuvre, déclarer les matériaux utilisés et enregistrer des données sur les actifs, comme les relevés de compteur et les détails sur l'état.⟦1⟧⟦2⟧**Exemples de tâches :** terminer des ordres de travail, saisir les résultats d'inspection, mettre à jour l'état des actifs, enregistrer les heures de main-d'œuvre, déclarer les matériaux utilisés et saisir les relevés de compteur."
+  },
+  "58e26bfebb113185": {
+    "glossary_version": 1,
+    "source": "**Inventory clerk**",
+    "target": "**Inventory clerk**"
+  },
+  "59871eeda00b1181": {
+    "glossary_version": 1,
+    "source": "**Technician**",
+    "target": "**Technician**"
+  },
+  "5a38da0df0abc9a5": {
+    "glossary_version": 1,
+    "source": "Related topics",
+    "target": "Rubriques connexes"
+  },
+  "5b86f1903f1fb8dd": {
+    "glossary_version": 1,
+    "source": "New to Maximo Application Suite Select? Start here:",
+    "target": "Vous découvrez Maximo Application Suite Select ? Commencez ici :"
+  },
+  "5bab1427d521dba0": {
+    "glossary_version": 1,
+    "source": "When something gets in the way",
+    "target": "Quand quelque chose vous bloque"
+  },
+  "5c1fae064510d187": {
+    "glossary_version": 1,
+    "source": "[How do I set up labor, crafts, and crews?⟦1⟧",
+    "target": "[Comment configurer la main-d'œuvre, les métiers et les équipes ?⟦1⟧"
+  },
+  "5c424cb4d430ec5a": {
+    "glossary_version": 1,
+    "source": "Monitor performance",
+    "target": "Surveiller les performances"
+  },
+  "5e9ae9f136f275fa": {
+    "glossary_version": 1,
+    "source": "Improve results",
+    "target": "Améliorer les résultats"
+  },
+  "5faf3449ff423458": {
+    "glossary_version": 1,
+    "source": "Specify a **user ID**.",
+    "target": "Indiquez un **ID utilisateur**."
+  },
+  "603998796005b7c8": {
+    "glossary_version": 1,
+    "source": "What is an asset?",
+    "target": "Qu'est-ce qu'un actif ?"
+  },
+  "61d1c8f7ea260d95": {
+    "glossary_version": 1,
+    "source": "Add notes about what you did.",
+    "target": "Ajoutez des notes sur ce que vous avez fait."
+  },
+  "62106c22f15e90f2": {
+    "glossary_version": 1,
+    "source": "Track maintenance history for each piece of equipment",
+    "target": "Suivre l'historique de maintenance de chaque équipement"
+  },
+  "62ff51a7ccc1d42a": {
+    "glossary_version": 1,
+    "source": "Submits and tracks service requests. Requesters have limited access and cannot perform operational or administrative tasks. This role is focused on initiating and monitoring work requests.⟦1⟧⟦2⟧**Example tasks:** Create a service request for a broken asset and track its status until it is resolved.",
+    "target": "Soumet et suit des demandes de service. Les demandeurs disposent d'un accès limité et ne peuvent pas effectuer de tâches opérationnelles ou administratives. Ce rôle consiste à lancer et à suivre des demandes de travail.⟦1⟧⟦2⟧**Exemples de tâches :** créer une demande de service pour un actif en panne et suivre son statut jusqu'à sa résolution."
+  },
+  "66670c37909efdab": {
+    "glossary_version": 1,
+    "source": "Once you've added your first user, setting up the rest of your team follows the same steps — just repeated at scale.",
+    "target": "Une fois votre premier utilisateur ajouté, la configuration du reste de votre équipe suit les mêmes étapes, simplement répétées à plus grande échelle."
+  },
+  "667339f47fc94371": {
+    "glossary_version": 1,
+    "source": "**Know what you have:** track all your assets and their maintenance history",
+    "target": "**Sachez ce que vous avez :** suivez tous vos actifs et leur historique de maintenance"
+  },
+  "68b60e09701c44f5": {
+    "glossary_version": 1,
+    "source": "Track maintenance for a complete system or a specific component",
+    "target": "Suivre la maintenance d'un système complet ou d'un composant précis"
+  },
+  "6927666c27c24400": {
+    "glossary_version": 1,
+    "source": "Find and complete an assigned work order, for example, complete work on Filler FL-02.",
+    "target": "Recherchez et terminez un ordre de travail qui vous est affecté, par exemple terminez le travail sur Filler FL-02."
+  },
+  "6c2c3ed25011ae5f": {
+    "glossary_version": 1,
+    "source": "Check if you need any parts or tools.",
+    "target": "Vérifiez si vous avez besoin de pièces ou d'outils."
+  },
+  "6f09b5ea177d50a5": {
+    "glossary_version": 1,
+    "source": "**Ready to start?** Go to [What can I do in my role?⟦1⟧",
+    "target": "**Prêt à commencer ?** Consultez [Que puis-je faire dans mon rôle ?⟦1⟧"
+  },
+  "7245bf98a17bbce6": {
+    "glossary_version": 1,
+    "source": "Issue parts to a job",
+    "target": "Sortir des pièces pour un travail"
+  },
+  "72706edc99403318": {
+    "glossary_version": 1,
+    "source": "[What if I can't complete a task?⟦1⟧ - Missing parts, need help, or discovered bigger problems",
+    "target": "[Que faire si je ne peux pas terminer une tâche ?⟦1⟧ - Pièces manquantes, besoin d'aide ou problèmes plus importants découverts"
+  },
+  "7274707f13e7c86d": {
+    "glossary_version": 1,
+    "source": "**Process equipment**: Pumps, motors, compressors, heat exchangers, chillers",
+    "target": "**Équipements de procédé** : pompes, moteurs, compresseurs, échangeurs de chaleur, refroidisseurs"
+  },
+  "72f533f92818b798": {
+    "glossary_version": 1,
+    "source": "[How do I set up labor, crafts, and crews?⟦1⟧ - Calendars",
+    "target": "[Comment configurer la main-d'œuvre, les métiers et les équipes ?⟦1⟧ - Calendriers"
+  },
+  "75c39dfca7905b21": {
+    "glossary_version": 1,
+    "source": "A role determines what a person can see and do in Maximo Application Suite Select. Assign each user to the security group that matches their role:",
+    "target": "Un rôle détermine ce qu'une personne peut voir et faire dans Maximo Application Suite Select. Affectez chaque utilisateur au groupe de sécurité qui correspond à son rôle :"
+  },
+  "77221d8bae14a3a8": {
+    "glossary_version": 1,
+    "source": "See both what the equipment is and where it is installed",
+    "target": "Voir à la fois ce qu'est l'équipement et où il est installé"
+  },
+  "777f1df29acba792": {
+    "glossary_version": 1,
+    "source": "[Explore improve results →⟦1⟧",
+    "target": "[Explorer « Améliorer les résultats » →⟦1⟧"
+  },
+  "7963625b5cdc2905": {
+    "glossary_version": 1,
+    "source": "Take photos to document your work",
+    "target": "Prenez des photos pour documenter votre travail"
+  },
+  "7b3acb13657a1a33": {
+    "glossary_version": 1,
+    "source": "Setting up additional security groups",
+    "target": "Définir des groupes de sécurité supplémentaires"
+  },
+  "7bb983511d748be7": {
+    "glossary_version": 1,
+    "source": "[How do I get IBM Maximo Mobile?⟦1⟧",
+    "target": "[Comment obtenir IBM Maximo Mobile ?⟦1⟧"
+  },
+  "7bc4266abb849d73": {
+    "glossary_version": 1,
+    "source": "Specify a **login email**.",
+    "target": "Indiquez une **adresse e-mail de connexion**."
+  },
+  "7c4ad27fd7272280": {
+    "glossary_version": 1,
+    "source": "[How do I find my work?⟦1⟧",
+    "target": "[Comment trouver mon travail ?⟦1⟧"
+  },
+  "7e2480e312947d7e": {
+    "glossary_version": 1,
+    "source": "**Example assets**: Batch Mixer MX-01, Filler FL-02, Conveyor CV-02, Spiral Freezer SF-01.",
+    "target": "**Exemples d'actifs** : Batch Mixer MX-01, Filler FL-02, Conveyor CV-02, Spiral Freezer SF-01."
+  },
+  "7e9134bcb338cdb5": {
+    "glossary_version": 1,
+    "source": "Find your assigned work",
+    "target": "Trouver votre travail affecté"
+  },
+  "7f1a303935b7a20f": {
+    "glossary_version": 1,
+    "source": "[How do locations, assets, and work orders work together?⟦1⟧",
+    "target": "[Comment les emplacements, les actifs et les ordres de travail fonctionnent-ils ensemble ?⟦1⟧"
+  },
+  "7fdda3b137c00e98": {
+    "glossary_version": 1,
+    "source": "**Control parts inventory:** see what's in stock and what's been used",
+    "target": "**Maîtrisez l'inventaire des pièces :** voyez ce qui est en stock et ce qui a été utilisé"
+  },
+  "803ca8be7ddd51ae": {
+    "glossary_version": 1,
+    "source": "See the full maintenance history of any asset to spot patterns and avoid repeat failures.",
+    "target": "Consultez l'historique de maintenance complet de n'importe quel actif pour repérer des tendances et éviter les pannes répétées."
+  },
+  "807d03a668c8755d": {
+    "glossary_version": 1,
+    "source": "Naming assets",
+    "target": "Nommer les actifs"
+  },
+  "82ec3322d86a8bf9": {
+    "glossary_version": 1,
+    "source": "Review what needs to be done.",
+    "target": "Examinez ce qui doit être fait."
+  },
+  "8304cc3f8036567c": {
+    "glossary_version": 1,
+    "source": "**Supervisors** can plan, assign, and track maintenance work, for example, assign preventive maintenance for Spiral freezer SF-01.",
+    "target": "Les **superviseurs** peuvent planifier, affecter et suivre le travail de maintenance, par exemple affecter la maintenance préventive de Spiral freezer SF-01."
+  },
+  "85dfb669651c8dd1": {
+    "glossary_version": 1,
+    "source": "Your first completed work order is the start of a reliable record — every one you complete after this adds to a history that helps the whole team work smarter.",
+    "target": "Votre premier ordre de travail terminé marque le début d'un historique fiable : chaque ordre que vous terminez ensuite enrichit un historique qui aide toute l'équipe à travailler plus intelligemment."
+  },
+  "8bcc63cc297a1bca": {
+    "glossary_version": 1,
+    "source": "Follow principle of least privilege, that is, minimum access needed",
+    "target": "Appliquez le principe du moindre privilège, c'est-à-dire l'accès minimal nécessaire"
+  },
+  "8c6a8e27e0b4bb81": {
+    "glossary_version": 1,
+    "source": "Ask your supervisor or administrator",
+    "target": "Demandez à votre superviseur ou à votre administrateur"
+  },
+  "8c9cbf074df55dd1": {
+    "glossary_version": 1,
+    "source": "User can perform tasks for their role",
+    "target": "L'utilisateur peut effectuer les tâches correspondant à son rôle"
+  },
+  "8d8c7a7ea15034a9": {
+    "glossary_version": 1,
+    "source": "User can log in successfully",
+    "target": "L'utilisateur peut se connecter"
+  },
+  "8e89a7897bda48b4": {
+    "glossary_version": 1,
+    "source": "[Browse all questions →⟦1⟧",
+    "target": "[Parcourir toutes les questions →⟦1⟧"
+  },
+  "8eef65723b4dda01": {
+    "glossary_version": 1,
+    "source": "Add your organization's terminology to status fields and dropdowns so the system speaks your team's language.",
+    "target": "Ajoutez la terminologie de votre organisation aux zones de statut et aux listes déroulantes pour que le système parle le langage de votre équipe."
+  },
+  "8f0a1b779074fc7d": {
+    "glossary_version": 1,
+    "source": "⟦1⟧⟦2⟧Technicians:⟦3⟧ See your assigned work queue, complete work orders, and record actuals on the go.⟦4⟧",
+    "target": "⟦1⟧⟦2⟧Techniciens :⟦3⟧ consultez votre file de travail affecté, terminez des ordres de travail et enregistrez les données réelles en déplacement.⟦4⟧"
+  },
+  "908e5790db102ce3": {
+    "glossary_version": 1,
+    "source": "Click **Select groups** and add the user to at least one security group. An email is sent to the login email address.",
+    "target": "Cliquez sur **Select groups** et ajoutez l'utilisateur à au moins un groupe de sécurité. Un e-mail est envoyé à l'adresse e-mail de connexion."
+  },
+  "918b3c530971d237": {
+    "glossary_version": 1,
+    "source": "[How do I track asset history?⟦1⟧",
+    "target": "[Comment suivre l'historique d'un actif ?⟦1⟧"
+  },
+  "92cd4a45b3eabfee": {
+    "glossary_version": 1,
+    "source": "[How do I automate communication?⟦1⟧ - Communication templates",
+    "target": "[Comment automatiser la communication ?⟦1⟧ - Modèles de communication"
+  },
+  "93448b33ef7ecbed": {
+    "glossary_version": 1,
+    "source": "After adding users, create the craft and labor records that let you assign work to the correct people.",
+    "target": "Après avoir ajouté des utilisateurs, créez les enregistrements de métiers et de main-d'œuvre qui vous permettent d'affecter le travail aux bonnes personnes."
+  },
+  "93d90e303ac1c0af": {
+    "glossary_version": 1,
+    "source": "[What is an ⟦1⟧⟦2⟧Equipment, machinery, and infrastructure you maintain⟦3⟧⟦4⟧asset⟦5⟧?⟦6⟧ - Equipment, machinery, and infrastructure you maintain",
+    "target": "[Qu'est-ce qu'un ⟦1⟧⟦2⟧Équipements, machines et infrastructures que vous entretenez⟦3⟧⟦4⟧actif⟦5⟧ ?⟦6⟧ - Équipements, machines et infrastructures que vous entretenez"
+  },
+  "9402c83423972af0": {
+    "glossary_version": 1,
+    "source": "Know what to do when you're blocked by missing parts, access issues, or a problem bigger than expected.",
+    "target": "Sachez quoi faire lorsque vous êtes bloqué par des pièces manquantes, des problèmes d'accès ou un problème plus important que prévu."
+  },
+  "94138f026f804988": {
+    "glossary_version": 1,
+    "source": "Create and complete work orders",
+    "target": "Créer et terminer des ordres de travail"
+  },
+  "951ef05a348c3e76": {
+    "glossary_version": 1,
+    "source": "Common issues when completing work orders",
+    "target": "Problèmes courants lors de la réalisation d'ordres de travail"
+  },
+  "9678eb1fa564977b": {
+    "glossary_version": 1,
+    "source": "Take your work with you. IBM Maximo Mobile lets you view assigned work, complete work orders, and update records from your phone or tablet.",
+    "target": "Emportez votre travail avec vous. IBM Maximo Mobile vous permet de consulter le travail affecté, de terminer des ordres de travail et de mettre à jour des enregistrements depuis votre téléphone ou votre tablette."
+  },
+  "975047db77eac513": {
+    "glossary_version": 1,
+    "source": "Customize your dropdown values",
+    "target": "Personnaliser vos valeurs de liste déroulante"
+  },
+  "980ef788f803854f": {
+    "glossary_version": 1,
+    "source": "Frequently asked",
+    "target": "Questions fréquentes"
+  },
+  "99ced0b296d7a1fa": {
+    "glossary_version": 1,
+    "source": "**General**",
+    "target": "**Général**"
+  },
+  "9a01954606ccd872": {
+    "glossary_version": 1,
+    "source": "Use a short alphanumeric asset number",
+    "target": "Utilisez un numéro d'actif alphanumérique court"
+  },
+  "9a27bee9f297605d": {
+    "glossary_version": 1,
+    "source": "Why assets matter",
+    "target": "Pourquoi les actifs sont importants"
+  },
+  "9a73f24345dd31a7": {
+    "glossary_version": 1,
+    "source": "What is Maximo Application Suite Select?",
+    "target": "Qu'est-ce que Maximo Application Suite Select ?"
+  },
+  "9c6ac3142c902f16": {
+    "glossary_version": 1,
+    "source": "Continue building your skills",
+    "target": "Continuer à développer vos compétences"
+  },
+  "9e50e07958db04e5": {
+    "glossary_version": 1,
+    "source": "Asset hierarchy",
+    "target": "Hiérarchie des actifs"
+  },
+  "9e93d021b0f2b314": {
+    "glossary_version": 1,
+    "source": "Record information as you go, not at the end",
+    "target": "Enregistrez les informations au fur et à mesure, et non à la fin"
+  },
+  "9eaa2261418abcb1": {
+    "glossary_version": 1,
+    "source": "[Why do some terms differ from what I'm used to?⟦1⟧",
+    "target": "[Pourquoi certains termes diffèrent-ils de ceux que j'utilise habituellement ?⟦1⟧"
+  },
+  "9ec0fc77020a02db": {
+    "glossary_version": 1,
+    "source": "You must assign at least one security group. The user cannot access applications until a security group is assigned.",
+    "target": "Vous devez affecter au moins un groupe de sécurité. L'utilisateur ne peut pas accéder aux applications tant qu'aucun groupe de sécurité n'est affecté."
+  },
+  "9ff1257d106c90a9": {
+    "glossary_version": 1,
+    "source": "What's next?",
+    "target": "Et ensuite ?"
+  },
+  "a02ea4c81345c557": {
+    "glossary_version": 1,
+    "source": "**Administrators** can load data and set up users, for example, load users for Ice cream plant A.",
+    "target": "Les **administrateurs** peuvent charger des données et configurer des utilisateurs, par exemple charger des utilisateurs pour Ice cream plant A."
+  },
+  "a24e55096cebb27e": {
+    "glossary_version": 1,
+    "source": "[How do I customize dropdown values?⟦1⟧ - Domains",
+    "target": "[Comment personnaliser les valeurs de liste déroulante ?⟦1⟧ - Domaines"
+  },
+  "a2c4e4661008e71d": {
+    "glossary_version": 1,
+    "source": "IBM Maximo Mobile lets technicians view assets, manage work orders, and update work from their phone or tablet, wherever work happens.",
+    "target": "IBM Maximo Mobile permet aux techniciens de consulter les actifs, de gérer les ordres de travail et de mettre à jour le travail depuis leur téléphone ou leur tablette, où que le travail soit effectué."
+  },
+  "a355a140b5f4126c": {
+    "glossary_version": 1,
+    "source": "Don't use vague descriptions such as PUMP",
+    "target": "N'utilisez pas de descriptions vagues telles que PUMP"
+  },
+  "a4230ec0b6b74a5a": {
+    "glossary_version": 1,
+    "source": "**You'll know you're ready to move on when** you can complete a simple work order from start to finish without help, and your notes clearly explain what you found and fixed.",
+    "target": "**Vous saurez que vous êtes prêt à passer à la suite lorsque** vous pouvez terminer un ordre de travail simple du début à la fin sans aide, et que vos notes expliquent clairement ce que vous avez constaté et réparé."
+  },
+  "a4ef0bc0ccd07c33": {
+    "glossary_version": 1,
+    "source": "**Inventory clerks** can manage parts and supplies, for example, issue parts from Main storeroom.",
+    "target": "Les **magasiniers** peuvent gérer les pièces et les fournitures, par exemple sortir des pièces de Main storeroom."
+  },
+  "a53bfc94258655a7": {
+    "glossary_version": 1,
+    "source": "**You'll know you're ready to move on when** you can create users efficiently, assign appropriate permissions, and troubleshoot access issues independently.",
+    "target": "**Vous saurez que vous êtes prêt à passer à la suite lorsque** vous pouvez créer des utilisateurs efficacement, attribuer les droits appropriés et résoudre seul les problèmes d'accès."
+  },
+  "a6e41bd51e4fa691": {
+    "glossary_version": 1,
+    "source": "Get started in minutes",
+    "target": "Prenez en main le produit en quelques minutes"
+  },
+  "a75be488004e4ce7": {
+    "glossary_version": 1,
+    "source": "You've successfully completed your first work order when:",
+    "target": "Vous avez terminé votre premier ordre de travail avec succès lorsque :"
+  },
+  "a9b217860297d99b": {
+    "glossary_version": 1,
+    "source": "Users update their preferences in their profile. They open the profile menu from the top right of the header and can select preferences, such as a ⟦1⟧⟦2⟧The application that opens when you log in. Choosing the correct default means you land on the most relevant screen for your role without extra navigation.⟦3⟧⟦4⟧default application⟦5⟧, storeroom, locale, and language.",
+    "target": "Les utilisateurs mettent à jour leurs préférences dans leur profil. Ils ouvrent le menu du profil en haut à droite de l'en-tête et peuvent sélectionner des préférences, comme une ⟦1⟧⟦2⟧L'application qui s'ouvre lorsque vous vous connectez. Choisir la bonne application par défaut vous amène directement à l'écran le plus pertinent pour votre rôle, sans navigation supplémentaire.⟦3⟧⟦4⟧application par défaut⟦5⟧, un magasin, des paramètres régionaux et une langue."
+  },
+  "aa81883950d30d5d": {
+    "glossary_version": 1,
+    "source": "Assets are installed in locations, which show where the equipment operates.",
+    "target": "Les actifs sont installés dans des emplacements, qui indiquent où l'équipement fonctionne."
+  },
+  "ac856d22753690cb": {
+    "glossary_version": 1,
+    "source": "Add a user",
+    "target": "Ajouter un utilisateur"
+  },
+  "ad17b096f1179956": {
+    "glossary_version": 1,
+    "source": "Change status to \"Completed\".",
+    "target": "Changez le statut en \"Completed\"."
+  },
+  "afc9389164ed8066": {
+    "glossary_version": 1,
+    "source": "**Example descriptions**: Filler FL-02, cone filling station; Batch Mixer MX-01, vanilla mix preparation.",
+    "target": "**Exemples de descriptions** : Filler FL-02, poste de remplissage de cornets ; Batch Mixer MX-01, préparation du mélange vanille."
+  },
+  "afd44ec35e6d98f0": {
+    "glossary_version": 1,
+    "source": "Identify the parent asset when relevant",
+    "target": "Identifiez l'actif parent lorsque c'est pertinent"
+  },
+  "b0180f9c921a8b5c": {
+    "glossary_version": 1,
+    "source": "[How do ⟦1⟧⟦2⟧Physical places where work is performed⟦3⟧⟦4⟧locations⟦5⟧, ⟦6⟧⟦7⟧Equipment, machinery, and infrastructure you maintain⟦8⟧⟦9⟧assets⟦10⟧, and ⟦11⟧⟦12⟧Instructions to perform maintenance work⟦13⟧⟦14⟧work orders⟦15⟧ work together?⟦16⟧ - See how these concepts connect in real scenarios",
+    "target": "[Comment les ⟦1⟧⟦2⟧Lieux physiques où le travail est effectué⟦3⟧⟦4⟧emplacements⟦5⟧, les ⟦6⟧⟦7⟧Équipements, machines et infrastructures que vous entretenez⟦8⟧⟦9⟧actifs⟦10⟧ et les ⟦11⟧⟦12⟧Instructions pour effectuer un travail de maintenance⟦13⟧⟦14⟧ordres de travail⟦15⟧ fonctionnent-ils ensemble ?⟦16⟧ - Découvrez comment ces concepts s'articulent dans des scénarios réels"
+  },
+  "b05cb8ff7bf2a28c": {
+    "glossary_version": 1,
+    "source": "User preferences",
+    "target": "Préférences utilisateur"
+  },
+  "b0d8ecc75c81e911": {
+    "glossary_version": 1,
+    "source": "Take your work mobile",
+    "target": "Emportez votre travail avec vous"
+  },
+  "b1a97f656a6762e4": {
+    "glossary_version": 1,
+    "source": "**Production equipment**: Batch Mixer MX-01, Filler FL-02, Conveyor CV-02, Spiral Freezer SF-01",
+    "target": "**Équipements de production** : Batch Mixer MX-01, Filler FL-02, Conveyor CV-02, Spiral Freezer SF-01"
+  },
+  "b4eff390f060006e": {
+    "glossary_version": 1,
+    "source": "Complete everyday maintenance tasks.",
+    "target": "Effectuez les tâches de maintenance courantes."
+  },
+  "b53832dd9ef2b991": {
+    "glossary_version": 1,
+    "source": "To make onboarding easier to follow, the examples in this help center use one consistent scenario: an ice-cream manufacturing operation. You'll see the same site, locations, assets, and work, so you can focus on how the workflow fits together.",
+    "target": "Pour faciliter la prise en main, les exemples de ce centre d'aide reposent sur un même scénario : une usine de fabrication de crèmes glacées. Vous retrouvez le même site, les mêmes emplacements, les mêmes actifs et le même travail, ce qui vous permet de vous concentrer sur l'enchaînement du flux de travail."
+  },
+  "b94cf1e96ad2c1b8": {
+    "glossary_version": 1,
+    "source": "[Explore work smarter →⟦1⟧",
+    "target": "[Explorer « Travailler plus intelligemment » →⟦1⟧"
+  },
+  "b9bbccf36b3a6599": {
+    "glossary_version": 1,
+    "source": "Prefer to learn in the application? Log in and open your Operational dashboard to follow guided steps for completing a work order.",
+    "target": "Vous préférez apprendre dans l'application ? Connectez-vous et ouvrez votre Operational dashboard pour suivre les étapes guidées de réalisation d'un ordre de travail."
+  },
+  "ba9a2c1aac008456": {
+    "glossary_version": 1,
+    "source": "Get from zero to first value in minutes.",
+    "target": "Obtenez de la valeur dès les premières minutes."
+  },
+  "bcb00c9f00681b6e": {
+    "glossary_version": 1,
+    "source": "**Storage**: Tanks, silos, cold storage units",
+    "target": "**Stockage** : cuves, silos, chambres froides"
+  },
+  "be3daa38b627aaf2": {
+    "glossary_version": 1,
+    "source": "Submit for approval if required.",
+    "target": "Soumettez l'ordre de travail pour approbation si nécessaire."
+  },
+  "bf784087560c5d21": {
+    "glossary_version": 1,
+    "source": "[How do I issue parts to a job?⟦1⟧",
+    "target": "[Comment sortir des pièces pour un travail ?⟦1⟧"
+  },
+  "bfb270147f201ede": {
+    "glossary_version": 1,
+    "source": "You've successfully added your first user when:",
+    "target": "Vous avez ajouté votre premier utilisateur avec succès lorsque :"
+  },
+  "c1ee760ebbfca215": {
+    "glossary_version": 1,
+    "source": "Check [Starting out⟦1⟧ for answers to common questions",
+    "target": "Consultez [Pour commencer⟦1⟧ pour obtenir des réponses aux questions courantes"
+  },
+  "c225cdfb755fdf38": {
+    "glossary_version": 1,
+    "source": "Need help?",
+    "target": "Besoin d'aide ?"
+  },
+  "c25a63cf3e1bfd7d": {
+    "glossary_version": 1,
+    "source": "**✓ Do**",
+    "target": "**✓ À faire**"
+  },
+  "c275df3c6c26365e": {
+    "glossary_version": 1,
+    "source": "Start fast",
+    "target": "Démarrer rapidement"
+  },
+  "c377ac1bc2237f06": {
+    "glossary_version": 1,
+    "source": "**Prevent equipment failures:** schedule maintenance before problems happen",
+    "target": "**Évitez les pannes d'équipement :** planifiez la maintenance avant que les problèmes ne surviennent"
+  },
+  "c4acc60cbf0aba72": {
+    "glossary_version": 1,
+    "source": "**Edit settings**",
+    "target": "**Modifier les paramètres**"
+  },
+  "c6725dbb211ec50c": {
+    "glossary_version": 1,
+    "source": "Write a clear, specific description",
+    "target": "Rédigez une description claire et précise"
+  },
+  "c711984569f0507c": {
+    "glossary_version": 1,
+    "source": "If you get stuck on your first task:",
+    "target": "Si vous êtes bloqué sur votre première tâche :"
+  },
+  "c8586bd258d16b9a": {
+    "glossary_version": 1,
+    "source": "[What happens when an asset fails?⟦1⟧",
+    "target": "[Que se passe-t-il lorsqu'un actif tombe en panne ?⟦1⟧"
+  },
+  "c95c16a452a1494d": {
+    "glossary_version": 1,
+    "source": "[Why does my data look wrong?⟦1⟧",
+    "target": "[Pourquoi mes données semblent-elles incorrectes ?⟦1⟧"
+  },
+  "cb77d6a3ce740f26": {
+    "glossary_version": 1,
+    "source": "Click to open the work order details.",
+    "target": "Cliquez pour ouvrir les détails de l'ordre de travail."
+  },
+  "cdb12df7b799dcf9": {
+    "glossary_version": 1,
+    "source": "Want to see how this connects to locations and work orders? See [How do locations, assets, and work orders work together?⟦1⟧",
+    "target": "Vous souhaitez voir comment cela s'articule avec les emplacements et les ordres de travail ? Consultez [Comment les emplacements, les actifs et les ordres de travail fonctionnent-ils ensemble ?⟦1⟧"
+  },
+  "d58bc57a33e027c2": {
+    "glossary_version": 1,
+    "source": "[What is a work order?⟦1⟧",
+    "target": "[Qu'est-ce qu'un ordre de travail ?⟦1⟧"
+  },
+  "d63d2f6000d980f0": {
+    "glossary_version": 1,
+    "source": "Track assets",
+    "target": "Suivre les actifs"
+  },
+  "d662cc3fe9630650": {
+    "glossary_version": 1,
+    "source": "No installation. No configuration. No customization needed. Just log in and start working:",
+    "target": "Aucune installation. Aucune configuration. Aucune personnalisation nécessaire. Il vous suffit de vous connecter et de commencer à travailler :"
+  },
+  "d6842807429e065c": {
+    "glossary_version": 1,
+    "source": "For more detail on recording notes, parts, and time accurately, see [How do I complete a work order?⟦1⟧",
+    "target": "Pour plus de détails sur l'enregistrement précis des notes, des pièces et du temps, consultez [Comment terminer un ordre de travail ?⟦1⟧"
+  },
+  "d8639dd3efb02c5b": {
+    "glossary_version": 1,
+    "source": "[What is a ⟦1⟧⟦2⟧Instructions to perform maintenance work⟦3⟧⟦4⟧work order⟦5⟧?⟦6⟧ - Instructions to perform maintenance work",
+    "target": "[Qu'est-ce qu'un ⟦1⟧⟦2⟧Instructions pour effectuer un travail de maintenance⟦3⟧⟦4⟧ordre de travail⟦5⟧ ?⟦6⟧ - Instructions pour effectuer un travail de maintenance"
+  },
+  "d9205df27b744229": {
+    "glossary_version": 1,
+    "source": "Update meter readings if applicable.",
+    "target": "Mettez à jour les relevés de compteur, le cas échéant."
+  },
+  "da4f3c741a33d46d": {
+    "glossary_version": 1,
+    "source": "⟦1⟧⟦2⟧IBM Maximo Mobile app — download and manage work on the go⟦3⟧⟦4⟧",
+    "target": "⟦1⟧⟦2⟧Application IBM Maximo Mobile : téléchargez-la et gérez le travail en déplacement⟦3⟧⟦4⟧"
+  },
+  "da8a54ed9a38fb9c": {
+    "glossary_version": 1,
+    "source": "[Why can't I issue materials?⟦1⟧",
+    "target": "[Pourquoi ne puis-je pas sortir des matériaux ?⟦1⟧"
+  },
+  "da91334df9164aff": {
+    "glossary_version": 1,
+    "source": "Learn the building blocks you'll use every day:",
+    "target": "Découvrez les éléments de base que vous utiliserez chaque jour :"
+  },
+  "db07e8a77d2f6157": {
+    "glossary_version": 1,
+    "source": "Configuring email notifications",
+    "target": "Configurer les notifications par e-mail"
+  },
+  "db189158c5c4f89e": {
+    "glossary_version": 1,
+    "source": "**Make better decisions:** use data to understand what's working and what needs attention",
+    "target": "**Prenez de meilleures décisions :** utilisez les données pour comprendre ce qui fonctionne et ce qui demande de l'attention"
+  },
+  "db48abb600d30118": {
+    "glossary_version": 1,
+    "source": "What are the basic concepts?",
+    "target": "Quels sont les concepts de base ?"
+  },
+  "db5068f157602f95": {
+    "glossary_version": 1,
+    "source": "**Can't find an answer?**: Check the [Get answers⟦1⟧ section",
+    "target": "**Vous ne trouvez pas de réponse ?** : consultez la section [Obtenir des réponses⟦1⟧"
+  },
+  "dc19494e545d35f6": {
+    "glossary_version": 1,
+    "source": "Don't overload the asset number with too much detail",
+    "target": "Ne surchargez pas le numéro d'actif avec trop de détails"
+  },
+  "de89bd81c12b8d59": {
+    "glossary_version": 1,
+    "source": "Record time spent (labor hours).",
+    "target": "Enregistrez le temps passé (heures de main-d'œuvre)."
+  },
+  "e02433ddec5a70eb": {
+    "glossary_version": 1,
+    "source": "Manage parts inventory",
+    "target": "Gérer l'inventaire des pièces"
+  },
+  "e0389ca1bb2bb5de": {
+    "glossary_version": 1,
+    "source": "Manages inventory and storeroom operations. Inventory clerks can maintain stock, process item movements, adjust inventory balances, and ensure accurate inventory records.⟦1⟧⟦2⟧**Example tasks:** Receive items into inventory, issue materials to work orders, perform inventory counts, adjust inventory balances, and manage storerooms.",
+    "target": "Gère l'inventaire et les opérations du magasin. Les magasiniers peuvent tenir à jour les stocks, traiter les mouvements d'articles, ajuster les soldes d'inventaire et garantir l'exactitude des enregistrements d'inventaire.⟦1⟧⟦2⟧**Exemples de tâches :** réceptionner des articles en stock, sortir des matériaux pour des ordres de travail, effectuer des comptages d'inventaire, ajuster les soldes d'inventaire et gérer les magasins."
+  },
+  "e0d8c344ebd772a1": {
+    "glossary_version": 1,
+    "source": "Technician: Complete your first work order",
+    "target": "Technicien : terminer votre premier ordre de travail"
+  },
+  "e1211e6b49685cc2": {
+    "glossary_version": 1,
+    "source": "Use a consistent description format",
+    "target": "Utilisez un format de description cohérent"
+  },
+  "e15056d80f2a0b8d": {
+    "glossary_version": 1,
+    "source": "Related links",
+    "target": "Liens connexes"
+  },
+  "e227278142ab5e4c": {
+    "glossary_version": 1,
+    "source": "[Why can't I complete a work order?⟦1⟧ - Status errors, missing permissions, or required data",
+    "target": "[Pourquoi ne puis-je pas terminer un ordre de travail ?⟦1⟧ - Erreurs de statut, droits manquants ou données obligatoires"
+  },
+  "e2afead3e080edd0": {
+    "glossary_version": 1,
+    "source": "No error messages or access issues",
+    "target": "Aucun message d'erreur ni problème d'accès"
+  },
+  "e347d8b69eb44a40": {
+    "glossary_version": 1,
+    "source": "[Explore start fast →⟦1⟧",
+    "target": "[Explorer « Démarrer rapidement » →⟦1⟧"
+  },
+  "e377f0a9b25698c1": {
+    "glossary_version": 1,
+    "source": "⟦1⟧⟦2⟧⟦3⟧⟦4⟧⟦5⟧ ⟦6⟧New to work orders? Learn ⟦7⟧What is a work order?⟦8⟧ to understand the basics.⟦9⟧⟦10⟧",
+    "target": "⟦1⟧⟦2⟧⟦3⟧⟦4⟧⟦5⟧ ⟦6⟧Les ordres de travail sont nouveaux pour vous ? Lisez ⟦7⟧Qu'est-ce qu'un ordre de travail ?⟦8⟧ pour comprendre les notions de base.⟦9⟧⟦10⟧"
+  },
+  "e50ffb99f3f9eedf": {
+    "glossary_version": 1,
+    "source": "Make your maintenance program more efficient.",
+    "target": "Rendez votre programme de maintenance plus efficace."
+  },
+  "e691655403e8fca0": {
+    "glossary_version": 1,
+    "source": "![⟦1⟧ **Guided steps available:**",
+    "target": "![⟦1⟧ **Étapes guidées disponibles :**"
+  },
+  "e6984b439edbb861": {
+    "glossary_version": 1,
+    "source": "[How do I customize dropdown values?⟦1⟧",
+    "target": "[Comment personnaliser les valeurs de liste déroulante ?⟦1⟧"
+  },
+  "e69f82774a48f4b2": {
+    "glossary_version": 1,
+    "source": "Use consistent naming conventions for user IDs",
+    "target": "Utilisez des conventions de nommage cohérentes pour les ID utilisateur"
+  },
+  "e773829ce143650c": {
+    "glossary_version": 1,
+    "source": "Log into Maximo Application Suite Select.",
+    "target": "Connectez-vous à Maximo Application Suite Select."
+  },
+  "e81c1ac2e1d40722": {
+    "glossary_version": 1,
+    "source": "Set up your workforce",
+    "target": "Configurer vos effectifs"
+  },
+  "e834195a444ce6ee": {
+    "glossary_version": 1,
+    "source": "An asset is any piece of equipment, machinery, or infrastructure that your organization maintains. Assets are the physical things you work on.",
+    "target": "Un actif est tout équipement, toute machine ou toute infrastructure que votre organisation entretient. Les actifs sont les éléments physiques sur lesquels vous travaillez."
+  },
+  "ea88542bf64af6ed": {
+    "glossary_version": 1,
+    "source": "Calculate total cost of ownership",
+    "target": "Calculer le coût total de possession"
+  },
+  "eafc4b7f3d45fd41": {
+    "glossary_version": 1,
+    "source": "Review the basics in [What are the basic concepts?⟦1⟧",
+    "target": "Revoyez les notions de base dans [Quels sont les concepts de base ?⟦1⟧"
+  },
+  "eb81db22ce7f49ed": {
+    "glossary_version": 1,
+    "source": "**In the product**: Click the help icon (?) in the top right",
+    "target": "**Dans le produit** : cliquez sur l'icône d'aide (?) en haut à droite"
+  },
+  "ebc1cce97d79846a": {
+    "glossary_version": 1,
+    "source": "Provide a **display name**. This is the full name of the user or a recognizable preferred name.",
+    "target": "Indiquez un **nom d'affichage**. Il s'agit du nom complet de l'utilisateur ou d'un nom d'usage facilement reconnaissable."
+  },
+  "eca4b6af79f4d5e0": {
+    "glossary_version": 1,
+    "source": "[What can I do in my role?⟦1⟧",
+    "target": "[Que puis-je faire dans mon rôle ?⟦1⟧"
+  },
+  "ece1ddfb4b46171b": {
+    "glossary_version": 1,
+    "source": "Get answers",
+    "target": "Obtenir des réponses"
+  },
+  "ee7a40a6db00fdfb": {
+    "glossary_version": 1,
+    "source": "⟦1⟧⟦2⟧⟦3⟧⟦4⟧⟦5⟧ ⟦6⟧Need to request parts? See ⟦7⟧How do I issue parts to a job?⟦8⟧⟦9⟧⟦10⟧",
+    "target": "⟦1⟧⟦2⟧⟦3⟧⟦4⟧⟦5⟧ ⟦6⟧Vous devez demander des pièces ? Consultez ⟦7⟧Comment sortir des pièces pour un travail ?⟦8⟧⟦9⟧⟦10⟧"
+  },
+  "ef4eda7db6bf6254": {
+    "glossary_version": 1,
+    "source": "[What are the basic concepts?⟦1⟧",
+    "target": "[Quels sont les concepts de base ?⟦1⟧"
+  },
+  "f1682b5335c7b151": {
+    "glossary_version": 1,
+    "source": "Maximo Application Suite Select helps you move from reactive \"run-to-fail\" maintenance to organized, preventive maintenance:",
+    "target": "Maximo Application Suite Select vous aide à passer d'une maintenance réactive de type « fonctionnement jusqu'à la panne » à une maintenance préventive et organisée :"
+  },
+  "f205da5ba3046000": {
+    "glossary_version": 1,
+    "source": "What problems does it solve?",
+    "target": "Quels problèmes résout-il ?"
+  },
+  "f2555de69c816e8a": {
+    "glossary_version": 1,
+    "source": "In figure 1, Batch Mixer MX-01, Filler FL-02, Conveyor CV-02, and Spiral Freezer SF-01 are parent assets. Parent assets can include child assets. For example, Batch Mixer MX-01 includes the Agitator motor and Seal.",
+    "target": "Dans la figure 1, Batch Mixer MX-01, Filler FL-02, Conveyor CV-02 et Spiral Freezer SF-01 sont des actifs parents. Les actifs parents peuvent inclure des actifs enfants. Par exemple, Batch Mixer MX-01 comprend l'Agitator motor et le Seal."
+  },
+  "f29a122ff5de325d": {
+    "glossary_version": 1,
+    "source": "⟦1⟧⟦2⟧Inventory clerks:⟦3⟧ Issue parts, receive inventory, and transfer items between storerooms.⟦4⟧",
+    "target": "⟦1⟧⟦2⟧Magasiniers :⟦3⟧ sortez des pièces, réceptionnez des stocks et transférez des articles entre magasins.⟦4⟧"
+  },
+  "f2dd01362518eb08": {
+    "glossary_version": 1,
+    "source": "Before your next shift, learn how your work queue works so you always know what to do first.",
+    "target": "Avant votre prochain poste, découvrez comment fonctionne votre file de travail afin de toujours savoir quoi faire en premier."
+  },
+  "f47f1edc44ed9266": {
+    "glossary_version": 1,
+    "source": "What to do",
+    "target": "Marche à suivre"
+  },
+  "f49c65a7fff7ef29": {
+    "glossary_version": 1,
+    "source": "⟦1⟧Figure 1: Sample asset hierarchy for an ice cream manufacturer⟦2⟧",
+    "target": "⟦1⟧Figure 1 : exemple de hiérarchie des actifs pour un fabricant de crèmes glacées⟦2⟧"
+  },
+  "f5eb524d1044c79c": {
+    "glossary_version": 1,
+    "source": "[Explore get work done →⟦1⟧",
+    "target": "[Explorer « Accomplir le travail » →⟦1⟧"
+  },
+  "f7dfffaf27c3c884": {
+    "glossary_version": 1,
+    "source": "User sees appropriate applications and menus",
+    "target": "L'utilisateur voit les applications et les menus appropriés"
+  },
+  "f9bed9c88b18bc12": {
+    "glossary_version": 1,
+    "source": "Contact support if you encounter technical issues",
+    "target": "Contactez le support si vous rencontrez des problèmes techniques"
+  },
+  "fd30e19531da40a7": {
+    "glossary_version": 1,
+    "source": "**Stop losing track of work:** all work orders in one system, not scattered across spreadsheets or paper",
+    "target": "**Ne perdez plus le fil du travail :** tous les ordres de travail dans un seul système, et non dispersés dans des feuilles de calcul ou sur papier"
+  },
+  "fdc0e6fbb5274872": {
+    "glossary_version": 1,
+    "source": "About these examples",
+    "target": "À propos de ces exemples"
+  },
+  "fe7b920bb59ff86f": {
+    "glossary_version": 1,
+    "source": "⟦1⟧⟦2⟧Asset hierarchy diagram⟦3⟧⟦4⟧",
+    "target": "⟦1⟧⟦2⟧Schéma de hiérarchie des actifs⟦3⟧⟦4⟧"
+  },
+  "fec4a49aefa573c3": {
+    "glossary_version": 1,
+    "source": "Add any parts you used.",
+    "target": "Ajoutez les pièces que vous avez utilisées."
+  }
+}

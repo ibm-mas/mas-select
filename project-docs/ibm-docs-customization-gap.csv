@@ -1,0 +1,15 @@
+#,MAS Select customization,Source in repo,DITA standard,IBM Docs platform (unverified)
+1,"Role selector that reshapes the homepage by persona, in the browser",role-selector.js,"No. Audience filtering is a build-time condition, so it makes separate outputs rather than a live switch.",Needs custom JavaScript. Confirm.
+2,"HTML-rich term tooltips, first use per section only","abbr-tooltips.js, docs/.snippets","No. DITA has glossary entries but no first-use-per-section tooltip logic.",Confirm.
+3,Hover tooltips on the work order lifecycle diagram,lifecycle-tooltips.js,"Partial. <imagemap> gives clickable hotspots, not tooltips.",Needs custom JavaScript. Confirm.
+4,"Field-level context-sensitive help that deep-links and highlights a field (?csh=, ?field=, ?error=)",csh.js,No. DITA has no field-level deep-link behavior.,Confirm.
+5,"""Was this page helpful?"" widget with follow-up questions, posting to your own Power Automate endpoint",page-feedback.js,"No. This is a runtime feature, not content.",Likely replaced by IBM Docs' own feedback. Confirm whether it can be routed to your endpoint.
+6,Copy-table button (HTML and TSV) and click-to-copy inline code,"copy-table.js, copy-inline-code.js",No.,Needs custom JavaScript. Confirm.
+7,Search keyword highlight and scroll to the matching spot on the destination page,search-highlight.js,No.,The platform controls search. Confirm.
+8,Left-nav filter and search box,nav-search.js,No.,The platform controls navigation. Confirm.
+9,"Journey-based homepage with a hero search bar, custom layout, and Carbon web components","docs/index.md, tools/overrides/","No. DITA maps give a topic tree, not custom page layouts.",The platform controls the shell. Confirm.
+10,Active-section highlighting in the right-hand table of contents,scroll-spy.js,No.,The platform controls the shell. Confirm.
+11,Tips callouts wrapped in a styled container with an icon,tips-wrapper.js,"Partly. <note type=""tip""> exists, but the styling is the platform's.",Confirm.
+12,"Translation control: committed translations, glossary and do-not-translate enforcement, English fallback with a notice, human review before release",scripts/translate_docs.py,Out of scope for DITA.,"Translation runs in IBM's pipeline, so a review gate likely can't be added. Confirm."
+13,Per-language search page and language switcher you control,"tools/overrides/search.html, base.html.j2",No.,The platform controls both. Confirm.
+14,Release timing: publish any time with mkdocs gh-deploy,scripts/build.sh,N/A,Releases follow the IBM Docs publishing pipeline. Confirm.

@@ -9,6 +9,9 @@ _context/
 project-docs/PRFAQ MAS SaaS Select (Draft).docx
 project-docs/IA_Maximo_Select.docx
 
+# Raw copies of IBM documentation used as reference — never publish
+project-docs/sources/maximo-manage/
+
 # Local tooling
 .bob/
 .DS_Store

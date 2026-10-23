@@ -1,0 +1,43 @@
+{% extends "base.html.j2" %}
+
+{#- Search page, built once per language (docs/search.md, docs/search.fr.md).
+    The theme's static search.html is disabled (include_search_page: false)
+    because a static template is written once to the site root, so the last
+    language built would overwrite it. -#}
+{% set search_strings = {
+  'en': {'placeholder': 'Search the docs', 'none': 'No results found'},
+  'fr': {'placeholder': 'Rechercher dans la documentation', 'none': 'Aucun résultat trouvé'}
+} %}
+{% set s = search_strings[i18n_page_locale] if i18n_page_locale in search_strings else search_strings['en'] %}
+
+{% block content %}
+  {{ page.content }}
+
+  <form id="content_search" action="search.html">
+    <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+    <input name="q" id="mkdocs-search-query" type="text" class="search_input search-query ui-autocomplete-input" placeholder="{{ s.placeholder }}" aria-label="{{ s.placeholder }}" autocomplete="off">
+  </form>
+
+  <div id="mkdocs-search-results" data-no-results-text="{{ s.none }}"></div>
+
+  <script>
+  // The search index holds every language. Show only results in this page's
+  // language and hide the search page itself. search/main.js calls the global
+  // displayResults(), so wrapping it here filters every result list.
+  (function () {
+    var lang = document.documentElement.lang || 'en';
+    var langs = {{ (i18n_config.languages | selectattr('build') | map(attribute='locale') | list | tojson) if i18n_config else '["en"]' }};
+    var defaultLang = {{ ((i18n_config.languages | selectattr('default') | map(attribute='locale') | first) | tojson) if i18n_config else '"en"' }};
+    function resultLang(location) {
+      var prefix = location.split('/')[0];
+      return langs.indexOf(prefix) !== -1 && prefix !== defaultLang ? prefix : defaultLang;
+    }
+    var original = displayResults;
+    displayResults = function (results) {
+      original(results.filter(function (r) {
+        return resultLang(r.location) === lang && r.location.indexOf('search.html') === -1;
+      }));
+    };
+  })();
+  </script>
+{% endblock %}

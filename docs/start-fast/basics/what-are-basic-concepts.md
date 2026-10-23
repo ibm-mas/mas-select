@@ -19,6 +19,8 @@ Understanding a few key concepts helps you work more effectively in Maximo Appli
 - [What is a location?](what-is-location.md) - Physical places where work is performed
 - [What is an asset?](what-is-asset.md) - Equipment, machinery, and infrastructure you maintain
 - [What is a work order?](what-is-work-order.md) - Instructions to perform maintenance work
+- [Why can I manage work orders in more than one place?](why-apps-overlap.md) - How desktop applications and apps such as Technician relate
+- [How do inspections work?](how-inspections-work.md) - How Inspection Forms and Inspections work together
 - [How do locations, assets, and work orders work together?](how-concepts-work-together.md) - See how these concepts connect in real scenarios
 
 ---

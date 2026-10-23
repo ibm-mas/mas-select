@@ -145,6 +145,7 @@ Create job plans that standardize tasks, parts, and time estimates so every tech
 ## Related topics
 
 - [How do I assign the correct people?](assign-right-people.md)
+- [Why can't I see new work in IBM Maximo Mobile?](../complete-work/why-cant-see-new-work-on-phone.md)
 - [How do I find my work?](../complete-work/find-work.md)
 - [How do I complete a job?](../complete-work/complete-job.md)
 ---

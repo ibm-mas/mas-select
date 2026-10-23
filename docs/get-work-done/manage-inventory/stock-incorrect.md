@@ -478,6 +478,19 @@ The system can:
 - Calculate differences
 - Create adjustments
 
+You create count books in the Count Books application, from **Inventory > Count Books**. You count items in the Inventory Counting app, from **Inventory > Inventory Counting** on the desktop or in IBM Maximo Mobile. In Inventory Counting, you can:
+
+- Count the items in a count book.
+- Count items that are not in a count book.
+- Count items and rotating assets.
+- Set tolerances that allow for small differences between the system balance and the physical count.
+- See alerts for differences that need a recount.
+- Count in batches as part of a cycle count.
+
+After you count, you reconcile the counts to update the inventory balances.
+
+`[SME confirmation required: Confirm that this behavior applies to MAS Select, including which application you use to reconcile counts. The source is the Maximo Manage documentation, which says you reconcile counts in the Inventory Counting application on the desktop.]`
+
 !!! warning "TODO: Add visual content"
      A screenshot showing a count book would be useful here.
 
