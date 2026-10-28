@@ -1532,3 +1532,28 @@ body[data-carbon-theme="g100"] .copy-inline-tooltip {
     color: #161616;
 }
 /* ─────────────────────────────────────────────────────────────────────────── */
+
+/* Embedded video (for example IBM Mediacenter): responsive 16:9 with a text fallback below */
+.video-embed {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 16 / 9;
+    margin: 16px 0 4px 0;
+    background: #161616;
+}
+
+.video-embed iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.video-caption {
+    max-width: 800px;
+    margin: 0 0 16px 0;
+    font-size: 0.875rem;
+    color: var(--cds-text-secondary, #525252);
+}

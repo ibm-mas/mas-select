@@ -32,7 +32,7 @@
     <script>hljs.highlightAll();</script>
 
     <!-- Required by MkDocs search -->
-    <script>var base_url = "../..";</script>
+    <script>var base_url = "../..";</script><script>var search_url = "../../search.html";</script>
 
     <!-- User defined extras -->
     
@@ -82,6 +82,10 @@
       <cds-header-name href="../.." prefix="IBM">Maximo Application Suite Select help center</cds-header-name>
 
       <div class="cds--header__global">
+        <nav class="language-switcher" aria-label="Language">
+          <a href="overview.html" lang="en" hreflang="en" aria-current="true">English</a>
+          <a href="../../fr/start-fast/what-can-i-do/overview.html" lang="fr" hreflang="fr">Français</a>
+        </nav>
 <div class="md-theme-toggle" data-theme-default="g90">
   <button class="md-theme-toggle__button" aria-label="Toggle theme" title="Toggle theme">
     <svg class="md-theme-toggle__icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -255,6 +259,39 @@
   
     <cds-side-nav-menu-item href="../basics/what-is-work-order.html" class="nav-level-3">
       Work orders
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../basics/why-apps-overlap.html" class="nav-level-3">
+      Why apps overlap
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../basics/how-inspections-work.html" class="nav-level-3">
+      How inspections work
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../basics/what-happens-offline.html" class="nav-level-3">
+      Working offline
     </cds-side-nav-menu-item>
   
 
@@ -509,6 +546,17 @@
   
     <cds-side-nav-menu-item href="../../get-work-done/complete-work/why-cant-complete-work-order.html" class="nav-level-3">
       Can't complete work order
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/complete-work/why-cant-see-new-work-on-phone.html" class="nav-level-3">
+      Can't see new work on phone
     </cds-side-nav-menu-item>
   
 
@@ -986,7 +1034,7 @@
               if (e.key === 'Enter') {
                   var query = input.value.trim();
                   if (query) {
-                      window.location.href = 'https://ibm-mas.github.io/mas-select/search.html?q=' + encodeURIComponent(query);
+                      window.location.href = search_url + '?q=' + encodeURIComponent(query);
                   }
               }
           });
@@ -1066,8 +1114,9 @@
 <hr>
 <h2 id="what-can-i-do-as-a-technician">What can I do as a technician?<a class="headerlink" href="#what-can-i-do-as-a-technician" title="Permanent link">¤</a></h2>
 <ul>
-<li>View your assigned <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr></li>
+<li>View your assigned <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> in the Technician app</li>
 <li>Complete tasks and record what you did</li>
+<li>Complete inspections in the Inspections app</li>
 <li>Report time and materials used</li>
 <li>Request parts from <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">inventory</abbr></li>
 <li>Add notes and photos to <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr></li>
@@ -1077,7 +1126,7 @@
 <hr>
 <h2 id="what-can-i-do-as-a-supervisor">What can I do as a supervisor?<a class="headerlink" href="#what-can-i-do-as-a-supervisor" title="Permanent link">¤</a></h2>
 <ul>
-<li>Create and assign <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr></li>
+<li>Create and assign <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> in the Work Orders application</li>
 <li>Schedule <abbr title="Scheduled routine maintenance performed to prevent equipment failures.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance plan, planned maintenance, or PM">preventive maintenance</abbr></li>
 <li>Track work progress and completion</li>
 <li>Monitor team workload</li>
@@ -1088,13 +1137,14 @@
 <hr>
 <h2 id="what-can-i-do-as-an-inventory-clerk">What can I do as an <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">inventory</abbr> clerk?<a class="headerlink" href="#what-can-i-do-as-an-inventory-clerk" title="Permanent link">¤</a></h2>
 <ul>
-<li>Issue parts to <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr></li>
+<li>Issue parts to <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> in the Issues and Transfers app</li>
 <li>Track stock levels and <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr></li>
 <li>Receive new <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">inventory</abbr></li>
-<li>Perform stock counts</li>
+<li>Perform stock counts in the <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">Inventory</abbr> Counting app</li>
 <li>Monitor part usage</li>
 <li><a href="../first-task/get-maximo-mobile.html">Issue parts and receive <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">inventory</abbr> on the go with IBM Maximo Mobile</a></li>
 </ul>
+<p><code>[TO DO: Confirm whether MAS Select includes the Receiving app. If not, remove "receive inventory" here.]</code></p>
 <p><strong>First task</strong>: <a href="../first-task/inventory-clerk-first-task.html">Issue a part</a></p>
 <hr>
 <h2 id="what-can-i-do-as-an-administrator">What can I do as an administrator?<a class="headerlink" href="#what-can-i-do-as-an-administrator" title="Permanent link">¤</a></h2>

@@ -1,0 +1,1272 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="robots" content="noindex, nofollow">
+    <title>How inspections work - Maximo Application Suite Select help center</title>
+
+    <!-- Pure CSS (https://pure-css.github.io/) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/theme.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+    <script src="../../js/theme.js"></script>
+
+    <!-- Carbon theme zones (white, g10, g90, g100) -->
+    <link rel="stylesheet" href="https://1.www.s81c.com/common/carbon/web-components/tag/latest/themes.css">
+
+    <!-- The Carbon web-components/framework -->
+    <script type="module" src="https://1.www.s81c.com/common/carbon/web-components/version/v2.15.0/ui-shell.min.js"></script>
+    <script type="module" src="https://1.www.s81c.com/common/carbon/web-components/version/v2.15.0/accordion.min.js"></script>
+    <script type="module" src="https://1.www.s81c.com/common/carbon/web-components/version/v2.15.0/breadcrumb.min.js"></script>
+    <script type="module" src="https://1.www.s81c.com/common/carbon/web-components/version/v2.15.0/select.min.js"></script>
+    <script type="module" src="https://1.www.s81c.com/common/carbon/web-components/version/v2.15.0/tabs.min.js"></script>
+    <script type="module" src="https://1.www.s81c.com/common/carbon/web-components/version/v2.15.0/search.min.js"></script>
+
+    <!-- HighlightJS code formatting support -->
+    <link rel="stylesheet" id="hljs-light" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+    <link rel="stylesheet" id="hljs-dark" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled="">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- Required by MkDocs search -->
+    <script>var base_url = "../..";</script><script>var search_url = "../../search.html";</script>
+
+    <!-- User defined extras -->
+    
+    
+
+    
+    <link href="../../assets/stylesheets/extra.css" rel="stylesheet">
+    
+
+    
+    <script src="../../assets/javascripts/role-selector.js"></script>
+    
+    <script src="../../assets/javascripts/abbr-tooltips.js"></script>
+    
+    <script src="../../assets/javascripts/lifecycle-tooltips.js"></script>
+    
+    <script src="../../assets/javascripts/tips-wrapper.js"></script>
+    
+    <script src="../../assets/javascripts/page-feedback.js"></script>
+    
+    <script src="../../assets/javascripts/copy-table.js"></script>
+    
+    <script src="../../assets/javascripts/copy-inline-code.js"></script>
+    
+    <script src="../../assets/javascripts/scroll-spy.js"></script>
+    
+    <script src="../../assets/javascripts/search-highlight.js"></script>
+    
+    <script src="../../assets/javascripts/csh.js"></script>
+    
+    <script src="../../search/main.js"></script>
+    
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: black; }
+        </style></head>
+
+  <body class="md-grid" data-theme-default="g90">
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="cds--skip-to-content" tabindex="0">Skip to main content</a>
+
+    <!-- Header -->
+    <cds-header aria-label="Maximo Application Suite Select help center" class="md-header" role="banner">
+      <cds-header-menu-button button-label-active="Close menu" button-label-inactive="Open menu"></cds-header-menu-button>
+      <cds-header-name href="../.." prefix="IBM">Maximo Application Suite Select help center</cds-header-name>
+
+      <div class="cds--header__global">
+        <nav class="language-switcher" aria-label="Language">
+          <a href="how-inspections-work.html" lang="en" hreflang="en" aria-current="true">English</a>
+          <a href="../../fr/start-fast/basics/how-inspections-work.html" lang="fr" hreflang="fr">Français</a>
+        </nav>
+<div class="md-theme-toggle" data-theme-default="g90">
+  <button class="md-theme-toggle__button" aria-label="Toggle theme" title="Toggle theme">
+    <svg class="md-theme-toggle__icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"></path>
+    </svg>
+  </button>
+  <div class="md-theme-toggle__menu" hidden="">
+    <button class="md-theme-toggle__option" data-theme="white">
+      <span class="md-theme-toggle__label">Light</span>
+      <span class="md-theme-toggle__preview md-theme-toggle__preview--white"></span>
+    </button>
+    <button class="md-theme-toggle__option" data-theme="g10">
+      <span class="md-theme-toggle__label">Light Gray</span>
+      <span class="md-theme-toggle__preview md-theme-toggle__preview--g10"></span>
+    </button>
+    <button class="md-theme-toggle__option" data-theme="g90">
+      <span class="md-theme-toggle__label">Dark Gray</span>
+      <span class="md-theme-toggle__preview md-theme-toggle__preview--g90"></span>
+    </button>
+    <button class="md-theme-toggle__option" data-theme="g100">
+      <span class="md-theme-toggle__label">Dark</span>
+      <span class="md-theme-toggle__preview md-theme-toggle__preview--g100"></span>
+    </button>
+  </div>
+</div>
+        
+      </div>
+
+      
+    </cds-header>
+
+    <!-- Main container with three-column layout -->
+    <div class="md-container">
+      <!-- Left sidebar - Navigation -->
+      <aside class="md-sidebar md-sidebar--primary" data-md-component="sidebar" role="navigation" aria-label="Main Navigation">
+        <div class="md-sidebar__scrollwrap">
+          <div class="md-sidebar__inner">
+            <cds-side-nav aria-label="Side navigation">
+              <div class="nav-search-container">
+                <input type="text" id="nav-search-input" class="nav-search-input" placeholder="Search" aria-label="Search navigation">
+              </div>
+              <cds-side-nav-items>
+                
+                  
+                  
+  
+    <cds-side-nav-link href="../../index.html">Home</cds-side-nav-link>
+  
+
+                
+                  
+                  
+  <cds-side-nav-menu title="Start fast" active="" expanded="" class="nav-level-1">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../what-can-i-do/overview.html" class="nav-level-2">
+      Your role
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="First task" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../first-task/technician-first-task.html" class="nav-level-3">
+      Technician: Complete your first work order
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../first-task/supervisor-first-task.html" class="nav-level-3">
+      Supervisor: Assign and track work
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../first-task/inventory-clerk-first-task.html" class="nav-level-3">
+      Inventory clerk: Issue a part
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../first-task/administrator-first-task.html" class="nav-level-3">
+      Administrator: Add users
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../first-task/get-maximo-mobile.html" class="nav-level-3">
+      Get Maximo Mobile
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Basic concepts" active="" expanded="" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="what-are-basic-concepts.html" class="nav-level-3">
+      Overview
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="what-is-location.html" class="nav-level-3">
+      Locations
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="what-is-asset.html" class="nav-level-3">
+      Assets
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="what-is-work-order.html" class="nav-level-3">
+      Work orders
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="why-apps-overlap.html" class="nav-level-3">
+      Why apps overlap
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="how-inspections-work.html" active="" expanded="" class="nav-level-3">
+      How inspections work
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="what-happens-offline.html" class="nav-level-3">
+      Working offline
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="how-concepts-work-together.html" class="nav-level-3">
+      How concepts work together
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="why-do-terms-differ.html" class="nav-level-3">
+      Term differences
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="keyboard-shortcuts.html" class="nav-level-3">
+      Keyboard shortcuts
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+  </cds-side-nav-menu>
+
+                
+                  
+                  
+  <cds-side-nav-menu title="Get work done" class="nav-level-1">
+    
+      
+      
+        
+  <cds-side-nav-menu title="Set up and control" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/setup-control/add-users.html" class="nav-level-3">
+      Add users
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/setup-control/get-data-into-system.html" class="nav-level-3">
+      Get data into system
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/setup-control/automate-communication.html" class="nav-level-3">
+      Automate communication
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/setup-control/set-up-labor-crafts-crews.html" class="nav-level-3">
+      Set up labor, crafts, and crews
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/setup-control/set-up-maps.html" class="nav-level-3">
+      Set up maps
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/setup-control/prepare-data-for-import.html" class="nav-level-3">
+      Prepare data for import
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/setup-control/correct-load-order.html" class="nav-level-3">
+      Correct load order
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/setup-control/why-does-asset-import-fail.html" class="nav-level-3">
+      Fix import errors
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/setup-control/object-structure-data-types.html" class="nav-level-3">
+      Data types
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/setup-control/configure-maximo-mobile.html" class="nav-level-3">
+      Configure Maximo Mobile
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Plan work" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/plan-work/plan-recurring-maintenance.html" class="nav-level-3">
+      Recurring maintenance
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/plan-work/decide-what-work.html" class="nav-level-3">
+      Decide what work
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/plan-work/schedule-work.html" class="nav-level-3">
+      Schedule work
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Complete work" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/complete-work/find-work.html" class="nav-level-3">
+      Find work
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/complete-work/complete-job.html" class="nav-level-3">
+      Complete work order
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/complete-work/cant-complete-task.html" class="nav-level-3">
+      Can't complete task
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/complete-work/why-cant-complete-work-order.html" class="nav-level-3">
+      Can't complete work order
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/complete-work/why-cant-see-new-work-on-phone.html" class="nav-level-3">
+      Can't see new work on phone
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Manage assets" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/manage-assets/track-asset-history.html" class="nav-level-3">
+      Asset history
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/manage-assets/classify-assets.html" class="nav-level-3">
+      Classify assets
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/manage-assets/asset-fails.html" class="nav-level-3">
+      Asset failures
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Manage inventory" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/manage-inventory/issue-parts.html" class="nav-level-3">
+      Issue parts
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/manage-inventory/track-stock-levels.html" class="nav-level-3">
+      Track stock levels
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/manage-inventory/stock-incorrect.html" class="nav-level-3">
+      Incorrect stock
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/manage-inventory/why-cant-issue-materials.html" class="nav-level-3">
+      Can't issue materials
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Monitor and respond" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/monitor-respond/detect-issues-early.html" class="nav-level-3">
+      Detect issues early
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/monitor-respond/what-metrics-matter.html" class="nav-level-3">
+      Important metrics
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/monitor-respond/act-on-alerts.html" class="nav-level-3">
+      Act on alerts
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Organize people and work" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/organize-people/assign-right-people.html" class="nav-level-3">
+      Assign people
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/organize-people/standardize-data.html" class="nav-level-3">
+      Customize dropdown values
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/organize-people/why-cant-see-assigned-work.html" class="nav-level-3">
+      Technicians can't see work
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+  </cds-side-nav-menu>
+
+                
+                  
+                  
+  <cds-side-nav-menu title="Improve results" class="nav-level-1">
+    
+      
+      
+        
+  <cds-side-nav-menu title="Improve work" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../improve-results/improve-work/reduce-downtime.html" class="nav-level-3">
+      Reduce downtime
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../improve-results/improve-work/improve-completion-rates.html" class="nav-level-3">
+      Improve completion rates
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Improve data quality" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../improve-results/improve-data/data-looks-wrong.html" class="nav-level-3">
+      Data looks wrong
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../improve-results/improve-data/make-data-reliable.html" class="nav-level-3">
+      Make data reliable
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Improve adoption" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../improve-results/improve-adoption/technicians-not-using.html" class="nav-level-3">
+      Technicians not using system
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../improve-results/improve-adoption/simplify-workflows.html" class="nav-level-3">
+      Simplify workflows
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+  </cds-side-nav-menu>
+
+                
+                  
+                  
+  <cds-side-nav-menu title="Work smarter" class="nav-level-1">
+    
+      
+      
+        
+  <cds-side-nav-menu title="AI and automation" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../work-smarter/ai-automation/ai-improve-maintenance.html" class="nav-level-3">
+      AI improves maintenance
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../work-smarter/ai-automation/what-can-automate.html" class="nav-level-3">
+      Automate tasks
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Scale operation" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../work-smarter/scale-operation/manage-more-assets.html" class="nav-level-3">
+      Manage more assets
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../work-smarter/scale-operation/standardize-across-teams.html" class="nav-level-3">
+      Standardize across teams
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Insights to outcomes" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../work-smarter/insights-outcomes/data-into-decisions.html" class="nav-level-3">
+      Data into decisions
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../work-smarter/insights-outcomes/optimize-performance.html" class="nav-level-3">
+      Optimize performance
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+  </cds-side-nav-menu>
+
+                
+                  
+                  
+  <cds-side-nav-menu title="Get answers" class="nav-level-1">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-answers/index.html" class="nav-level-2">
+      Overview
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-answers/starting-out.html" class="nav-level-2">
+      Starting out
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-answers/getting-work-done.html" class="nav-level-2">
+      Getting work done
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-answers/improving-results.html" class="nav-level-2">
+      Improving results
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-answers/working-smarter.html" class="nav-level-2">
+      Working smarter
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-answers/security.html" class="nav-level-2">
+      Security
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+                
+              </cds-side-nav-items>
+            </cds-side-nav>
+          </div>
+        </div>
+      </aside>
+      <script>
+      (function() {
+          var input = document.getElementById('nav-search-input');
+          if (!input) return;
+          input.addEventListener('keydown', function(e) {
+              if (e.key === 'Enter') {
+                  var query = input.value.trim();
+                  if (query) {
+                      window.location.href = search_url + '?q=' + encodeURIComponent(query);
+                  }
+              }
+          });
+          input.addEventListener('input', function() {
+              var query = input.value.toLowerCase().trim();
+              var navItems = document.querySelectorAll('cds-side-nav-menu-item, cds-side-nav-menu');
+              navItems.forEach(function(item) {
+                  if (query === '' || item.textContent.toLowerCase().includes(query)) {
+                      item.style.display = '';
+                      if (query && item.tagName === 'CDS-SIDE-NAV-MENU-ITEM') {
+                          var parent = item.closest('cds-side-nav-menu');
+                          if (parent) parent.setAttribute('expanded', '');
+                      }
+                  } else {
+                      item.style.display = 'none';
+                  }
+              });
+          });
+          document.querySelectorAll('cds-side-nav-menu-item').forEach(function(item) {
+              item.addEventListener('click', function() {
+                  var query = input.value.trim();
+                  if (query) {
+                      var href = item.getAttribute('href');
+                      if (href && !href.includes('highlight=')) {
+                          var sep = href.includes('?') ? '&' : '?';
+                          item.setAttribute('href', href + sep + 'highlight=' + encodeURIComponent(query));
+                      }
+                  }
+              });
+          });
+      })();
+      </script>
+
+      <!-- Main content area -->
+      <main id="main-content" class="md-content" data-md-component="content" tabindex="-1">
+        <article class="md-content__inner">
+          <!-- Breadcrumbs -->
+          <div class="md-breadcrumbs"><cds-breadcrumb no-trailing-slash="">
+  <cds-breadcrumb-item>
+    <cds-breadcrumb-link href="../../index.html">Home</cds-breadcrumb-link>
+  </cds-breadcrumb-item>
+      <cds-breadcrumb-item>Start fast</cds-breadcrumb-item>
+      <cds-breadcrumb-item>Basic concepts</cds-breadcrumb-item>
+  <cds-breadcrumb-item>
+    <cds-breadcrumb-link href="#how-do-inspections-work">How do inspections work?</cds-breadcrumb-link>
+  </cds-breadcrumb-item>
+
+  <cds-breadcrumb-item aria-current="page">
+    <cds-select id="breadcrumbs-toc" inline="" placeholder="..." oninput="changeAnchor(this.value)">
+    
+    
+      <cds-select-item value="#how-inspections-fit-together">How inspections fit together</cds-select-item>
+    
+      <cds-select-item value="#what-you-can-do-in-inspections">What you can do in Inspections</cds-select-item>
+    
+      <cds-select-item value="#quick-reference">Quick reference</cds-select-item>
+    
+      <cds-select-item value="#who-can-use-inspections">Who can use inspections?</cds-select-item>
+    
+      <cds-select-item value="#what-to-do-next">What to do next</cds-select-item>
+    
+      <cds-select-item value="#related-topics">Related topics</cds-select-item>
+    
+    </cds-select>
+  </cds-breadcrumb-item>
+</cds-breadcrumb>
+          </div>
+
+          <!-- Page content -->
+          <div class="rst-content">
+            
+            <h1 id="how-do-inspections-work">How do inspections work?<a class="headerlink" href="#how-do-inspections-work" title="Permanent link">¤</a></h1>
+<p>An inspection is a set of questions that you answer about an <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> or a <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr>. Inspections use two apps:</p>
+<ul>
+<li><strong>Inspection Forms</strong>, from <strong>Planning &gt; Inspection Forms</strong>. Use it to define the forms that inspections use.</li>
+<li><strong>Inspections</strong>, from <strong>Work Orders &gt; Inspections</strong>. Use it to conduct inspections and record the results.</li>
+</ul>
+<p>Inspections is also in IBM Maximo Mobile, so you can inspect an <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> or <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> where it is. The app has the same name on the desktop and in IBM Maximo Mobile.</p>
+<p><code>[SME confirmation required: Confirm that the inspection behavior in this topic applies to MAS Select. The source is the Maximo Manage documentation. Confirm that Inspection Forms and Inspections are the app names and locations in Select.]</code></p>
+<h2 id="how-inspections-fit-together">How inspections fit together<a class="headerlink" href="#how-inspections-fit-together" title="Permanent link">¤</a></h2>
+<ol>
+<li>A form defines the questions for an inspection.</li>
+<li>When the form is activated, an inspection appears in the Inspections app.</li>
+<li>An inspector answers the questions and completes the inspection.</li>
+<li>The results are saved with the <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> or <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> that was inspected.</li>
+</ol>
+<p><code>[SME confirmation required: Confirm how inspections are scheduled or generated from a form in Select, and where the results appear for the asset or location.]</code></p>
+<h2 id="what-you-can-do-in-inspections">What you can do in Inspections<a class="headerlink" href="#what-you-can-do-in-inspections" title="Permanent link">¤</a></h2>
+<ul>
+<li>Filter your inspections by pending, in progress, and completed.</li>
+<li>Conduct several inspections at the same time, as a batch.</li>
+<li>Create an unscheduled inspection when you find something that is not on your schedule, including for several <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">assets</abbr> or <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr> at once.</li>
+<li>Show only the required questions, or only the questions that you have not answered.</li>
+<li>Review your answers in a summary before you complete the inspection.</li>
+<li>View the results of completed inspections.</li>
+<li>Attach photos to an inspection.</li>
+<li>Create follow-up work from an inspection.</li>
+</ul>
+<p>The app saves your answers automatically as you go.</p>
+<h2 id="quick-reference">Quick reference<a class="headerlink" href="#quick-reference" title="Permanent link">¤</a></h2>
+<h3 id="table-1-inspection-apps">Table 1. Inspection apps<a class="headerlink" href="#table-1-inspection-apps" title="Permanent link">¤</a></h3>
+<table>
+<thead>
+<tr>
+<th>App</th>
+<th>Find it in the menu</th>
+<th>Use it to</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Inspection Forms</strong></td>
+<td><strong>Planning &gt; Inspection Forms</strong></td>
+<td>Define the forms that inspections use.</td>
+</tr>
+<tr>
+<td><strong>Inspections</strong></td>
+<td><strong>Work Orders &gt; Inspections</strong></td>
+<td>Conduct inspections and review results.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="who-can-use-inspections">Who can use inspections?<a class="headerlink" href="#who-can-use-inspections" title="Permanent link">¤</a></h2>
+<p>The apps you see depend on your <abbr title="A collection of users who share the same application access and permissions.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; permission group, access group, user group, or role">security group</abbr>. In general:</p>
+<ul>
+<li>Technicians complete inspections.</li>
+<li>Supervisors review inspection results.</li>
+</ul>
+<p>For the <abbr title="Collections of users who share the same application access and permissions.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; permission groups, access groups, user groups, or roles">security groups</abbr>, see <a href="../../get-work-done/setup-control/add-users.html">How do I add users?</a></p>
+<h2 id="what-to-do-next">What to do next<a class="headerlink" href="#what-to-do-next" title="Permanent link">¤</a></h2>
+<ul>
+<li><a href="why-apps-overlap.html">Why can I manage <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> in more than one place?</a>: See how Inspections relates to the other apps.</li>
+<li><a href="what-happens-offline.html">What happens when I'm offline in IBM Maximo Mobile?</a>: Learn how Inspections works without a connection.</li>
+<li><a href="../../get-work-done/complete-work/complete-job.html">How do I complete a <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr>?</a>: See how inspections fit into completing work.</li>
+</ul>
+<hr>
+<h2 id="related-topics">Related topics<a class="headerlink" href="#related-topics" title="Permanent link">¤</a></h2>
+<ul>
+<li><a href="what-is-work-order.html">What is a <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr>?</a></li>
+<li><a href="what-is-asset.html">What is an <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr>?</a></li>
+<li><a href="../first-task/get-maximo-mobile.html">How do I get IBM Maximo Mobile?</a></li>
+</ul>
+            
+          </div>
+
+          <!-- Navigation footer (prev/next) -->
+<nav class="md-footer-nav" aria-label="Footer navigation">
+  <div class="md-footer-nav__inner">
+    <a href="why-apps-overlap.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+      <div class="md-footer-nav__direction">
+        <svg class="md-footer-nav__icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"></path>
+        </svg>
+        <span>Previous</span>
+      </div>
+      <div class="md-footer-nav__title">
+        <span class="md-footer-nav__title-text">Why apps overlap</span>
+      </div>
+    </a>
+    <a href="what-happens-offline.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+      <div class="md-footer-nav__direction">
+        <span>Next</span>
+        <svg class="md-footer-nav__icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+        </svg>
+      </div>
+      <div class="md-footer-nav__title">
+        <span class="md-footer-nav__title-text">Working offline</span>
+      </div>
+    </a>
+  </div>
+</nav>
+        </article>
+      </main>
+
+      <!-- Right sidebar - Table of Contents -->
+      <aside class="md-sidebar md-sidebar--secondary" data-md-component="toc" role="complementary" aria-label="Table of contents">
+<nav class="md-sidebar md-sidebar--secondary" aria-label="Table of contents">
+  <div class="md-sidebar__scrollwrap">
+    <div class="md-sidebar__inner">
+      <div class="md-toc">
+        <div class="md-toc__title">On this page</div>
+        <ul class="md-toc__list">
+              <li class="md-toc__item">
+                <a href="#how-inspections-fit-together" class="md-toc__link" data-md-level="1">
+                  How inspections fit together
+                </a>
+              </li>
+              <li class="md-toc__item">
+                <a href="#what-you-can-do-in-inspections" class="md-toc__link" data-md-level="1">
+                  What you can do in Inspections
+                </a>
+              </li>
+              <li class="md-toc__item">
+                <a href="#quick-reference" class="md-toc__link" data-md-level="1">
+                  Quick reference
+                </a>
+                  <ul class="md-toc__list">
+                      <li class="md-toc__item">
+                        <a href="#table-1-inspection-apps" class="md-toc__link" data-md-level="2">
+                          Table 1. Inspection apps
+                        </a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="md-toc__item">
+                <a href="#who-can-use-inspections" class="md-toc__link" data-md-level="1">
+                  Who can use inspections?
+                </a>
+              </li>
+              <li class="md-toc__item">
+                <a href="#what-to-do-next" class="md-toc__link" data-md-level="1">
+                  What to do next
+                </a>
+              </li>
+              <li class="md-toc__item">
+                <a href="#related-topics" class="md-toc__link" data-md-level="1">
+                  Related topics
+                </a>
+              </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+      </aside>
+    </div>
+
+    <!-- Footer - Full width outside container -->
+    <footer class="md-footer" role="contentinfo">
+      Built with <a href="https://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/durera/mkdocs-carbon">Carbon theme</a>
+    </footer>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": false, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+</script></body></html>

@@ -32,7 +32,7 @@
     <script>hljs.highlightAll();</script>
 
     <!-- Required by MkDocs search -->
-    <script>var base_url = "../..";</script>
+    <script>var base_url = "../..";</script><script>var search_url = "../../search.html";</script>
 
     <!-- User defined extras -->
     
@@ -82,6 +82,10 @@
       <cds-header-name href="../.." prefix="IBM">Maximo Application Suite Select help center</cds-header-name>
 
       <div class="cds--header__global">
+        <nav class="language-switcher" aria-label="Language">
+          <a href="correct-load-order.html" lang="en" hreflang="en" aria-current="true">English</a>
+          <a href="../../fr/get-work-done/setup-control/correct-load-order.html" lang="fr" hreflang="fr">Français</a>
+        </nav>
 <div class="md-theme-toggle" data-theme-default="g90">
   <button class="md-theme-toggle__button" aria-label="Toggle theme" title="Toggle theme">
     <svg class="md-theme-toggle__icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -255,6 +259,39 @@
   
     <cds-side-nav-menu-item href="../../start-fast/basics/what-is-work-order.html" class="nav-level-3">
       Work orders
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/basics/why-apps-overlap.html" class="nav-level-3">
+      Why apps overlap
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/basics/how-inspections-work.html" class="nav-level-3">
+      How inspections work
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/basics/what-happens-offline.html" class="nav-level-3">
+      Working offline
     </cds-side-nav-menu-item>
   
 
@@ -509,6 +546,17 @@
   
     <cds-side-nav-menu-item href="../complete-work/why-cant-complete-work-order.html" class="nav-level-3">
       Can't complete work order
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../complete-work/why-cant-see-new-work-on-phone.html" class="nav-level-3">
+      Can't see new work on phone
     </cds-side-nav-menu-item>
   
 
@@ -986,7 +1034,7 @@
               if (e.key === 'Enter') {
                   var query = input.value.trim();
                   if (query) {
-                      window.location.href = 'https://ibm-mas.github.io/mas-select/search.html?q=' + encodeURIComponent(query);
+                      window.location.href = search_url + '?q=' + encodeURIComponent(query);
                   }
               }
           });
