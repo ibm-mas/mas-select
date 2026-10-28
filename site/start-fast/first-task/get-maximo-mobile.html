@@ -32,7 +32,7 @@
     <script>hljs.highlightAll();</script>
 
     <!-- Required by MkDocs search -->
-    <script>var base_url = "../..";</script>
+    <script>var base_url = "../..";</script><script>var search_url = "../../search.html";</script>
 
     <!-- User defined extras -->
     
@@ -82,6 +82,10 @@
       <cds-header-name href="../.." prefix="IBM">Maximo Application Suite Select help center</cds-header-name>
 
       <div class="cds--header__global">
+        <nav class="language-switcher" aria-label="Language">
+          <a href="get-maximo-mobile.html" lang="en" hreflang="en" aria-current="true">English</a>
+          <a href="../../fr/start-fast/first-task/get-maximo-mobile.html" lang="fr" hreflang="fr">Français</a>
+        </nav>
 <div class="md-theme-toggle" data-theme-default="g90">
   <button class="md-theme-toggle__button" aria-label="Toggle theme" title="Toggle theme">
     <svg class="md-theme-toggle__icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -255,6 +259,39 @@
   
     <cds-side-nav-menu-item href="../basics/what-is-work-order.html" class="nav-level-3">
       Work orders
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../basics/why-apps-overlap.html" class="nav-level-3">
+      Why apps overlap
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../basics/how-inspections-work.html" class="nav-level-3">
+      How inspections work
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../basics/what-happens-offline.html" class="nav-level-3">
+      Working offline
     </cds-side-nav-menu-item>
   
 
@@ -509,6 +546,17 @@
   
     <cds-side-nav-menu-item href="../../get-work-done/complete-work/why-cant-complete-work-order.html" class="nav-level-3">
       Can't complete work order
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/complete-work/why-cant-see-new-work-on-phone.html" class="nav-level-3">
+      Can't see new work on phone
     </cds-side-nav-menu-item>
   
 
@@ -986,7 +1034,7 @@
               if (e.key === 'Enter') {
                   var query = input.value.trim();
                   if (query) {
-                      window.location.href = 'https://ibm-mas.github.io/mas-select/search.html?q=' + encodeURIComponent(query);
+                      window.location.href = search_url + '?q=' + encodeURIComponent(query);
                   }
               }
           });
@@ -1048,6 +1096,8 @@
     
       <cds-select-item value="#sync-your-work">Sync your work</cds-select-item>
     
+      <cds-select-item value="#video-transcript">Video transcript</cds-select-item>
+    
       <cds-select-item value="#what-to-do-next">What to do next</cds-select-item>
     
       <cds-select-item value="#related-topics">Related topics</cds-select-item>
@@ -1062,7 +1112,15 @@
             
             <h1 id="how-do-i-get-ibm-maximo-mobile">How do I get IBM Maximo Mobile?<a class="headerlink" href="#how-do-i-get-ibm-maximo-mobile" title="Permanent link">¤</a></h1>
 <p>IBM Maximo Mobile lets you view assigned work, complete <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr>, assign and approve work, issue parts, receive <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">inventory</abbr>, and update records from your phone or tablet.</p>
+<p><code>[TO DO: Confirm whether MAS Select includes the Receiving and Approvals apps. Maximo Manage includes both, but they are not on the Select menu. If Select does not include them, remove "receive inventory" and "approve work" here, in "What can I do in my role?", and in the inventory clerk first task.]</code></p>
 <p>Technicians, supervisors, and <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">inventory</abbr> clerks all use IBM Maximo Mobile.</p>
+<p>Watch how to install the app, connect to your server, and sign in.</p>
+<div class="video-embed">
+<iframe allowfullscreen="allowfullscreen" loading="lazy" src="https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&amp;playerId=kaltura_player&amp;entry_id=1_44ss9s9d&amp;widget_id=1_v2r6z780" title="Video: Install IBM Maximo Mobile, connect to your server, and sign in"></iframe>
+</div>
+<p class="video-caption">Setting up the IBM Maximo Mobile app (about 1 minute). <a href="https://mediacenter.ibm.com/media/Setting%20up%20the%20IBM%20Maximo%20Mobile%20app/1_44ss9s9d">Watch on IBM Mediacenter</a>. <a href="#video-transcript">Read the transcript</a>.</p>
+
+<p><code>[SME confirmation required: The video starts in Maximo Manage with the Maximo Mobile Setup option, which gives a QR code and a download link. Confirm that this option exists in Select. If it does, add it to "Download the app" and "Sign in" below.]</code></p>
 <h2 id="tips-for-success">💡 Tips for success<a class="headerlink" href="#tips-for-success" title="Permanent link">¤</a></h2>
 <ul>
 <li>Download the app before your first shift, not during it.</li>
@@ -1072,6 +1130,9 @@
 <h2 id="what-you-need-before-you-start">What you need before you start<a class="headerlink" href="#what-you-need-before-you-start" title="Permanent link">¤</a></h2>
 <ul>
 <li>A mobile device running iOS or Android.</li>
+</ul>
+<p><code>[TO DO: Confirm whether Windows devices are supported in Select. Maximo Manage supports iOS, Android, and Windows.]</code></p>
+<ul>
 <li>Your Maximo Application Suite Select login credentials.</li>
 <li>Your administrator must have configured IBM Maximo Mobile for your team. If the app is not yet available, contact your administrator.</li>
 </ul>
@@ -1082,21 +1143,29 @@
 <li>Download and install the app.</li>
 </ol>
 <h2 id="sign-in">Sign in<a class="headerlink" href="#sign-in" title="Permanent link">¤</a></h2>
+<p>Your first sign-in needs a network connection. The app creates a local data store on your device, which it uses when you work offline.</p>
 <ol>
 <li>Open <strong>IBM Maximo Mobile</strong> on your device.</li>
-<li>Enter your Maximo Application Suite Select server URL.</li>
-</ol>
-<p><code>[SME confirmation required: Confirm whether technicians enter a server URL manually or whether the app is pre-configured by the administrator. Add the exact sign-in flow here.]</code></p>
-<ol>
+<li>If the app asks for a server URL, enter your Maximo Application Suite Select server URL. Your administrator can also set the URL for you, in which case the app does not ask.</li>
 <li>Enter your username and password.</li>
 <li>Tap <strong>Sign in</strong>.</li>
 </ol>
+<p><code>[SME confirmation required: Confirm the exact sign-in screens in Select, including single sign-on prompts.]</code></p>
 <h2 id="sync-your-work">Sync your work<a class="headerlink" href="#sync-your-work" title="Permanent link">¤</a></h2>
-<p>After signing in, sync the app to download your assigned <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> and supporting data.</p>
-<p><code>[SME confirmation required: Confirm the exact sync step — for example, whether technicians tap a Sync button, or whether sync happens automatically on first sign-in.]</code></p>
+<p>While your device is online, the app syncs your work automatically. You can also sync manually at any time. If your device is offline, the app uses the data stored on the device and syncs when it reconnects.</p>
+<p><code>[SME confirmation required: Confirm the name and location of the manual sync control in Select.]</code></p>
+<h2 id="video-transcript">Video transcript<a class="headerlink" href="#video-transcript" title="Permanent link">¤</a></h2>
+<p>Transcript of "Setting up the IBM Maximo Mobile app".</p>
+<p>Maximo Mobile helps you take your work with you, so you can work in the field from your mobile device.</p>
+<p>Start in Maximo Manage and open the Maximo Mobile Setup option. If you're already signed in, you can start setup from your profile menu. You get a QR code and a download link. Use either option to install the correct Maximo Mobile app for your device.</p>
+<p>Open Maximo Mobile. The app prompts you to connect to your server. Connect by scanning the QR code or enter the server address your administrator provides. The app checks the address and connects.</p>
+<p>Sign in with your user ID and password. After the server confirms your sign-in, Maximo Mobile downloads what you need for first use. Setup is complete.</p>
+<p>You are ready to open Maximo Mobile and access your work in the field. Scan the QR code now to install the app.</p>
 <h2 id="what-to-do-next">What to do next<a class="headerlink" href="#what-to-do-next" title="Permanent link">¤</a></h2>
 <ul>
 <li><a href="technician-first-task.html">Technician: Complete a <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr></a>: Complete your first <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> using the app or desktop.</li>
+<li><a href="../basics/what-happens-offline.html">What happens when I'm offline in IBM Maximo Mobile?</a>: Learn how the app works without a connection.</li>
+<li><a href="../../get-work-done/complete-work/why-cant-see-new-work-on-phone.html">Why can't I see new work in IBM Maximo Mobile?</a>: Fix missing work on your device.</li>
 <li><a href="../../get-work-done/complete-work/find-work.html">How do I find my work?</a>: Find and filter your assigned work queue.</li>
 <li><a href="../../get-work-done/complete-work/complete-job.html">How do I complete a <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr>?</a>: Walk through the full <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> completion workflow.</li>
 </ul>
@@ -1171,6 +1240,11 @@
               <li class="md-toc__item">
                 <a href="#sync-your-work" class="md-toc__link" data-md-level="1">
                   Sync your work
+                </a>
+              </li>
+              <li class="md-toc__item">
+                <a href="#video-transcript" class="md-toc__link" data-md-level="1">
+                  Video transcript
                 </a>
               </li>
               <li class="md-toc__item">

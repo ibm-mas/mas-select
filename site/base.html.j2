@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ i18n_page_locale | default('en') }}">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -35,6 +35,8 @@
 
     <!-- Required by MkDocs search -->
     <script>var base_url = {{ base_url | tojson }};</script>
+    {#- Each language has its own search page (docs/search.md, docs/search.<lang>.md) -#}
+    <script>var search_url = {{ ((base_url ~ '/' ~ (i18n_page_locale ~ '/' if i18n_page_locale and i18n_page_locale != (i18n_config.languages | selectattr('default') | map(attribute='locale') | first) else '') ~ 'search.html') if i18n_config else (base_url ~ '/search.html')) | tojson }};</script>
 
     <!-- User defined extras -->
     {% block extrahead %}
@@ -67,6 +69,14 @@
       {%- endif %}
 
       <div class="cds--header__global">
+        {#- Language switcher: built from the mkdocs-static-i18n per-page alternates -#}
+        {%- if page and page.file and page.file.alternates and i18n_config %}
+        <nav class="language-switcher" aria-label="Language">
+          {%- for lang in i18n_config.languages if lang.build and lang.locale in page.file.alternates %}
+          <a href="{{ page.file.alternates[lang.locale].url | url }}" lang="{{ lang.locale }}" hreflang="{{ lang.locale }}"{% if lang.locale == i18n_page_locale %} aria-current="true"{% endif %}>{{ lang.name }}</a>
+          {%- endfor %}
+        </nav>
+        {%- endif %}
         {%- include "theme-toggle.html.j2" %}
         {# Search removed - using navigation search instead #}
       </div>
@@ -106,7 +116,7 @@
               if (e.key === 'Enter') {
                   var query = input.value.trim();
                   if (query) {
-                      window.location.href = '{{ config.site_url }}search.html?q=' + encodeURIComponent(query);
+                      window.location.href = search_url + '?q=' + encodeURIComponent(query);
                   }
               }
           });
@@ -147,6 +157,26 @@
           <div class="md-breadcrumbs">
             {%- include "breadcrumbs.html.j2" %}
           </div>
+
+          {#- Machine-translation notice (translated pages) and fallback notice (untranslated pages) -#}
+          {%- set mt_notice = {
+            'fr': {
+              'translated': 'Cette page a été traduite automatiquement.',
+              'english_link': 'Lire la version anglaise',
+              'fallback': 'Cette page n’est pas encore traduite en français. La version anglaise s’affiche.'
+            }
+          } -%}
+          {%- if i18n_page_locale and i18n_page_locale in mt_notice and page and page.file and page.file.alternates %}
+          {%- set notice = mt_notice[i18n_page_locale] %}
+          <div class="mt-notice" role="note" lang="{{ i18n_page_locale }}">
+            {%- if i18n_file_locale == i18n_page_locale %}
+            {{ notice.translated }}
+            {%- if 'en' in page.file.alternates %} <a href="{{ page.file.alternates['en'].url | url }}" lang="en" hreflang="en">{{ notice.english_link }}</a>.{% endif %}
+            {%- else %}
+            {{ notice.fallback }}
+            {%- endif %}
+          </div>
+          {%- endif %}
 
           <!-- Page content -->
           <div class="rst-content">

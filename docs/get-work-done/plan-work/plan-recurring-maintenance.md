@@ -92,6 +92,8 @@ If lead time is too short, parts and labor won't be ready when the work order is
 
 Link your job plan to the schedule. Each work order will include the same steps and parts list.
 
+To change a job plan that is already active, select **Revise Job Plan** first. For details, see [Keep plans current](decide-what-work.md#keep-plans-current).
+
 **In practice**
 
 - Organizations often create overly complex schedules at the start, which are hard to maintain

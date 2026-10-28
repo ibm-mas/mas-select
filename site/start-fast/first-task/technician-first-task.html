@@ -32,7 +32,7 @@
     <script>hljs.highlightAll();</script>
 
     <!-- Required by MkDocs search -->
-    <script>var base_url = "../..";</script>
+    <script>var base_url = "../..";</script><script>var search_url = "../../search.html";</script>
 
     <!-- User defined extras -->
     
@@ -82,6 +82,10 @@
       <cds-header-name href="../.." prefix="IBM">Maximo Application Suite Select help center</cds-header-name>
 
       <div class="cds--header__global">
+        <nav class="language-switcher" aria-label="Language">
+          <a href="technician-first-task.html" lang="en" hreflang="en" aria-current="true">English</a>
+          <a href="../../fr/start-fast/first-task/technician-first-task.html" lang="fr" hreflang="fr">Français</a>
+        </nav>
 <div class="md-theme-toggle" data-theme-default="g90">
   <button class="md-theme-toggle__button" aria-label="Toggle theme" title="Toggle theme">
     <svg class="md-theme-toggle__icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -255,6 +259,39 @@
   
     <cds-side-nav-menu-item href="../basics/what-is-work-order.html" class="nav-level-3">
       Work orders
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../basics/why-apps-overlap.html" class="nav-level-3">
+      Why apps overlap
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../basics/how-inspections-work.html" class="nav-level-3">
+      How inspections work
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../basics/what-happens-offline.html" class="nav-level-3">
+      Working offline
     </cds-side-nav-menu-item>
   
 
@@ -509,6 +546,17 @@
   
     <cds-side-nav-menu-item href="../../get-work-done/complete-work/why-cant-complete-work-order.html" class="nav-level-3">
       Can't complete work order
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/complete-work/why-cant-see-new-work-on-phone.html" class="nav-level-3">
+      Can't see new work on phone
     </cds-side-nav-menu-item>
   
 
@@ -986,7 +1034,7 @@
               if (e.key === 'Enter') {
                   var query = input.value.trim();
                   if (query) {
-                      window.location.href = 'https://ibm-mas.github.io/mas-select/search.html?q=' + encodeURIComponent(query);
+                      window.location.href = search_url + '?q=' + encodeURIComponent(query);
                   }
               }
           });
@@ -1044,6 +1092,10 @@
     
       <cds-select-item value="#what-success-looks-like">What success looks like</cds-select-item>
     
+      <cds-select-item value="#what-can-i-do-in-the-technician-app">What can I do in the Technician app?</cds-select-item>
+    
+      <cds-select-item value="#video-transcript">Video transcript</cds-select-item>
+    
       <cds-select-item value="#get-ibm-maximo-mobile">Get IBM Maximo Mobile</cds-select-item>
     
       <cds-select-item value="#continue-building-your-skills">Continue building your skills</cds-select-item>
@@ -1061,6 +1113,13 @@
             <h1 id="technician-complete-your-first-work-order">Technician: Complete your first <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr><a class="headerlink" href="#technician-complete-your-first-work-order" title="Permanent link">¤</a></h1>
 <p>Get started quickly with a task designed for technicians like you. Learn the basics while accomplishing something useful.</p>
 <p>Find and complete an assigned <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr>, for example, complete work on Filler FL-02.</p>
+<p>Watch a short tour of completing a <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> in IBM Maximo Mobile, then follow the steps below.</p>
+<div class="video-embed">
+<iframe allowfullscreen="allowfullscreen" loading="lazy" src="https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&amp;playerId=kaltura_player&amp;entry_id=1_o8meukyp&amp;widget_id=1_3hngw186" title="Video: A technician completes a work order in IBM Maximo Mobile, from the work list to Complete work"></iframe>
+</div>
+<p class="video-caption">Completing a work order in IBM Maximo Mobile (about 4 minutes). <a href="https://mediacenter.ibm.com/media/Completing%20a%20work%20order%20in%20IBM%20Maximo%20Mobile/1_o8meukyp">Watch on IBM Mediacenter</a>. <a href="#video-transcript">Read the transcript</a>.</p>
+
+<p><code>[SME confirmation required: The video comes from Maximo Manage and shows IBM Maximo Mobile. Confirm that the screens and names (for example, "My Schedule" in the navigator) match Select.]</code></p>
 <p><img alt="" class="no-lightbox" src="../../images/guided_steps_final.png" width="16"> <strong>Guided steps available:</strong>
 Prefer to learn in the application? Log in and open your <abbr title="A landing page to monitor KPIs, manage upcoming assignments, complete tasks, or access related applications.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; command center, control panel, or operations console">Operational dashboard</abbr> to follow guided steps for completing a <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr>.</p>
 <h2 id="tips-for-success">💡 Tips for success<a class="headerlink" href="#tips-for-success" title="Permanent link">¤</a></h2>
@@ -1073,7 +1132,10 @@ Prefer to learn in the application? Log in and open your <abbr title="A landing 
 <h2 id="what-to-do">What to do<a class="headerlink" href="#what-to-do" title="Permanent link">¤</a></h2>
 <ol>
 <li>Log into Maximo Application Suite Select.</li>
-<li>Go to Work Orders or My Assigned Work.</li>
+<li>
+<p>Go to <strong>Work Orders &gt; Work Orders</strong>, or go to <strong>Work Orders &gt; Technician</strong> and select <strong>Assigned work</strong>.
+   <span class="see-also"><img src="../../images/info_light_mode.png" class="no-lightbox info-icon" alt=""> <span class="see-also-text">The Technician app is also available in IBM Maximo Mobile. Learn <a href="../basics/why-apps-overlap.html">Why can I manage <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> in more than one place?</a></span></span></p>
+</li>
 <li>
 <p>Choose a simple <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> to start (look for <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr> "Assigned" or "In Progress").
    <span class="see-also"><img src="../../images/info_light_mode.png" class="no-lightbox info-icon" alt=""> <span class="see-also-text">New to <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr>? Learn <a href="../basics/what-is-work-order.html">What is a <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr>?</a> to understand the basics.</span></span></p>
@@ -1110,6 +1172,32 @@ Prefer to learn in the application? Log in and open your <abbr title="A landing 
 </ul>
 <p><strong>You'll know you're ready to move on when</strong> you can complete a simple <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> from start to finish without help, and your notes clearly explain what you found and fixed.</p>
 <p>For more detail on recording notes, parts, and time accurately, see <a href="../../get-work-done/complete-work/complete-job.html">How do I complete a <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr>?</a></p>
+<h2 id="what-can-i-do-in-the-technician-app">What can I do in the Technician app?<a class="headerlink" href="#what-can-i-do-in-the-technician-app" title="Permanent link">¤</a></h2>
+<p>The Technician app, from <strong>Work Orders &gt; Technician</strong>, is built around the work that you do every day. It is the same app on the desktop and in IBM Maximo Mobile. In the Technician app, you can:</p>
+<ul>
+<li>View the <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> that are assigned to you, and filter them by priority, <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr>, or due date.</li>
+<li>View <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> on a map to plan routes and reduce travel time.</li>
+<li>See work details such as <abbr title="Templates that define standard tasks, materials, and labor for recurring maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; standard jobs, task templates, or maintenance procedures">job plans</abbr>, instructions, and safety requirements.</li>
+<li>Record <abbr title="Work time and effort assigned to a work order.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; technician time, work hours, or crew time">labor</abbr> hours, tool use, and material use.</li>
+<li>Update the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr> as you work.</li>
+<li>Attach photos, notes, and documents to <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr>.</li>
+<li>Report failures and update failure class information.</li>
+<li>Request materials, tools, or services.</li>
+<li>View details of the related <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> and <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr>.</li>
+<li>Add to the work log and review earlier entries.</li>
+<li>Create follow-up <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr>.</li>
+<li>Record <abbr title="A counter that tracks equipment usage, such as hours, cycles, or miles.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; counter, runtime meter, or odometer">meter</abbr> readings, such as energy use, run time, or fuel level.</li>
+</ul>
+<p><code>[SME confirmation required: Confirm that this list matches the Technician app in Select. The source is the Maximo Manage documentation.]</code></p>
+<h2 id="video-transcript">Video transcript<a class="headerlink" href="#video-transcript" title="Permanent link">¤</a></h2>
+<p>Transcript of "Completing a <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> in IBM Maximo Mobile".</p>
+<p>Welcome to IBM Maximo Mobile, the app that helps you to complete your work, with minimal fuss. If you would like to skip to a particular topic in this video, check out the timestamps here and in the Details section. Now let's see how you would complete a <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> with the new app.</p>
+<p>When you first open the app, you see the navigator. The navigator allows you to quickly jump between different functions of the app. We're going to open My Schedule and see what work is assigned to you today.</p>
+<p>On the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> list, you can see that the selected view is Assigned work and you have five <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> to complete. The first <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> is <abbr title="Scheduled routine maintenance performed to prevent equipment failures.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance plan, planned maintenance, or PM">preventive maintenance</abbr> of a centrifugal pump. You can click Get materials &amp; tools to see a handy checklist of the supplies that you need to complete the <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr>. The button is colored blue. Any time you see a blue action, it is the next step in completing the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr>. When in doubt, pursue the blue! You select the check boxes for the materials and the tools that you need for your work, then click Done.</p>
+<p>You follow the map directions and reach the centrifugal pump. On the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> list, you select Start work. Again, you look for the blue action to take your next step. Before you begin, you review more information about the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr>. On the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> details page, you can review information about the <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> and its <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr>, as well as any attachments or follow-up work. The pump has a bar code so you scan it to ensure it is the correct <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr>. The <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> is confirmed.</p>
+<p>The <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> has a detailed task list to complete. You select the task list and while you are completing the first task, you refer to the safety information in the attached manual. You move through the tasks, marking each one complete as you finish the step.</p>
+<p>The final task is an inspection of the pump. You open the inspection. On the inspection record, the i icon gives instructions from your supervisor. You review the instructions, then select the blue Start button. The blue dots indicate required questions. As you inspect the pump, you see a leaking seal, so you take a photo and add it as an attachment. You complete all the questions. You mark the inspection complete and because you have now completed all the tasks, you click Done.</p>
+<p>You can now report your work so you add a failure for the leaking seal that you spotted in the inspection. You click Complete work and are returned to your work list, ready for the next <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr>!</p>
 <h2 id="get-ibm-maximo-mobile">Get IBM Maximo Mobile<a class="headerlink" href="#get-ibm-maximo-mobile" title="Permanent link">¤</a></h2>
 <p>Take your work with you. IBM Maximo Mobile lets you view assigned work, complete <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr>, and update records from your phone or tablet.</p>
 <p><a href="get-maximo-mobile.html">How do I get IBM Maximo Mobile?</a></p>
@@ -1197,6 +1285,16 @@ Prefer to learn in the application? Log in and open your <abbr title="A landing 
               <li class="md-toc__item">
                 <a href="#what-success-looks-like" class="md-toc__link" data-md-level="1">
                   What success looks like
+                </a>
+              </li>
+              <li class="md-toc__item">
+                <a href="#what-can-i-do-in-the-technician-app" class="md-toc__link" data-md-level="1">
+                  What can I do in the Technician app?
+                </a>
+              </li>
+              <li class="md-toc__item">
+                <a href="#video-transcript" class="md-toc__link" data-md-level="1">
+                  Video transcript
                 </a>
               </li>
               <li class="md-toc__item">

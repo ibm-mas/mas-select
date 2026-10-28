@@ -43,8 +43,23 @@ The French site uses the same video unless a French version exists. Until then, 
 - [ ] `mkdocs build -d /tmp/mas-site-test` shows no warnings
 - [ ] Open the built page and confirm the video plays, is 16:9, and fits on a narrow screen
 
+## Known limitation: domain restriction
+
+IBM Mediacenter videos are restricted to approved domains. Tested on the "Completing a work order" video (Kaltura partner 1773841):
+
+| Site | Plays? |
+|---|---|
+| `127.0.0.1` (local `mkdocs serve`) | No. The player shows "Unauthorized domain". |
+| `ibm-mas.github.io` (published help center) | No. Same message. |
+| `mediacenter.ibm.com` | Yes |
+| `www.ibm.com/docs` | Yes |
+
+How to check a domain before publishing: ask Kaltura for the entry's context data with a referrer. `isSiteRestricted: True` means the embed is blocked. A header check with curl does not show this. The embed still loads with HTTP 200.
+
+Options: ask the Mediacenter owner to allow `ibm-mas.github.io` (and `localhost` for testing), or show the text link and transcript only on this site and keep the iframe for IBM Docs.
+
 ## Open questions
 
-- Does the IBM Docs platform play embedded Mediacenter content? See item 15 in [ibm-docs-customization-gap.md](ibm-docs-customization-gap.md).
+- Will the Mediacenter owner allow `ibm-mas.github.io` and `localhost`? Until then, the iframe shows "Unauthorized domain" on the published site.
+- Does the IBM Docs platform play embedded Mediacenter content? The embed should work on `www.ibm.com/docs`, but confirm the responsive styling. See item 15 in [ibm-docs-customization-gap.md](ibm-docs-customization-gap.md).
 - Is a cookie or privacy notice required for the Mediacenter embed? Check with the legal or privacy owner.
-- Can Mediacenter embeds be allowed from the GitHub Pages site (`ibm-mas.github.io`)? Some hosts restrict embedding by domain. Test with one real video first.

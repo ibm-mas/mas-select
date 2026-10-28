@@ -32,7 +32,7 @@
     <script>hljs.highlightAll();</script>
 
     <!-- Required by MkDocs search -->
-    <script>var base_url = "../..";</script>
+    <script>var base_url = "../..";</script><script>var search_url = "../../search.html";</script>
 
     <!-- User defined extras -->
     
@@ -82,6 +82,10 @@
       <cds-header-name href="../.." prefix="IBM">Maximo Application Suite Select help center</cds-header-name>
 
       <div class="cds--header__global">
+        <nav class="language-switcher" aria-label="Language">
+          <a href="complete-job.html" lang="en" hreflang="en" aria-current="true">English</a>
+          <a href="../../fr/get-work-done/complete-work/complete-job.html" lang="fr" hreflang="fr">Français</a>
+        </nav>
 <div class="md-theme-toggle" data-theme-default="g90">
   <button class="md-theme-toggle__button" aria-label="Toggle theme" title="Toggle theme">
     <svg class="md-theme-toggle__icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -255,6 +259,39 @@
   
     <cds-side-nav-menu-item href="../../start-fast/basics/what-is-work-order.html" class="nav-level-3">
       Work orders
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/basics/why-apps-overlap.html" class="nav-level-3">
+      Why apps overlap
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/basics/how-inspections-work.html" class="nav-level-3">
+      How inspections work
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/basics/what-happens-offline.html" class="nav-level-3">
+      Working offline
     </cds-side-nav-menu-item>
   
 
@@ -509,6 +546,17 @@
   
     <cds-side-nav-menu-item href="why-cant-complete-work-order.html" class="nav-level-3">
       Can't complete work order
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="why-cant-see-new-work-on-phone.html" class="nav-level-3">
+      Can't see new work on phone
     </cds-side-nav-menu-item>
   
 
@@ -986,7 +1034,7 @@
               if (e.key === 'Enter') {
                   var query = input.value.trim();
                   if (query) {
-                      window.location.href = 'https://ibm-mas.github.io/mas-select/search.html?q=' + encodeURIComponent(query);
+                      window.location.href = search_url + '?q=' + encodeURIComponent(query);
                   }
               }
           });
@@ -1077,7 +1125,7 @@
 <h2 id="steps-to-complete-work">Steps to complete work<a class="headerlink" href="#steps-to-complete-work" title="Permanent link">¤</a></h2>
 <h3 id="step-1-find-and-open-your-work-order">Step 1: Find and open your <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr><a class="headerlink" href="#step-1-find-and-open-your-work-order" title="Permanent link">¤</a></h3>
 <ul>
-<li>Go to your work queue or mobile app</li>
+<li>Go to the Technician app, from <strong>Work Orders &gt; Technician</strong> on the desktop or in IBM Maximo Mobile. You can also use the Work Orders application.</li>
 <li>Look for work assigned to you</li>
 <li>Open the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr>
   <span class="see-also"><img src="../../images/info_light_mode.png" class="no-lightbox info-icon" alt=""> <span class="see-also-text">Need help finding your work? See <a href="find-work.html">How do I find my work?</a></span></span></li>
@@ -1154,6 +1202,7 @@
 </ul>
 <hr>
 <h2 id="using-checklists">Using checklists<a class="headerlink" href="#using-checklists" title="Permanent link">¤</a></h2>
+<p>For inspections, go to the Inspections app, from <strong>Work Orders &gt; Inspections</strong> on the desktop or in IBM Maximo Mobile. For more information, see <a href="../../start-fast/basics/how-inspections-work.html">How do inspections work?</a></p>
 <p>If your <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> has a checklist:</p>
 <ul>
 <li>Complete each <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr> as you go</li>
@@ -1171,6 +1220,8 @@
 <li>Take photos (saved on your device)</li>
 <li>Changes sync when you're back online</li>
 </ul>
+<p>For more detail, see <a href="../../start-fast/basics/what-happens-offline.html">What happens when I'm offline in IBM Maximo Mobile?</a></p>
+<p>To see the whole job in IBM Maximo Mobile, watch the video on <a href="../../start-fast/first-task/technician-first-task.html">Technician: Complete your first <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr></a>.</p>
 <hr>
 <h2 id="what-happens-after-you-complete-work">What happens after you complete work<a class="headerlink" href="#what-happens-after-you-complete-work" title="Permanent link">¤</a></h2>
 <p>After you mark complete:</p>

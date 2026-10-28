@@ -12,6 +12,7 @@ Collected from the `[SME confirmation required]` and `[TO DO]` tags on the Engli
 | A2 | Is the purpose of each app in the "Use it to" column correct (Technician, Inspections, Inspection Forms, Asset Manager, Issues and Transfers, Inventory Counting, Service Requests, Work Order Summary)? | why-apps-overlap.md |
 | A3 | Is Table 2 (apps by security group) correct? Open points: Service Requests for system admins and inventory clerks; Inspection Forms for supervisors; Inspections for technicians (based on the security group description). | why-apps-overlap.md |
 | A4 | Are **Inspection Forms** and **Inspections** the app names and locations in Select (Planning > Inspection Forms, Work Orders > Inspections)? | [how-inspections-work.md](../docs/start-fast/basics/how-inspections-work.md) |
+| A5 | Are **Locations (mobile)** (Maximo Manage 9.2) and **Location Manager (Mobile)** the same app? If yes, which name appears in the Select menu and in the help? | None yet |
 
 ### Apps that may not be in Select
 

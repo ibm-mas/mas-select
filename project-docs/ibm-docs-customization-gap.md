@@ -20,7 +20,7 @@ DITA itself does not block these customizations. DITA-OT can produce HTML5 outpu
 | 12 | Translation control: committed translations, glossary and do-not-translate enforcement, English fallback with a notice, human review before release | `scripts/translate_docs.py` | Out of scope for DITA. | Translation runs in IBM's pipeline, so a review gate likely can't be added. Confirm. |
 | 13 | Per-language search page and language switcher you control | `tools/overrides/search.html`, `base.html.j2` | No. | The platform controls both. Confirm. |
 | 14 | Release timing: publish any time with `mkdocs gh-deploy` | `scripts/build.sh` | N/A | Releases follow the IBM Docs publishing pipeline. Confirm. |
-| 15 | Embedded IBM Mediacenter videos in a responsive 16:9 frame, with a text link and transcript line below | `.video-embed` and `.video-caption` in `docs/assets/stylesheets/extra.css` | Partial. DITA has `<object>` for embedded media, and the text link ports as a plain link. | Confirm that IBM Docs plays embedded Mediacenter content and allows the responsive styling. The text link works either way. |
+| 15 | Embedded IBM Mediacenter videos in a responsive 16:9 frame, with a text link and transcript line below | `.video-embed` and `.video-caption` in `docs/assets/stylesheets/extra.css` | Partial. DITA has `<object>` for embedded media, and the text link ports as a plain link. | Mediacenter videos are restricted by domain. They play on `www.ibm.com/docs` and `mediacenter.ibm.com`, but not on `ibm-mas.github.io` (see video-embed-pattern.md). Confirm the responsive styling in IBM Docs. The text link works either way. |
 
 ## Related evidence
 
