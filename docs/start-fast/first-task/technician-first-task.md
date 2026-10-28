@@ -10,15 +10,6 @@ Get started quickly with a task designed for technicians like you. Learn the bas
 
 Find and complete an assigned work order, for example, complete work on Filler FL-02.
 
-Watch a short tour of completing a work order in IBM Maximo Mobile, then follow the steps below.
-
-<div class="video-embed" markdown="1">
-<iframe src="https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&amp;playerId=kaltura_player&amp;entry_id=1_o8meukyp&amp;widget_id=1_3hngw186" title="Video: A technician completes a work order in IBM Maximo Mobile, from the work list to Complete work" allowfullscreen loading="lazy"></iframe>
-</div>
-<p class="video-caption">Completing a work order in IBM Maximo Mobile (about 4 minutes). <a href="https://mediacenter.ibm.com/media/Completing%20a%20work%20order%20in%20IBM%20Maximo%20Mobile/1_o8meukyp">Watch on IBM Mediacenter</a>. <a href="#video-transcript">Read the transcript</a>.</p>
-
-`[SME confirmation required: The video comes from Maximo Manage and shows IBM Maximo Mobile. Confirm that the screens and names (for example, "My Schedule" in the navigator) match Select.]`
-
 ![](../../images/guided_steps_final.png){ width="16" .no-lightbox } **Guided steps available:**
 Prefer to learn in the application? Log in and open your Operational dashboard to follow guided steps for completing a work order.
 
@@ -86,25 +77,6 @@ The Technician app, from **Work Orders > Technician**, is built around the work 
 - Record meter readings, such as energy use, run time, or fuel level.
 
 `[SME confirmation required: Confirm that this list matches the Technician app in Select. The source is the Maximo Manage documentation.]`
-
-## Video transcript
-
-Transcript of "Completing a work order in IBM Maximo Mobile".
-
-Welcome to IBM Maximo Mobile, the app that helps you to complete your work, with minimal fuss. If you would like to skip to a particular topic in this video, check out the timestamps here and in the Details section. Now let's see how you would complete a work order with the new app.
-
-When you first open the app, you see the navigator. The navigator allows you to quickly jump between different functions of the app. We're going to open My Schedule and see what work is assigned to you today.
-
-On the work order list, you can see that the selected view is Assigned work and you have five work orders to complete. The first work order is preventive maintenance of a centrifugal pump. You can click Get materials & tools to see a handy checklist of the supplies that you need to complete the work orders. The button is colored blue. Any time you see a blue action, it is the next step in completing the work order. When in doubt, pursue the blue! You select the check boxes for the materials and the tools that you need for your work, then click Done.
-
-You follow the map directions and reach the centrifugal pump. On the work order list, you select Start work. Again, you look for the blue action to take your next step. Before you begin, you review more information about the work order. On the work order details page, you can review information about the asset and its location, as well as any attachments or follow-up work. The pump has a bar code so you scan it to ensure it is the correct asset. The asset is confirmed.
-
-The work order has a detailed task list to complete. You select the task list and while you are completing the first task, you refer to the safety information in the attached manual. You move through the tasks, marking each one complete as you finish the step.
-
-The final task is an inspection of the pump. You open the inspection. On the inspection record, the i icon gives instructions from your supervisor. You review the instructions, then select the blue Start button. The blue dots indicate required questions. As you inspect the pump, you see a leaking seal, so you take a photo and add it as an attachment. You complete all the questions. You mark the inspection complete and because you have now completed all the tasks, you click Done.
-
-You can now report your work so you add a failure for the leaking seal that you spotted in the inspection. You click Complete work and are returned to your work list, ready for the next work order!
-
 
 ## Get IBM Maximo Mobile
 

@@ -10,14 +10,7 @@ Get started quickly with a task designed for supervisors like you. Learn the bas
 
 Assign a work order to a technician and track its progress, for example, assign preventive maintenance for Spiral freezer SF-01.
 
-When work needs your approval, you can also approve it from IBM Maximo Mobile. Watch a short tour.
-
-<div class="video-embed" markdown="1">
-<iframe src="https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&amp;playerId=kaltura_player&amp;entry_id=1_w48koyhy&amp;widget_id=1_6rdcecxa" title="Video: A supervisor reviews the cost and details of a work order and approves it in IBM Maximo Mobile" allowfullscreen loading="lazy"></iframe>
-</div>
-<p class="video-caption">Approving work orders in IBM Maximo Mobile (about 1 minute). <a href="https://mediacenter.ibm.com/media/Approving%20work%20orders%20in%20IBM%20Maximo%20Mobile/1_w48koyhy">Watch on IBM Mediacenter</a>. <a href="#video-transcript">Read the transcript</a>.</p>
-
-`[TO DO: This video shows the Approvals app. Confirm that Select includes it (see the TO DO on "How do I get IBM Maximo Mobile?"). If Select does not include it, remove this video and its transcript.]`
+When work needs your approval, you can also approve it from IBM Maximo Mobile.
 
 ![](../../images/guided_steps_final.png){ width="16" .no-lightbox } **Guided steps available:**
 Prefer to learn in the application? Log in and open your Operational dashboard to follow guided steps for assigning a work order.
@@ -64,16 +57,6 @@ You've successfully assigned and tracked your first work order when:
 - You can review and approve the completed work
 
 **You'll know you're ready to move on when** you can assign work efficiently, balance workload across your team, and track multiple work orders simultaneously.
-
-## Video transcript
-
-Transcript of "Approving work orders in IBM Maximo Mobile".
-
-You're a maintenance supervisor who needs to approve work for your team. You receive a notification on your device that work order 2226 requires your approval. You tap the notification to open the list of work orders to review.
-
-You're very interested in the cost of work order 2226 so you tap the Cost icon, and review the costs that are associated with this work. Next, you tap the details icon on the work order to review the details of the work. You see that the work order includes an attachment, so you tap the attachment to see a photo of a leaking air conditioning unit. You tap the back button to return to the work order list.
-
-You know that this work order is urgent so you tap Approve, then enter the electronic signature key, and the reason for your approval. You get a notification that your change was successful. The work order is approved and the technician can begin fixing the issue.
 
 ## Get IBM Maximo Mobile
 

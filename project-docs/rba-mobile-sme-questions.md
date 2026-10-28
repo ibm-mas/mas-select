@@ -49,7 +49,9 @@ Collected from the `[SME confirmation required]` and `[TO DO]` tags on the Engli
 | E2 | Does the Technician app list match Select? | [technician-first-task.md](../docs/start-fast/first-task/technician-first-task.md) |
 | E3 | Which application reconciles inventory counts in Select? | [stock-incorrect.md](../docs/get-work-done/manage-inventory/stock-incorrect.md) |
 
-### Videos
+### Videos (removed from the pages; restore from commit 2272bfa when embeds are allowed)
+
+The three Mediacenter embeds, captions, and transcripts were removed from the English pages because Mediacenter blocks embedding on the published domain. These questions apply when they come back.
 
 | # | Question | Page |
 |---|----------|------|
@@ -62,7 +64,7 @@ Collected from the `[SME confirmation required]` and `[TO DO]` tags on the Engli
 - Method 3 on [issue-parts.md](../docs/get-work-done/manage-inventory/issue-parts.md) ("Use mobile app") may describe a mix of apps. Left as-is. Decide which app it describes.
 - The add-users snippet has no app names. Left alone until Table 2 is confirmed.
 - The term "role-based apps" appears once, in why-apps-overlap.md. Nothing else uses it.
-- Videos: confirm that Mediacenter allows embeds from `ibm-mas.github.io` by opening the three pages on the published site. Ask the privacy owner whether the Mediacenter embed needs a cookie notice. Decide whether to request French captions or a French re-recording.
+- Videos (removed for now): ask the Mediacenter owner to allow embeds from `ibm-mas.github.io`, then restore the three pages from commit 2272bfa. Ask the privacy owner whether the Mediacenter embed needs a cookie notice. Decide whether to request French captions or a French re-recording.
 
 ## C. French pages to update (translation owner)
 
@@ -80,6 +82,6 @@ New English pages with no French version yet (the nav uses the English file unti
 - `docs/start-fast/basics/what-happens-offline.md` (label: "Travailler hors ligne")
 - `docs/get-work-done/complete-work/why-cant-see-new-work-on-phone.md` (label: "Impossible de voir le nouveau travail sur le téléphone")
 
-Pages with a Mediacenter video: `technician-first-task.fr.md` (needs the video block, or a line saying the video is in English), plus `get-maximo-mobile.md` and `supervisor-first-task.md` (no French version yet). The videos and their captions are in English only. The French video line should say so until a decision is made.
+Videos were removed from the English pages. If `technician-first-task.fr.md` has a video block, check it. When the videos return, these pages carry them: `technician-first-task.fr.md` (needs the video block, or a line saying the video is in English), plus `get-maximo-mobile.md` and `supervisor-first-task.md` (no French version yet). The videos and their captions are in English only. The French video line should say so until a decision is made.
 
 English pages edited that have no French version yet: `get-maximo-mobile.md`, `overview.md`, `inventory-clerk-first-task.md`, `supervisor-first-task.md`, `find-work.md`, `complete-job.md`, `issue-parts.md`, `stock-incorrect.md`, `configure-maximo-mobile.md`, `automate-communication.md`, `what-are-basic-concepts.md`, `why-cant-see-assigned-work.md`.

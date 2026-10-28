@@ -12,15 +12,6 @@ IBM Maximo Mobile lets you view assigned work, complete work orders, assign and 
 
 Technicians, supervisors, and inventory clerks all use IBM Maximo Mobile.
 
-Watch how to install the app, connect to your server, and sign in.
-
-<div class="video-embed" markdown="1">
-<iframe src="https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&amp;playerId=kaltura_player&amp;entry_id=1_44ss9s9d&amp;widget_id=1_v2r6z780" title="Video: Install IBM Maximo Mobile, connect to your server, and sign in" allowfullscreen loading="lazy"></iframe>
-</div>
-<p class="video-caption">Setting up the IBM Maximo Mobile app (about 1 minute). <a href="https://mediacenter.ibm.com/media/Setting%20up%20the%20IBM%20Maximo%20Mobile%20app/1_44ss9s9d">Watch on IBM Mediacenter</a>. <a href="#video-transcript">Read the transcript</a>.</p>
-
-`[SME confirmation required: The video starts in Maximo Manage with the Maximo Mobile Setup option, which gives a QR code and a download link. Confirm that this option exists in Select. If it does, add it to "Download the app" and "Sign in" below.]`
-
 ## 💡 Tips for success
 
 - Download the app before your first shift, not during it.
@@ -58,20 +49,6 @@ Your first sign-in needs a network connection. The app creates a local data stor
 While your device is online, the app syncs your work automatically. You can also sync manually at any time. If your device is offline, the app uses the data stored on the device and syncs when it reconnects.
 
 `[SME confirmation required: Confirm the name and location of the manual sync control in Select.]`
-
-## Video transcript
-
-Transcript of "Setting up the IBM Maximo Mobile app".
-
-Maximo Mobile helps you take your work with you, so you can work in the field from your mobile device.
-
-Start in Maximo Manage and open the Maximo Mobile Setup option. If you're already signed in, you can start setup from your profile menu. You get a QR code and a download link. Use either option to install the correct Maximo Mobile app for your device.
-
-Open Maximo Mobile. The app prompts you to connect to your server. Connect by scanning the QR code or enter the server address your administrator provides. The app checks the address and connects.
-
-Sign in with your user ID and password. After the server confirms your sign-in, Maximo Mobile downloads what you need for first use. Setup is complete.
-
-You are ready to open Maximo Mobile and access your work in the field. Scan the QR code now to install the app.
 
 ## What to do next
 

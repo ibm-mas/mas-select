@@ -132,8 +132,6 @@ On the mobile app:
 
 For more detail, see [What happens when I'm offline in IBM Maximo Mobile?](../../start-fast/basics/what-happens-offline.md)
 
-To see the whole job in IBM Maximo Mobile, watch the video on [Technician: Complete your first work order](../../start-fast/first-task/technician-first-task.md).
-
 ---
 
 ## What happens after you complete work

@@ -95,8 +95,6 @@ On your phone or tablet:
 
 If new work does not appear, see [Why can't I see new work in IBM Maximo Mobile?](why-cant-see-new-work-on-phone.md)
 
-To see the Assigned work list in IBM Maximo Mobile, watch the video on [Technician: Complete your first work order](../../start-fast/first-task/technician-first-task.md).
-
 ---
 
 ## Common mistakes
