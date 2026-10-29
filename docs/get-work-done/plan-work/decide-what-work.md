@@ -78,7 +78,7 @@ Add job plans to individual work orders. Technicians see all steps and materials
 
 Review completed work. Update job plans based on what actually happened. Add missing steps or materials.
 
-To change a job plan that is already active, select **Revise Job Plan** first. If you try to add or change tasks without revising the plan, you get the error "BMXAA0024E - The action ADD is not allowed on object JOBTASK."
+To change a job plan that is already active, select **Revise Job Plan** first. <span hidden>BMXAA0024E JOBTASK action ADD is not allowed</span>
 
 `[SME confirmation required: Confirm where Revise Job Plan appears in the Job Plans application in Select, and whether other errors can appear when editing an active job plan.]`
 
