@@ -35,8 +35,6 @@
 })();
 </script>
 
-**Start here:** New to Maximo Application Suite Select? Read [What is Maximo Application Suite Select?](start-fast/what-is-mas-select.md), then choose your role above.
-
 ## Frequently asked
 
 - [Why can't I complete a work order?](get-work-done/complete-work/why-cant-complete-work-order.md)
