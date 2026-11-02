@@ -61,7 +61,7 @@
 
 <div class="home-cards" markdown>
 
-- [**What is MAS Select?**<br>What it does, who it's for, and the problems it solves.](start-fast/what-is-mas-select.md)
+- [**About the product**<br>What it does, who it's for, and the problems it solves.](start-fast/what-is-mas-select.md)
 - [**Overview**<br>The building blocks you'll use every day.](start-fast/basics/what-are-basic-concepts.md)
 - [**Locations**<br>Physical places where work is performed.](start-fast/basics/what-is-location.md)
 - [**Assets**<br>Equipment, machinery, and infrastructure you maintain.](start-fast/basics/what-is-asset.md)
