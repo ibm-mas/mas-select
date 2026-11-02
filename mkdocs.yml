@@ -62,6 +62,7 @@ plugins:
           nav_translations:
             Home: Accueil
             Start fast: Démarrer rapidement
+            What is MAS Select: Qu'est-ce que MAS Select
             Your role: Votre rôle
             First task: Première tâche
             'Technician: Complete your first work order': 'Technicien : terminer votre premier ordre de travail'
@@ -182,6 +183,7 @@ hooks:
 nav:
   - Home: index.md
   - Start fast:
+    - What is MAS Select: start-fast/what-is-mas-select.md
     - Your role: start-fast/what-can-i-do/overview.md
     - First task:
       - "Technician: Complete your first work order": start-fast/first-task/technician-first-task.md
