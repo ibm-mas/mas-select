@@ -342,52 +342,6 @@
                 return '<a href="' + linkPrefix + link.url + '" class="role-quick-link">' + link.title + '</a>';
             }).join('');
         }
-        
-        // Highlight relevant sections in main content
-        highlightRelevantSections(role.relevantSections);
-        
-        // Update the "Don't know where to start?" section
-        updateFirstTasksList(roleKey);
-    }
-    
-    function highlightRelevantSections(sections) {
-        // This would add visual indicators to the main navigation cards
-        // For now, we'll just log it
-        console.log('Relevant sections:', sections);
-    }
-    
-    function updateFirstTasksList(roleKey) {
-        // Find the "Don't know where to start?" section
-        const firstTasksSection = Array.from(document.querySelectorAll('h2')).find(
-            h2 => h2.textContent.includes("Don't know where to start?")
-        );
-        
-        if (!firstTasksSection) return;
-        
-        // Find the list after it
-        const list = firstTasksSection.nextElementSibling;
-        if (!list || list.tagName !== 'UL') return;
-        
-        // Highlight the selected role's task
-        const listItems = list.querySelectorAll('li');
-        listItems.forEach(li => {
-            const link = li.querySelector('a');
-            if (!link) return;
-            
-            // Check if this is the selected role's task
-            const isSelectedRole = link.href.includes(roleKey) || 
-                                   (roleKey === 'clerk' && link.href.includes('inventory-clerk'));
-            
-            if (isSelectedRole) {
-                li.style.backgroundColor = '#e8f4ff';
-                li.style.padding = '8px';
-                li.style.borderRadius = '4px';
-                li.style.marginBottom = '8px';
-                li.style.border = '2px solid #0f62fe';
-            } else {
-                li.style.opacity = '0.6';
-            }
-        });
     }
     
     function resetRole() {

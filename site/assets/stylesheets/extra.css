@@ -868,7 +868,7 @@ body[data-carbon-theme="g100"] .quick-ref-icon {
 .role-selector-subtitle {
     text-align: center;
     font-size: 16px;
-    color: #d4d4d4;
+    color: #525252;
     margin: 0 0 20px 0;
 }
 
@@ -1089,6 +1089,10 @@ body[data-carbon-theme="g100"] .quick-ref-icon {
     
     .role-selector-title {
         color: #f4f4f4 !important;
+    }
+    
+    .role-selector-subtitle {
+        color: #c6c6c6;
     }
     
     .role-button {
