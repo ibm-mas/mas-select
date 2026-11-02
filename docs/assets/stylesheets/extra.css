@@ -1557,3 +1557,61 @@ body[data-carbon-theme="g100"] .copy-inline-tooltip {
     font-size: 0.875rem;
     color: var(--cds-text-secondary, #525252);
 }
+
+/* ─── Home page cards (Browse by topic, Basic concepts) ──────────────────── */
+.home-cards ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    list-style: none;
+    margin: 12px 0 24px;
+    padding: 0;
+}
+
+.home-cards li {
+    margin: 0;
+    padding: 0;
+}
+
+.home-cards li a {
+    display: block;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 14px 16px;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    color: #525252;
+    font-size: 14px;
+    line-height: 1.4;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.home-cards li a strong {
+    font-size: 16px;
+    color: #161616;
+}
+
+.home-cards li a:hover,
+.home-cards li a:focus-visible {
+    border-color: #0f62fe;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+body[data-carbon-theme="g90"] .home-cards li a,
+body[data-carbon-theme="g100"] .home-cards li a {
+    background: #262626;
+    border-color: #525252;
+    color: #c6c6c6;
+}
+
+body[data-carbon-theme="g90"] .home-cards li a strong,
+body[data-carbon-theme="g100"] .home-cards li a strong {
+    color: #f4f4f4;
+}
+
+body[data-carbon-theme="g90"] .home-cards li a:hover,
+body[data-carbon-theme="g100"] .home-cards li a:hover {
+    border-color: #78a9ff;
+}

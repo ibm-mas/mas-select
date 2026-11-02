@@ -35,11 +35,7 @@
 })();
 </script>
 
-## Start here
-
-New to Maximo Application Suite Select? Learn the core concepts and complete your first task.
-
-[Start here →](start-fast/what-can-i-do/overview.md) or read [What is Maximo Application Suite Select?](start-fast/what-is-mas-select.md)
+**Start here:** New to Maximo Application Suite Select? Read [What is Maximo Application Suite Select?](start-fast/what-is-mas-select.md), then choose your role above.
 
 ## Frequently asked
 
@@ -51,16 +47,31 @@ New to Maximo Application Suite Select? Learn the core concepts and complete you
 
 [Browse all questions →](get-answers/index.md)
 
+## Browse by topic
+
+<div class="home-cards" markdown>
+
+- [**Start fast**<br>Get from zero to first value in minutes.](start-fast/what-can-i-do/overview.md)
+- [**Get work done**<br>Complete everyday maintenance tasks.](get-work-done/plan-work/plan-recurring-maintenance.md)
+- [**Improve results**<br>Make your maintenance program more efficient.](improve-results/improve-work/reduce-downtime.md)
+- [**Work smarter**<br>Use Artificial Intelligence (AI), automation, and insights to scale.](work-smarter/ai-automation/ai-improve-maintenance.md)
+- [**Get answers**<br>Find quick answers to common questions.](get-answers/index.md)
+
+</div>
+
 ## Basic concepts
 
-- [Overview](start-fast/basics/what-are-basic-concepts.md)
-- [Locations](start-fast/basics/what-is-location.md)
-- [Assets](start-fast/basics/what-is-asset.md)
-- [Work orders](start-fast/basics/what-is-work-order.md)
-- [How locations, assets, and work orders work together](start-fast/basics/how-concepts-work-together.md)
+<div class="home-cards" markdown>
+
+- [**Overview**<br>The building blocks you'll use every day.](start-fast/basics/what-are-basic-concepts.md)
+- [**Locations**<br>Physical places where work is performed.](start-fast/basics/what-is-location.md)
+- [**Assets**<br>Equipment, machinery, and infrastructure you maintain.](start-fast/basics/what-is-asset.md)
+- [**Work orders**<br>Instructions to perform maintenance work.](start-fast/basics/what-is-work-order.md)
+- [**How they work together**<br>See how these concepts connect in real scenarios.](start-fast/basics/how-concepts-work-together.md)
+
+</div>
 
 ## Need help?
 
 - **Common questions**: Browse [Get answers](get-answers/index.md)
-- **Troubleshooting**: Start with the [frequently asked questions](#frequently-asked)
 - **In the product**: Click the help icon (?) in the top right, or click a field name and press Alt+F1
