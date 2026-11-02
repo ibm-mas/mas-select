@@ -868,7 +868,7 @@ body[data-carbon-theme="g100"] .quick-ref-icon {
 .role-selector-subtitle {
     text-align: center;
     font-size: 16px;
-    color: #d4d4d4;
+    color: #525252;
     margin: 0 0 20px 0;
 }
 
@@ -1089,6 +1089,10 @@ body[data-carbon-theme="g100"] .quick-ref-icon {
     
     .role-selector-title {
         color: #f4f4f4 !important;
+    }
+    
+    .role-selector-subtitle {
+        color: #c6c6c6;
     }
     
     .role-button {
@@ -1556,4 +1560,64 @@ body[data-carbon-theme="g100"] .copy-inline-tooltip {
     margin: 0 0 16px 0;
     font-size: 0.875rem;
     color: var(--cds-text-secondary, #525252);
+}
+
+/* ─── Home page cards (Browse by topic, Basic concepts) ──────────────────── */
+/* !important is needed to override the site-wide "ul" and "ul li" bullet rules near the top of this file */
+.home-cards ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    list-style: none !important;
+    margin: 12px 0 24px !important;
+    padding: 0 !important;
+}
+
+.home-cards ul li {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0;
+}
+
+.home-cards li a {
+    display: block;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 14px 16px;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    color: #525252;
+    font-size: 14px;
+    line-height: 1.4;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.home-cards li a strong {
+    font-size: 16px;
+    color: #161616;
+}
+
+.home-cards li a:hover,
+.home-cards li a:focus-visible {
+    border-color: #0f62fe;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+body[data-carbon-theme="g90"] .home-cards li a,
+body[data-carbon-theme="g100"] .home-cards li a {
+    background: #262626;
+    border-color: #525252;
+    color: #c6c6c6;
+}
+
+body[data-carbon-theme="g90"] .home-cards li a strong,
+body[data-carbon-theme="g100"] .home-cards li a strong {
+    color: #f4f4f4;
+}
+
+body[data-carbon-theme="g90"] .home-cards li a:hover,
+body[data-carbon-theme="g100"] .home-cards li a:hover {
+    border-color: #78a9ff;
 }
