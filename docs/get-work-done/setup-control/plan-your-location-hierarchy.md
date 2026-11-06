@@ -29,7 +29,7 @@ Ask yourself: *"Is this an immovable place where work occurs, or a piece of equi
 
 The primary location hierarchy must reflect actual physical geography:
 
-$$\text{Site} \longrightarrow \text{Building} \longrightarrow \text{Area / Floor} \longrightarrow \text{Room / Zone}$$
+**Site** → **Building** → **Area / Floor** → **Room / Zone**
 
 Because costs, safety plans, and work orders roll up through parent locations, grouping locations by what they are used for, such as grouping all restrooms or all compressor rooms across multiple buildings under one branch, breaks facility-level reporting. A report run on `Production building` will miss any rooms placed outside that building's branch.
 
@@ -45,7 +45,7 @@ Create a location only if all of the following are true:
 - Maintenance work might be planned, performed, or reported for it.
 - It needs its own maintenance history, costs, or operational context.
 
-If the item can be moved, repaired, replaced, or transferred, it is probably an asset rather than a location.
+If the equipment can be moved, repaired, replaced, or transferred, it is probably an asset rather than a location.
 
 ### 3. Decide how deep to go: stop at the maintainable level
 
@@ -73,7 +73,7 @@ Establish consistent, descriptive naming conventions across the facility. Combin
 When importing data from spreadsheets:
 
 1. **Sort your records top-down**: Parents must exist before child records are added.
-2. **Import order**: Site $\rightarrow$ Parent locations $\rightarrow$ Child locations $\rightarrow$ Assets.
+2. **Import order**: Site → Parent locations → Child locations → Assets.
 3. If child rows appear before their parents in an import file, the database cannot resolve the parent reference, leading to import errors and orphaned records.
 
 ---

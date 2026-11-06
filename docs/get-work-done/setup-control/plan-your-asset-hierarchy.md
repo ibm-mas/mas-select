@@ -41,7 +41,7 @@ If the component is simply replaced when it fails and does not require separate 
 
 While the database supports deep nesting, most Maximo Application Suite Select organizations succeed with asset hierarchies that are no more than two to three levels deep:
 
-$$\text{Parent machine package} \longrightarrow \text{Subassembly} \longrightarrow \text{Maintainable component}$$
+**Parent machine package** → **Subassembly** → **Maintainable component**
 
 For example, a packaging machine package contains a drive motor subassembly, which contains a gearbox component.
 

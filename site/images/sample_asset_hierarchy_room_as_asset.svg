@@ -72,5 +72,5 @@
 
   <!-- Summary banner (bottom) -->
   <rect x="16" y="328" width="448" height="38" fill="#DEFBE6" stroke="#198038" stroke-width="1"/>
-  <text x="32" y="352" font-size="12" font-weight="600" fill="#198038">Core rule: Places where work happens are locations; maintainable equipment are assets</text>
+  <text x="240" y="351" font-size="11" font-weight="600" fill="#198038" text-anchor="middle">Core rule: Places where work happens are locations; equipment are assets</text>
 </svg>

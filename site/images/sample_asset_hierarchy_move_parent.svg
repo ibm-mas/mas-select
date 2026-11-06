@@ -61,5 +61,5 @@
 
   <!-- Summary banner (bottom) -->
   <rect x="16" y="324" width="448" height="40" fill="#EDF5FF" stroke="#0F62FE" stroke-width="1"/>
-  <text x="32" y="348" font-size="12" font-weight="600" fill="#0F62FE">Rule: Moving the parent asset moves all child subassemblies to the new location</text>
+  <text x="240" y="348" font-size="11" font-weight="600" fill="#0F62FE" text-anchor="middle">Rule: Moving a parent asset automatically moves all child subassemblies</text>
 </svg>
