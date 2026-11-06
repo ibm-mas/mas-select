@@ -122,6 +122,10 @@ cds-side-nav-menu {
 .nav-level-3 {
     padding-left: 1rem !important;
 }
+
+.nav-level-4 {
+    padding-left: 1.5rem !important;
+}
 /* Fix Home navigation link visibility and alignment */
 cds-side-nav-link {
     display: block !important;

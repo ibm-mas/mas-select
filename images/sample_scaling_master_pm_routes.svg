@@ -1,0 +1,64 @@
+<svg width="680" height="300" viewBox="0 0 680 300" fill="none" xmlns="http://www.w3.org/2000/svg" style="background:#ffffff; font-family:'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <title>Operational scaling through Master PMs and multi-stop routes</title>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+
+  <!-- Top System: Master PM -->
+  <g class="node">
+    <rect x="20" y="45" width="160" height="60" rx="2" fill="#0F62FE" stroke="#0F62FE" stroke-width="1.5"/>
+    <text x="100" y="68" font-size="9" font-weight="600" fill="#ffffff" text-anchor="middle" letter-spacing="0.2">MASTER PM</text>
+    <text x="100" y="86" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">50 HP Motor Template</text>
+  </g>
+
+  <!-- Connectors from Master PM -->
+  <path d="M 180 75 H 220 V 26 Q 220 18 228 18 H 250" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="250,14 258,18 250,22" fill="#161616"/>
+
+  <path d="M 180 75 H 250" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="250,71 258,75 250,79" fill="#161616"/>
+
+  <path d="M 180 75 H 220 V 124 Q 220 132 228 132 H 250" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="250,128 258,132 250,136" fill="#161616"/>
+
+  <!-- Cascaded PMs -->
+  <g class="node">
+    <rect x="258" y="4" width="380" height="30" rx="2" fill="#EDF5FF" stroke="#0F62FE" stroke-width="1.5"/>
+    <text x="270" y="23" font-size="10" font-weight="600" fill="#0043CE">Cascades update:</text>
+    <text x="375" y="23" font-size="11" fill="#161616">PM 1001 for Filler FL-01 Drive Motor</text>
+  </g>
+
+  <g class="node">
+    <rect x="258" y="60" width="380" height="30" rx="2" fill="#EDF5FF" stroke="#0F62FE" stroke-width="1.5"/>
+    <text x="270" y="79" font-size="10" font-weight="600" fill="#0043CE">Cascades update:</text>
+    <text x="375" y="79" font-size="11" fill="#161616">PM 1002 for Filler FL-02 Drive Motor</text>
+  </g>
+
+  <g class="node">
+    <rect x="258" y="116" width="380" height="30" rx="2" fill="#EDF5FF" stroke="#0F62FE" stroke-width="1.5"/>
+    <text x="270" y="135" font-size="10" font-weight="600" fill="#0043CE">Cascades update:</text>
+    <text x="375" y="135" font-size="11" fill="#161616">PM 1003 for Filler FL-03 Drive Motor</text>
+  </g>
+
+  <!-- Divider -->
+  <line x1="20" y1="165" x2="660" y2="165" stroke="#E0E0E0" stroke-dasharray="4 4"/>
+
+  <!-- Bottom System: Routes -->
+  <g class="node">
+    <rect x="20" y="195" width="160" height="60" rx="2" fill="#ffffff" stroke="#0F62FE" stroke-width="1.5"/>
+    <rect x="20" y="195" width="6" height="60" fill="#0F62FE"/>
+    <text x="100" y="218" font-size="9" font-weight="600" fill="#0F62FE" text-anchor="middle" letter-spacing="0.2">ROUTE DEFINITION</text>
+    <text x="100" y="236" font-size="11" font-weight="600" fill="#161616" text-anchor="middle">Cold Storage Daily Route</text>
+  </g>
+
+  <!-- Arrow to Single Work Order -->
+  <path d="M 180 225 H 250" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="250,221 258,225 250,229" fill="#161616"/>
+
+  <!-- Single Work Order with Stops -->
+  <g class="node">
+    <rect x="258" y="180" width="380" height="90" rx="2" fill="#EDF5FF" stroke="#161616" stroke-width="1.5"/>
+    <text x="270" y="200" font-size="10" font-weight="600" fill="#161616">SINGLE WORK ORDER: Daily Cold Storage Inspection</text>
+    <text x="280" y="220" font-size="10" fill="#525252">Stop 1: Production Room Compressor Valve</text>
+    <text x="280" y="238" font-size="10" fill="#525252">Stop 2: Cold Storage Evaporator Valve</text>
+    <text x="280" y="256" font-size="10" fill="#525252">Stop 3: Filling Line Room Bypass Valve</text>
+  </g>
+</svg>

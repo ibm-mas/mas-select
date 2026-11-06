@@ -1,0 +1,1506 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="robots" content="noindex, nofollow">
+    <title>Set up failure codes - Maximo Application Suite Select help center</title>
+
+    <!-- Pure CSS (https://pure-css.github.io/) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/theme.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+    <script src="../../js/theme.js"></script>
+
+    <!-- Carbon theme zones (white, g10, g90, g100) -->
+    <link rel="stylesheet" href="https://1.www.s81c.com/common/carbon/web-components/tag/latest/themes.css">
+
+    <!-- The Carbon web-components/framework -->
+    <script type="module" src="https://1.www.s81c.com/common/carbon/web-components/version/v2.15.0/ui-shell.min.js"></script>
+    <script type="module" src="https://1.www.s81c.com/common/carbon/web-components/version/v2.15.0/accordion.min.js"></script>
+    <script type="module" src="https://1.www.s81c.com/common/carbon/web-components/version/v2.15.0/breadcrumb.min.js"></script>
+    <script type="module" src="https://1.www.s81c.com/common/carbon/web-components/version/v2.15.0/select.min.js"></script>
+    <script type="module" src="https://1.www.s81c.com/common/carbon/web-components/version/v2.15.0/tabs.min.js"></script>
+    <script type="module" src="https://1.www.s81c.com/common/carbon/web-components/version/v2.15.0/search.min.js"></script>
+
+    <!-- HighlightJS code formatting support -->
+    <link rel="stylesheet" id="hljs-light" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+    <link rel="stylesheet" id="hljs-dark" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled="">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- Required by MkDocs search -->
+    <script>var base_url = "../..";</script><script>var search_url = "../../search.html";</script>
+
+    <!-- User defined extras -->
+    
+    
+
+    
+    <link href="../../assets/stylesheets/extra.css" rel="stylesheet">
+    
+
+    
+    <script src="../../assets/javascripts/role-selector.js"></script>
+    
+    <script src="../../assets/javascripts/abbr-tooltips.js"></script>
+    
+    <script src="../../assets/javascripts/lifecycle-tooltips.js"></script>
+    
+    <script src="../../assets/javascripts/tips-wrapper.js"></script>
+    
+    <script src="../../assets/javascripts/page-feedback.js"></script>
+    
+    <script src="../../assets/javascripts/copy-table.js"></script>
+    
+    <script src="../../assets/javascripts/copy-inline-code.js"></script>
+    
+    <script src="../../assets/javascripts/scroll-spy.js"></script>
+    
+    <script src="../../assets/javascripts/search-highlight.js"></script>
+    
+    <script src="../../assets/javascripts/csh.js"></script>
+    
+    <script src="../../search/main.js"></script>
+    
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: black; }
+        </style></head>
+
+  <body class="md-grid" data-theme-default="g90">
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="cds--skip-to-content" tabindex="0">Skip to main content</a>
+
+    <!-- Header -->
+    <cds-header aria-label="Maximo Application Suite Select help center" class="md-header" role="banner">
+      <cds-header-menu-button button-label-active="Close menu" button-label-inactive="Open menu"></cds-header-menu-button>
+      <cds-header-name href="../.." prefix="IBM">Maximo Application Suite Select help center</cds-header-name>
+
+      <div class="cds--header__global">
+        <nav class="language-switcher" aria-label="Language">
+          <a href="set-up-failure-codes.html" lang="en" hreflang="en" aria-current="true">English</a>
+          <a href="../../fr/get-work-done/setup-control/set-up-failure-codes.html" lang="fr" hreflang="fr">Français</a>
+        </nav>
+<div class="md-theme-toggle" data-theme-default="g90">
+  <button class="md-theme-toggle__button" aria-label="Toggle theme" title="Toggle theme">
+    <svg class="md-theme-toggle__icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"></path>
+    </svg>
+  </button>
+  <div class="md-theme-toggle__menu" hidden="">
+    <button class="md-theme-toggle__option" data-theme="white">
+      <span class="md-theme-toggle__label">Light</span>
+      <span class="md-theme-toggle__preview md-theme-toggle__preview--white"></span>
+    </button>
+    <button class="md-theme-toggle__option" data-theme="g10">
+      <span class="md-theme-toggle__label">Light Gray</span>
+      <span class="md-theme-toggle__preview md-theme-toggle__preview--g10"></span>
+    </button>
+    <button class="md-theme-toggle__option" data-theme="g90">
+      <span class="md-theme-toggle__label">Dark Gray</span>
+      <span class="md-theme-toggle__preview md-theme-toggle__preview--g90"></span>
+    </button>
+    <button class="md-theme-toggle__option" data-theme="g100">
+      <span class="md-theme-toggle__label">Dark</span>
+      <span class="md-theme-toggle__preview md-theme-toggle__preview--g100"></span>
+    </button>
+  </div>
+</div>
+        
+      </div>
+
+      
+    </cds-header>
+
+    <!-- Main container with three-column layout -->
+    <div class="md-container">
+      <!-- Left sidebar - Navigation -->
+      <aside class="md-sidebar md-sidebar--primary" data-md-component="sidebar" role="navigation" aria-label="Main Navigation">
+        <div class="md-sidebar__scrollwrap">
+          <div class="md-sidebar__inner">
+            <cds-side-nav aria-label="Side navigation">
+              <div class="nav-search-container">
+                <input type="text" id="nav-search-input" class="nav-search-input" placeholder="Search" aria-label="Search navigation">
+              </div>
+              <cds-side-nav-items>
+                
+                  
+                  
+  
+    <cds-side-nav-link href="../../index.html">Home</cds-side-nav-link>
+  
+
+                
+                  
+                  
+  <cds-side-nav-menu title="Start fast" class="nav-level-1">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/what-is-mas-select.html" class="nav-level-2">
+      About the product
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/what-can-i-do/overview.html" class="nav-level-2">
+      Your role
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="First task" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/first-task/technician-first-task.html" class="nav-level-3">
+      Technician: Complete your first work order
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/first-task/supervisor-first-task.html" class="nav-level-3">
+      Supervisor: Assign and track work
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/first-task/inventory-clerk-first-task.html" class="nav-level-3">
+      Inventory clerk: Issue a part
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/first-task/administrator-first-task.html" class="nav-level-3">
+      Administrator: Add users
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/first-task/get-maximo-mobile.html" class="nav-level-3">
+      Get Maximo Mobile
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Basic concepts" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/basics/what-are-basic-concepts.html" class="nav-level-3">
+      Overview
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/basics/what-is-location.html" class="nav-level-3">
+      Locations
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/basics/what-is-asset.html" class="nav-level-3">
+      Assets
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/basics/what-is-work-order.html" class="nav-level-3">
+      Work orders
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/basics/how-concepts-work-together.html" class="nav-level-3">
+      How concepts work together
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/basics/why-apps-overlap.html" class="nav-level-3">
+      Why apps overlap
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/basics/how-inspections-work.html" class="nav-level-3">
+      How inspections work
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/basics/what-happens-offline.html" class="nav-level-3">
+      Working offline
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/basics/why-do-terms-differ.html" class="nav-level-3">
+      Term differences
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/basics/keyboard-shortcuts.html" class="nav-level-3">
+      Keyboard shortcuts
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+  </cds-side-nav-menu>
+
+                
+                  
+                  
+  <cds-side-nav-menu title="Get work done" active="" expanded="" class="nav-level-1">
+    
+      
+      
+        
+  <cds-side-nav-menu title="Set up and control" active="" expanded="" class="nav-level-2">
+    
+      
+      
+        
+  <cds-side-nav-menu title="Set up your team" class="nav-level-3">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="add-users.html" class="nav-level-4">
+      Add users
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="set-up-labor-crafts-crews.html" class="nav-level-4">
+      Set up labor, crafts, and crews
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="automate-communication.html" class="nav-level-4">
+      Automate communication
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="set-up-maps.html" class="nav-level-4">
+      Set up maps
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="configure-maximo-mobile.html" class="nav-level-4">
+      Configure Maximo Mobile
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Load your data" class="nav-level-3">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="correct-load-order.html" class="nav-level-4">
+      Correct load order
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="decide-location-asset-spare-part.html" class="nav-level-4">
+      Decide location, asset, or spare part
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="plan-your-location-hierarchy.html" class="nav-level-4">
+      Plan your location hierarchy
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="plan-your-asset-hierarchy.html" class="nav-level-4">
+      Plan your asset hierarchy
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="prepare-data-for-import.html" class="nav-level-4">
+      Prepare data for import
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="get-data-into-system.html" class="nav-level-4">
+      Get data into system
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="why-does-asset-import-fail.html" class="nav-level-4">
+      Fix import errors
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="object-structure-data-types.html" class="nav-level-4">
+      Data types
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Plan your strategy" active="" expanded="" class="nav-level-3">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="plan-your-pm-strategy.html" class="nav-level-4">
+      Plan your preventive maintenance strategy
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="plan-your-storeroom-strategy.html" class="nav-level-4">
+      Plan your storeroom and inventory strategy
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="set-up-meters.html" class="nav-level-4">
+      Set up meters
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="set-up-failure-codes.html" active="" expanded="" class="nav-level-4">
+      Set up failure codes
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="create-inspection-forms.html" class="nav-level-4">
+      Create inspection forms
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Plan work" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../plan-work/plan-recurring-maintenance.html" class="nav-level-3">
+      Recurring maintenance
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../plan-work/decide-what-work.html" class="nav-level-3">
+      Decide what work
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../plan-work/schedule-work.html" class="nav-level-3">
+      Schedule work
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Complete work" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../complete-work/find-work.html" class="nav-level-3">
+      Find work
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../complete-work/complete-job.html" class="nav-level-3">
+      Complete work order
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../complete-work/cant-complete-task.html" class="nav-level-3">
+      Task blocked
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../complete-work/why-cant-complete-work-order.html" class="nav-level-3">
+      Work order won't complete
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../complete-work/why-cant-see-new-work-on-phone.html" class="nav-level-3">
+      Can't see new work on phone
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Manage assets" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../manage-assets/track-asset-history.html" class="nav-level-3">
+      Asset history
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../manage-assets/classify-assets.html" class="nav-level-3">
+      Classify assets
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../manage-assets/asset-fails.html" class="nav-level-3">
+      Asset failures
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Manage inventory" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../manage-inventory/issue-parts.html" class="nav-level-3">
+      Issue parts
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../manage-inventory/track-stock-levels.html" class="nav-level-3">
+      Track stock levels
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../manage-inventory/stock-incorrect.html" class="nav-level-3">
+      Incorrect stock
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../manage-inventory/why-cant-issue-materials.html" class="nav-level-3">
+      Can't issue materials
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Monitor and respond" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../monitor-respond/detect-issues-early.html" class="nav-level-3">
+      Detect issues early
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../monitor-respond/what-metrics-matter.html" class="nav-level-3">
+      Important metrics
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../monitor-respond/act-on-alerts.html" class="nav-level-3">
+      Act on alerts
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Organize people and work" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../organize-people/assign-right-people.html" class="nav-level-3">
+      Assign people
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../organize-people/standardize-data.html" class="nav-level-3">
+      Customize dropdown values
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../organize-people/why-cant-see-assigned-work.html" class="nav-level-3">
+      Technicians can't see work
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+  </cds-side-nav-menu>
+
+                
+                  
+                  
+  <cds-side-nav-menu title="Improve results" class="nav-level-1">
+    
+      
+      
+        
+  <cds-side-nav-menu title="Improve work" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../improve-results/improve-work/reduce-downtime.html" class="nav-level-3">
+      Reduce downtime
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../improve-results/improve-work/improve-completion-rates.html" class="nav-level-3">
+      Improve completion rates
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Improve data quality" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../improve-results/improve-data/data-looks-wrong.html" class="nav-level-3">
+      Data looks wrong
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../improve-results/improve-data/make-data-reliable.html" class="nav-level-3">
+      Make data reliable
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Improve adoption" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../improve-results/improve-adoption/technicians-not-using.html" class="nav-level-3">
+      Technicians not using system
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../improve-results/improve-adoption/simplify-workflows.html" class="nav-level-3">
+      Simplify workflows
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+  </cds-side-nav-menu>
+
+                
+                  
+                  
+  <cds-side-nav-menu title="Work smarter" class="nav-level-1">
+    
+      
+      
+        
+  <cds-side-nav-menu title="AI and automation" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../work-smarter/ai-automation/ai-improve-maintenance.html" class="nav-level-3">
+      AI improves maintenance
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../work-smarter/ai-automation/what-can-automate.html" class="nav-level-3">
+      Automate tasks
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Scale operation" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../work-smarter/scale-operation/manage-more-assets.html" class="nav-level-3">
+      Manage more assets
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../work-smarter/scale-operation/standardize-across-teams.html" class="nav-level-3">
+      Standardize across teams
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Insights to outcomes" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../work-smarter/insights-outcomes/data-into-decisions.html" class="nav-level-3">
+      Data into decisions
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../work-smarter/insights-outcomes/optimize-performance.html" class="nav-level-3">
+      Optimize performance
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+  </cds-side-nav-menu>
+
+                
+                  
+                  
+  <cds-side-nav-menu title="Get answers" class="nav-level-1">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-answers/index.html" class="nav-level-2">
+      Overview
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-answers/starting-out.html" class="nav-level-2">
+      Starting out
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-answers/getting-work-done.html" class="nav-level-2">
+      Getting work done
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-answers/improving-results.html" class="nav-level-2">
+      Improving results
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-answers/working-smarter.html" class="nav-level-2">
+      Working smarter
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-answers/security.html" class="nav-level-2">
+      Security
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+                
+              </cds-side-nav-items>
+            </cds-side-nav>
+          </div>
+        </div>
+      </aside>
+      <script>
+      (function() {
+          var input = document.getElementById('nav-search-input');
+          if (!input) return;
+          input.addEventListener('keydown', function(e) {
+              if (e.key === 'Enter') {
+                  var query = input.value.trim();
+                  if (query) {
+                      window.location.href = search_url + '?q=' + encodeURIComponent(query);
+                  }
+              }
+          });
+          input.addEventListener('input', function() {
+              var query = input.value.toLowerCase().trim();
+              var navItems = document.querySelectorAll('cds-side-nav-menu-item, cds-side-nav-menu');
+              navItems.forEach(function(item) {
+                  if (query === '' || item.textContent.toLowerCase().includes(query)) {
+                      item.style.display = '';
+                      if (query && item.tagName === 'CDS-SIDE-NAV-MENU-ITEM') {
+                          var parent = item.closest('cds-side-nav-menu');
+                          if (parent) parent.setAttribute('expanded', '');
+                      }
+                  } else {
+                      item.style.display = 'none';
+                  }
+              });
+          });
+          document.querySelectorAll('cds-side-nav-menu-item').forEach(function(item) {
+              item.addEventListener('click', function() {
+                  var query = input.value.trim();
+                  if (query) {
+                      var href = item.getAttribute('href');
+                      if (href && !href.includes('highlight=')) {
+                          var sep = href.includes('?') ? '&' : '?';
+                          item.setAttribute('href', href + sep + 'highlight=' + encodeURIComponent(query));
+                      }
+                  }
+              });
+          });
+      })();
+      </script>
+
+      <!-- Main content area -->
+      <main id="main-content" class="md-content" data-md-component="content" tabindex="-1">
+        <article class="md-content__inner">
+          <!-- Breadcrumbs -->
+          <div class="md-breadcrumbs"><cds-breadcrumb no-trailing-slash="">
+  <cds-breadcrumb-item>
+    <cds-breadcrumb-link href="../../index.html">Home</cds-breadcrumb-link>
+  </cds-breadcrumb-item>
+      <cds-breadcrumb-item>Get work done</cds-breadcrumb-item>
+      <cds-breadcrumb-item>Set up and control</cds-breadcrumb-item>
+      <cds-breadcrumb-item>Plan your strategy</cds-breadcrumb-item>
+  <cds-breadcrumb-item>
+    <cds-breadcrumb-link href="#how-do-i-set-up-failure-codes">How do I set up failure codes?</cds-breadcrumb-link>
+  </cds-breadcrumb-item>
+
+  <cds-breadcrumb-item aria-current="page">
+    <cds-select id="breadcrumbs-toc" inline="" placeholder="..." oninput="changeAnchor(this.value)">
+    
+    
+      <cds-select-item value="#the-four-tier-failure-hierarchy-architecture">The four-tier failure hierarchy architecture</cds-select-item>
+    
+      <cds-select-item value="#step-1-create-a-failure-hierarchy-in-failure-codes">Step 1: Create a failure hierarchy in Failure Codes</cds-select-item>
+    
+      <cds-select-item value="#step-2-assign-failure-classes-to-assets">Step 2: Assign Failure Classes to assets</cds-select-item>
+    
+      <cds-select-item value="#how-failure-codes-behave-on-work-orders">How failure codes behave on work orders</cds-select-item>
+    
+      <cds-select-item value="#common-failure-code-design-mistakes">Common failure code design mistakes</cds-select-item>
+    
+      <cds-select-item value="#failure-code-setup-verification-checklist">Failure code setup verification checklist</cds-select-item>
+    
+      <cds-select-item value="#related-topics">Related topics</cds-select-item>
+    
+    </cds-select>
+  </cds-breadcrumb-item>
+</cds-breadcrumb>
+          </div>
+
+          <!-- Page content -->
+          <div class="rst-content">
+            
+            <h1 id="how-do-i-set-up-failure-codes">How do I set up <abbr title="Standardized codes used to categorize and track equipment failures.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; failure classifications, breakdown codes, or fault codes">failure codes</abbr>?<a class="headerlink" href="#how-do-i-set-up-failure-codes" title="Permanent link">¤</a></h1>
+<p>Structured <abbr title="Standardized codes used to categorize and track equipment failures.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; failure classifications, breakdown codes, or fault codes">failure codes</abbr> convert subjective technician remarks into standardized reliability data. When technicians record repairs using consistent <abbr title="Standardized codes used to categorize and track equipment failures.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; failure classifications, breakdown codes, or fault codes">failure codes</abbr>, maintenance engineers can track defect trends, identify recurring root causes, and justify equipment redesigns or warranty claims.</p>
+<p>In Maximo Application Suite Select, <abbr title="Standardized codes used to categorize and track equipment failures.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; failure classifications, breakdown codes, or fault codes">failure codes</abbr> are organized into a four-tier hierarchy headed by a Failure Class, followed by Problem, Cause, and Remedy codes configured in the Failure Codes application.</p>
+<h2 id="the-four-tier-failure-hierarchy-architecture">The four-tier failure hierarchy architecture<a class="headerlink" href="#the-four-tier-failure-hierarchy-architecture" title="Permanent link">¤</a></h2>
+<p>A failure hierarchy structures failure reporting from initial symptom down to corrective action.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/sample_failure_code_hierarchy.svg" data-title="Four-tier failure code hierarchy architecture from Failure Class to Problem, Cause, and Remedy" data-desc-position="bottom"><img src="../../images/sample_failure_code_hierarchy.svg" alt="Four-tier failure code hierarchy architecture from Failure Class to Problem, Cause, and Remedy" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;"></a></p>
+<p class="figure-caption">Figure 1: Four-tier failure code hierarchy architecture</p>
+
+<h3 id="table-1-four-tier-failure-code-hierarchy-with-plant-examples">Table 1: Four-tier <abbr title="A standardized code used to categorize and track equipment failures.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; failure classification, breakdown code, or fault code">failure code</abbr> hierarchy with plant examples<a class="headerlink" href="#table-1-four-tier-failure-code-hierarchy-with-plant-examples" title="Permanent link">¤</a></h3>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Code type</th>
+<th>What it describes</th>
+<th>Ice Cream Plant example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Level 1</strong></td>
+<td><strong>Failure Class</strong></td>
+<td>Broad equipment family or machine type</td>
+<td><code>PUMPS</code> (Sanitary and utility pumps)</td>
+</tr>
+<tr>
+<td><strong>Level 2</strong></td>
+<td><strong>Problem</strong></td>
+<td>The observed failure symptom or operational defect</td>
+<td><code>LEAK</code> (Fluid leaking from pump casing)</td>
+</tr>
+<tr>
+<td><strong>Level 3</strong></td>
+<td><strong>Cause</strong></td>
+<td>The underlying mechanical or operational root cause</td>
+<td><code>SEAL_WEAR</code> (Carbon seal face worn beyond tolerance)</td>
+</tr>
+<tr>
+<td><strong>Level 4</strong></td>
+<td><strong>Remedy</strong></td>
+<td>The specific corrective action that resolved the failure</td>
+<td><code>REPLACE_SEAL</code> (Installed new food-grade mechanical seal kit)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="step-1-create-a-failure-hierarchy-in-failure-codes">Step 1: Create a failure hierarchy in Failure Codes<a class="headerlink" href="#step-1-create-a-failure-hierarchy-in-failure-codes" title="Permanent link">¤</a></h2>
+<p><abbr title="Standardized codes used to categorize and track equipment failures.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; failure classifications, breakdown codes, or fault codes">Failure codes</abbr> and hierarchies are created at the Organization level in the Failure Codes application.</p>
+<h3 id="building-a-failure-tree-in-the-desktop-application">Building a failure tree in the desktop application<a class="headerlink" href="#building-a-failure-tree-in-the-desktop-application" title="Permanent link">¤</a></h3>
+<ol>
+<li>Go to <strong>Planning and Maintenance &gt; Failure Codes</strong>.</li>
+<li>Click <strong>New Failure Codes</strong>.</li>
+<li>In the <strong>Failure Class</strong> field, enter a clear identifier, such as <code>PUMPS</code>.</li>
+<li>In the <strong>Description</strong> field, enter <code>Sanitary and Utility Pumps Failure Class</code>.</li>
+<li>In the <strong>Problems</strong> table, click <strong>New Row</strong> to add failure symptoms:</li>
+<li>In the <strong>Problem</strong> field, enter <code>LEAK</code>.</li>
+<li>In the <strong>Description</strong> field, enter <code>Liquid product or lubricant leak</code>.</li>
+<li>With the <code>LEAK</code> problem row selected, go to the <strong>Causes</strong> table below and click <strong>New Row</strong>:</li>
+<li>In the <strong>Cause</strong> field, enter <code>SEAL_WEAR</code>.</li>
+<li>In the <strong>Description</strong> field, enter <code>Mechanical seal wear or face scoring</code>.</li>
+<li>With the <code>SEAL_WEAR</code> cause row selected, go to the <strong>Remedies</strong> table and click <strong>New Row</strong>:</li>
+<li>In the <strong>Remedy</strong> field, enter <code>REPLACE_SEAL</code>.</li>
+<li>In the <strong>Description</strong> field, enter <code>Replaced mechanical seal assembly</code>.</li>
+<li>Repeat steps 5 through 7 to add remaining problems, causes, and remedies.</li>
+<li>Click <strong>Save</strong>.</li>
+</ol>
+<h3 id="tip-reuse-branches-with-copy-failure-hierarchy">💡 Tip: Reuse branches with Copy Failure Hierarchy<a class="headerlink" href="#tip-reuse-branches-with-copy-failure-hierarchy" title="Permanent link">¤</a></h3>
+<p>Many equipment types share identical mechanical failure paths. Instead of retyping problem, cause, and remedy trees for every machine class, use the <strong>Copy Failure Hierarchy</strong> action in the Failure Codes application to duplicate branches from existing failure classes in seconds.</p>
+<h2 id="step-2-assign-failure-classes-to-assets">Step 2: Assign Failure Classes to <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">assets</abbr><a class="headerlink" href="#step-2-assign-failure-classes-to-assets" title="Permanent link">¤</a></h2>
+<p>For technicians to select <abbr title="Standardized codes used to categorize and track equipment failures.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; failure classifications, breakdown codes, or fault codes">failure codes</abbr> on <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr>, the <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> must have an assigned Failure Class.</p>
+<h3 id="linking-a-failure-class-to-an-asset-record">Linking a failure class to an <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> record<a class="headerlink" href="#linking-a-failure-class-to-an-asset-record" title="Permanent link">¤</a></h3>
+<ol>
+<li>Go to <strong><abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">Assets</abbr> &gt; <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">Assets</abbr></strong>.</li>
+<li>Open the target equipment record, such as <code>Filler FL-02</code>.</li>
+<li>On the main <strong><abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">Asset</abbr></strong> tab, locate the <strong>Failure Class</strong> field.</li>
+<li>Select the matching failure class, such as <code>FILLERS</code> or <code>ROTATING_PUMP</code>.</li>
+<li>Click <strong>Save</strong>.</li>
+</ol>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/sample_failure_class_inheritance.svg" data-title="Failure class inheritance and field reporting flow on work orders" data-desc-position="bottom"><img src="../../images/sample_failure_class_inheritance.svg" alt="Failure class inheritance and field reporting flow on work orders" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;"></a></p>
+<p class="figure-caption">Figure 2: Failure class inheritance and field reporting flow</p>
+
+<h2 id="how-failure-codes-behave-on-work-orders">How <abbr title="Standardized codes used to categorize and track equipment failures.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; failure classifications, breakdown codes, or fault codes">failure codes</abbr> behave on <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr><a class="headerlink" href="#how-failure-codes-behave-on-work-orders" title="Permanent link">¤</a></h2>
+<p>Understanding how <abbr title="Standardized codes used to categorize and track equipment failures.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; failure classifications, breakdown codes, or fault codes">failure codes</abbr> transfer to <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> ensures smooth field reporting:</p>
+<ul>
+<li><strong>Automatic inheritance:</strong> When an <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> is added to a <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr>, its Failure Class copies automatically to the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> header.</li>
+<li><strong>Precedence rule:</strong> If both an <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> and a <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> are specified on a <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> and each has a different failure class, the <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> failure class takes precedence.</li>
+<li><strong>Mandatory reporting:</strong> For emergency and breakdown work types, configure <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> rules to require Problem, Cause, and Remedy selection before advancing <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr> to Completed.</li>
+</ul>
+<h2 id="common-failure-code-design-mistakes">Common <abbr title="A standardized code used to categorize and track equipment failures.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; failure classification, breakdown code, or fault code">failure code</abbr> design mistakes<a class="headerlink" href="#common-failure-code-design-mistakes" title="Permanent link">¤</a></h2>
+<p>To maintain clean reliability analytics, avoid these common design traps:</p>
+<ul>
+<li><strong>Creating too many failure classes:</strong> Keep your initial failure class list focused on 5 to 10 major equipment families, such as Pumps, Motors, Conveyors, Refrigeration, and Electrical. Avoid creating a unique failure class for every individual machine model.</li>
+<li><strong>Using vague problem descriptions:</strong> Do not create codes named <em>Broken</em>, <em>Damaged</em>, or <em>Failed</em>. Use specific physical symptoms, such as <em>High Vibration</em>, <em>Overheating</em>, <em>Jammed</em>, or <em>Leaking</em>.</li>
+<li><strong>Omitting remedy codes:</strong> Recording only what broke without recording which remedy succeeded prevents reliability teams from knowing which repair procedures are most effective.</li>
+</ul>
+<h2 id="failure-code-setup-verification-checklist"><abbr title="A standardized code used to categorize and track equipment failures.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; failure classification, breakdown code, or fault code">Failure code</abbr> setup verification checklist<a class="headerlink" href="#failure-code-setup-verification-checklist" title="Permanent link">¤</a></h2>
+<p>Use this checklist to confirm your failure hierarchies are ready for operational use.</p>
+<h3 id="table-2-failure-code-configuration-checklist">Table 2: <abbr title="A standardized code used to categorize and track equipment failures.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; failure classification, breakdown code, or fault code">Failure code</abbr> configuration checklist<a class="headerlink" href="#table-2-failure-code-configuration-checklist" title="Permanent link">¤</a></h3>
+<table>
+<thead>
+<tr>
+<th>Check</th>
+<th><abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">Item</abbr></th>
+<th>What to verify</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[ ]</td>
+<td>Core failure classes established</td>
+<td>Top-level classes exist for all major plant equipment families</td>
+</tr>
+<tr>
+<td>[ ]</td>
+<td>4-tier depth completed</td>
+<td>Each problem branch has linked cause codes and associated remedies</td>
+</tr>
+<tr>
+<td>[ ]</td>
+<td>Descriptive naming applied</td>
+<td>Codes use clear alphanumeric identifiers with concise plain-language descriptions</td>
+</tr>
+<tr>
+<td>[ ]</td>
+<td><abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">Asset</abbr> records populated</td>
+<td>Operating equipment records have a valid Failure Class assigned on their main tab</td>
+</tr>
+<tr>
+<td>[ ]</td>
+<td>Mobile visibility verified</td>
+<td>Technicians can view and navigate the failure hierarchy on mobile <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> cards</td>
+</tr>
+<tr>
+<td>[ ]</td>
+<td>Mandatory on corrective work</td>
+<td>Failure reporting is required before closing emergency or unscheduled repair <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr></td>
+</tr>
+</tbody>
+</table>
+<h2 id="related-topics">Related topics<a class="headerlink" href="#related-topics" title="Permanent link">¤</a></h2>
+<ul>
+<li><a href="../manage-assets/asset-fails.html">What happens when an <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> fails?</a></li>
+<li><a href="../../improve-results/improve-work/reduce-downtime.html">How do I reduce <abbr title="The period when equipment is not operational or available for use.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; outage, production loss, or equipment unavailable">downtime</abbr>?</a></li>
+<li><a href="../../improve-results/improve-data/make-data-reliable.html">How do I make data reliable?</a></li>
+<li><a href="../../work-smarter/scale-operation/standardize-across-teams.html">How do I standardize across teams?</a></li>
+</ul>
+            
+          </div>
+
+          <!-- Navigation footer (prev/next) -->
+<nav class="md-footer-nav" aria-label="Footer navigation">
+  <div class="md-footer-nav__inner">
+    <a href="set-up-meters.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+      <div class="md-footer-nav__direction">
+        <svg class="md-footer-nav__icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"></path>
+        </svg>
+        <span>Previous</span>
+      </div>
+      <div class="md-footer-nav__title">
+        <span class="md-footer-nav__title-text">Set up meters</span>
+      </div>
+    </a>
+    <a href="create-inspection-forms.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+      <div class="md-footer-nav__direction">
+        <span>Next</span>
+        <svg class="md-footer-nav__icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+        </svg>
+      </div>
+      <div class="md-footer-nav__title">
+        <span class="md-footer-nav__title-text">Create inspection forms</span>
+      </div>
+    </a>
+  </div>
+</nav>
+        </article>
+      </main>
+
+      <!-- Right sidebar - Table of Contents -->
+      <aside class="md-sidebar md-sidebar--secondary" data-md-component="toc" role="complementary" aria-label="Table of contents">
+<nav class="md-sidebar md-sidebar--secondary" aria-label="Table of contents">
+  <div class="md-sidebar__scrollwrap">
+    <div class="md-sidebar__inner">
+      <div class="md-toc">
+        <div class="md-toc__title">On this page</div>
+        <ul class="md-toc__list">
+              <li class="md-toc__item">
+                <a href="#the-four-tier-failure-hierarchy-architecture" class="md-toc__link" data-md-level="1">
+                  The four-tier failure hierarchy architecture
+                </a>
+                  <ul class="md-toc__list">
+                      <li class="md-toc__item">
+                        <a href="#table-1-four-tier-failure-code-hierarchy-with-plant-examples" class="md-toc__link" data-md-level="2">
+                          Table 1: Four-tier failure code hierarchy with plant examples
+                        </a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="md-toc__item">
+                <a href="#step-1-create-a-failure-hierarchy-in-failure-codes" class="md-toc__link" data-md-level="1">
+                  Step 1: Create a failure hierarchy in Failure Codes
+                </a>
+                  <ul class="md-toc__list">
+                      <li class="md-toc__item">
+                        <a href="#building-a-failure-tree-in-the-desktop-application" class="md-toc__link" data-md-level="2">
+                          Building a failure tree in the desktop application
+                        </a>
+                      </li>
+                      <li class="md-toc__item">
+                        <a href="#tip-reuse-branches-with-copy-failure-hierarchy" class="md-toc__link" data-md-level="2">
+                          💡 Tip: Reuse branches with Copy Failure Hierarchy
+                        </a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="md-toc__item">
+                <a href="#step-2-assign-failure-classes-to-assets" class="md-toc__link" data-md-level="1">
+                  Step 2: Assign Failure Classes to assets
+                </a>
+                  <ul class="md-toc__list">
+                      <li class="md-toc__item">
+                        <a href="#linking-a-failure-class-to-an-asset-record" class="md-toc__link" data-md-level="2">
+                          Linking a failure class to an asset record
+                        </a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="md-toc__item">
+                <a href="#how-failure-codes-behave-on-work-orders" class="md-toc__link" data-md-level="1">
+                  How failure codes behave on work orders
+                </a>
+              </li>
+              <li class="md-toc__item">
+                <a href="#common-failure-code-design-mistakes" class="md-toc__link" data-md-level="1">
+                  Common failure code design mistakes
+                </a>
+              </li>
+              <li class="md-toc__item">
+                <a href="#failure-code-setup-verification-checklist" class="md-toc__link" data-md-level="1">
+                  Failure code setup verification checklist
+                </a>
+                  <ul class="md-toc__list">
+                      <li class="md-toc__item">
+                        <a href="#table-2-failure-code-configuration-checklist" class="md-toc__link" data-md-level="2">
+                          Table 2: Failure code configuration checklist
+                        </a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="md-toc__item">
+                <a href="#related-topics" class="md-toc__link" data-md-level="1">
+                  Related topics
+                </a>
+              </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+      </aside>
+    </div>
+
+    <!-- Footer - Full width outside container -->
+    <footer class="md-footer" role="contentinfo">
+      Built with <a href="https://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/durera/mkdocs-carbon">Carbon theme</a>
+    </footer>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": false, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+</script></body></html>

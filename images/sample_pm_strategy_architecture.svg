@@ -1,0 +1,57 @@
+<svg width="680" height="340" viewBox="0 0 680 340" fill="none" xmlns="http://www.w3.org/2000/svg" style="background:#ffffff; font-family:'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <title>Architecture of an integrated plant preventive maintenance strategy</title>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+
+  <!-- Root Strategy Node -->
+  <g class="node">
+    <rect x="20" y="140" width="170" height="60" rx="2" fill="#0F62FE" stroke="#0F62FE" stroke-width="1.5"/>
+    <text x="105" y="165" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle" letter-spacing="0.2">PLANT STRATEGY</text>
+    <text x="105" y="183" font-size="12" font-weight="600" fill="#ffffff" text-anchor="middle">Preventive maintenance</text>
+  </g>
+
+  <!-- Connectors to 3 Streams -->
+  <path d="M 190 170 H 220 V 50 Q 220 42 228 42 H 250" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="250,38 258,42 250,46" fill="#161616"/>
+
+  <path d="M 190 170 H 250" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="250,166 258,170 250,174" fill="#161616"/>
+
+  <path d="M 190 170 H 220 V 290 Q 220 298 228 298 H 250" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="250,294 258,298 250,302" fill="#161616"/>
+
+  <!-- Stream 1: Fixed Calendar PMs -->
+  <g class="node">
+    <rect x="258" y="16" width="200" height="52" rx="2" fill="#EDF5FF" stroke="#0F62FE" stroke-width="1.5"/>
+    <text x="272" y="36" font-size="11" font-weight="600" fill="#0043CE">FIXED CALENDAR PMS</text>
+    <text x="272" y="53" font-size="11" fill="#161616">Safety and facility audits</text>
+  </g>
+
+  <!-- Stream 2: Meter Run-Hour PMs -->
+  <g class="node">
+    <rect x="258" y="144" width="200" height="52" rx="2" fill="#EDF5FF" stroke="#0F62FE" stroke-width="1.5"/>
+    <text x="272" y="164" font-size="11" font-weight="600" fill="#0043CE">METER RUN-HOUR PMS</text>
+    <text x="272" y="181" font-size="11" fill="#161616">Filler FL-02 and pumps</text>
+  </g>
+
+  <!-- Stream 3: Multi-Stop Routes -->
+  <g class="node">
+    <rect x="258" y="272" width="200" height="52" rx="2" fill="#EDF5FF" stroke="#0F62FE" stroke-width="1.5"/>
+    <text x="272" y="292" font-size="11" font-weight="600" fill="#0043CE">MULTI-STOP ROUTES</text>
+    <text x="272" y="309" font-size="11" fill="#161616">Daily Cold Storage route</text>
+  </g>
+
+  <!-- Connectors from 3 Streams to Generation Engine -->
+  <path d="M 458 42 H 480 V 162 Q 480 170 488 170 H 496" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <path d="M 458 170 H 496" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <path d="M 458 298 H 480 V 178 Q 480 170 488 170 H 496" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="496,166 504,170 496,174" fill="#161616"/>
+
+  <!-- Generation Engine Node -->
+  <g class="node">
+    <rect x="504" y="130" width="156" height="80" rx="2" fill="#ffffff" stroke="#161616" stroke-width="1.5"/>
+    <text x="582" y="152" font-size="10" font-weight="600" fill="#525252" text-anchor="middle" letter-spacing="0.2">AUTOMATED CRON</text>
+    <text x="582" y="169" font-size="11" font-weight="600" fill="#161616" text-anchor="middle">PMWoGenCronTask</text>
+    <text x="582" y="186" font-size="10" fill="#525252" text-anchor="middle">Generates 7 days prior</text>
+    <text x="582" y="199" font-size="10" fill="#0F62FE" text-anchor="middle">Supervisor assignment</text>
+  </g>
+</svg>

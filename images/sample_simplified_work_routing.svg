@@ -1,0 +1,63 @@
+<svg width="680" height="280" viewBox="0 0 680 280" fill="none" xmlns="http://www.w3.org/2000/svg" style="background:#ffffff; font-family:'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <title>Simplified work order routing and execution workflow</title>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+
+  <!-- Step 1: Request Generation -->
+  <g class="node">
+    <rect x="20" y="110" width="130" height="60" rx="2" fill="#EDF5FF" stroke="#0F62FE" stroke-width="1.5"/>
+    <text x="85" y="133" font-size="9" font-weight="600" fill="#0043CE" text-anchor="middle" letter-spacing="0.2">WORK INGESTION</text>
+    <text x="85" y="152" font-size="11" font-weight="600" fill="#161616" text-anchor="middle">Work generated</text>
+  </g>
+
+  <!-- Connector to Triage -->
+  <path d="M 150 140 H 180" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="180,136 188,140 180,144" fill="#161616"/>
+
+  <!-- Triage / Priority Routing -->
+  <!-- Top: Emergency High Priority Queue -->
+  <path d="M 188 140 H 200 V 55 Q 200 47 208 47 H 220" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="220,43 228,47 220,51" fill="#161616"/>
+
+  <g class="node">
+    <rect x="228" y="18" width="170" height="58" rx="2" fill="#ffffff" stroke="#0F62FE" stroke-width="1.5"/>
+    <rect x="228" y="18" width="5" height="58" fill="#0F62FE"/>
+    <text x="242" y="38" font-size="9" font-weight="600" fill="#0F62FE">EMERGENCY / CRITICAL</text>
+    <text x="242" y="54" font-size="11" font-weight="600" fill="#161616">Supervisor Queue</text>
+    <text x="242" y="67" font-size="9" fill="#525252">Direct supervisor review</text>
+  </g>
+
+  <!-- Bottom: Auto-approved Routine PM -->
+  <path d="M 188 140 H 200 V 225 Q 200 233 208 233 H 220" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="220,229 228,233 220,237" fill="#161616"/>
+
+  <g class="node">
+    <rect x="228" y="204" width="170" height="58" rx="2" fill="#ffffff" stroke="#161616" stroke-width="1.5"/>
+    <text x="242" y="224" font-size="9" font-weight="600" fill="#525252">ROUTINE PM / MINOR</text>
+    <text x="242" y="240" font-size="11" font-weight="600" fill="#161616">Auto-Approved</text>
+    <text x="242" y="253" font-size="9" fill="#525252">Direct craft assignment</text>
+  </g>
+
+  <!-- Connectors to Execution -->
+  <path d="M 398 47 H 425 V 132 Q 425 140 433 140 H 440" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <path d="M 398 233 H 425 V 148 Q 425 140 433 140 H 440" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="440,136 448,140 440,144" fill="#161616"/>
+
+  <!-- Step 3: Technician App Execution -->
+  <g class="node">
+    <rect x="448" y="110" width="105" height="60" rx="2" fill="#0F62FE" stroke="#0F62FE" stroke-width="1.5"/>
+    <text x="500" y="133" font-size="9" font-weight="600" fill="#ffffff" text-anchor="middle" letter-spacing="0.2">EXECUTION</text>
+    <text x="500" y="152" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">Technician app</text>
+  </g>
+
+  <!-- Connector to Completion -->
+  <path d="M 553 140 H 575" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="575,136 583,140 575,144" fill="#161616"/>
+
+  <!-- Step 4: Completion -->
+  <g class="node">
+    <rect x="583" y="110" width="80" height="60" rx="2" fill="#EDF5FF" stroke="#0F62FE" stroke-width="1.5"/>
+    <text x="623" y="133" font-size="8" font-weight="600" fill="#0043CE" text-anchor="middle">COMPLETION</text>
+    <text x="623" y="148" font-size="10" font-weight="600" fill="#161616" text-anchor="middle">Log hours &amp;</text>
+    <text x="623" y="160" font-size="9" fill="#525252" text-anchor="middle">auto-notify</text>
+  </g>
+</svg>

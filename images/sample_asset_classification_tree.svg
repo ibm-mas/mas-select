@@ -1,0 +1,52 @@
+<svg width="680" height="240" viewBox="0 0 680 240" fill="none" xmlns="http://www.w3.org/2000/svg" style="background:#ffffff; font-family:'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <title>Hierarchical asset classification and specification structure</title>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+
+  <!-- Level 1: PRODUCTION -->
+  <g class="node">
+    <rect x="20" y="85" width="125" height="70" rx="2" fill="#0F62FE" stroke="#0F62FE" stroke-width="1.5"/>
+    <text x="82" y="108" font-size="9" font-weight="600" fill="#ffffff" text-anchor="middle" letter-spacing="0.2">LEVEL 1</text>
+    <text x="82" y="126" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">PRODUCTION</text>
+    <text x="82" y="141" font-size="9" fill="#EDF5FF" text-anchor="middle">Plant machinery</text>
+  </g>
+
+  <!-- Arrow 1 to 2 -->
+  <path d="M 145 120 H 175" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="175,116 183,120 175,124" fill="#161616"/>
+
+  <!-- Level 2: ROTATING -->
+  <g class="node">
+    <rect x="183" y="85" width="125" height="70" rx="2" fill="#EDF5FF" stroke="#0F62FE" stroke-width="1.5"/>
+    <text x="245" y="108" font-size="9" font-weight="600" fill="#0043CE" text-anchor="middle" letter-spacing="0.2">LEVEL 2</text>
+    <text x="245" y="126" font-size="11" font-weight="600" fill="#161616" text-anchor="middle">ROTATING</text>
+    <text x="245" y="141" font-size="9" fill="#525252" text-anchor="middle">Dynamic equipment</text>
+  </g>
+
+  <!-- Arrow 2 to 3 -->
+  <path d="M 308 120 H 338" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="338,116 346,120 338,124" fill="#161616"/>
+
+  <!-- Level 3: MOTORS -->
+  <g class="node">
+    <rect x="346" y="85" width="125" height="70" rx="2" fill="#ffffff" stroke="#0F62FE" stroke-width="1.5"/>
+    <rect x="346" y="85" width="5" height="70" fill="#0F62FE"/>
+    <text x="408" y="108" font-size="9" font-weight="600" fill="#0F62FE" text-anchor="middle" letter-spacing="0.2">LEVEL 3</text>
+    <text x="408" y="126" font-size="11" font-weight="600" fill="#161616" text-anchor="middle">MOTORS</text>
+    <text x="408" y="141" font-size="9" fill="#525252" text-anchor="middle">Electric drives</text>
+  </g>
+
+  <!-- Arrow 3 to 4 -->
+  <path d="M 471 120 H 501" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="501,116 509,120 501,124" fill="#161616"/>
+
+  <!-- Level 4: SPECIFICATIONS / ATTRIBUTES -->
+  <g class="node">
+    <rect x="509" y="45" width="150" height="150" rx="2" fill="#EDF5FF" stroke="#161616" stroke-width="1.5"/>
+    <text x="525" y="70" font-size="9" font-weight="600" fill="#161616" letter-spacing="0.2">ATTRIBUTES</text>
+    <text x="525" y="92" font-size="10" fill="#525252">HP / Kilowatts</text>
+    <text x="525" y="112" font-size="10" fill="#525252">Voltage / Phase</text>
+    <text x="525" y="132" font-size="10" fill="#525252">NEMA Frame</text>
+    <text x="525" y="152" font-size="10" fill="#525252">Rated RPM</text>
+    <text x="525" y="172" font-size="10" fill="#525252">Bearing Type</text>
+  </g>
+</svg>
