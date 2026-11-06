@@ -19,7 +19,7 @@ These records work together. You need to set them up in the correct order.
 
 ## Quick reference
 
-### Table 1. Labor and crew terminology
+### Table 1: Labor and crew terminology
 
 | Term | What it means |
 |------|---------------|
@@ -68,8 +68,8 @@ Labor records represent the individuals who perform work.
 1. Go to **Resources > Labor**.
 2. Create a new labor record.
 3. Link it to the person's existing person record.
-4. In the **Crafts** section, add the person's craft and set it as their **default craft**. The Available Labor dialog filters by default craft only — a person with the correct skill listed as a secondary craft will not appear when supervisors search for available people.
-5. Set the same **calendar and shift** you plan to use for the crew they will join. If these differ from the crew's calendar, the person will show as unavailable every time a supervisor or scheduler tries to assign them — even when they are physically at work.
+4. In the **Crafts** section, add the person's craft and set it as their **default craft**. The Available Labor dialog filters by default craft only. A person with the correct skill listed as a secondary craft will not appear when supervisors search for available people.
+5. Set the same **calendar and shift** you plan to use for the crew they will join. If these differ from the crew's calendar, the person will show as unavailable every time a supervisor or scheduler tries to assign them, even when they are physically at work.
 6. Save.
 
 Repeat for each person in your workforce.
@@ -99,10 +99,10 @@ With the crew type, crafts, calendar, and labor records in place, you can now cr
 4. Assign the **calendar** the crew will work to.
 5. Go to the **Labor Assignments** tab.
 6. Add each team member:
-    - Select the position (for example, Leader)
+    - Select the position, for example, Leader
     - Select the labor record
     - The **Effective Date** defaults to the start of today's shift. Adjust if needed.
-    - Leave **End Date** blank for a permanent assignment. If an End Date lapses, the crew member is silently dropped from availability — work can no longer be assigned to that crew, with no system warning.
+    - Leave **End Date** blank for a permanent assignment. If an End Date lapses, the crew member is silently dropped from availability, and work can no longer be assigned to that crew, with no system warning.
 7. Save.
 
 ---
@@ -111,7 +111,7 @@ With the crew type, crafts, calendar, and labor records in place, you can now cr
 
 ### Crew members showing as "Not available"
 
-The most common cause is a mismatch between the crew's calendar and the calendar assigned to the individual labor records. The system calculates availability from the **labor record's calendar and shift** — not the crew's. Even if the crew calendar is correct, a technician will appear unavailable if their personal labor record uses a different calendar. Check that both use the same calendar and shift.
+The most common cause is a mismatch between the crew's calendar and the calendar assigned to the individual labor records. The system calculates availability from the **labor record's calendar and shift**, not the crew's. Even if the crew calendar is correct, a technician will appear unavailable if their personal labor record uses a different calendar. Check that both use the same calendar and shift.
 
 ### "Craft mismatch" warning when adding labor to a crew
 

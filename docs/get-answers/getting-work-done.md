@@ -40,6 +40,8 @@ A count book defines a structured approach to validating inventory accuracy. It 
 
 Rotating items are interchangeable assets that are tracked individually over their lifecycle. Non-rotating items are tracked only by quantity and are consumed when used. This distinction reflects whether individual history and movement are important to manage.
 
+[I want to know more about storeroom and inventory strategy](../get-work-done/setup-control/plan-your-storeroom-strategy.md)
+
 ## Completing work
 
 ### How do I find my work?
@@ -109,6 +111,8 @@ Meters capture usage or condition data from assets. Meter groups organize relate
 ### What role do inspections play?
 
 Inspections standardize how asset condition is assessed. They convert observations into structured, consistent data. This supports early issue detection and more reliable maintenance decisions.
+
+[I want to know more about inspections](../start-fast/basics/how-inspections-work.md)
 
 ### What are failure codes?
 
@@ -190,10 +194,93 @@ Set up email notifications for work order assignments, status changes, and alert
 
 [I want to know more about automating communication](../get-work-done/setup-control/automate-communication.md)
 
+### How do I add users?
+
+Before people can work in Maximo Application Suite Select, they need a user account with the correct security group assigned.
+
+[I want to know more about adding users](../get-work-done/setup-control/add-users.md)
+
+### How do I set up labor, crafts, and crews?
+
+Crafts define the skills in your organization. Labor records represent the people. Crews group people together so you can assign a whole team to a job in one step.
+
+[I want to know more about setting up labor, crafts, and crews](../get-work-done/setup-control/set-up-labor-crafts-crews.md)
+
+### How do I decide whether something is a location, an asset, or a spare part?
+
+Every physical entity in your plant or facility must be classified as one of three primary record types: a location, an asset, or a spare part. Making the right classification before importing data ensures accurate maintenance history.
+
+[I want to know more about deciding between a location, an asset, and a spare part](../get-work-done/setup-control/decide-location-asset-spare-part.md)
+
+### How do I plan my location and asset hierarchies?
+
+A location hierarchy is the physical map of your facility. An asset hierarchy is the equipment breakdown structure that operates within those locations. Plan locations first, then assets.
+
+[How do I plan my location hierarchy?](../get-work-done/setup-control/plan-your-location-hierarchy.md)
+
+[How do I plan my asset hierarchy?](../get-work-done/setup-control/plan-your-asset-hierarchy.md)
+
+### What is the correct load order for my data?
+
+Import order matters. Referenced records must exist before records that use them, and parent records must exist before child records.
+
+[I want to know more about load order](../get-work-done/setup-control/correct-load-order.md)
+
+### How do I prepare data for import?
+
+Proper data preparation prevents import failures and ensures data quality.
+
+[I want to know more about preparing data for import](../get-work-done/setup-control/prepare-data-for-import.md)
+
+### How do I fix import errors?
+
+Import errors can occur with locations or assets. A troubleshooting guide helps you fix common import problems.
+
+[I want to know more about fixing import errors](../get-work-done/setup-control/why-does-asset-import-fail.md)
+
+### Which object structure do I use for each data type?
+
+An object structure defines what you are loading, much like a spreadsheet template defines the columns available for a type of data. You pick the one that matches the data you are loading.
+
+[I want to know more about object structures](../get-work-done/setup-control/object-structure-data-types.md)
+
+### How do I set up meters, failure codes, and inspection forms?
+
+Meter readings can drive preventive maintenance schedules and trigger corrective work orders. Failure codes convert technician remarks into standardized reliability data. Digital inspection forms replace paper clipboards with structured checklists on mobile devices.
+
+[How do I set up meters and meter groups?](../get-work-done/setup-control/set-up-meters.md)
+
+[How do I set up failure codes?](../get-work-done/setup-control/set-up-failure-codes.md)
+
+[How do I create inspection forms?](../get-work-done/setup-control/create-inspection-forms.md)
+
+### How do I plan my preventive maintenance and storeroom strategies?
+
+A preventive maintenance strategy prevents equipment breakdowns, stabilizes labor schedules, and ensures replacement parts are staged before work begins. A storeroom strategy ensures critical spare parts are on hand and prevents stockouts.
+
+[How do I plan my preventive maintenance strategy?](../get-work-done/setup-control/plan-your-pm-strategy.md)
+
+[How do I plan my storeroom and inventory strategy?](../get-work-done/setup-control/plan-your-storeroom-strategy.md)
+
+### How do I set up maps?
+
+Map Manager lets you configure a map so that users can see the location of assets, work orders, and service addresses on a visual map inside the application.
+
+[I want to know more about setting up maps](../get-work-done/setup-control/set-up-maps.md)
+
+### How do I configure IBM Maximo Mobile for my team?
+
+As an administrator, you configure the defaults that control how mobile devices sync data, which map app your team uses for navigation, and how service requests and work orders are created.
+
+[I want to know more about configuring IBM Maximo Mobile](../get-work-done/setup-control/configure-maximo-mobile.md)
+
 ## Common troubleshooting
 
-- [Why can't I complete a work order?](../get-work-done/complete-work/cant-complete-task.md)
+- [Why can't I complete a work order?](../get-work-done/complete-work/why-cant-complete-work-order.md)
 - [Why is inventory showing negative stock?](../get-work-done/manage-inventory/stock-incorrect.md)
+- [Why can't I issue materials to a work order?](../get-work-done/manage-inventory/why-cant-issue-materials.md)
+- [Why don't technicians see their assigned work?](../get-work-done/organize-people/why-cant-see-assigned-work.md)
+- [Why can't I see new work in IBM Maximo Mobile?](../get-work-done/complete-work/why-cant-see-new-work-on-phone.md)
 - [Why does my data look wrong?](../improve-results/improve-data/data-looks-wrong.md)
 - [Why aren't technicians using the system?](../improve-results/improve-adoption/technicians-not-using.md)
 

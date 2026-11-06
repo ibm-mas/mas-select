@@ -70,6 +70,6 @@ Want to see how this connects to locations and assets? See [How do locations, as
 - **Work request**: Someone reports a problem or need
 - **Work order**: Approved request with assigned resources
 
-Not all requests become work orders - some may be rejected, combined, or deferred.
+Not all requests become work orders. Some may be rejected, combined, or deferred.
 
 <span class="see-also"><img src="../../images/info_light_mode.png" class="no-lightbox info-icon" alt=""> <span class="see-also-text">Ready to work with work orders? See <a href="../../get-work-done/complete-work/complete-job.html">How do I complete a job?</a> for step-by-step guidance.</span></span>

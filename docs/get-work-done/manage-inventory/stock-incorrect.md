@@ -4,7 +4,7 @@ When physical inventory doesn't match system records, you need to investigate an
 
 ## Quick reference
 
-### Table 1. Common causes of stock discrepancies
+### Table 1: Common causes of stock discrepancies
 
 | Common cause | What to check |
 |--------------|---------------|
@@ -116,7 +116,7 @@ Regular counting reveals:
 
 System reports show:
 
-- Negative balances (impossible physically)
+- Negative balances, which are physically impossible
 - Unusually high balances
 - No movement for long periods
 - Frequent adjustments

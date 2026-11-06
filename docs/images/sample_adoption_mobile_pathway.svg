@@ -1,0 +1,48 @@
+<svg width="680" height="260" viewBox="0 0 680 260" fill="none" xmlns="http://www.w3.org/2000/svg" style="background:#ffffff; font-family:'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <title>Streamlined mobile workflow overcoming adoption barriers</title>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+
+  <!-- Step 1: Start Shift -->
+  <g class="node">
+    <rect x="20" y="100" width="130" height="60" rx="2" fill="#0F62FE" stroke="#0F62FE" stroke-width="1.5"/>
+    <text x="85" y="123" font-size="9" font-weight="600" fill="#ffffff" text-anchor="middle" letter-spacing="0.2">STEP 1</text>
+    <text x="85" y="142" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">Start shift</text>
+  </g>
+
+  <!-- Arrow to Mobile Cards -->
+  <path d="M 150 130 H 180" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="180,126 188,130 180,134" fill="#161616"/>
+
+  <!-- Step 2: Streamlined Cards -->
+  <g class="node">
+    <rect x="188" y="100" width="140" height="60" rx="2" fill="#EDF5FF" stroke="#0F62FE" stroke-width="1.5"/>
+    <text x="258" y="123" font-size="9" font-weight="600" fill="#0043CE" text-anchor="middle" letter-spacing="0.2">STEP 2</text>
+    <text x="258" y="140" font-size="11" font-weight="600" fill="#161616" text-anchor="middle">Mobile card views</text>
+    <text x="258" y="152" font-size="9" fill="#525252" text-anchor="middle">Replaces desktop forms</text>
+  </g>
+
+  <!-- Connectors to Offline & Completion -->
+  <path d="M 328 130 H 350 V 65 Q 350 58 358 58 H 370" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="370,54 378,58 370,62" fill="#161616"/>
+
+  <path d="M 328 130 H 350 V 195 Q 350 202 358 202 H 370" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="370,198 378,202 370,206" fill="#161616"/>
+
+  <!-- Feature 1: Offline in Cold Storage -->
+  <g class="node">
+    <rect x="378" y="25" width="280" height="65" rx="2" fill="#ffffff" stroke="#0F62FE" stroke-width="1.5"/>
+    <rect x="378" y="25" width="5" height="65" fill="#0F62FE"/>
+    <text x="395" y="47" font-size="9" font-weight="600" fill="#0F62FE">OFFLINE DATA CACHING</text>
+    <text x="395" y="63" font-size="11" font-weight="600" fill="#161616">Cold Storage Room</text>
+    <text x="395" y="78" font-size="10" fill="#525252">Queues transactions locally; syncs on network return</text>
+  </g>
+
+  <!-- Feature 2: Pre-loaded Job Steps -->
+  <g class="node">
+    <rect x="378" y="170" width="280" height="65" rx="2" fill="#ffffff" stroke="#0F62FE" stroke-width="1.5"/>
+    <rect x="378" y="170" width="5" height="65" fill="#0F62FE"/>
+    <text x="395" y="192" font-size="9" font-weight="600" fill="#0F62FE">PRE-LOADED JOB STEPS</text>
+    <text x="395" y="208" font-size="11" font-weight="600" fill="#161616">Structured task execution</text>
+    <text x="395" y="223" font-size="10" fill="#525252">Single-tap check-off and easy failure code selection</text>
+  </g>
+</svg>

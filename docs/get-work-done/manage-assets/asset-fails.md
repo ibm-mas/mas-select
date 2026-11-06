@@ -4,7 +4,7 @@ Record the failure using failure codes, create a work order to fix it, and track
 
 ## Quick reference
 
-### Table 1. Failure code levels
+### Table 1: Failure code levels
 
 | Failure code level | What it describes | Example |
 |--------------------|-------------------|---------|
@@ -52,12 +52,12 @@ When equipment fails, documenting what happened and why helps you understand rel
 
 Recording failures helps you:
 
-- Identify patterns (see if the same problem keeps happening)
-- Improve maintenance (adjust schedules to prevent failures)
-- Track costs (understand the true cost of equipment problems)
-- Make decisions (decide when to repair versus replace)
-- Analyze trends (report on reliability by equipment type)
-- Prevent recurrence (learn from past failures)
+- Identify patterns: see if the same problem keeps happening
+- Improve maintenance: adjust schedules to prevent failures
+- Track costs: understand the true cost of equipment problems
+- Make decisions: decide when to repair versus replace
+- Analyze trends: report on reliability by equipment type
+- Prevent recurrence: learn from past failures
 
 Failure codes provide a standardized way to track problems. This makes it easy to spot patterns and trends.
 
@@ -80,9 +80,9 @@ What kind of problem occurred:
 
 What specifically failed:
 
-- Nozzle seal leak (Filler FL-02)
-- Agitator not rotating (Batch Mixer MX-01)
-- Compressor not reaching temperature (Spiral Freezer SF-01)
+- Nozzle seal leak on Filler FL-02
+- Agitator not rotating on Batch Mixer MX-01
+- Compressor not reaching temperature on Spiral Freezer SF-01
 - Control malfunction
 
 ### 3. Cause (Why it failed)
@@ -103,7 +103,7 @@ What was done to resolve the failure:
 - Topped up refrigerant, checked for leaks
 - Operator retraining
 
-Recording the remedy completes the picture. If the same problem keeps recurring with the same cause but different remedies, the data shows which fix actually works — and which ones don't. Without remedy codes, pattern analysis stops at "what broke" and never reaches "what actually fixes it."
+Recording the remedy completes the picture. If the same problem keeps recurring with the same cause but different remedies, the data shows which fix actually works and which ones don't. Without remedy codes, pattern analysis stops at "what broke" and never reaches "what actually fixes it."
 
 !!! warning "TODO: Add visual content"
      A screenshot showing the failure code hierarchy would be useful here.
@@ -123,7 +123,7 @@ Recording the remedy completes the picture. If the same problem keeps recurring 
 
 2. Record the failure:
    - Go to the **Failure Reporting** tab
-   - Confirm the failure class is correct (it should be pre-filled from the asset)
+   - Confirm the failure class is correct. It should be pre-filled from the asset
    - Choose the specific problem
    - Identify the cause
    - Select a remedy code to record how the failure was resolved
@@ -164,7 +164,7 @@ Review failure reports to find:
 
 Look for:
 
-- Increasing failure rates (equipment wearing out)
+- Increasing failure rates, which can mean equipment is wearing out
 - Seasonal patterns
 - Failures after specific events
 - Cost trends over time
@@ -238,10 +238,13 @@ Failures tell you what broke. Asset history tells you the full story: all mainte
 
 ## Related topics
 
+- [How do I reduce equipment downtime?](../../improve-results/improve-work/reduce-downtime.md)
+- [How do I make data reliable?](../../improve-results/improve-data/make-data-reliable.md)
+- [How do I detect issues early?](../monitor-respond/detect-issues-early.md)
 - [How do I track asset history?](track-asset-history.md)
 - [How do I classify assets?](classify-assets.md)
 - [How do I complete a job?](../complete-work/complete-job.md)
-- [What are the basic concepts?](../../start-fast/basics/what-are-basic-concepts.md)
+- [How do I set up failure codes?](../setup-control/set-up-failure-codes.md)
 
 ---
 

@@ -12,8 +12,8 @@ Material issues fail when required fields or relationships are missing.
 The system needs to know:
 
 - **Which storeroom** the part is coming from
-- **Which item** you're issuing (correct item number)
-- **How many** you're issuing (valid quantity)
+- **Which item** you're issuing, using the correct item number
+- **How many** you're issuing, as a valid quantity
 
 **What to do**: Verify all three pieces of information are correct and the item exists in that storeroom.
 
@@ -32,7 +32,7 @@ You can only issue materials to work orders that:
 Some organizations require additional information:
 
 - **Bin location**: Where in the storeroom the part is stored
-- **Unit of measure**: The unit you're issuing (each, box, meter, etc.)
+- **Unit of measure**: The unit you're issuing, such as each, box, or meter
 - **GL account**: For cost tracking
 
 **What to do**: Fill in all required fields. If you're not sure what's required, check with your supervisor or system administrator.
@@ -91,7 +91,7 @@ Common causes of issuing errors:
 
 You can issue materials from:
 
-- The work order (most common)
+- The work order, which is the most common
 - The inventory application
 - Mobile apps
 

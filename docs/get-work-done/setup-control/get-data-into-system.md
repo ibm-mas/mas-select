@@ -14,11 +14,11 @@ Use Data Management to import your existing records into IBM Maximo Application 
 - Keep your CSV file under 500 KB. Larger files need to be split into smaller batches.
 - Import one data type at a time, in the correct sequence. See [What is the correct load order?](correct-load-order.md) for the import sequence.
 - Format ID columns as text in your spreadsheet application before entering data. Spreadsheet applications such as Microsoft Excel can silently reformat IDs as numbers, which breaks the import.
-- Run a small test batch of 5–10 records before importing hundreds. This lets you catch format problems quickly.
+- Run a small test batch of 5 to 10 records before importing hundreds. This lets you catch format problems quickly.
 
 ## Quick reference
 
-### Table 1. What you can import
+### Table 1: What you can import
 
 | Data type | When to import |
 |-----------|---------------|

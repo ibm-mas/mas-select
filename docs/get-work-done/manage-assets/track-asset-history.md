@@ -11,7 +11,7 @@ View all work orders, meter readings, and maintenance activities for any asset i
 
 ## Quick reference
 
-### Table 1. Asset history information
+### Table 1: Asset history information
 
 | What you can see | Why it matters |
 |------------------|----------------|
@@ -68,7 +68,7 @@ The system automatically tracks these details for each asset:
 All maintenance and repairs performed on the equipment.
 
 **Meter readings**
-Equipment usage over time (hours run, cycles completed, miles driven).
+Equipment usage over time, such as hours run, cycles completed, or miles driven.
 
 **Costs**
 Labor, parts, and total maintenance expenses.
@@ -163,7 +163,7 @@ If asset history is missing or incomplete:
 
 ---
 
-Understanding an asset's history turns reactive fixes into informed decisions — the difference between guessing and knowing.
+Understanding an asset's history turns reactive fixes into informed decisions. That is the difference between guessing and knowing.
 
 ## Continue building your skills
 

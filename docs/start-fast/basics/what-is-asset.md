@@ -70,4 +70,7 @@ Want to see how this connects to locations and work orders? See [How do location
 - [What is a work order?](what-is-work-order.md)
 - [What is a location?](what-is-location.md)
 - [How do locations, assets, and work orders work together?](how-concepts-work-together.md)
+- [How do I decide: location, asset, or spare part?](../../get-work-done/setup-control/decide-location-asset-spare-part.md)
+- [How do I plan my asset hierarchy?](../../get-work-done/setup-control/plan-your-asset-hierarchy.md)
 - [How do I track asset history?](../../get-work-done/manage-assets/track-asset-history.md)
+- [How do I manage more assets?](../../work-smarter/scale-operation/manage-more-assets.md)

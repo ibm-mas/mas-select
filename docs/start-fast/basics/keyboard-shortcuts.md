@@ -8,7 +8,7 @@ You can use keyboard shortcuts to work faster in Maximo Application Suite Select
 
 Use these shortcuts throughout the application for saving, navigating records, and changing status.
 
-### Table 1. Keyboard shortcuts for everyday actions
+### Table 1: Keyboard shortcuts for everyday actions
 
 | Action | Keyboard shortcut |
 |--------|------------------|
@@ -26,7 +26,7 @@ Use these shortcuts throughout the application for saving, navigating records, a
 
 Use these shortcuts to move through fields, select controls, and get contextual help.
 
-### Table 2. Keyboard shortcuts for page navigation
+### Table 2: Keyboard shortcuts for page navigation
 
 | Action | Keyboard shortcut |
 |--------|------------------|
@@ -44,7 +44,7 @@ Use these shortcuts to move through fields, select controls, and get contextual 
 
 Use these shortcuts when you are entering data in a table, such as adding job plan tasks or labor assignments.
 
-### Table 3. Keyboard shortcuts for tables
+### Table 3: Keyboard shortcuts for tables
 
 | Action | Keyboard shortcut |
 |--------|------------------|
@@ -62,7 +62,7 @@ Use these shortcuts when you are entering data in a table, such as adding job pl
 
 Use these shortcuts when entering or adjusting dates in date fields.
 
-### Table 4. Keyboard shortcuts for dates
+### Table 4: Keyboard shortcuts for dates
 
 | Action | Keyboard shortcut |
 |--------|------------------|
@@ -80,7 +80,7 @@ Use these shortcuts when entering or adjusting dates in date fields.
 
 Use these shortcuts to return from lookup windows.
 
-### Table 5. Keyboard shortcuts for global navigation
+### Table 5: Keyboard shortcuts for global navigation
 
 | Action | Keyboard shortcut |
 |--------|------------------|
@@ -93,7 +93,7 @@ Use these shortcuts to return from lookup windows.
 
 Two keyboard shortcuts behave differently in Maximo Application Suite Select from the standard browser expectation. Knowing this prevents confusion.
 
-### Table 6. Non-standard keyboard shortcut behaviour
+### Table 6: Non-standard keyboard shortcut behaviour
 
 | UI element | What you would normally expect | What happens instead |
 |------------|-------------------------------|----------------------|

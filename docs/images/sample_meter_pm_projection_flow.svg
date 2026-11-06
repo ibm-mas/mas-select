@@ -1,0 +1,61 @@
+<svg width="680" height="140" viewBox="0 0 680 140" fill="none" xmlns="http://www.w3.org/2000/svg" style="background:#ffffff; font-family:'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <title>Continuous meter setup and automated preventive maintenance projection</title>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+
+  <!-- Step 1 -->
+  <g class="node">
+    <rect x="16" y="35" width="115" height="70" rx="2" fill="#EDF5FF" stroke="#0F62FE" stroke-width="1.5"/>
+    <text x="73" y="58" font-size="9" font-weight="600" fill="#0043CE" text-anchor="middle" letter-spacing="0.2">STEP 1</text>
+    <text x="73" y="75" font-size="11" font-weight="600" fill="#161616" text-anchor="middle">Attach meter</text>
+    <text x="73" y="90" font-size="10" fill="#525252" text-anchor="middle">to asset</text>
+  </g>
+
+  <!-- Arrow 1 -->
+  <path d="M 131 70 H 145" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="145,66 153,70 145,74" fill="#161616"/>
+
+  <!-- Step 2 -->
+  <g class="node">
+    <rect x="153" y="35" width="115" height="70" rx="2" fill="#ffffff" stroke="#161616" stroke-width="1.5"/>
+    <text x="210" y="58" font-size="9" font-weight="600" fill="#525252" text-anchor="middle" letter-spacing="0.2">STEP 2</text>
+    <text x="210" y="75" font-size="11" font-weight="600" fill="#161616" text-anchor="middle">Daily average</text>
+    <text x="210" y="90" font-size="10" fill="#525252" text-anchor="middle">16 hrs / day</text>
+  </g>
+
+  <!-- Arrow 2 -->
+  <path d="M 268 70 H 282" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="282,66 290,70 282,74" fill="#161616"/>
+
+  <!-- Step 3 -->
+  <g class="node">
+    <rect x="290" y="35" width="115" height="70" rx="2" fill="#ffffff" stroke="#161616" stroke-width="1.5"/>
+    <text x="347" y="58" font-size="9" font-weight="600" fill="#525252" text-anchor="middle" letter-spacing="0.2">STEP 3</text>
+    <text x="347" y="75" font-size="11" font-weight="600" fill="#161616" text-anchor="middle">Log reading</text>
+    <text x="347" y="90" font-size="10" fill="#525252" text-anchor="middle">1,200 hrs</text>
+  </g>
+
+  <!-- Arrow 3 -->
+  <path d="M 405 70 H 419" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="419,66 427,70 419,74" fill="#161616"/>
+
+  <!-- Step 4 -->
+  <g class="node">
+    <rect x="427" y="35" width="115" height="70" rx="2" fill="#ffffff" stroke="#0F62FE" stroke-width="1.5"/>
+    <rect x="427" y="35" width="5" height="70" fill="#0F62FE"/>
+    <text x="487" y="58" font-size="9" font-weight="600" fill="#0F62FE" text-anchor="middle" letter-spacing="0.2">STEP 4</text>
+    <text x="487" y="75" font-size="11" font-weight="600" fill="#161616" text-anchor="middle">Link to PM</text>
+    <text x="487" y="90" font-size="10" fill="#525252" text-anchor="middle">Every 500 hrs</text>
+  </g>
+
+  <!-- Arrow 4 -->
+  <path d="M 542 70 H 556" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="556,66 564,70 556,74" fill="#161616"/>
+
+  <!-- Step 5 -->
+  <g class="node">
+    <rect x="564" y="35" width="100" height="70" rx="2" fill="#0F62FE" stroke="#0F62FE" stroke-width="1.5"/>
+    <text x="614" y="58" font-size="9" font-weight="600" fill="#ffffff" text-anchor="middle" letter-spacing="0.2">PROJECTION</text>
+    <text x="614" y="75" font-size="10" font-weight="600" fill="#ffffff" text-anchor="middle">PMWoGen</text>
+    <text x="614" y="90" font-size="10" fill="#EDF5FF" text-anchor="middle">Due in 31 days</text>
+  </g>
+</svg>

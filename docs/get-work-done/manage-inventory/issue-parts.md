@@ -10,11 +10,11 @@ Take parts from the storeroom and assign them to a work order.
 
 ## Quick reference
 
-### Table 1. Issue methods
+### Table 1: Issue methods
 
 | Method | When to use |
 |--------|-------------|
-| **From work order** | Most common - when you're working on a job |
+| **From work order** | Most common, when you're working on a job |
 | **From storeroom** | When managing inventory directly |
 | **Mobile app** | When working in the field |
 
@@ -128,11 +128,11 @@ On mobile devices:
 
 The system automatically:
 
-- Reduces inventory (storeroom balance goes down)
-- Records cost (material cost added to work order)
-- Tracks usage (creates transaction history)
-- Updates reorder (triggers reorder if below minimum)
-- Logs who and when (records who issued and when)
+- Reduces inventory: storeroom balance goes down
+- Records cost: material cost is added to the work order
+- Tracks usage: creates transaction history
+- Updates reorder: triggers reorder if below minimum
+- Logs who and when: records who issued and when
 
 ---
 
@@ -203,7 +203,7 @@ The system increases inventory balance, adjusts cost on work order, and records 
 
 ---
 
-Issuing parts accurately keeps inventory reliable for everyone — and makes it easier to plan future work.
+Issuing parts accurately keeps inventory reliable for everyone and makes it easier to plan future work.
 
 ## Continue building your skills
 

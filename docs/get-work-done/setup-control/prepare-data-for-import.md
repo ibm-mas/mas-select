@@ -63,6 +63,8 @@ Verify that supporting records exist before importing locations or assets. Missi
 
 **What to check**:
 
+### Table 1: Location fields to check before import
+
 | Field | Required when |
 |---|---|
 | GL accounts | Your organization tracks maintenance costs by cost centre |
@@ -77,11 +79,13 @@ Verify that supporting records exist before importing locations or assets. Missi
 
 **What to check**:
 
+### Table 2: Asset fields to check before import
+
 | Field | Required when |
 |---|---|
 | GL accounts | Tracking maintenance costs by cost centre |
 | Service addresses | Assets need to appear on maps or work order dispatch |
-| Failure classes | Technicians need to select failure codes on work orders for this asset — without this, the Failure Reporting tab is empty |
+| Failure classes | Technicians need to select failure codes on work orders for this asset. Without this, the Failure Reporting tab is empty |
 | Rotating items | Only when the asset is a rotating, serialised item tracked by individual asset record |
 | Vendors and manufacturers | Tracking warranty, procurement, or service history by supplier |
 | Classifications and specifications | You want to search, filter, or report on assets by type or specification |
@@ -114,9 +118,9 @@ For locations and parent-child relationships:
 
 **What to do**: Import in order:
 
-1. Top-level records first—parent locations
+1. Top-level records first: parent locations
 2. Second-level records next
-3. Lowest-level records last—child locations
+3. Lowest-level records last: child locations
 
 ## Break large imports into batches
 

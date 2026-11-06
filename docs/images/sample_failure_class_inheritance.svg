@@ -1,0 +1,51 @@
+<svg width="680" height="150" viewBox="0 0 680 150" fill="none" xmlns="http://www.w3.org/2000/svg" style="background:#ffffff; font-family:'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <title>Failure class inheritance and field reporting flow</title>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+
+  <!-- Step 1: Asset Record -->
+  <g class="node">
+    <rect x="20" y="40" width="130" height="70" rx="2" fill="#EDF5FF" stroke="#0F62FE" stroke-width="1.5"/>
+    <text x="85" y="63" font-size="9" font-weight="600" fill="#0043CE" text-anchor="middle" letter-spacing="0.2">ASSET RECORD</text>
+    <text x="85" y="80" font-size="11" font-weight="600" fill="#161616" text-anchor="middle">Filler FL-02</text>
+    <text x="85" y="96" font-size="10" fill="#525252" text-anchor="middle">Class: PUMPS</text>
+  </g>
+
+  <!-- Connector 1 -->
+  <path d="M 150 75 H 195" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="195,71 203,75 195,79" fill="#161616"/>
+  <text x="176" y="65" font-size="8" fill="#525252" text-anchor="middle">Inherits</text>
+
+  <!-- Step 2: Work Order Header -->
+  <g class="node">
+    <rect x="203" y="40" width="130" height="70" rx="2" fill="#ffffff" stroke="#0F62FE" stroke-width="1.5"/>
+    <rect x="203" y="40" width="5" height="70" fill="#0F62FE"/>
+    <text x="268" y="63" font-size="9" font-weight="600" fill="#0F62FE" text-anchor="middle" letter-spacing="0.2">WORK ORDER</text>
+    <text x="268" y="80" font-size="11" font-weight="600" fill="#161616" text-anchor="middle">Corrective WO</text>
+    <text x="268" y="96" font-size="10" fill="#525252" text-anchor="middle">Class: PUMPS</text>
+  </g>
+
+  <!-- Connector 2 -->
+  <path d="M 333 75 H 378" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="378,71 386,75 378,79" fill="#161616"/>
+
+  <!-- Step 3: Failure Reporting Tab -->
+  <g class="node">
+    <rect x="386" y="40" width="120" height="70" rx="2" fill="#ffffff" stroke="#161616" stroke-width="1.5"/>
+    <text x="446" y="63" font-size="9" font-weight="600" fill="#525252" text-anchor="middle" letter-spacing="0.2">FIELD CLOSURE</text>
+    <text x="446" y="80" font-size="10" font-weight="600" fill="#161616" text-anchor="middle">Technician</text>
+    <text x="446" y="96" font-size="10" fill="#525252" text-anchor="middle">Failure Reporting</text>
+  </g>
+
+  <!-- Connector 3 -->
+  <path d="M 506 75 H 551" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="551,71 559,75 551,79" fill="#161616"/>
+
+  <!-- Step 4: Cascade Selection -->
+  <g class="node">
+    <rect x="559" y="30" width="105" height="90" rx="2" fill="#EDF5FF" stroke="#0F62FE" stroke-width="1.5"/>
+    <text x="611" y="50" font-size="8" font-weight="600" fill="#0043CE" text-anchor="middle">PUMPS TREE</text>
+    <text x="611" y="68" font-size="9" font-weight="600" fill="#161616" text-anchor="middle">1. LEAK</text>
+    <text x="611" y="84" font-size="9" font-weight="600" fill="#161616" text-anchor="middle">2. SEAL_WEAR</text>
+    <text x="611" y="100" font-size="9" font-weight="600" fill="#161616" text-anchor="middle">3. REPLACE_SEAL</text>
+  </g>
+</svg>

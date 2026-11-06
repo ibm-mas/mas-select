@@ -46,7 +46,7 @@ Remove unnecessary steps, use mobile apps for field work, set up defaults and te
 
 ## Common troubleshooting
 
-- [Why can't I complete a work order?](../get-work-done/complete-work/cant-complete-task.md)
+- [Why can't I complete a work order?](../get-work-done/complete-work/why-cant-complete-work-order.md)
 - [Why is inventory showing negative stock?](../get-work-done/manage-inventory/stock-incorrect.md)
 - [Why does my data look wrong?](../improve-results/improve-data/data-looks-wrong.md)
 - [Why aren't technicians using the system?](../improve-results/improve-adoption/technicians-not-using.md)

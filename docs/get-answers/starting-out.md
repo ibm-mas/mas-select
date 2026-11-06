@@ -44,9 +44,45 @@ Classifications are used to structure and standardize how assets, items, and rel
 
 Systems provide a functional grouping of locations based on how assets work together. While locations describe physical placement, systems describe operational or functional relationships. This allows organizations to manage assets from both a physical and functional perspective.
 
+### Why can I manage work orders in more than one place?
+
+You can work with work orders in the Work Orders application, in the Technician app on the desktop, and in the Technician app in IBM Maximo Mobile. All three work with the same work orders.
+
+[I want to know more about where to manage work orders](../start-fast/basics/why-apps-overlap.md)
+
+### How do inspections work?
+
+An inspection is a set of questions that you answer about an asset or a location. Inspections use two apps: Inspection Forms, to define the forms, and Inspections, to conduct inspections and record the results.
+
+[I want to know more about inspections](../start-fast/basics/how-inspections-work.md)
+
+### What happens when I'm offline in IBM Maximo Mobile?
+
+IBM Maximo Mobile keeps working when your device loses its connection. The app stores your data on the device, so you can keep working and sync your changes later.
+
+[I want to know more about working offline](../start-fast/basics/what-happens-offline.md)
+
+### How do I get IBM Maximo Mobile?
+
+IBM Maximo Mobile lets technicians, supervisors, and inventory clerks view assigned work, complete work orders, and update records from a phone or tablet.
+
+[I want to know more about getting IBM Maximo Mobile](../start-fast/first-task/get-maximo-mobile.md)
+
+### How do locations, assets, and work orders work together?
+
+A location tells you where work happens. An asset tells you what equipment is maintained. A work order records the maintenance done on that equipment.
+
+[I want to know more about how these concepts connect](../start-fast/basics/how-concepts-work-together.md)
+
+### What keyboard shortcuts can I use?
+
+Keyboard shortcuts let you save, move between records, change status, and navigate without switching between your keyboard and mouse.
+
+[I want to know more about keyboard shortcuts](../start-fast/basics/keyboard-shortcuts.md)
+
 ## Common troubleshooting
 
-- [Why can't I complete a work order?](../get-work-done/complete-work/cant-complete-task.md)
+- [Why can't I complete a work order?](../get-work-done/complete-work/why-cant-complete-work-order.md)
 - [Why is inventory showing negative stock?](../get-work-done/manage-inventory/stock-incorrect.md)
 - [Why does my data look wrong?](../improve-results/improve-data/data-looks-wrong.md)
 - [Why aren't technicians using the system?](../improve-results/improve-adoption/technicians-not-using.md)

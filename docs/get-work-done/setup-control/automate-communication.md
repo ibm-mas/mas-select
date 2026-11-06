@@ -17,7 +17,7 @@ Communication templates let you send automatic emails when things happen in the 
 
 ## Quick reference
 
-### Table 1. Communication terminology
+### Table 1: Communication terminology
 
 | Term | What it means |
 |------|---------------|
@@ -38,7 +38,7 @@ Communication templates automate outbound email for work order assignments, stat
 1. Go to **Administration > Communication Templates**.
 2. Click **New Communication Template**.
 3. Enter a unique **Template ID** and a clear description.
-4. Set **Accessible From** to the context where this template will be used (e.g. **APPS** or **ALL**).
+4. Set **Accessible From** to the context where this template will be used, such as **APPS** or **ALL**.
 5. Enter a **Send From** email address. This is the address recipients will see as the sender.
 6. Enter a **Subject** line. Use substitution variables to include record data, for example:
    ```

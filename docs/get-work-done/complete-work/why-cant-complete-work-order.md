@@ -15,7 +15,7 @@ Your security group might not allow you to change work order status or complete 
 
 ### Work order is not in the correct status
 
-You can only complete work orders that are in progress. If the work order is in a different status (such as "Approved" or "On Hold"), you need to change it to "In Progress" first.
+You can only complete work orders that are in progress. If the work order is in a different status, such as "Approved" or "On Hold", you need to change it to "In Progress" first.
 
 **What to do**: Check the current status and move it to "In Progress" before trying to complete it.
 
@@ -30,7 +30,7 @@ Some organizations configure approval rules and requirements that control which 
 The system might require certain information before allowing completion:
 
 - Labor hours must be entered
-- Failure codes must be recorded (problem, cause, remedy)
+- Failure codes must be recorded: problem, cause, and remedy
 - Materials or actuals must be documented
 
 **What to do**: Check what information is required and add it before completing the work order.

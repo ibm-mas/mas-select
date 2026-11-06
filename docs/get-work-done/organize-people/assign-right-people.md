@@ -17,7 +17,7 @@ Match the right technician or crew to a work order so the job goes to someone wi
 
 ## Quick reference
 
-### Table 1. Assignment methods
+### Table 1: Assignment methods
 
 | Method | Best for |
 |--------|----------|
@@ -65,7 +65,7 @@ The most common reasons a technician doesn't appear in the Available Labor list:
 
 ### No craft assigned
 
-Available Labor filters by **default craft only**. A person with the correct skill as a secondary craft is excluded from the results — they exist in the system but the filter doesn't find them.
+Available Labor filters by **default craft only**. A person with the correct skill as a secondary craft is excluded from the results. They exist in the system but the filter doesn't find them.
 
 **What to do**: Open the Labor application, find the person's record, and confirm the correct craft is set as their default, not just listed as a secondary craft.
 
@@ -77,7 +77,7 @@ Available Labor uses the calendar and shift on the labor record. If the schedule
 
 ### Work order status doesn't allow assignment
 
-You can only assign labor to work orders in an approvable or approved status. Work orders in **Waiting for Approval** (WAPPR) or **Approved** (APPR) status accept assignments.
+You can only assign labor to work orders in an approvable or approved status. Work orders in **Waiting for Approval** or **Approved** status accept assignments.
 
 **What to do**: Check the work order status and change it to APPR before assigning.
 

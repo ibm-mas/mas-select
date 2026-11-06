@@ -39,7 +39,7 @@ The app saves your answers automatically as you go.
 
 ## Quick reference
 
-### Table 1. Inspection apps
+### Table 1: Inspection apps
 
 | App | Find it in the menu | Use it to |
 |-----|---------------------|-----------|
@@ -68,3 +68,4 @@ For the security groups, see [How do I add users?](../../get-work-done/setup-con
 - [What is a work order?](what-is-work-order.md)
 - [What is an asset?](what-is-asset.md)
 - [How do I get IBM Maximo Mobile?](../first-task/get-maximo-mobile.md)
+- [How do I create inspection forms?](../../get-work-done/setup-control/create-inspection-forms.md)

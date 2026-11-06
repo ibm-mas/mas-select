@@ -1,0 +1,65 @@
+<svg width="680" height="280" viewBox="0 0 680 280" fill="none" xmlns="http://www.w3.org/2000/svg" style="background:#ffffff; font-family:'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <title>Decision framework for preventive maintenance frequency</title>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+
+  <!-- Step 1: Input node -->
+  <g class="node">
+    <rect x="20" y="110" width="160" height="60" rx="2" fill="#EDF5FF" stroke="#0F62FE" stroke-width="1.5"/>
+    <text x="100" y="136" font-size="11" font-weight="600" fill="#0043CE" text-anchor="middle" letter-spacing="0.2">EQUIPMENT ANALYSIS</text>
+    <text x="100" y="154" font-size="12" font-weight="600" fill="#161616" text-anchor="middle">Operating pattern</text>
+  </g>
+
+  <!-- Connector: Step 1 to Decision -->
+  <path d="M 180 140 H 220" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="220,136 228,140 220,144" fill="#161616"/>
+
+  <!-- Decision Node -->
+  <g class="node">
+    <polygon points="290,95 350,140 290,185 230,140" fill="#ffffff" stroke="#0F62FE" stroke-width="1.5"/>
+    <text x="290" y="137" font-size="11" font-weight="600" fill="#161616" text-anchor="middle">How does</text>
+    <text x="290" y="151" font-size="11" font-weight="600" fill="#161616" text-anchor="middle">asset run?</text>
+  </g>
+
+  <!-- Connectors from Decision to 3 Outcomes -->
+  <!-- Top: 24/7 continuous -->
+  <path d="M 290 95 V 50 Q 290 42 298 42 H 420" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="420,38 428,42 420,46" fill="#161616"/>
+  <rect x="305" y="28" width="105" height="18" fill="#ffffff"/>
+  <text x="310" y="41" font-size="10" font-weight="600" fill="#525252">24/7 continuous</text>
+
+  <!-- Middle: Variable batch -->
+  <path d="M 350 140 H 420" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="420,136 428,140 420,144" fill="#161616"/>
+  <rect x="355" y="126" width="60" height="18" fill="#ffffff"/>
+  <text x="360" y="139" font-size="10" font-weight="600" fill="#525252">Variable</text>
+
+  <!-- Bottom: Intermittent seasonal -->
+  <path d="M 290 185 V 230 Q 290 238 298 238 H 420" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="420,234 428,238 420,242" fill="#161616"/>
+  <rect x="305" y="232" width="105" height="18" fill="#ffffff"/>
+  <text x="310" y="245" font-size="10" font-weight="600" fill="#525252">Intermittent</text>
+
+  <!-- Outcome 1: Time-based PM -->
+  <g class="node">
+    <rect x="428" y="16" width="232" height="52" rx="2" fill="#ffffff" stroke="#0F62FE" stroke-width="1.5"/>
+    <rect x="428" y="16" width="6" height="52" fill="#0F62FE"/>
+    <text x="444" y="36" font-size="11" font-weight="600" fill="#0F62FE">TIME-BASED SCHEDULE</text>
+    <text x="444" y="53" font-size="12" fill="#161616">Calendar days, weeks, or months</text>
+  </g>
+
+  <!-- Outcome 2: Usage-based PM -->
+  <g class="node">
+    <rect x="428" y="114" width="232" height="52" rx="2" fill="#ffffff" stroke="#0F62FE" stroke-width="1.5"/>
+    <rect x="428" y="114" width="6" height="52" fill="#0F62FE"/>
+    <text x="444" y="134" font-size="11" font-weight="600" fill="#0F62FE">USAGE-BASED SCHEDULE</text>
+    <text x="444" y="151" font-size="12" fill="#161616">Continuous run hours or cycles</text>
+  </g>
+
+  <!-- Outcome 3: Combined PM -->
+  <g class="node">
+    <rect x="428" y="212" width="232" height="52" rx="2" fill="#ffffff" stroke="#0F62FE" stroke-width="1.5"/>
+    <rect x="428" y="212" width="6" height="52" fill="#0F62FE"/>
+    <text x="444" y="232" font-size="11" font-weight="600" fill="#0F62FE">COMBINED SCHEDULE</text>
+    <text x="444" y="249" font-size="12" fill="#161616">Calendar limit or run hours first</text>
+  </g>
+</svg>

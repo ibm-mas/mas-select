@@ -117,6 +117,8 @@ If you use parent-child asset relationships:
 
 Follow these five steps in sequence to load your facility data:
 
+### Table 1: The five steps of data onboarding and the guide for each
+
 | Step | Action | Guide |
 |---|---|---|
 | 1 | **Understand load order**<br>Review dependencies and ensure referenced records and parent locations exist first. | [What is the correct load order?](correct-load-order.md) |

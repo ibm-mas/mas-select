@@ -4,7 +4,7 @@ Domains control the values users can pick from in dropdown lists and status fiel
 
 ## Quick reference
 
-### Table 1. Domain terminology
+### Table 1: Domain terminology
 
 | Term | What it means |
 |------|---------------|
@@ -15,7 +15,7 @@ Domains control the values users can pick from in dropdown lists and status fiel
 
 ## What you can do in IBM Maximo Application Suite Select
 
-### Table 2. Domain customization tasks
+### Table 2: Domain customization tasks
 
 | Task | How |
 |------|-----|
@@ -35,14 +35,14 @@ Common uses:
 
 #### What you cannot change
 
-You can add synonym values, but you cannot add new internal values. The system's business logic — what happens when a work order reaches APPR, COMP, or CLOSE — is hardwired to those internal values and cannot be modified. If you need a status that behaves differently from any existing internal value, that is not possible through domain configuration.
+You can add synonym values, but you cannot add new internal values. The system's business logic, meaning what happens when a work order reaches APPR, COMP, or CLOSE, is hardwired to those internal values and cannot be modified. If you need a status that behaves differently from any existing internal value, that is not possible through domain configuration.
 
 ## How to add a synonym value
 
 1. Go to **System Configuration > Platform Configuration > Domains**.
 2. Search for the domain you want to update. For example, search for **WOSTATUS** to find the work order status domain.
 3. Open the domain record.
-4. In the Values table, click **Add Row** (the + button above the values list).
+4. In the Values table, click **Add Row**, the + button above the values list.
 5. Leave the **Internal Value** field set to the existing system status you want to map to.
 6. Enter your custom label in the **Value** field.
 7. Add a description to explain the value.

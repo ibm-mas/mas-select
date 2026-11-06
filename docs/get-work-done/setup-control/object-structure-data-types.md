@@ -12,7 +12,7 @@ Use this reference to find the correct object structure for each data type.
 
 ## Quick reference
 
-### Table 1. Object structure by data type
+### Table 1: Object structure by data type
 
 `[SME confirmation required: Verify all object structure names against the Maximo Application Suite Select Data Management application before publishing. Names noted with * are unconfirmed and may differ from standard Maximo Manage names.]`
 
@@ -34,6 +34,8 @@ Use this reference to find the correct object structure for each data type.
 
 `[SME confirmation required: Confirm the required and commonly used fields for asset imports in Maximo Application Suite Select. The following are common fields in standard Maximo Manage and require validation.]`
 
+### Table 2: Location fields by object structure
+
 | Field | Description | Required |
 |-------|-------------|---------|
 | `ASSETNUM` | Unique identifier for the asset | Yes |
@@ -48,6 +50,8 @@ Use this reference to find the correct object structure for each data type.
 ### Locations (`MXAPIOPERLOC`)
 
 `[SME confirmation required: Confirm the required and commonly used fields for location imports in Maximo Application Suite Select. The following are common fields in standard Maximo Manage and require validation.]`
+
+### Table 3: Asset fields by object structure
 
 | Field | Description | Required |
 |-------|-------------|---------|

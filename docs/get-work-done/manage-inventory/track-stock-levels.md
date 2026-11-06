@@ -4,7 +4,7 @@ Monitor what's in your storerooms so you know what's available, what needs reord
 
 ## Quick reference
 
-### Table 1. Stock balance types
+### Table 1: Stock balance types
 
 | Balance type | What it means |
 |--------------|---------------|
@@ -47,7 +47,7 @@ Monitor what's in your storerooms so you know what's available, what needs reord
 - Reorder reports
 - Usage analysis
 - Cost reports
-- ABC analysis (prioritize high-value items)
+- ABC analysis: prioritize high-value items
 
 
 ## Why track stock levels?
@@ -101,7 +101,7 @@ How items are being consumed.
 3. Select the item.
 4. View the information you need:
    - Current quantity on hand
-   - Available balance (not reserved)
+   - Available balance: not reserved
    - Cost information
    - Reorder point and minimum stock level
 
@@ -158,7 +158,7 @@ For detailed tracking:
 - Not available for other use
 - Released when work order closes
 
-Reservations are either hard or soft. A **hard reservation** immediately reduces available balance and requires sufficient stock to exist — if stock is insufficient, the reservation cannot be created and work order approval may fail. A **soft reservation** records demand without locking stock. If your storeroom uses hard reservations and a critical spare such as a nozzle seal for Filler FL-02 runs out, technicians will not be able to reserve it at approval time, causing delays. Check which reservation type is configured for critical items.
+Reservations are either hard or soft. A **hard reservation** immediately reduces available balance and requires sufficient stock to exist. If stock is insufficient, the reservation cannot be created and work order approval may fail. A **soft reservation** records demand without locking stock. If your storeroom uses hard reservations and a critical spare such as a nozzle seal for Filler FL-02 runs out, technicians will not be able to reserve it at approval time, causing delays. Check which reservation type is configured for critical items.
 
 **Picked quantity**
 
@@ -174,10 +174,12 @@ Reservations are either hard or soft. A **hard reservation** immediately reduces
 
 The system tracks:
 
+### Table 2: Reorder settings and when each is required
+
 | Setting | Required when |
 |---|---|
 | **Reorder point** | You want the system to flag items for reordering automatically |
-| **Lead time** | The reorder calculation should account for procurement time — without it, items may be flagged too late |
+| **Lead time** | The reorder calculation should account for procurement time. Without it, items may be flagged too late |
 | **Order quantity (EOQ)** | You want the system to recommend how much to order, not just flag that an order is needed |
 | **Safety stock** | Only when demand is unpredictable and you need a buffer above the reorder point |
 
@@ -185,9 +187,9 @@ When balance drops below reorder point, the system flags the item so you can rep
 
 #### How the reorder calculation works
 
-The system uses this formula: **Order quantity = (Reorder point + 1) minus quantity on order minus available balance.**
+The system uses this formula: **Order quantity = Reorder point + 1, minus quantity on order, minus available balance.**
 
-The +1 means a reorder point of 0 still triggers an order when balance hits zero. Setting your reorder point equal to your minimum-on-hand target is a common misconfiguration — it causes reorders to trigger one unit too early and leads to excess stock over time.
+The +1 means a reorder point of 0 still triggers an order when balance hits zero. Setting your reorder point equal to your minimum-on-hand target is a common misconfiguration that causes reorders to trigger one unit too early and leads to excess stock over time.
 
 ### Check items to reorder
 
@@ -244,10 +246,10 @@ If a high-value emergency purchase is received, it raises the average cost for a
 
 The system records:
 
-- When parts are used (issue transactions)
-- What jobs used items (work orders)
-- How often items are needed (frequency)
-- Usage patterns over time (trends)
+- When parts are used, from issue transactions
+- What jobs used items, from work orders
+- How often items are needed
+- Usage patterns over time
 
 ### Analyze usage
 
@@ -351,7 +353,7 @@ If item shows in stock but you can't find it:
 
 ---
 
-Good stock visibility means fewer surprises when jobs need parts — and fewer delays when it matters most.
+Good stock visibility means fewer surprises when jobs need parts and fewer delays when it matters most.
 
 ## Continue building your skills
 
@@ -375,3 +377,4 @@ Learn which inventory metrics matter and how to use them to keep parts available
 - [What happens if stock is incorrect?](stock-incorrect.md)
 - [How do I plan recurring maintenance?](../plan-work/plan-recurring-maintenance.md)
 - [How do I complete a job?](../complete-work/complete-job.md)
+- [How do I plan my storeroom and inventory strategy?](../setup-control/plan-your-storeroom-strategy.md)

@@ -14,8 +14,6 @@ IA_STRUCTURE = {
     "start-fast": {
         "first-task": [
             ("supervisor-first-task.md", "How do I assign and track work?", "Supervisor"),
-            ("clerk-first-task.md", "How do I issue a part?", "Inventory Clerk"),
-            ("admin-first-task.md", "How do I load user data?", "Administrator"),
         ],
         "basics": [
             ("what-is-asset.md", "What is an asset?", "Basic concept"),

@@ -38,7 +38,7 @@ IBM Maximo Mobile treats your device as offline when any of these conditions app
 
 ## Quick reference
 
-### Table 1. Online and offline
+### Table 1: Online and offline
 
 | | Online | Offline |
 |---|--------|---------|

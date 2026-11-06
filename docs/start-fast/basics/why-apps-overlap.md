@@ -34,7 +34,7 @@ Most of the menu is desktop applications. Only a smaller set of apps, such as Te
 
 ## Quick reference
 
-### Table 1. Apps in the desktop menu and IBM Maximo Mobile
+### Table 1: Apps in the desktop menu and IBM Maximo Mobile
 
 | App | Find it in the menu | Use it to |
 |-----|---------------------|-----------|
@@ -57,7 +57,7 @@ You can also use the search box at the top of the menu to find any app by name.
 
 The apps you see depend on the security group that your administrator assigned to you. For the security groups, see [How do I add users?](../../get-work-done/setup-control/add-users.md)
 
-### Table 2. Apps in the desktop menu and IBM Maximo Mobile, by security group
+### Table 2: Apps in the desktop menu and IBM Maximo Mobile, by security group
 
 | Security group | Apps |
 |----------------|------|

@@ -130,7 +130,7 @@ Use the correct status to show what's blocking you:
 - **On Hold**: General hold, waiting for something
 - **Waiting on Parts**: Specifically waiting for materials
 - **Waiting on Assignment**: Need additional people or skills
-- **Waiting**: Other reasons (access, approval, etc.)
+- **Waiting**: Other reasons, such as access or approval
 
 Your supervisor can see these statuses and help resolve the issue.
 
@@ -142,7 +142,7 @@ After you update the status and add notes:
 
 - Your supervisor is notified
 - They can see exactly what's blocking you
-- They work to resolve the issue (order parts, assign help, etc.)
+- They work to resolve the issue, such as by ordering parts or assigning help
 - You're notified when you can continue
 - Work order stays in your queue until resolved
 

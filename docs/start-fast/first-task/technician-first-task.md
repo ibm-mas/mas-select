@@ -10,7 +10,7 @@ Get started quickly with a task designed for technicians like you. Learn the bas
 
 Find and complete an assigned work order, for example, complete work on Filler FL-02.
 
-![](../../images/guided_steps_final.png){ width="16" .no-lightbox } **Guided steps available:**
+![Guided steps icon](../../images/guided_steps_final.png){ width="16" .no-lightbox } **Guided steps available:**
 Prefer to learn in the application? Log in and open your Operational dashboard to follow guided steps for completing a work order.
 
 ## 💡 Tips for success
@@ -26,7 +26,7 @@ Prefer to learn in the application? Log in and open your Operational dashboard t
 2. Go to **Work Orders > Work Orders**, or go to **Work Orders > Technician** and select **Assigned work**.
    <span class="see-also"><img src="../../images/info_light_mode.png" class="no-lightbox info-icon" alt=""> <span class="see-also-text">The Technician app is also available in IBM Maximo Mobile. Learn <a href="../basics/why-apps-overlap.html">Why can I manage work orders in more than one place?</a></span></span>
 
-3. Choose a simple work order to start (look for status "Assigned" or "In Progress").
+3. Choose a simple work order to start. Look for status "Assigned" or "In Progress".
    <span class="see-also"><img src="../../images/info_light_mode.png" class="no-lightbox info-icon" alt=""> <span class="see-also-text">New to work orders? Learn <a href="../basics/what-is-work-order.html">What is a work order?</a> to understand the basics.</span></span>
 
 4. Click to open the work order details.
@@ -35,7 +35,7 @@ Prefer to learn in the application? Log in and open your Operational dashboard t
 7. Check if you need any parts or tools.
 8. Perform the maintenance task.
 9. Add notes about what you did.
-10. Record time spent (labor hours).
+10. Record time spent as labor hours.
 11. Add any parts you used.
     <span class="see-also"><img src="../../images/info_light_mode.png" class="no-lightbox info-icon" alt=""> <span class="see-also-text">Need to request parts? See <a href="../../get-work-done/manage-inventory/issue-parts.html">How do I issue parts to a job?</a></span></span>
 
@@ -84,7 +84,7 @@ Take your work with you. IBM Maximo Mobile lets you view assigned work, complete
 
 [How do I get IBM Maximo Mobile?](get-maximo-mobile.md)
 
-Your first completed work order is the start of a reliable record — every one you complete after this adds to a history that helps the whole team work smarter.
+Your first completed work order is the start of a reliable record. Every one you complete after this adds to a history that helps the whole team work smarter.
 
 ## Continue building your skills
 
@@ -124,5 +124,5 @@ If you get stuck on your first task:
 
 ### Common issues when completing work orders
 
-- [Why can't I complete a work order?](../../get-work-done/complete-work/why-cant-complete-work-order.md) - Status errors, missing permissions, or required data
-- [What if I can't complete a task?](../../get-work-done/complete-work/cant-complete-task.md) - Missing parts, need help, or discovered bigger problems
+- [Why can't I complete a work order?](../../get-work-done/complete-work/why-cant-complete-work-order.md): Status errors, missing permissions, or required data
+- [What if I can't complete a task?](../../get-work-done/complete-work/cant-complete-task.md): Missing parts, need help, or discovered bigger problems

@@ -100,7 +100,7 @@ Asset imports fail due to object structure, data issues, or missing referenced r
 
 ### Common asset import problems and solutions
 
-### Table 1. Common asset import problems and solutions
+### Table 1: Common asset import problems and solutions
 
 | Problem | What happens | Solution |
 |---------|--------------|----------|

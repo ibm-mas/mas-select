@@ -128,17 +128,17 @@ To resolve visibility issues:
 
 ## Continue building your skills
 
-### Plan recurring maintenance
-
-With your team seeing their work correctly, set up schedules that generate work orders automatically so you're not creating them one at a time.
-
-[How do I plan recurring maintenance?](../plan-work/plan-recurring-maintenance.md)
-
 ### Know what work matters
 
 Create job plans that standardize tasks, parts, and time estimates so every technician does the work the same way.
 
 [How do I decide what work should be done?](../plan-work/decide-what-work.md)
+
+### Plan recurring maintenance
+
+With your team seeing their work correctly, set up schedules that generate work orders automatically so you're not creating them one at a time.
+
+[How do I plan recurring maintenance?](../plan-work/plan-recurring-maintenance.md)
 
 ---
 

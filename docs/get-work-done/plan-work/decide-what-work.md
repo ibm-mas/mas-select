@@ -28,7 +28,7 @@ Every maintenance schedule should have a job plan.
 
 Use job plans for:
 
-- Tasks you do regularly (monthly inspections)
+- Tasks you do regularly, such as monthly inspections
 - Work with multiple steps
 - Jobs that need specific parts or tools
 - Tasks where safety matters
@@ -45,7 +45,7 @@ What you need to do and why.
 Step-by-step instructions.
 
 **Labor estimates**
-How many people and hours you need. When this job plan is applied to a work order and the work order is approved, the system automatically creates assignment records for each labor entry. Without labor estimates, no assignments are created — planners must add them manually every time.
+How many people and hours you need. When this job plan is applied to a work order and the work order is approved, the system automatically creates assignment records for each labor entry. Without labor estimates, no assignments are created, so planners must add them manually every time.
 
 **Required materials**
 Parts and supplies you need. When a work order with planned materials is approved, the system automatically creates storeroom reservations. Without materials on the job plan, no reservations are made and parts may not be available when the technician arrives on site.
@@ -64,7 +64,7 @@ Hazards and safety steps.
 2. Add a clear name and description
 3. List all work tasks in order
 4. Add labor, materials, and tools
-5. Set the **WO Priority** field. This pre-fills priority on every work order generated from this plan. Without it, work orders default to null priority and sort to the bottom of every scheduling and assignment view — urgent work becomes invisible to planners.
+5. Set the **WO Priority** field. This pre-fills priority on every work order generated from this plan. Without it, work orders default to null priority and sort to the bottom of every scheduling and assignment view, and urgent work becomes invisible to planners.
 
 ### Use with scheduled maintenance
 
@@ -94,7 +94,7 @@ No confusion about steps or procedures.
 No time spent figuring out what to do.
 
 **You get the correct parts**
-All materials are listed upfront. Reservations are created automatically at approval — no manual follow-up needed.
+All materials are listed upfront. Reservations are created automatically at approval, so no manual follow-up is needed.
 
 **Training is easier**
 New workers have clear instructions.
@@ -107,9 +107,15 @@ Labor entries on the job plan generate assignment records when the work order is
 
 ## Continue building your skills
 
+### Plan recurring maintenance
+
+With job plans in place, set up schedules that generate work orders automatically instead of creating them one at a time.
+
+[How do I plan recurring maintenance?](plan-recurring-maintenance.md)
+
 ### Schedule your team
 
-With job plans in place, set up calendars and routes so work is assigned when people are available and inspections run in sequence.
+Set up calendars and routes so work is assigned when people are available and inspections run in sequence.
 
 [How do I schedule work?](schedule-work.md)
 

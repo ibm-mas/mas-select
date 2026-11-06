@@ -28,7 +28,7 @@ Work queues help you:
 
 - See all work assigned to you
 - Find urgent or overdue work fast
-- Focus on specific work types (inspections, repairs)
+- Focus on specific work types, such as inspections or repairs
 - Track work for your team or location
 - Act on multiple items at once
 
@@ -64,7 +64,7 @@ Work waiting for your review.
 ### Step 2: Pick a queue
 
 1. Click on a work queue
-2. See all items with key details (status, priority, due date)
+2. See all items with key details: status, priority, and due date
 3. Use filters to narrow down more if needed
 
 ### Step 3: Open a work order
@@ -122,7 +122,7 @@ Check queue at shift start and periodically throughout the day. Prioritize by ur
 If work is missing:
 
 - Check that it's assigned to you
-- Check the work order status (might be on hold)
+- Check the work order status, because it might be on hold
 - Refresh your work queue
 - Ask your supervisor if it's still missing
 
@@ -137,7 +137,7 @@ If work is missing:
 
 ---
 
-Once you know where to look, finding your work takes seconds — and you'll never miss an assignment again.
+Once you know where to look, finding your work takes seconds, and you'll never miss an assignment again.
 
 ## Continue building your skills
 

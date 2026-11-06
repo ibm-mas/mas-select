@@ -36,23 +36,7 @@ You've successfully added your first user when:
 
 **You'll know you're ready to move on when** you can create users efficiently, assign appropriate permissions, and troubleshoot access issues independently.
 
-## What's next?
-
-After creating your first user, try:
-
-- Configuring email notifications
-- Setting up additional security groups
-
-## Need help?
-
-If you get stuck on your first task:
-
-- Check [Starting out](../../get-answers/starting-out.md) for answers to common questions
-- Review the basics in [What are the basic concepts?](../basics/what-are-basic-concepts.md)
-
----
-
-Once you've added your first user, setting up the rest of your team follows the same steps — just repeated at scale.
+Once you've added your first user, setting up the rest of your team follows the same steps, just repeated at scale.
 
 ## Continue building your skills
 
@@ -68,18 +52,49 @@ Add your organization's terminology to status fields and dropdowns so the system
 
 [How do I customize dropdown values?](../../get-work-done/organize-people/standardize-data.md)
 
+### Set up maps
+
+Let your team see assets, work orders, and service addresses on a map inside the application.
+
+[How do I set up maps?](../../get-work-done/setup-control/set-up-maps.md)
+
+### Automate your notifications
+
+Set up communication templates and push notifications so people hear about assignments and status changes without being told.
+
+[How do I automate communication?](../../get-work-done/setup-control/automate-communication.md)
+
+### Configure Maximo Mobile for field teams
+
+Set the defaults that control how mobile devices sync data and which map app your team uses.
+
+[How do I configure IBM Maximo Mobile for my team?](../../get-work-done/setup-control/configure-maximo-mobile.md)
+
+### Load your existing data
+
+Bring in your locations, assets, and inventory. Start by learning the order that avoids import errors.
+
+[What is the correct load order?](../../get-work-done/setup-control/correct-load-order.md)
+
+## Need help?
+
+If you get stuck on your first task:
+
+- Check [Starting out](../../get-answers/starting-out.md) for answers to common questions
+- Review the basics in [What are the basic concepts?](../basics/what-are-basic-concepts.md)
+
 ---
 
 ## Related links
 
 **Edit settings**
 
-- [How do I customize dropdown values?](../../get-work-done/organize-people/standardize-data.md) - Domains
-- [How do I set up labor, crafts, and crews?](../../get-work-done/setup-control/set-up-labor-crafts-crews.md#step-2-set-up-a-calendar) - Calendars
-- [How do I automate communication?](../../get-work-done/setup-control/automate-communication.md) - Communication templates
-- [How do I set up maps?](../../get-work-done/setup-control/set-up-maps.md) - Map manager
-- [How do I automate communication?](../../get-work-done/setup-control/automate-communication.md#push-notifications) - Push notifications administration
-- [How do I configure IBM Maximo Mobile for my team?](../../get-work-done/setup-control/configure-maximo-mobile.md) - Mobile configuration
+- [How do I customize dropdown values?](../../get-work-done/organize-people/standardize-data.md): Domains
+- [How do I set up labor, crafts, and crews?](../../get-work-done/setup-control/set-up-labor-crafts-crews.md#step-2-set-up-a-calendar): Calendars
+- [How do I automate communication?](../../get-work-done/setup-control/automate-communication.md): Communication templates
+- [How do I set up maps?](../../get-work-done/setup-control/set-up-maps.md): Map Manager
+- [How do I automate communication?](../../get-work-done/setup-control/automate-communication.md#push-notifications): Push notifications administration
+- [How do I configure IBM Maximo Mobile for my team?](../../get-work-done/setup-control/configure-maximo-mobile.md): Mobile configuration
 
 **General**
 

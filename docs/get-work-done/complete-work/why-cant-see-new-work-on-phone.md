@@ -12,7 +12,7 @@ You were assigned a work order, but it does not appear in IBM Maximo Mobile. In 
 
 ## Quick reference
 
-### Table 1. Causes and what to do
+### Table 1: Causes and what to do
 
 | Cause | What to do |
 |-------|------------|

@@ -48,7 +48,7 @@ The system tracks your time and parts automatically. Good records help everyone.
 **Add work details:**
 
 - Describe what you found and fixed
-- Be specific (helps the next person)
+- Be specific, which helps the next person
 - Note any follow-up work needed
 
 **Record materials:**
@@ -75,7 +75,7 @@ The system tracks your time and parts automatically. Good records help everyone.
 
 - Writing vague notes such as "fixed issue" instead of describing the actual problem and repair
 - Forgetting to record parts or recording them later from memory
-- Leaving the work order in the wrong status (for example, still "In Progress")
+- Leaving the work order in the wrong status, for example, still "In Progress"
 - Skipping photos or checklists when they are available
 - Not documenting additional problems discovered during the job
 
@@ -127,7 +127,7 @@ On the mobile app:
 
 - Start work without internet
 - Complete tasks and add notes offline
-- Take photos (saved on your device)
+- Take photos, which are saved on your device
 - Changes sync when you're back online
 
 For more detail, see [What happens when I'm offline in IBM Maximo Mobile?](../../start-fast/basics/what-happens-offline.md)
@@ -159,7 +159,7 @@ After you mark complete:
 
 ---
 
-Once this feels routine, you'll move through your work queue with confidence — and spend less time wondering what to do next.
+Once this feels routine, you'll move through your work queue with confidence and spend less time wondering what to do next.
 
 ## Continue building your skills
 

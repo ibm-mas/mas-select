@@ -12,7 +12,7 @@ Assign a work order to a technician and track its progress, for example, assign 
 
 When work needs your approval, you can also approve it from IBM Maximo Mobile.
 
-![](../../images/guided_steps_final.png){ width="16" .no-lightbox } **Guided steps available:**
+![Guided steps icon](../../images/guided_steps_final.png){ width="16" .no-lightbox } **Guided steps available:**
 Prefer to learn in the application? Log in and open your Operational dashboard to follow guided steps for assigning a work order.
 
 ## 💡 Tips for success
@@ -51,7 +51,7 @@ You've successfully assigned and tracked your first work order when:
 - Work order shows assigned technician in labor section
 - Technician can see the work order in their queue
 - Start date and expectations are clear
-- Work order progresses through statuses (Assigned → In Progress → Completed)
+- Work order progresses through statuses: Assigned, In Progress, and Completed
 - You can monitor progress in real-time
 - Work is completed on time with good documentation
 - You can review and approve the completed work
@@ -68,23 +68,17 @@ Once you've assigned and tracked your first piece of work, you have the foundati
 
 ## Continue building your skills
 
-### When technicians can't see their work
+### Know what work matters
 
-The first problem most supervisors hit. Learn what to check when assigned work doesn't appear in a technician's queue.
+Create job plans that standardize tasks, parts, and time estimates so every technician does the work the same way.
 
-[Why don't technicians see their assigned work?](../../get-work-done/organize-people/why-cant-see-assigned-work.md)
+[How do I decide what work should be done?](../../get-work-done/plan-work/decide-what-work.md)
 
 ### Plan recurring maintenance
 
 Stop creating work orders one at a time. Set up a schedule that generates them automatically for equipment that needs regular attention.
 
 [How do I plan recurring maintenance?](../../get-work-done/plan-work/plan-recurring-maintenance.md)
-
-### Know what work matters
-
-Create job plans that standardize tasks, parts, and time estimates so every technician does the work the same way.
-
-[How do I decide what work should be done?](../../get-work-done/plan-work/decide-what-work.md)
 
 ### Schedule your team
 
@@ -98,6 +92,12 @@ Track whether work is being completed on time, how much backlog your team carrie
 
 [What metrics matter?](../../get-work-done/monitor-respond/what-metrics-matter.md)
 
+### When technicians can't see their work
+
+If assigned work doesn't appear in a technician's queue, this topic explains what to check.
+
+[Why don't technicians see their assigned work?](../../get-work-done/organize-people/why-cant-see-assigned-work.md)
+
 ## Need help?
 
 If you get stuck on your first task:
@@ -109,8 +109,8 @@ If you get stuck on your first task:
 
 ### Common issues when assigning work
 
-- [Why don't technicians see their assigned work?](../../get-work-done/organize-people/why-cant-see-assigned-work.md) - Permission issues, cached sessions, or missing site access
-- [Why can't I update assignment status?](../../get-work-done/organize-people/why-cant-see-assigned-work.md#why-cant-i-update-assignment-status) - Status sequence, date validation, or update errors
+- [Why don't technicians see their assigned work?](../../get-work-done/organize-people/why-cant-see-assigned-work.md): Permission issues, cached sessions, or missing site access
+- [Why can't I update assignment status?](../../get-work-done/organize-people/why-cant-see-assigned-work.md#why-cant-i-update-assignment-status): Status sequence, date validation, or update errors
 
 ---
 

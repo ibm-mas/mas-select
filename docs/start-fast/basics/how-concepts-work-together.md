@@ -13,6 +13,8 @@ Understanding how locations, assets, and work orders connect helps you work more
 
 ![Maintenance diagram showing how locations, assets, and work orders connect](../../images/Locs-assets-WOs.png)
 
+<p class="figure-caption">Figure 1: How a location, an asset, and a work order connect</p>
+
 Locations, assets, and work orders each answer a different question. A location tells you where work happens. An asset tells you what equipment is maintained. A work order tells you what work was done.
 
 In this example, Filler FL-02 is installed at Filling Line 2 in Ice Cream Plant A. The work order Inspect filler nozzles records the maintenance done on that equipment. The diagram also shows that both locations and assets can use parent-child hierarchies, which helps you organize work and track maintenance at the correct level.
@@ -37,5 +39,6 @@ When you need to:
 - [What is a location?](what-is-location.md)
 - [What is an asset?](what-is-asset.md)
 - [What is a work order?](what-is-work-order.md)
+- [How do I decide: location, asset, or spare part?](../../get-work-done/setup-control/decide-location-asset-spare-part.md)
 - [What can I do in my role?](../what-can-i-do/overview.md)
 - [How do I complete a job?](../../get-work-done/complete-work/complete-job.md)

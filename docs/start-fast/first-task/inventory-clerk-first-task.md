@@ -10,7 +10,7 @@ Get started quickly with a task designed for inventory clerks like you. Learn th
 
 Issue a part from the storeroom to a work order, for example, issue parts from Main storeroom.
 
-![](../../images/guided_steps_final.png){ width="16" .no-lightbox } **Guided steps available:**
+![Guided steps icon](../../images/guided_steps_final.png){ width="16" .no-lightbox } **Guided steps available:**
 Prefer to learn in the application? Log in and open your Operational dashboard to follow guided steps for issuing a part.
 
 ## 💡 Tips for success
@@ -66,7 +66,7 @@ Take your work with you. IBM Maximo Mobile lets you issue parts, receive invento
 
 [How do I get IBM Maximo Mobile?](get-maximo-mobile.md)
 
-Every part you issue accurately means one less discrepancy to chase down later — good habits here make inventory reliable for everyone.
+Every part you issue accurately means one less discrepancy to chase down later. Good habits here make inventory reliable for everyone.
 
 ## Continue building your skills
 
@@ -105,9 +105,9 @@ If you get stuck on your first task:
 
 ### Common issues when issuing parts
 
-- [Why can't I issue materials to a work order?](../../get-work-done/manage-inventory/why-cant-issue-materials.md) - Missing fields, wrong storeroom, or work order status issues
-- [Why didn't inventory update after issuing?](../../get-work-done/manage-inventory/why-cant-issue-materials.md#why-didnt-inventory-update-after-issuing) - Transaction errors or confirmation issues
-- [What happens if stock is incorrect?](../../get-work-done/manage-inventory/stock-incorrect.md) - Inventory discrepancies and how to fix them
+- [Why can't I issue materials to a work order?](../../get-work-done/manage-inventory/why-cant-issue-materials.md): Missing fields, wrong storeroom, or work order status issues
+- [Why didn't inventory update after issuing?](../../get-work-done/manage-inventory/why-cant-issue-materials.md#why-didnt-inventory-update-after-issuing): Transaction errors or confirmation issues
+- [What happens if stock is incorrect?](../../get-work-done/manage-inventory/stock-incorrect.md): Inventory discrepancies and how to fix them
 
 ---
 

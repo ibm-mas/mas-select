@@ -8,7 +8,7 @@
 6. Provide a **display name**. This is the full name of the user or a recognizable preferred name.
 7. Click **Select groups** and add the user to at least one security group. An email is sent to the login email address.
 
-### Table 1. Security groups
+### Table 1: Security groups
 
 A security group is a collection of users who share the same access. Security group permissions determine which applications, actions, and data they can access.
 

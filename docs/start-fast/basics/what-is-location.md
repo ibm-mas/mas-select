@@ -65,7 +65,7 @@ Locations and service addresses work together but serve different purposes. A lo
 
 ## Quick reference
 
-### Table 1. Location terminology
+### Table 1: Location terminology
 
 | Term | What it is |
 |------|------------|
@@ -74,7 +74,7 @@ Locations and service addresses work together but serve different purposes. A lo
 
 ---
 
-### Table 2. Detailed comparison of locations vs service addresses
+### Table 2: Detailed comparison of locations vs service addresses
 
 | Aspect | Location | Service address |
 |--------|----------|-----------------|
@@ -110,4 +110,6 @@ A location can have an associated service address.
 - [What is an asset?](what-is-asset.md)
 - [What is a work order?](what-is-work-order.md)
 - [How do locations, assets, and work orders work together?](how-concepts-work-together.md)
+- [How do I decide: location, asset, or spare part?](../../get-work-done/setup-control/decide-location-asset-spare-part.md)
+- [How do I plan my location hierarchy?](../../get-work-done/setup-control/plan-your-location-hierarchy.md)
 

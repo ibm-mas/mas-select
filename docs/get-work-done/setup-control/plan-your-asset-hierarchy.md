@@ -239,5 +239,9 @@ With your location and asset hierarchies planned, download CSV templates from Da
 
 - [What is an asset?](../../start-fast/basics/what-is-asset.md)
 - [Locations](../../start-fast/basics/what-is-location.md)
+- [How do I decide: location, asset, or spare part?](decide-location-asset-spare-part.md)
+- [How do I plan my location hierarchy?](plan-your-location-hierarchy.md)
+- [How do I manage more assets?](../../work-smarter/scale-operation/manage-more-assets.md)
+- [How do I make data reliable?](../../improve-results/improve-data/make-data-reliable.md)
 - [How do locations, assets, and work orders work together?](../../start-fast/basics/how-concepts-work-together.md)
 - [Which object structure do I use for each data type?](object-structure-data-types.md)

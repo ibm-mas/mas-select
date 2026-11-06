@@ -16,7 +16,7 @@ IBM Maximo Mobile lets technicians, supervisors, and inventory clerks view and c
 
 ## Quick reference
 
-### Table 1. Data sync options
+### Table 1: Data sync options
 
 Each data category offers the same three options. Choose the option that balances data freshness against bandwidth and device storage for your team.
 

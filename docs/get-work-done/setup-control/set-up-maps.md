@@ -18,7 +18,7 @@ Once a map is configured and enabled, it appears in spatially enabled applicatio
 
 ## Quick reference
 
-### Table 1. Map terminology
+### Table 1: Map terminology
 
 | Term | What it means |
 |------|---------------|

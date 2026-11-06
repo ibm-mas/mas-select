@@ -4,7 +4,7 @@ Use classifications to group similar assets together and add detailed specificat
 
 ## Quick reference
 
-### Table 1. Classification terminology
+### Table 1: Classification terminology
 
 | Term | What it means |
 |------|---------------|
@@ -22,7 +22,7 @@ Use classifications to group similar assets together and add detailed specificat
 ### Choose the correct classification
 
 - Use the most specific classification that fits
-- Don't use overly broad classifications (such as just "Equipment")
+- Don't use overly broad classifications, such as just "Equipment"
 - Be consistent across similar assets
 - Follow your organization's standards
 
@@ -57,7 +57,7 @@ For example, if you classify all your fillers the same way, you can easily find 
 
 #### Attribute search depends on consistent classification
 
-Maximo's attribute search lets you find all assets meeting a specification — for example, all rotary fillers with a fill capacity above 100 units per minute, or all spiral freezers from a specific manufacturer. This only works when assets of the same type share the same classification and attribute structure. Inconsistent classification breaks this capability silently: the search runs, but returns incomplete results with no indication that records are missing.
+Maximo's attribute search lets you find all assets meeting a specification, for example, all rotary fillers with a fill capacity above 100 units per minute, or all spiral freezers from a specific manufacturer. This only works when assets of the same type share the same classification and attribute structure. Inconsistent classification breaks this capability silently: the search runs, but returns incomplete results with no indication that records are missing.
 
 ---
 
@@ -67,9 +67,9 @@ Maximo's attribute search lets you find all assets meeting a specification — f
 
 Classifications are organized like a tree, from broad to specific:
 
-- **Top level**: Broad categories (such as "Equipment" or "Refrigeration")
-- **Mid level**: Specific types (such as "Filling and Packaging" or "Freezers")
-- **Bottom level**: Detailed subtypes (such as "Spiral Freezers" or "Rotary Fillers")
+- **Top level**: Broad categories, such as "Equipment" or "Refrigeration"
+- **Mid level**: Specific types, such as "Filling and Packaging" or "Freezers"
+- **Bottom level**: Detailed subtypes, such as "Spiral Freezers" or "Rotary Fillers"
 
 Example:
 ```
@@ -109,7 +109,7 @@ Once you add these details, they become searchable. You can find all fillers fro
 
 ### Before you classify
 
-Set a **failure class** on the asset record before or at the same time as the classification. The failure class is automatically copied to every work order created for that asset. It controls which failure codes — problem, cause, and remedy — technicians can select during failure reporting. Without it, the Failure Reporting tab on work orders starts empty and structured failure data cannot be captured for this asset.
+Set a **failure class** on the asset record before or at the same time as the classification. The failure class is automatically copied to every work order created for that asset. It controls which failure codes, meaning problem, cause, and remedy, technicians can select during failure reporting. Without it, the Failure Reporting tab on work orders starts empty and structured failure data cannot be captured for this asset.
 
 ### What to do:
 
@@ -173,6 +173,9 @@ If you need a classification that doesn't exist:
 
 ## Related topics
 
-- [What are the basic concepts?](../../start-fast/basics/what-are-basic-concepts.md)
+- [How do I make data reliable?](../../improve-results/improve-data/make-data-reliable.md)
+- [How do I standardize across teams?](../../work-smarter/scale-operation/standardize-across-teams.md)
+- [How do I manage more assets?](../../work-smarter/scale-operation/manage-more-assets.md)
 - [How do I track asset history?](track-asset-history.md)
 - [What happens when an asset fails?](asset-fails.md)
+- [How do I set up failure codes?](../setup-control/set-up-failure-codes.md)

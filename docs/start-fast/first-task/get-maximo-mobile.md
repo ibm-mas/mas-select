@@ -29,7 +29,7 @@ Technicians, supervisors, and inventory clerks all use IBM Maximo Mobile.
 
 ## Download the app
 
-1. Open the **App Store** (iOS) or **Google Play** (Android) on your device.
+1. On your device, open the **App Store** on iOS or **Google Play** on Android.
 2. Search for **IBM Maximo Mobile**.
 3. Download and install the app.
 

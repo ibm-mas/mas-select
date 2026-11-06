@@ -6,15 +6,15 @@ search:
 
 # How do I plan recurring maintenance?
 
-Create a schedule that automatically generates work orders. The system creates work orders for you based on time (every 30 days) or equipment use (every 500 hours).
+Create a schedule that automatically generates work orders. The system creates work orders for you based on time, such as every 30 days, or equipment use, such as every 500 hours.
 
 This helps you maintain equipment before it breaks. You set up the schedule once. The system does the rest.
 
 ## 💡 Tips for success
 
-- Start with a small number of critical assets (5-10), then expand once the process works reliably
+- Start with a small number of critical assets, such as 5 to 10, then expand once the process works reliably
 - Always create job plans before setting up schedules. They ensure consistent work.
-- Set lead times based on your actual parts procurement time plus a buffer (typically 7-14 days)
+- Set lead times based on your actual parts procurement time plus a buffer, typically 7 to 14 days
 - Review completed work orders monthly and adjust schedules based on actual equipment performance
 - Activate schedules gradually to avoid overwhelming your team with work orders
 
@@ -36,6 +36,8 @@ Use recurring maintenance when you need to:
 A job plan lists the work steps, parts needed, and time required. It keeps the work consistent every time.
 
 You can skip this step, but job plans make maintenance easier.
+
+### Table 1: Job plan contents and when each is required
 
 | Include in job plan | Required when |
 |---|---|
@@ -68,15 +70,15 @@ Choose how often to do the work:
 
 **Combined schedule**
 
-- Every 6 months OR 300 hours (whichever comes first)
-- Every year OR 1000 hours (whichever comes first)
+- Every 6 months OR 300 hours, whichever comes first
+- Every year OR 1000 hours, whichever comes first
 
 #### Fixed vs. floating: choose carefully
 
 This setting controls when the next work order is generated.
 
 - **Fixed schedule**: The next work order is created on the calendar interval regardless of whether the previous one was completed. A monthly PM generates every 30 days, every time.
-- **Floating schedule**: The next work order is not created until the previous one reaches a completed, closed, or cancelled status. If a work order is never closed, the PM stops generating entirely — with no warning. One missed closure can silently halt maintenance on an asset indefinitely.
+- **Floating schedule**: The next work order is not created until the previous one reaches a completed, closed, or cancelled status. If a work order is never closed, the PM stops generating entirely, with no warning. One missed closure can silently halt maintenance on an asset indefinitely.
 
 Use a fixed schedule for most time-based PMs. Use floating only when the next maintenance interval should genuinely depend on when the last job was finished, such as usage-based or condition-driven work.
 
@@ -86,7 +88,7 @@ Lead time tells the system when to create the work order before it's due.
 
 Example: Set 7 days lead time. The system creates the work order a week early. This gives you time to get parts and schedule workers.
 
-If lead time is too short, parts and labor won't be ready when the work order is generated. If it's left at zero, the work order appears on its due date — leaving no time to prepare. A lead time shorter than your parts procurement time virtually guarantees a delayed job.
+If lead time is too short, parts and labor won't be ready when the work order is generated. If it's left at zero, the work order appears on its due date, leaving no time to prepare. A lead time shorter than your parts procurement time virtually guarantees a delayed job.
 
 ### Step 5: Add the job plan
 
@@ -120,7 +122,7 @@ The cycle repeats until you stop it.
 ## Common mistakes
 
 - Creating too many schedules at once instead of starting with critical equipment
-- Setting unrealistic frequencies (too often or not often enough)
+- Setting unrealistic frequencies, either too often or not often enough
 - Not linking job plans, so technicians don't know what to do
 - Forgetting to activate schedules after creating them
 - Setting lead times that are too short for parts procurement
@@ -149,7 +151,7 @@ Start with 5-10 critical assets. Create detailed job plans first. Test one sched
 
 - Equipment usage varies significantly
 - Meters are reliable and regularly updated
-- Maintenance depends on actual wear (hours, cycles, miles)
+- Maintenance depends on actual wear, measured in hours, cycles, or miles
 
 **Use combined when:**
 
@@ -164,13 +166,13 @@ Start with 5-10 critical assets. Create detailed job plans first. Test one sched
 - If schedules are not set up correctly, equipment fails unexpectedly instead of being maintained proactively
 - If lead times are too short, technicians wait for parts and work gets delayed
 - If job plans are missing, maintenance quality varies and problems are missed
-- Poor scheduling leads to either too much work (overwhelming teams) or too little (equipment failures)
-- If a floating schedule is used and a work order is never closed, no further work orders are generated for that asset — maintenance stops without any alert
+- Poor scheduling leads to either too much work, which overwhelms teams, or too little, which causes equipment failures
+- If a floating schedule is used and a work order is never closed, no further work orders are generated for that asset, so maintenance stops without any alert
 - A schedule left inactive after setup generates no work orders, ever. The first sign is typically an unexpected equipment failure
 
 ---
 
-Once your PMs are running, the system takes care of the scheduling — you focus on the work, not the calendar.
+Once your PMs are running, the system takes care of the scheduling. You focus on the work, not the calendar.
 
 ## Continue building your skills
 
@@ -192,5 +194,9 @@ Set up calendars and routes so work is assigned when people are available and in
 
 - [How do I decide what work should be done?](decide-what-work.md)
 - [How do I schedule work?](schedule-work.md)
-- [What are the basic concepts?](../../start-fast/basics/what-are-basic-concepts.md)
+- [How do I manage more assets?](../../work-smarter/scale-operation/manage-more-assets.md)
+- [How do I optimize performance?](../../work-smarter/insights-outcomes/optimize-performance.md)
+- [What can I automate?](../../work-smarter/ai-automation/what-can-automate.md)
+- [How do I detect issues early?](../monitor-respond/detect-issues-early.md)
 - [How do I complete a job?](../complete-work/complete-job.md)
+- [How do I plan my preventive maintenance strategy?](../setup-control/plan-your-pm-strategy.md)

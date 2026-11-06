@@ -23,7 +23,7 @@ The metrics that matter most depend on your role. A supervisor needs to know whe
 
 Supervisors use KPIs to monitor daily work progress and respond to problems before they escalate. The Operational Dashboard for supervisors gives you a role-based view of the metrics most relevant to your team.
 
-### Table 1. Supervisor metrics
+### Table 1: Supervisor metrics
 
 | Metric | What it tells you | Where to find it |
 |--------|------------------|------------------|
@@ -44,7 +44,7 @@ Review completion rate and overdue work orders daily. Use the Work Queues card o
 
 Administrators use KPIs to assess the health of the overall maintenance program and configure the system to support it. KPI Manager is where administrators create, configure, and manage KPIs for the organization.
 
-### Table 2. Administrator metrics
+### Table 2: Administrator metrics
 
 | Metric | What it tells you | Where to find it |
 |--------|------------------|------------------|
@@ -71,7 +71,7 @@ Three configuration points that are easy to miss:
 
 Inventory clerks use metrics to ensure parts are available when work demands them. Stock-related KPIs help prevent delays caused by missing parts.
 
-### Table 3. Inventory clerk metrics
+### Table 3: Inventory clerk metrics
 
 | Metric | What it tells you | Where to find it |
 |--------|------------------|------------------|
@@ -83,7 +83,7 @@ Inventory clerks use metrics to ensure parts are available when work demands the
 
 ## Where to find KPIs in the product
 
-### Table 4. KPI applications
+### Table 4: KPI applications
 
 | Application | Who uses it | What it does |
 |-------------|-------------|--------------|
