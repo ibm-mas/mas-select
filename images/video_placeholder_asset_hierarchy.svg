@@ -1,0 +1,46 @@
+<svg width="640" height="360" viewBox="0 0 640 360" fill="none" xmlns="http://www.w3.org/2000/svg" style="background:#161616; font-family:'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <title>Video: Building an effective asset hierarchy</title>
+
+  <!-- Video Player Background -->
+  <rect width="640" height="360" fill="#161616"/>
+  
+  <!-- Subtle background pattern / diagram preview -->
+  <g opacity="0.15">
+    <rect x="80" y="40" width="480" height="40" stroke="#ffffff" stroke-width="1.5" fill="none"/>
+    <rect x="120" y="100" width="400" height="40" stroke="#ffffff" stroke-width="1.5" fill="none"/>
+    <rect x="160" y="160" width="320" height="40" stroke="#ffffff" stroke-width="1.5" fill="none"/>
+    <rect x="160" y="215" width="320" height="40" stroke="#ffffff" stroke-width="1.5" fill="none"/>
+    <path d="M100 80 V 120 H 120" stroke="#ffffff" stroke-width="1.5" fill="none"/>
+    <path d="M140 140 V 180 H 160" stroke="#ffffff" stroke-width="1.5" fill="none"/>
+    <path d="M140 140 V 235 H 160" stroke="#ffffff" stroke-width="1.5" fill="none"/>
+  </g>
+
+  <!-- Dark gradient vignette overlay -->
+  <rect width="640" height="360" fill="url(#video_gradient)" opacity="0.8"/>
+
+  <defs>
+    <linearGradient id="video_gradient" x1="0" y1="0" x2="0" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#000000" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.85"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Top bar / Category Tag -->
+  <rect x="32" y="28" width="120" height="24" rx="2" fill="#0F62FE"/>
+  <text x="40" y="44" font-size="11" font-weight="600" fill="#ffffff" letter-spacing="0.5">BEST PRACTICE</text>
+
+  <!-- Center Play Button (Large Carbon Play button) -->
+  <g transform="translate(320, 180)">
+    <circle cx="0" cy="0" r="38" fill="#0F62FE"/>
+    <polygon points="-8,-16 16,0 -8,16" fill="#ffffff"/>
+  </g>
+
+  <!-- Bottom video title overlay -->
+  <text x="32" y="294" font-size="20" font-weight="600" fill="#ffffff" letter-spacing="0.2">Building an effective asset hierarchy</text>
+  <text x="32" y="320" font-size="13" font-weight="400" fill="#c6c6c6">Maximo Application Suite Select • Quick guide</text>
+
+  <!-- Duration badge (bottom right) -->
+  <rect x="560" y="302" width="48" height="24" rx="2" fill="#000000" fill-opacity="0.75"/>
+  <text x="584" y="318" font-size="12" font-weight="600" fill="#ffffff" text-anchor="middle">2:05</text>
+</svg>

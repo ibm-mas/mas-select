@@ -1,0 +1,1471 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="robots" content="noindex, nofollow">
+    <title>Plan your asset hierarchy - Maximo Application Suite Select help center</title>
+
+    <!-- Pure CSS (https://pure-css.github.io/) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/theme.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+    <script src="../../js/theme.js"></script>
+
+    <!-- Carbon theme zones (white, g10, g90, g100) -->
+    <link rel="stylesheet" href="https://1.www.s81c.com/common/carbon/web-components/tag/latest/themes.css">
+
+    <!-- The Carbon web-components/framework -->
+    <script type="module" src="https://1.www.s81c.com/common/carbon/web-components/version/v2.15.0/ui-shell.min.js"></script>
+    <script type="module" src="https://1.www.s81c.com/common/carbon/web-components/version/v2.15.0/accordion.min.js"></script>
+    <script type="module" src="https://1.www.s81c.com/common/carbon/web-components/version/v2.15.0/breadcrumb.min.js"></script>
+    <script type="module" src="https://1.www.s81c.com/common/carbon/web-components/version/v2.15.0/select.min.js"></script>
+    <script type="module" src="https://1.www.s81c.com/common/carbon/web-components/version/v2.15.0/tabs.min.js"></script>
+    <script type="module" src="https://1.www.s81c.com/common/carbon/web-components/version/v2.15.0/search.min.js"></script>
+
+    <!-- HighlightJS code formatting support -->
+    <link rel="stylesheet" id="hljs-light" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+    <link rel="stylesheet" id="hljs-dark" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled="">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- Required by MkDocs search -->
+    <script>var base_url = "../..";</script><script>var search_url = "../../search.html";</script>
+
+    <!-- User defined extras -->
+    
+    
+
+    
+    <link href="../../assets/stylesheets/extra.css" rel="stylesheet">
+    
+
+    
+    <script src="../../assets/javascripts/role-selector.js"></script>
+    
+    <script src="../../assets/javascripts/abbr-tooltips.js"></script>
+    
+    <script src="../../assets/javascripts/lifecycle-tooltips.js"></script>
+    
+    <script src="../../assets/javascripts/tips-wrapper.js"></script>
+    
+    <script src="../../assets/javascripts/page-feedback.js"></script>
+    
+    <script src="../../assets/javascripts/copy-table.js"></script>
+    
+    <script src="../../assets/javascripts/copy-inline-code.js"></script>
+    
+    <script src="../../assets/javascripts/scroll-spy.js"></script>
+    
+    <script src="../../assets/javascripts/search-highlight.js"></script>
+    
+    <script src="../../assets/javascripts/csh.js"></script>
+    
+    <script src="../../search/main.js"></script>
+    
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: black; }
+        </style></head>
+
+  <body class="md-grid" data-theme-default="g90">
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="cds--skip-to-content" tabindex="0">Skip to main content</a>
+
+    <!-- Header -->
+    <cds-header aria-label="Maximo Application Suite Select help center" class="md-header" role="banner">
+      <cds-header-menu-button button-label-active="Close menu" button-label-inactive="Open menu"></cds-header-menu-button>
+      <cds-header-name href="../.." prefix="IBM">Maximo Application Suite Select help center</cds-header-name>
+
+      <div class="cds--header__global">
+        <nav class="language-switcher" aria-label="Language">
+          <a href="plan-your-asset-hierarchy.html" lang="en" hreflang="en" aria-current="true">English</a>
+          <a href="../../fr/get-work-done/setup-control/plan-your-asset-hierarchy.html" lang="fr" hreflang="fr">Français</a>
+        </nav>
+<div class="md-theme-toggle" data-theme-default="g90">
+  <button class="md-theme-toggle__button" aria-label="Toggle theme" title="Toggle theme">
+    <svg class="md-theme-toggle__icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"></path>
+    </svg>
+  </button>
+  <div class="md-theme-toggle__menu" hidden="">
+    <button class="md-theme-toggle__option" data-theme="white">
+      <span class="md-theme-toggle__label">Light</span>
+      <span class="md-theme-toggle__preview md-theme-toggle__preview--white"></span>
+    </button>
+    <button class="md-theme-toggle__option" data-theme="g10">
+      <span class="md-theme-toggle__label">Light Gray</span>
+      <span class="md-theme-toggle__preview md-theme-toggle__preview--g10"></span>
+    </button>
+    <button class="md-theme-toggle__option" data-theme="g90">
+      <span class="md-theme-toggle__label">Dark Gray</span>
+      <span class="md-theme-toggle__preview md-theme-toggle__preview--g90"></span>
+    </button>
+    <button class="md-theme-toggle__option" data-theme="g100">
+      <span class="md-theme-toggle__label">Dark</span>
+      <span class="md-theme-toggle__preview md-theme-toggle__preview--g100"></span>
+    </button>
+  </div>
+</div>
+        
+      </div>
+
+      
+    </cds-header>
+
+    <!-- Main container with three-column layout -->
+    <div class="md-container">
+      <!-- Left sidebar - Navigation -->
+      <aside class="md-sidebar md-sidebar--primary" data-md-component="sidebar" role="navigation" aria-label="Main Navigation">
+        <div class="md-sidebar__scrollwrap">
+          <div class="md-sidebar__inner">
+            <cds-side-nav aria-label="Side navigation">
+              <div class="nav-search-container">
+                <input type="text" id="nav-search-input" class="nav-search-input" placeholder="Search" aria-label="Search navigation">
+              </div>
+              <cds-side-nav-items>
+                
+                  
+                  
+  
+    <cds-side-nav-link href="../../index.html">Home</cds-side-nav-link>
+  
+
+                
+                  
+                  
+  <cds-side-nav-menu title="Start fast" class="nav-level-1">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/what-is-mas-select.html" class="nav-level-2">
+      About the product
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/what-can-i-do/overview.html" class="nav-level-2">
+      Your role
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="First task" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/first-task/technician-first-task.html" class="nav-level-3">
+      Technician: Complete your first work order
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/first-task/supervisor-first-task.html" class="nav-level-3">
+      Supervisor: Assign and track work
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/first-task/inventory-clerk-first-task.html" class="nav-level-3">
+      Inventory clerk: Issue a part
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/first-task/administrator-first-task.html" class="nav-level-3">
+      Administrator: Add users
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/first-task/get-maximo-mobile.html" class="nav-level-3">
+      Get Maximo Mobile
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Basic concepts" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/basics/what-are-basic-concepts.html" class="nav-level-3">
+      Overview
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/basics/what-is-location.html" class="nav-level-3">
+      Locations
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/basics/what-is-asset.html" class="nav-level-3">
+      Assets
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/basics/what-is-work-order.html" class="nav-level-3">
+      Work orders
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/basics/why-apps-overlap.html" class="nav-level-3">
+      Why apps overlap
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/basics/how-inspections-work.html" class="nav-level-3">
+      How inspections work
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/basics/what-happens-offline.html" class="nav-level-3">
+      Working offline
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/basics/how-concepts-work-together.html" class="nav-level-3">
+      How concepts work together
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/basics/why-do-terms-differ.html" class="nav-level-3">
+      Term differences
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/basics/keyboard-shortcuts.html" class="nav-level-3">
+      Keyboard shortcuts
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+  </cds-side-nav-menu>
+
+                
+                  
+                  
+  <cds-side-nav-menu title="Get work done" active="" expanded="" class="nav-level-1">
+    
+      
+      
+        
+  <cds-side-nav-menu title="Set up and control" active="" expanded="" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="add-users.html" class="nav-level-3">
+      Add users
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="correct-load-order.html" class="nav-level-3">
+      Correct load order
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="plan-your-location-hierarchy.html" class="nav-level-3">
+      Plan your location hierarchy
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="plan-your-asset-hierarchy.html" active="" expanded="" class="nav-level-3">
+      Plan your asset hierarchy
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="prepare-data-for-import.html" class="nav-level-3">
+      Prepare data for import
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="get-data-into-system.html" class="nav-level-3">
+      Get data into system
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="why-does-asset-import-fail.html" class="nav-level-3">
+      Fix import errors
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="object-structure-data-types.html" class="nav-level-3">
+      Data types
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="automate-communication.html" class="nav-level-3">
+      Automate communication
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="set-up-labor-crafts-crews.html" class="nav-level-3">
+      Set up labor, crafts, and crews
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="set-up-maps.html" class="nav-level-3">
+      Set up maps
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="configure-maximo-mobile.html" class="nav-level-3">
+      Configure Maximo Mobile
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Plan work" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../plan-work/plan-recurring-maintenance.html" class="nav-level-3">
+      Recurring maintenance
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../plan-work/decide-what-work.html" class="nav-level-3">
+      Decide what work
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../plan-work/schedule-work.html" class="nav-level-3">
+      Schedule work
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Complete work" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../complete-work/find-work.html" class="nav-level-3">
+      Find work
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../complete-work/complete-job.html" class="nav-level-3">
+      Complete work order
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../complete-work/cant-complete-task.html" class="nav-level-3">
+      Can't complete task
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../complete-work/why-cant-complete-work-order.html" class="nav-level-3">
+      Can't complete work order
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../complete-work/why-cant-see-new-work-on-phone.html" class="nav-level-3">
+      Can't see new work on phone
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Manage assets" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../manage-assets/track-asset-history.html" class="nav-level-3">
+      Asset history
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../manage-assets/classify-assets.html" class="nav-level-3">
+      Classify assets
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../manage-assets/asset-fails.html" class="nav-level-3">
+      Asset failures
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Manage inventory" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../manage-inventory/issue-parts.html" class="nav-level-3">
+      Issue parts
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../manage-inventory/track-stock-levels.html" class="nav-level-3">
+      Track stock levels
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../manage-inventory/stock-incorrect.html" class="nav-level-3">
+      Incorrect stock
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../manage-inventory/why-cant-issue-materials.html" class="nav-level-3">
+      Can't issue materials
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Monitor and respond" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../monitor-respond/detect-issues-early.html" class="nav-level-3">
+      Detect issues early
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../monitor-respond/what-metrics-matter.html" class="nav-level-3">
+      Important metrics
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../monitor-respond/act-on-alerts.html" class="nav-level-3">
+      Act on alerts
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Organize people and work" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../organize-people/assign-right-people.html" class="nav-level-3">
+      Assign people
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../organize-people/standardize-data.html" class="nav-level-3">
+      Customize dropdown values
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../organize-people/why-cant-see-assigned-work.html" class="nav-level-3">
+      Technicians can't see work
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+  </cds-side-nav-menu>
+
+                
+                  
+                  
+  <cds-side-nav-menu title="Improve results" class="nav-level-1">
+    
+      
+      
+        
+  <cds-side-nav-menu title="Improve work" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../improve-results/improve-work/reduce-downtime.html" class="nav-level-3">
+      Reduce downtime
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../improve-results/improve-work/improve-completion-rates.html" class="nav-level-3">
+      Improve completion rates
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Improve data quality" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../improve-results/improve-data/data-looks-wrong.html" class="nav-level-3">
+      Data looks wrong
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../improve-results/improve-data/make-data-reliable.html" class="nav-level-3">
+      Make data reliable
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Improve adoption" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../improve-results/improve-adoption/technicians-not-using.html" class="nav-level-3">
+      Technicians not using system
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../improve-results/improve-adoption/simplify-workflows.html" class="nav-level-3">
+      Simplify workflows
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+  </cds-side-nav-menu>
+
+                
+                  
+                  
+  <cds-side-nav-menu title="Work smarter" class="nav-level-1">
+    
+      
+      
+        
+  <cds-side-nav-menu title="AI and automation" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../work-smarter/ai-automation/ai-improve-maintenance.html" class="nav-level-3">
+      AI improves maintenance
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../work-smarter/ai-automation/what-can-automate.html" class="nav-level-3">
+      Automate tasks
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Scale operation" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../work-smarter/scale-operation/manage-more-assets.html" class="nav-level-3">
+      Manage more assets
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../work-smarter/scale-operation/standardize-across-teams.html" class="nav-level-3">
+      Standardize across teams
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Insights to outcomes" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../work-smarter/insights-outcomes/data-into-decisions.html" class="nav-level-3">
+      Data into decisions
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../work-smarter/insights-outcomes/optimize-performance.html" class="nav-level-3">
+      Optimize performance
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+  </cds-side-nav-menu>
+
+                
+                  
+                  
+  <cds-side-nav-menu title="Get answers" class="nav-level-1">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-answers/index.html" class="nav-level-2">
+      Overview
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-answers/starting-out.html" class="nav-level-2">
+      Starting out
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-answers/getting-work-done.html" class="nav-level-2">
+      Getting work done
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-answers/improving-results.html" class="nav-level-2">
+      Improving results
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-answers/working-smarter.html" class="nav-level-2">
+      Working smarter
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-answers/security.html" class="nav-level-2">
+      Security
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+                
+              </cds-side-nav-items>
+            </cds-side-nav>
+          </div>
+        </div>
+      </aside>
+      <script>
+      (function() {
+          var input = document.getElementById('nav-search-input');
+          if (!input) return;
+          input.addEventListener('keydown', function(e) {
+              if (e.key === 'Enter') {
+                  var query = input.value.trim();
+                  if (query) {
+                      window.location.href = search_url + '?q=' + encodeURIComponent(query);
+                  }
+              }
+          });
+          input.addEventListener('input', function() {
+              var query = input.value.toLowerCase().trim();
+              var navItems = document.querySelectorAll('cds-side-nav-menu-item, cds-side-nav-menu');
+              navItems.forEach(function(item) {
+                  if (query === '' || item.textContent.toLowerCase().includes(query)) {
+                      item.style.display = '';
+                      if (query && item.tagName === 'CDS-SIDE-NAV-MENU-ITEM') {
+                          var parent = item.closest('cds-side-nav-menu');
+                          if (parent) parent.setAttribute('expanded', '');
+                      }
+                  } else {
+                      item.style.display = 'none';
+                  }
+              });
+          });
+          document.querySelectorAll('cds-side-nav-menu-item').forEach(function(item) {
+              item.addEventListener('click', function() {
+                  var query = input.value.trim();
+                  if (query) {
+                      var href = item.getAttribute('href');
+                      if (href && !href.includes('highlight=')) {
+                          var sep = href.includes('?') ? '&' : '?';
+                          item.setAttribute('href', href + sep + 'highlight=' + encodeURIComponent(query));
+                      }
+                  }
+              });
+          });
+      })();
+      </script>
+
+      <!-- Main content area -->
+      <main id="main-content" class="md-content" data-md-component="content" tabindex="-1">
+        <article class="md-content__inner">
+          <!-- Breadcrumbs -->
+          <div class="md-breadcrumbs"><cds-breadcrumb no-trailing-slash="">
+  <cds-breadcrumb-item>
+    <cds-breadcrumb-link href="../../index.html">Home</cds-breadcrumb-link>
+  </cds-breadcrumb-item>
+      <cds-breadcrumb-item>Get work done</cds-breadcrumb-item>
+      <cds-breadcrumb-item>Set up and control</cds-breadcrumb-item>
+  <cds-breadcrumb-item>
+    <cds-breadcrumb-link href="#how-do-i-plan-my-asset-hierarchy">How do I plan my asset hierarchy?</cds-breadcrumb-link>
+  </cds-breadcrumb-item>
+
+  <cds-breadcrumb-item aria-current="page">
+    <cds-select id="breadcrumbs-toc" inline="" placeholder="..." oninput="changeAnchor(this.value)">
+    
+    
+      <cds-select-item value="#core-principles-for-planning-your-hierarchy">Core principles for planning your hierarchy</cds-select-item>
+    
+      <cds-select-item value="#what-a-good-asset-hierarchy-looks-like">What a good asset hierarchy looks like</cds-select-item>
+    
+      <cds-select-item value="#spot-the-problem-test-your-plan">Spot the problem: test your plan</cds-select-item>
+    
+      <cds-select-item value="#planning-checklist">Planning checklist</cds-select-item>
+    
+      <cds-select-item value="#continue-building-your-skills">Continue building your skills</cds-select-item>
+    
+      <cds-select-item value="#related-topics">Related topics</cds-select-item>
+    
+    </cds-select>
+  </cds-breadcrumb-item>
+</cds-breadcrumb>
+          </div>
+
+          <!-- Page content -->
+          <div class="rst-content">
+            
+            <h1 id="how-do-i-plan-my-asset-hierarchy">How do I plan my <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> hierarchy?<a class="headerlink" href="#how-do-i-plan-my-asset-hierarchy" title="Permanent link">¤</a></h1>
+<p>Your <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> hierarchy is the equipment breakdown structure of your facility. It organizes machinery, subassemblies, and critical maintainable components into a parent-child relationship operating within your physical <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr>.</p>
+<p>When onboarding data into Maximo Application Suite Select, planning your <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> hierarchy follows the creation of your physical <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> hierarchy, as outlined in <a href="correct-load-order.html">What is the correct load order?</a> and <a href="plan-your-location-hierarchy.html">How do I plan my <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> hierarchy?</a>.</p>
+<p><abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">Work orders</abbr>, maintenance costs, <abbr title="Standardized codes used to categorize and track equipment failures.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; failure classifications, breakdown codes, or fault codes">failure codes</abbr>, and operating history roll up from child components to parent machines. A well-designed <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> hierarchy allows maintenance teams to track the lifecycle of serialized equipment, schedule overhauls at the machine or component level, and move subassemblies across the plant without losing work history. A poorly designed hierarchy clutters drilldown trees with consumable parts and leads to misallocated maintenance costs.</p>
+<div class="video-embed">
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/video_placeholder_asset_hierarchy.svg" data-title="Video preview: Building an effective asset hierarchy (about 2 minutes)." data-desc-position="bottom"><img src="../../images/video_placeholder_asset_hierarchy.svg" alt="Video preview: Building an effective asset hierarchy (about 2 minutes)." style="width: 100%; border-radius: 4px; display: block;"></a></p>
+</div>
+<p class="video-caption">Building an effective asset hierarchy (about 2 minutes). <em>[Video in production — placeholder preview for design review]</em></p>
+
+<h2 id="core-principles-for-planning-your-hierarchy">Core principles for planning your hierarchy<a class="headerlink" href="#core-principles-for-planning-your-hierarchy" title="Permanent link">¤</a></h2>
+<p>Before loading equipment records into the system, apply these five best practices with your maintenance planners, reliability engineers, and storeroom managers.</p>
+<h3 id="1-distinguish-maintainable-equipment-from-consumable-spare-parts">1. Distinguish maintainable equipment from consumable spare parts<a class="headerlink" href="#1-distinguish-maintainable-equipment-from-consumable-spare-parts" title="Permanent link">¤</a></h3>
+<p>The most critical decision in <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> hierarchy design is separating serialized, maintainable equipment from consumable replacement parts.</p>
+<p>Apply the <strong>nameplate and overhaul test</strong> to every <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr>:</p>
+<ul>
+<li><strong><abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">Asset</abbr></strong>: A piece of equipment that carries a unique serial number or manufacturer nameplate, undergoes <abbr title="Scheduled routine maintenance performed to prevent equipment failures.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance plan, planned maintenance, or PM">preventive maintenance</abbr> or repair, and tracks its own cost and operating history over time. Examples include <code>Filler FL-02</code>, a drive motor, or a centrifugal pump.</li>
+<li><strong>Spare part</strong>: A consumable or non-serialized <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr> that is issued to a <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> and replaced during maintenance. Examples include gaskets, o-rings, mechanical seals, bearings, filters, and fuses.</li>
+</ul>
+<p>Creating <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> records for consumable wear parts creates thousands of unnecessary records that clutter search results and navigation trees. Keep consumable wear parts in the <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">Item</abbr> Master and associate them directly with the parent <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr>.</p>
+<h3 id="2-keep-the-hierarchy-shallow-two-to-three-levels">2. Keep the hierarchy shallow: two to three levels<a class="headerlink" href="#2-keep-the-hierarchy-shallow-two-to-three-levels" title="Permanent link">¤</a></h3>
+<p>While the database supports deep nesting, <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> hierarchies should remain shallow, typically two to three levels deep:</p>
+<p>$$\text{Parent machine package} \longrightarrow \text{Subassembly} \longrightarrow \text{Maintainable component}$$</p>
+<p>For example, a packaging machine package contains a drive motor subassembly, which contains a gearbox component.</p>
+<p>Do not attempt to model every bolt, bracket, or hose in the <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> tree. If an <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr> is not independently maintained, tracked with a <abbr title="A counter that tracks equipment usage, such as hours, cycles, or miles.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; counter, runtime meter, or odometer">meter</abbr>, or transferred between machines as a complete unit, stop at the subassembly level.</p>
+<h3 id="tip-managing-spare-parts-with-the-spare-parts-tab">💡 Tip: Managing spare parts with the Spare Parts tab<a class="headerlink" href="#tip-managing-spare-parts-with-the-spare-parts-tab" title="Permanent link">¤</a></h3>
+<p>To make replacement parts easy for technicians to find without turning them into child <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">assets</abbr>, add stocked <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; materials, spare parts, or stock keeping units (SKUs)">items</abbr> from the <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">Item</abbr> Master to the <strong>Spare Parts</strong> tab of the parent <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr>. Technicians can view approved part numbers, verify storeroom availability, and reserve parts directly on active <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr>.</p>
+<h3 id="3-anchor-every-parent-asset-to-a-valid-physical-location">3. Anchor every parent <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> to a valid physical <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr><a class="headerlink" href="#3-anchor-every-parent-asset-to-a-valid-physical-location" title="Permanent link">¤</a></h3>
+<p>Every top-level parent <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> must be assigned to an operating <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> in your physical <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> hierarchy, such as <code>Filling line room</code>.</p>
+<p>When a parent <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> is assigned to a <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr>, child subassemblies inherit that <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> context automatically. When you move a parent <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> to a new room or send it to the storeroom for rebuild, child components move along with the parent.</p>
+<h3 id="4-standardize-naming-and-import-from-the-top-down">4. Standardize naming and import from the top down<a class="headerlink" href="#4-standardize-naming-and-import-from-the-top-down" title="Permanent link">¤</a></h3>
+<p>Establish consistent, descriptive naming conventions that combine an equipment code with an operational description, such as <code>ASSET-FL02 / Filler FL-02</code> and <code>MTR-DRV-01 / Filler FL-02 drive motor</code>.</p>
+<p>When preparing spreadsheet files for data loading:</p>
+<ol>
+<li><strong><abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">Locations</abbr> first</strong>: Ensure all physical operating <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr> exist in the system before importing <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">assets</abbr>.</li>
+<li><strong>Top-level parent <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">assets</abbr> second</strong>: Load main equipment packages with their physical <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> references.</li>
+<li><strong>Child subassemblies third</strong>: Load child records referencing their parent <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> identifiers.</li>
+<li><strong>Spare parts lists fourth</strong>: Attach stocked <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr> records to <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">assets</abbr> after <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> records exist.</li>
+</ol>
+<hr>
+<h2 id="what-a-good-asset-hierarchy-looks-like">What a good <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> hierarchy looks like<a class="headerlink" href="#what-a-good-asset-hierarchy-looks-like" title="Permanent link">¤</a></h2>
+<p>In this sample ice cream plant equipment model, the <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> hierarchy represents the filling line machinery installed inside <code>Filling line room</code>:</p>
+<ul>
+<li><strong>Filler FL-02</strong> is the top-level parent <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> anchored to the operating <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> <code>Filling line room</code>.</li>
+<li><strong>Drive motor</strong> is a critical serialized subassembly under Filler FL-02 with its own runtime <abbr title="A counter that tracks equipment usage, such as hours, cycles, or miles.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; counter, runtime meter, or odometer">meter</abbr> and overhaul schedule.</li>
+<li><strong>Nozzle assembly</strong> is a mechanical subassembly under Filler FL-02 that receives regular rebuilds.</li>
+<li><strong>Nozzle body</strong> and <strong>Shutoff valve</strong> are maintainable child components under Nozzle assembly.</li>
+<li>Consumable seals, o-rings, and gaskets for the nozzle assembly live on the <strong>Spare Parts</strong> tab from <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">Item</abbr> Master, not as child <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> records.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/sample_asset_hierarchy.svg" data-title="Asset hierarchy diagram for the sample ice cream plant. Filler FL-02 is the parent asset, with Drive motor and Nozzle assembly as subassemblies. Nozzle body and Shutoff valve are child components under Nozzle assembly." data-desc-position="bottom"><img src="../../images/sample_asset_hierarchy.svg" alt="Asset hierarchy diagram for the sample ice cream plant. Filler FL-02 is the parent asset, with Drive motor and Nozzle assembly as subassemblies. Nozzle body and Shutoff valve are child components under Nozzle assembly." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;"></a></p>
+<h3 id="why-this-structure-works">Why this structure works<a class="headerlink" href="#why-this-structure-works" title="Permanent link">¤</a></h3>
+<p>This equipment structure delivers clean maintenance history and streamlined navigation for everyday operations:</p>
+<ul>
+<li><strong>Targeted <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> history</strong>: Technicians can raise a repair <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> against <code>Drive motor</code> to log electrical diagnostics, or against <code>Filler FL-02</code> for general line servicing. All <abbr title="Work time and effort assigned to a work order.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; technician time, work hours, or crew time">labor</abbr>, parts, and <abbr title="The period when equipment is not operational or available for use.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; outage, production loss, or equipment unavailable">downtime</abbr> roll up to <code>Filler FL-02</code> for total cost of ownership reporting.</li>
+<li><strong>Fast drilldown navigation</strong>: Technicians navigating in Maximo Mobile or the desktop applications find any maintainable component in two to three clicks from the main filler record.</li>
+<li><strong>Clean separation of wear parts</strong>: Because o-rings and gaskets are cataloged on the Spare Parts tab, storeroom clerks issue parts against the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> without generating orphaned <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> records.</li>
+<li><strong>Independent equipment tracking</strong>: If the <code>Drive motor</code> is swapped out during a breakdown, the motor <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> record retains its full rebuild history as it moves to the repair shop, while the replacement motor links to <code>Filler FL-02</code>.</li>
+</ul>
+<hr>
+<h2 id="spot-the-problem-test-your-plan">Spot the problem: test your plan<a class="headerlink" href="#spot-the-problem-test-your-plan" title="Permanent link">¤</a></h2>
+<p>Review these common planning scenarios to test your understanding before building your equipment hierarchy.</p>
+<h3 id="problem-1-are-wear-parts-and-consumables-child-assets">Problem 1: Are wear parts and consumables child <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">assets</abbr>?<a class="headerlink" href="#problem-1-are-wear-parts-and-consumables-child-assets" title="Permanent link">¤</a></h3>
+<p>Your maintenance planner wants to create child <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> records under <code>Filler FL-02</code> for mechanical seals, o-rings, and flange gaskets so technicians can select them during repairs.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/sample_asset_hierarchy_over_assetized.svg" data-title="Asset hierarchy diagram for Filler FL-02 showing consumable wear parts such as o-rings and flange gaskets incorrectly modeled as child asset records under Nozzle assembly." data-desc-position="bottom"><img src="../../images/sample_asset_hierarchy_over_assetized.svg" alt="Asset hierarchy diagram for Filler FL-02 showing consumable wear parts such as o-rings and flange gaskets incorrectly modeled as child asset records under Nozzle assembly." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;"></a></p>
+<p>What happens if you model these consumable <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; materials, spare parts, or stock keeping units (SKUs)">items</abbr> as child <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">assets</abbr>?</p>
+<details>
+<summary>Show the answer</summary>
+<p>Creating <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> records for consumables results in severe over-assetization. The <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> register becomes bloated with thousands of static parts that do not undergo individual <abbr title="Scheduled routine maintenance performed to prevent equipment failures.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance plan, planned maintenance, or PM">preventive maintenance</abbr> or carry serial numbers. Technicians face cluttered drilldown trees, and storeroom <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">inventory</abbr> counts cannot sync properly with <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> records.</p>
+<p><strong>What to do instead:</strong> Keep consumable wear parts in the <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">Item</abbr> Master and link them to the parent <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> using the <strong>Spare Parts</strong> tab. Technicians can view the approved bill of materials, check storeroom stock, and charge <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; materials, spare parts, or stock keeping units (SKUs)">items</abbr> directly to <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr>.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/sample_asset_hierarchy_spare_parts_tab.svg" data-title="Corrected asset hierarchy diagram for Filler FL-02 showing Nozzle body and Shutoff valve as maintainable child assets under Nozzle assembly, with consumable o-rings and gaskets organized on the Spare Parts tab from Item Master." data-desc-position="bottom"><img src="../../images/sample_asset_hierarchy_spare_parts_tab.svg" alt="Corrected asset hierarchy diagram for Filler FL-02 showing Nozzle body and Shutoff valve as maintainable child assets under Nozzle assembly, with consumable o-rings and gaskets organized on the Spare Parts tab from Item Master." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;"></a></p>
+</details>
+<h3 id="problem-2-what-happens-when-filler-fl-02-moves-to-a-new-line">Problem 2: What happens when Filler FL-02 moves to a new line?<a class="headerlink" href="#problem-2-what-happens-when-filler-fl-02-moves-to-a-new-line" title="Permanent link">¤</a></h3>
+<p><code>Filler FL-02</code> is moved from <code>Filling line room</code> to a newly constructed packaging suite in another building.</p>
+<p>How do child subassemblies, such as <code>Drive motor</code> and <code>Nozzle assembly</code>, handle the move?</p>
+<details>
+<summary>Show the answer</summary>
+<p>When a parent <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> moves to a new operating <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr>, all child <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">assets</abbr> in its hierarchy automatically move with it to the new <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr>. The parent-child relationship remains intact, and historical <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> remain linked to both the equipment and the previous physical <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr>.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/sample_asset_hierarchy_move_parent.svg" data-title="Diagram showing the movement of parent asset Filler FL-02 from Filling line room to Packaging suite, demonstrating that all child subassemblies move to the new location automatically." data-desc-position="bottom"><img src="../../images/sample_asset_hierarchy_move_parent.svg" alt="Diagram showing the movement of parent asset Filler FL-02 from Filling line room to Packaging suite, demonstrating that all child subassemblies move to the new location automatically." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;"></a></p>
+<p><strong>What to do instead:</strong> Move the top-level parent <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> record to the new <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr>. The system updates the <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> reference across all child subassemblies in a single operation.</p>
+</details>
+<h3 id="problem-3-should-a-building-or-room-be-modeled-as-an-asset">Problem 3: Should a building or room be modeled as an <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr>?<a class="headerlink" href="#problem-3-should-a-building-or-room-be-modeled-as-an-asset" title="Permanent link">¤</a></h3>
+<p>A team member creates an <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> record named <code>Production building</code> and places all equipment inside that <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> record instead of creating a <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> record.</p>
+<p>What goes wrong when supervisors run building maintenance reports?</p>
+<details>
+<summary>Show the answer</summary>
+<p>Buildings, rooms, and physical areas are fixed geographical spaces, not movable equipment. Modeling physical rooms as <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">assets</abbr> breaks spatial cost roll-up, disables geographic <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> filtering in Maximo Mobile, and prevents accurate tracking when equipment moves between rooms.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/sample_asset_hierarchy_room_as_asset.svg" data-title="Comparison diagram contrasting the incorrect model where Production building is created as an asset record against the correct model where Production building is a location record holding the equipment." data-desc-position="bottom"><img src="../../images/sample_asset_hierarchy_room_as_asset.svg" alt="Comparison diagram contrasting the incorrect model where Production building is created as an asset record against the correct model where Production building is a location record holding the equipment." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;"></a></p>
+<p><strong>What to do instead:</strong> Model buildings, floors, and rooms in the physical <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> hierarchy under the <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">Locations</abbr> application. Anchor equipment records, such as <code>Filler FL-02</code>, into their respective operating <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> records.</p>
+</details>
+<h3 id="problem-4-in-what-order-do-you-load-parent-and-child-asset-records">Problem 4: In what order do you load parent and child <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> records?<a class="headerlink" href="#problem-4-in-what-order-do-you-load-parent-and-child-asset-records" title="Permanent link">¤</a></h3>
+<p>You are importing equipment data from a spreadsheet with rows sorted in the following order:</p>
+<ol>
+<li><code>Nozzle body</code> — Child component</li>
+<li><code>Nozzle assembly</code> — Subassembly</li>
+<li><code>Filler FL-02</code> — Parent machine</li>
+<li><code>Filling line room</code> — Operating <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr></li>
+</ol>
+<p>What happens when you run the import in this sequence?</p>
+<details>
+<summary>Show the answer</summary>
+<p>The import fails. <code>Nozzle body</code> fails because its parent <code>Nozzle assembly</code> does not exist yet. <code>Nozzle assembly</code> fails because <code>Filler FL-02</code> is missing. <code>Filler FL-02</code> fails because its operating <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> <code>Filling line room</code> has not been loaded into the database.</p>
+<p><strong>What to do instead:</strong> Sort import rows top-down:</p>
+<ol>
+<li><code>Filling line room</code> — <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">Location</abbr></li>
+<li><code>Filler FL-02</code> — Top-level parent <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr></li>
+<li><code>Drive motor</code>, <code>Nozzle assembly</code> — Subassemblies</li>
+<li><code>Nozzle body</code>, <code>Shutoff valve</code> — Child components</li>
+</ol>
+<p>Always verify your import count against the number of rows in your source spreadsheet. Follow data formatting guidelines in <a href="prepare-data-for-import.html">How do I prepare data for import?</a> and review sequencing in <a href="correct-load-order.html">What is the correct load order?</a>.</p>
+</details>
+<hr>
+<h2 id="planning-checklist">Planning checklist<a class="headerlink" href="#planning-checklist" title="Permanent link">¤</a></h2>
+<p>Before loading your <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> hierarchy into Maximo Application Suite Select, verify each planning requirement:</p>
+<table>
+<thead>
+<tr>
+<th>Check</th>
+<th>Planning <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr></th>
+<th>What to verify</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[ ]</td>
+<td><strong>Maintainable equipment only</strong></td>
+<td>Every <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> record represents serialized, maintainable equipment, not consumable wear parts.</td>
+</tr>
+<tr>
+<td>[ ]</td>
+<td><strong>Spare parts cataloged</strong></td>
+<td>Consumables, o-rings, and gaskets are organized in <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">Item</abbr> Master for use on the Spare Parts tab.</td>
+</tr>
+<tr>
+<td>[ ]</td>
+<td><strong>Valid operating <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr></strong></td>
+<td>Every top-level parent <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> is assigned to an existing physical <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> record.</td>
+</tr>
+<tr>
+<td>[ ]</td>
+<td><strong>Shallow hierarchy depth</strong></td>
+<td>The equipment structure remains two to three levels deep, stopping at maintainable units.</td>
+</tr>
+<tr>
+<td>[ ]</td>
+<td><strong>Standardized naming</strong></td>
+<td>Equipment identifiers and <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> tags follow consistent <abbr title="A data partitioning concept that represents a plant, facility, or business unit.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; plant, facility, or business unit">site</abbr> naming conventions.</td>
+</tr>
+<tr>
+<td>[ ]</td>
+<td><strong>Top-down import sequence</strong></td>
+<td>Spreadsheet records are ordered so parent <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">assets</abbr> and <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr> exist before child records load.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">TODO: Confirm with a subject matter expert</p>
+<p>[SME confirmation required: Confirm whether the Maintain Hierarchy setting is exposed on the <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">Asset</abbr> details view in Maximo Application Suite Select, and whether <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">Item</abbr> Assembly Structures are available for template-based <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> generation.]</p>
+</div>
+<hr>
+<h2 id="continue-building-your-skills">Continue building your skills<a class="headerlink" href="#continue-building-your-skills" title="Permanent link">¤</a></h2>
+<h3 id="recommended-next-step-prepare-data-for-import">Recommended next step: Prepare data for import<a class="headerlink" href="#recommended-next-step-prepare-data-for-import" title="Permanent link">¤</a></h3>
+<p>With your <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> and <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> hierarchies planned, download CSV templates from Data Management and format your data files.</p>
+<p><a href="prepare-data-for-import.html">How do I prepare data for import?</a></p>
+<h3 id="related-skills">Related skills<a class="headerlink" href="#related-skills" title="Permanent link">¤</a></h3>
+<ul>
+<li><a href="correct-load-order.html">What is the correct load order?</a>: Review the full five-step data onboarding roadmap.</li>
+<li><a href="get-data-into-system.html">How do I get data into the system?</a>: Learn the upload, preview, and commit steps in Data Management.</li>
+<li><a href="why-does-asset-import-fail.html">How do I fix import errors?</a>: Troubleshoot missing parent records or invalid fields.</li>
+</ul>
+<hr>
+<h2 id="related-topics">Related topics<a class="headerlink" href="#related-topics" title="Permanent link">¤</a></h2>
+<ul>
+<li><a href="../../start-fast/basics/what-is-asset.html">What is an <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr>?</a></li>
+<li><a href="../../start-fast/basics/what-is-location.html"><abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">Locations</abbr></a></li>
+<li><a href="../../start-fast/basics/how-concepts-work-together.html">How do <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr>, <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">assets</abbr>, and <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> work together?</a></li>
+<li><a href="object-structure-data-types.html">Which <abbr title="Defines the records and related fields that are available for importing, exporting, or exchanging data.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; data structure, import template, or record definition">object structure</abbr> do I use for each data type?</a></li>
+</ul>
+            
+          </div>
+
+          <!-- Navigation footer (prev/next) -->
+<nav class="md-footer-nav" aria-label="Footer navigation">
+  <div class="md-footer-nav__inner">
+    <a href="plan-your-location-hierarchy.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+      <div class="md-footer-nav__direction">
+        <svg class="md-footer-nav__icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"></path>
+        </svg>
+        <span>Previous</span>
+      </div>
+      <div class="md-footer-nav__title">
+        <span class="md-footer-nav__title-text">Plan your location hierarchy</span>
+      </div>
+    </a>
+    <a href="prepare-data-for-import.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+      <div class="md-footer-nav__direction">
+        <span>Next</span>
+        <svg class="md-footer-nav__icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+        </svg>
+      </div>
+      <div class="md-footer-nav__title">
+        <span class="md-footer-nav__title-text">Prepare data for import</span>
+      </div>
+    </a>
+  </div>
+</nav>
+        </article>
+      </main>
+
+      <!-- Right sidebar - Table of Contents -->
+      <aside class="md-sidebar md-sidebar--secondary" data-md-component="toc" role="complementary" aria-label="Table of contents">
+<nav class="md-sidebar md-sidebar--secondary" aria-label="Table of contents">
+  <div class="md-sidebar__scrollwrap">
+    <div class="md-sidebar__inner">
+      <div class="md-toc">
+        <div class="md-toc__title">On this page</div>
+        <ul class="md-toc__list">
+              <li class="md-toc__item">
+                <a href="#core-principles-for-planning-your-hierarchy" class="md-toc__link" data-md-level="1">
+                  Core principles for planning your hierarchy
+                </a>
+                  <ul class="md-toc__list">
+                      <li class="md-toc__item">
+                        <a href="#1-distinguish-maintainable-equipment-from-consumable-spare-parts" class="md-toc__link" data-md-level="2">
+                          1. Distinguish maintainable equipment from consumable spare parts
+                        </a>
+                      </li>
+                      <li class="md-toc__item">
+                        <a href="#2-keep-the-hierarchy-shallow-two-to-three-levels" class="md-toc__link" data-md-level="2">
+                          2. Keep the hierarchy shallow: two to three levels
+                        </a>
+                      </li>
+                      <li class="md-toc__item">
+                        <a href="#tip-managing-spare-parts-with-the-spare-parts-tab" class="md-toc__link" data-md-level="2">
+                          💡 Tip: Managing spare parts with the Spare Parts tab
+                        </a>
+                      </li>
+                      <li class="md-toc__item">
+                        <a href="#3-anchor-every-parent-asset-to-a-valid-physical-location" class="md-toc__link" data-md-level="2">
+                          3. Anchor every parent asset to a valid physical location
+                        </a>
+                      </li>
+                      <li class="md-toc__item">
+                        <a href="#4-standardize-naming-and-import-from-the-top-down" class="md-toc__link" data-md-level="2">
+                          4. Standardize naming and import from the top down
+                        </a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="md-toc__item">
+                <a href="#what-a-good-asset-hierarchy-looks-like" class="md-toc__link" data-md-level="1">
+                  What a good asset hierarchy looks like
+                </a>
+                  <ul class="md-toc__list">
+                      <li class="md-toc__item">
+                        <a href="#why-this-structure-works" class="md-toc__link" data-md-level="2">
+                          Why this structure works
+                        </a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="md-toc__item">
+                <a href="#spot-the-problem-test-your-plan" class="md-toc__link" data-md-level="1">
+                  Spot the problem: test your plan
+                </a>
+                  <ul class="md-toc__list">
+                      <li class="md-toc__item">
+                        <a href="#problem-1-are-wear-parts-and-consumables-child-assets" class="md-toc__link" data-md-level="2">
+                          Problem 1: Are wear parts and consumables child assets?
+                        </a>
+                      </li>
+                      <li class="md-toc__item">
+                        <a href="#problem-2-what-happens-when-filler-fl-02-moves-to-a-new-line" class="md-toc__link" data-md-level="2">
+                          Problem 2: What happens when Filler FL-02 moves to a new line?
+                        </a>
+                      </li>
+                      <li class="md-toc__item">
+                        <a href="#problem-3-should-a-building-or-room-be-modeled-as-an-asset" class="md-toc__link" data-md-level="2">
+                          Problem 3: Should a building or room be modeled as an asset?
+                        </a>
+                      </li>
+                      <li class="md-toc__item">
+                        <a href="#problem-4-in-what-order-do-you-load-parent-and-child-asset-records" class="md-toc__link" data-md-level="2">
+                          Problem 4: In what order do you load parent and child asset records?
+                        </a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="md-toc__item">
+                <a href="#planning-checklist" class="md-toc__link" data-md-level="1">
+                  Planning checklist
+                </a>
+              </li>
+              <li class="md-toc__item">
+                <a href="#continue-building-your-skills" class="md-toc__link" data-md-level="1">
+                  Continue building your skills
+                </a>
+                  <ul class="md-toc__list">
+                      <li class="md-toc__item">
+                        <a href="#recommended-next-step-prepare-data-for-import" class="md-toc__link" data-md-level="2">
+                          Recommended next step: Prepare data for import
+                        </a>
+                      </li>
+                      <li class="md-toc__item">
+                        <a href="#related-skills" class="md-toc__link" data-md-level="2">
+                          Related skills
+                        </a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="md-toc__item">
+                <a href="#related-topics" class="md-toc__link" data-md-level="1">
+                  Related topics
+                </a>
+              </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+      </aside>
+    </div>
+
+    <!-- Footer - Full width outside container -->
+    <footer class="md-footer" role="contentinfo">
+      Built with <a href="https://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/durera/mkdocs-carbon">Carbon theme</a>
+    </footer>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": false, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+</script></body></html>
