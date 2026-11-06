@@ -9,7 +9,7 @@ As outlined in [What is the correct load order?](correct-load-order.md), locatio
 <div class="video-embed" markdown="1">
 <img src="../../images/video_placeholder_decide_classification.svg" alt="Video preview: Deciding between locations, assets, and spare parts (about 2 minutes)." style="width: 100%; border-radius: 4px; display: block;">
 </div>
-<p class="video-caption">Video 1: Deciding between locations, assets, and spare parts (about 2 minutes). <em>[Video in production — placeholder preview for design review]</em></p>
+<p class="video-caption">Video 1: Deciding between locations, assets, and spare parts (about 2 minutes). <em>[Video in production, placeholder preview for design review]</em></p>
 
 ## The three-way classification model
 
@@ -87,6 +87,8 @@ Ask: *"When this item fails, is it thrown away and replaced with a new one from 
 
 Some physical items sit on the boundary between locations, assets, and spare parts. Use these real-world examples from the ice cream plant to guide your decisions.
 
+### Table 1: Boundary cases for classifying tricky items
+
 | Equipment or item | Correct record type | Why it is classified this way |
 |---|---|---|
 | **Conveyor line routing** | **Location** | The physical path through the building is permanent and fixed in space. |
@@ -118,7 +120,7 @@ Review these common planning scenarios to test your understanding before buildin
 A maintenance planner creates a separate location record for every pump, motor, and machine in the plant, such as creating `Filler FL-02 Operating Location` to hold `Filler FL-02`.
 
 <img src="../../images/sample_problem_one_to_one_location_asset.svg" alt="Diagram showing the 1:1 Location-to-Asset anti-pattern where artificial location records are created for each individual machine." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
-<p class="figure-caption">Figure 4: Problem 1 — The 1:1 location-to-asset anti-pattern</p>
+<p class="figure-caption">Figure 4: Problem 1: The 1:1 location-to-asset anti-pattern</p>
 
 What goes wrong when equipment is replaced or when technicians navigate in Maximo Mobile?
 
@@ -130,7 +132,7 @@ Creating a 1:1 location for every asset doubles data entry, clutters navigation 
 **What to do instead:** Create one physical location for the room, such as `Filling line room`, and place multiple assets directly inside that room location.
 
 <img src="../../images/sample_solution_one_to_many_location_asset.svg" alt="Diagram showing the correct model where one physical room location holds multiple independent assets." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
-<p class="figure-caption">Figure 5: Solution 1 — One physical location containing multiple assets</p>
+<p class="figure-caption">Figure 5: Solution 1: One physical location containing multiple assets</p>
 
 </details>
 
@@ -197,6 +199,8 @@ A clean classification model keeps your asset register concise, your storeroom i
 ## Classification checklist
 
 Before loading records into Maximo Application Suite Select, verify each classification decision:
+
+### Table 2: Classification checklist
 
 | Check | Classification item | What to verify |
 |---|---|---|

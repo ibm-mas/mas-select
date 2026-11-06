@@ -1161,7 +1161,7 @@
 <div class="video-embed">
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/video_placeholder_decide_classification.svg" data-title="Video preview: Deciding between locations, assets, and spare parts (about 2 minutes)." data-desc-position="bottom"><img src="../../images/video_placeholder_decide_classification.svg" alt="Video preview: Deciding between locations, assets, and spare parts (about 2 minutes)." style="width: 100%; border-radius: 4px; display: block;"></a></p>
 </div>
-<p class="video-caption">Video 1: Deciding between locations, assets, and spare parts (about 2 minutes). <em>[Video in production — placeholder preview for design review]</em></p>
+<p class="video-caption">Video 1: Deciding between locations, assets, and spare parts (about 2 minutes). <em>[Video in production, placeholder preview for design review]</em></p>
 
 <h2 id="the-three-way-classification-model">The three-way classification model<a class="headerlink" href="#the-three-way-classification-model" title="Permanent link">¤</a></h2>
 <p>Maximo Application Suite Select uses three distinct record types to track facilities, machinery, and replacement materials.</p>
@@ -1224,6 +1224,7 @@
 <hr>
 <h2 id="boundary-cases-how-to-classify-tricky-items">Boundary cases: How to classify tricky <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; materials, spare parts, or stock keeping units (SKUs)">items</abbr><a class="headerlink" href="#boundary-cases-how-to-classify-tricky-items" title="Permanent link">¤</a></h2>
 <p>Some physical <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; materials, spare parts, or stock keeping units (SKUs)">items</abbr> sit on the boundary between <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr>, <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">assets</abbr>, and spare parts. Use these real-world examples from the ice cream plant to guide your decisions.</p>
+<h3 id="table-1-boundary-cases-for-classifying-tricky-items">Table 1: Boundary cases for classifying tricky <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; materials, spare parts, or stock keeping units (SKUs)">items</abbr><a class="headerlink" href="#table-1-boundary-cases-for-classifying-tricky-items" title="Permanent link">¤</a></h3>
 <table>
 <thead>
 <tr>
@@ -1296,7 +1297,7 @@
 <h3 id="problem-1-the-11-location-to-asset-trap">Problem 1: The 1:1 <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">Location</abbr>-to-<abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">Asset</abbr> trap<a class="headerlink" href="#problem-1-the-11-location-to-asset-trap" title="Permanent link">¤</a></h3>
 <p>A maintenance planner creates a separate <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> record for every pump, motor, and machine in the plant, such as creating <code>Filler FL-02 Operating Location</code> to hold <code>Filler FL-02</code>.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/sample_problem_one_to_one_location_asset.svg" data-title="Diagram showing the 1:1 Location-to-Asset anti-pattern where artificial location records are created for each individual machine." data-desc-position="bottom"><img src="../../images/sample_problem_one_to_one_location_asset.svg" alt="Diagram showing the 1:1 Location-to-Asset anti-pattern where artificial location records are created for each individual machine." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;"></a></p>
-<p class="figure-caption">Figure 4: Problem 1 — The 1:1 location-to-asset anti-pattern</p>
+<p class="figure-caption">Figure 4: Problem 1: The 1:1 location-to-asset anti-pattern</p>
 
 <p>What goes wrong when equipment is replaced or when technicians navigate in Maximo Mobile?</p>
 <details>
@@ -1304,7 +1305,7 @@
 <p>Creating a 1:1 <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> for every <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> doubles data entry, clutters navigation trees, and destroys <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> mobility. When <code>Filler FL-02</code> is moved or overhauled, planners must rename or reconfigure the <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> record. Technicians also lose the ability to see all equipment operating inside a single room.</p>
 <p><strong>What to do instead:</strong> Create one physical <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> for the room, such as <code>Filling line room</code>, and place multiple <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">assets</abbr> directly inside that room <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr>.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/sample_solution_one_to_many_location_asset.svg" data-title="Diagram showing the correct model where one physical room location holds multiple independent assets." data-desc-position="bottom"><img src="../../images/sample_solution_one_to_many_location_asset.svg" alt="Diagram showing the correct model where one physical room location holds multiple independent assets." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;"></a></p>
-<p class="figure-caption">Figure 5: Solution 1 — One physical location containing multiple assets</p>
+<p class="figure-caption">Figure 5: Solution 1: One physical location containing multiple assets</p>
 </details>
 <h3 id="problem-2-the-over-assetization-trap">Problem 2: The over-assetization trap<a class="headerlink" href="#problem-2-the-over-assetization-trap" title="Permanent link">¤</a></h3>
 <p>To help technicians find every part during repairs, a team creates <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> records for all internal o-rings, flange bolts, and fuses under <code>Filler FL-02</code>.</p>
@@ -1346,6 +1347,7 @@
 <hr>
 <h2 id="classification-checklist">Classification checklist<a class="headerlink" href="#classification-checklist" title="Permanent link">¤</a></h2>
 <p>Before loading records into Maximo Application Suite Select, verify each classification decision:</p>
+<h3 id="table-2-classification-checklist">Table 2: Classification checklist<a class="headerlink" href="#table-2-classification-checklist" title="Permanent link">¤</a></h3>
 <table>
 <thead>
 <tr>
@@ -1510,6 +1512,11 @@
                 </a>
                   <ul class="md-toc__list">
                       <li class="md-toc__item">
+                        <a href="#table-1-boundary-cases-for-classifying-tricky-items" class="md-toc__link" data-md-level="2">
+                          Table 1: Boundary cases for classifying tricky items
+                        </a>
+                      </li>
+                      <li class="md-toc__item">
                         <a href="#tip-using-the-spare-parts-tab-for-consumable-parts" class="md-toc__link" data-md-level="2">
                           💡 Tip: Using the Spare Parts tab for consumable parts
                         </a>
@@ -1552,6 +1559,13 @@
                 <a href="#classification-checklist" class="md-toc__link" data-md-level="1">
                   Classification checklist
                 </a>
+                  <ul class="md-toc__list">
+                      <li class="md-toc__item">
+                        <a href="#table-2-classification-checklist" class="md-toc__link" data-md-level="2">
+                          Table 2: Classification checklist
+                        </a>
+                      </li>
+                  </ul>
               </li>
               <li class="md-toc__item">
                 <a href="#continue-building-your-skills" class="md-toc__link" data-md-level="1">

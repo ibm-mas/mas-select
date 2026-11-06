@@ -9,7 +9,7 @@ Work orders, maintenance history, safety requirements, and costs roll up through
 <div class="video-embed" markdown="1">
 <img src="../../images/video_placeholder_location_hierarchy.svg" alt="Video preview: Building an effective location hierarchy (about 2 minutes)." style="width: 100%; border-radius: 4px; display: block;">
 </div>
-<p class="video-caption">Video 1: Building an effective location hierarchy (about 2 minutes). <em>[Video in production — placeholder preview for design review]</em></p>
+<p class="video-caption">Video 1: Building an effective location hierarchy (about 2 minutes). <em>[Video in production, placeholder preview for design review]</em></p>
 
 ## Core principles for planning your hierarchy
 
@@ -112,7 +112,7 @@ Review these common planning scenarios to test your understanding before buildin
 The plant has two restrooms. In the hierarchy below, both are placed under a separate parent location named `Restrooms`.
 
 <img src="../../images/sample_location_hierarchy_grouped_by_use.svg" alt="Location hierarchy for the Ice cream main plant site. Production building contains Mixing room, Filling line room, and Packaging zone. A separate location named Restrooms contains Production building restroom and Packaging zone restroom." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
-<p class="figure-caption">Figure 2: Problem 1 — Restrooms grouped by functional use instead of physical location</p>
+<p class="figure-caption">Figure 2: Problem 1: Restrooms grouped by functional use instead of physical location</p>
 
 A supervisor runs a cost and work history report for `Production building` for the past quarter. What goes wrong?
 
@@ -126,7 +126,7 @@ The hierarchy was grouped by functional use rather than physical location.
 **What to do instead:** Place each restroom under the physical area where it is located. `Production building restroom` belongs under `Production building`. `Packaging zone restroom` belongs under `Packaging zone`.
 
 <img src="../../images/sample_location_hierarchy_by_place.svg" alt="Corrected location hierarchy for the Ice cream main plant site. Production building contains Mixing room, Filling line room, Packaging zone, and Production building restroom. Packaging zone contains Packaging zone restroom. Cold storage sits at the site level." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
-<p class="figure-caption">Figure 3: Solution 1 — Restrooms placed within their physical parent locations</p>
+<p class="figure-caption">Figure 3: Solution 1: Restrooms placed within their physical parent locations</p>
 
 If you need to find all restrooms across the plant, assign a common Classification or type rather than creating a functional branch in your location hierarchy.
 
@@ -137,7 +137,7 @@ If you need to find all restrooms across the plant, assign a common Classificati
 In the hierarchy below, `Packaging zone` was added to the site without selecting a parent location.
 
 <img src="../../images/sample_location_hierarchy_missing_parent.svg" alt="Location hierarchy for the Ice cream main plant site. Production building contains Mixing room and Filling line room. Cold storage is a separate location. Packaging zone is an orphan record with no connecting line to a parent." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
-<p class="figure-caption">Figure 4: Problem 2 — Packaging zone created as an orphaned record without a parent</p>
+<p class="figure-caption">Figure 4: Problem 2: Packaging zone created as an orphaned record without a parent</p>
 
 What happens when a planner opens `Production building` in the drilldown tree?
 
@@ -151,7 +151,7 @@ Because `Packaging zone` has no parent, it exists as an orphaned record at the s
 **What to do instead:** Assign `Production building` as the parent location for `Packaging zone`.
 
 <img src="../../images/sample_location_hierarchy_with_parent.svg" alt="Corrected location hierarchy for the Ice cream main plant site. Production building contains Mixing room, Filling line room, and Packaging zone. Cold storage sits at the site level." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
-<p class="figure-caption">Figure 5: Solution 2 — Packaging zone connected to Production building parent location</p>
+<p class="figure-caption">Figure 5: Solution 2: Packaging zone connected to Production building parent location</p>
 
 </details>
 
@@ -166,7 +166,7 @@ What question should you ask before creating these sub-locations?
 
 Ask: **"Will anyone plan, perform, or report maintenance work at an individual shelf level?"**
 
-If maintenance is performed on the refrigeration units, doors, and ambient room space—not individual storage shelves—stop at `Cold storage`. Adding unnecessary levels makes the hierarchy difficult to navigate without providing actionable maintenance data.
+If maintenance is performed on the refrigeration units, doors, and ambient room space, not individual storage shelves, stop at `Cold storage`. Adding unnecessary levels makes the hierarchy difficult to navigate without providing actionable maintenance data.
 
 If parts or items need shelf-level tracking, that is handled through inventory bins in storerooms, not operational location records.
 
@@ -190,9 +190,9 @@ What happens when you run the import in this order?
 
 **What to do instead:** Sort import rows top-down:
 
-1. `Ice cream main plant` — Site
-2. `Production building` — Parent location
-3. `Mixing room`, `Filling line room`, `Packaging zone` — Child locations
+1. `Ice cream main plant`: Site
+2. `Production building`: Parent location
+3. `Mixing room`, `Filling line room`, `Packaging zone`: Child locations
 
 Always verify your import count against the number of rows in your source spreadsheet. Prepare your spreadsheet formatting by following [How do I prepare data for import?](prepare-data-for-import.md). For details on sequencing, see [What is the correct load order?](correct-load-order.md), and see [How do I fix import errors?](why-does-asset-import-fail.md) if rows fail to load.
 
@@ -217,6 +217,8 @@ A simple hierarchy that reflects the physical layout of your facility is easier 
 ## Planning checklist
 
 Before loading your location hierarchy into Maximo Application Suite Select, verify each requirement:
+
+### Table 1: Location hierarchy planning checklist
 
 | Check | Planning item | What to verify |
 |---|---|---|
