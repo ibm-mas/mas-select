@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 680" width="100%" height="100%" style="background:#ffffff; font-family:'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#161616"/>
+    </marker>
+    <marker id="arrow-teal" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#007d79"/>
+    </marker>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#ffffff"/>
+
+  <!-- Start Entry Node -->
+  <rect class="node" id="node_start" x="32" y="24" width="480" height="48" rx="8" ry="8" fill="#0f62fe" stroke="#0f62fe" stroke-width="1"/>
+  <g transform="translate(48, 36) scale(0.75)" fill="#ffffff"></g>
+  <text x="88" y="54" font-size="14" font-weight="600" fill="#ffffff">Entity to classify in your facility</text>
+
+  <!-- Decision 1 -->
+  <rect class="node" id="q1" x="32" y="112" width="480" height="72" rx="8" ry="8" fill="#edf5ff" stroke="#0f62fe" stroke-width="1"/>
+  <rect x="32" y="112" width="8" height="72" fill="#0f62fe" rx="4"/>
+  <g transform="translate(48, 128) scale(0.75)" fill="#0f62fe"></g>
+  <text x="88" y="136" font-size="12" font-weight="600" fill="#0f62fe">QUESTION 1: PHYSICAL SPACE</text>
+  <text x="88" y="158" font-size="14" font-weight="600" fill="#161616">Is it a fixed physical space where work happens?</text>
+  <text x="88" y="174" font-size="11" fill="#525252">Examples: building, room, warehouse bay, storeroom</text>
+
+  <!-- Target 1: Location -->
+  <rect class="node" id="res_location" x="600" y="112" width="328" height="72" rx="8" ry="8" fill="#ffffff" stroke="#007d79" stroke-width="1.5"/>
+  <rect x="600" y="112" width="8" height="72" fill="#007d79" rx="4"/>
+  <g transform="translate(616, 128) scale(0.75)" fill="#007d79"></g>
+  <text x="656" y="136" font-size="11" font-weight="600" fill="#007d79">RECORD TYPE</text>
+  <text x="656" y="156" font-size="14" font-weight="600" fill="#161616">Create a Location</text>
+  <text x="656" y="174" font-size="11" fill="#525252">In Locations application</text>
+
+  <!-- Decision 2 -->
+  <rect class="node" id="q2" x="32" y="224" width="480" height="72" rx="8" ry="8" fill="#edf5ff" stroke="#0f62fe" stroke-width="1"/>
+  <rect x="32" y="224" width="8" height="72" fill="#0f62fe" rx="4"/>
+  <g transform="translate(48, 240) scale(0.75)" fill="#0f62fe"></g>
+  <text x="88" y="248" font-size="12" font-weight="600" fill="#0f62fe">QUESTION 2: MAINTAINABLE EQUIPMENT</text>
+  <text x="88" y="270" font-size="14" font-weight="600" fill="#161616">Is it maintainable with a serial number or nameplate?</text>
+  <text x="88" y="286" font-size="11" fill="#525252">Examples: machine, pump, subassembly, runtime meter</text>
+
+  <!-- Target 2: Asset -->
+  <rect class="node" id="res_asset" x="600" y="224" width="328" height="72" rx="8" ry="8" fill="#ffffff" stroke="#007d79" stroke-width="1.5"/>
+  <rect x="600" y="224" width="8" height="72" fill="#007d79" rx="4"/>
+  <g transform="translate(616, 240) scale(0.75)" fill="#007d79"></g>
+  <text x="656" y="248" font-size="11" font-weight="600" fill="#007d79">RECORD TYPE</text>
+  <text x="656" y="268" font-size="14" font-weight="600" fill="#161616">Create an Asset</text>
+  <text x="656" y="286" font-size="11" fill="#525252">In Assets application (anchor to location)</text>
+
+  <!-- Decision 3 -->
+  <rect class="node" id="q3" x="32" y="336" width="480" height="72" rx="8" ry="8" fill="#edf5ff" stroke="#0f62fe" stroke-width="1"/>
+  <rect x="32" y="336" width="8" height="72" fill="#0f62fe" rx="4"/>
+  <g transform="translate(48, 352) scale(0.75)" fill="#0f62fe"></g>
+  <text x="88" y="360" font-size="12" font-weight="600" fill="#0f62fe">QUESTION 3: REBUILDABLE STOREROOM UNIT</text>
+  <text x="88" y="382" font-size="14" font-weight="600" fill="#161616">Is it a rebuildable unit cycling through storerooms?</text>
+  <text x="88" y="398" font-size="11" fill="#525252">Examples: 50 HP motor, spare pump, rebuildable gearbox</text>
+
+  <!-- Target 3: Rotating Asset -->
+  <rect class="node" id="res_rotating" x="600" y="336" width="328" height="72" rx="8" ry="8" fill="#ffffff" stroke="#007d79" stroke-width="1.5"/>
+  <rect x="600" y="336" width="8" height="72" fill="#007d79" rx="4"/>
+  <g transform="translate(616, 352) scale(0.75)" fill="#007d79"></g>
+  <text x="656" y="360" font-size="11" font-weight="600" fill="#007d79">RECORD TYPE</text>
+  <text x="656" y="380" font-size="14" font-weight="600" fill="#161616">Create a Rotating Asset</text>
+  <text x="656" y="398" font-size="11" fill="#525252">Item Master + Asset record</text>
+
+  <!-- Decision 4 -->
+  <rect class="node" id="q4" x="32" y="448" width="480" height="72" rx="8" ry="8" fill="#edf5ff" stroke="#0f62fe" stroke-width="1"/>
+  <rect x="32" y="448" width="8" height="72" fill="#0f62fe" rx="4"/>
+  <g transform="translate(48, 464) scale(0.75)" fill="#0f62fe"></g>
+  <text x="88" y="472" font-size="12" font-weight="600" fill="#0f62fe">QUESTION 4: CONSUMABLE WEAR PART</text>
+  <text x="88" y="494" font-size="14" font-weight="600" fill="#161616">Is it a consumable wear part replaced during repairs?</text>
+  <text x="88" y="510" font-size="11" fill="#525252">Examples: gasket, o-ring, seal, filter, fuse, belt</text>
+
+  <!-- Target 4: Spare Part -->
+  <rect class="node" id="res_part" x="600" y="448" width="328" height="72" rx="8" ry="8" fill="#ffffff" stroke="#6f6f6f" stroke-width="1.5"/>
+  <rect x="600" y="448" width="8" height="72" fill="#6f6f6f" rx="4"/>
+  <g transform="translate(616, 464) scale(0.75)" fill="#6f6f6f"></g>
+  <text x="656" y="472" font-size="11" font-weight="600" fill="#525252">RECORD TYPE</text>
+  <text x="656" y="492" font-size="14" font-weight="600" fill="#161616">Catalog as Spare Part</text>
+  <text x="656" y="510" font-size="11" fill="#525252">Item Master (link to Asset Spare Parts tab)</text>
+
+  <!-- Connectors Start -> Q1 -->
+  <path class="connector" data-from="node_start" data-to="q1" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 272 72 V 112"/>
+
+  <!-- Connector Q1 -> Q2 (No) -->
+  <path class="connector" data-from="q1" data-to="q2" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 272 184 V 224"/>
+  <rect x="256" y="196" width="32" height="16" fill="#ffffff" rx="2"/>
+  <text class="conn-label" x="272" y="208" font-size="11" font-weight="600" fill="#da1e28" text-anchor="middle">No</text>
+
+  <!-- Connector Q1 -> res_location (Yes) -->
+  <path class="connector" data-from="q1" data-to="res_location" fill="none" stroke="#007d79" stroke-width="1.5" marker-end="url(#arrow-teal)" d="M 512 144 H 600"/>
+  <rect x="540" y="134" width="32" height="18" fill="#ffffff" rx="2"/>
+  <text class="conn-label" x="556" y="148" font-size="11" font-weight="600" fill="#007d79" text-anchor="middle">Yes</text>
+
+  <!-- Connector Q2 -> Q3 (No) -->
+  <path class="connector" data-from="q2" data-to="q3" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 272 296 V 336"/>
+  <rect x="256" y="308" width="32" height="16" fill="#ffffff" rx="2"/>
+  <text class="conn-label" x="272" y="320" font-size="11" font-weight="600" fill="#da1e28" text-anchor="middle">No</text>
+
+  <!-- Connector Q2 -> res_asset (Yes) -->
+  <path class="connector" data-from="q2" data-to="res_asset" fill="none" stroke="#007d79" stroke-width="1.5" marker-end="url(#arrow-teal)" d="M 512 256 H 600"/>
+  <rect x="540" y="246" width="32" height="18" fill="#ffffff" rx="2"/>
+  <text class="conn-label" x="556" y="260" font-size="11" font-weight="600" fill="#007d79" text-anchor="middle">Yes</text>
+
+  <!-- Connector Q3 -> Q4 (No) -->
+  <path class="connector" data-from="q3" data-to="q4" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 272 408 V 448"/>
+  <rect x="256" y="420" width="32" height="16" fill="#ffffff" rx="2"/>
+  <text class="conn-label" x="272" y="432" font-size="11" font-weight="600" fill="#da1e28" text-anchor="middle">No</text>
+
+  <!-- Connector Q3 -> res_rotating (Yes) -->
+  <path class="connector" data-from="q3" data-to="res_rotating" fill="none" stroke="#007d79" stroke-width="1.5" marker-end="url(#arrow-teal)" d="M 512 368 H 600"/>
+  <rect x="540" y="358" width="32" height="18" fill="#ffffff" rx="2"/>
+  <text class="conn-label" x="556" y="372" font-size="11" font-weight="600" fill="#007d79" text-anchor="middle">Yes</text>
+
+  <!-- Connector Q4 -> res_part (Yes) -->
+  <path class="connector" data-from="q4" data-to="res_part" fill="none" stroke="#007d79" stroke-width="1.5" marker-end="url(#arrow-teal)" d="M 512 480 H 600"/>
+  <rect x="540" y="470" width="32" height="18" fill="#ffffff" rx="2"/>
+  <text class="conn-label" x="556" y="484" font-size="11" font-weight="600" fill="#007d79" text-anchor="middle">Yes</text>
+
+  <!-- Mandatory Legend (Section 7) -->
+  <g class="legend" transform="translate(32, 576)">
+    <text x="0" y="16" font-size="12" font-weight="600" fill="#161616">Legend:</text>
+    
+    <!-- Decision Step Swatch -->
+    <rect x="64" y="4" width="16" height="16" rx="4" fill="#edf5ff" stroke="#0f62fe" stroke-width="1"/>
+    <text x="88" y="16" font-size="12" fill="#161616">Decision question</text>
+
+    <!-- Classification Output Swatch -->
+    <rect x="232" y="4" width="16" height="16" rx="4" fill="#ffffff" stroke="#007d79" stroke-width="1.5"/>
+    <text x="256" y="16" font-size="12" fill="#161616">Target classification</text>
+
+    <!-- Yes flow swatch -->
+    <line x1="408" y1="12" x2="440" y2="12" stroke="#007d79" stroke-width="1.5" marker-end="url(#arrow-teal)"/>
+    <text x="448" y="16" font-size="12" fill="#161616">Yes match</text>
+
+    <!-- No flow swatch -->
+    <line x1="536" y1="12" x2="568" y2="12" stroke="#161616" stroke-width="1" marker-end="url(#arrow)"/>
+    <text x="576" y="16" font-size="12" fill="#161616">Next question</text>
+  </g>
+</svg>
