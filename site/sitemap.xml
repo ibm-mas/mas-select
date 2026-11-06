@@ -246,6 +246,13 @@
         <xhtml:link rel="alternate" hreflang="fr" href="https://ibm-mas.github.io/mas-select/fr/get-work-done/setup-control/correct-load-order.html"/>
     </url>
     <url>
+        <loc>https://ibm-mas.github.io/mas-select/get-work-done/setup-control/decide-location-asset-spare-part.html</loc>
+        <lastmod>2026-11-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ibm-mas.github.io/mas-select/get-work-done/setup-control/decide-location-asset-spare-part.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://ibm-mas.github.io/mas-select/fr/get-work-done/setup-control/decide-location-asset-spare-part.html"/>
+    </url>
+    <url>
         <loc>https://ibm-mas.github.io/mas-select/get-work-done/setup-control/get-data-into-system.html</loc>
         <lastmod>2026-11-06</lastmod>
         <changefreq>daily</changefreq>
@@ -762,6 +769,13 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="https://ibm-mas.github.io/mas-select/fr/get-work-done/setup-control/correct-load-order.html"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://ibm-mas.github.io/mas-select/get-work-done/setup-control/correct-load-order.html"/>
+    </url>
+    <url>
+        <loc>https://ibm-mas.github.io/mas-select/fr/get-work-done/setup-control/decide-location-asset-spare-part.html</loc>
+        <lastmod>2026-11-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://ibm-mas.github.io/mas-select/fr/get-work-done/setup-control/decide-location-asset-spare-part.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ibm-mas.github.io/mas-select/get-work-done/setup-control/decide-location-asset-spare-part.html"/>
     </url>
     <url>
         <loc>https://ibm-mas.github.io/mas-select/fr/get-work-done/setup-control/get-data-into-system.html</loc>
