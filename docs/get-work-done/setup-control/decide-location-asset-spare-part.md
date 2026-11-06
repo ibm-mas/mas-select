@@ -1,6 +1,6 @@
 # How do I decide: location, asset, or spare part?
 
-When setting up Maximo Application Suite Select, every physical entity in your plant or facility must be classified as one of three primary record types: a location, an asset, or a spare part item.
+When setting up Maximo Application Suite Select, every physical entity in your plant or facility must be classified as one of three primary record types: a location, an asset, or a spare part.
 
 Making the right classification before importing data ensures accurate maintenance history, simplified storeroom operations, and clean drilldown navigation in Maximo Mobile and desktop applications. Misclassifying entities leads to cluttered asset registers, broken cost roll-ups, and duplicate data entry.
 
@@ -16,7 +16,7 @@ As outlined in [What is the correct load order?](correct-load-order.md), locatio
 Maximo Application Suite Select uses three distinct record types to track facilities, machinery, and replacement materials.
 
 <img src="../../images/sample_decision_location_asset_part.svg" alt="Diagram showing the 3-tier classification model: Location as a physical space containing Assets, which in turn reference Spare Parts on their Spare Parts tab." style="width: 100%; max-width: 580px; display: block; margin: 16px auto;">
-<p style="font-size: 0.9em; color: #525252; margin-top: 8px; font-style: italic;">Figure 1: The three-way classification model in Maximo Application Suite Select</p>
+<p class="figure-caption">Figure 1: The three-way classification model in Maximo Application Suite Select</p>
 
 ### 1. Location: Fixed physical space
 
@@ -52,34 +52,34 @@ A spare part represents a stocked or non-stocked replacement material cataloged 
 To classify any physical item or facility entity, follow these four sequential decision questions:
 
 <img src="../../images/decision_framework_location_asset_part.svg" alt="Decision flowchart showing the four sequential questions to classify entities into Locations, Assets, Rotating Assets, or Spare Parts." style="width: 100%; max-width: 720px; display: block; margin: 16px auto;">
-<p style="font-size: 0.9em; color: #525252; margin-top: 8px; font-style: italic;">Figure 2: The four-question classification decision framework</p>
+<p class="figure-caption">Figure 2: The four-question classification decision framework</p>
 
 ### Question 1: Is it a fixed physical space where work happens?
 
 Ask: *"Does this record represent a permanent room, building, bay, or outdoor area?"*
 
-- If **yes**, create a **Location**.
+- If **yes**, create a **location**.
 - If **no**, proceed to Question 2.
 
 ### Question 2: Is it maintainable equipment that retains its own history?
 
 Ask: *"Does this equipment carry a unique serial number or manufacturer nameplate, undergo regular overhauls or preventive maintenance, track runtime meters, or move between locations?"*
 
-- If **yes**, create an **Asset** and anchor it to its operating location.
+- If **yes**, create an **asset** and anchor it to its operating location.
 - If **no**, proceed to Question 3.
 
 ### Question 3: Is it a rebuildable unit that moves through storeroom inventory?
 
 Ask: *"Is this a standard motor, pump, or gearbox that is stocked in the storeroom as inventory, issued to a machine, pulled for overhaul when it fails, and returned to stock?"*
 
-- If **yes**, create a **Rotating Item** in Item Master and track the serialized unit as an **Asset**.
+- If **yes**, create a **rotating item** in Item Master and track the serialized unit as an **asset**.
 - If **no**, proceed to Question 4.
 
 ### Question 4: Is it a consumable part replaced and discarded during servicing?
 
 Ask: *"When this item fails, is it thrown away and replaced with a new one from the storeroom without tracking individual overhaul history?"*
 
-- If **yes**, catalog the part in **Item Master** and link it to the parent asset's **Spare Parts** tab.
+- If **yes**, catalog the spare part in **Item Master** and link it to the parent asset's **Spare Parts** tab.
 
 ---
 
@@ -101,7 +101,7 @@ Some physical items sit on the boundary between locations, assets, and spare par
 | **Cabinet fuses and terminal blocks** | **Spare part** | Consumables cataloged in Item Master and issued to electrical repair work orders. |
 
 <img src="../../images/sample_problem_conveyor_classification.svg" alt="Diagram showing the classification breakdown of a conveyor system: Packaging zone location, Conveyor CV-01 parent asset, Drive motor child asset, and rollers and belts as spare parts." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
-<p style="font-size: 0.9em; color: #525252; margin-top: 8px; font-style: italic;">Figure 3: Boundary classification example for a conveyor system</p>
+<p class="figure-caption">Figure 3: Boundary classification example for a conveyor system</p>
 
 ### 💡 Tip: Using the Spare Parts tab for consumable parts
 
@@ -118,7 +118,7 @@ Review these common planning scenarios to test your understanding before buildin
 A maintenance planner creates a separate location record for every pump, motor, and machine in the plant, such as creating `Filler FL-02 Operating Location` to hold `Filler FL-02`.
 
 <img src="../../images/sample_problem_one_to_one_location_asset.svg" alt="Diagram showing the 1:1 Location-to-Asset anti-pattern where artificial location records are created for each individual machine." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
-<p style="font-size: 0.9em; color: #525252; margin-top: 8px; font-style: italic;">Figure 4: Problem 1 — The 1:1 location-to-asset anti-pattern</p>
+<p class="figure-caption">Figure 4: Problem 1 — The 1:1 location-to-asset anti-pattern</p>
 
 What goes wrong when equipment is replaced or when technicians navigate in Maximo Mobile?
 
@@ -130,7 +130,7 @@ Creating a 1:1 location for every asset doubles data entry, clutters navigation 
 **What to do instead:** Create one physical location for the room, such as `Filling line room`, and place multiple assets directly inside that room location.
 
 <img src="../../images/sample_solution_one_to_many_location_asset.svg" alt="Diagram showing the correct model where one physical room location holds multiple independent assets." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
-<p style="font-size: 0.9em; color: #525252; margin-top: 8px; font-style: italic;">Figure 5: Solution 1 — One physical location containing multiple assets</p>
+<p class="figure-caption">Figure 5: Solution 1 — One physical location containing multiple assets</p>
 
 </details>
 
@@ -173,8 +173,8 @@ How should each motor type be classified?
 <details markdown="1">
 <summary>Show the answer</summary>
 
-- **50 HP Homogenizer drive motor**: Model as an **Asset** using a rotating item record. It carries a unique serial number, tracks operating hours, moves between the machine, storeroom, and repair shop, and accumulates overhaul costs across its lifecycle.
-- **Fractional exhaust fan motor**: Model as a **Spare part item** in Item Master. When a fan motor fails, a replacement is issued from the storeroom to the work order, and the failed motor is discarded.
+- **50 HP Homogenizer drive motor**: Model as an **asset** using a rotating item record. It carries a unique serial number, tracks operating hours, moves between the machine, storeroom, and repair shop, and accumulates overhaul costs across its lifecycle.
+- **Fractional exhaust fan motor**: Model as a **spare part** in Item Master. When a fan motor fails, a replacement is issued from the storeroom to the work order, and the failed motor is discarded.
 
 </details>
 

@@ -26,7 +26,7 @@ An asset is any piece of equipment, machinery, or infrastructure that your organ
 
 <div style="width: 50%; float: right; margin-left: 20px; margin-bottom: 20px;">
 <img src="../../images/sample_asset_hierarchy.svg" alt="Asset hierarchy for the Filling line system. Filler FL-02, Conveyor CV-02, and Labeler LB-01 are parent assets. Each parent asset has child components, and the Nozzle assembly component has two parts: Nozzle body and Shutoff valve." style="width: 100%; display: block;">
-<p style="font-size: 0.9em; color: #525252; margin-top: 8px; font-style: italic;">Figure 1: Sample asset hierarchy for an ice cream manufacturer</p>
+<p class="figure-caption">Figure 1: Sample asset hierarchy for an ice cream manufacturer</p>
 </div>
 
 An asset is a physical piece of equipment that you maintain. You can organize assets in a parent-child hierarchy to show how equipment is connected and to track maintenance at the correct level.

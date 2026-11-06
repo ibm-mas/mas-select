@@ -26,7 +26,7 @@ A location is a physical place where work is performed or assets are installed. 
 
 <div style="width: 50%; float: right; margin-left: 20px; margin-bottom: 20px;">
 <img src="../../images/sample_location_hierarchy.svg" alt="Location hierarchy for the Ice cream main plant site. Production building is a parent location with three child locations: Mixing room, Filling line room, and Packaging zone. Cold storage and Main storeroom are separate locations in the same site." style="width: 100%; display: block;">
-<p style="font-size: 0.9em; color: #525252; margin-top: 8px; font-style: italic;">Figure 1: Sample location hierarchy for an ice cream manufacturer</p>
+<p class="figure-caption">Figure 1: Sample location hierarchy for an ice cream manufacturer</p>
 </div>
 
 A location is a fixed place where work happens or where assets are installed. You can organize locations in a parent-child hierarchy to show how areas in a facility are connected and to track work in the correct place.
