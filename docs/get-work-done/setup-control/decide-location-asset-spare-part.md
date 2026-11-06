@@ -102,8 +102,15 @@ Some physical items sit on the boundary between locations, assets, and spare par
 | **Cabinet power circuit breaker** | **Child asset** | Maintainable subassembly with its own trip testing and maintenance history. |
 | **Cabinet fuses and terminal blocks** | **Spare part** | Consumables cataloged in Item Master and issued to electrical repair work orders. |
 
-<img src="../../images/sample_problem_conveyor_classification.svg" alt="Diagram showing the classification breakdown of a conveyor system: Packaging zone location, Conveyor CV-01 parent asset, Drive motor child asset, and rollers and belts as spare parts." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
+<img src="../../images/sample_problem_conveyor_classification.svg" alt="Diagram showing the classification breakdown of a conveyor system: Packaging zone location, Conveyor CV-01 parent asset, Drive motor child asset, and rollers and belts as spare parts." style="width: 100%; max-width: 580px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 3: Boundary classification example for a conveyor system</p>
+
+In Figure 3, a conveyor line illustrates how to divide complex equipment across the three classification tiers:
+
+- **Location**: `Packaging zone` provides the permanent physical route where the conveyor operates.
+- **Parent asset**: `Conveyor CV-01` is the main maintainable equipment package with its own operating history and PM schedule.
+- **Child asset**: `Drive motor MTR-DRV-02` is a serialized rotating subassembly tracked for shop overhauls and rewinds.
+- **Spare parts**: Wear items like modular belt sections, drive rollers, and guide bearings live on the **Spare Parts** tab and are issued directly to repair work orders.
 
 ### 💡 Tip: Using the Spare Parts tab for consumable parts
 
