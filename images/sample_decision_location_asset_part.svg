@@ -8,7 +8,7 @@
     <rect x="24" y="16" width="48" height="88" fill="#009D9A" rx="8"/>
     <rect x="56" y="16" width="16" height="88" fill="#009D9A"/>
     <g transform="translate(36, 48) scale(0.75)" fill="#ffffff"></g>
-    <text x="88" y="40" font-size="11" font-weight="600" fill="#0072C3" letter-spacing="0.3">1. LOCATION (PHYSICAL SPACE)</text>
+    <text x="88" y="40" font-size="11" font-weight="600" fill="#0072C3" letter-spacing="0.3">1. Location (physical space)</text>
     <text x="88" y="62" font-size="15" font-weight="600" fill="#161616">Filling line room</text>
     <text x="88" y="84" font-size="12" fill="#525252">Fixed physical space • Immovable • Room maintenance history</text>
   </g>
@@ -25,13 +25,13 @@
     <rect x="24" y="144" width="48" height="116" fill="#009D9A" rx="8"/>
     <rect x="56" y="144" width="16" height="116" fill="#009D9A"/>
     <g transform="translate(36, 188) scale(0.75)" fill="#ffffff"></g>
-    <text x="88" y="168" font-size="11" font-weight="600" fill="#0072C3" letter-spacing="0.3">2. ASSET (MAINTAINABLE EQUIPMENT)</text>
+    <text x="88" y="168" font-size="11" font-weight="600" fill="#0072C3" letter-spacing="0.3">2. Asset (maintainable equipment)</text>
     <text x="88" y="190" font-size="15" font-weight="600" fill="#161616">Filler FL-02</text>
     <text x="88" y="210" font-size="12" fill="#525252">Serialized machine • Moves between rooms • Has PM schedule and meter</text>
     
     <!-- Child subassembly badge inside asset -->
     <rect x="88" y="222" width="512" height="26" fill="#D9FBFB" stroke="#009D9A" stroke-width="1" rx="4"/>
-    <text x="100" y="239" font-size="11" font-weight="600" fill="#005d5d">Subassembly (Child Asset): Drive motor (MTR-DRV-01)</text>
+    <text x="100" y="239" font-size="11" font-weight="600" fill="#005d5d">Subassembly (child asset): Drive motor (MTR-DRV-01)</text>
   </g>
 
   <!-- Connector: Asset -> Spare Parts Tab -->
@@ -46,12 +46,12 @@
     <rect x="24" y="300" width="48" height="136" fill="#6f6f6f" rx="8"/>
     <rect x="56" y="300" width="16" height="136" fill="#6f6f6f"/>
     <g transform="translate(36, 354) scale(0.75)" fill="#ffffff"></g>
-    <text x="88" y="324" font-size="11" font-weight="600" fill="#525252" letter-spacing="0.3">3. SPARE PART (ITEM MASTER &amp; SPARE PARTS TAB)</text>
+    <text x="88" y="324" font-size="11" font-weight="600" fill="#525252" letter-spacing="0.3">3. Spare part (Item Master &amp; Spare Parts tab)</text>
     <text x="88" y="346" font-size="14" font-weight="600" fill="#161616">Flange gaskets • O-rings • Mechanical seals • Fuses</text>
     <text x="88" y="366" font-size="12" fill="#525252">Consumable items • Stored in storeroom • Issued and consumed on work orders</text>
     
     <!-- Rule of thumb note -->
     <rect x="88" y="380" width="512" height="38" fill="#ffffff" stroke="#e0e0e0" rx="4"/>
-    <text x="100" y="403" font-size="12" fill="#161616"><tspan font-weight="600" fill="#0f62fe">Rule of thumb:</tspan> Replaced and scrapped during repairs? Model as Item, not Asset.</text>
+    <text x="100" y="403" font-size="12" fill="#161616"><tspan font-weight="600" fill="#0f62fe">Rule of thumb:</tspan> Replaced and scrapped during repairs? Model as spare part, not asset.</text>
   </g>
 </svg>
