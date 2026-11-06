@@ -1,0 +1,64 @@
+<svg width="680" height="280" viewBox="0 0 680 280" fill="none" xmlns="http://www.w3.org/2000/svg" style="background:#ffffff; font-family:'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <title>Automated background processing architecture in Cron Task lite</title>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+
+  <!-- Step 1: Cron Task Engine -->
+  <g class="node">
+    <rect x="20" y="110" width="140" height="60" rx="2" fill="#0F62FE" stroke="#0F62FE" stroke-width="1.5"/>
+    <text x="90" y="133" font-size="9" font-weight="600" fill="#ffffff" text-anchor="middle" letter-spacing="0.2">CRON TASK LITE</text>
+    <text x="90" y="152" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">Background Engine</text>
+  </g>
+
+  <!-- Connectors to 3 Evaluations -->
+  <path d="M 160 140 H 185 V 50 Q 185 42 193 42 H 205" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="205,38 213,42 205,46" fill="#161616"/>
+
+  <path d="M 160 140 H 205" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="205,136 213,140 205,144" fill="#161616"/>
+
+  <path d="M 160 140 H 185 V 230 Q 185 238 193 238 H 205" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="205,234 213,238 205,242" fill="#161616"/>
+
+  <!-- 3 Automated Triggers -->
+  <g class="node">
+    <rect x="213" y="16" width="220" height="52" rx="2" fill="#EDF5FF" stroke="#0F62FE" stroke-width="1.5"/>
+    <text x="225" y="36" font-size="9" font-weight="600" fill="#0043CE">PMWOGENCRONTASK</text>
+    <text x="225" y="53" font-size="11" fill="#161616">Generates PM work orders</text>
+  </g>
+
+  <g class="node">
+    <rect x="213" y="114" width="220" height="52" rx="2" fill="#EDF5FF" stroke="#0F62FE" stroke-width="1.5"/>
+    <text x="225" y="134" font-size="9" font-weight="600" fill="#0043CE">MEASUREPOINTWOGENCRONTASK</text>
+    <text x="225" y="151" font-size="11" fill="#161616">Triggers condition work orders</text>
+  </g>
+
+  <g class="node">
+    <rect x="213" y="212" width="220" height="52" rx="2" fill="#EDF5FF" stroke="#0F62FE" stroke-width="1.5"/>
+    <text x="225" y="232" font-size="9" font-weight="600" fill="#0043CE">REORDERCRONTASK</text>
+    <text x="225" y="249" font-size="11" fill="#161616">Generates restock requisitions</text>
+  </g>
+
+  <!-- Connectors to Outcomes -->
+  <path d="M 433 42 H 460 V 90 Q 460 98 468 98 H 475" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <path d="M 433 140 H 460 V 106 Q 460 98 468 98 H 475" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="475,94 483,98 475,102" fill="#161616"/>
+
+  <path d="M 433 238 H 475" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="475,234 483,238 475,242" fill="#161616"/>
+
+  <!-- Outcome 1: Mobile & Queue Dispatch -->
+  <g class="node">
+    <rect x="483" y="70" width="180" height="56" rx="2" fill="#ffffff" stroke="#0F62FE" stroke-width="1.5"/>
+    <rect x="483" y="70" width="5" height="56" fill="#0F62FE"/>
+    <text x="498" y="92" font-size="9" font-weight="600" fill="#0F62FE">WORK DISPATCH</text>
+    <text x="498" y="108" font-size="10" fill="#161616">Mobile push alerts and</text>
+    <text x="498" y="120" font-size="10" fill="#161616">Work Queue cards</text>
+  </g>
+
+  <!-- Outcome 2: Storeroom Queue -->
+  <g class="node">
+    <rect x="483" y="212" width="180" height="52" rx="2" fill="#ffffff" stroke="#161616" stroke-width="1.5"/>
+    <text x="498" y="234" font-size="9" font-weight="600" fill="#525252">INVENTORY DISPATCH</text>
+    <text x="498" y="251" font-size="10" fill="#161616">Storeroom restock queue</text>
+  </g>
+</svg>

@@ -1,0 +1,76 @@
+<svg width="680" height="300" viewBox="0 0 680 300" fill="none" xmlns="http://www.w3.org/2000/svg" style="background:#ffffff; font-family:'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <title>Maintenance data aggregation and decision pipeline</title>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+
+  <!-- Stage 1: Raw Data -->
+  <g class="node">
+    <rect x="20" y="115" width="120" height="60" rx="2" fill="#EDF5FF" stroke="#0F62FE" stroke-width="1.5"/>
+    <text x="80" y="138" font-size="9" font-weight="600" fill="#0043CE" text-anchor="middle" letter-spacing="0.2">DATA INGESTION</text>
+    <text x="80" y="156" font-size="11" font-weight="600" fill="#161616" text-anchor="middle">Work logs &amp; actuals</text>
+  </g>
+
+  <!-- Connectors to Stage 2 -->
+  <path d="M 140 145 H 160 V 70 Q 160 62 168 62 H 180" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="180,58 188,62 180,66" fill="#161616"/>
+
+  <path d="M 140 145 H 160 V 220 Q 160 228 168 228 H 180" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="180,224 188,228 180,232" fill="#161616"/>
+
+  <!-- Stage 2: Aggregation Engines -->
+  <g class="node">
+    <rect x="188" y="36" width="140" height="52" rx="2" fill="#ffffff" stroke="#0F62FE" stroke-width="1.5"/>
+    <rect x="188" y="36" width="5" height="52" fill="#0F62FE"/>
+    <text x="202" y="56" font-size="9" font-weight="600" fill="#0F62FE">KPI MANAGER</text>
+    <text x="202" y="73" font-size="11" fill="#161616">Compliance &amp; targets</text>
+  </g>
+
+  <g class="node">
+    <rect x="188" y="202" width="140" height="52" rx="2" fill="#ffffff" stroke="#0F62FE" stroke-width="1.5"/>
+    <rect x="188" y="202" width="5" height="52" fill="#0F62FE"/>
+    <text x="202" y="222" font-size="9" font-weight="600" fill="#0F62FE">FAILURE CODES</text>
+    <text x="202" y="239" font-size="11" fill="#161616">Root cause trends</text>
+  </g>
+
+  <!-- Connectors to Stage 3: Dashboards -->
+  <path d="M 328 62 H 345 V 137 Q 345 145 353 145 H 360" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <path d="M 328 228 H 345 V 153 Q 345 145 353 145 H 360" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="360,141 368,145 360,149" fill="#161616"/>
+
+  <!-- Stage 3: Dashboards -->
+  <g class="node">
+    <rect x="368" y="115" width="105" height="60" rx="2" fill="#0F62FE" stroke="#0F62FE" stroke-width="1.5"/>
+    <text x="420" y="138" font-size="9" font-weight="600" fill="#ffffff" text-anchor="middle" letter-spacing="0.2">DASHBOARDS</text>
+    <text x="420" y="156" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">Operational review</text>
+  </g>
+
+  <!-- Connectors to Actions -->
+  <path d="M 473 145 H 490 V 45 Q 490 37 498 37 H 505" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="505,33 513,37 505,41" fill="#161616"/>
+
+  <path d="M 473 145 H 505" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="505,141 513,145 505,149" fill="#161616"/>
+
+  <path d="M 473 145 H 490 V 245 Q 490 253 498 253 H 505" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="505,249 513,253 505,257" fill="#161616"/>
+
+  <!-- Action 1 -->
+  <g class="node">
+    <rect x="513" y="12" width="150" height="50" rx="2" fill="#EDF5FF" stroke="#0F62FE" stroke-width="1.5"/>
+    <text x="525" y="32" font-size="8" font-weight="600" fill="#0043CE">PM COMPLIANCE &lt; 85%</text>
+    <text x="525" y="48" font-size="10" fill="#161616">Reallocate craft hours</text>
+  </g>
+
+  <!-- Action 2 -->
+  <g class="node">
+    <rect x="513" y="120" width="150" height="50" rx="2" fill="#EDF5FF" stroke="#0F62FE" stroke-width="1.5"/>
+    <text x="525" y="140" font-size="8" font-weight="600" fill="#0043CE">CHRONIC FAILURES</text>
+    <text x="525" y="156" font-size="10" fill="#161616">Refine job plan steps</text>
+  </g>
+
+  <!-- Action 3 -->
+  <g class="node">
+    <rect x="513" y="228" width="150" height="50" rx="2" fill="#EDF5FF" stroke="#0F62FE" stroke-width="1.5"/>
+    <text x="525" y="248" font-size="8" font-weight="600" fill="#0043CE">REPAIR COST &gt; 60%</text>
+    <text x="525" y="264" font-size="10" fill="#161616">Capital replacement</text>
+  </g>
+</svg>

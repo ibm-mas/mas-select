@@ -1,0 +1,52 @@
+<svg width="680" height="260" viewBox="0 0 680 260" fill="none" xmlns="http://www.w3.org/2000/svg" style="background:#ffffff; font-family:'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <title>AI configuration service and maintenance workflow integration</title>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+
+  <!-- Step 1: Input -->
+  <g class="node">
+    <rect x="20" y="100" width="130" height="60" rx="2" fill="#EDF5FF" stroke="#0F62FE" stroke-width="1.5"/>
+    <text x="85" y="123" font-size="9" font-weight="600" fill="#0043CE" text-anchor="middle" letter-spacing="0.2">INPUT</text>
+    <text x="85" y="142" font-size="11" font-weight="600" fill="#161616" text-anchor="middle">Technician work log</text>
+  </g>
+
+  <!-- Arrow to Gateway -->
+  <path d="M 150 130 H 180" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="180,126 188,130 180,134" fill="#161616"/>
+
+  <!-- Step 2: AI Configuration Gateway -->
+  <g class="node">
+    <rect x="188" y="100" width="140" height="60" rx="2" fill="#ffffff" stroke="#0F62FE" stroke-width="1.5"/>
+    <rect x="188" y="100" width="5" height="60" fill="#0F62FE"/>
+    <text x="258" y="123" font-size="9" font-weight="600" fill="#0F62FE" text-anchor="middle" letter-spacing="0.2">AI CONFIGURATION</text>
+    <text x="258" y="142" font-size="11" font-weight="600" fill="#161616" text-anchor="middle">watsonx endpoint</text>
+  </g>
+
+  <!-- Connectors to 3 AI Outputs -->
+  <path d="M 328 130 H 350 V 45 Q 350 37 358 37 H 370" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="370,33 378,37 370,41" fill="#161616"/>
+
+  <path d="M 328 130 H 370" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="370,126 378,130 370,134" fill="#161616"/>
+
+  <path d="M 328 130 H 350 V 215 Q 350 223 358 223 H 370" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="370,219 378,223 370,227" fill="#161616"/>
+
+  <!-- AI Outputs -->
+  <g class="node">
+    <rect x="378" y="12" width="280" height="50" rx="2" fill="#EDF5FF" stroke="#0F62FE" stroke-width="1.5"/>
+    <text x="390" y="32" font-size="9" font-weight="600" fill="#0043CE">FAILURE CODE SUGGESTIONS</text>
+    <text x="390" y="48" font-size="10" fill="#161616">Matches unstructured text to Problem / Cause / Remedy</text>
+  </g>
+
+  <g class="node">
+    <rect x="378" y="105" width="280" height="50" rx="2" fill="#EDF5FF" stroke="#0F62FE" stroke-width="1.5"/>
+    <text x="390" y="125" font-size="9" font-weight="600" fill="#0043CE">WORK ORDER SUMMARIZATION</text>
+    <text x="390" y="141" font-size="10" fill="#161616">Generates shift handoff and executive summaries</text>
+  </g>
+
+  <g class="node">
+    <rect x="378" y="198" width="280" height="50" rx="2" fill="#EDF5FF" stroke="#0F62FE" stroke-width="1.5"/>
+    <text x="390" y="218" font-size="9" font-weight="600" fill="#0043CE">ATTRIBUTE RECOMMENDATIONS</text>
+    <text x="390" y="234" font-size="10" fill="#161616">Populates classification specifications for new assets</text>
+  </g>
+</svg>

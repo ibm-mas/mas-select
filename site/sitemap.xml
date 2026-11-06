@@ -246,6 +246,13 @@
         <xhtml:link rel="alternate" hreflang="fr" href="https://ibm-mas.github.io/mas-select/fr/get-work-done/setup-control/correct-load-order.html"/>
     </url>
     <url>
+        <loc>https://ibm-mas.github.io/mas-select/get-work-done/setup-control/create-inspection-forms.html</loc>
+        <lastmod>2026-11-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ibm-mas.github.io/mas-select/get-work-done/setup-control/create-inspection-forms.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://ibm-mas.github.io/mas-select/fr/get-work-done/setup-control/create-inspection-forms.html"/>
+    </url>
+    <url>
         <loc>https://ibm-mas.github.io/mas-select/get-work-done/setup-control/decide-location-asset-spare-part.html</loc>
         <lastmod>2026-11-06</lastmod>
         <changefreq>daily</changefreq>
@@ -281,11 +288,32 @@
         <xhtml:link rel="alternate" hreflang="fr" href="https://ibm-mas.github.io/mas-select/fr/get-work-done/setup-control/plan-your-location-hierarchy.html"/>
     </url>
     <url>
+        <loc>https://ibm-mas.github.io/mas-select/get-work-done/setup-control/plan-your-pm-strategy.html</loc>
+        <lastmod>2026-11-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ibm-mas.github.io/mas-select/get-work-done/setup-control/plan-your-pm-strategy.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://ibm-mas.github.io/mas-select/fr/get-work-done/setup-control/plan-your-pm-strategy.html"/>
+    </url>
+    <url>
+        <loc>https://ibm-mas.github.io/mas-select/get-work-done/setup-control/plan-your-storeroom-strategy.html</loc>
+        <lastmod>2026-11-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ibm-mas.github.io/mas-select/get-work-done/setup-control/plan-your-storeroom-strategy.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://ibm-mas.github.io/mas-select/fr/get-work-done/setup-control/plan-your-storeroom-strategy.html"/>
+    </url>
+    <url>
         <loc>https://ibm-mas.github.io/mas-select/get-work-done/setup-control/prepare-data-for-import.html</loc>
         <lastmod>2026-11-06</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://ibm-mas.github.io/mas-select/get-work-done/setup-control/prepare-data-for-import.html"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://ibm-mas.github.io/mas-select/fr/get-work-done/setup-control/prepare-data-for-import.html"/>
+    </url>
+    <url>
+        <loc>https://ibm-mas.github.io/mas-select/get-work-done/setup-control/set-up-failure-codes.html</loc>
+        <lastmod>2026-11-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ibm-mas.github.io/mas-select/get-work-done/setup-control/set-up-failure-codes.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://ibm-mas.github.io/mas-select/fr/get-work-done/setup-control/set-up-failure-codes.html"/>
     </url>
     <url>
         <loc>https://ibm-mas.github.io/mas-select/get-work-done/setup-control/set-up-labor-crafts-crews.html</loc>
@@ -300,6 +328,13 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://ibm-mas.github.io/mas-select/get-work-done/setup-control/set-up-maps.html"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://ibm-mas.github.io/mas-select/fr/get-work-done/setup-control/set-up-maps.html"/>
+    </url>
+    <url>
+        <loc>https://ibm-mas.github.io/mas-select/get-work-done/setup-control/set-up-meters.html</loc>
+        <lastmod>2026-11-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ibm-mas.github.io/mas-select/get-work-done/setup-control/set-up-meters.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://ibm-mas.github.io/mas-select/fr/get-work-done/setup-control/set-up-meters.html"/>
     </url>
     <url>
         <loc>https://ibm-mas.github.io/mas-select/get-work-done/setup-control/why-does-asset-import-fail.html</loc>
@@ -428,25 +463,11 @@
         <xhtml:link rel="alternate" hreflang="fr" href="https://ibm-mas.github.io/mas-select/fr/start-fast/basics/why-do-terms-differ.html"/>
     </url>
     <url>
-        <loc>https://ibm-mas.github.io/mas-select/start-fast/first-task/admin-first-task.html</loc>
-        <lastmod>2026-11-06</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://ibm-mas.github.io/mas-select/start-fast/first-task/admin-first-task.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://ibm-mas.github.io/mas-select/fr/start-fast/first-task/admin-first-task.html"/>
-    </url>
-    <url>
         <loc>https://ibm-mas.github.io/mas-select/start-fast/first-task/administrator-first-task.html</loc>
         <lastmod>2026-11-06</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://ibm-mas.github.io/mas-select/start-fast/first-task/administrator-first-task.html"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://ibm-mas.github.io/mas-select/fr/start-fast/first-task/administrator-first-task.html"/>
-    </url>
-    <url>
-        <loc>https://ibm-mas.github.io/mas-select/start-fast/first-task/clerk-first-task.html</loc>
-        <lastmod>2026-11-06</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://ibm-mas.github.io/mas-select/start-fast/first-task/clerk-first-task.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://ibm-mas.github.io/mas-select/fr/start-fast/first-task/clerk-first-task.html"/>
     </url>
     <url>
         <loc>https://ibm-mas.github.io/mas-select/start-fast/first-task/get-maximo-mobile.html</loc>
@@ -771,6 +792,13 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://ibm-mas.github.io/mas-select/get-work-done/setup-control/correct-load-order.html"/>
     </url>
     <url>
+        <loc>https://ibm-mas.github.io/mas-select/fr/get-work-done/setup-control/create-inspection-forms.html</loc>
+        <lastmod>2026-11-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://ibm-mas.github.io/mas-select/fr/get-work-done/setup-control/create-inspection-forms.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ibm-mas.github.io/mas-select/get-work-done/setup-control/create-inspection-forms.html"/>
+    </url>
+    <url>
         <loc>https://ibm-mas.github.io/mas-select/fr/get-work-done/setup-control/decide-location-asset-spare-part.html</loc>
         <lastmod>2026-11-06</lastmod>
         <changefreq>daily</changefreq>
@@ -806,11 +834,32 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://ibm-mas.github.io/mas-select/get-work-done/setup-control/plan-your-location-hierarchy.html"/>
     </url>
     <url>
+        <loc>https://ibm-mas.github.io/mas-select/fr/get-work-done/setup-control/plan-your-pm-strategy.html</loc>
+        <lastmod>2026-11-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://ibm-mas.github.io/mas-select/fr/get-work-done/setup-control/plan-your-pm-strategy.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ibm-mas.github.io/mas-select/get-work-done/setup-control/plan-your-pm-strategy.html"/>
+    </url>
+    <url>
+        <loc>https://ibm-mas.github.io/mas-select/fr/get-work-done/setup-control/plan-your-storeroom-strategy.html</loc>
+        <lastmod>2026-11-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://ibm-mas.github.io/mas-select/fr/get-work-done/setup-control/plan-your-storeroom-strategy.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ibm-mas.github.io/mas-select/get-work-done/setup-control/plan-your-storeroom-strategy.html"/>
+    </url>
+    <url>
         <loc>https://ibm-mas.github.io/mas-select/fr/get-work-done/setup-control/prepare-data-for-import.html</loc>
         <lastmod>2026-11-06</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="https://ibm-mas.github.io/mas-select/fr/get-work-done/setup-control/prepare-data-for-import.html"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://ibm-mas.github.io/mas-select/get-work-done/setup-control/prepare-data-for-import.html"/>
+    </url>
+    <url>
+        <loc>https://ibm-mas.github.io/mas-select/fr/get-work-done/setup-control/set-up-failure-codes.html</loc>
+        <lastmod>2026-11-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://ibm-mas.github.io/mas-select/fr/get-work-done/setup-control/set-up-failure-codes.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ibm-mas.github.io/mas-select/get-work-done/setup-control/set-up-failure-codes.html"/>
     </url>
     <url>
         <loc>https://ibm-mas.github.io/mas-select/fr/get-work-done/setup-control/set-up-labor-crafts-crews.html</loc>
@@ -825,6 +874,13 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="https://ibm-mas.github.io/mas-select/fr/get-work-done/setup-control/set-up-maps.html"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://ibm-mas.github.io/mas-select/get-work-done/setup-control/set-up-maps.html"/>
+    </url>
+    <url>
+        <loc>https://ibm-mas.github.io/mas-select/fr/get-work-done/setup-control/set-up-meters.html</loc>
+        <lastmod>2026-11-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://ibm-mas.github.io/mas-select/fr/get-work-done/setup-control/set-up-meters.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ibm-mas.github.io/mas-select/get-work-done/setup-control/set-up-meters.html"/>
     </url>
     <url>
         <loc>https://ibm-mas.github.io/mas-select/fr/get-work-done/setup-control/why-does-asset-import-fail.html</loc>
@@ -953,25 +1009,11 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://ibm-mas.github.io/mas-select/start-fast/basics/why-do-terms-differ.html"/>
     </url>
     <url>
-        <loc>https://ibm-mas.github.io/mas-select/fr/start-fast/first-task/admin-first-task.html</loc>
-        <lastmod>2026-11-06</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://ibm-mas.github.io/mas-select/fr/start-fast/first-task/admin-first-task.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://ibm-mas.github.io/mas-select/start-fast/first-task/admin-first-task.html"/>
-    </url>
-    <url>
         <loc>https://ibm-mas.github.io/mas-select/fr/start-fast/first-task/administrator-first-task.html</loc>
         <lastmod>2026-11-06</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="https://ibm-mas.github.io/mas-select/fr/start-fast/first-task/administrator-first-task.html"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://ibm-mas.github.io/mas-select/start-fast/first-task/administrator-first-task.html"/>
-    </url>
-    <url>
-        <loc>https://ibm-mas.github.io/mas-select/fr/start-fast/first-task/clerk-first-task.html</loc>
-        <lastmod>2026-11-06</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://ibm-mas.github.io/mas-select/fr/start-fast/first-task/clerk-first-task.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://ibm-mas.github.io/mas-select/start-fast/first-task/clerk-first-task.html"/>
     </url>
     <url>
         <loc>https://ibm-mas.github.io/mas-select/fr/start-fast/first-task/get-maximo-mobile.html</loc>

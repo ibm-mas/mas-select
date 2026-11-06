@@ -1,0 +1,67 @@
+<svg width="680" height="280" viewBox="0 0 680 280" fill="none" xmlns="http://www.w3.org/2000/svg" style="background:#ffffff; font-family:'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <title>Inspection form design, configuration, and field execution lifecycle</title>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+
+  <!-- Step 1: Design Form -->
+  <g class="node">
+    <rect x="20" y="110" width="130" height="60" rx="2" fill="#0F62FE" stroke="#0F62FE" stroke-width="1.5"/>
+    <text x="85" y="133" font-size="9" font-weight="600" fill="#ffffff" text-anchor="middle" letter-spacing="0.2">STEP 1: DESIGN</text>
+    <text x="85" y="152" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">Form Builder</text>
+  </g>
+
+  <!-- Connectors to Response Types -->
+  <path d="M 150 140 H 175 V 50 Q 175 42 183 42 H 195" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="195,38 203,42 195,46" fill="#161616"/>
+
+  <path d="M 150 140 H 195" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="195,136 203,140 195,144" fill="#161616"/>
+
+  <path d="M 150 140 H 175 V 230 Q 175 238 183 238 H 195" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="195,234 203,238 195,242" fill="#161616"/>
+
+  <!-- Question Types -->
+  <g class="node">
+    <rect x="203" y="16" width="180" height="52" rx="2" fill="#EDF5FF" stroke="#0F62FE" stroke-width="1.5"/>
+    <text x="215" y="36" font-size="9" font-weight="600" fill="#0043CE">SINGLE / DOMAIN CHOICE</text>
+    <text x="215" y="53" font-size="11" fill="#161616">Pass/Fail or Domain picklist</text>
+  </g>
+
+  <g class="node">
+    <rect x="203" y="114" width="180" height="52" rx="2" fill="#EDF5FF" stroke="#0F62FE" stroke-width="1.5"/>
+    <text x="215" y="134" font-size="9" font-weight="600" fill="#0043CE">METER / NUMERIC ENTRY</text>
+    <text x="215" y="151" font-size="11" fill="#161616">Updates asset meters or logs data</text>
+  </g>
+
+  <g class="node">
+    <rect x="203" y="212" width="180" height="52" rx="2" fill="#EDF5FF" stroke="#0F62FE" stroke-width="1.5"/>
+    <text x="215" y="232" font-size="9" font-weight="600" fill="#0043CE">MEDIA / SIGNATURE</text>
+    <text x="215" y="249" font-size="11" fill="#161616">Photos and digital sign-off</text>
+  </g>
+
+  <!-- Connectors to Activation and Execution -->
+  <path d="M 383 42 H 410 V 132 Q 410 140 418 140 H 425" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <path d="M 383 140 H 425" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <path d="M 383 238 H 410 V 148 Q 410 140 418 140 H 425" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="425,136 433,140 425,144" fill="#161616"/>
+
+  <!-- Step 2: Activation & Linkage -->
+  <g class="node">
+    <rect x="433" y="110" width="105" height="60" rx="2" fill="#ffffff" stroke="#0F62FE" stroke-width="1.5"/>
+    <rect x="433" y="110" width="5" height="60" fill="#0F62FE"/>
+    <text x="445" y="132" font-size="9" font-weight="600" fill="#0F62FE">STEP 2</text>
+    <text x="445" y="148" font-size="11" font-weight="600" fill="#161616">Activate &amp;</text>
+    <text x="445" y="162" font-size="10" fill="#525252">link to PM / Route</text>
+  </g>
+
+  <!-- Connector to Execution -->
+  <path d="M 538 140 H 560" fill="none" stroke="#161616" stroke-width="1.5"/>
+  <polygon points="560,136 568,140 560,144" fill="#161616"/>
+
+  <!-- Step 3: Execution -->
+  <g class="node">
+    <rect x="568" y="110" width="95" height="60" rx="2" fill="#EDF5FF" stroke="#0F62FE" stroke-width="1.5"/>
+    <text x="615" y="133" font-size="9" font-weight="600" fill="#0043CE" text-anchor="middle">EXECUTION</text>
+    <text x="615" y="152" font-size="11" font-weight="600" fill="#161616" text-anchor="middle">Inspections</text>
+    <text x="615" y="165" font-size="9" fill="#525252" text-anchor="middle">Mobile app</text>
+  </g>
+</svg>
