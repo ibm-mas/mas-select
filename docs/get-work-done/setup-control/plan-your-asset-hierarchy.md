@@ -26,9 +26,20 @@ Apply the **nameplate and overhaul test** to every item:
 
 Creating asset records for consumable wear parts creates thousands of unnecessary records that clutter search results and navigation trees. Keep consumable wear parts in the Item Master and associate them directly with the parent asset.
 
-### 2. Keep the hierarchy shallow: two to three levels
+### Quick test: Should this be a child asset?
 
-While the database supports deep nesting, asset hierarchies should remain shallow, typically two to three levels deep:
+Create a child asset only if one or more of the following are true:
+
+- It is maintained independently.
+- It has its own maintenance history.
+- It can be replaced, rebuilt, or transferred separately.
+- It needs its own inspections, meters, or work orders.
+
+If the component is simply replaced when it fails and does not require separate tracking, it is probably a spare part rather than an asset.
+
+### 2. Keep the hierarchy shallow: typically two to three levels
+
+While the database supports deep nesting, most Maximo Application Suite Select organizations succeed with asset hierarchies that are no more than two to three levels deep:
 
 $$\text{Parent machine package} \longrightarrow \text{Subassembly} \longrightarrow \text{Maintainable component}$$
 
@@ -168,6 +179,20 @@ Always verify your import count against the number of rows in your source spread
 
 ---
 
+## Common planning mistakes
+
+When designing an asset hierarchy, avoid these common mistakes:
+
+- Creating assets for every component, no matter how small.
+- Tracking spare parts as assets.
+- Adding hierarchy levels that provide no maintenance or reporting value.
+- Creating separate assets that will never have their own work history.
+- Building a hierarchy that is difficult to navigate or maintain.
+
+A good asset hierarchy reflects how equipment is maintained, inspected, and reported on. Focus on maintainable equipment rather than trying to model every physical component.
+
+---
+
 ## Planning checklist
 
 Before loading your asset hierarchy into Maximo Application Suite Select, verify each planning requirement:
@@ -177,7 +202,7 @@ Before loading your asset hierarchy into Maximo Application Suite Select, verify
 | [ ] | **Maintainable equipment only** | Every asset record represents serialized, maintainable equipment, not consumable wear parts. |
 | [ ] | **Spare parts cataloged** | Consumables, o-rings, and gaskets are organized in Item Master for use on the Spare Parts tab. |
 | [ ] | **Valid operating locations** | Every top-level parent asset is assigned to an existing physical location record. |
-| [ ] | **Shallow hierarchy depth** | The equipment structure remains two to three levels deep, stopping at maintainable units. |
+| [ ] | **Shallow hierarchy depth** | The equipment structure stops at maintainable units, with most organizations using two to three levels. |
 | [ ] | **Standardized naming** | Equipment identifiers and asset tags follow consistent site naming conventions. |
 | [ ] | **Top-down import sequence** | Spreadsheet records are ordered so parent assets and locations exist before child records load. |
 

@@ -37,6 +37,16 @@ Because costs, safety plans, and work orders roll up through parent locations, g
 
 If you need to search or group locations by type or function, such as finding all restrooms or all electrical closets across a facility, use **Classifications** or location attributes rather than altering the primary physical hierarchy.
 
+### Quick test: Should this be a location?
+
+Create a location only if all of the following are true:
+
+- It is a fixed physical place.
+- Maintenance work might be planned, performed, or reported for it.
+- It needs its own maintenance history, costs, or operational context.
+
+If the item can be moved, repaired, replaced, or transferred, it is probably an asset rather than a location.
+
 ### 3. Decide how deep to go: stop at the maintainable level
 
 A frequent design mistake is creating too many nested levels. Deep hierarchies make drilldown navigation slow and cumbersome for technicians in the field.
@@ -182,6 +192,20 @@ What happens when you run the import in this order?
 Always verify your import count against the number of rows in your source spreadsheet. Prepare your spreadsheet formatting by following [How do I prepare data for import?](prepare-data-for-import.md). For details on sequencing, see [What is the correct load order?](correct-load-order.md), and see [How do I fix import errors?](why-does-asset-import-fail.md) if rows fail to load.
 
 </details>
+
+---
+
+## Common planning mistakes
+
+When designing a location hierarchy, avoid these common mistakes:
+
+- Organizing locations by function rather than physical geography.
+- Creating locations for movable equipment instead of physical places.
+- Adding levels that nobody will maintain, report on, or navigate to.
+- Designing only for today's facility without considering future expansion.
+- Creating orphan locations that are not connected to a parent location.
+
+A simple hierarchy that reflects the physical layout of your facility is easier to maintain and usually produces more accurate reporting than a highly detailed hierarchy.
 
 ---
 
