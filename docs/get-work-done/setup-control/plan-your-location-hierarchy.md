@@ -237,6 +237,7 @@ With your location hierarchy planned, organize your machinery, subassemblies, an
 
 ### Related skills
 
+- [How do I decide: location, asset, or spare part?](decide-location-asset-spare-part.md): Classify every facility entity, machine, and consumable wear item accurately.
 - [How do I prepare data for import?](prepare-data-for-import.md): Download CSV templates and format ID columns as text.
 - [How do I get data into the system?](get-data-into-system.md): Learn the upload, preview, and commit steps in Data Management.
 - [How do I fix import errors?](why-does-asset-import-fail.md): Troubleshoot missing parent locations or invalid fields.

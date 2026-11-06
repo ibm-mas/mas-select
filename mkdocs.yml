@@ -88,6 +88,7 @@ plugins:
             Automate communication: Automatiser la communication
             Set up labor, crafts, and crews: Configurer la main-d'œuvre, les métiers et les équipes
             Set up maps: Configurer les cartes
+            Decide location, asset, or spare part: 'Décider : emplacement, actif ou pièce de rechange'
             Plan your location hierarchy: Planifier votre hiérarchie d'emplacements
             Plan your asset hierarchy: Planifier votre hiérarchie d'actifs
             Prepare data for import: Préparer les données à importer
@@ -209,6 +210,7 @@ nav:
     - Set up and control:
       - Add users: get-work-done/setup-control/add-users.md
       - Correct load order: get-work-done/setup-control/correct-load-order.md
+      - Decide location, asset, or spare part: get-work-done/setup-control/decide-location-asset-spare-part.md
       - Plan your location hierarchy: get-work-done/setup-control/plan-your-location-hierarchy.md
       - Plan your asset hierarchy: get-work-done/setup-control/plan-your-asset-hierarchy.md
       - Prepare data for import: get-work-done/setup-control/prepare-data-for-import.md

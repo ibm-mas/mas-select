@@ -137,6 +137,7 @@ Before preparing spreadsheet files, sketch your site and room structure to avoid
 
 ### Related skills
 
+- [How do I decide: location, asset, or spare part?](decide-location-asset-spare-part.md): Classify every facility entity, machine, and consumable wear item accurately.
 - [How do I plan my asset hierarchy?](plan-your-asset-hierarchy.md): Structure equipment packages, subassemblies, and maintainable components.
 - [How do I prepare data for import?](prepare-data-for-import.md): Format and clean your CSV files and prevent spreadsheet corruption.
 - [How do I get data into the system?](get-data-into-system.md): Upload and preview your records in the Data Management application.

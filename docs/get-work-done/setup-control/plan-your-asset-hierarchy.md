@@ -221,6 +221,7 @@ With your location and asset hierarchies planned, download CSV templates from Da
 
 ### Related skills
 
+- [How do I decide: location, asset, or spare part?](decide-location-asset-spare-part.md): Classify every facility entity, machine, and consumable wear item accurately.
 - [What is the correct load order?](correct-load-order.md): Review the full five-step data onboarding roadmap.
 - [How do I get data into the system?](get-data-into-system.md): Learn the upload, preview, and commit steps in Data Management.
 - [How do I fix import errors?](why-does-asset-import-fail.md): Troubleshoot missing parent records or invalid fields.
