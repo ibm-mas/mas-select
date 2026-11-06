@@ -19,3 +19,6 @@ project-docs/sources/maximo-manage/
 # Root-level working spreadsheets
 QA fields.xlsx
 Locations.xlsx
+
+# Internal deployment guide
+GITHUB_PAGES_DEPLOYMENT_GUIDE.md
