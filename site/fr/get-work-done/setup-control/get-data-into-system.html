@@ -372,8 +372,74 @@
       
         
   
+    <cds-side-nav-menu-item href="correct-load-order.html" class="nav-level-3">
+      Ordre de chargement correct
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="plan-your-location-hierarchy.html" class="nav-level-3">
+      Planifier votre hiérarchie d'emplacements
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="plan-your-asset-hierarchy.html" class="nav-level-3">
+      Planifier votre hiérarchie d'actifs
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="prepare-data-for-import.html" class="nav-level-3">
+      Préparer les données à importer
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
     <cds-side-nav-menu-item href="get-data-into-system.html" active="" expanded="" class="nav-level-3">
       Charger des données dans le système
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="why-does-asset-import-fail.html" class="nav-level-3">
+      Corriger les erreurs d'importation
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="object-structure-data-types.html" class="nav-level-3">
+      Types de données
     </cds-side-nav-menu-item>
   
 
@@ -407,50 +473,6 @@
   
     <cds-side-nav-menu-item href="set-up-maps.html" class="nav-level-3">
       Configurer les cartes
-    </cds-side-nav-menu-item>
-  
-
-      
-    
-      
-      
-        
-  
-    <cds-side-nav-menu-item href="prepare-data-for-import.html" class="nav-level-3">
-      Préparer les données à importer
-    </cds-side-nav-menu-item>
-  
-
-      
-    
-      
-      
-        
-  
-    <cds-side-nav-menu-item href="correct-load-order.html" class="nav-level-3">
-      Ordre de chargement correct
-    </cds-side-nav-menu-item>
-  
-
-      
-    
-      
-      
-        
-  
-    <cds-side-nav-menu-item href="why-does-asset-import-fail.html" class="nav-level-3">
-      Corriger les erreurs d'importation
-    </cds-side-nav-menu-item>
-  
-
-      
-    
-      
-      
-        
-  
-    <cds-side-nav-menu-item href="object-structure-data-types.html" class="nav-level-3">
-      Types de données
     </cds-side-nav-menu-item>
   
 
@@ -1166,36 +1188,33 @@
 </table>
 <hr>
 <h2 id="how-to-get-the-correct-template">How to get the correct template<a class="headerlink" href="#how-to-get-the-correct-template" title="Permanent link">¤</a></h2>
-<p>Before filling in your data, export an existing record to get a template with the correct column names and format.</p>
+<p>Before filling in your data, use the Data Management application to download a template or export sample records with the correct column names and structure.</p>
 <p><strong>What to do:</strong></p>
 <ol>
-<li>Open the application that matches the data you want to import. For example, open the <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">Assets</abbr> application to get an <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">assets</abbr> template.</li>
-<li>Search for and open any existing record.</li>
-<li>Click the download icon or <strong>Export data</strong>.</li>
-<li>In the Export data window, select <strong>Export custom columns</strong>.</li>
-<li>In the Template name field, select the <abbr title="Defines the records and related fields that are available for importing, exporting, or exchanging data.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; data structure, import template, or record definition">object structure</abbr> that matches your data type.</li>
-<li>Click <strong>Export</strong>. The file downloads as a CSV.</li>
+<li>Go to <strong>Setup and administration &gt; Data Management</strong>.</li>
+<li>Select the data type or <abbr title="Defines the records and related fields that are available for importing, exporting, or exchanging data.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; data structure, import template, or record definition">object structure</abbr> you want to import, such as <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr> or <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">assets</abbr>.</li>
+<li>Click <strong>Export data</strong> or download the template for that data type.</li>
+<li>Open the downloaded CSV file in a spreadsheet application to review the required columns and format.</li>
 </ol>
-<p>Open the file in a spreadsheet application to see the required columns and their format. Do not enter a value in the Template name field when exporting. Leave it blank to get the default structure.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If no records exist yet, your system administrator can provide a template directly, or you can find the required fields in <a href="prepare-data-for-import.html">How do I prepare data for import?</a>.</p>
+<p>If you need a breakdown of the specific column fields for each data type, see <a href="object-structure-data-types.html">Which <abbr title="Defines the records and related fields that are available for importing, exporting, or exchanging data.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; data structure, import template, or record definition">object structure</abbr> do I use for each data type?</a> and <a href="prepare-data-for-import.html">How do I prepare data for import?</a>.</p>
 </div>
 <hr>
 <h2 id="how-to-import-your-data">How to import your data<a class="headerlink" href="#how-to-import-your-data" title="Permanent link">¤</a></h2>
 <p>Once your CSV file is prepared and validated:</p>
 <p><strong>What to do:</strong></p>
 <ol>
-<li>Open the application where you want to import data. For example, open the <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">Assets</abbr> application to import <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">assets</abbr>.</li>
-<li>Click the upload icon or <strong>Import data</strong>.</li>
-<li>In the Import data window, select the <strong><abbr title="Defines the records and related fields that are available for importing, exporting, or exchanging data.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; data structure, import template, or record definition">object structure</abbr></strong> that matches your file.</li>
+<li>Go to <strong>Setup and administration &gt; Data Management</strong>.</li>
+<li>Select the data type or <abbr title="Defines the records and related fields that are available for importing, exporting, or exchanging data.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; data structure, import template, or record definition">object structure</abbr> that matches your file.</li>
+<li>Click <strong>Import data</strong>.</li>
 <li>Click <strong>Browse</strong> and select your prepared CSV file.</li>
 <li>Select <strong>Import preview</strong> to check for errors before committing the import.</li>
-<li>Review any errors flagged in the preview. Fix the issues in your CSV file and upload again if needed.</li>
+<li>Review any errors flagged in the preview. Fix any issues in your CSV file and upload again if needed.</li>
 <li>Once the preview is clean, clear <strong>Import preview</strong> and click <strong>Import</strong> to run the full import.</li>
-<li>Click the number in <strong>Total rows</strong> to go to the application and review your imported records.</li>
+<li>Review the import summary and row counts to confirm that all records were created successfully.</li>
 </ol>
-<p><code>[SME confirmation required: confirm exact UI labels for Import data button and Import preview checkbox in MAS Select — these may differ from Maximo Manage]</code></p>
+<p><code>[SME confirmation required: confirm exact UI labels for Import data button, template downloads, and Import preview checkbox in the MAS Select Data Management application — these may differ from Maximo Manage]</code></p>
 <hr>
 <h2 id="what-happens-during-import">What happens during import<a class="headerlink" href="#what-happens-during-import" title="Permanent link">¤</a></h2>
 <p>When you import a file, the system:</p>
@@ -1228,19 +1247,23 @@
 <p><code>[SME confirmation required: confirm the 500 KB limit applies in MAS Select — sourced from IBM Docs for MAS 9.1 but may differ in MAS Select SaaS context]</code></p>
 <hr>
 <h2 id="continue-building-your-skills">Continue building your skills<a class="headerlink" href="#continue-building-your-skills" title="Permanent link">¤</a></h2>
-<h3 id="fix-errors-when-an-import-fails">Fix errors when an import fails<a class="headerlink" href="#fix-errors-when-an-import-fails" title="Permanent link">¤</a></h3>
-<p>Not every import goes smoothly. Learn how to read the error report and correct common problems.</p>
+<h3 id="recommended-next-step-fix-errors-when-an-import-fails">Recommended next step: Fix errors when an import fails<a class="headerlink" href="#recommended-next-step-fix-errors-when-an-import-fails" title="Permanent link">¤</a></h3>
+<p>Not every import goes smoothly. Learn how to diagnose preview errors, correct source CSV rows, and re-import failed records.</p>
 <p><a href="why-does-asset-import-fail.html">How do I fix import errors?</a></p>
-<h3 id="verify-the-system-is-working">Verify the system is working<a class="headerlink" href="#verify-the-system-is-working" title="Permanent link">¤</a></h3>
-<p>Once your data is in, check whether the system is performing as expected.</p>
-<p><a href="../monitor-respond/what-metrics-matter.html">What metrics matter?</a></p>
+<h3 id="related-skills">Related skills<a class="headerlink" href="#related-skills" title="Permanent link">¤</a></h3>
+<ul>
+<li><a href="../monitor-respond/what-metrics-matter.html">What metrics matter?</a>: Once your data is loaded, check whether the system is performing as expected.</li>
+<li><a href="plan-your-location-hierarchy.html">How do I plan my <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> hierarchy?</a>: Review <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> structure rules and parent-child best practices.</li>
+<li><a href="plan-your-asset-hierarchy.html">How do I plan my <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> hierarchy?</a>: Structure equipment packages, subassemblies, and maintainable components.</li>
+<li><a href="correct-load-order.html">What is the correct load order?</a>: Review the full five-step data onboarding roadmap.</li>
+</ul>
 <hr>
 <h2 id="related-topics">Related topics<a class="headerlink" href="#related-topics" title="Permanent link">¤</a></h2>
 <ul>
+<li><a href="object-structure-data-types.html">Which <abbr title="Defines the records and related fields that are available for importing, exporting, or exchanging data.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; data structure, import template, or record definition">object structure</abbr> do I use for each data type?</a></li>
 <li><a href="prepare-data-for-import.html">How do I prepare data for import?</a></li>
-<li><a href="correct-load-order.html">What is the correct load order?</a></li>
-<li><a href="why-does-asset-import-fail.html">How do I fix import errors?</a></li>
 <li><a href="../../start-fast/first-task/administrator-first-task.html">Administrator: Add users</a></li>
+<li><a href="../organize-people/standardize-data.html">How do I standardize data?</a></li>
 </ul>
             
           </div>
@@ -1248,7 +1271,7 @@
           <!-- Navigation footer (prev/next) -->
 <nav class="md-footer-nav" aria-label="Footer navigation">
   <div class="md-footer-nav__inner">
-    <a href="add-users.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+    <a href="prepare-data-for-import.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
       <div class="md-footer-nav__direction">
         <svg class="md-footer-nav__icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"></path>
@@ -1256,10 +1279,10 @@
         <span>Previous</span>
       </div>
       <div class="md-footer-nav__title">
-        <span class="md-footer-nav__title-text">Ajouter des utilisateurs</span>
+        <span class="md-footer-nav__title-text">Préparer les données à importer</span>
       </div>
     </a>
-    <a href="automate-communication.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+    <a href="why-does-asset-import-fail.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
       <div class="md-footer-nav__direction">
         <span>Next</span>
         <svg class="md-footer-nav__icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -1267,7 +1290,7 @@
         </svg>
       </div>
       <div class="md-footer-nav__title">
-        <span class="md-footer-nav__title-text">Automatiser la communication</span>
+        <span class="md-footer-nav__title-text">Corriger les erreurs d'importation</span>
       </div>
     </a>
   </div>
@@ -1331,13 +1354,13 @@
                 </a>
                   <ul class="md-toc__list">
                       <li class="md-toc__item">
-                        <a href="#fix-errors-when-an-import-fails" class="md-toc__link" data-md-level="2">
-                          Fix errors when an import fails
+                        <a href="#recommended-next-step-fix-errors-when-an-import-fails" class="md-toc__link" data-md-level="2">
+                          Recommended next step: Fix errors when an import fails
                         </a>
                       </li>
                       <li class="md-toc__item">
-                        <a href="#verify-the-system-is-working" class="md-toc__link" data-md-level="2">
-                          Verify the system is working
+                        <a href="#related-skills" class="md-toc__link" data-md-level="2">
+                          Related skills
                         </a>
                       </li>
                   </ul>

@@ -1,0 +1,76 @@
+<svg width="480" height="380" viewBox="0 0 480 380" fill="none" xmlns="http://www.w3.org/2000/svg" style="background:#ffffff; font-family:'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <title>Asset versus Location distinction</title>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+
+  <!-- Left Column: Incorrect Model (Building as Asset) -->
+  <g class="incorrect-model" transform="translate(16, 16)">
+    <rect width="216" height="300" fill="#FFF1F1" stroke="#DA1E28" stroke-width="1.5" rx="2"/>
+    <rect width="216" height="30" fill="#DA1E28" rx="2"/>
+    <text x="12" y="20" font-size="11" font-weight="700" fill="#ffffff" letter-spacing="0.2">INCORRECT MODEL</text>
+
+    <!-- Building incorrectly as Asset -->
+    <rect x="12" y="42" width="192" height="50" fill="#ffffff" stroke="#DA1E28" stroke-width="1.5" rx="2"/>
+    <rect x="12" y="42" width="6" height="50" fill="#DA1E28"/>
+    <text x="24" y="60" font-size="10" font-weight="700" fill="#DA1E28">WRONG: ASSET RECORD</text>
+    <text x="24" y="78" font-size="12" font-weight="600" fill="#161616">Production building</text>
+
+    <!-- Equipment nested as child assets under building asset -->
+    <rect x="28" y="108" width="176" height="40" fill="#ffffff" stroke="#8d8d8d" stroke-width="1" rx="2"/>
+    <text x="36" y="124" font-size="9" font-weight="600" fill="#525252">CHILD ASSET</text>
+    <text x="36" y="139" font-size="11" font-weight="600" fill="#161616">Filler FL-02</text>
+
+    <rect x="28" y="156" width="176" height="40" fill="#ffffff" stroke="#8d8d8d" stroke-width="1" rx="2"/>
+    <text x="36" y="172" font-size="9" font-weight="600" fill="#525252">CHILD ASSET</text>
+    <text x="36" y="187" font-size="11" font-weight="600" fill="#161616">Mixing tank</text>
+
+    <!-- Connector -->
+    <path d="M 20 92 V 176 H 28" fill="none" stroke="#DA1E28" stroke-width="1.5"/>
+    <path d="M 20 128 H 28" fill="none" stroke="#DA1E28" stroke-width="1.5"/>
+
+    <!-- Failure notes -->
+    <rect x="12" y="212" width="192" height="74" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="2"/>
+    <text x="20" y="230" font-size="11" font-weight="700" fill="#DA1E28">Why it fails:</text>
+    <text x="20" y="248" font-size="10" font-weight="400" fill="#525252">• Breaks mobile location drilldown</text>
+    <text x="20" y="264" font-size="10" font-weight="400" fill="#525252">• Cannot track equipment moves</text>
+    <text x="20" y="280" font-size="10" font-weight="400" fill="#525252">• Distorts asset lifecycle metrics</text>
+  </g>
+
+  <!-- Right Column: Correct Model (Location contains Asset) -->
+  <g class="correct-model" transform="translate(248, 16)">
+    <rect width="216" height="300" fill="#EDF5FF" stroke="#0F62FE" stroke-width="1.5" rx="2"/>
+    <rect width="216" height="30" fill="#0F62FE" rx="2"/>
+    <text x="12" y="20" font-size="11" font-weight="700" fill="#ffffff" letter-spacing="0.2">CORRECT MODEL</text>
+
+    <!-- Building correctly as Location -->
+    <rect x="12" y="42" width="192" height="50" fill="#ffffff" stroke="#0F62FE" stroke-width="1.5" rx="2"/>
+    <rect x="12" y="42" width="6" height="50" fill="#0F62FE"/>
+    <text x="24" y="60" font-size="10" font-weight="700" fill="#0F62FE">LOCATION RECORD</text>
+    <text x="24" y="78" font-size="12" font-weight="600" fill="#161616">Production building</text>
+
+    <!-- Equipment installed inside the location -->
+    <rect x="28" y="108" width="176" height="40" fill="#D9FBFB" stroke="#009D9A" stroke-width="1.5" rx="2"/>
+    <rect x="28" y="108" width="4" height="40" fill="#009D9A"/>
+    <text x="38" y="124" font-size="9" font-weight="600" fill="#009D9A">OPERATING ASSET</text>
+    <text x="38" y="139" font-size="11" font-weight="600" fill="#161616">Filler FL-02</text>
+
+    <rect x="28" y="156" width="176" height="40" fill="#D9FBFB" stroke="#009D9A" stroke-width="1.5" rx="2"/>
+    <rect x="28" y="156" width="4" height="40" fill="#009D9A"/>
+    <text x="38" y="172" font-size="9" font-weight="600" fill="#009D9A">OPERATING ASSET</text>
+    <text x="38" y="187" font-size="11" font-weight="600" fill="#161616">Mixing tank</text>
+
+    <!-- Connector -->
+    <path d="M 20 92 V 176 H 28" fill="none" stroke="#0F62FE" stroke-width="1.5"/>
+    <path d="M 20 128 H 28" fill="none" stroke="#0F62FE" stroke-width="1.5"/>
+
+    <!-- Success notes -->
+    <rect x="12" y="212" width="192" height="74" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="2"/>
+    <text x="20" y="230" font-size="11" font-weight="700" fill="#0F62FE">Why it succeeds:</text>
+    <text x="20" y="248" font-size="10" font-weight="400" fill="#525252">• Clean geographic room drilldown</text>
+    <text x="20" y="264" font-size="10" font-weight="400" fill="#525252">• Equipment moves retain history</text>
+    <text x="20" y="280" font-size="10" font-weight="400" fill="#525252">• Independent building cost roll-up</text>
+  </g>
+
+  <!-- Summary banner (bottom) -->
+  <rect x="16" y="328" width="448" height="38" fill="#DEFBE6" stroke="#198038" stroke-width="1"/>
+  <text x="32" y="352" font-size="12" font-weight="600" fill="#198038">Core rule: Places where work happens are locations; maintainable equipment are assets</text>
+</svg>

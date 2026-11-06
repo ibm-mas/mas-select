@@ -2,14 +2,13 @@
 
 Import order matters. Referenced records must exist before records that use them, and parent records must exist before child records.
 
-!!! warning "TODO: Add visual content"
-     A diagram showing the dependency chain (reference data → locations → assets → work orders) would be useful here.
+<img src="../../images/data_onboarding_pathway.svg" alt="Five-step data onboarding pathway in Maximo Application Suite Select: 1. Understand the correct load order, 2. Plan your location hierarchy, 3. Prepare data for import, 4. Get data into the system, 5. Fix import errors." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
 
 ## Why does load order matter?
 
-Child records reference parent records. If the parent doesn't exist yet, the child import will fail. Similarly, if a record references supporting data that doesn't exist, the import will fail.
+Child records reference parent records. If the parent does not exist yet, the child import fails. Similarly, if a record references supporting data that does not exist, the import fails.
 
-**Example**: You can't create "Ice Cream Plant A > Production Building > Filling Line 2" if "Ice Cream Plant A" and "Production Building" don't exist.
+**Example**: You cannot create `Ice cream main plant > Production building > Filling line room` if `Ice cream main plant` and `Production building` do not exist.
 
 ## Recommended import order
 
@@ -26,17 +25,17 @@ Import supporting records before importing locations or assets that reference th
 - Vendors and manufacturers
 - Asset type values
 - Classifications and specifications
-- Site addresses (bill-to and ship-to)
+- Site addresses, including bill-to and ship-to addresses
 
-**Why this matters**: Locations and assets reference these records. If the referenced data doesn't exist, the import will fail.
+**Why this matters**: Locations and assets reference these records. If the referenced data does not exist, the import fails.
 
-### 2. Locations (in hierarchy order)
+### 2. Locations in hierarchy order
 
 Import locations from top to bottom of the hierarchy:
 
-1. **Top-level locations first** (Ice Cream Plant A)
-2. **Second-level locations next** (Production Building)
-3. **Lowest-level locations last** (Filling Line 2)
+1. **Top-level locations first**, such as `Ice cream main plant`
+2. **Second-level locations next**, such as `Production building`
+3. **Lowest-level locations last**, such as `Filling line room`
 
 **What to check**:
 
@@ -46,16 +45,16 @@ Import locations from top to bottom of the hierarchy:
 - Confirm that each child location references the correct parent
 
 !!! tip "Import hierarchies sequentially"
-    Hierarchies require sequential loading (top → down). Import parent locations first, then their children.
+    Hierarchies require sequential loading from the top down. Import parent locations first, then their children.
 
-### 3. Assets (including parent-child relationships)
+### 3. Assets and asset relationships
 
 Import assets after their locations exist.
 
 **What to check**:
 
 - Location references are valid
-- Parent assets exist (if using asset hierarchies)
+- Parent assets exist, if you use asset hierarchies. Learn how to structure equipment packages in [How do I plan my asset hierarchy?](plan-your-asset-hierarchy.md).
 
 **For asset hierarchies**:
 
@@ -67,28 +66,30 @@ Import assets after their locations exist.
 
 Import other records that depend on locations and assets:
 
-- Work orders (reference assets and locations)
-- Inventory (reference locations)
+- Work orders, which reference assets and locations
+- Inventory and storerooms, which reference locations
 
 ## Common hierarchy patterns
 
 ### Location hierarchies
 
 **Correct order**:
-1. Site (Ice Cream Plant A)
-2. Building (Production Building)
-3. Area (Filling Line 2)
-4. Sub-area (if applicable)
 
-**What happens if you import in wrong order**: Child locations fail because their parent doesn't exist.
+1. Site, such as `Ice cream main plant`
+2. Building, such as `Production building`
+3. Area or room, such as `Filling line room`
+4. Sub-area, if applicable
+
+**What happens if you import in the wrong order**: Child locations fail because their parent does not exist.
 
 **What to do**: Sort your import file so parent records come before child records.
 
 ### Asset hierarchies
 
-If using parent-child asset relationships:
+If you use parent-child asset relationships:
 
 **Correct order**:
+
 1. Parent assets
 2. Child assets or subassemblies
 
@@ -112,38 +113,40 @@ If using parent-child asset relationships:
 
 ---
 
-## What happens next?
+## Data onboarding roadmap
 
-After understanding load order:
+Follow these five steps in sequence to load your facility data:
 
-1. Plan your import sequence
-2. Import reference data first
-3. Prepare data files in the correct order
-4. Import parent records before children
-5. Verify parents were created successfully
-6. Import child records
+| Step | Action | Guide |
+|---|---|---|
+| 1 | **Understand load order**<br>Review dependencies and ensure referenced records and parent locations exist first. | [What is the correct load order?](correct-load-order.md) |
+| 2 | **Plan your location hierarchy**<br>Map your site, buildings, and rooms top-down on paper before creating records. | [How do I plan my location hierarchy?](plan-your-location-hierarchy.md) |
+| 3 | **Prepare data for import**<br>Download CSV templates from Data Management, format ID columns as text, and clean fields. | [How do I prepare data for import?](prepare-data-for-import.md) |
+| 4 | **Get data into the system**<br>Upload CSV files in Data Management, validate rows in preview mode, and commit the import. | [How do I get data into the system?](get-data-into-system.md) |
+| 5 | **Fix import errors**<br>Diagnose preview errors, correct source CSV rows, and re-import failed records. | [How do I fix import errors?](why-does-asset-import-fail.md) |
 
 ---
 
 ## Continue building your skills
 
-### Run the import
+### Recommended next step: Plan your location hierarchy
 
-With your data in the correct order, you're ready to import it into the system.
+Before preparing spreadsheet files, sketch your site and room structure to avoid orphan records and grouping errors.
 
-[How do I get data into the system?](get-data-into-system.md)
+[How do I plan my location hierarchy?](plan-your-location-hierarchy.md)
 
-### Fix errors when an import fails
+### Related skills
 
-Some failures are about order and dependency. Learn how to read the error report and resolve problems.
-
-[How do I fix import errors?](why-does-asset-import-fail.md)
+- [How do I plan my asset hierarchy?](plan-your-asset-hierarchy.md): Structure equipment packages, subassemblies, and maintainable components.
+- [How do I prepare data for import?](prepare-data-for-import.md): Format and clean your CSV files and prevent spreadsheet corruption.
+- [How do I get data into the system?](get-data-into-system.md): Upload and preview your records in the Data Management application.
+- [How do I fix import errors?](why-does-asset-import-fail.md): Troubleshoot missing parents and referenced record failures.
 
 ---
 
 ## Related topics
 
-- [How do I prepare data for import?](prepare-data-for-import.md)
-- [Data types](object-structure-data-types.md)
-- [How do I fix import errors?](why-does-asset-import-fail.md)
-- [How do I get data into the system?](get-data-into-system.md)
+- [Locations](../../start-fast/basics/what-is-location.md)
+- [What is an asset?](../../start-fast/basics/what-is-asset.md)
+- [How do locations, assets, and work orders work together?](../../start-fast/basics/how-concepts-work-together.md)
+- [Which object structure do I use for each data type?](object-structure-data-types.md)

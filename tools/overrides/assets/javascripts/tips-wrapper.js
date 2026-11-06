@@ -90,11 +90,11 @@
                 wrapper.appendChild(elementToMove);
             }
         });
-        // Find all h2 and h3 elements with IDs containing "building" or "skills"
+        // Find all h2 elements for "Continue building your skills" sections
         var skillsRoot = (typeof base_url !== 'undefined') ? base_url + '/' : './';
         var skillsImgTag = '<img src="' + skillsRoot + 'images/Education.png" class="skills-icon" alt="Continue building your skills">\u00a0';
 
-        const skillsHeadings = document.querySelectorAll('h2[id*="building"], h3[id*="building"], h2[id*="continue"], h3[id*="continue"]');
+        const skillsHeadings = document.querySelectorAll('h2[id*="continue-building"], h2[id*="building-your-skills"], h2[id*="building-skills"]');
 
         skillsHeadings.forEach(function(heading) {
             // Create wrapper div with skills-callout class

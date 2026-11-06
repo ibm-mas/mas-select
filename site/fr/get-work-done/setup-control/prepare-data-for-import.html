@@ -372,8 +372,74 @@
       
         
   
+    <cds-side-nav-menu-item href="correct-load-order.html" class="nav-level-3">
+      Ordre de chargement correct
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="plan-your-location-hierarchy.html" class="nav-level-3">
+      Planifier votre hiérarchie d'emplacements
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="plan-your-asset-hierarchy.html" class="nav-level-3">
+      Planifier votre hiérarchie d'actifs
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="prepare-data-for-import.html" active="" expanded="" class="nav-level-3">
+      Préparer les données à importer
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
     <cds-side-nav-menu-item href="get-data-into-system.html" class="nav-level-3">
       Charger des données dans le système
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="why-does-asset-import-fail.html" class="nav-level-3">
+      Corriger les erreurs d'importation
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="object-structure-data-types.html" class="nav-level-3">
+      Types de données
     </cds-side-nav-menu-item>
   
 
@@ -407,50 +473,6 @@
   
     <cds-side-nav-menu-item href="set-up-maps.html" class="nav-level-3">
       Configurer les cartes
-    </cds-side-nav-menu-item>
-  
-
-      
-    
-      
-      
-        
-  
-    <cds-side-nav-menu-item href="prepare-data-for-import.html" active="" expanded="" class="nav-level-3">
-      Préparer les données à importer
-    </cds-side-nav-menu-item>
-  
-
-      
-    
-      
-      
-        
-  
-    <cds-side-nav-menu-item href="correct-load-order.html" class="nav-level-3">
-      Ordre de chargement correct
-    </cds-side-nav-menu-item>
-  
-
-      
-    
-      
-      
-        
-  
-    <cds-side-nav-menu-item href="why-does-asset-import-fail.html" class="nav-level-3">
-      Corriger les erreurs d'importation
-    </cds-side-nav-menu-item>
-  
-
-      
-    
-      
-      
-        
-  
-    <cds-side-nav-menu-item href="object-structure-data-types.html" class="nav-level-3">
-      Types de données
     </cds-side-nav-menu-item>
   
 
@@ -1146,7 +1168,7 @@
 <h3 id="use-the-correct-file-format">Use the correct file format<a class="headerlink" href="#use-the-correct-file-format" title="Permanent link">¤</a></h3>
 <p><strong>What to do</strong>:</p>
 <ul>
-<li>Save files as CSV (Comma delimited) format</li>
+<li>Save files as CSV format, using comma delimiters</li>
 <li>Use UTF-8 encoding for special characters</li>
 <li>Format ID columns as text in Excel before entering data</li>
 </ul>
@@ -1155,15 +1177,15 @@
 <ul>
 <li>Column names match system field names exactly</li>
 <li>All required fields are included</li>
-<li>Field names are correct (case-sensitive)</li>
+<li>Field names are correct, which are case-sensitive</li>
 </ul>
 <p><strong>What to do</strong>: Use a template or export an existing record to see the correct structure.</p>
 <h3 id="prevent-excel-from-corrupting-data">Prevent Excel from corrupting data<a class="headerlink" href="#prevent-excel-from-corrupting-data" title="Permanent link">¤</a></h3>
 <p>Excel can corrupt data in several ways:</p>
 <ul>
-<li><strong>Dates</strong>: Converts text to dates (01-02 becomes Jan 2)</li>
-<li><strong>IDs</strong>: Removes leading zeros (001 becomes 1)</li>
-<li><strong>Long numbers</strong>: Converts to scientific notation</li>
+<li><strong>Dates</strong>: Converts text to dates, such as converting 01-02 to Jan 2</li>
+<li><strong>IDs</strong>: Removes leading zeros, such as converting 001 to 1</li>
+<li><strong>Long numbers</strong>: Converts long numbers to scientific notation</li>
 </ul>
 <p><strong>What to do</strong>: Format all columns as text in Excel before entering data, or use a plain text editor to create the CSV.</p>
 <div class="admonition warning">
@@ -1175,7 +1197,7 @@
 <ul>
 <li>Remove extra spaces from all fields</li>
 <li>Ensure consistent formatting</li>
-<li>Validate data against system values (<abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr> codes, <abbr title="A data partitioning concept that represents a plant, facility, or business unit.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; plant, facility, or business unit">site</abbr> IDs, etc.)</li>
+<li>Validate data against system values, such as <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr> codes and <abbr title="A data partitioning concept that represents a plant, facility, or business unit.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; plant, facility, or business unit">site</abbr> IDs</li>
 <li>Check for duplicate IDs</li>
 </ul>
 <h2 id="check-referenced-data-before-importing">Check referenced data before importing<a class="headerlink" href="#check-referenced-data-before-importing" title="Permanent link">¤</a></h2>
@@ -1255,7 +1277,7 @@
 <p><strong>What to do</strong>:</p>
 <ul>
 <li>Use one accepted date format consistently throughout the file</li>
-<li>Do not mix regional date formats (for example, MM/DD/YYYY and DD/MM/YYYY)</li>
+<li>Do not mix regional date formats, such as MM/DD/YYYY and DD/MM/YYYY</li>
 <li>Avoid ambiguous dates such as 01/02/2026 unless the accepted format is clear</li>
 <li>Format date columns as text in Excel before entering values</li>
 <li>Test a small batch that includes date values before importing the full file</li>
@@ -1271,14 +1293,14 @@
 <p>For <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr> and parent-child relationships:</p>
 <p><strong>What to do</strong>: Import in order:</p>
 <ol>
-<li>Top-level records first (parents)</li>
+<li>Top-level records first—parent <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr></li>
 <li>Second-level records next</li>
-<li>Lowest-level records last (children)</li>
+<li>Lowest-level records last—child <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr></li>
 </ol>
 <h2 id="break-large-imports-into-batches">Break large imports into batches<a class="headerlink" href="#break-large-imports-into-batches" title="Permanent link">¤</a></h2>
-<p><strong>What to do</strong>: </p>
+<p><strong>What to do</strong>:</p>
 <ul>
-<li>Break files into smaller batches (1,000-5,000 records at a time)</li>
+<li>Break files into smaller batches of 1,000 to 5,000 records at a time</li>
 <li>This prevents timeouts and makes troubleshooting easier</li>
 </ul>
 <h2 id="preview-before-importing">Preview before importing<a class="headerlink" href="#preview-before-importing" title="Permanent link">¤</a></h2>
@@ -1312,20 +1334,23 @@
 </ol>
 <hr>
 <h2 id="continue-building-your-skills">Continue building your skills<a class="headerlink" href="#continue-building-your-skills" title="Permanent link">¤</a></h2>
-<h3 id="get-the-sequence-right-before-you-import">Get the sequence right before you import<a class="headerlink" href="#get-the-sequence-right-before-you-import" title="Permanent link">¤</a></h3>
-<p>Import order matters. Learn which data types need to be loaded before others.</p>
-<p><a href="correct-load-order.html">What is the correct load order?</a></p>
-<h3 id="run-the-import">Run the import<a class="headerlink" href="#run-the-import" title="Permanent link">¤</a></h3>
-<p>With your data prepared, run the import.</p>
+<h3 id="recommended-next-step-get-data-into-the-system">Recommended next step: Get data into the system<a class="headerlink" href="#recommended-next-step-get-data-into-the-system" title="Permanent link">¤</a></h3>
+<p>With your CSV files prepared and validated, upload them into Data Management and preview your records before importing.</p>
 <p><a href="get-data-into-system.html">How do I get data into the system?</a></p>
+<h3 id="related-skills">Related skills<a class="headerlink" href="#related-skills" title="Permanent link">¤</a></h3>
+<ul>
+<li><a href="plan-your-location-hierarchy.html">How do I plan my <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> hierarchy?</a>: Map your physical facility structure before loading records.</li>
+<li><a href="plan-your-asset-hierarchy.html">How do I plan my <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> hierarchy?</a>: Structure machinery, subassemblies, and maintainable components.</li>
+<li><a href="why-does-asset-import-fail.html">How do I fix import errors?</a>: Learn how to read import preview reports and fix validation or dependency errors.</li>
+<li><a href="correct-load-order.html">What is the correct load order?</a>: Review the full five-step data onboarding roadmap.</li>
+</ul>
 <hr>
 <h2 id="related-topics">Related topics<a class="headerlink" href="#related-topics" title="Permanent link">¤</a></h2>
 <ul>
-<li><a href="correct-load-order.html">What is the correct load order?</a></li>
-<li><a href="object-structure-data-types.html">Data types</a></li>
-<li><a href="why-does-asset-import-fail.html">How do I fix import errors?</a></li>
-<li><a href="get-data-into-system.html">How do I get data into the system?</a></li>
+<li><a href="object-structure-data-types.html">Which <abbr title="Defines the records and related fields that are available for importing, exporting, or exchanging data.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; data structure, import template, or record definition">object structure</abbr> do I use for each data type?</a></li>
 <li><a href="../organize-people/standardize-data.html">How do I standardize data?</a></li>
+<li><a href="../../start-fast/basics/what-is-location.html"><abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">Locations</abbr></a></li>
+<li><a href="../../start-fast/basics/what-is-asset.html">What is an <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr>?</a></li>
 </ul>
             
           </div>
@@ -1333,7 +1358,7 @@
           <!-- Navigation footer (prev/next) -->
 <nav class="md-footer-nav" aria-label="Footer navigation">
   <div class="md-footer-nav__inner">
-    <a href="set-up-maps.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+    <a href="plan-your-asset-hierarchy.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
       <div class="md-footer-nav__direction">
         <svg class="md-footer-nav__icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"></path>
@@ -1341,10 +1366,10 @@
         <span>Previous</span>
       </div>
       <div class="md-footer-nav__title">
-        <span class="md-footer-nav__title-text">Configurer les cartes</span>
+        <span class="md-footer-nav__title-text">Planifier votre hiérarchie d'actifs</span>
       </div>
     </a>
-    <a href="correct-load-order.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+    <a href="get-data-into-system.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
       <div class="md-footer-nav__direction">
         <span>Next</span>
         <svg class="md-footer-nav__icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -1352,7 +1377,7 @@
         </svg>
       </div>
       <div class="md-footer-nav__title">
-        <span class="md-footer-nav__title-text">Ordre de chargement correct</span>
+        <span class="md-footer-nav__title-text">Charger des données dans le système</span>
       </div>
     </a>
   </div>
@@ -1448,13 +1473,13 @@
                 </a>
                   <ul class="md-toc__list">
                       <li class="md-toc__item">
-                        <a href="#get-the-sequence-right-before-you-import" class="md-toc__link" data-md-level="2">
-                          Get the sequence right before you import
+                        <a href="#recommended-next-step-get-data-into-the-system" class="md-toc__link" data-md-level="2">
+                          Recommended next step: Get data into the system
                         </a>
                       </li>
                       <li class="md-toc__item">
-                        <a href="#run-the-import" class="md-toc__link" data-md-level="2">
-                          Run the import
+                        <a href="#related-skills" class="md-toc__link" data-md-level="2">
+                          Related skills
                         </a>
                       </li>
                   </ul>

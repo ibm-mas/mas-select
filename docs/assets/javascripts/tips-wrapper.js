@@ -7,8 +7,8 @@
         var root = (typeof base_url !== 'undefined') ? base_url + '/' : './';
         var imgTag = '<img src="' + root + 'images/tips_final.png" class="tips-icon" alt="Tip">\u00a0';
 
-        // Find all h2 and h3 elements with IDs containing "tips"
-        const tipsHeadings = document.querySelectorAll('h2[id*="tips"], h3[id*="tips"]');
+        // Find all h2 and h3 elements with IDs containing "tip" or "tips"
+        const tipsHeadings = document.querySelectorAll('h2[id*="tip"], h3[id*="tip"]');
         
         tipsHeadings.forEach(function(heading) {
             // Create wrapper div
@@ -124,11 +124,11 @@
             }
         });
 
-        // Find all h2 and h3 elements with IDs containing "building" or "skills"
+        // Find all h2 elements for "Continue building your skills" sections
         var skillsRoot = (typeof base_url !== 'undefined') ? base_url + '/' : './';
         var skillsImgTag = '<img src="' + skillsRoot + 'images/Education.png" class="skills-icon" alt="Continue building your skills">\u00a0';
 
-        const skillsHeadings = document.querySelectorAll('h2[id*="building"], h3[id*="building"], h2[id*="continue"], h3[id*="continue"]');
+        const skillsHeadings = document.querySelectorAll('h2[id*="continue-building"], h2[id*="building-your-skills"], h2[id*="building-skills"]');
 
         skillsHeadings.forEach(function(heading) {
             // Create wrapper div with skills-callout class

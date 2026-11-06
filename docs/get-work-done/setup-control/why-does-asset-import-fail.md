@@ -33,12 +33,12 @@ Child locations can't be created if their parent doesn't exist yet.
 
 **What to do**: Import locations in order:
 
-1. Top-level locations first (Ice Cream Plant A)
-2. Second-level locations next (Production Building)
-3. Lowest-level locations last (Filling Line 2)
+1. Top-level locations first, such as `Ice cream main plant`
+2. Second-level locations next, such as `Production building`
+3. Lowest-level locations last, such as `Filling line room`
 
 !!! warning "TODO: Add visual content"
-     A diagram showing location hierarchy structure (parent → child relationships) would be useful here.
+     A diagram showing location hierarchy structure from parent to child relationships would be useful here.
 
 #### Incorrect object structure
 
@@ -59,7 +59,7 @@ Parent-child relationships must be defined correctly in the import file.
 **What to do**: Verify all parent locations exist before importing child locations.
 
 !!! tip "Import hierarchies sequentially"
-    Hierarchies require sequential loading (top → down). Import parent locations first, then their children.
+    Hierarchies require sequential loading from the top down. Import parent locations first, then their children.
 
 ### Location referenced data does not exist
 
@@ -77,7 +77,7 @@ Location imports fail when they reference supporting records that don't exist in
 **What to do**:
 
 - Create or correct the referenced record, or update the import file to use an existing value
-- Make sure values in the import file match system values exactly (case-sensitive)
+- Make sure values in the import file match system values exactly, which are case-sensitive
 - Verify spelling and IDs are correct
 
 ### 💡 Tips for successful location imports
@@ -136,7 +136,7 @@ Asset imports fail when they reference supporting records that don't exist in th
 - Service address is defined
 - Calendar and shift are configured
 - Failure class is set up
-- Rotating item is created (if applicable)
+- Rotating item is created, if applicable
 - Vendor or manufacturer exists
 - Type value is valid
 - Classification or specification is available
@@ -191,7 +191,7 @@ Problems with the data itself cause import failures.
 
 - Invalid status codes
 - Non-existent site references
-- Incorrect data types (text in number fields)
+- Incorrect data types, such as text in number fields
 - Invalid dates
 
 **What to do**: Validate data against system values before importing.
@@ -209,7 +209,7 @@ Partial imports happen when some records pass validation and others don't.
 - File size
 - Processing time
 
-**What to do**: Break large imports into smaller batches (for example, 1,000-5,000 records at a time).
+**What to do**: Break large imports into smaller batches of 1,000 to 5,000 records at a time.
 
 **Errors stop processing mid-file**: If a critical error occurs, the import might stop processing remaining records.
 
@@ -230,8 +230,8 @@ Date formatting is a common source of import errors across all record types.
 **Common causes**:
 
 - Excel changed the date format automatically
-- The file uses mixed date formats (for example, MM/DD/YYYY and DD/MM/YYYY)
-- The date format is ambiguous (for example, 01/02/2026)
+- The file uses mixed date formats, such as MM/DD/YYYY and DD/MM/YYYY
+- The date format is ambiguous, such as 01/02/2026
 - Date values do not match the expected import format
 
 **What to do**:
@@ -245,9 +245,9 @@ Date formatting is a common source of import errors across all record types.
 
 Excel can corrupt data in several ways:
 
-- **Dates**: Converts text to dates (01-02 becomes Jan 2)
-- **IDs**: Removes leading zeros (001 becomes 1)
-- **Long numbers**: Converts to scientific notation
+- **Dates**: Converts text to dates, such as converting 01-02 to Jan 2
+- **IDs**: Removes leading zeros, such as converting 001 to 1
+- **Long numbers**: Converts long numbers to scientific notation
 
 **What to do**: Format all columns as text in Excel before entering data, or use a plain text editor to create the CSV.
 
@@ -276,11 +276,11 @@ Bulk imports have constraints when loading very large volumes in a single batch.
 
 **UI session timeouts**: Long-running imports can time out in the web interface.
 
-**Not designed for massive single-file batches**: CSV imports work best with manageable batch sizes (typically under 5,000 records per file).
+**Not designed for massive single-file batches**: CSV imports work best with manageable batch sizes, typically under 5,000 records per file.
 
 **Better suited for smaller datasets**: For large imports, consider:
 
-- Breaking into smaller batches (files under 5,000 records)
+- Breaking into smaller batches of under 5,000 records
 - Loading parent records before child records in separate files
 - Using Data Management to monitor and track import status
 
@@ -302,20 +302,27 @@ To resolve import failures:
 
 ## Continue building your skills
 
-### Verify the system is working
+### Recommended next step: Verify the system is working
 
-Once your data is loaded, check whether the system is performing as expected.
+Once your data is successfully loaded, track work orders, costs, and equipment health across your facility.
 
 [What metrics matter?](../../get-work-done/monitor-respond/what-metrics-matter.md)
+
+### Related skills
+
+- [What is the correct load order?](correct-load-order.md): Review dependencies and ensure parent records exist before children.
+- [How do I plan my location hierarchy?](plan-your-location-hierarchy.md): Map physical places and prevent orphan records.
+- [How do I plan my asset hierarchy?](plan-your-asset-hierarchy.md): Structure equipment packages and avoid over-assetization.
+- [How do I get data into the system?](get-data-into-system.md): Return to Data Management to re-import corrected rows.
 
 ---
 
 ## Related topics
 
+- [Which object structure do I use for each data type?](object-structure-data-types.md)
 - [How do I prepare data for import?](prepare-data-for-import.md)
-- [What is the correct load order?](correct-load-order.md)
-- [How do I get data into the system?](get-data-into-system.md)
 - [How do I standardize data?](../organize-people/standardize-data.md)
+- [What is an asset?](../../start-fast/basics/what-is-asset.md)
 ---
 
 ## Still stuck?

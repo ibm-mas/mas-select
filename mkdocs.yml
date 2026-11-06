@@ -88,6 +88,8 @@ plugins:
             Automate communication: Automatiser la communication
             Set up labor, crafts, and crews: Configurer la main-d'œuvre, les métiers et les équipes
             Set up maps: Configurer les cartes
+            Plan your location hierarchy: Planifier votre hiérarchie d'emplacements
+            Plan your asset hierarchy: Planifier votre hiérarchie d'actifs
             Prepare data for import: Préparer les données à importer
             Correct load order: Ordre de chargement correct
             Fix import errors: Corriger les erreurs d'importation
@@ -206,14 +208,16 @@ nav:
   - Get work done:
     - Set up and control:
       - Add users: get-work-done/setup-control/add-users.md
+      - Correct load order: get-work-done/setup-control/correct-load-order.md
+      - Plan your location hierarchy: get-work-done/setup-control/plan-your-location-hierarchy.md
+      - Plan your asset hierarchy: get-work-done/setup-control/plan-your-asset-hierarchy.md
+      - Prepare data for import: get-work-done/setup-control/prepare-data-for-import.md
       - Get data into system: get-work-done/setup-control/get-data-into-system.md
+      - Fix import errors: get-work-done/setup-control/why-does-asset-import-fail.md
+      - Data types: get-work-done/setup-control/object-structure-data-types.md
       - Automate communication: get-work-done/setup-control/automate-communication.md
       - Set up labor, crafts, and crews: get-work-done/setup-control/set-up-labor-crafts-crews.md
       - Set up maps: get-work-done/setup-control/set-up-maps.md
-      - Prepare data for import: get-work-done/setup-control/prepare-data-for-import.md
-      - Correct load order: get-work-done/setup-control/correct-load-order.md
-      - Fix import errors: get-work-done/setup-control/why-does-asset-import-fail.md
-      - Data types: get-work-done/setup-control/object-structure-data-types.md
       - Configure Maximo Mobile: get-work-done/setup-control/configure-maximo-mobile.md
     - Plan work:
       - Recurring maintenance: get-work-done/plan-work/plan-recurring-maintenance.md

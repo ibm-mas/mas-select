@@ -19,7 +19,7 @@ Proper data preparation prevents import failures and ensures data quality.
 
 **What to do**:
 
-- Save files as CSV (Comma delimited) format
+- Save files as CSV format, using comma delimiters
 - Use UTF-8 encoding for special characters
 - Format ID columns as text in Excel before entering data
 
@@ -29,7 +29,7 @@ Proper data preparation prevents import failures and ensures data quality.
 
 - Column names match system field names exactly
 - All required fields are included
-- Field names are correct (case-sensitive)
+- Field names are correct, which are case-sensitive
 
 **What to do**: Use a template or export an existing record to see the correct structure.
 
@@ -37,9 +37,9 @@ Proper data preparation prevents import failures and ensures data quality.
 
 Excel can corrupt data in several ways:
 
-- **Dates**: Converts text to dates (01-02 becomes Jan 2)
-- **IDs**: Removes leading zeros (001 becomes 1)
-- **Long numbers**: Converts to scientific notation
+- **Dates**: Converts text to dates, such as converting 01-02 to Jan 2
+- **IDs**: Removes leading zeros, such as converting 001 to 1
+- **Long numbers**: Converts long numbers to scientific notation
 
 **What to do**: Format all columns as text in Excel before entering data, or use a plain text editor to create the CSV.
 
@@ -52,7 +52,7 @@ Excel can corrupt data in several ways:
 
 - Remove extra spaces from all fields
 - Ensure consistent formatting
-- Validate data against system values (status codes, site IDs, etc.)
+- Validate data against system values, such as status codes and site IDs
 - Check for duplicate IDs
 
 ## Check referenced data before importing
@@ -95,7 +95,7 @@ Date formats are a common source of import errors. Follow these guidelines to pr
 **What to do**:
 
 - Use one accepted date format consistently throughout the file
-- Do not mix regional date formats (for example, MM/DD/YYYY and DD/MM/YYYY)
+- Do not mix regional date formats, such as MM/DD/YYYY and DD/MM/YYYY
 - Avoid ambiguous dates such as 01/02/2026 unless the accepted format is clear
 - Format date columns as text in Excel before entering values
 - Test a small batch that includes date values before importing the full file
@@ -114,15 +114,15 @@ For locations and parent-child relationships:
 
 **What to do**: Import in order:
 
-1. Top-level records first (parents)
+1. Top-level records first—parent locations
 2. Second-level records next
-3. Lowest-level records last (children)
+3. Lowest-level records last—child locations
 
 ## Break large imports into batches
 
-**What to do**: 
+**What to do**:
 
-- Break files into smaller batches (1,000-5,000 records at a time)
+- Break files into smaller batches of 1,000 to 5,000 records at a time
 - This prevents timeouts and makes troubleshooting easier
 
 ## Preview before importing
@@ -158,24 +158,24 @@ After preparing your data:
 
 ## Continue building your skills
 
-### Get the sequence right before you import
+### Recommended next step: Get data into the system
 
-Import order matters. Learn which data types need to be loaded before others.
-
-[What is the correct load order?](correct-load-order.md)
-
-### Run the import
-
-With your data prepared, run the import.
+With your CSV files prepared and validated, upload them into Data Management and preview your records before importing.
 
 [How do I get data into the system?](get-data-into-system.md)
+
+### Related skills
+
+- [How do I plan my location hierarchy?](plan-your-location-hierarchy.md): Map your physical facility structure before loading records.
+- [How do I plan my asset hierarchy?](plan-your-asset-hierarchy.md): Structure machinery, subassemblies, and maintainable components.
+- [How do I fix import errors?](why-does-asset-import-fail.md): Learn how to read import preview reports and fix validation or dependency errors.
+- [What is the correct load order?](correct-load-order.md): Review the full five-step data onboarding roadmap.
 
 ---
 
 ## Related topics
 
-- [What is the correct load order?](correct-load-order.md)
-- [Data types](object-structure-data-types.md)
-- [How do I fix import errors?](why-does-asset-import-fail.md)
-- [How do I get data into the system?](get-data-into-system.md)
+- [Which object structure do I use for each data type?](object-structure-data-types.md)
 - [How do I standardize data?](../organize-people/standardize-data.md)
+- [Locations](../../start-fast/basics/what-is-location.md)
+- [What is an asset?](../../start-fast/basics/what-is-asset.md)

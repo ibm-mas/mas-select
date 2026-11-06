@@ -372,8 +372,74 @@
       
         
   
+    <cds-side-nav-menu-item href="correct-load-order.html" class="nav-level-3">
+      Ordre de chargement correct
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="plan-your-location-hierarchy.html" class="nav-level-3">
+      Planifier votre hiérarchie d'emplacements
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="plan-your-asset-hierarchy.html" class="nav-level-3">
+      Planifier votre hiérarchie d'actifs
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="prepare-data-for-import.html" class="nav-level-3">
+      Préparer les données à importer
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
     <cds-side-nav-menu-item href="get-data-into-system.html" class="nav-level-3">
       Charger des données dans le système
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="why-does-asset-import-fail.html" active="" expanded="" class="nav-level-3">
+      Corriger les erreurs d'importation
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="object-structure-data-types.html" class="nav-level-3">
+      Types de données
     </cds-side-nav-menu-item>
   
 
@@ -407,50 +473,6 @@
   
     <cds-side-nav-menu-item href="set-up-maps.html" class="nav-level-3">
       Configurer les cartes
-    </cds-side-nav-menu-item>
-  
-
-      
-    
-      
-      
-        
-  
-    <cds-side-nav-menu-item href="prepare-data-for-import.html" class="nav-level-3">
-      Préparer les données à importer
-    </cds-side-nav-menu-item>
-  
-
-      
-    
-      
-      
-        
-  
-    <cds-side-nav-menu-item href="correct-load-order.html" class="nav-level-3">
-      Ordre de chargement correct
-    </cds-side-nav-menu-item>
-  
-
-      
-    
-      
-      
-        
-  
-    <cds-side-nav-menu-item href="why-does-asset-import-fail.html" active="" expanded="" class="nav-level-3">
-      Corriger les erreurs d'importation
-    </cds-side-nav-menu-item>
-  
-
-      
-    
-      
-      
-        
-  
-    <cds-side-nav-menu-item href="object-structure-data-types.html" class="nav-level-3">
-      Types de données
     </cds-side-nav-menu-item>
   
 
@@ -1150,13 +1172,13 @@
 <p><strong>Example</strong>: You can't create "Ice Cream Plant A &gt; Production Building &gt; Filling Line 2" if "Ice Cream Plant A" and "Production Building" don't exist.</p>
 <p><strong>What to do</strong>: Import <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr> in order:</p>
 <ol>
-<li>Top-level <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr> first (Ice Cream Plant A)</li>
-<li>Second-level <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr> next (Production Building)</li>
-<li>Lowest-level <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr> last (Filling Line 2)</li>
+<li>Top-level <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr> first, such as <code>Ice cream main plant</code></li>
+<li>Second-level <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr> next, such as <code>Production building</code></li>
+<li>Lowest-level <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr> last, such as <code>Filling line room</code></li>
 </ol>
 <div class="admonition warning">
 <p class="admonition-title">TODO: Add visual content</p>
-<p>A diagram showing <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> hierarchy structure (parent → child relationships) would be useful here.</p>
+<p>A diagram showing <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> hierarchy structure from parent to child relationships would be useful here.</p>
 </div>
 <h4 id="incorrect-object-structure">Incorrect <abbr title="Defines the records and related fields that are available for importing, exporting, or exchanging data.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; data structure, import template, or record definition">object structure</abbr><a class="headerlink" href="#incorrect-object-structure" title="Permanent link">¤</a></h4>
 <p><abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">Location</abbr> hierarchies require specific <abbr title="Defines the records and related fields that are available for importing, exporting, or exchanging data. You might know this as: data structure, import template, or record definition"><abbr title="Defines the records and related fields that are available for importing, exporting, or exchanging data.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; data structure, import template, or record definition">object structure</abbr></abbr> in the import file.</p>
@@ -1172,7 +1194,7 @@
 <p><strong>What to do</strong>: Verify all parent <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr> exist before importing child <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr>.</p>
 <div class="admonition tip">
 <p class="admonition-title">Import hierarchies sequentially</p>
-<p>Hierarchies require sequential loading (top → down). Import parent <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr> first, then their children.</p>
+<p>Hierarchies require sequential loading from the top down. Import parent <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr> first, then their children.</p>
 </div>
 <h3 id="location-referenced-data-does-not-exist"><abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">Location</abbr> referenced data does not exist<a class="headerlink" href="#location-referenced-data-does-not-exist" title="Permanent link">¤</a></h3>
 <p><abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">Location</abbr> imports fail when they reference supporting records that don't exist in the system.</p>
@@ -1188,7 +1210,7 @@
 <p><strong>What to do</strong>:</p>
 <ul>
 <li>Create or correct the referenced record, or update the import file to use an existing value</li>
-<li>Make sure values in the import file match system values exactly (case-sensitive)</li>
+<li>Make sure values in the import file match system values exactly, which are case-sensitive</li>
 <li>Verify spelling and IDs are correct</li>
 </ul>
 <h3 id="tips-for-successful-location-imports">💡 Tips for successful <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> imports<a class="headerlink" href="#tips-for-successful-location-imports" title="Permanent link">¤</a></h3>
@@ -1267,7 +1289,7 @@
 <li>Service address is defined</li>
 <li>Calendar and shift are configured</li>
 <li>Failure class is set up</li>
-<li><abbr title="A repairable spare part that can be tracked individually by serial number.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; repairable spare, rotable, or serialized spare">Rotating item</abbr> is created (if applicable)</li>
+<li><abbr title="A repairable spare part that can be tracked individually by serial number.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; repairable spare, rotable, or serialized spare">Rotating item</abbr> is created, if applicable</li>
 <li>Vendor or manufacturer exists</li>
 <li>Type value is valid</li>
 <li>Classification or specification is available</li>
@@ -1313,7 +1335,7 @@
 <ul>
 <li>Invalid <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr> codes</li>
 <li>Non-existent <abbr title="A data partitioning concept that represents a plant, facility, or business unit.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; plant, facility, or business unit">site</abbr> references</li>
-<li>Incorrect data types (text in number fields)</li>
+<li>Incorrect data types, such as text in number fields</li>
 <li>Invalid dates</li>
 </ul>
 <p><strong>What to do</strong>: Validate data against system values before importing.</p>
@@ -1329,7 +1351,7 @@
 <li>File size</li>
 <li>Processing time</li>
 </ul>
-<p><strong>What to do</strong>: Break large imports into smaller batches (for example, 1,000-5,000 records at a time).</p>
+<p><strong>What to do</strong>: Break large imports into smaller batches of 1,000 to 5,000 records at a time.</p>
 <p><strong>Errors stop processing mid-file</strong>: If a critical error occurs, the import might stop processing remaining records.</p>
 <p><strong>What to do</strong>: Review error logs to identify where processing stopped, fix the error, and re-import remaining records.</p>
 <p><strong>Validation failures block individual records</strong>: Each record is validated independently. Invalid records are skipped while valid ones are imported.</p>
@@ -1341,8 +1363,8 @@
 <p><strong>Common causes</strong>:</p>
 <ul>
 <li>Excel changed the date format automatically</li>
-<li>The file uses mixed date formats (for example, MM/DD/YYYY and DD/MM/YYYY)</li>
-<li>The date format is ambiguous (for example, 01/02/2026)</li>
+<li>The file uses mixed date formats, such as MM/DD/YYYY and DD/MM/YYYY</li>
+<li>The date format is ambiguous, such as 01/02/2026</li>
 <li>Date values do not match the expected import format</li>
 </ul>
 <p><strong>What to do</strong>:</p>
@@ -1355,9 +1377,9 @@
 <h3 id="excel-formatting-corrupts-data">Excel formatting corrupts data<a class="headerlink" href="#excel-formatting-corrupts-data" title="Permanent link">¤</a></h3>
 <p>Excel can corrupt data in several ways:</p>
 <ul>
-<li><strong>Dates</strong>: Converts text to dates (01-02 becomes Jan 2)</li>
-<li><strong>IDs</strong>: Removes leading zeros (001 becomes 1)</li>
-<li><strong>Long numbers</strong>: Converts to scientific notation</li>
+<li><strong>Dates</strong>: Converts text to dates, such as converting 01-02 to Jan 2</li>
+<li><strong>IDs</strong>: Removes leading zeros, such as converting 001 to 1</li>
+<li><strong>Long numbers</strong>: Converts long numbers to scientific notation</li>
 </ul>
 <p><strong>What to do</strong>: Format all columns as text in Excel before entering data, or use a plain text editor to create the CSV.</p>
 <div class="admonition warning">
@@ -1375,10 +1397,10 @@
 <p>Bulk imports have constraints when loading very large volumes in a single batch.</p>
 <h3 id="constraints">Constraints<a class="headerlink" href="#constraints" title="Permanent link">¤</a></h3>
 <p><strong>UI session timeouts</strong>: Long-running imports can time out in the web interface.</p>
-<p><strong>Not designed for massive single-file batches</strong>: CSV imports work best with manageable batch sizes (typically under 5,000 records per file).</p>
+<p><strong>Not designed for massive single-file batches</strong>: CSV imports work best with manageable batch sizes, typically under 5,000 records per file.</p>
 <p><strong>Better suited for smaller datasets</strong>: For large imports, consider:</p>
 <ul>
-<li>Breaking into smaller batches (files under 5,000 records)</li>
+<li>Breaking into smaller batches of under 5,000 records</li>
 <li>Loading parent records before child records in separate files</li>
 <li>Using Data Management to monitor and track import <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr></li>
 </ul>
@@ -1396,16 +1418,23 @@
 </ol>
 <hr>
 <h2 id="continue-building-your-skills">Continue building your skills<a class="headerlink" href="#continue-building-your-skills" title="Permanent link">¤</a></h2>
-<h3 id="verify-the-system-is-working">Verify the system is working<a class="headerlink" href="#verify-the-system-is-working" title="Permanent link">¤</a></h3>
-<p>Once your data is loaded, check whether the system is performing as expected.</p>
+<h3 id="recommended-next-step-verify-the-system-is-working">Recommended next step: Verify the system is working<a class="headerlink" href="#recommended-next-step-verify-the-system-is-working" title="Permanent link">¤</a></h3>
+<p>Once your data is successfully loaded, track <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr>, costs, and equipment health across your facility.</p>
 <p><a href="../monitor-respond/what-metrics-matter.html">What metrics matter?</a></p>
+<h3 id="related-skills">Related skills<a class="headerlink" href="#related-skills" title="Permanent link">¤</a></h3>
+<ul>
+<li><a href="correct-load-order.html">What is the correct load order?</a>: Review dependencies and ensure parent records exist before children.</li>
+<li><a href="plan-your-location-hierarchy.html">How do I plan my <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> hierarchy?</a>: Map physical places and prevent orphan records.</li>
+<li><a href="plan-your-asset-hierarchy.html">How do I plan my <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> hierarchy?</a>: Structure equipment packages and avoid over-assetization.</li>
+<li><a href="get-data-into-system.html">How do I get data into the system?</a>: Return to Data Management to re-import corrected rows.</li>
+</ul>
 <hr>
 <h2 id="related-topics">Related topics<a class="headerlink" href="#related-topics" title="Permanent link">¤</a></h2>
 <ul>
+<li><a href="object-structure-data-types.html">Which <abbr title="Defines the records and related fields that are available for importing, exporting, or exchanging data.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; data structure, import template, or record definition">object structure</abbr> do I use for each data type?</a></li>
 <li><a href="prepare-data-for-import.html">How do I prepare data for import?</a></li>
-<li><a href="correct-load-order.html">What is the correct load order?</a></li>
-<li><a href="get-data-into-system.html">How do I get data into the system?</a></li>
 <li><a href="../organize-people/standardize-data.html">How do I standardize data?</a></li>
+<li><a href="../../start-fast/basics/what-is-asset.html">What is an <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr>?</a></li>
 </ul>
 <hr>
 <h2 id="still-stuck">Still stuck?<a class="headerlink" href="#still-stuck" title="Permanent link">¤</a></h2>
@@ -1421,7 +1450,7 @@
           <!-- Navigation footer (prev/next) -->
 <nav class="md-footer-nav" aria-label="Footer navigation">
   <div class="md-footer-nav__inner">
-    <a href="correct-load-order.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+    <a href="get-data-into-system.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
       <div class="md-footer-nav__direction">
         <svg class="md-footer-nav__icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"></path>
@@ -1429,7 +1458,7 @@
         <span>Previous</span>
       </div>
       <div class="md-footer-nav__title">
-        <span class="md-footer-nav__title-text">Ordre de chargement correct</span>
+        <span class="md-footer-nav__title-text">Charger des données dans le système</span>
       </div>
     </a>
     <a href="object-structure-data-types.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
@@ -1575,8 +1604,13 @@
                 </a>
                   <ul class="md-toc__list">
                       <li class="md-toc__item">
-                        <a href="#verify-the-system-is-working" class="md-toc__link" data-md-level="2">
-                          Verify the system is working
+                        <a href="#recommended-next-step-verify-the-system-is-working" class="md-toc__link" data-md-level="2">
+                          Recommended next step: Verify the system is working
+                        </a>
+                      </li>
+                      <li class="md-toc__item">
+                        <a href="#related-skills" class="md-toc__link" data-md-level="2">
+                          Related skills
                         </a>
                       </li>
                   </ul>

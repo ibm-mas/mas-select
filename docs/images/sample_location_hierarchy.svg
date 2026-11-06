@@ -1,0 +1,127 @@
+<svg width="480" height="480" viewBox="0 0 480 480" fill="none" xmlns="http://www.w3.org/2000/svg" style="background:#ffffff; font-family:'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <title>Sample location hierarchy for Ice cream main plant</title>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+
+  <!-- Site node -->
+  <g class="node">
+    <rect x="16" y="16" width="448" height="48" fill="#ffffff" stroke="#0F62FE" stroke-width="1.5"/>
+    <rect x="16" y="16" width="48" height="48" fill="#0F62FE"/>
+    <g transform="translate(28, 28) scale(0.75)" fill="#ffffff">
+      <path d="M16,18a5,5,0,1,1,5-5A5.0057,5.0057,0,0,1,16,18Zm0-8a3,3,0,1,0,3,3A3.0033,3.0033,0,0,0,16,10Z"/>
+      <path d="M16,30,7.5645,20.0513c-.0479-.0571-.3482-.4515-.3482-.4515A10.8888,10.8888,0,0,1,5,13a11,11,0,0,1,22,0,10.8844,10.8844,0,0,1-2.2148,6.5973l-.0015.0025s-.3.3944-.3447.4474ZM8.8125,18.395c.001.0007.2334.3082.2866.3744L16,26.9079l6.91-8.15c.0439-.0552.2783-.3649.2788-.3657A8.901,8.901,0,0,0,25,13,9,9,0,1,0,7,13a8.9054,8.9054,0,0,0,1.8125,5.395Z"/>
+    </g>
+    <text x="76" y="35" font-size="11" font-weight="600" fill="#525252" letter-spacing="0.2">SITE</text>
+    <text x="76" y="52" font-size="13" font-weight="600" fill="#161616">Ice cream main plant</text>
+  </g>
+
+  <!-- Production building (Parent location) -->
+  <g class="node">
+    <rect x="56" y="80" width="408" height="48" fill="#ffffff" stroke="#0F62FE" stroke-width="1.5"/>
+    <rect x="56" y="80" width="48" height="48" fill="#0F62FE"/>
+    <g transform="translate(68, 92) scale(0.75)" fill="#ffffff">
+      <path d="M28,2H4C2.9,2,2,2.9,2,4v24c0,1.1,0.9,2,2,2h15v-2c0-2.8,2.2-5,5-5v-2c-3.9,0-7,3.1-7,7h-3v-4h-2v4H4V4h8v14h2v-5h4v-2h-4V4h14v7h-4v2h4v15h-4v2h4c1.1,0,2-0.9,2-2V4C30,2.9,29.1,2,28,2z"/>
+    </g>
+    <text x="116" y="99" font-size="11" font-weight="600" fill="#525252" letter-spacing="0.2">PARENT LOCATION</text>
+    <text x="116" y="116" font-size="13" font-weight="600" fill="#161616">Production building</text>
+  </g>
+
+  <!-- Connector: Site to Production building -->
+  <g class="connector">
+    <circle cx="36" cy="64" r="3" fill="#ffffff" stroke="#161616" stroke-width="1.5"/>
+    <path d="M 36 64 V 96 Q 36 104 44 104 H 56" fill="none" stroke="#161616" stroke-width="1.5"/>
+    <circle cx="56" cy="104" r="3" fill="#ffffff" stroke="#161616" stroke-width="1.5"/>
+  </g>
+
+  <!-- Child location: Mixing room -->
+  <g class="node">
+    <rect x="96" y="144" width="368" height="48" fill="#EDF5FF" stroke="#0F62FE" stroke-width="1.5"/>
+    <rect x="96" y="144" width="48" height="48" fill="#0F62FE"/>
+    <g transform="translate(108, 156) scale(0.75)" fill="#ffffff">
+      <path d="M26,4H6C4.9,4,4,4.9,4,6v20c0,1.1,0.9,2,2,2h20c1.1,0,2-0.9,2-2V6C28,4.9,27.1,4,26,4z M26,26H6V6h20V26z"/>
+      <path d="M14,10h4v12h-4V10z M10,10h2v12h-2V10z M20,10h2v12h-2V10z"/>
+    </g>
+    <text x="156" y="163" font-size="11" font-weight="600" fill="#525252" letter-spacing="0.2">CHILD LOCATION</text>
+    <text x="156" y="180" font-size="13" font-weight="600" fill="#161616">Mixing room</text>
+  </g>
+
+  <!-- Connector: Production building to Mixing room -->
+  <g class="connector">
+    <circle cx="76" cy="128" r="3" fill="#ffffff" stroke="#161616" stroke-width="1.5"/>
+    <path d="M 76 128 V 160 Q 76 168 84 168 H 96" fill="none" stroke="#161616" stroke-width="1.5"/>
+    <circle cx="96" cy="168" r="3" fill="#ffffff" stroke="#161616" stroke-width="1.5"/>
+  </g>
+
+  <!-- Child location: Filling line room -->
+  <g class="node">
+    <rect x="96" y="208" width="368" height="48" fill="#EDF5FF" stroke="#0F62FE" stroke-width="1.5"/>
+    <rect x="96" y="208" width="48" height="48" fill="#0F62FE"/>
+    <g transform="translate(108, 220) scale(0.75)" fill="#ffffff">
+      <path d="M26,4H6C4.9,4,4,4.9,4,6v20c0,1.1,0.9,2,2,2h20c1.1,0,2-0.9,2-2V6C28,4.9,27.1,4,26,4z M26,26H6V6h20V26z"/>
+      <path d="M14,10h4v12h-4V10z M10,10h2v12h-2V10z M20,10h2v12h-2V10z"/>
+    </g>
+    <text x="156" y="227" font-size="11" font-weight="600" fill="#525252" letter-spacing="0.2">CHILD LOCATION</text>
+    <text x="156" y="244" font-size="13" font-weight="600" fill="#161616">Filling line room</text>
+  </g>
+
+  <!-- Connector: Production building to Filling line room -->
+  <g class="connector">
+    <circle cx="76" cy="128" r="3" fill="#ffffff" stroke="#161616" stroke-width="1.5"/>
+    <path d="M 76 128 V 224 Q 76 232 84 232 H 96" fill="none" stroke="#161616" stroke-width="1.5"/>
+    <circle cx="96" cy="232" r="3" fill="#ffffff" stroke="#161616" stroke-width="1.5"/>
+  </g>
+
+  <!-- Child location: Packaging zone -->
+  <g class="node">
+    <rect x="96" y="272" width="368" height="48" fill="#EDF5FF" stroke="#0F62FE" stroke-width="1.5"/>
+    <rect x="96" y="272" width="48" height="48" fill="#0F62FE"/>
+    <g transform="translate(108, 284) scale(0.75)" fill="#ffffff">
+      <path d="M26,4H6C4.9,4,4,4.9,4,6v20c0,1.1,0.9,2,2,2h20c1.1,0,2-0.9,2-2V6C28,4.9,27.1,4,26,4z M26,26H6V6h20V26z"/>
+      <path d="M14,10h4v12h-4V10z M10,10h2v12h-2V10z M20,10h2v12h-2V10z"/>
+    </g>
+    <text x="156" y="291" font-size="11" font-weight="600" fill="#525252" letter-spacing="0.2">CHILD LOCATION</text>
+    <text x="156" y="308" font-size="13" font-weight="600" fill="#161616">Packaging zone</text>
+  </g>
+
+  <!-- Connector: Production building to Packaging zone -->
+  <g class="connector">
+    <circle cx="76" cy="128" r="3" fill="#ffffff" stroke="#161616" stroke-width="1.5"/>
+    <path d="M 76 128 V 288 Q 76 296 84 296 H 96" fill="none" stroke="#161616" stroke-width="1.5"/>
+    <circle cx="96" cy="296" r="3" fill="#ffffff" stroke="#161616" stroke-width="1.5"/>
+  </g>
+
+  <!-- Location: Cold storage -->
+  <g class="node">
+    <rect x="56" y="344" width="408" height="48" fill="#ffffff" stroke="#0F62FE" stroke-width="1.5"/>
+    <rect x="56" y="344" width="48" height="48" fill="#0F62FE"/>
+    <g transform="translate(68, 356) scale(0.75)" fill="#ffffff">
+      <path d="M26,14h-4.2l2.6-2.6l-1.4-1.4L19,14h-2v-2l4-4l-1.4-1.4L17,9.2V5h-2v4.2l-2.6-2.6L11,8l4,4v2h-2l-4-4l-1.4,1.4L10.2,14H6v2h4.2l-2.6,2.6l1.4,1.4L13,18h2v2l-4,4l1.4,1.4L15,22.8V27h2v-4.2l2.6,2.6l1.4-1.4L17,20v-2h2l4,4l1.4-1.4L21.8,16H26V14z"/>
+    </g>
+    <text x="116" y="363" font-size="11" font-weight="600" fill="#525252" letter-spacing="0.2">LOCATION</text>
+    <text x="116" y="380" font-size="13" font-weight="600" fill="#161616">Cold storage</text>
+  </g>
+
+  <!-- Connector: Site to Cold storage -->
+  <g class="connector">
+    <circle cx="36" cy="64" r="3" fill="#ffffff" stroke="#161616" stroke-width="1.5"/>
+    <path d="M 36 64 V 360 Q 36 368 44 368 H 56" fill="none" stroke="#161616" stroke-width="1.5"/>
+    <circle cx="56" cy="368" r="3" fill="#ffffff" stroke="#161616" stroke-width="1.5"/>
+  </g>
+
+  <!-- Location: Main storeroom -->
+  <g class="node">
+    <rect x="56" y="408" width="408" height="48" fill="#ffffff" stroke="#0F62FE" stroke-width="1.5"/>
+    <rect x="56" y="408" width="48" height="48" fill="#0F62FE"/>
+    <g transform="translate(68, 420) scale(0.75)" fill="#ffffff">
+      <path d="M28,8H18V4c0-1.1-0.9-2-2-2h-4C10.9,2,10,2.9,10,4v4H4C2.9,8,2,8.9,2,10v16c0,1.1,0.9,2,2,2h24c1.1,0,2-0.9,2-2V10C30,8.9,29.1,8,28,8z M12,4h8v4h-8V4z M28,26H4V10h24V26z M8,14h16v2H8V14z M8,18h10v2H8V18z"/>
+    </g>
+    <text x="116" y="427" font-size="11" font-weight="600" fill="#525252" letter-spacing="0.2">LOCATION</text>
+    <text x="116" y="444" font-size="13" font-weight="600" fill="#161616">Main storeroom</text>
+  </g>
+
+  <!-- Connector: Site to Main storeroom -->
+  <g class="connector">
+    <circle cx="36" cy="64" r="3" fill="#ffffff" stroke="#161616" stroke-width="1.5"/>
+    <path d="M 36 64 V 424 Q 36 432 44 432 H 56" fill="none" stroke="#161616" stroke-width="1.5"/>
+    <circle cx="56" cy="432" r="3" fill="#ffffff" stroke="#161616" stroke-width="1.5"/>
+  </g>
+</svg>

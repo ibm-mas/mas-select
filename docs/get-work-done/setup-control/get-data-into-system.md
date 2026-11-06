@@ -31,21 +31,17 @@ Use Data Management to import your existing records into IBM Maximo Application 
 
 ## How to get the correct template
 
-Before filling in your data, export an existing record to get a template with the correct column names and format.
+Before filling in your data, use the Data Management application to download a template or export sample records with the correct column names and structure.
 
 **What to do:**
 
-1. Open the application that matches the data you want to import. For example, open the Assets application to get an assets template.
-2. Search for and open any existing record.
-3. Click the download icon or **Export data**.
-4. In the Export data window, select **Export custom columns**.
-5. In the Template name field, select the object structure that matches your data type.
-6. Click **Export**. The file downloads as a CSV.
-
-Open the file in a spreadsheet application to see the required columns and their format. Do not enter a value in the Template name field when exporting. Leave it blank to get the default structure.
+1. Go to **Setup and administration > Data Management**.
+2. Select the data type or object structure you want to import, such as locations or assets.
+3. Click **Export data** or download the template for that data type.
+4. Open the downloaded CSV file in a spreadsheet application to review the required columns and format.
 
 !!! note
-    If no records exist yet, your system administrator can provide a template directly, or you can find the required fields in [How do I prepare data for import?](prepare-data-for-import.md).
+    If you need a breakdown of the specific column fields for each data type, see [Which object structure do I use for each data type?](object-structure-data-types.md) and [How do I prepare data for import?](prepare-data-for-import.md).
 
 ---
 
@@ -55,16 +51,16 @@ Once your CSV file is prepared and validated:
 
 **What to do:**
 
-1. Open the application where you want to import data. For example, open the Assets application to import assets.
-2. Click the upload icon or **Import data**.
-3. In the Import data window, select the **object structure** that matches your file.
+1. Go to **Setup and administration > Data Management**.
+2. Select the data type or object structure that matches your file.
+3. Click **Import data**.
 4. Click **Browse** and select your prepared CSV file.
 5. Select **Import preview** to check for errors before committing the import.
-6. Review any errors flagged in the preview. Fix the issues in your CSV file and upload again if needed.
+6. Review any errors flagged in the preview. Fix any issues in your CSV file and upload again if needed.
 7. Once the preview is clean, clear **Import preview** and click **Import** to run the full import.
-8. Click the number in **Total rows** to go to the application and review your imported records.
+8. Review the import summary and row counts to confirm that all records were created successfully.
 
-`[SME confirmation required: confirm exact UI labels for Import data button and Import preview checkbox in MAS Select — these may differ from Maximo Manage]`
+`[SME confirmation required: confirm exact UI labels for Import data button, template downloads, and Import preview checkbox in the MAS Select Data Management application — these may differ from Maximo Manage]`
 
 ---
 
@@ -110,24 +106,25 @@ If your data exceeds 500 KB:
 
 ## Continue building your skills
 
-### Fix errors when an import fails
+### Recommended next step: Fix errors when an import fails
 
-Not every import goes smoothly. Learn how to read the error report and correct common problems.
+Not every import goes smoothly. Learn how to diagnose preview errors, correct source CSV rows, and re-import failed records.
 
 [How do I fix import errors?](why-does-asset-import-fail.md)
 
-### Verify the system is working
+### Related skills
 
-Once your data is in, check whether the system is performing as expected.
-
-[What metrics matter?](../../get-work-done/monitor-respond/what-metrics-matter.md)
+- [What metrics matter?](../../get-work-done/monitor-respond/what-metrics-matter.md): Once your data is loaded, check whether the system is performing as expected.
+- [How do I plan my location hierarchy?](plan-your-location-hierarchy.md): Review location structure rules and parent-child best practices.
+- [How do I plan my asset hierarchy?](plan-your-asset-hierarchy.md): Structure equipment packages, subassemblies, and maintainable components.
+- [What is the correct load order?](correct-load-order.md): Review the full five-step data onboarding roadmap.
 
 ---
 
 ## Related topics
 
+- [Which object structure do I use for each data type?](object-structure-data-types.md)
 - [How do I prepare data for import?](prepare-data-for-import.md)
-- [What is the correct load order?](correct-load-order.md)
-- [How do I fix import errors?](why-does-asset-import-fail.md)
 - [Administrator: Add users](../../start-fast/first-task/administrator-first-task.md)
+- [How do I standardize data?](../organize-people/standardize-data.md)
 

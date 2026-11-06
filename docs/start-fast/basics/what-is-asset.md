@@ -9,7 +9,7 @@ search:
 An asset is any piece of equipment, machinery, or infrastructure that your organization maintains. Assets are the physical things you work on.
 
 ## Examples of assets
-- **Production equipment**: Batch Mixer MX-01, Filler FL-02, Conveyor CV-02, Spiral Freezer SF-01
+- **Production equipment**: Filler FL-02, Conveyor CV-02, Labeler LB-01
 - **Process equipment**: Pumps, motors, compressors, heat exchangers, chillers
 - **Facilities**: HVAC systems, refrigeration units, lighting systems
 - **Vehicles**: Trucks, forklifts, pallet jacks
@@ -25,13 +25,13 @@ An asset is any piece of equipment, machinery, or infrastructure that your organ
 ## Asset hierarchy
 
 <div style="width: 50%; float: right; margin-left: 20px; margin-bottom: 20px;">
-<img src="../../images/assets.png" alt="Asset hierarchy diagram" style="width: 100%; display: block;">
+<img src="../../images/sample_asset_hierarchy.svg" alt="Asset hierarchy for the Filling line system. Filler FL-02, Conveyor CV-02, and Labeler LB-01 are parent assets. Each parent asset has child components, and the Nozzle assembly component has two parts: Nozzle body and Shutoff valve." style="width: 100%; display: block;">
 <p style="font-size: 0.9em; color: #525252; margin-top: 8px; font-style: italic;">Figure 1: Sample asset hierarchy for an ice cream manufacturer</p>
 </div>
 
 An asset is a physical piece of equipment that you maintain. You can organize assets in a parent-child hierarchy to show how equipment is connected and to track maintenance at the correct level.
 
-In figure 1, Batch Mixer MX-01, Filler FL-02, Conveyor CV-02, and Spiral Freezer SF-01 are parent assets. Parent assets can include child assets. For example, Batch Mixer MX-01 includes the Agitator motor and Seal.
+In figure 1, Filler FL-02, Conveyor CV-02, and Labeler LB-01 are parent assets in the Filling line system. Parent assets can include child assets. For example, Filler FL-02 includes the Nozzle assembly and Drive motor components. The Nozzle assembly includes the Nozzle body and Shutoff valve parts.
 
 Assets are installed in locations, which show where the equipment operates.
 
@@ -59,9 +59,9 @@ Want to see how this connects to locations and work orders? See [How do location
 - Don't use vague descriptions such as PUMP
 - Don't overload the asset number with too much detail
 
-**Example assets**: Batch Mixer MX-01, Filler FL-02, Conveyor CV-02, Spiral Freezer SF-01.
+**Example assets**: Filler FL-02, Conveyor CV-02, Labeler LB-01.
 
-**Example descriptions**: Filler FL-02, cone filling station; Batch Mixer MX-01, vanilla mix preparation.
+**Example descriptions**: Filler FL-02, cone filling station; Labeler LB-01, carton labeling station.
 
 ---
 
