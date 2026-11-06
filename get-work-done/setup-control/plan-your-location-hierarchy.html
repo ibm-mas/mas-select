@@ -1125,6 +1125,8 @@
     
       <cds-select-item value="#spot-the-problem-test-your-plan">Spot the problem: test your plan</cds-select-item>
     
+      <cds-select-item value="#common-planning-mistakes">Common planning mistakes</cds-select-item>
+    
       <cds-select-item value="#planning-checklist">Planning checklist</cds-select-item>
     
       <cds-select-item value="#continue-building-your-skills">Continue building your skills</cds-select-item>
@@ -1164,6 +1166,14 @@
 <p>Because costs, safety plans, and <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> roll up through parent <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr>, grouping <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr> by what they are used for, such as grouping all restrooms or all compressor rooms across multiple buildings under one branch, breaks facility-level reporting. A report run on <code>Production building</code> will miss any rooms placed outside that building's branch.</p>
 <h3 id="tip-grouping-by-function">💡 Tip: Grouping by function<a class="headerlink" href="#tip-grouping-by-function" title="Permanent link">¤</a></h3>
 <p>If you need to search or group <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr> by type or function, such as finding all restrooms or all electrical closets across a facility, use <strong>Classifications</strong> or <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> attributes rather than altering the primary physical hierarchy.</p>
+<h3 id="quick-test-should-this-be-a-location">Quick test: Should this be a <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr>?<a class="headerlink" href="#quick-test-should-this-be-a-location" title="Permanent link">¤</a></h3>
+<p>Create a <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> only if all of the following are true:</p>
+<ul>
+<li>It is a fixed physical place.</li>
+<li>Maintenance work might be planned, performed, or reported for it.</li>
+<li>It needs its own maintenance history, costs, or operational context.</li>
+</ul>
+<p>If the <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr> can be moved, repaired, replaced, or transferred, it is probably an <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> rather than a <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr>.</p>
 <h3 id="3-decide-how-deep-to-go-stop-at-the-maintainable-level">3. Decide how deep to go: stop at the maintainable level<a class="headerlink" href="#3-decide-how-deep-to-go-stop-at-the-maintainable-level" title="Permanent link">¤</a></h3>
 <p>A frequent design mistake is creating too many nested levels. Deep hierarchies make drilldown navigation slow and cumbersome for technicians in the field.</p>
 <p>For every level you consider adding, ask this rule-of-thumb question:</p>
@@ -1261,6 +1271,17 @@
 </ol>
 <p>Always verify your import count against the number of rows in your source spreadsheet. Prepare your spreadsheet formatting by following <a href="prepare-data-for-import.html">How do I prepare data for import?</a>. For details on sequencing, see <a href="correct-load-order.html">What is the correct load order?</a>, and see <a href="why-does-asset-import-fail.html">How do I fix import errors?</a> if rows fail to load.</p>
 </details>
+<hr>
+<h2 id="common-planning-mistakes">Common planning mistakes<a class="headerlink" href="#common-planning-mistakes" title="Permanent link">¤</a></h2>
+<p>When designing a <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> hierarchy, avoid these common mistakes:</p>
+<ul>
+<li>Organizing <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr> by function rather than physical geography.</li>
+<li>Creating <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr> for movable equipment instead of physical places.</li>
+<li>Adding levels that nobody will maintain, report on, or navigate to.</li>
+<li>Designing only for today's facility without considering future expansion.</li>
+<li>Creating orphan <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr> that are not connected to a parent <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr>.</li>
+</ul>
+<p>A simple hierarchy that reflects the physical layout of your facility is easier to maintain and usually produces more accurate reporting than a highly detailed hierarchy.</p>
 <hr>
 <h2 id="planning-checklist">Planning checklist<a class="headerlink" href="#planning-checklist" title="Permanent link">¤</a></h2>
 <p>Before loading your <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> hierarchy into Maximo Application Suite Select, verify each requirement:</p>
@@ -1391,6 +1412,11 @@
                         </a>
                       </li>
                       <li class="md-toc__item">
+                        <a href="#quick-test-should-this-be-a-location" class="md-toc__link" data-md-level="2">
+                          Quick test: Should this be a location?
+                        </a>
+                      </li>
+                      <li class="md-toc__item">
                         <a href="#3-decide-how-deep-to-go-stop-at-the-maintainable-level" class="md-toc__link" data-md-level="2">
                           3. Decide how deep to go: stop at the maintainable level
                         </a>
@@ -1445,6 +1471,11 @@
                         </a>
                       </li>
                   </ul>
+              </li>
+              <li class="md-toc__item">
+                <a href="#common-planning-mistakes" class="md-toc__link" data-md-level="1">
+                  Common planning mistakes
+                </a>
               </li>
               <li class="md-toc__item">
                 <a href="#planning-checklist" class="md-toc__link" data-md-level="1">
