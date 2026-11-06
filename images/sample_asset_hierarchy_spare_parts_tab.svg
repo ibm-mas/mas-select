@@ -104,5 +104,5 @@
 
   <!-- Solution summary banner (bottom) -->
   <rect x="16" y="444" width="448" height="36" fill="#DEFBE6" stroke="#198038" stroke-width="1"/>
-  <text x="32" y="466" font-size="12" font-weight="600" fill="#198038">Best practice: Consumables stay in Item Master and link to the Spare Parts tab</text>
+  <text x="240" y="466" font-size="11" font-weight="600" fill="#198038" text-anchor="middle">Best practice: Consumables stay in Item Master and link to the Spare Parts tab</text>
 </svg>
