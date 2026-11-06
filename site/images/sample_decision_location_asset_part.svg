@@ -1,62 +1,57 @@
-<svg width="480" height="420" viewBox="0 0 480 420" fill="none" xmlns="http://www.w3.org/2000/svg" style="background:#ffffff; font-family:'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
-  <title>The 3-Way Classification Model: Location vs Asset vs Spare Part</title>
+<svg width="640" height="460" viewBox="0 0 640 460" fill="none" xmlns="http://www.w3.org/2000/svg" style="background:#ffffff; font-family:'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <title>The three-way classification model: Location vs Asset vs Spare Part</title>
   <rect width="100%" height="100%" fill="#ffffff"/>
 
   <!-- Tier 1: Location -->
   <g class="tier-location">
-    <rect x="16" y="16" width="448" height="84" fill="#ffffff" stroke="#009D9A" stroke-width="1.5" rx="2"/>
-    <rect x="16" y="16" width="48" height="84" fill="#009D9A"/>
-    <!-- Location Pin / Building Icon -->
-    <g transform="translate(28, 44) scale(0.75)" fill="#ffffff">
-      <path d="M16,2C9.4,2,4,7.4,4,14c0,8.8,12,16,12,16s12-7.2,12-16C28,7.4,22.6,2,16,2z M16,18c-2.2,0-4-1.8-4-4s1.8-4,4-4s4,1.8,4,4 S18.2,18,16,18z"/>
-    </g>
-    <text x="76" y="38" font-size="11" font-weight="600" fill="#0072C3" letter-spacing="0.5">1. LOCATION (PHYSICAL SPACE)</text>
-    <text x="76" y="58" font-size="14" font-weight="600" fill="#161616">Filling line room</text>
-    <text x="76" y="78" font-size="12" fill="#525252">Fixed physical space • Immovable • Room maintenance history</text>
+    <rect x="24" y="16" width="592" height="88" fill="#ffffff" stroke="#009D9A" stroke-width="1.5" rx="8"/>
+    <rect x="24" y="16" width="48" height="88" fill="#009D9A" rx="8"/>
+    <rect x="56" y="16" width="16" height="88" fill="#009D9A"/>
+    <g transform="translate(36, 48) scale(0.75)" fill="#ffffff"></g>
+    <text x="88" y="40" font-size="11" font-weight="600" fill="#0072C3" letter-spacing="0.3">1. LOCATION (PHYSICAL SPACE)</text>
+    <text x="88" y="62" font-size="15" font-weight="600" fill="#161616">Filling line room</text>
+    <text x="88" y="84" font-size="12" fill="#525252">Fixed physical space • Immovable • Room maintenance history</text>
   </g>
 
   <!-- Connector: Location -> Asset -->
-  <path d="M240 100 V 132" stroke="#009D9A" stroke-width="2" stroke-dasharray="4 4"/>
-  <polygon points="240,136 236,128 244,128" fill="#009D9A"/>
-  <text x="250" y="122" font-size="11" font-weight="600" fill="#0072C3">Contains</text>
+  <path d="M 320 104 V 136" stroke="#009D9A" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <polygon points="320,140 316,132 324,132" fill="#009D9A"/>
+  <rect x="330" y="114" width="60" height="18" fill="#ffffff" rx="2"/>
+  <text x="334" y="127" font-size="11" font-weight="600" fill="#0072C3">Contains</text>
 
   <!-- Tier 2: Asset (Equipment) -->
   <g class="tier-asset">
-    <rect x="16" y="140" width="448" height="110" fill="#ffffff" stroke="#009D9A" stroke-width="1.5" rx="2"/>
-    <rect x="16" y="140" width="48" height="110" fill="#009D9A"/>
-    <!-- Machine / Asset Icon -->
-    <g transform="translate(28, 178) scale(0.75)" fill="#ffffff">
-      <path d="M26,8h-4V4c0-1.1-0.9-2-2-2H12C10.9,2,10,2.9,10,4v4H6C4.9,8,4,8.9,4,10v16c0,1.1,0.9,2,2,2h20c1.1,0,2-0.9,2-2V10 C28,8.9,27.1,8,26,8z M12,4h8v4h-8V4z M26,26H6V10h20V26z"/>
-      <circle cx="16" cy="18" r="4"/>
-    </g>
-    <text x="76" y="162" font-size="11" font-weight="600" fill="#0072C3" letter-spacing="0.5">2. ASSET (MAINTAINABLE EQUIPMENT)</text>
-    <text x="76" y="182" font-size="14" font-weight="600" fill="#161616">Filler FL-02</text>
-    <text x="76" y="202" font-size="12" fill="#525252">Serialized machine • Moves between rooms • Has PM schedule and meter</text>
+    <rect x="24" y="144" width="592" height="116" fill="#ffffff" stroke="#009D9A" stroke-width="1.5" rx="8"/>
+    <rect x="24" y="144" width="48" height="116" fill="#009D9A" rx="8"/>
+    <rect x="56" y="144" width="16" height="116" fill="#009D9A"/>
+    <g transform="translate(36, 188) scale(0.75)" fill="#ffffff"></g>
+    <text x="88" y="168" font-size="11" font-weight="600" fill="#0072C3" letter-spacing="0.3">2. ASSET (MAINTAINABLE EQUIPMENT)</text>
+    <text x="88" y="190" font-size="15" font-weight="600" fill="#161616">Filler FL-02</text>
+    <text x="88" y="210" font-size="12" fill="#525252">Serialized machine • Moves between rooms • Has PM schedule and meter</text>
     
     <!-- Child subassembly badge inside asset -->
-    <rect x="76" y="214" width="368" height="24" fill="#D9FBFB" rx="2"/>
-    <text x="86" y="230" font-size="11" font-weight="600" fill="#005d5d">Subassembly (Child Asset): Drive motor (MTR-DRV-01)</text>
+    <rect x="88" y="222" width="512" height="26" fill="#D9FBFB" stroke="#009D9A" stroke-width="1" rx="4"/>
+    <text x="100" y="239" font-size="11" font-weight="600" fill="#005d5d">Subassembly (Child Asset): Drive motor (MTR-DRV-01)</text>
   </g>
 
   <!-- Connector: Asset -> Spare Parts Tab -->
-  <path d="M240 250 V 282" stroke="#009D9A" stroke-width="2" stroke-dasharray="4 4"/>
-  <polygon points="240,286 236,278 244,278" fill="#009D9A"/>
-  <text x="250" y="272" font-size="11" font-weight="600" fill="#0072C3">References on Spare Parts tab</text>
+  <path d="M 320 260 V 292" stroke="#009D9A" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <polygon points="320,296 316,288 324,288" fill="#009D9A"/>
+  <rect x="330" y="270" width="168" height="18" fill="#ffffff" rx="2"/>
+  <text x="334" y="283" font-size="11" font-weight="600" fill="#0072C3">References on Spare Parts tab</text>
 
   <!-- Tier 3: Spare Part / Item Master -->
   <g class="tier-part">
-    <rect x="16" y="290" width="448" height="114" fill="#f4f4f4" stroke="#8d8d8d" stroke-width="1.5" rx="2"/>
-    <rect x="16" y="290" width="48" height="114" fill="#6f6f6f"/>
-    <!-- Inventory / Box Icon -->
-    <g transform="translate(28, 330) scale(0.75)" fill="#ffffff">
-      <path d="M26,6H6C4.9,6,4,6.9,4,8v16c0,1.1,0.9,2,2,2h20c1.1,0,2-0.9,2-2V8C28,6.9,27.1,6,26,6z M26,24H6V10h20V24z M10,12h12v2H10 V12z M10,16h8v2h-8V16z"/>
-    </g>
-    <text x="76" y="312" font-size="11" font-weight="600" fill="#525252" letter-spacing="0.5">3. SPARE PART (ITEM MASTER &amp; SPARE PARTS TAB)</text>
-    <text x="76" y="332" font-size="13" font-weight="600" fill="#161616">Flange gaskets • O-rings • Mechanical seals • Fuses</text>
-    <text x="76" y="352" font-size="12" fill="#525252">Consumable items • Stored in storeroom • Issued and consumed on work orders</text>
+    <rect x="24" y="300" width="592" height="136" fill="#f4f4f4" stroke="#8d8d8d" stroke-width="1.5" rx="8"/>
+    <rect x="24" y="300" width="48" height="136" fill="#6f6f6f" rx="8"/>
+    <rect x="56" y="300" width="16" height="136" fill="#6f6f6f"/>
+    <g transform="translate(36, 354) scale(0.75)" fill="#ffffff"></g>
+    <text x="88" y="324" font-size="11" font-weight="600" fill="#525252" letter-spacing="0.3">3. SPARE PART (ITEM MASTER &amp; SPARE PARTS TAB)</text>
+    <text x="88" y="346" font-size="14" font-weight="600" fill="#161616">Flange gaskets • O-rings • Mechanical seals • Fuses</text>
+    <text x="88" y="366" font-size="12" fill="#525252">Consumable items • Stored in storeroom • Issued and consumed on work orders</text>
     
     <!-- Rule of thumb note -->
-    <rect x="76" y="364" width="368" height="26" fill="#ffffff" stroke="#e0e0e0" rx="2"/>
-    <text x="86" y="381" font-size="11" fill="#161616"><tspan font-weight="600" fill="#0f62fe">Rule of thumb:</tspan> Replaced and scrapped during repairs? Model as Item, not Asset.</text>
+    <rect x="88" y="380" width="512" height="38" fill="#ffffff" stroke="#e0e0e0" rx="4"/>
+    <text x="100" y="403" font-size="12" fill="#161616"><tspan font-weight="600" fill="#0f62fe">Rule of thumb:</tspan> Replaced and scrapped during repairs? Model as Item, not Asset.</text>
   </g>
 </svg>
