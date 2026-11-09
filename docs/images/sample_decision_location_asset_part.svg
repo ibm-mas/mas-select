@@ -8,9 +8,9 @@
     <rect x="24" y="16" width="48" height="88" fill="#009D9A" rx="8"/>
     <rect x="56" y="16" width="16" height="88" fill="#009D9A"/>
     <g transform="translate(36, 48) scale(0.75)" fill="#ffffff"></g>
-    <text x="88" y="40" font-size="11" font-weight="600" fill="#0072C3" letter-spacing="0.3">1. Location (physical space)</text>
+    <text x="88" y="40" font-size="11" font-weight="600" fill="#0072C3" letter-spacing="0.3">1. Location (place)</text>
     <text x="88" y="62" font-size="15" font-weight="600" fill="#161616">Filling line room</text>
-    <text x="88" y="84" font-size="12" fill="#525252">Fixed physical space • Immovable • Room maintenance history</text>
+    <text x="88" y="84" font-size="12" fill="#525252">Place where work happens • Stays put • Room maintenance history</text>
   </g>
 
   <!-- Connector: Location -> Asset -->

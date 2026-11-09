@@ -31,7 +31,7 @@ A work order is a request or instruction to perform maintenance work. It's the c
 5. **Completed**: Use this when the physical work is finished. The record can still need final review or closeout, and some setups can move the work order forward automatically when assignments are completed.
 6. **Closed**: Closing finalizes the record. Unused item reservations are removed and the job becomes part of maintenance history.
 
-<img src="../../images/sample_work_order_lifecycle.svg" alt="A work order moves through six stages in order: Created, Approved, Assigned, In Progress, Completed, and Closed." style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
+<img src="../../images/sample_work_order_lifecycle.svg" alt="A work order moves through six stages in order. The requester or the system creates it. A supervisor approves it. A supervisor or planner assigns it to a technician. The technician starts the job and records updates, then documents labor, parts, and notes. A supervisor or planner reviews completion and closes it." style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 1: The lifecycle of a work order in Maximo Application Suite Select</p>
 
 A work order records maintenance work. It tells you what needs to be done, where the work happens, and which asset the work applies to.

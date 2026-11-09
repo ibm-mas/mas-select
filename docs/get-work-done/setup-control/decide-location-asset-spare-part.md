@@ -15,15 +15,15 @@ As outlined in [What is the correct load order?](correct-load-order.md), locatio
 
 Maximo Application Suite Select uses three distinct record types to track facilities, machinery, and replacement materials.
 
-<img src="../../images/sample_decision_location_asset_part.svg" alt="Diagram showing the 3-tier classification model: Location as a physical space containing Assets, which in turn reference Spare Parts on their Spare Parts tab." style="width: 100%; max-width: 580px; display: block; margin: 16px auto;">
+<img src="../../images/sample_decision_location_asset_part.svg" alt="Diagram showing the 3-tier classification model: Location as a place containing Assets, which in turn reference Spare Parts on their Spare Parts tab." style="width: 100%; max-width: 580px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 1: The three-way classification model in Maximo Application Suite Select</p>
 
-### 1. Location: Fixed physical space
+### 1. Location: A place where work happens
 
-A location represents an immovable geographic or functional space where work happens or where equipment is installed:
+A location represents a place where assets are operated, stored, or repaired. A location can be a building or room, but it can also be a section of a map grid or a telephone pole:
 
-- **Primary purpose**: Tracks the physical place, accumulates room-level maintenance history, and provides the spatial structure for your plant.
-- **Key characteristic**: Locations remain fixed in space. When machinery inside a room is replaced or moved, the location record stays in place.
+- **Primary purpose**: Tracks the place, accumulates its maintenance history, and provides the structure for your plant.
+- **Key characteristic**: A location stays in place when the machinery in it is replaced or moved, so its history stays with the location.
 - **Examples**: `Production building`, `Filling line room`, `Mixing room`, `Main storeroom`.
 - **Application**: Locations application.
 
@@ -32,7 +32,7 @@ A location represents an immovable geographic or functional space where work hap
 An asset represents a specific piece of serialized equipment or subassembly that operates at a location:
 
 - **Primary purpose**: Tracks the lifecycle, maintenance costs, runtime meters, failure history, and work orders for a specific machine.
-- **Key characteristic**: Assets can move between physical locations, go into a storeroom for repair, or transfer to another line while retaining their complete work history.
+- **Key characteristic**: Assets can move between locations, go into a storeroom for repair, or transfer to another line while retaining their complete work history.
 - **Examples**: `Filler FL-02`, `Syrup Pump P-101`, `Drive motor MTR-01`.
 - **Application**: Assets application.
 
@@ -54,9 +54,9 @@ To classify any physical item or facility entity, follow these four sequential d
 <img src="../../images/decision_framework_location_asset_part.svg" alt="Decision flowchart showing the four sequential questions to classify entities into Locations, Assets, Rotating Assets, or Spare Parts." style="width: 100%; max-width: 720px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 2: The four-question classification decision framework</p>
 
-### Question 1: Is it a fixed physical space where work happens?
+### Question 1: Is it a place where work happens?
 
-Ask: *"Does this record represent a permanent room, building, bay, or outdoor area?"*
+Ask: *"Does this record represent a room, building, bay, outdoor area, or other place where assets are operated, stored, or repaired?"*
 
 - If **yes**, create a **location**.
 - If **no**, proceed to Question 2.
@@ -91,7 +91,7 @@ Some physical items sit on the boundary between locations, assets, and spare par
 
 | Equipment or item | Correct record type | Why it is classified this way |
 |---|---|---|
-| **Conveyor line routing** | **Location** | The physical path through the building is permanent and fixed in space. |
+| **Conveyor line routing** | **Location** | The path through the building is a place that stays the same when the conveyor equipment changes. |
 | **Conveyor drive package** | **Asset** | The motorized mechanical drive has a nameplate, PM schedule, and runtime meter. |
 | **Conveyor belt and rollers** | **Spare part** | Consumable wear components issued from storerooms and replaced during repairs. |
 | **50 HP rebuildable drive motor** | **Asset** | Serialized rotating equipment that undergoes shop overhauls and bearing replacements. |
@@ -107,7 +107,7 @@ Some physical items sit on the boundary between locations, assets, and spare par
 
 In Figure 3, a conveyor line illustrates how to divide complex equipment across the three classification tiers:
 
-- **Location**: `Packaging zone` provides the permanent physical route where the conveyor operates.
+- **Location**: `Packaging zone` provides the route where the conveyor operates.
 - **Parent asset**: `Conveyor CV-01` is the main maintainable equipment package with its own operating history and PM schedule.
 - **Child asset**: `Drive motor MTR-DRV-02` is a serialized rotating subassembly tracked for shop overhauls and rewinds.
 - **Spare parts**: Wear items like modular belt sections, drive rollers, and guide bearings live on the **Spare Parts** tab and are issued directly to repair work orders.
@@ -136,10 +136,10 @@ What goes wrong when equipment is replaced or when technicians navigate in Maxim
 
 Creating a 1:1 location for every asset doubles data entry, clutters navigation trees, and destroys asset mobility. When `Filler FL-02` is moved or overhauled, planners must rename or reconfigure the location record. Technicians also lose the ability to see all equipment operating inside a single room.
 
-**What to do instead:** Create one physical location for the room, such as `Filling line room`, and place multiple assets directly inside that room location.
+**What to do instead:** Create one location for the room, such as `Filling line room`, and place multiple assets directly inside that room location.
 
-<img src="../../images/sample_solution_one_to_many_location_asset.svg" alt="Diagram showing the correct model where one physical room location holds multiple independent assets." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
-<p class="figure-caption">Figure 5: Solution 1: One physical location containing multiple assets</p>
+<img src="../../images/sample_solution_one_to_many_location_asset.svg" alt="Diagram showing the correct model where one room location holds multiple independent assets." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
+<p class="figure-caption">Figure 5: Solution 1: One location containing multiple assets</p>
 
 </details>
 
@@ -167,9 +167,9 @@ What happens when supervisors run facility-level cost reports?
 <details markdown="1">
 <summary>Show the answer</summary>
 
-Buildings and rooms are permanent geographic places, not maintainable equipment. Modeling physical spaces as assets breaks geographic filtering in Maximo Mobile and prevents accurate roll-up of room and building maintenance costs.
+Buildings and rooms are places, not maintainable equipment. Modeling places as assets breaks filtering by location in Maximo Mobile and prevents accurate roll-up of room and building maintenance costs.
 
-**What to do instead:** Model buildings, floors, and rooms in the physical location hierarchy under the Locations application. Anchor equipment records into their respective operating location records. Follow the layout guidelines in [How do I plan my location hierarchy?](plan-your-location-hierarchy.md).
+**What to do instead:** Model buildings, floors, and rooms in the location hierarchy under the Locations application. Anchor equipment records into their respective operating location records. Follow the layout guidelines in [How do I plan my location hierarchy?](plan-your-location-hierarchy.md).
 
 </details>
 
@@ -211,7 +211,7 @@ Before loading records into Maximo Application Suite Select, verify each classif
 
 | Check | Classification item | What to verify |
 |---|---|---|
-| [ ] | **Fixed spaces as locations** | Buildings, rooms, and storerooms are created in the Locations application. |
+| [ ] | **Places as locations** | Buildings, rooms, and storerooms are created in the Locations application. |
 | [ ] | **Maintainable machines as assets** | Equipment with serial numbers, PM schedules, or runtime meters is created in the Assets application. |
 | [ ] | **One location holds multiple assets** | Rooms contain multiple assets rather than creating artificial 1:1 location records. |
 | [ ] | **Consumables in Item Master** | Wear parts, gaskets, seals, and fuses are cataloged in Item Master, not the Assets application. |
@@ -219,7 +219,7 @@ Before loading records into Maximo Application Suite Select, verify each classif
 | [ ] | **Rotating items identified** | Rebuildable motors and pumps that cycle through storerooms are configured as rotating items. |
 
 !!! warning "TODO: Confirm with a subject matter expert"
-     [SME confirmation required: Confirm whether Rotating Items and Item Assembly Structures are fully supported in Maximo Application Suite Select data loader templates, and verify the maximum recommended spare parts per asset tab.]
+     [SME confirmation required: Confirm whether an item can be both an asset and a location, such as an air conditioning compressor in an HVAC system, and how to describe it here. Confirm whether Rotating Items and Item Assembly Structures are fully supported in Maximo Application Suite Select data loader templates, and verify the maximum recommended spare parts per asset tab.]
 
 ---
 
@@ -227,9 +227,9 @@ Before loading records into Maximo Application Suite Select, verify each classif
 
 ### Recommended next steps: Plan your hierarchies
 
-With your classification decisions established, plan the physical and equipment hierarchies for your facility.
+With your classification decisions established, plan the location and equipment hierarchies for your facility.
 
-1. [How do I plan my location hierarchy?](plan-your-location-hierarchy.md): Organize your buildings, floors, and rooms into a physical parent-child structure.
+1. [How do I plan my location hierarchy?](plan-your-location-hierarchy.md): Organize your buildings, floors, rooms, and other places into a parent-child structure.
 2. [How do I plan my asset hierarchy?](plan-your-asset-hierarchy.md): Build your equipment breakdown structure and configure parent machines and subassemblies.
 
 ### Related skills

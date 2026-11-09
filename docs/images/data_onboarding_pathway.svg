@@ -26,8 +26,8 @@
     <rect x="68" y="118" width="8" height="64" fill="#0F62FE"/>
     <text x="48" y="156" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
     <text x="88" y="140" font-size="11" font-weight="600" fill="#0F62FE" letter-spacing="0.5">STEP 2 · STRUCTURE</text>
-    <text x="88" y="158" font-size="14" font-weight="600" fill="#161616">Plan your location hierarchy</text>
-    <text x="88" y="173" font-size="11" font-weight="400" fill="#525252">Map sites, buildings, and rooms top-down on paper</text>
+    <text x="88" y="158" font-size="14" font-weight="600" fill="#161616">Plan your location and asset hierarchies</text>
+    <text x="88" y="173" font-size="11" font-weight="400" fill="#525252">Map locations and equipment top-down on paper</text>
   </g>
 
   <!-- Connector 2 -> 3 -->

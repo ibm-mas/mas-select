@@ -12,7 +12,7 @@
     </g>
     <text x="88" y="38" font-size="11" font-weight="600" fill="#0072C3" letter-spacing="0.3">Location (physical route)</text>
     <text x="88" y="58" font-size="15" font-weight="600" fill="#161616">Packaging zone</text>
-    <text x="88" y="76" font-size="12" fill="#525252">Fixed physical space • Immovable route through the plant</text>
+    <text x="88" y="76" font-size="12" fill="#525252">Place where work happens • Route through the plant</text>
   </g>
 
   <!-- Connector: Location -> Asset -->

@@ -1,8 +1,8 @@
 # How do I plan my asset hierarchy?
 
-Your asset hierarchy is the equipment breakdown structure of your facility. It organizes machinery, subassemblies, and critical maintainable components into a parent-child relationship operating within your physical locations.
+Your asset hierarchy is the equipment breakdown structure of your facility. It organizes machinery, subassemblies, and critical maintainable components into a parent-child relationship operating within your locations.
 
-When onboarding data into Maximo Application Suite Select, planning your asset hierarchy follows the creation of your physical location hierarchy, as outlined in [What is the correct load order?](correct-load-order.md) and [How do I plan my location hierarchy?](plan-your-location-hierarchy.md).
+When onboarding data into Maximo Application Suite Select, planning your asset hierarchy follows the creation of your location hierarchy, as outlined in [What is the correct load order?](correct-load-order.md) and [How do I plan my location hierarchy?](plan-your-location-hierarchy.md).
 
 Work orders, maintenance costs, failure codes, and operating history roll up from child components to parent machines. A well-designed asset hierarchy allows maintenance teams to track the lifecycle of serialized equipment, schedule overhauls at the machine or component level, and move subassemblies across the plant without losing work history. A poorly designed hierarchy clutters drilldown trees with consumable parts and leads to misallocated maintenance costs.
 
@@ -51,9 +51,9 @@ Do not attempt to model every bolt, bracket, or hose in the asset tree. If an it
 
 To make replacement parts easy for technicians to find without turning them into child assets, add stocked items from the Item Master to the **Spare Parts** tab of the parent asset. Technicians can view approved part numbers, verify storeroom availability, and reserve parts directly on active work orders.
 
-### 3. Anchor every parent asset to a valid physical location
+### 3. Anchor every parent asset to a valid location
 
-Every top-level parent asset must be assigned to an operating location in your physical location hierarchy, such as `Filling line room`.
+Every top-level parent asset must be assigned to an operating location in your location hierarchy, such as `Filling line room`.
 
 When a parent asset is assigned to a location, child subassemblies inherit that location context automatically. When you move a parent asset to a new room or send it to the storeroom for rebuild, child components move along with the parent.
 
@@ -63,8 +63,8 @@ Establish consistent, descriptive naming conventions that combine an equipment c
 
 When preparing spreadsheet files for data loading:
 
-1. **Locations first**: Ensure all physical operating locations exist in the system before importing assets.
-2. **Top-level parent assets second**: Load main equipment packages with their physical location references.
+1. **Locations first**: Ensure all operating locations exist in the system before importing assets.
+2. **Top-level parent assets second**: Load main equipment packages with their location references.
 3. **Child subassemblies third**: Load child records referencing their parent asset identifiers.
 4. **Spare parts lists fourth**: Attach stocked item records to assets after asset records exist.
 
@@ -128,7 +128,7 @@ How do child subassemblies, such as `Drive motor` and `Nozzle assembly`, handle 
 <details markdown="1">
 <summary>Show the answer</summary>
 
-When a parent asset moves to a new operating location, all child assets in its hierarchy automatically move with it to the new location. The parent-child relationship remains intact, and historical work orders remain linked to both the equipment and the previous physical location.
+When a parent asset moves to a new operating location, all child assets in its hierarchy automatically move with it to the new location. The parent-child relationship remains intact, and historical work orders remain linked to both the equipment and the previous location.
 
 <img src="../../images/sample_asset_hierarchy_move_parent.svg" alt="Diagram showing the movement of parent asset Filler FL-02 from Filling line room to Packaging suite, demonstrating that all child subassemblies move to the new location automatically." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 4: Problem 2: Child subassemblies automatically inherit parent asset relocation</p>
@@ -146,12 +146,12 @@ What goes wrong when supervisors run building maintenance reports?
 <details markdown="1">
 <summary>Show the answer</summary>
 
-Buildings, rooms, and physical areas are fixed geographical spaces, not movable equipment. Modeling physical rooms as assets breaks spatial cost roll-up, disables geographic location filtering in Maximo Mobile, and prevents accurate tracking when equipment moves between rooms.
+Buildings, rooms, and areas are places, not movable equipment. Modeling rooms as assets breaks cost roll-up by location, disables filtering by location in Maximo Mobile, and prevents accurate tracking when equipment moves between rooms.
 
 <img src="../../images/sample_asset_hierarchy_room_as_asset.svg" alt="Comparison diagram contrasting the incorrect model where Production building is created as an asset record against the correct model where Production building is a location record holding the equipment." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
-<p class="figure-caption">Figure 5: Problem 3: Comparison of modeling physical spaces as locations versus assets</p>
+<p class="figure-caption">Figure 5: Problem 3: Comparison of modeling places as locations versus assets</p>
 
-**What to do instead:** Model buildings, floors, and rooms in the physical location hierarchy under the Locations application. Anchor equipment records, such as `Filler FL-02`, into their respective operating location records.
+**What to do instead:** Model buildings, floors, and rooms in the location hierarchy under the Locations application. Anchor equipment records, such as `Filler FL-02`, into their respective operating location records.
 
 </details>
 
@@ -208,9 +208,9 @@ Before loading your asset hierarchy into Maximo Application Suite Select, verify
 |---|---|---|
 | [ ] | **Maintainable equipment only** | Every asset record represents serialized, maintainable equipment, not consumable wear parts. |
 | [ ] | **Spare parts cataloged** | Consumables, o-rings, and gaskets are organized in Item Master for use on the Spare Parts tab. |
-| [ ] | **Valid operating locations** | Every top-level parent asset is assigned to an existing physical location record. |
+| [ ] | **Valid operating locations** | Every top-level parent asset is assigned to an existing location record. |
 | [ ] | **Shallow hierarchy depth** | The equipment structure stops at maintainable units, with most organizations using two to three levels. |
-| [ ] | **Standardized naming** | Equipment identifiers and asset tags follow consistent site naming conventions. |
+| [ ] | **Standardized naming** | Equipment identifiers and asset tags follow consistent naming conventions. |
 | [ ] | **Top-down import sequence** | Spreadsheet records are ordered so parent assets and locations exist before child records load. |
 
 !!! warning "TODO: Confirm with a subject matter expert"

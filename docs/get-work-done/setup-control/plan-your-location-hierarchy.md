@@ -1,6 +1,6 @@
 # How do I plan my location hierarchy?
 
-Your location hierarchy is the physical map of your facility. It organizes buildings, departments, areas, and rooms into a clear parent-child structure.
+Your location hierarchy is the map of the places where your assets are operated, stored, or repaired. It organizes those places into a clear parent-child structure. A place can be a building, a room, a section of a map grid, or a telephone pole.
 
 When loading data into Maximo Application Suite Select, planning your locations is the foundation of your setup. Locations must be established before you load equipment, inventory, or work orders, as outlined in [What is the correct load order?](correct-load-order.md).
 
@@ -15,37 +15,44 @@ Work orders, maintenance history, safety requirements, and costs roll up through
 
 Before loading records into the system, follow these five best practices with your maintenance planners, supervisors, and operations team.
 
-### 1. Map your physical layout on paper first
+### 1. Map your layout on paper first
 
 Before creating records in the system, sketch the facility on paper or a whiteboard. Distinguish clearly between locations, assets, and storerooms:
 
-- **Location**: A fixed physical place where work happens or where equipment is installed, such as `Production building` or `Filling line room`. Locations remain static and accumulate the long-term history of that space.
+- **Location**: A place where work happens or where equipment is operated, stored, or repaired, such as `Production building` or `Filling line room`. A location accumulates the long-term history of that place.
 - **Asset**: Maintainable equipment operating at a location, such as `Filler FL-02` or a motor. Assets can move between locations or into a storeroom, retaining their own lifecycle history wherever they go.
 - **Storeroom**: A specialized location used specifically to receive, store, and issue inventory items, such as `Main storeroom`.
 
-Ask yourself: *"Is this an immovable place where work occurs, or a piece of equipment that could be moved, replaced, or overhauled?"*
+Ask yourself: *"Is this a place where work occurs, or a piece of equipment that could be moved, replaced, or overhauled?"*
 
-### 2. Group by physical place, not by functional use
+### 2. Choose one clear structure, usually based on place
 
-The primary location hierarchy must reflect actual physical geography:
+The primary location hierarchy usually follows the places where work happens, for example:
 
-**Site** → **Building** → **Area / Floor** → **Room / Zone**
+**Top-level location** → **Building or area** → **Floor or zone** → **Room or position**
 
-Because costs, safety plans, and work orders roll up through parent locations, grouping locations by what they are used for, such as grouping all restrooms or all compressor rooms across multiple buildings under one branch, breaks facility-level reporting. A report run on `Production building` will miss any rooms placed outside that building's branch.
+A location does not have to be a building with floors and rooms. It can be a section of a map grid or a telephone pole. Choose levels that fit how your operation is laid out.
+
+Because costs, safety plans, and work orders roll up through parent locations, grouping locations by what they are used for, such as grouping all restrooms or all compressor rooms across multiple buildings under one branch, can break building-level reporting. A report run on `Production building` will miss any rooms placed outside that building's branch.
 
 ### 💡 Tip: Grouping by function
 
-If you need to search or group locations by type or function, such as finding all restrooms or all electrical closets across a facility, use **Classifications** or location attributes rather than altering the primary physical hierarchy.
+If you need to search or group locations by type or function, such as finding all restrooms or all electrical closets across a facility, use **Classifications** or location attributes rather than altering the primary hierarchy.
+
+Some organizations also define locations by function, so that history stays with the location as the assets in it are swapped. For example, an air conditioning compressor can be both an asset and a location in an HVAC system. For more about items that are both, see [How do I decide: location, asset, or spare part?](decide-location-asset-spare-part.md).
+
+!!! warning "TODO: Confirm with a subject matter expert"
+     [SME confirmation required: confirm how functional locations and location systems work in Maximo Application Suite Select, and how to describe an item that is both an asset and a location.]
 
 ### Quick test: Should this be a location?
 
 Create a location only if all of the following are true:
 
-- It is a fixed physical place.
+- It is a place where assets are operated, stored, or repaired, or a functional position that keeps its history when equipment is swapped.
 - Maintenance work might be planned, performed, or reported for it.
 - It needs its own maintenance history, costs, or operational context.
 
-If the equipment can be moved, repaired, replaced, or transferred, it is probably an asset rather than a location.
+If the item moves with the equipment when it is repaired, replaced, or transferred, it is probably an asset rather than a location.
 
 ### 3. Decide how deep to go: stop at the maintainable level
 
@@ -62,7 +69,7 @@ For example, if maintenance is scheduled for `Cold storage` as an entire room, d
 
 ### 4. Connect every child location to a valid parent
 
-Except for the top-level site, every operational location in your hierarchy must have an assigned parent location.
+Except for the top-level location, every operational location in your hierarchy must have an assigned parent location.
 
 Locations created without a parent become orphaned records. They do not appear in hierarchy drilldown navigation trees and are excluded from summary reports run on parent facilities.
 
@@ -73,33 +80,33 @@ Establish consistent, descriptive naming conventions across the facility. Combin
 When importing data from spreadsheets:
 
 1. **Sort your records top-down**: Parents must exist before child records are added.
-2. **Import order**: Site → Parent locations → Child locations → Assets.
+2. **Import order**: Top-level location, then parent locations, then child locations, then assets.
 3. If child rows appear before their parents in an import file, the database cannot resolve the parent reference, leading to import errors and orphaned records.
 
 ---
 
 ## What a good location hierarchy looks like
 
-In this sample ice cream plant, the structure follows a clear physical layout from the site down to individual rooms:
+In this sample ice cream plant, the structure follows the layout of the plant from the top-level location down to individual rooms:
 
-- **Ice cream main plant** is the top-level site that provides the single organizational context for all maintenance records.
+- **Ice cream main plant** is the top-level location that all other locations sit under.
 - **Production building** is a primary parent location that groups related production spaces.
 - **Mixing room**, **Filling line room**, and **Packaging zone** are child locations under Production building.
-- **Cold storage** and **Main storeroom** are separate operating locations directly under the site.
+- **Cold storage** and **Main storeroom** are separate operating locations directly under **Ice cream main plant**.
 
-<img src="../../images/sample_location_hierarchy.svg" alt="Location hierarchy for the Ice cream main plant site. Production building is a parent location with three child locations: Mixing room, Filling line room, and Packaging zone. Cold storage and Main storeroom are separate locations in the same site." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
-<p class="figure-caption">Figure 1: Sample location hierarchy for the Ice cream main plant site</p>
+<img src="../../images/sample_location_hierarchy.svg" alt="Location hierarchy for Ice cream main plant. Production building is a parent location with three child locations: Mixing room, Filling line room, and Packaging zone. Cold storage and Main storeroom are separate locations directly under Ice cream main plant." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
+<p class="figure-caption">Figure 1: Sample location hierarchy for Ice cream main plant</p>
 
 ### Why this structure works
 
-This layout succeeds because it mirrors actual physical geography while meeting everyday operational and reporting needs:
+This layout succeeds because it mirrors the physical layout of the plant while meeting everyday operational and reporting needs:
 
 - **Accurate cost and work roll-up**: Work orders, labor hours, and maintenance costs assigned to `Mixing room`, `Filling line room`, or `Packaging zone` automatically roll up into summary reports for `Production building`. Supervisors can assess total building maintenance expenses or drill down into a single room.
 - **Targeted context for technicians**: When technicians open `Filling line room` in Maximo Mobile or the desktop application, they see only the equipment, safety requirements, and open work orders relevant to that specific room, without clutter from other areas.
 - **Clear separation of storerooms and production areas**: `Main storeroom` is designated as an inventory location for receiving, storing, and issuing parts. Keeping storerooms separate from operating production rooms prevents inventory transactions from mixing with equipment maintenance history.
-- **Independent tracking for standalone facilities**: `Cold storage` sits directly under the site because it is a separate physical structure with its own refrigeration systems and temperature controls, allowing its costs and work to be tracked independently of the main production building.
-- **Fast, shallow drilldown**: Technicians reach any room in only two navigation steps from the site root. This shallow depth keeps navigation fast in the field while providing all the detail required for work management.
-- **Equipment mobility**: When assets such as fillers, motors, or pumps are replaced, moved to another room, or sent for overhaul, the physical location hierarchy remains stable while the asset records track their own movement history.
+- **Independent tracking for standalone facilities**: `Cold storage` sits directly under `Ice cream main plant` because it is a separate physical structure with its own refrigeration systems and temperature controls, allowing its costs and work to be tracked independently of the main production building.
+- **Fast, shallow drilldown**: Technicians reach any room in only two navigation steps from `Ice cream main plant`. This shallow depth keeps navigation fast in the field while providing all the detail required for work management.
+- **Equipment mobility**: When assets such as fillers, motors, or pumps are replaced, moved to another room, or sent for overhaul, the location hierarchy remains stable while the asset records track their own movement history.
 
 ---
 
@@ -111,7 +118,7 @@ Review these common planning scenarios to test your understanding before buildin
 
 The plant has two restrooms. In the hierarchy below, both are placed under a separate parent location named `Restrooms`.
 
-<img src="../../images/sample_location_hierarchy_grouped_by_use.svg" alt="Location hierarchy for the Ice cream main plant site. Production building contains Mixing room, Filling line room, and Packaging zone. A separate location named Restrooms contains Production building restroom and Packaging zone restroom." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
+<img src="../../images/sample_location_hierarchy_grouped_by_use.svg" alt="Location hierarchy for Ice cream main plant. Production building contains Mixing room, Filling line room, and Packaging zone. A separate location named Restrooms contains Production building restroom and Packaging zone restroom." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 2: Problem 1: Restrooms grouped by functional use instead of physical location</p>
 
 A supervisor runs a cost and work history report for `Production building` for the past quarter. What goes wrong?
@@ -125,7 +132,7 @@ The hierarchy was grouped by functional use rather than physical location.
 
 **What to do instead:** Place each restroom under the physical area where it is located. `Production building restroom` belongs under `Production building`. `Packaging zone restroom` belongs under `Packaging zone`.
 
-<img src="../../images/sample_location_hierarchy_by_place.svg" alt="Corrected location hierarchy for the Ice cream main plant site. Production building contains Mixing room, Filling line room, Packaging zone, and Production building restroom. Packaging zone contains Packaging zone restroom. Cold storage sits at the site level." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
+<img src="../../images/sample_location_hierarchy_by_place.svg" alt="Corrected location hierarchy for Ice cream main plant. Production building contains Mixing room, Filling line room, Packaging zone, and Production building restroom. Packaging zone contains Packaging zone restroom. Cold storage sits directly under Ice cream main plant." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 3: Solution 1: Restrooms placed within their physical parent locations</p>
 
 If you need to find all restrooms across the plant, assign a common Classification or type rather than creating a functional branch in your location hierarchy.
@@ -134,9 +141,9 @@ If you need to find all restrooms across the plant, assign a common Classificati
 
 ### Problem 2: Where is the Packaging zone?
 
-In the hierarchy below, `Packaging zone` was added to the site without selecting a parent location.
+In the hierarchy below, `Packaging zone` was added without selecting a parent location.
 
-<img src="../../images/sample_location_hierarchy_missing_parent.svg" alt="Location hierarchy for the Ice cream main plant site. Production building contains Mixing room and Filling line room. Cold storage is a separate location. Packaging zone is an orphan record with no connecting line to a parent." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
+<img src="../../images/sample_location_hierarchy_missing_parent.svg" alt="Location hierarchy for Ice cream main plant. Production building contains Mixing room and Filling line room. Cold storage is a separate location. Packaging zone is an orphan record with no connecting line to a parent." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 4: Problem 2: Packaging zone created as an orphaned record without a parent</p>
 
 What happens when a planner opens `Production building` in the drilldown tree?
@@ -146,11 +153,11 @@ What happens when a planner opens `Production building` in the drilldown tree?
 
 `Production building` displays only `Mixing room` and `Filling line room`. `Packaging zone` is missing from the tree view and is excluded from building summary reports.
 
-Because `Packaging zone` has no parent, it exists as an orphaned record at the site level.
+Because `Packaging zone` has no parent, it exists as an orphaned record with no connection to `Production building`.
 
 **What to do instead:** Assign `Production building` as the parent location for `Packaging zone`.
 
-<img src="../../images/sample_location_hierarchy_with_parent.svg" alt="Corrected location hierarchy for the Ice cream main plant site. Production building contains Mixing room, Filling line room, and Packaging zone. Cold storage sits at the site level." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
+<img src="../../images/sample_location_hierarchy_with_parent.svg" alt="Corrected location hierarchy for Ice cream main plant. Production building contains Mixing room, Filling line room, and Packaging zone. Cold storage sits directly under Ice cream main plant." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 5: Solution 2: Packaging zone connected to Production building parent location</p>
 
 </details>
@@ -190,7 +197,7 @@ What happens when you run the import in this order?
 
 **What to do instead:** Sort import rows top-down:
 
-1. `Ice cream main plant`: Site
+1. `Ice cream main plant`: Top-level location
 2. `Production building`: Parent location
 3. `Mixing room`, `Filling line room`, `Packaging zone`: Child locations
 
@@ -204,13 +211,13 @@ Always verify your import count against the number of rows in your source spread
 
 When designing a location hierarchy, avoid these common mistakes:
 
-- Organizing locations by function rather than physical geography.
-- Creating locations for movable equipment instead of physical places.
+- Grouping locations by function when you need reports by building or area.
+- Creating a location for every movable piece of equipment.
 - Adding levels that nobody will maintain, report on, or navigate to.
 - Designing only for today's facility without considering future expansion.
 - Creating orphan locations that are not connected to a parent location.
 
-A simple hierarchy that reflects the physical layout of your facility is easier to maintain and usually produces more accurate reporting than a highly detailed hierarchy.
+A simple hierarchy that reflects the layout of your operation is easier to maintain and usually produces more accurate reporting than a highly detailed hierarchy.
 
 ---
 
@@ -222,11 +229,11 @@ Before loading your location hierarchy into Maximo Application Suite Select, ver
 
 | Check | Planning item | What to verify |
 |---|---|---|
-| [ ] | **Physical places only** | Every location record represents a physical place where work happens, not a movable piece of equipment. |
-| [ ] | **Physical geography** | The hierarchy is organized by physical location from site to building to room, not functional use. |
+| [ ] | **Places and positions** | Every location record represents a place where assets are operated, stored, or repaired, or a functional position, not a movable piece of equipment. |
+| [ ] | **One clear structure** | The hierarchy follows one consistent structure, usually from the top-level location to building to room, and other groupings use classifications. |
 | [ ] | **Valid parent connections** | Every child location connects to an existing parent location to prevent orphan records. |
 | [ ] | **Maintainable depth** | The structure stops at the level where work is planned, assigned, or reported, typically 3 to 5 levels. |
-| [ ] | **Standardized naming** | Location codes and identifiers follow consistent naming conventions across the site. |
+| [ ] | **Standardized naming** | Location codes and identifiers follow consistent naming conventions across the hierarchy. |
 | [ ] | **Top-down import sequence** | Spreadsheet rows are sorted so that parent locations exist before child records are imported. |
 
 !!! warning "TODO: Confirm with a subject matter expert"
@@ -238,7 +245,7 @@ Before loading your location hierarchy into Maximo Application Suite Select, ver
 
 ### Recommended next step: Plan your asset hierarchy
 
-With your location hierarchy planned, organize your machinery, subassemblies, and maintainable components operating within those physical locations.
+With your location hierarchy planned, organize your machinery, subassemblies, and maintainable components operating within those locations.
 
 [How do I plan my asset hierarchy?](plan-your-asset-hierarchy.md)
 

@@ -2,7 +2,7 @@
 
 Import order matters. Referenced records must exist before records that use them, and parent records must exist before child records.
 
-<img src="../../images/data_onboarding_pathway.svg" alt="Five-step data onboarding pathway in Maximo Application Suite Select: 1. Understand the correct load order, 2. Plan your location hierarchy, 3. Prepare data for import, 4. Get data into the system, 5. Fix import errors." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
+<img src="../../images/data_onboarding_pathway.svg" alt="Five-step data onboarding pathway in Maximo Application Suite Select: 1. Understand the correct load order, 2. Plan your location and asset hierarchies, 3. Prepare data for import, 4. Get data into the system, 5. Fix import errors." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
 
 ## Why does load order matter?
 
@@ -25,7 +25,7 @@ Import supporting records before importing locations or assets that reference th
 - Vendors and manufacturers
 - Asset type values
 - Classifications and specifications
-- Site addresses, including bill-to and ship-to addresses
+- Addresses, including bill-to and ship-to addresses
 
 **Why this matters**: Locations and assets reference these records. If the referenced data does not exist, the import fails.
 
@@ -60,7 +60,7 @@ Import assets after their locations exist.
 
 - Import parent assets before child assets or subassemblies
 - Verify that each child asset references the correct parent asset
-- Verify that the parent asset exists at the expected site and, if applicable, location
+- Verify that the parent asset exists and is at the expected location
 
 ### 4. Other records that reference locations or assets
 
@@ -75,10 +75,10 @@ Import other records that depend on locations and assets:
 
 **Correct order**:
 
-1. Site, such as `Ice cream main plant`
-2. Building, such as `Production building`
-3. Area or room, such as `Filling line room`
-4. Sub-area, if applicable
+1. Top-level location, such as `Ice cream main plant`
+2. Second-level location, such as `Production building`
+3. Lower-level location, such as `Filling line room`
+4. Further sub-locations, if applicable
 
 **What happens if you import in the wrong order**: Child locations fail because their parent does not exist.
 
@@ -97,7 +97,7 @@ If you use parent-child asset relationships:
 
 - Parent asset IDs are correct
 - Each child asset references the correct parent
-- Parent assets exist at the expected site and location
+- Parent assets exist at the expected location
 
 ### Parent-child relationships
 
@@ -122,7 +122,7 @@ Follow these five steps in sequence to load your facility data:
 | Step | Action | Guide |
 |---|---|---|
 | 1 | **Understand load order**<br>Review dependencies and ensure referenced records and parent locations exist first. | [What is the correct load order?](correct-load-order.md) |
-| 2 | **Plan your location hierarchy**<br>Map your site, buildings, and rooms top-down on paper before creating records. | [How do I plan my location hierarchy?](plan-your-location-hierarchy.md) |
+| 2 | **Plan your location and asset hierarchies**<br>Map your locations and equipment top-down on paper before creating records. | [How do I plan my location hierarchy?](plan-your-location-hierarchy.md)<br>[How do I plan my asset hierarchy?](plan-your-asset-hierarchy.md) |
 | 3 | **Prepare data for import**<br>Download CSV templates from Data Management, format ID columns as text, and clean fields. | [How do I prepare data for import?](prepare-data-for-import.md) |
 | 4 | **Get data into the system**<br>Upload CSV files in Data Management, validate rows in preview mode, and commit the import. | [How do I get data into the system?](get-data-into-system.md) |
 | 5 | **Fix import errors**<br>Diagnose preview errors, correct source CSV rows, and re-import failed records. | [How do I fix import errors?](why-does-asset-import-fail.md) |
@@ -131,11 +131,12 @@ Follow these five steps in sequence to load your facility data:
 
 ## Continue building your skills
 
-### Recommended next step: Plan your location hierarchy
+### Recommended next step: Plan your hierarchies
 
-Before preparing spreadsheet files, sketch your site and room structure to avoid orphan records and grouping errors.
+Before preparing spreadsheet files, sketch your locations and equipment top-down to avoid orphan records and grouping errors.
 
-[How do I plan my location hierarchy?](plan-your-location-hierarchy.md)
+1. [How do I plan my location hierarchy?](plan-your-location-hierarchy.md)
+2. [How do I plan my asset hierarchy?](plan-your-asset-hierarchy.md)
 
 ### Related skills
 

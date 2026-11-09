@@ -25,13 +25,13 @@ A location is a physical place where work is performed or assets are installed. 
 ## Location hierarchy
 
 <div style="width: 50%; float: right; margin-left: 20px; margin-bottom: 20px;">
-<img src="../../images/sample_location_hierarchy.svg" alt="Location hierarchy for the Ice cream main plant site. Production building is a parent location with three child locations: Mixing room, Filling line room, and Packaging zone. Cold storage and Main storeroom are separate locations in the same site." style="width: 100%; display: block;">
+<img src="../../images/sample_location_hierarchy.svg" alt="Location hierarchy for Ice cream main plant. Production building is a parent location with three child locations: Mixing room, Filling line room, and Packaging zone. Cold storage and Main storeroom are separate locations directly under Ice cream main plant." style="width: 100%; display: block;">
 <p class="figure-caption">Figure 1: Sample location hierarchy for an ice cream manufacturer</p>
 </div>
 
-A location is a fixed place where work happens or where assets are installed. You can organize locations in a parent-child hierarchy to show how areas in a facility are connected and to track work in the correct place.
+A location is a place where work happens or where assets are installed. You can organize locations in a parent-child hierarchy to show how areas in a facility are connected and to track work in the correct place.
 
-In figure 1, Production building is a parent location within the Ice cream main plant site. Parent locations can include child locations. For example, Production building includes Mixing room, Filling line room, and Packaging zone. Cold storage and Main storeroom are separate locations in the same site.
+In figure 1, Production building is a parent location within Ice cream main plant. Parent locations can include child locations. For example, Production building includes Mixing room, Filling line room, and Packaging zone. Cold storage and Main storeroom are separate locations directly under Ice cream main plant.
 
 Want to see how this connects to assets and work orders? See [How do locations, assets, and work orders work together?](how-concepts-work-together.md)
 
