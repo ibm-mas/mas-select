@@ -10,6 +10,9 @@ IBM Maximo Mobile has more apps than Technician and Inspections. Some help you r
 
 The apps you see depend on the security group and permissions that your administrator gave you. If you cannot see an app that you expect, ask your administrator.
 
+!!! note
+    IBM Maximo Mobile is also used with IBM Maximo Manage. If you see references to Maximo Manage, you can ignore them.
+
 ## 💡 Tips for success
 
 - Use the app names on your home screen to find the app you need.

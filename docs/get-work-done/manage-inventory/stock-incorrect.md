@@ -12,8 +12,8 @@ When physical inventory doesn't match system records, you need to investigate an
 | **Physical issues** | Items misplaced, wrong bin locations, damaged items |
 | **System issues** | Data entry mistakes, incomplete transactions |
 
-!!! warning "TODO: Add visual content"
-     A flowchart showing the inventory correction process would be useful here.
+<img src="../../images/sample_inventory_correction_flow.svg" alt="Six steps in order: verify the count, review transactions, check related records, get approval if needed, adjust the balance, and follow up." style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
+<p class="figure-caption">Figure 1: The inventory correction process</p>
 
 ---
 
@@ -85,8 +85,8 @@ Regular counting and prompt adjustments keep your inventory data trustworthy.
 - System errors
 - Integration problems
 
-!!! warning "TODO: Add visual content"
-     A diagram showing common error sources would be useful here.
+<img src="../../images/sample_inventory_error_sources.svg" alt="Transaction errors, physical issues, and system issues can each lead to a stock discrepancy, where the system record does not match the physical count." style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
+<p class="figure-caption">Figure 2: Common sources of inventory errors</p>
 
 ---
 
@@ -183,8 +183,8 @@ Verify:
 - **Inventory transfers**: Transfers completed properly?
 - **Issues**: Items picked and issued from storeroom?
 
-!!! warning "TODO: Add visual content"
-     A diagram showing related records to check would be useful here.
+<img src="../../images/sample_inventory_related_records.svg" alt="When you find a stock discrepancy, check four related records: work orders, receipts, inventory transfers, and issues." style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
+<p class="figure-caption">Figure 3: Related records to check when stock is incorrect</p>
 
 ---
 
@@ -381,8 +381,8 @@ If same item has frequent issues:
 5. Consider item changes.
 6. Monitor improvement.
 
-!!! warning "TODO: Add visual content"
-     A decision tree for handling different error types would be useful here.
+<img src="../../images/sample_inventory_error_decision_tree.svg" alt="A negative balance means correct it immediately, then investigate. A large discrepancy means do not adjust immediately, investigate, and get supervisor approval. Recurring errors mean analyze the pattern and fix the process." style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
+<p class="figure-caption">Figure 4: How to handle different types of inventory error</p>
 
 ---
 

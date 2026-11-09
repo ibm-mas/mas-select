@@ -19,6 +19,9 @@ For example, to stock a food-grade gasket kit for Filler FL-02, you create the i
 
 ## Quick reference
 
+<img src="../../images/sample_get_part_into_inventory.svg" alt="Five steps in order: create the item in Item Master, make sure the storeroom exists in Storerooms, add the item to the storeroom in Item Master, record the location and quantity in Inventory, and issue the part to a work order in Inventory." style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
+<p class="figure-caption">Figure 1: The steps to get a new part into inventory</p>
+
 ### Table 1: From a new part to a balance you can issue
 
 | Order | Application | What you do there |

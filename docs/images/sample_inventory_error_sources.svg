@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 464" width="1080" height="464" role="img" aria-labelledby="t d" style="background:#ffffff; font-family:'IBM Plex Sans', -apple-system, sans-serif;">
+  <title id="t">Common sources of inventory errors</title>
+  <desc id="d">Transaction errors, physical issues, and system issues can each lead to a stock discrepancy, where the system record does not match the physical count.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#161616"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <rect class="node" id="e1" x="32" y="32" width="400" height="112" rx="8" ry="8" fill="#ffffff" stroke="#0f62fe" stroke-width="1"/>
+  <path d="M 40 32 Q 32 32 32 40 V 136 Q 32 144 40 144 Z" fill="#0f62fe"/>
+  <text x="56" y="64" font-size="14" font-weight="600" fill="#161616">Transaction errors</text>
+  <text x="56" y="92" font-size="14" fill="#161616">Parts issued but not recorded</text>
+  <text x="56" y="110" font-size="14" fill="#161616">Returns not processed</text>
+  <text x="56" y="128" font-size="14" fill="#161616">Wrong quantities entered</text>
+  <rect class="node" id="e2" x="32" y="160" width="400" height="112" rx="8" ry="8" fill="#ffffff" stroke="#0f62fe" stroke-width="1"/>
+  <path d="M 40 160 Q 32 160 32 168 V 264 Q 32 272 40 272 Z" fill="#0f62fe"/>
+  <text x="56" y="192" font-size="14" font-weight="600" fill="#161616">Physical issues</text>
+  <text x="56" y="220" font-size="14" fill="#161616">Items misplaced in the storeroom</text>
+  <text x="56" y="238" font-size="14" fill="#161616">Wrong bin locations</text>
+  <text x="56" y="256" font-size="14" fill="#161616">Damaged or lost items</text>
+  <rect class="node" id="e3" x="32" y="288" width="400" height="112" rx="8" ry="8" fill="#ffffff" stroke="#0f62fe" stroke-width="1"/>
+  <path d="M 40 288 Q 32 288 32 296 V 392 Q 32 400 40 400 Z" fill="#0f62fe"/>
+  <text x="56" y="320" font-size="14" font-weight="600" fill="#161616">System issues</text>
+  <text x="56" y="348" font-size="14" fill="#161616">Data entry mistakes</text>
+  <text x="56" y="366" font-size="14" fill="#161616">Timing differences</text>
+  <text x="56" y="384" font-size="14" fill="#161616">Incomplete transactions</text>
+  <rect class="node" id="r" x="648" y="184" width="400" height="64" rx="8" ry="8" fill="#ffffff" stroke="#8a3ffc" stroke-width="1"/>
+  <path d="M 656 184 Q 648 184 648 192 V 240 Q 648 248 656 248 Z" fill="#8a3ffc"/>
+  <text x="672" y="221" font-size="14" font-weight="600" fill="#161616">Stock discrepancy</text>
+  <path class="connector" id="k1" data-from="e1" data-to="r" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 432 88 H 528 Q 536 88 536 96 V 208 Q 536 216 544 216 H 648"/>
+  <path class="connector" id="k2" data-from="e2" data-to="r" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 432 216 H 648"/>
+  <path class="connector" id="k3" data-from="e3" data-to="r" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 432 344 H 528 Q 536 344 536 336 V 224 Q 536 216 544 216 H 648"/>
+  <text x="32" y="444" font-size="12" font-weight="600" fill="#161616">Legend:</text>
+  <rect x="112" y="428" width="48" height="24" rx="8" ry="8" fill="#ffffff" stroke="#0f62fe" stroke-width="1"/>
+  <path d="M 120 428 Q 112 428 112 436 V 444 Q 112 452 120 452 Z" fill="#0f62fe"/>
+  <text x="168" y="444" font-size="12" fill="#161616">Source of error</text>
+  <rect x="320" y="428" width="48" height="24" rx="8" ry="8" fill="#ffffff" stroke="#8a3ffc" stroke-width="1"/>
+  <path d="M 328 428 Q 320 428 320 436 V 444 Q 320 452 328 452 Z" fill="#8a3ffc"/>
+  <text x="376" y="444" font-size="12" fill="#161616">Result</text>
+  <path d="M 472 440 H 520" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)"/>
+  <text x="528" y="444" font-size="12" fill="#161616">Can lead to</text>
+</svg>

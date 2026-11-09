@@ -12,6 +12,9 @@ IBM Maximo Mobile lets you view assigned work, complete work orders, assign and 
 
 Technicians, supervisors, and inventory clerks all use IBM Maximo Mobile.
 
+!!! note
+    IBM Maximo Mobile is also used with IBM Maximo Manage. If you see references to Maximo Manage, you can ignore them.
+
 ## 💡 Tips for success
 
 - Download the app before your first shift, not during it.

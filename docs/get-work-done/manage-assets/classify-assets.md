@@ -12,9 +12,6 @@ Use classifications to group similar assets together and add detailed specificat
 | **Attribute** | A specific detail about the equipment (such as "Manufacturer" or "Fill capacity") |
 | **Hierarchy** | How classifications are organized from broad to specific (such as Equipment → Filling and Packaging → Rotary Fillers) |
 
-!!! warning "TODO: Add visual content"
-     A diagram showing classification hierarchy (such as Equipment → Fillers → Rotary Fillers) would be useful here.
-
 ---
 
 ## 💡 Tips for success
@@ -71,20 +68,10 @@ Classifications are organized like a tree, from broad to specific:
 - **Mid level**: Specific types, such as "Filling and Packaging" or "Freezers"
 - **Bottom level**: Detailed subtypes, such as "Spiral Freezers" or "Rotary Fillers"
 
-Example:
-```
-Equipment
-  └─ Filling and Packaging
-      ├─ Rotary Fillers        (for example, Filler FL-02)
-      └─ Case Packers
+Figure 1 shows an example hierarchy.
 
-  └─ Refrigeration
-      └─ Freezers
-          └─ Spiral Freezers   (for example, Spiral Freezer SF-01)
-
-  └─ Processing Equipment
-      └─ Mixers                (for example, Batch Mixer MX-01)
-```
+<img src="../../images/sample_classification_hierarchy.svg" alt="Equipment divides into Filling and Packaging, Refrigeration, and Processing Equipment. Filling and Packaging contains Rotary Fillers, with the example Filler FL-02, and Case Packers. Refrigeration contains Freezers, which contain Spiral Freezers, with the example Spiral Freezer SF-01. Processing Equipment contains Mixers, with the example Batch Mixer MX-01." style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
+<p class="figure-caption">Figure 1: An example classification hierarchy</p>
 
 Use the most specific classification that fits your equipment. This makes it easier to find and manage.
 

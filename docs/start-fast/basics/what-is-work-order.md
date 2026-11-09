@@ -31,20 +31,8 @@ A work order is a request or instruction to perform maintenance work. It's the c
 5. **Completed**: Use this when the physical work is finished. The record can still need final review or closeout, and some setups can move the work order forward automatically when assignments are completed.
 6. **Closed**: Closing finalizes the record. Unused item reservations are removed and the job becomes part of maintenance history.
 
-Hover over a stage in the diagram to see its description.
-
-<img src="../../images/work-order-lifecycle.png" alt="Work order lifecycle diagram" usemap="#lifecycle-map" style="max-width: 100%; height: auto;">
-
-<map name="lifecycle-map">
-  <area shape="circle" coords="1495,400,350" alt="Created" title="This is the working record for the job. It captures what needs to be done, where the work happens, how urgent it is, and any instructions the technician will need later.">
-  <area shape="circle" coords="2300,900,350" alt="Approved" title="Approval means the work can move ahead. At this point, planned items can be reserved and the planned cost and rate information for the job is recorded.">
-  <area shape="circle" coords="2300,2100,350" alt="Assigned" title="Before work starts, check that the right person owns the job and has the schedule, instructions, parts, and tools needed to do it.">
-  <area shape="circle" coords="1495,2600,350" alt="In Progress" title="Use this stage when physical work has actually started. Record labor, materials, services, and tools as the work happens so the record stays accurate.">
-  <area shape="circle" coords="690,2100,350" alt="Completed" title="Use this when the physical work is finished. The record can still need final review or closeout, and some setups can move the work order forward automatically when assignments are completed.">
-  <area shape="circle" coords="690,900,350" alt="Closed" title="Closing finalizes the record. Unused item reservations are removed and the job becomes part of maintenance history.">
-</map>
-
-*Figure 1: The lifecycle of a work order in Maximo Application Suite Select*
+<img src="../../images/sample_work_order_lifecycle.svg" alt="A work order moves through six stages in order: Created, Approved, Assigned, In Progress, Completed, and Closed." style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
+<p class="figure-caption">Figure 1: The lifecycle of a work order in Maximo Application Suite Select</p>
 
 A work order records maintenance work. It tells you what needs to be done, where the work happens, and which asset the work applies to.
 

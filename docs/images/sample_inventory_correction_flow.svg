@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 296" width="1080" height="296" role="img" aria-labelledby="t d" style="background:#ffffff; font-family:'IBM Plex Sans', -apple-system, sans-serif;">
+  <title id="t">Inventory correction process</title>
+  <desc id="d">Six steps in order: verify the count, review transactions, check related records, get approval if needed, adjust the balance, and follow up.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#161616"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <rect class="node" id="n1" x="32" y="32" width="296" height="64" rx="8" ry="8" fill="#ffffff" stroke="#0f62fe" stroke-width="1"/>
+  <path d="M 40 32 Q 32 32 32 40 V 88 Q 32 96 40 96 Z" fill="#0f62fe"/>
+  <g transform="translate(56 48) scale(0.75)" fill="#161616"><path d="M29,27.5859l-7.5521-7.5521a11.0177,11.0177,0,1,0-1.4141,1.4141L27.5859,29ZM4,13a9,9,0,1,1,9,9A9.01,9.01,0,0,1,4,13Z"/></g>
+  <text x="96" y="60" font-size="14" font-weight="600" fill="#161616">1. Verify the count</text>
+  <text x="96" y="80" font-size="14" fill="#161616">Recount the item</text>
+  <rect class="node" id="n2" x="392" y="32" width="296" height="64" rx="8" ry="8" fill="#ffffff" stroke="#0f62fe" stroke-width="1"/>
+  <path d="M 400 32 Q 392 32 392 40 V 88 Q 392 96 400 96 Z" fill="#0f62fe"/>
+  <g transform="translate(416 48) scale(0.75)" fill="#161616"><path d="M10 6H28V8H10z"/><path d="M10 24H28V26H10z"/><path d="M10 15H28V17H10z"/><path d="M4 15H6V17H4z"/><path d="M4 6H6V8H4z"/><path d="M4 24H6V26H4z"/></g>
+  <text x="456" y="60" font-size="14" font-weight="600" fill="#161616">2. Review transactions</text>
+  <text x="456" y="80" font-size="14" fill="#161616">Look at recent activity</text>
+  <rect class="node" id="n3" x="752" y="32" width="296" height="64" rx="8" ry="8" fill="#ffffff" stroke="#0f62fe" stroke-width="1"/>
+  <path d="M 760 32 Q 752 32 752 40 V 88 Q 752 96 760 96 Z" fill="#0f62fe"/>
+  <g transform="translate(776 48) scale(0.75)" fill="#161616"><path d="M25.7,9.3l-7-7C18.5,2.1,18.3,2,18,2H8C6.9,2,6,2.9,6,4v24c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V10C26,9.7,25.9,9.5,25.7,9.3&#9;z M18,4.4l5.6,5.6H18V4.4z M24,28H8V4h8v6c0,1.1,0.9,2,2,2h6V28z"/><path d="M10 22H22V24H10z"/><path d="M10 16H22V18H10z"/></g>
+  <text x="816" y="60" font-size="14" font-weight="600" fill="#161616">3. Check related records</text>
+  <text x="816" y="80" font-size="14" fill="#161616">Work orders and receipts</text>
+  <rect class="node" id="n4" x="752" y="160" width="296" height="64" rx="8" ry="8" fill="#ffffff" stroke="#0f62fe" stroke-width="1"/>
+  <path d="M 760 160 Q 752 160 752 168 V 216 Q 752 224 760 224 Z" fill="#0f62fe"/>
+  <g transform="translate(776 176) scale(0.75)" fill="#161616"><path d="M14 21.414 9 16.413 10.413 15 14 18.586 21.585 11 23 12.415 14 21.414z"/><path d="M16,2A14,14,0,1,0,30,16,14,14,0,0,0,16,2Zm0,26A12,12,0,1,1,28,16,12,12,0,0,1,16,28Z"/></g>
+  <text x="816" y="188" font-size="14" font-weight="600" fill="#161616">4. Get approval if needed</text>
+  <text x="816" y="208" font-size="14" fill="#161616">For large adjustments</text>
+  <rect class="node" id="n5" x="392" y="160" width="296" height="64" rx="8" ry="8" fill="#ffffff" stroke="#0f62fe" stroke-width="1"/>
+  <path d="M 400 160 Q 392 160 392 168 V 216 Q 392 224 400 224 Z" fill="#0f62fe"/>
+  <g transform="translate(416 176) scale(0.75)" fill="#161616"><path d="M2 26H30V28H2z"/><path d="M25.4,9c0.8-0.8,0.8-2,0-2.8c0,0,0,0,0,0l-3.6-3.6c-0.8-0.8-2-0.8-2.8,0c0,0,0,0,0,0l-15,15V24h6.4L25.4,9z M20.4,4L24,7.6&#9;l-3,3L17.4,7L20.4,4z M6,22v-3.6l10-10l3.6,3.6l-10,10H6z"/></g>
+  <text x="456" y="188" font-size="14" font-weight="600" fill="#161616">5. Adjust the balance</text>
+  <text x="456" y="208" font-size="14" fill="#161616">Use Inventory Adjustments</text>
+  <rect class="node" id="n6" x="32" y="160" width="296" height="64" rx="8" ry="8" fill="#ffffff" stroke="#0f62fe" stroke-width="1"/>
+  <path d="M 40 160 Q 32 160 32 168 V 216 Q 32 224 40 224 Z" fill="#0f62fe"/>
+  <g transform="translate(56 176) scale(0.75)" fill="#161616"><path d="M26,18A10,10,0,1,1,16,8h6.1821l-3.5844,3.5854L20,13l6-6L20,1,18.5977,2.414,22.1851,6H16A12,12,0,1,0,28,18Z"/></g>
+  <text x="96" y="188" font-size="14" font-weight="600" fill="#161616">6. Follow up</text>
+  <text x="96" y="208" font-size="14" fill="#161616">Prevent it happening again</text>
+  <path class="connector" id="k1" data-from="n1" data-to="n2" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 328 64 H 392"/>
+  <path class="connector" id="k2" data-from="n2" data-to="n3" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 688 64 H 752"/>
+  <path class="connector" id="k3" data-from="n3" data-to="n4" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 896 96 V 160"/>
+  <path class="connector" id="k4" data-from="n4" data-to="n5" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 752 192 H 688"/>
+  <path class="connector" id="k5" data-from="n5" data-to="n6" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 392 192 H 328"/>
+  <text x="32" y="268" font-size="12" font-weight="600" fill="#161616">Legend:</text>
+  <rect x="112" y="252" width="48" height="24" rx="8" ry="8" fill="#ffffff" stroke="#0f62fe" stroke-width="1"/>
+  <path d="M 120 252 Q 112 252 112 260 V 268 Q 112 276 120 276 Z" fill="#0f62fe"/>
+  <text x="168" y="268" font-size="12" fill="#161616">Step</text>
+  <path d="M 240 264 H 288" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)"/>
+  <text x="296" y="268" font-size="12" fill="#161616">Next step</text>
+</svg>

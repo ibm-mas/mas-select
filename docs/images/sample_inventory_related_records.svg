@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 472" width="1080" height="472" role="img" aria-labelledby="t d" style="background:#ffffff; font-family:'IBM Plex Sans', -apple-system, sans-serif;">
+  <title id="t">Related records to check</title>
+  <desc id="d">When you find a stock discrepancy, check four related records: work orders, receipts, inventory transfers, and issues.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#161616"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <rect class="node" id="root" x="32" y="176" width="280" height="64" rx="8" ry="8" fill="#ffffff" stroke="#0f62fe" stroke-width="1"/>
+  <path d="M 40 176 Q 32 176 32 184 V 232 Q 32 240 40 240 Z" fill="#0f62fe"/>
+  <text x="56" y="213" font-size="14" font-weight="600" fill="#161616">Stock discrepancy</text>
+  <rect class="node" id="r1" x="376" y="32" width="672" height="64" rx="8" ry="8" fill="#ffffff" stroke="#007d79" stroke-width="1"/>
+  <path d="M 384 32 Q 376 32 376 40 V 88 Q 376 96 384 96 Z" fill="#007d79"/>
+  <text x="400" y="69" font-size="14" font-weight="600" fill="#161616">Work orders</text>
+  <text x="624" y="69" font-size="14" fill="#161616">Are materials recorded correctly?</text>
+  <path class="connector" id="k1" data-from="root" data-to="r1" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 312 208 H 336 Q 344 208 344 200 V 72 Q 344 64 352 64 H 376"/>
+  <rect class="node" id="r2" x="376" y="128" width="672" height="64" rx="8" ry="8" fill="#ffffff" stroke="#007d79" stroke-width="1"/>
+  <path d="M 384 128 Q 376 128 376 136 V 184 Q 376 192 384 192 Z" fill="#007d79"/>
+  <text x="400" y="165" font-size="14" font-weight="600" fill="#161616">Receipts</text>
+  <text x="624" y="165" font-size="14" fill="#161616">Was all delivered stock entered?</text>
+  <path class="connector" id="k2" data-from="root" data-to="r2" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 312 208 H 336 Q 344 208 344 200 V 168 Q 344 160 352 160 H 376"/>
+  <rect class="node" id="r3" x="376" y="224" width="672" height="64" rx="8" ry="8" fill="#ffffff" stroke="#007d79" stroke-width="1"/>
+  <path d="M 384 224 Q 376 224 376 232 V 280 Q 376 288 384 288 Z" fill="#007d79"/>
+  <text x="400" y="261" font-size="14" font-weight="600" fill="#161616">Inventory transfers</text>
+  <text x="624" y="261" font-size="14" fill="#161616">Did the transfers complete properly?</text>
+  <path class="connector" id="k3" data-from="root" data-to="r3" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 312 208 H 336 Q 344 208 344 216 V 248 Q 344 256 352 256 H 376"/>
+  <rect class="node" id="r4" x="376" y="320" width="672" height="64" rx="8" ry="8" fill="#ffffff" stroke="#007d79" stroke-width="1"/>
+  <path d="M 384 320 Q 376 320 376 328 V 376 Q 376 384 384 384 Z" fill="#007d79"/>
+  <text x="400" y="357" font-size="14" font-weight="600" fill="#161616">Issues</text>
+  <text x="624" y="357" font-size="14" fill="#161616">Were items picked and issued from the storeroom?</text>
+  <path class="connector" id="k4" data-from="root" data-to="r4" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 312 208 H 336 Q 344 208 344 216 V 344 Q 344 352 352 352 H 376"/>
+  <text x="32" y="428" font-size="12" font-weight="600" fill="#161616">Legend:</text>
+  <rect x="112" y="412" width="48" height="24" rx="8" ry="8" fill="#ffffff" stroke="#0f62fe" stroke-width="1"/>
+  <path d="M 120 412 Q 112 412 112 420 V 428 Q 112 436 120 436 Z" fill="#0f62fe"/>
+  <text x="168" y="428" font-size="12" fill="#161616">Starting point</text>
+  <rect x="320" y="412" width="48" height="24" rx="8" ry="8" fill="#ffffff" stroke="#007d79" stroke-width="1"/>
+  <path d="M 328 412 Q 320 412 320 420 V 428 Q 320 436 328 436 Z" fill="#007d79"/>
+  <text x="376" y="428" font-size="12" fill="#161616">Record to check</text>
+  <path d="M 528 424 H 576" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)"/>
+  <text x="584" y="428" font-size="12" fill="#161616">Check next</text>
+</svg>
