@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 296" width="1080" height="296" role="img" aria-labelledby="t d" style="background:#ffffff; font-family:'IBM Plex Sans', -apple-system, sans-serif;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 256" width="1080" height="256" role="img" aria-labelledby="t d" style="background:#ffffff; font-family:'IBM Plex Sans', -apple-system, sans-serif;">
   <title id="t">Work order lifecycle</title>
   <desc id="d">A work order moves through six stages in order: Created, Approved, Assigned, In Progress, Completed, and Closed.</desc>
   <defs>
@@ -21,7 +21,7 @@
   <path d="M 760 32 Q 752 32 752 40 V 88 Q 752 96 760 96 Z" fill="#0f62fe"/>
   <g transform="translate(776 48) scale(0.75)" fill="#161616"><path d="M16,4a5,5,0,1,1-5,5,5,5,0,0,1,5-5m0-2a7,7,0,1,0,7,7A7,7,0,0,0,16,2Z"/><path d="M26,30H24V25a5,5,0,0,0-5-5H13a5,5,0,0,0-5,5v5H6V25a7,7,0,0,1,7-7h6a7,7,0,0,1,7,7Z"/></g>
   <text x="816" y="60" font-size="14" font-weight="600" fill="#161616">3. Assigned</text>
-  <text x="816" y="80" font-size="14" fill="#161616">The right person owns the job</text>
+  <text x="816" y="80" font-size="14" fill="#161616">The correct person owns the job</text>
   <rect class="node" id="n4" x="752" y="160" width="296" height="64" rx="8" ry="8" fill="#ffffff" stroke="#0f62fe" stroke-width="1"/>
   <path d="M 760 160 Q 752 160 752 168 V 216 Q 752 224 760 224 Z" fill="#0f62fe"/>
   <g transform="translate(776 176) scale(0.75)" fill="#161616"><path d="M16,2A14,14,0,1,0,30,16,14.0158,14.0158,0,0,0,16,2Zm0,26A12,12,0,0,1,16,4V16l8.4812,8.4814A11.9625,11.9625,0,0,1,16,28Z"/></g>
@@ -42,10 +42,4 @@
   <path class="connector" id="k3" data-from="n3" data-to="n4" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 896 96 V 160"/>
   <path class="connector" id="k4" data-from="n4" data-to="n5" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 752 192 H 688"/>
   <path class="connector" id="k5" data-from="n5" data-to="n6" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 392 192 H 328"/>
-  <text x="32" y="268" font-size="12" font-weight="600" fill="#161616">Legend:</text>
-  <rect x="112" y="252" width="48" height="24" rx="8" ry="8" fill="#ffffff" stroke="#0f62fe" stroke-width="1"/>
-  <path d="M 120 252 Q 112 252 112 260 V 268 Q 112 276 120 276 Z" fill="#0f62fe"/>
-  <text x="168" y="268" font-size="12" fill="#161616">Work order stage</text>
-  <path d="M 352 264 H 400" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)"/>
-  <text x="408" y="268" font-size="12" fill="#161616">Next stage</text>
 </svg>

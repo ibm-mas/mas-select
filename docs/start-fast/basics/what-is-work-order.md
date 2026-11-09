@@ -26,7 +26,7 @@ A work order is a request or instruction to perform maintenance work. It's the c
 ## Work order lifecycle
 1. **Created**: The work order is the working record for the job. It captures what needs to be done, where the work happens, how urgent it is, and any instructions the technician will need later.
 2. **Approved**: Approval means the work can move ahead. At this point, planned items can be reserved and the planned cost and rate information for the job is recorded.
-3. **Assigned**: Before work starts, check that the right person owns the job and has the schedule, instructions, parts, and tools needed to do it.
+3. **Assigned**: Before work starts, check that the correct person owns the job and has the schedule, instructions, parts, and tools needed to do it.
 4. **In Progress**: Use this stage when physical work has actually started. Record labor, materials, services, and tools as the work happens so the record stays accurate.
 5. **Completed**: Use this when the physical work is finished. The record can still need final review or closeout, and some setups can move the work order forward automatically when assignments are completed.
 6. **Closed**: Closing finalizes the record. Unused item reservations are removed and the job becomes part of maintenance history.

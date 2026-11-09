@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 424" width="1080" height="424" role="img" aria-labelledby="t d" style="background:#ffffff; font-family:'IBM Plex Sans', -apple-system, sans-serif;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 368" width="1080" height="368" role="img" aria-labelledby="t d" style="background:#ffffff; font-family:'IBM Plex Sans', -apple-system, sans-serif;">
   <title id="t">Example classification hierarchy</title>
   <desc id="d">Equipment divides into Filling and Packaging, Refrigeration, and Processing Equipment. Filling and Packaging contains Rotary Fillers, with the example Filler FL-02, and Case Packers. Refrigeration contains Freezers, which contain Spiral Freezers, with the example Spiral Freezer SF-01. Processing Equipment contains Mixers, with the example Batch Mixer MX-01.</desc>
   <defs>
@@ -45,10 +45,4 @@
   <path class="connector" id="k6" data-from="rg" data-to="fz" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 448 224 H 488"/>
   <path class="connector" id="k7" data-from="fz" data-to="sf" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 744 224 H 784"/>
   <path class="connector" id="k8" data-from="pe" data-to="mx" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 448 304 H 488"/>
-  <text x="32" y="380" font-size="12" font-weight="600" fill="#161616">Legend:</text>
-  <rect x="112" y="364" width="48" height="24" rx="8" ry="8" fill="#ffffff" stroke="#0f62fe" stroke-width="1"/>
-  <path d="M 120 364 Q 112 364 112 372 V 380 Q 112 388 120 388 Z" fill="#0f62fe"/>
-  <text x="168" y="380" font-size="12" fill="#161616">Classification</text>
-  <path d="M 352 376 H 400" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)"/>
-  <text x="408" y="380" font-size="12" fill="#161616">More specific classification</text>
 </svg>
