@@ -301,6 +301,17 @@
       
         
   
+    <cds-side-nav-menu-item href="../../start-fast/basics/other-mobile-apps.html" class="nav-level-3">
+      Autres applications mobiles
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
     <cds-side-nav-menu-item href="../../start-fast/basics/how-inspections-work.html" class="nav-level-3">
       Fonctionnement des inspections
     </cds-side-nav-menu-item>
@@ -390,6 +401,17 @@
   
     <cds-side-nav-menu-item href="../../get-work-done/setup-control/automate-communication.html" class="nav-level-4">
       Automatiser la communication
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/setup-control/ticket-templates.html" class="nav-level-4">
+      Ticket templates
     </cds-side-nav-menu-item>
   
 
@@ -738,6 +760,17 @@
       
         
   <cds-side-nav-menu title="Gérer l'inventaire" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/manage-inventory/get-part-into-inventory.html" class="nav-level-3">
+      Mettre une pièce en stock
+    </cds-side-nav-menu-item>
+  
+
+      
     
       
       
@@ -1240,7 +1273,7 @@
 <p>Automation in Maximo Application Suite Select addresses four major operational maintenance areas:</p>
 <ol>
 <li><strong><abbr title="Scheduled routine maintenance performed to prevent equipment failures.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance plan, planned maintenance, or PM">Preventive maintenance</abbr> generation:</strong> Automatically creates scheduled <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> ahead of due dates based on elapsed calendar time or accumulated run hours.</li>
-<li><strong>Condition-based work triggers:</strong> Instantly generates corrective <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> when sensor or gauge readings exceed defined action thresholds.</li>
+<li><strong>Condition-based work triggers:</strong> Generates corrective <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> when the gauge readings that you enter exceed defined action thresholds.</li>
 <li><strong>Automated <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">inventory</abbr> reordering:</strong> Flags storeroom parts that drop below their minimum reorder point and creates restock requests.</li>
 <li><strong>Instant stakeholder alerts:</strong> Dispatches email and push notifications when <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> are approved, delayed, or completed.</li>
 </ol>
@@ -1316,7 +1349,7 @@
 <h3 id="configuring-pm-work-order-generation-in-cron-task-lite">Configuring PM <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> generation in Cron Task lite<a class="headerlink" href="#configuring-pm-work-order-generation-in-cron-task-lite" title="Permanent link">¤</a></h3>
 <p>To ensure <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> generate automatically before their maintenance due date, configure the automated generation schedule:</p>
 <ol>
-<li>Go to <strong>System Configuration &gt; Platform Configuration &gt; Cron Task Setup</strong>.</li>
+<li>In the <strong>Find navigation <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr></strong> field, search for Cron Task Setup and open it.</li>
 <li>In the <strong>Cron Task</strong> field, search for <code>PMWOGENCRONTASK</code>.</li>
 <li>In the <strong>Cron Task Instances</strong> table, select the active instance for your <abbr title="A data partitioning concept that represents a plant, facility, or business unit.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; plant, facility, or business unit">site</abbr>.</li>
 <li>In the <strong>Schedule</strong> field, verify the execution frequency, such as running daily at 01:00 AM.</li>
@@ -1330,7 +1363,7 @@
 <p>When equipment breaks down unexpectedly, supervisors must alert field technicians immediately. The Push Notifications Administration application routes urgent work alerts directly to technician tablets and mobile devices.</p>
 <h3 id="enabling-mobile-push-alerts-for-emergency-work">Enabling mobile push alerts for emergency work<a class="headerlink" href="#enabling-mobile-push-alerts-for-emergency-work" title="Permanent link">¤</a></h3>
 <ol>
-<li>Go to <strong>System Configuration &gt; Platform Configuration &gt; Push Notifications Administration</strong>.</li>
+<li>In the <strong>Find navigation <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr></strong> field, search for Push Notifications Administration and open it.</li>
 <li>Select the notification event configuration for <strong>Emergency Work Orders</strong>.</li>
 <li>Verify that the trigger condition is mapped to <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> with Priority 1 or Emergency work types.</li>
 <li>Set the recipient rule to target the assigned technician and maintenance lead for the active shift.</li>

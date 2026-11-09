@@ -301,6 +301,17 @@
       
         
   
+    <cds-side-nav-menu-item href="../../start-fast/basics/other-mobile-apps.html" class="nav-level-3">
+      Other mobile apps
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
     <cds-side-nav-menu-item href="../../start-fast/basics/how-inspections-work.html" class="nav-level-3">
       How inspections work
     </cds-side-nav-menu-item>
@@ -390,6 +401,17 @@
   
     <cds-side-nav-menu-item href="automate-communication.html" class="nav-level-4">
       Automate communication
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="ticket-templates.html" class="nav-level-4">
+      Ticket templates
     </cds-side-nav-menu-item>
   
 
@@ -738,6 +760,17 @@
       
         
   <cds-side-nav-menu title="Manage inventory" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../manage-inventory/get-part-into-inventory.html" class="nav-level-3">
+      Get a part into inventory
+    </cds-side-nav-menu-item>
+  
+
+      
     
       
       
@@ -1238,6 +1271,7 @@
             <h1 id="how-do-i-set-up-failure-codes">How do I set up <abbr title="Standardized codes used to categorize and track equipment failures.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; failure classifications, breakdown codes, or fault codes">failure codes</abbr>?<a class="headerlink" href="#how-do-i-set-up-failure-codes" title="Permanent link">¤</a></h1>
 <p>Structured <abbr title="Standardized codes used to categorize and track equipment failures.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; failure classifications, breakdown codes, or fault codes">failure codes</abbr> convert subjective technician remarks into standardized reliability data. When technicians record repairs using consistent <abbr title="Standardized codes used to categorize and track equipment failures.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; failure classifications, breakdown codes, or fault codes">failure codes</abbr>, maintenance engineers can track defect trends, identify recurring root causes, and justify equipment redesigns or warranty claims.</p>
 <p>In Maximo Application Suite Select, <abbr title="Standardized codes used to categorize and track equipment failures.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; failure classifications, breakdown codes, or fault codes">failure codes</abbr> are organized into a four-tier hierarchy headed by a Failure Class, followed by Problem, Cause, and Remedy codes configured in the Failure Codes application.</p>
+<p>Select includes some <abbr title="Standardized codes used to categorize and track equipment failures.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; failure classifications, breakdown codes, or fault codes">failure codes</abbr>. You can use them as they are, or add your own to match your equipment.</p>
 <h2 id="the-four-tier-failure-hierarchy-architecture">The four-tier failure hierarchy architecture<a class="headerlink" href="#the-four-tier-failure-hierarchy-architecture" title="Permanent link">¤</a></h2>
 <p>A failure hierarchy structures failure reporting from initial symptom down to corrective action.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/sample_failure_code_hierarchy.svg" data-title="Four-tier failure code hierarchy architecture from Failure Class to Problem, Cause, and Remedy" data-desc-position="bottom"><img src="../../images/sample_failure_code_hierarchy.svg" alt="Four-tier failure code hierarchy architecture from Failure Class to Problem, Cause, and Remedy" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;"></a></p>
@@ -1284,8 +1318,8 @@
 <p><abbr title="Standardized codes used to categorize and track equipment failures.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; failure classifications, breakdown codes, or fault codes">Failure codes</abbr> and hierarchies are created at the Organization level in the Failure Codes application.</p>
 <h3 id="building-a-failure-tree-in-the-desktop-application">Building a failure tree in the desktop application<a class="headerlink" href="#building-a-failure-tree-in-the-desktop-application" title="Permanent link">¤</a></h3>
 <ol>
-<li>Go to <strong>Planning and Maintenance &gt; Failure Codes</strong>.</li>
-<li>Click <strong>New Failure Codes</strong>.</li>
+<li>In the <strong>Find navigation <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr></strong> field, search for Failure Codes and open it.</li>
+<li>Click <strong>New Failure Code</strong>.</li>
 <li>In the <strong>Failure Class</strong> field, enter a clear identifier, such as <code>PUMPS</code>.</li>
 <li>In the <strong>Description</strong> field, enter <code>Sanitary and Utility Pumps Failure Class</code>.</li>
 <li>In the <strong>Problems</strong> table, click <strong>New Row</strong> to add failure symptoms:</li>
@@ -1306,7 +1340,7 @@
 <p>For technicians to select <abbr title="Standardized codes used to categorize and track equipment failures.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; failure classifications, breakdown codes, or fault codes">failure codes</abbr> on <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr>, the <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> must have an assigned Failure Class.</p>
 <h3 id="linking-a-failure-class-to-an-asset-record">Linking a failure class to an <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> record<a class="headerlink" href="#linking-a-failure-class-to-an-asset-record" title="Permanent link">¤</a></h3>
 <ol>
-<li>Go to <strong><abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">Assets</abbr> &gt; <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">Assets</abbr></strong>.</li>
+<li>In the <strong>Find navigation <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr></strong> field, search for <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">Assets</abbr> and open it.</li>
 <li>Open the target equipment record, such as <code>Filler FL-02</code>.</li>
 <li>On the main <strong><abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">Asset</abbr></strong> tab, locate the <strong>Failure Class</strong> field.</li>
 <li>Select the matching failure class, such as <code>FILLERS</code> or <code>ROTATING_PUMP</code>.</li>

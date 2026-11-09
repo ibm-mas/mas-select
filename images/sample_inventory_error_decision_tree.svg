@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 472" width="1080" height="472" role="img" aria-labelledby="t d" style="background:#ffffff; font-family:'IBM Plex Sans', -apple-system, sans-serif;">
+  <title id="t">Decision tree for handling inventory errors</title>
+  <desc id="d">A negative balance means correct it immediately, then investigate. A large discrepancy means do not adjust immediately, investigate, and get supervisor approval. Recurring errors mean analyze the pattern and fix the process.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#161616"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <rect class="node" id="root" x="32" y="176" width="168" height="64" rx="8" ry="8" fill="#ffffff" stroke="#0f62fe" stroke-width="1"/>
+  <path d="M 40 176 Q 32 176 32 184 V 232 Q 32 240 40 240 Z" fill="#0f62fe"/>
+  <text x="56" y="213" font-size="14" font-weight="600" fill="#161616">Stock is incorrect</text>
+  <rect class="node" id="c1" x="248" y="32" width="336" height="96" rx="8" ry="8" fill="#ffffff" stroke="#0f62fe" stroke-width="1"/>
+  <path d="M 256 32 Q 248 32 248 40 V 120 Q 248 128 256 128 Z" fill="#0f62fe"/>
+  <text x="272" y="64" font-size="14" font-weight="600" fill="#161616">Negative balance</text>
+  <text x="272" y="92" font-size="14" fill="#161616">The system shows a negative quantity</text>
+  <rect class="node" id="o1" x="648" y="32" width="400" height="96" rx="8" ry="8" fill="#ffffff" stroke="#007d79" stroke-width="1"/>
+  <path d="M 656 32 Q 648 32 648 40 V 120 Q 648 128 656 128 Z" fill="#007d79"/>
+  <text x="672" y="64" font-size="14" font-weight="600" fill="#161616">Correct it immediately</text>
+  <text x="672" y="92" font-size="14" fill="#161616">Review recent issues and look for duplicates</text>
+  <text x="672" y="110" font-size="14" fill="#161616">Then investigate the cause</text>
+  <rect class="node" id="c2" x="248" y="160" width="336" height="96" rx="8" ry="8" fill="#ffffff" stroke="#0f62fe" stroke-width="1"/>
+  <path d="M 256 160 Q 248 160 248 168 V 248 Q 248 256 256 256 Z" fill="#0f62fe"/>
+  <text x="272" y="192" font-size="14" font-weight="600" fill="#161616">Large discrepancy</text>
+  <text x="272" y="220" font-size="14" fill="#161616">The difference is significant</text>
+  <rect class="node" id="o2" x="648" y="160" width="400" height="96" rx="8" ry="8" fill="#ffffff" stroke="#007d79" stroke-width="1"/>
+  <path d="M 656 160 Q 648 160 648 168 V 248 Q 648 256 656 256 Z" fill="#007d79"/>
+  <text x="672" y="192" font-size="14" font-weight="600" fill="#161616">Do not adjust immediately</text>
+  <text x="672" y="220" font-size="14" fill="#161616">Investigate thoroughly and get supervisor approval</text>
+  <text x="672" y="238" font-size="14" fill="#161616">Document the findings</text>
+  <rect class="node" id="c3" x="248" y="288" width="336" height="96" rx="8" ry="8" fill="#ffffff" stroke="#0f62fe" stroke-width="1"/>
+  <path d="M 256 288 Q 248 288 248 296 V 376 Q 248 384 256 384 Z" fill="#0f62fe"/>
+  <text x="272" y="320" font-size="14" font-weight="600" fill="#161616">Recurring errors</text>
+  <text x="272" y="348" font-size="14" fill="#161616">The same item has frequent issues</text>
+  <rect class="node" id="o3" x="648" y="288" width="400" height="96" rx="8" ry="8" fill="#ffffff" stroke="#007d79" stroke-width="1"/>
+  <path d="M 656 288 Q 648 288 648 296 V 376 Q 648 384 656 384 Z" fill="#007d79"/>
+  <text x="672" y="320" font-size="14" font-weight="600" fill="#161616">Fix the process</text>
+  <text x="672" y="348" font-size="14" fill="#161616">Analyze the error pattern and find the root cause</text>
+  <text x="672" y="366" font-size="14" fill="#161616">Retrain if needed</text>
+  <path class="connector" id="a1" data-from="root" data-to="c1" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 200 208 H 216 Q 224 208 224 200 V 88 Q 224 80 232 80 H 248"/>
+  <path class="connector" id="b1" data-from="c1" data-to="o1" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 584 80 H 648"/>
+  <path class="connector" id="a2" data-from="root" data-to="c2" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 200 208 H 248"/>
+  <path class="connector" id="b2" data-from="c2" data-to="o2" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 584 208 H 648"/>
+  <path class="connector" id="a3" data-from="root" data-to="c3" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 200 208 H 216 Q 224 208 224 216 V 328 Q 224 336 232 336 H 248"/>
+  <path class="connector" id="b3" data-from="c3" data-to="o3" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 584 336 H 648"/>
+  <text x="32" y="428" font-size="12" font-weight="600" fill="#161616">Legend:</text>
+  <rect x="112" y="412" width="48" height="24" rx="8" ry="8" fill="#ffffff" stroke="#0f62fe" stroke-width="1"/>
+  <path d="M 120 412 Q 112 412 112 420 V 428 Q 112 436 120 436 Z" fill="#0f62fe"/>
+  <text x="168" y="428" font-size="12" fill="#161616">Situation</text>
+  <rect x="288" y="412" width="48" height="24" rx="8" ry="8" fill="#ffffff" stroke="#007d79" stroke-width="1"/>
+  <path d="M 296 412 Q 288 412 288 420 V 428 Q 288 436 296 436 Z" fill="#007d79"/>
+  <text x="344" y="428" font-size="12" fill="#161616">What to do</text>
+  <path d="M 448 424 H 496" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)"/>
+  <text x="504" y="428" font-size="12" fill="#161616">Leads to</text>
+</svg>

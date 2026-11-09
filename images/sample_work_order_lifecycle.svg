@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 256" width="1080" height="256" role="img" aria-labelledby="t d" style="background:#ffffff; font-family:'IBM Plex Sans', -apple-system, sans-serif;">
+  <title id="t">Work order lifecycle</title>
+  <desc id="d">A work order moves through six stages in order: Created, Approved, Assigned, In Progress, Completed, and Closed.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#161616"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <rect class="node" id="n1" x="32" y="32" width="296" height="64" rx="8" ry="8" fill="#ffffff" stroke="#0f62fe" stroke-width="1"/>
+  <path d="M 40 32 Q 32 32 32 40 V 88 Q 32 96 40 96 Z" fill="#0f62fe"/>
+  <g transform="translate(56 48) scale(0.75)" fill="#161616"><path d="M30 24 26 24 26 20 24 20 24 24 20 24 20 26 24 26 24 30 26 30 26 26 30 26 30 24z"/><path d="M16,28H8V4h8v6a2.0058,2.0058,0,0,0,2,2h6v4h2V10a.9092.9092,0,0,0-.3-.7l-7-7A.9087.9087,0,0,0,18,2H8A2.0058,2.0058,0,0,0,6,4V28a2.0058,2.0058,0,0,0,2,2h8ZM18,4.4,23.6,10H18Z"/></g>
+  <text x="96" y="60" font-size="14" font-weight="600" fill="#161616">1. Created</text>
+  <text x="96" y="80" font-size="14" fill="#161616">The record for the job</text>
+  <rect class="node" id="n2" x="392" y="32" width="296" height="64" rx="8" ry="8" fill="#ffffff" stroke="#0f62fe" stroke-width="1"/>
+  <path d="M 400 32 Q 392 32 392 40 V 88 Q 392 96 400 96 Z" fill="#0f62fe"/>
+  <g transform="translate(416 48) scale(0.75)" fill="#161616"><path d="M13 24 4 15 5.414 13.586 13 21.171 26.586 7.586 28 9 13 24z"/></g>
+  <text x="456" y="60" font-size="14" font-weight="600" fill="#161616">2. Approved</text>
+  <text x="456" y="80" font-size="14" fill="#161616">The work can move ahead</text>
+  <rect class="node" id="n3" x="752" y="32" width="296" height="64" rx="8" ry="8" fill="#ffffff" stroke="#0f62fe" stroke-width="1"/>
+  <path d="M 760 32 Q 752 32 752 40 V 88 Q 752 96 760 96 Z" fill="#0f62fe"/>
+  <g transform="translate(776 48) scale(0.75)" fill="#161616"><path d="M16,4a5,5,0,1,1-5,5,5,5,0,0,1,5-5m0-2a7,7,0,1,0,7,7A7,7,0,0,0,16,2Z"/><path d="M26,30H24V25a5,5,0,0,0-5-5H13a5,5,0,0,0-5,5v5H6V25a7,7,0,0,1,7-7h6a7,7,0,0,1,7,7Z"/></g>
+  <text x="816" y="60" font-size="14" font-weight="600" fill="#161616">3. Assigned</text>
+  <text x="816" y="80" font-size="14" fill="#161616">The correct person owns the job</text>
+  <rect class="node" id="n4" x="752" y="160" width="296" height="64" rx="8" ry="8" fill="#ffffff" stroke="#0f62fe" stroke-width="1"/>
+  <path d="M 760 160 Q 752 160 752 168 V 216 Q 752 224 760 224 Z" fill="#0f62fe"/>
+  <g transform="translate(776 176) scale(0.75)" fill="#161616"><path d="M16,2A14,14,0,1,0,30,16,14.0158,14.0158,0,0,0,16,2Zm0,26A12,12,0,0,1,16,4V16l8.4812,8.4814A11.9625,11.9625,0,0,1,16,28Z"/></g>
+  <text x="816" y="188" font-size="14" font-weight="600" fill="#161616">4. In Progress</text>
+  <text x="816" y="208" font-size="14" fill="#161616">The physical work has started</text>
+  <rect class="node" id="n5" x="392" y="160" width="296" height="64" rx="8" ry="8" fill="#ffffff" stroke="#0f62fe" stroke-width="1"/>
+  <path d="M 400 160 Q 392 160 392 168 V 216 Q 392 224 400 224 Z" fill="#0f62fe"/>
+  <g transform="translate(416 176) scale(0.75)" fill="#161616"><path d="M14 21.414 9 16.413 10.413 15 14 18.586 21.585 11 23 12.415 14 21.414z"/><path d="M16,2A14,14,0,1,0,30,16,14,14,0,0,0,16,2Zm0,26A12,12,0,1,1,28,16,12,12,0,0,1,16,28Z"/></g>
+  <text x="456" y="188" font-size="14" font-weight="600" fill="#161616">5. Completed</text>
+  <text x="456" y="208" font-size="14" fill="#161616">The physical work is finished</text>
+  <rect class="node" id="n6" x="32" y="160" width="296" height="64" rx="8" ry="8" fill="#ffffff" stroke="#0f62fe" stroke-width="1"/>
+  <path d="M 40 160 Q 32 160 32 168 V 216 Q 32 224 40 224 Z" fill="#0f62fe"/>
+  <g transform="translate(56 176) scale(0.75)" fill="#161616"><path d="M24,14H22V8A6,6,0,0,0,10,8v6H8a2,2,0,0,0-2,2V28a2,2,0,0,0,2,2H24a2,2,0,0,0,2-2V16A2,2,0,0,0,24,14ZM12,8a4,4,0,0,1,8,0v6H12ZM24,28H8V16H24Z"/></g>
+  <text x="96" y="188" font-size="14" font-weight="600" fill="#161616">6. Closed</text>
+  <text x="96" y="208" font-size="14" fill="#161616">The record is finalized</text>
+  <path class="connector" id="k1" data-from="n1" data-to="n2" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 328 64 H 392"/>
+  <path class="connector" id="k2" data-from="n2" data-to="n3" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 688 64 H 752"/>
+  <path class="connector" id="k3" data-from="n3" data-to="n4" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 896 96 V 160"/>
+  <path class="connector" id="k4" data-from="n4" data-to="n5" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 752 192 H 688"/>
+  <path class="connector" id="k5" data-from="n5" data-to="n6" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 392 192 H 328"/>
+</svg>

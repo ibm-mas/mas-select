@@ -301,6 +301,17 @@
       
         
   
+    <cds-side-nav-menu-item href="../../start-fast/basics/other-mobile-apps.html" class="nav-level-3">
+      Autres applications mobiles
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
     <cds-side-nav-menu-item href="../../start-fast/basics/how-inspections-work.html" class="nav-level-3">
       Fonctionnement des inspections
     </cds-side-nav-menu-item>
@@ -390,6 +401,17 @@
   
     <cds-side-nav-menu-item href="../setup-control/automate-communication.html" class="nav-level-4">
       Automatiser la communication
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../setup-control/ticket-templates.html" class="nav-level-4">
+      Ticket templates
     </cds-side-nav-menu-item>
   
 
@@ -738,6 +760,17 @@
       
         
   <cds-side-nav-menu title="Gérer l'inventaire" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../manage-inventory/get-part-into-inventory.html" class="nav-level-3">
+      Mettre une pièce en stock
+    </cds-side-nav-menu-item>
+  
+
+      
     
       
       
@@ -1246,6 +1279,7 @@
             <h1 id="how-do-i-act-on-alerts">How do I act on alerts?<a class="headerlink" href="#how-do-i-act-on-alerts" title="Permanent link">¤</a></h1>
 <p>Operational dashboards in Maximo Application Suite Select consolidate critical operational signals into a single view. When a key performance indicator breaches an alert threshold, or when urgent maintenance enters a work queue, supervisors and administrators can review the situation and take immediate corrective action directly from the dashboard.</p>
 <p>Acting on alerts promptly prevents small anomalies, such as an overdue <abbr title="Scheduled routine maintenance performed to prevent equipment failures.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance plan, planned maintenance, or PM">preventive maintenance</abbr> inspection or a rising emergency backlog, from escalating into unplanned production <abbr title="The period when equipment is not operational or available for use.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; outage, production loss, or equipment unavailable">downtime</abbr>.</p>
+<p>When you first sign in, Select shows the Operational Dashboard that matches your <abbr title="A collection of users who share the same application access and permissions.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; permission group, access group, user group, or role">security group</abbr>. Your administrator assigns the group. Select includes some dashboard content, and an administrator can edit the dashboard to add cards such as KPIs and work queues.</p>
 <h3 id="tips-for-success">💡 Tips for success<a class="headerlink" href="#tips-for-success" title="Permanent link">¤</a></h3>
 <ul>
 <li>Check your Operational Dashboard at the start of each shift. Review red threshold breaches first, followed by yellow caution indicators.</li>
@@ -1271,7 +1305,7 @@
 <td style="text-align: left;"><strong>KPI trend cards</strong></td>
 <td style="text-align: left;">Single performance indicator with historical trend line</td>
 <td style="text-align: left;">Card turns red when value breaches the alert threshold; turns yellow at caution level</td>
-<td style="text-align: left;">Click the card to open KPI Viewer and analyze the underlying historical records</td>
+<td style="text-align: left;">Use the card menu to open the KPI in KPI Viewer and analyze the underlying historical records</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Work queues card</strong></td>
@@ -1371,10 +1405,10 @@
 </ol>
 <hr>
 <h2 id="how-to-configure-work-queues-in-work-queue-manager">How to configure work queues in Work Queue Manager<a class="headerlink" href="#how-to-configure-work-queues-in-work-queue-manager" title="Permanent link">¤</a></h2>
-<p>Administrators create and manage the work queues that appear on role-based operational dashboards.</p>
+<p>Select includes some work queues. Administrators can use them as they are, or create and manage their own for the operational dashboards.</p>
 <h3 id="step-1-create-the-work-queue-definition">Step 1: Create the work queue definition<a class="headerlink" href="#step-1-create-the-work-queue-definition" title="Permanent link">¤</a></h3>
 <ol>
-<li>Go to <strong>Administration &gt; Work Queue Manager</strong>.</li>
+<li>In the <strong>Find navigation <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr></strong> field, search for Work Queue Manager and open it.</li>
 <li>Click <strong>New Work Queue</strong>.</li>
 <li>In the <strong>Work Queue</strong> field, enter a unique name, such as <code>WQ-OVERDUE-PM</code>.</li>
 <li>In the <strong>Description</strong> field, enter a descriptive label, such as <code>Overdue Preventive Maintenance</code>.</li>
@@ -1391,10 +1425,11 @@
 <ol>
 <li>Go to the target dashboard, such as <strong>Operational Dashboard : Supervisor</strong>.</li>
 <li>Click <strong>Edit Dashboard</strong>.</li>
-<li>From the card gallery, select <strong>Work Queues</strong>.</li>
-<li>In the card configuration, verify that your active work queue is selected.</li>
+<li>Add a card that shows <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> as a table, and select your work queue for it.</li>
+<li>Verify that your active work queue is selected.</li>
 <li>Click <strong>Save Dashboard</strong>.</li>
 </ol>
+<p><code>[SME confirmation required: Confirm which card type shows a work queue on the dashboard in Select, and how you select the queue.]</code></p>
 <hr>
 <h2 id="verification-checklist">Verification checklist<a class="headerlink" href="#verification-checklist" title="Permanent link">¤</a></h2>
 <p>Use this checklist to confirm that dashboard alerting and work queues operate effectively for your team.</p>

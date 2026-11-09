@@ -301,6 +301,17 @@
       
         
   
+    <cds-side-nav-menu-item href="../../start-fast/basics/other-mobile-apps.html" class="nav-level-3">
+      Other mobile apps
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
     <cds-side-nav-menu-item href="../../start-fast/basics/how-inspections-work.html" class="nav-level-3">
       How inspections work
     </cds-side-nav-menu-item>
@@ -390,6 +401,17 @@
   
     <cds-side-nav-menu-item href="automate-communication.html" class="nav-level-4">
       Automate communication
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="ticket-templates.html" class="nav-level-4">
+      Ticket templates
     </cds-side-nav-menu-item>
   
 
@@ -738,6 +760,17 @@
       
         
   <cds-side-nav-menu title="Manage inventory" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../manage-inventory/get-part-into-inventory.html" class="nav-level-3">
+      Get a part into inventory
+    </cds-side-nav-menu-item>
+  
+
+      
     
       
       
@@ -1213,9 +1246,9 @@
     <cds-select id="breadcrumbs-toc" inline="" placeholder="..." oninput="changeAnchor(this.value)">
     
     
-      <cds-select-item value="#inspection-form-capabilities-and-response-types">Inspection form capabilities and response types</cds-select-item>
+      <cds-select-item value="#what-you-can-capture-on-an-inspection-form">What you can capture on an inspection form</cds-select-item>
     
-      <cds-select-item value="#step-1-create-a-form-template-in-inspection-forms">Step 1: Create a form template in Inspection Forms</cds-select-item>
+      <cds-select-item value="#step-1-create-a-form-template">Step 1: Create a form template</cds-select-item>
     
       <cds-select-item value="#step-2-configure-conditional-response-logic">Step 2: Configure conditional response logic</cds-select-item>
     
@@ -1237,113 +1270,49 @@
             
             <h1 id="how-do-i-create-inspection-forms">How do I create inspection forms?<a class="headerlink" href="#how-do-i-create-inspection-forms" title="Permanent link">¤</a></h1>
 <p>Digital inspection forms replace paper clipboards with structured, interactive checklists on mobile devices. Technicians and inspectors use inspection forms to execute safety audits, hygiene checklists, equipment condition assessments, and routine operator rounds.</p>
-<p>In Maximo Application Suite Select, forms are designed in the Inspection Forms application and executed in the Inspections role-based app or directly within mobile <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr>.</p>
-<h2 id="inspection-form-capabilities-and-response-types">Inspection form capabilities and response types<a class="headerlink" href="#inspection-form-capabilities-and-response-types" title="Permanent link">¤</a></h2>
-<p>The Inspection Forms application provides flexible question controls to capture exact field observations.</p>
+<p>In Maximo Application Suite Select, you design forms in the Inspection Forms application. Technicians and inspectors complete them in the Inspections role-based app or directly within mobile <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr>.</p>
+<h2 id="what-you-can-capture-on-an-inspection-form">What you can capture on an inspection form<a class="headerlink" href="#what-you-can-capture-on-an-inspection-form" title="Permanent link">¤</a></h2>
+<p>The Inspection Forms application gives you flexible ways to capture exact field observations. You can create questions such as:</p>
+<ul>
+<li>A pass or fail check, for example, whether the sanitary seal on Filler FL-02 is intact.</li>
+<li>A choice from a standard list of values, for example, lubricant condition rated as clear, cloudy, or dark.</li>
+<li>A <abbr title="A counter that tracks equipment usage, such as hours, cycles, or miles.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; counter, runtime meter, or odometer">meter</abbr> reading that updates the <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> <abbr title="A counter that tracks equipment usage, such as hours, cycles, or miles.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; counter, runtime meter, or odometer">meter</abbr>, for example, discharge pressure on the cold storage compressor.</li>
+<li>A number that you track without updating a <abbr title="A counter that tracks equipment usage, such as hours, cycles, or miles.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; counter, runtime meter, or odometer">meter</abbr>, for example, ambient warehouse temperature.</li>
+<li>A photo or file, for example, a photo of a scored drive shaft.</li>
+<li>A signature, for example, sanitation supervisor sign-off after a clean-in-place flush.</li>
+</ul>
+<p>The application offers more ways to capture answers than these examples. Use them as a starting point, and explore the options when you design a question.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/sample_inspection_form_lifecycle.svg" data-title="Inspection form design, configuration, and field execution lifecycle" data-desc-position="bottom"><img src="../../images/sample_inspection_form_lifecycle.svg" alt="Inspection form design, configuration, and field execution lifecycle" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;"></a></p>
 <p class="figure-caption">Figure 1: Inspection form design, configuration, and field execution lifecycle</p>
 
-<h3 id="table-1-inspection-form-question-types-and-operational-uses">Table 1: Inspection form question types and operational uses<a class="headerlink" href="#table-1-inspection-form-question-types-and-operational-uses" title="Permanent link">¤</a></h3>
-<table>
-<thead>
-<tr>
-<th>Question type</th>
-<th>Response mechanism</th>
-<th>Operational application</th>
-<th>Ice Cream Plant example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Single choice</strong></td>
-<td>Radio buttons or drop-down list</td>
-<td>Evaluating condition grades or pass/fail states</td>
-<td>Sanitary seal integrity rated as Pass or Fail</td>
-</tr>
-<tr>
-<td><strong><abbr title="A list of valid values attached to a field that controls what users can select in a dropdown.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; value list, lookup list, or picklist">Domain</abbr> choice</strong></td>
-<td>Binds to an ALN <abbr title="A list of valid values attached to a field that controls what users can select in a dropdown.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; value list, lookup list, or picklist">Domain</abbr> picklist</td>
-<td>Standardizing observation values across the enterprise</td>
-<td>Lubricant condition rated as Clear, Cloudy, or Dark</td>
-</tr>
-<tr>
-<td><strong><abbr title="A counter that tracks equipment usage, such as hours, cycles, or miles.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; counter, runtime meter, or odometer">Meter</abbr> reading</strong></td>
-<td>Direct numeric input that updates <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> <abbr title="Counters that track equipment usage, such as hours, cycles, or miles.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; counters, runtime meters, or odometers">meters</abbr></td>
-<td>Updating runtime hours or pressure levels during rounds</td>
-<td>Recording discharge pressure on the cold storage compressor</td>
-</tr>
-<tr>
-<td><strong>Numeric entry</strong></td>
-<td>Standalone numeric entry with unit of measure</td>
-<td>Tracking operating metrics without updating <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> <abbr title="Counters that track equipment usage, such as hours, cycles, or miles.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; counters, runtime meters, or odometers">meters</abbr></td>
-<td>Recording ambient warehouse temperature</td>
-</tr>
-<tr>
-<td><strong>File or photo upload</strong></td>
-<td>Camera capture or file attachment</td>
-<td>Documenting physical damage or equipment wear</td>
-<td>Attaching a photo of a scored drive shaft on Filler FL-02</td>
-</tr>
-<tr>
-<td><strong>Digital signature</strong></td>
-<td>Touchscreen signature capture</td>
-<td>Verifying supervisory review or regulatory sign-off</td>
-<td>Sanitation supervisor sign-off after clean-in-place flush</td>
-</tr>
-</tbody>
-</table>
-<h2 id="step-1-create-a-form-template-in-inspection-forms">Step 1: Create a form template in Inspection Forms<a class="headerlink" href="#step-1-create-a-form-template-in-inspection-forms" title="Permanent link">¤</a></h2>
-<p>Inspection forms are created and revised in the Inspection Forms application.</p>
-<h3 id="designing-a-form-template">Designing a form template<a class="headerlink" href="#designing-a-form-template" title="Permanent link">¤</a></h3>
-<ol>
-<li>Go to <strong>Planning &gt; Inspection Forms</strong>.</li>
-<li>Click <strong>Create Form</strong>.</li>
-<li>In the <strong>Form Title</strong> field, enter a clear descriptive name, such as <code>Filler FL-02 Daily Sanitation &amp; Mechanical Inspection</code>.</li>
-<li>In the <strong>Form Type</strong> field, select the operational purpose: <code>Inspection</code>, <code>Condition Assessment</code>, <code>Audit</code>, <code>Investigation</code>, or <code>Round</code>.</li>
-<li>In the <strong>Instructions</strong> section, add clear guidance notes, such as safety lockout procedures or required personal protective equipment.</li>
-<li>Click <strong>Add Question</strong> to build your checklist:</li>
-<li>In the question text field, enter <code>Check mechanical seal for product leakage</code>.</li>
-<li>In the <strong>Response Type</strong> drop-down, select <code>Single choice</code>.</li>
-<li>Add options: <code>Pass</code> and <code>Fail</code>.</li>
-<li>Check <strong>Required</strong> to prevent technicians from completing the form without answering.</li>
-<li>Click <strong>Add Question</strong> for equipment <abbr title="A counter that tracks equipment usage, such as hours, cycles, or miles.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; counter, runtime meter, or odometer">meter</abbr> readings:</li>
-<li>In the question text field, enter <code>Record compressor discharge pressure</code>.</li>
-<li>In the <strong>Response Type</strong> drop-down, select <code>Meter reading</code>.</li>
-<li>Select the target <abbr title="A counter that tracks equipment usage, such as hours, cycles, or miles.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; counter, runtime meter, or odometer">meter</abbr>, such as <code>DISCH_PSI</code>.</li>
-<li>Click <strong>Save Draft</strong>.</li>
-</ol>
-<h3 id="tip-use-conditional-logic-for-failed-steps">💡 Tip: Use conditional logic for failed steps<a class="headerlink" href="#tip-use-conditional-logic-for-failed-steps" title="Permanent link">¤</a></h3>
-<p>Configure conditional questions so that when a technician marks an <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr> as <code>Fail</code>, the form dynamically reveals follow-up fields requiring a mandatory photo upload and an explanatory note. This guarantees complete failure documentation.</p>
-<h2 id="step-2-configure-conditional-response-logic">Step 2: Configure conditional response logic<a class="headerlink" href="#step-2-configure-conditional-response-logic" title="Permanent link">¤</a></h2>
-<p>Conditional rules keep inspection checklists compact while capturing detailed evidence when problems occur.</p>
-<h3 id="adding-a-conditional-action">Adding a conditional action<a class="headerlink" href="#adding-a-conditional-action" title="Permanent link">¤</a></h3>
-<ol>
-<li>In the form editor, locate the pass/fail question.</li>
-<li>Click the <strong>Add Condition</strong> icon next to the <code>Fail</code> answer option.</li>
-<li>Select <strong>Show Follow-up Question</strong>.</li>
-<li>In the new sub-question field, enter <code>Take a photo of the defect and describe observed damage</code>.</li>
-<li>Set the response type to <code>File upload</code>.</li>
-<li>Click <strong>Save Draft</strong>.</li>
-</ol>
-<h2 id="step-3-activate-the-form-template">Step 3: Activate the form template<a class="headerlink" href="#step-3-activate-the-form-template" title="Permanent link">¤</a></h2>
-<p>Inspection forms start in <code>DRAFT</code> <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr> and must be activated before they can be assigned to <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> or <abbr title="Scheduled routine maintenance performed to prevent equipment failures.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance plan, planned maintenance, or PM">preventive maintenance</abbr> schedules.</p>
-<h3 id="changing-form-status-to-active">Changing form <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr> to Active<a class="headerlink" href="#changing-form-status-to-active" title="Permanent link">¤</a></h3>
-<ol>
-<li>In the <strong>Inspection Forms</strong> editor, review your questions and instructions.</li>
-<li>In the upper action bar, click <strong>Activate</strong>.</li>
-<li>The form <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr> changes to <code>ACTIVE</code> and becomes available across all maintenance applications.</li>
-</ol>
-<p>When updates are needed later, open the active form and click <strong>Create Revision</strong>. The existing version remains active for in-progress work until the new revision is completed and activated.</p>
-<h2 id="step-4-link-inspection-forms-to-maintenance-workflows">Step 4: Link inspection forms to maintenance workflows<a class="headerlink" href="#step-4-link-inspection-forms-to-maintenance-workflows" title="Permanent link">¤</a></h2>
-<p>Once active, attach inspection forms to automate field checklists:</p>
+<h2 id="step-1-create-a-form-template">Step 1: Create a form template<a class="headerlink" href="#step-1-create-a-form-template" title="Permanent link">¤</a></h2>
+<p>You create and revise inspection forms in the Inspection Forms application. To open it, use the <strong>Find navigation <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr></strong> field and search for Inspection Forms.</p>
+<p>When you design a form, you can:</p>
 <ul>
-<li><strong>Link to a PM schedule:</strong> In the <strong>PM</strong> application, select the active form in the <strong>Inspection Form</strong> field. Every generated <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> automatically includes the digital checklist.</li>
-<li><strong>Link to Route stops:</strong> In the <strong>Routes</strong> application, attach specific inspection forms to individual route stops to guide technicians through multi-room plant rounds.</li>
-<li><strong>Link to Work Orders:</strong> In the <strong>Work Orders</strong> application, add an inspection form directly to the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> header or to a specific child task.</li>
+<li>Give the form a clear, descriptive name, such as <code>Filler FL-02 Daily Sanitation &amp; Mechanical Inspection</code>.</li>
+<li>Choose the purpose of the form, such as an inspection, an audit, or a round.</li>
+<li>Add instructions, such as safety lockout procedures or required personal protective equipment.</li>
+<li>Add the questions that make up your checklist.</li>
+<li>Mark critical questions as required, so that technicians cannot complete the form without answering them.</li>
+</ul>
+<p>For a <abbr title="A counter that tracks equipment usage, such as hours, cycles, or miles.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; counter, runtime meter, or odometer">meter</abbr> reading question, you also choose the <abbr title="A counter that tracks equipment usage, such as hours, cycles, or miles.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; counter, runtime meter, or odometer">meter</abbr> that the answer updates, such as <code>DISCH_PSI</code>.</p>
+<h3 id="tip-use-conditional-logic-for-failed-steps">💡 Tip: Use conditional logic for failed steps<a class="headerlink" href="#tip-use-conditional-logic-for-failed-steps" title="Permanent link">¤</a></h3>
+<p>Configure conditional questions so that when a technician marks an <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr> as a failure, the form reveals follow-up questions. For example, require a photo and an explanatory note. This guarantees complete failure documentation.</p>
+<h2 id="step-2-configure-conditional-response-logic">Step 2: Configure conditional response logic<a class="headerlink" href="#step-2-configure-conditional-response-logic" title="Permanent link">¤</a></h2>
+<p>Conditional rules keep inspection checklists compact while capturing detailed evidence when problems occur. For example, you can set up a pass or fail question so that a failed answer asks the technician to take a photo of the defect and describe the observed damage.</p>
+<h2 id="step-3-activate-the-form-template">Step 3: Activate the form template<a class="headerlink" href="#step-3-activate-the-form-template" title="Permanent link">¤</a></h2>
+<p>Inspection forms start in draft <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr>. Activate a form before you assign it to <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> or <abbr title="Scheduled routine maintenance performed to prevent equipment failures.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance plan, planned maintenance, or PM">preventive maintenance</abbr> schedules.</p>
+<p>When updates are needed later, create a revision of the active form. The existing version remains active for in-progress work until you activate the new revision.</p>
+<h2 id="step-4-link-inspection-forms-to-maintenance-workflows">Step 4: Link inspection forms to maintenance workflows<a class="headerlink" href="#step-4-link-inspection-forms-to-maintenance-workflows" title="Permanent link">¤</a></h2>
+<p>Once a form is active, you can attach it to automate field checklists:</p>
+<ul>
+<li><strong>PM schedules:</strong> Attach the form to a PM so that every generated <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> includes the digital checklist.</li>
+<li><strong>Route stops:</strong> Attach specific forms to individual route stops to guide technicians through multi-room plant rounds.</li>
+<li><strong><abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">Work orders</abbr>:</strong> Add a form to a <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> or to a specific task on the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr>.</li>
 </ul>
 <h2 id="inspection-form-verification-checklist">Inspection form verification checklist<a class="headerlink" href="#inspection-form-verification-checklist" title="Permanent link">¤</a></h2>
 <p>Use this checklist to confirm your inspection forms are configured for reliable field execution.</p>
-<h3 id="table-2-inspection-form-setup-checklist">Table 2: Inspection form setup checklist<a class="headerlink" href="#table-2-inspection-form-setup-checklist" title="Permanent link">¤</a></h3>
+<h3 id="table-1-inspection-form-setup-checklist">Table 1: Inspection form setup checklist<a class="headerlink" href="#table-1-inspection-form-setup-checklist" title="Permanent link">¤</a></h3>
 <table>
 <thead>
 <tr>
@@ -1376,7 +1345,7 @@
 <tr>
 <td>[ ]</td>
 <td><abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">Status</abbr> set to Active</td>
-<td>Form is promoted from Draft to Active <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr> for <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> selection</td>
+<td>Form is promoted from draft to active for <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> selection</td>
 </tr>
 <tr>
 <td>[ ]</td>
@@ -1434,27 +1403,15 @@
         <div class="md-toc__title">On this page</div>
         <ul class="md-toc__list">
               <li class="md-toc__item">
-                <a href="#inspection-form-capabilities-and-response-types" class="md-toc__link" data-md-level="1">
-                  Inspection form capabilities and response types
+                <a href="#what-you-can-capture-on-an-inspection-form" class="md-toc__link" data-md-level="1">
+                  What you can capture on an inspection form
                 </a>
-                  <ul class="md-toc__list">
-                      <li class="md-toc__item">
-                        <a href="#table-1-inspection-form-question-types-and-operational-uses" class="md-toc__link" data-md-level="2">
-                          Table 1: Inspection form question types and operational uses
-                        </a>
-                      </li>
-                  </ul>
               </li>
               <li class="md-toc__item">
-                <a href="#step-1-create-a-form-template-in-inspection-forms" class="md-toc__link" data-md-level="1">
-                  Step 1: Create a form template in Inspection Forms
+                <a href="#step-1-create-a-form-template" class="md-toc__link" data-md-level="1">
+                  Step 1: Create a form template
                 </a>
                   <ul class="md-toc__list">
-                      <li class="md-toc__item">
-                        <a href="#designing-a-form-template" class="md-toc__link" data-md-level="2">
-                          Designing a form template
-                        </a>
-                      </li>
                       <li class="md-toc__item">
                         <a href="#tip-use-conditional-logic-for-failed-steps" class="md-toc__link" data-md-level="2">
                           💡 Tip: Use conditional logic for failed steps
@@ -1466,25 +1423,11 @@
                 <a href="#step-2-configure-conditional-response-logic" class="md-toc__link" data-md-level="1">
                   Step 2: Configure conditional response logic
                 </a>
-                  <ul class="md-toc__list">
-                      <li class="md-toc__item">
-                        <a href="#adding-a-conditional-action" class="md-toc__link" data-md-level="2">
-                          Adding a conditional action
-                        </a>
-                      </li>
-                  </ul>
               </li>
               <li class="md-toc__item">
                 <a href="#step-3-activate-the-form-template" class="md-toc__link" data-md-level="1">
                   Step 3: Activate the form template
                 </a>
-                  <ul class="md-toc__list">
-                      <li class="md-toc__item">
-                        <a href="#changing-form-status-to-active" class="md-toc__link" data-md-level="2">
-                          Changing form status to Active
-                        </a>
-                      </li>
-                  </ul>
               </li>
               <li class="md-toc__item">
                 <a href="#step-4-link-inspection-forms-to-maintenance-workflows" class="md-toc__link" data-md-level="1">
@@ -1497,8 +1440,8 @@
                 </a>
                   <ul class="md-toc__list">
                       <li class="md-toc__item">
-                        <a href="#table-2-inspection-form-setup-checklist" class="md-toc__link" data-md-level="2">
-                          Table 2: Inspection form setup checklist
+                        <a href="#table-1-inspection-form-setup-checklist" class="md-toc__link" data-md-level="2">
+                          Table 1: Inspection form setup checklist
                         </a>
                       </li>
                   </ul>
