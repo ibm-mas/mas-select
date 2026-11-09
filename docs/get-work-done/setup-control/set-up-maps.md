@@ -35,7 +35,7 @@ Once a map is configured and enabled, it appears in spatially enabled applicatio
 
 ## How to set up a map
 
-1. Go to **Administration > Map Manager**.
+1. In the **Find navigation item** field, search for Map Manager and open it.
 2. Click **New Map**.
 3. Enter a unique name and a short description for the map.
 4. Select **Enable Map** to activate this configuration.

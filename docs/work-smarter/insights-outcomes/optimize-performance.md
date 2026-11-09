@@ -16,7 +16,7 @@ Effective maintenance programs follow a closed-loop refinement cycle:
 | Optimization stage | Operational focus | Data analyzed | Desired outcome |
 |---|---|---|---|
 | **PM frequency tuning** | Adjusting service intervals based on actual operating run hours | Continuous meter history, PM generation counts, historical failure dates | Eliminating unnecessary PMs on idle equipment |
-| **Condition threshold calibration** | Setting realistic warning and action limits | Gauge meter readings, historical sensor logs | Preventing alarm fatigue while ensuring early anomaly detection |
+| **Condition threshold calibration** | Setting realistic warning and action limits | Gauge meter readings, historical reading logs | Preventing alarm fatigue while ensuring early anomaly detection |
 | **Job plan refinement** | Comparing estimated labor and parts against actual logged values | Work order actuals, wrench time delays, parts issue logs | Reducing job duration and eliminating missing parts delays |
 | **Failure elimination** | Identifying chronic root causes across equipment families | Failure Codes Problem, Cause, and Remedy trends | Modifying operating parameters to design out recurring failures |
 
@@ -39,7 +39,7 @@ When an asset runs intermittently, calendar-based maintenance schedules generate
 
 ### Updating a PM schedule to usage-based triggers
 
-1. Go to **Planning and Maintenance > PM**.
+1. In the **Find navigation item** field, search for PM and open it.
 2. Open the preventive maintenance record for the target asset, such as `PM_FILLER02_SVC`.
 3. In the **Frequency** tab, navigate to the **Meter Based Frequency** sub-tab.
 4. Click **New Row** to link a continuous meter:
@@ -58,7 +58,7 @@ Condition monitoring thresholds that are set too tight cause alarm fatigue, lead
 
 ### Adjusting Action Limits in Condition Monitoring
 
-1. Go to **Assets > Condition Monitoring**.
+1. In the **Find navigation item** field, search for Condition Monitoring and open it.
 2. Open the point record, such as `CP_FILLER02_MOTOR_VIB`.
 3. In the **Action Limits** table, review historical readings captured on recent work orders.
 4. Update the **Upper Action Limit** to reflect the true ISO vibration velocity ceiling.

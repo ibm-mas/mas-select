@@ -129,9 +129,9 @@ What happens when inventory clerks attempt to receive purchase orders or issue p
 <details markdown="1">
 <summary>Show the answer</summary>
 
-Inventory applications like Inventory, Count Books, and Issues and Transfers can only store items in locations designated with the type `STOREROOM`. The system will not allow parts to be stocked inside asset records.
+Inventory applications like Inventory, Count Books, and Issues and Transfers store items in storerooms, so parts cannot be stocked inside asset records.
 
-**What to do instead:** Create `Main storeroom` in the Locations application and set its location type to `STOREROOM`.
+**What to do instead:** Create `Main storeroom` in the Storerooms application.
 
 </details>
 
@@ -157,7 +157,7 @@ Use this checklist to confirm your inventory strategy is ready for operations.
 
 | Check | Planning item | What to verify |
 |---|---|---|
-| [ ] | Dedicated storeroom locations | Storerooms are created in Locations with location type set to STOREROOM |
+| [ ] | Dedicated storerooms | Storerooms are created in the Storerooms application, separate from operating locations and assets |
 | [ ] | Rotating items classified | Rebuildable motors and pumps have the Rotating checkbox enabled in Item Master |
 | [ ] | Critical spares identified | Long-lead replacement parts have defined safety stock and reorder points in Inventory |
 | [ ] | Spare Parts tabs linked | Consumable gaskets and seals are linked to parent machines for fast technician lookup |
@@ -179,6 +179,7 @@ Use this checklist to confirm your inventory strategy is ready for operations.
 ## Related topics
 
 - [How do I decide: location, asset, or spare part?](decide-location-asset-spare-part.md)
+- [How do I get a new part into inventory?](../manage-inventory/get-part-into-inventory.md)
 - [How do I track stock levels?](../manage-inventory/track-stock-levels.md)
 - [How do I issue parts?](../manage-inventory/issue-parts.md)
 - [Why does my data look wrong?](../../improve-results/improve-data/data-looks-wrong.md)

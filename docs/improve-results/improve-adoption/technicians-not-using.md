@@ -42,7 +42,7 @@ Configuring offline caching ensures technicians can view job instructions, compl
 
 Adjust synchronization settings in the desktop application to prevent timeout errors and ensure responsive background syncing.
 
-1. Go to **System Configuration > Platform Configuration > Mobile Properties**.
+1. In the **Find navigation item** field, search for Mobile Properties and open it.
 2. In the **Property Name** filter, search for sync timeout and batch size properties.
 3. Select the property governing offline transaction batching, such as `si.offline.download.batchsize`.
 4. Update the **Global Value** to an appropriate batch limit, such as 50 records, to reduce synchronization latency over intermittent wireless connections.

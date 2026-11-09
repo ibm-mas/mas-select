@@ -9,7 +9,7 @@ In Maximo Application Suite Select, automation is driven by scheduled background
 Automation in Maximo Application Suite Select addresses four major operational maintenance areas:
 
 1. **Preventive maintenance generation:** Automatically creates scheduled work orders ahead of due dates based on elapsed calendar time or accumulated run hours.
-2. **Condition-based work triggers:** Instantly generates corrective work orders when sensor or gauge readings exceed defined action thresholds.
+2. **Condition-based work triggers:** Generates corrective work orders when the gauge readings that you enter exceed defined action thresholds.
 3. **Automated inventory reordering:** Flags storeroom parts that drop below their minimum reorder point and creates restock requests.
 4. **Instant stakeholder alerts:** Dispatches email and push notifications when work orders are approved, delayed, or completed.
 
@@ -41,7 +41,7 @@ Cron tasks run on configured background schedules without requiring user interve
 
 To ensure work orders generate automatically before their maintenance due date, configure the automated generation schedule:
 
-1. Go to **System Configuration > Platform Configuration > Cron Task Setup**.
+1. In the **Find navigation item** field, search for Cron Task Setup and open it.
 2. In the **Cron Task** field, search for `PMWOGENCRONTASK`.
 3. In the **Cron Task Instances** table, select the active instance for your site.
 4. In the **Schedule** field, verify the execution frequency, such as running daily at 01:00 AM.
@@ -58,7 +58,7 @@ When equipment breaks down unexpectedly, supervisors must alert field technician
 
 ### Enabling mobile push alerts for emergency work
 
-1. Go to **System Configuration > Platform Configuration > Push Notifications Administration**.
+1. In the **Find navigation item** field, search for Push Notifications Administration and open it.
 2. Select the notification event configuration for **Emergency Work Orders**.
 3. Verify that the trigger condition is mapped to work orders with Priority 1 or Emergency work types.
 4. Set the recipient rule to target the assigned technician and maintenance lead for the active shift.

@@ -31,7 +31,7 @@ A well-constructed Job Plan removes guesswork for technicians. When a work order
 
 ### Creating a Job Plan in the desktop application
 
-1. Go to **Planning and Maintenance > Job Plans**.
+1. In the **Find navigation item** field, search for Job Plans and open it.
 2. Click **New Job Plan**.
 3. In the **Job Plan** field, enter an identifier, such as `JP_FILLER_SEAL_SVC`.
 4. In the **Description** field, enter `Filler FL-02 Mechanical Seal Service and Inspection`.
@@ -63,7 +63,7 @@ Standardizing craft codes ensures that work plans accurately predict job costs r
 
 ### Creating a Craft in the desktop application
 
-1. Go to **People > Crafts**.
+1. In the **Find navigation item** field, search for Crafts and open it.
 2. Click **New Craft**.
 3. In the **Craft** field, enter the code, such as `MECH`.
 4. In the **Description** field, enter `Mechanical Maintenance Technician`.

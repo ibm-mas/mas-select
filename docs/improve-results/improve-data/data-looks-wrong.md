@@ -27,11 +27,11 @@ Review this diagnostic guide to match your observed symptom with its root cause 
 
 | Observed symptom | Primary root cause | Where to investigate | Corrective action |
 | :--- | :--- | :--- | :--- |
-| **Asset count is doubled or inflated** | Duplicate asset records created during manual entry or CSV imports | Assets > Assets | Decommission or merge duplicate asset records, redirecting work history to the primary asset |
-| **Asset missing from location hierarchy** | Location record has no parent location specified | Assets > Location | Open the location record and populate the Parent Location field |
-| **Inventory balance is negative** | Parts were issued from the storeroom before receipt transactions were processed | Inventory > Inventory | Perform a physical count in Count Books and adjust the balance to match physical reality |
-| **Technical attributes are missing on asset** | Asset is not linked to a classification structure | Assets > Classifications | Assign the correct classification class to the asset on the Specifications tab |
-| **Work order shows zero labor cost** | Assigned labor record has no craft hourly rate defined | Planning > Labor | Open the Labor record and define standard hourly billing rates for the craft |
+| **Asset count is doubled or inflated** | Duplicate asset records created during manual entry or CSV imports | Assets | Decommission or merge duplicate asset records, redirecting work history to the primary asset |
+| **Asset missing from location hierarchy** | Location record has no parent location specified | Location | Open the location record and populate the Parent Location field |
+| **Inventory balance is negative** | Parts were issued from the storeroom before receipt transactions were processed | Inventory | Perform a physical count in Count Books and adjust the balance to match physical reality |
+| **Technical attributes are missing on asset** | Asset is not linked to a classification structure | Classifications | Assign the correct classification class to the asset on the Specifications tab |
+| **Work order shows zero labor cost** | Assigned labor record has no craft hourly rate defined | Labor | Open the Labor record and define standard hourly billing rates for the craft |
 
 ---
 
@@ -41,7 +41,7 @@ When a technician or supervisor cannot locate equipment in the hierarchy tree, t
 
 ### How to reconnect an orphan location
 
-1. Go to **Assets > Location**.
+1. In the **Find navigation item** field, search for Location and open it.
 2. Search for the affected location, such as `Packaging zone`.
 3. In the **Location** details view, check the **Parent** field.
 4. If the field is empty, click the detail menu next to **Parent** and select the parent area, such as `Production building`.
@@ -56,7 +56,7 @@ Duplicate assets distort maintenance histories by splitting work orders and cost
 
 ### How to remediate duplicate assets
 
-1. Go to **Assets > Assets**.
+1. In the **Find navigation item** field, search for Assets and open it.
 2. Filter by asset description or serial number to identify the duplicate records, such as `MTR-101` and `MTR-DRIVE-01`.
 3. Determine which record holds the primary maintenance history and active preventive maintenance schedule.
 4. For the redundant duplicate record:
@@ -73,12 +73,11 @@ Negative balances occur when emergency repairs consume parts faster than receivi
 
 ### How to reconcile stock balances
 
-1. Go to **Inventory > Count Books**.
-2. Open the count book for the target storeroom, such as `Main storeroom`.
-3. Enter the actual physical count verified on the shelf.
-4. Review the variance percentage between the system balance and the physical count.
-5. Select **Reconcile** from the common actions menu to update the system balance to match the physical count.
-6. The system automatically creates an inventory adjustment transaction in the audit log.
+1. In the **Find navigation item** field, search for Inventory and open it.
+2. Find the item in the target storeroom, such as `Main storeroom`.
+3. In the **Inventory Balances** table, enter the actual physical count verified on the shelf.
+4. Compare the **Current Balance** with the **Physical Count**.
+5. Save the record, then check that the **Reconciled?** checkbox is selected on the balance row.
 
 ---
 
@@ -89,9 +88,9 @@ Consider how the system administrator corrected data anomalies affecting the col
 ### Scenario: Broken reporting metrics
 
 - **Symptom 1:** The supervisor reported that the cold storage room did not appear on the plant hierarchy navigation card.
-  - *Fix:* The administrator opened **Assets > Location**, found `Cold storage room`, and added `Ice cream main plant` into the **Parent** field. The room immediately appeared in the site drilldown.
+  - *Fix:* The administrator opened the Location application, found `Cold storage room`, and added `Ice cream main plant` into the **Parent** field. The room immediately appeared in the site drilldown.
 - **Symptom 2:** The motor for filler FL-02 showed zero historical maintenance costs despite multiple recent repairs.
-  - *Fix:* The administrator opened **Planning > Labor** and found that the mechanical technician labor record lacked an hourly rate on craft `MECH-01`. Adding the standard rate immediately corrected labor cost calculations on all future work orders.
+  - *Fix:* The administrator opened the Labor application and found that the mechanical technician labor record lacked an hourly rate on craft `MECH-01`. Adding the standard rate immediately corrected labor cost calculations on all future work orders.
 
 ---
 

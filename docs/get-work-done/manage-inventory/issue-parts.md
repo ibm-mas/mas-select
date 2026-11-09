@@ -101,14 +101,14 @@ Use this when managing inventory directly.
 1. Open the Inventory application.
 2. Search for the item you need.
 3. Open the inventory record.
-4. Click **Issue** action.
+4. Click **Issue Current Item**.
 5. Enter the work order number.
 6. Specify quantity.
 7. Confirm the issue.
 
 The system updates inventory balance, shows the material on the work order, and records the cost.
 
-Inventory clerks can also use the Issues and Transfers app, from **Inventory > Issues and Transfers** on the desktop or in IBM Maximo Mobile. Use it to issue items that are reserved for approved work orders, issue items that are not reserved, and transfer items between storerooms.
+Inventory clerks can also use the Issues and Transfers app on the desktop or in IBM Maximo Mobile. Use it to issue items that are reserved for approved work orders, issue items that are not reserved, and transfer items between storerooms or between bins.
 
 ### Method 3: Use mobile app
 

@@ -39,7 +39,7 @@ You can add synonym values, but you cannot add new internal values. The system's
 
 ## How to add a synonym value
 
-1. Go to **System Configuration > Platform Configuration > Domains**.
+1. In the **Find navigation item** field, search for Domains and open it.
 2. Search for the domain you want to update. For example, search for **WOSTATUS** to find the work order status domain.
 3. Open the domain record.
 4. In the Values table, click **Add Row**, the + button above the values list.
@@ -66,7 +66,7 @@ To identify which domain controls a specific field:
 1. Place your cursor in the field.
 2. Press **Alt+F1** to open field help.
 3. The field name and domain name appear in the field help panel.
-4. Go to **System Configuration > Platform Configuration > Domains** and search for that domain name.
+4. In the **Find navigation item** field, search for Domains and open it. Then search for that domain name.
 
 ---
 

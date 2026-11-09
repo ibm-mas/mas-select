@@ -8,6 +8,8 @@ search:
 
 Maximo Application Suite Select tracks maintenance performance through key performance indicators (KPIs). A KPI measures one specific variable over time, such as how many work orders were completed on schedule, or how long equipment typically runs before failing.
 
+Some KPIs are available when you first sign in. You can also create your own.
+
 The metrics that matter most depend on your role. A supervisor needs to know whether today's work is on track. An administrator needs to know whether the overall maintenance program is healthy. An inventory clerk needs to know whether parts are available when work demands them.
 
 ## 💡 Tips for success

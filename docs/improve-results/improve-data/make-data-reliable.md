@@ -33,7 +33,7 @@ ALN alphanumeric domains present users with a controlled drop-down list. By atta
 
 #### Creating an ALN domain in the desktop application
 
-1. Go to **System Configuration > Platform Configuration > Domains**.
+1. In the **Find navigation item** field, search for Domains and open it.
 2. Click **Add New Domain** and select **Add New ALN Domain**.
 3. In the **Domain** field, enter a unique identifier, such as `IC_FAIL_REASON`.
 4. In the **Description** field, enter a descriptive title, such as `Ice Cream Plant Failure Reason Codes`.

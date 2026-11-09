@@ -58,7 +58,7 @@ The single largest cause of stalled work orders in manufacturing and facilities 
 
 ### How to verify and reserve parts before work begins
 
-1. Go to **Work Orders > Work Orders**.
+1. In the **Find navigation item** field, search for Work Orders and open it.
 2. Open the planned work order and open the **Plans** tab.
 3. Open the **Materials** subtab and verify that required parts and quantities are listed.
 4. Review the **Direct Issue** and **Line Status** indicators.

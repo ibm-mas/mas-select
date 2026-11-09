@@ -35,7 +35,7 @@ Before filling in your data, use the Data Management application to download a t
 
 **What to do:**
 
-1. Go to **Setup and administration > Data Management**.
+1. In the **Find navigation item** field, search for Data Management and open it.
 2. Select the data type or object structure you want to import, such as locations or assets.
 3. Click **Export data** or download the template for that data type.
 4. Open the downloaded CSV file in a spreadsheet application to review the required columns and format.
@@ -51,7 +51,7 @@ Once your CSV file is prepared and validated:
 
 **What to do:**
 
-1. Go to **Setup and administration > Data Management**.
+1. In the **Find navigation item** field, search for Data Management and open it.
 2. Select the data type or object structure that matches your file.
 3. Click **Import data**.
 4. Click **Browse** and select your prepared CSV file.

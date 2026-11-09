@@ -33,7 +33,7 @@ Maximo Application Suite Select provides both comprehensive desktop applications
 | **Field Technician** | Technician app | None required for daily tasks | View assigned work orders, record meter readings, log labor time, complete job steps |
 | **Quality Inspector** | Inspections app | None required for daily tasks | Complete safety, hygiene, and environmental condition check sheets |
 | **Inventory Clerk** | Issues and Transfers app, Inventory Counting app | Inventory, Count Books | Issue parts at the counter, transfer stock between storerooms, conduct cycle counts |
-| **Maintenance Planner** | Work Order Summary | Job Plans, PM, Routes | Build multi-step maintenance plans, schedule recurring PMs, coordinate craft routes |
+| **Maintenance Planner** | Work orders | Job Plans, PM, Routes | Build multi-step maintenance plans, schedule recurring PMs, coordinate craft routes |
 | **Reliability Engineer** | Asset Manager | Assets, Condition Monitoring, Failure Codes | Manage asset registries, configure upper and lower meter limits, analyze failure trends |
 
 <img src="../../images/sample_simplified_work_routing.svg" alt="Simplified work order routing and execution workflow" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
@@ -61,7 +61,7 @@ Instead of requiring maintenance planners to send manual emails to production ma
 
 ### Creating an automated notification template
 
-1. Go to **System Configuration > Platform Configuration > Communication Templates**.
+1. In the **Find navigation item** field, search for Communication Templates and open it.
 2. Click **New Communication Template**.
 3. In the **Template** field, enter an identifier, such as `WO_COMPLETED_NOTIFY`.
 4. In the **Applies to** field, enter `WORKORDER`.

@@ -6,7 +6,7 @@ search:
 
 # How do I set up meters and meter groups?
 
-Meters track equipment usage, operating conditions, and physical measurements. In Maximo Application Suite Select, meter readings drive automated preventive maintenance schedules based on run hours and trigger corrective work orders when sensor measurements breach safety limits.
+Meters track equipment usage, operating conditions, and physical measurements. In Maximo Application Suite Select, meter readings drive automated preventive maintenance schedules based on run hours and trigger corrective work orders when readings breach safety limits. You enter meter readings manually. Select does not receive readings automatically from sensors or IoT devices.
 
 Setting up meters involves defining meter definitions at the system level, grouping related meters into reusable templates, and attaching those meters to assets and locations.
 
@@ -31,7 +31,7 @@ Meters are created once at the system level and can then be applied across multi
 
 ### Creating a meter in the desktop application
 
-1. Go to **Assets > Meter**.
+1. In the **Find navigation item** field, search for Meter and open it.
 2. Click **New Meter**.
 3. In the **Meter** field, enter a unique identifier, such as `RUNHOURS`.
 4. In the **Description** field, enter `Operating Run Hours`.
@@ -48,7 +48,7 @@ If your facility operates multiple machines that share the same set of meters, g
 
 ### Creating a meter group in the desktop application
 
-1. Go to **Assets > Meter Groups**.
+1. In the **Find navigation item** field, search for Meter Groups and open it.
 2. Click **New Meter Group**.
 3. In the **Meter Group** field, enter an identifier, such as `ROTATING_PUMP`.
 4. In the **Description** field, enter `Rotating Pump Standard Meter Package`.
@@ -68,7 +68,7 @@ Once meters and meter groups exist, attach them to equipment records on the Mete
 
 ### Configuring an asset meter in the desktop application
 
-1. Go to **Assets > Assets**.
+1. In the **Find navigation item** field, search for Assets and open it.
 2. Open the target equipment record, such as `Filler FL-02`.
 3. Open the **Meters** tab.
 4. If attaching a group: In the **Meter Group** field, select `ROTATING_PUMP`. All bundled meters populate the table.

@@ -10,6 +10,8 @@ Structured failure codes convert subjective technician remarks into standardized
 
 In Maximo Application Suite Select, failure codes are organized into a four-tier hierarchy headed by a Failure Class, followed by Problem, Cause, and Remedy codes configured in the Failure Codes application.
 
+Select includes some failure codes. You can use them as they are, or add your own to match your equipment.
+
 ## The four-tier failure hierarchy architecture
 
 A failure hierarchy structures failure reporting from initial symptom down to corrective action.
@@ -32,8 +34,8 @@ Failure codes and hierarchies are created at the Organization level in the Failu
 
 ### Building a failure tree in the desktop application
 
-1. Go to **Planning and Maintenance > Failure Codes**.
-2. Click **New Failure Codes**.
+1. In the **Find navigation item** field, search for Failure Codes and open it.
+2. Click **New Failure Code**.
 3. In the **Failure Class** field, enter a clear identifier, such as `PUMPS`.
 4. In the **Description** field, enter `Sanitary and Utility Pumps Failure Class`.
 5. In the **Problems** table, click **New Row** to add failure symptoms:
@@ -57,7 +59,7 @@ For technicians to select failure codes on work orders, the asset must have an a
 
 ### Linking a failure class to an asset record
 
-1. Go to **Assets > Assets**.
+1. In the **Find navigation item** field, search for Assets and open it.
 2. Open the target equipment record, such as `Filler FL-02`.
 3. On the main **Asset** tab, locate the **Failure Class** field.
 4. Select the matching failure class, such as `FILLERS` or `ROTATING_PUMP`.

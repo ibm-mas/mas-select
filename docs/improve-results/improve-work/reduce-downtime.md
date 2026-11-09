@@ -27,10 +27,10 @@ World-class maintenance programs keep unplanned downtime below 10% of total oper
 
 | Capability | What it does | Operational impact | Where configured |
 | :--- | :--- | :--- | :--- |
-| **Preventive Maintenance (PM)** | Generates recurring inspections and servicing before equipment degrades | Prevents up to 70% of mechanical and electrical wear failures | Planning > PM |
-| **Condition Monitoring** | Triggers corrective work orders when meter readings breach action limits | Detects impending failures days or weeks before catastrophic breakdown | Assets > Condition Monitoring |
-| **Failure Code Hierarchies** | Captures structured Problem, Cause, and Remedy data on work orders | Reveals recurring defect trends across equipment classes | Assets > Failure Codes |
-| **Storeroom Reorder Points** | Automates reorder notifications when stock falls below safety levels | Eliminates repair delays caused by missing replacement parts | Inventory > Storerooms |
+| **Preventive Maintenance (PM)** | Generates recurring inspections and servicing before equipment degrades | Prevents up to 70% of mechanical and electrical wear failures | PM |
+| **Condition Monitoring** | Triggers corrective work orders when meter readings breach action limits | Detects impending failures days or weeks before catastrophic breakdown | Condition Monitoring |
+| **Failure Code Hierarchies** | Captures structured Problem, Cause, and Remedy data on work orders | Reveals recurring defect trends across equipment classes | Failure Codes |
+| **Storeroom Reorder Points** | Automates reorder notifications when stock falls below safety levels | Eliminates repair delays caused by missing replacement parts | Storerooms |
 
 ---
 
@@ -62,7 +62,7 @@ To measure whether downtime is decreasing, maintenance teams must record downtim
 
 ### How to report downtime in the Work Orders application
 
-1. Go to **Work Orders > Work Orders**.
+1. In the **Find navigation item** field, search for Work Orders and open it.
 2. Open the completed corrective work order.
 3. Select **Report Downtime** from the common actions menu.
 4. Specify whether the downtime occurred during operational or non-operational production hours.

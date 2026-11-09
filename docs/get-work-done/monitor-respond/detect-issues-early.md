@@ -10,6 +10,8 @@ Equipment rarely breaks down without warning. Before a motor bearing seizes or a
 
 Condition monitoring allows you to track these physical indicators systematically. By defining acceptable limits for meter readings, Maximo Application Suite Select helps you identify developing defects and generate corrective maintenance before an unexpected breakdown halts operations.
 
+In Maximo Application Suite Select, you enter meter readings manually. Select does not receive a continuous stream of readings from sensors or IoT devices.
+
 ### 💡 Tips for success
 
 - Select the correct meter type before creating records. Gauge meters track numeric values that fluctuate; characteristic meters track qualitative observations; continuous meters track cumulative run hours.
@@ -122,7 +124,7 @@ Setting up early issue detection follows four sequential steps across the deskto
 
 ### Step 1: Create the meter
 
-1. Go to **Assets > Meters**.
+1. In the **Find navigation item** field, search for Meter and open it.
 2. Click **New Meter**.
 3. In the **Meter** field, enter a unique identifier, such as `VIB-VEL`.
 4. In the **Meter Type** field, select `GAUGE` for variable numeric values or `CHARACTERISTIC` for qualitative observations.
@@ -131,7 +133,7 @@ Setting up early issue detection follows four sequential steps across the deskto
 
 ### Step 2: Associate the meter with the asset or location
 
-1. Go to **Assets > Assets** or **Assets > Location**.
+1. In the **Find navigation item** field, search for Assets or Location and open it.
 2. Open the asset or location record, such as asset `Drive motor`.
 3. Open the **Meters** tab and click **New Row**.
 4. In the **Meter** field, select the meter you created in Step 1.
@@ -139,7 +141,7 @@ Setting up early issue detection follows four sequential steps across the deskto
 
 ### Step 3: Create the measurement point record
 
-1. Go to **Planning > Condition Monitoring** or **Assets > Condition Monitoring**.
+1. In the **Find navigation item** field, search for Condition Monitoring and open it.
 2. Click **New Measure Point**.
 3. In the **Point** field, enter a unique point number or accept the system-generated value.
 4. Specify the **Asset** or **Location** to monitor.
@@ -152,7 +154,7 @@ Setting up early issue detection follows four sequential steps across the deskto
 
 When technicians record meter readings during inspections, work orders can be generated in two ways:
 
-- **Manual generation:** Open the Condition Monitoring record and select **Generate Work Orders** from the common actions menu.
+- **Manual generation:** Open the Condition Monitoring record and select **Generate Work Order** from **More Actions**.
 - **Automated generation:** Administrators configure background processing so that work orders generate automatically whenever a qualifying measurement is entered.
 
 ---

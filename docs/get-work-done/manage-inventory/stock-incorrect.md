@@ -199,7 +199,7 @@ Once you've verified the error:
 1. Open the Inventory application.
 2. Find the item.
 3. Go to the storeroom with error.
-4. Use Adjust Balance action.
+4. Use **Inventory Adjustments**.
 5. Enter correct physical quantity.
 6. System calculates difference.
 7. Add reason for adjustment.
@@ -478,7 +478,7 @@ The system can:
 - Calculate differences
 - Create adjustments
 
-You create count books in the Count Books application, from **Inventory > Count Books**. You count items in the Inventory Counting app, from **Inventory > Inventory Counting** on the desktop or in IBM Maximo Mobile. In Inventory Counting, you can:
+You create count books in the Count Books application. You count items in the Inventory Counting app on the desktop or in IBM Maximo Mobile. In Inventory Counting, you can:
 
 - Count the items in a count book.
 - Count items that are not in a count book.
@@ -487,9 +487,9 @@ You create count books in the Count Books application, from **Inventory > Count 
 - See alerts for differences that need a recount.
 - Count in batches as part of a cycle count.
 
-After you count, you reconcile the counts to update the inventory balances.
+After you count, the **Reconciled?** checkbox on the inventory balance shows whether the count is reconciled.
 
-`[SME confirmation required: Confirm that this behavior applies to MAS Select, including which application you use to reconcile counts. The source is the Maximo Manage documentation, which says you reconcile counts in the Inventory Counting application on the desktop.]`
+`[SME confirmation required: Confirm that you can open Inventory Counting in a desktop browser in Select as well as in IBM Maximo Mobile, and confirm where counts are reconciled.]`
 
 !!! warning "TODO: Add visual content"
      A screenshot showing a count book would be useful here.

@@ -35,7 +35,7 @@ Communication templates automate outbound email for work order assignments, stat
 
 ### How to create a communication template
 
-1. Go to **Administration > Communication Templates**.
+1. In the **Find navigation item** field, search for Communication Templates and open it.
 2. Click **New Communication Template**.
 3. Enter a unique **Template ID** and a clear description.
 4. Set **Accessible From** to the context where this template will be used, such as **APPS** or **ALL**.
@@ -54,6 +54,12 @@ Communication templates automate outbound email for work order assignments, stat
 10. For each recipient, select **To**, **cc**, or **bcc**.
 11. Save the template.
 12. Use **Change Status** to set the template status to **Active**.
+
+### Send an email about a KPI
+
+When a KPI reaches its caution or alert level, you can email the people who need to act. From the KPI, use the **Create Communication** action and choose a communication template to fill in the subject and message. The email is recorded in the KPI's log.
+
+`[SME confirmation required: Confirm that the Create Communication action is available for KPIs in Select, and whether an administrator can set up these emails to send automatically when a KPI reaches a threshold.]`
 
 ---
 

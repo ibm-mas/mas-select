@@ -33,7 +33,7 @@ A Master PM establishes the master frequency and attached Job Plan. When you mod
 
 ### Creating a Master PM in the desktop application
 
-1. Go to **Planning and Maintenance > Master PM**.
+1. In the **Find navigation item** field, search for Master PM and open it.
 2. Click **New Master PM**.
 3. In the **Master PM** field, enter a unique identifier, such as `MPM_50HP_MOTOR`.
 4. In the **Description** field, enter `Standard 50 HP Motor Quarterly Service`.
@@ -59,7 +59,7 @@ The Routes application groups multiple assets or locations into a single route. 
 
 ### Creating an asset route in the desktop application
 
-1. Go to **Planning and Maintenance > Routes**.
+1. In the **Find navigation item** field, search for Routes and open it.
 2. Click **New Route**.
 3. In the **Route** field, enter an identifier, such as `RT_COLD_INSPECT`.
 4. In the **Description** field, enter `Cold Storage Daily Temperature and Valve Inspection`.

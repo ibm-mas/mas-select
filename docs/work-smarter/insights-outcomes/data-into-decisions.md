@@ -39,7 +39,7 @@ Targeting established industry benchmarks ensures your maintenance strategy driv
 
 ### Creating a KPI in the desktop application
 
-1. Go to **Analytics > KPI Manager**.
+1. In the **Find navigation item** field, search for KPI Manager and open it.
 2. Click **New KPI**.
 3. In the **KPI** field, enter a unique code, such as `KPI_PM_COMPLIANCE`.
 4. In the **Description** field, enter `Preventive Maintenance Compliance Rate`.

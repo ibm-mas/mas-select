@@ -10,6 +10,8 @@ Operational dashboards in Maximo Application Suite Select consolidate critical o
 
 Acting on alerts promptly prevents small anomalies, such as an overdue preventive maintenance inspection or a rising emergency backlog, from escalating into unplanned production downtime.
 
+When you first sign in, Select shows the Operational Dashboard that matches your security group. Your administrator assigns the group. Select includes some dashboard content, and an administrator can edit the dashboard to add cards such as KPIs and work queues.
+
 ### 💡 Tips for success
 
 - Check your Operational Dashboard at the start of each shift. Review red threshold breaches first, followed by yellow caution indicators.
@@ -27,7 +29,7 @@ Your Operational Dashboard organizes alerts and work items into distinct visual 
 
 | Card type | What it displays | Alert condition | Immediate action |
 | :--- | :--- | :--- | :--- |
-| **KPI trend cards** | Single performance indicator with historical trend line | Card turns red when value breaches the alert threshold; turns yellow at caution level | Click the card to open KPI Viewer and analyze the underlying historical records |
+| **KPI trend cards** | Single performance indicator with historical trend line | Card turns red when value breaches the alert threshold; turns yellow at caution level | Use the card menu to open the KPI in KPI Viewer and analyze the underlying historical records |
 | **Work queues card** | Table of urgent work categories, such as overdue work or emergency requests | Badge count increases when new records match the queue query | Select a queue to inspect records, assign technicians, or update status directly |
 | **Condition monitoring alerts** | Assets exceeding measurement action limits | Corrective work orders appear in unassigned or emergency work queues | Review the asset condition history and dispatch qualified personnel |
 
@@ -80,11 +82,11 @@ Consider how a supervisor at the ice cream main plant responds to morning dashbo
 
 ## How to configure work queues in Work Queue Manager
 
-Administrators create and manage the work queues that appear on role-based operational dashboards.
+Select includes some work queues. Administrators can use them as they are, or create and manage their own for the operational dashboards.
 
 ### Step 1: Create the work queue definition
 
-1. Go to **Administration > Work Queue Manager**.
+1. In the **Find navigation item** field, search for Work Queue Manager and open it.
 2. Click **New Work Queue**.
 3. In the **Work Queue** field, enter a unique name, such as `WQ-OVERDUE-PM`.
 4. In the **Description** field, enter a descriptive label, such as `Overdue Preventive Maintenance`.
@@ -101,9 +103,11 @@ Administrators create and manage the work queues that appear on role-based opera
 
 1. Go to the target dashboard, such as **Operational Dashboard : Supervisor**.
 2. Click **Edit Dashboard**.
-3. From the card gallery, select **Work Queues**.
-4. In the card configuration, verify that your active work queue is selected.
+3. Add a card that shows work orders as a table, and select your work queue for it.
+4. Verify that your active work queue is selected.
 5. Click **Save Dashboard**.
+
+`[SME confirmation required: Confirm which card type shows a work queue on the dashboard in Select, and how you select the queue.]`
 
 ---
 

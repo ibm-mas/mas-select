@@ -162,7 +162,7 @@ This makes it easy to analyze maintenance patterns and costs for specific types 
 
 ## What if the classification doesn't exist?
 
-If you need a classification that doesn't exist:
+Select includes some classifications. If you need a classification that doesn't exist:
 
 1. Check if a similar classification works.
 2. Contact your administrator to create new classifications.

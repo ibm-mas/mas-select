@@ -46,15 +46,19 @@ Use calendars to:
 
 **Step 1: Create shifts**
 
-- Set working days, such as Monday to Friday
+- Define a shift pattern that sets the working days, such as Monday to Friday
 - Set start and end times, such as 7:00 AM to 3:00 PM
 - Enter total work hours per day
 
 **Step 2: Create the calendar**
 
 - Make a calendar for your organization
-- Add shifts to show the work schedule
-- Mark holidays and days off
+- Apply shifts to show the work schedule
+- Mark holidays, shutdowns, and days off as non-working time
+
+Select includes some calendars, such as a day shift and an evening shift. You can use them as they are or duplicate them to make your own.
+
+`[SME confirmation required: Confirm which calendars Select includes and that you can duplicate them.]`
 
 **Step 3: Assign calendars**
 

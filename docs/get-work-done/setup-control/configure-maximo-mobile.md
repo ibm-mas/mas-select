@@ -38,7 +38,7 @@ Each data category offers the same three options. Choose the option that balance
 
 ## Open the mobile configuration
 
-`[SME confirmation required: Add the confirmed navigation path to mobile configuration in Maximo Application Suite Select. The Maximo Manage path is Administration > Mobile Configuration, but the Maximo Application Suite Select path requires validation.]`
+`[SME confirmation required: Confirm the name of the mobile configuration application in Maximo Application Suite Select.]`
 
 ## Choose how mobile data is synchronized
 

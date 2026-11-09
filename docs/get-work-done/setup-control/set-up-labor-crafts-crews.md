@@ -25,7 +25,7 @@ These records work together. You need to set them up in the correct order.
 |------|---------------|
 | **Craft** | A skill or trade, such as Electrician or Mechanic, used to match the correct person to the correct job |
 | **Calendar** | Defines working days and shifts. Must be assigned to both the crew and each member. |
-| **Labor** | A person who performs work or records time, linked to a person record in the system |
+| **Labor** | A person who performs work or records time |
 | **Crew type** | A template that defines the positions and crafts a crew requires, such as Leader and Helper |
 | **Crew** | A named group of people assembled to work together, built from a crew type |
 
@@ -41,9 +41,9 @@ Crafts → Calendar → Labor → Crew type → Crew
 
 ## Step 1: Create crafts
 
-Crafts represent the skills in your workforce.
+Crafts represent the skills in your workforce. Select includes some crafts and skill levels. You can use them as they are, or add your own.
 
-1. Go to **Resources > Crafts**.
+1. In the **Find navigation item** field, search for Crafts and open it.
 2. Create a new craft record.
 3. Enter a craft ID and description, for example, **MECH, Mechanic** or **REFRIG, Refrigeration technician**.
 4. Set the default rate if applicable.
@@ -63,14 +63,15 @@ See [How do I schedule work?](../plan-work/schedule-work.md) for steps to create
 
 ## Step 3: Create labor records
 
-Labor records represent the individuals who perform work.
+Labor records represent the individuals who perform work. Select creates a labor record for a person when you create their user, so you usually update the existing record instead of creating a new one.
 
-1. Go to **Resources > Labor**.
-2. Create a new labor record.
-3. Link it to the person's existing person record.
-4. In the **Crafts** section, add the person's craft and set it as their **default craft**. The Available Labor dialog filters by default craft only. A person with the correct skill listed as a secondary craft will not appear when supervisors search for available people.
-5. Set the same **calendar and shift** you plan to use for the crew they will join. If these differ from the crew's calendar, the person will show as unavailable every time a supervisor or scheduler tries to assign them, even when they are physically at work.
-6. Save.
+`[SME confirmation required: Confirm that Select creates a labor record automatically when you create a user, and when you need to create a labor record yourself.]`
+
+1. In the **Find navigation item** field, search for Labor and open it.
+2. Open the person's labor record.
+3. In the **Crafts** section, add the person's craft and set it as their **default craft**. The Available Labor dialog filters by default craft only. A person with the correct skill listed as a secondary craft will not appear when supervisors search for available people.
+4. Set the same **calendar and shift** you plan to use for the crew they will join. If these differ from the crew's calendar, the person will show as unavailable every time a supervisor or scheduler tries to assign them, even when they are physically at work.
+5. Save.
 
 Repeat for each person in your workforce.
 
@@ -80,8 +81,10 @@ Repeat for each person in your workforce.
 
 A crew type is the template for a crew. It defines the positions and crafts required.
 
-1. Go to **Resources > Crews**.
-2. From the **Crew Types** tab, create a new crew type.
+`[SME confirmation required: Confirm whether MAS Select uses crew types, and where you define the positions and crafts that a crew requires.]`
+
+1. In the **Find navigation item** field, search for Crews and open it.
+2. Create a new crew type.
 3. In the **Required Crafts** section, add each position with its craft:
     - Add a **Leader** position and assign the relevant craft
     - Add any **Helper** or other positions required
@@ -93,7 +96,7 @@ A crew type is the template for a crew. It defines the positions and crafts requ
 
 With the crew type, crafts, calendar, and labor records in place, you can now create a crew.
 
-1. Go to **Resources > Crews**.
+1. In the **Find navigation item** field, search for Crews and open it.
 2. Create a new crew.
 3. Select the **crew type** you created.
 4. Assign the **calendar** the crew will work to.

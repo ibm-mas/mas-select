@@ -31,7 +31,7 @@ System administrators configure AI model endpoints, credentials, and feature pro
 
 ### Connecting an AI model provider in the desktop application
 
-1. Go to **Integration > AI Configuration**.
+1. In the **Find navigation item** field, search for AI Configuration and open it.
 2. Click **New AI Configuration**.
 3. In the **Configuration Name** field, enter a unique identifier, such as `WATSONX_MAINT_AI`.
 4. In the **Provider** field, select your AI service provider.
