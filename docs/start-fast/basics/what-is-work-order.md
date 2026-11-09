@@ -52,6 +52,14 @@ In this example, the work order Inspect filler nozzles is linked to Filler FL-02
 
 Want to see how this connects to locations and assets? See [How do locations, assets, and work orders work together?](how-concepts-work-together.md)
 
+## Creating a work order
+
+You create a work order when work needs to be done. Start with a clear description of the work. Then add details such as the work type, the priority, and the asset and location. For example, you might create a work order for Inspect filler nozzles and link it to Filler FL-02.
+
+Technicians can also create a work order from the field with the add button in the Technician app, for example when they find a problem on site.
+
+`[SME confirmation required: Confirm the details you can add when you create a work order in Select.]`
+
 ## Naming work orders
 
 **✓ Do**

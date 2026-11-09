@@ -8,8 +8,10 @@ search:
 
 An inspection is a set of questions that you answer about an asset or a location. Inspections use two apps:
 
-- **Inspection Forms**, from **Planning > Inspection Forms**. Use it to define the forms that inspections use.
-- **Inspections**, from **Work Orders > Inspections**. Use it to conduct inspections and record the results.
+- **Inspection Forms**. Use it to define the forms that inspections use.
+- **Inspections**. Use it to conduct inspections and record the results.
+
+To open either app, use the **Find navigation item** field and search for its name.
 
 Inspections is also in IBM Maximo Mobile, so you can inspect an asset or location where it is. The app has the same name on the desktop and in IBM Maximo Mobile.
 
@@ -41,10 +43,10 @@ The app saves your answers automatically as you go.
 
 ### Table 1: Inspection apps
 
-| App | Find it in the menu | Use it to |
-|-----|---------------------|-----------|
-| **Inspection Forms** | **Planning > Inspection Forms** | Define the forms that inspections use. |
-| **Inspections** | **Work Orders > Inspections** | Conduct inspections and review results. |
+| App | Use it to |
+|-----|-----------|
+| **Inspection Forms** | Define the forms that inspections use. |
+| **Inspections** | Conduct inspections and review results. |
 
 ## Who can use inspections?
 

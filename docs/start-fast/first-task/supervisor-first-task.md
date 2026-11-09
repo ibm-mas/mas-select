@@ -26,7 +26,7 @@ Prefer to learn in the application? Log in and open your Operational dashboard t
 ## What to do
 
 1. Log into Maximo Application Suite Select.
-2. Go to **Work Orders > Work Orders**.
+2. In the **Find navigation item** field, search for Work Orders and open it.
 3. Filter for unassigned work orders.
 4. Review priority and due dates.
 5. Choose a work order that needs assignment.

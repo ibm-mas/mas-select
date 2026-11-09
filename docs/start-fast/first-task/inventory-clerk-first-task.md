@@ -35,7 +35,7 @@ Prefer to learn in the application? Log in and open your Operational dashboard t
 10. Verify the item number matches.
 11. Check the part condition.
 12. In Maximo, open the inventory record.
-13. Click **Issue** action.
+13. Click **Issue Current Item**.
 14. Enter the work order number.
 15. Specify quantity to issue.
 16. Confirm the transaction.
@@ -57,6 +57,12 @@ You've successfully issued your first part when:
 - No errors or warnings in the transaction
 
 **You'll know you're ready to move on when** you can issue parts quickly and accurately, verify inventory balances, and handle multiple requests efficiently.
+
+## Check what needs attention
+
+Your Operational Dashboard shows work queues for inventory. For example, you can see parts needed today, low stock, stagnant inventory, open material requests, and cycle counts that are due. Use them to decide what to work on first.
+
+`[SME confirmation required: Confirm the work queues that the inventory clerk Operational Dashboard shows in Select.]`
 
 ## Get IBM Maximo Mobile
 

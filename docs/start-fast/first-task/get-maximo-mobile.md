@@ -56,6 +56,7 @@ While your device is online, the app syncs your work automatically. You can also
 - [What happens when I'm offline in IBM Maximo Mobile?](../basics/what-happens-offline.md): Learn how the app works without a connection.
 - [Why can't I see new work in IBM Maximo Mobile?](../../get-work-done/complete-work/why-cant-see-new-work-on-phone.md): Fix missing work on your device.
 - [How do I find my work?](../../get-work-done/complete-work/find-work.md): Find and filter your assigned work queue.
+- [What do the other apps in IBM Maximo Mobile do?](../basics/other-mobile-apps.md): Learn about Timesheet, Crew Manager, Locations, Material Request, and Assets.
 - [How do I complete a work order?](../../get-work-done/complete-work/complete-job.md): Walk through the full work order completion workflow.
 
 ---

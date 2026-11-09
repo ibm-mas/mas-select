@@ -78,9 +78,7 @@ Add job plans to individual work orders. Technicians see all steps and materials
 
 Review completed work. Update job plans based on what actually happened. Add missing steps or materials.
 
-To change a job plan that is already active, select **Revise Job Plan** first. <span hidden>BMXAA0024E JOBTASK action ADD is not allowed</span>
-
-`[SME confirmation required: Confirm where Revise Job Plan appears in the Job Plans application in Select, and whether other errors can appear when editing an active job plan.]`
+To change a job plan that is already active, select **Revise Job Plan** from **More Actions** first. <span hidden>BMXAA0024E JOBTASK action ADD is not allowed</span>
 
 !!! warning "TODO: Add visual content"
      A video showing how to create a simple job plan would be useful here.

@@ -11,7 +11,7 @@ Use work queues to see all your assigned work in one place. Work queues group si
 
 Work queues show only the work that matters to you. No searching through everything.
 
-To see your assigned work, go to **Work Orders > Technician** and select **Assigned work**. You can also use the Technician app in IBM Maximo Mobile or the Work Orders application. For the differences, see [Why can I manage work orders in more than one place?](../../start-fast/basics/why-apps-overlap.md)
+To see your assigned work, open the Technician app and select **Assigned work**. You can also use the Technician app in IBM Maximo Mobile or the Work Orders application. For the differences, see [Why can I manage work orders in more than one place?](../../start-fast/basics/why-apps-overlap.md)
 
 ## 💡 Tips for success
 

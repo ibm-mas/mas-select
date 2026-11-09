@@ -24,14 +24,14 @@ The system tracks your time and parts automatically. Good records help everyone.
 
 ### Step 1: Find and open your work order
 
-- Go to the Technician app, from **Work Orders > Technician** on the desktop or in IBM Maximo Mobile. You can also use the Work Orders application.
+- Go to the Technician app on the desktop or in IBM Maximo Mobile. You can also use the Work Orders application.
 - Look for work assigned to you
 - Open the work order
   <span class="see-also"><img src="../../images/info_light_mode.png" class="no-lightbox info-icon" alt=""> <span class="see-also-text">Need help finding your work? See <a href="find-work.html">How do I find my work?</a></span></span>
 
 ### Step 2: Start the work
 
-- Click **Start Work** to track time
+- Click **Start work** to track time. You need a labor record to track time. If you cannot start work, ask your administrator to check that you have one. See [How do I set up labor, crafts, and crews?](../setup-control/set-up-labor-crafts-crews.md)
 - Read the job plan or instructions
 - Check you have all parts and tools
 - Note any safety requirements
@@ -44,6 +44,8 @@ The system tracks your time and parts automatically. Good records help everyone.
 - Note any problems you find
 
 ### Step 4: Record what you did
+
+When you finish, you can report the failure, your labor, and the materials and tools that you used.
 
 **Add work details:**
 
@@ -63,6 +65,8 @@ The system tracks your time and parts automatically. Good records help everyone.
 - System tracks time from when you started
 - Adjust for breaks if needed
 - Time is used for costs and planning
+
+`[SME confirmation required: Confirm that a labor record is required to start work in Select, and that the failure, labor, materials, and tools are reported when you finish the work.]`
 
 **In practice**
 
@@ -89,7 +93,7 @@ The system tracks your time and parts automatically. Good records help everyone.
 
 ### Step 5: Mark it complete
 
-- Click **Complete Work** when done
+- Click **Complete work** when done
 - System stops tracking time
 - Work order goes to your supervisor
 - Supervisor closes it after review
@@ -109,7 +113,7 @@ Good notes help everyone:
 
 ## Using checklists
 
-For inspections, go to the Inspections app, from **Work Orders > Inspections** on the desktop or in IBM Maximo Mobile. For more information, see [How do inspections work?](../../start-fast/basics/how-inspections-work.md)
+For inspections, go to the Inspections app on the desktop or in IBM Maximo Mobile. For more information, see [How do inspections work?](../../start-fast/basics/how-inspections-work.md)
 
 If your work order has a checklist:
 

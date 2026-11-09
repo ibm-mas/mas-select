@@ -23,7 +23,7 @@ Prefer to learn in the application? Log in and open your Operational dashboard t
 ## What to do
 
 1. Log into Maximo Application Suite Select.
-2. Go to **Work Orders > Work Orders**, or go to **Work Orders > Technician** and select **Assigned work**.
+2. Open the Work Orders application, or open the Technician app and select **Assigned work**.
    <span class="see-also"><img src="../../images/info_light_mode.png" class="no-lightbox info-icon" alt=""> <span class="see-also-text">The Technician app is also available in IBM Maximo Mobile. Learn <a href="../basics/why-apps-overlap.html">Why can I manage work orders in more than one place?</a></span></span>
 
 3. Choose a simple work order to start. Look for status "Assigned" or "In Progress".
@@ -35,7 +35,7 @@ Prefer to learn in the application? Log in and open your Operational dashboard t
 7. Check if you need any parts or tools.
 8. Perform the maintenance task.
 9. Add notes about what you did.
-10. Record time spent as labor hours.
+10. Record time spent as labor hours. You need a labor record to track time. If you cannot start work, ask your administrator to check that you have one.
 11. Add any parts you used.
     <span class="see-also"><img src="../../images/info_light_mode.png" class="no-lightbox info-icon" alt=""> <span class="see-also-text">Need to request parts? See <a href="../../get-work-done/manage-inventory/issue-parts.html">How do I issue parts to a job?</a></span></span>
 
@@ -61,7 +61,7 @@ For more detail on recording notes, parts, and time accurately, see [How do I co
 
 ## What can I do in the Technician app?
 
-The Technician app, from **Work Orders > Technician**, is built around the work that you do every day. It is the same app on the desktop and in IBM Maximo Mobile. In the Technician app, you can:
+The Technician app is built around the work that you do every day. It is the same app on the desktop and in IBM Maximo Mobile. In the Technician app, you can:
 
 - View the work orders that are assigned to you, and filter them by priority, status, or due date.
 - View work orders on a map to plan routes and reduce travel time.
@@ -73,10 +73,11 @@ The Technician app, from **Work Orders > Technician**, is built around the work 
 - Request materials, tools, or services.
 - View details of the related asset and location.
 - Add to the work log and review earlier entries.
+- Create a work order with the add button, for example when you find a problem on site. You can link the work order to an asset.
 - Create follow-up work orders.
 - Record meter readings, such as energy use, run time, or fuel level.
 
-`[SME confirmation required: Confirm that this list matches the Technician app in Select. The source is the Maximo Manage documentation.]`
+`[SME confirmation required: Confirm that this list matches the Technician app in Select. The source is the Maximo Manage documentation. Also confirm whether a work order created with the add button needs labor assigned before you can complete it.]`
 
 ## Get IBM Maximo Mobile
 

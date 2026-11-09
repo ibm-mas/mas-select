@@ -137,8 +137,8 @@ An item is the master record for a part or material in the catalog, such as a fi
 ### Material request, reservation, and issue
 These three terms describe the sequence of getting parts to a job:
 
-1. **Material request**: You identify the parts needed for a job and add them to the work order plan. This is a signal of intent, not a commitment.
-2. **Reservation**: When the work order is approved, the system can reserve the requested items in the storeroom. A reservation holds the stock so it is not allocated to another job before yours.
+1. **Material request**: You ask for the parts, tools, or services that a job needs. A request can be linked to a work order or made without one.
+2. **Reservation**: When materials are specified on an approved work order or task, the system can reserve the items in the storeroom automatically. A submitted material request can also create a reservation. A reservation holds the stock so it is not allocated to another job before yours.
 3. **Issue**: When you physically take the parts and use them, you issue them against the work order. This deducts the quantity from inventory and records the cost.
 
 *You might know this as:* pick list, parts request, stock allocation, or materials withdrawal

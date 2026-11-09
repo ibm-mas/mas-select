@@ -63,6 +63,12 @@ Whether you're fixing equipment, tracking parts, or planning preventive maintena
 
 ---
 
+## How do I find an application?
+
+Use the **Find navigation item** field at the top of the menu and enter the name of the application. You do not need to know which menu group it is in.
+
+---
+
 ## What if I run into issues?
 
 If you need help:

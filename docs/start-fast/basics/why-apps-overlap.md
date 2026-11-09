@@ -8,8 +8,8 @@ search:
 
 You can work with work orders in three places:
 
-- The Work Orders application, from **Work Orders > Work Orders**.
-- The Technician app on the desktop, from **Work Orders > Technician**.
+- The Work Orders application.
+- The Technician app on the desktop.
 - The Technician app in IBM Maximo Mobile.
 
 All three work with the same work orders.
@@ -36,20 +36,20 @@ Most of the menu is desktop applications. Only a smaller set of apps, such as Te
 
 ### Table 1: Apps in the desktop menu and IBM Maximo Mobile
 
-| App | Find it in the menu | Use it to |
-|-----|---------------------|-----------|
-| **Technician** | **Work Orders > Technician** | Complete assigned work. |
-| **Inspections** | **Work Orders > Inspections** | Complete inspections. |
-| **Inspection Forms** | **Planning > Inspection Forms** | Work with inspection forms. |
-| **Asset Manager** | **Assets > Asset Manager** | Look up and manage assets. |
-| **Issues and Transfers** | **Inventory > Issues and Transfers** | Issue and transfer inventory. |
-| **Inventory Counting** | **Inventory > Inventory Counting** | Count inventory. |
-| **Service Requests** | Go to Service Requests | Create and track service requests. |
-| **Work Order Summary** | Go to Work Order Summary | Review a summary of work orders. |
+| App | Use it to |
+|-----|-----------|
+| **Technician** | Complete assigned work. |
+| **Inspections** | Complete inspections. |
+| **Inspection Forms** | Work with inspection forms. |
+| **Asset Manager** | Look up and manage assets. |
+| **Issues and Transfers** | Issue and transfer inventory. |
+| **Inventory Counting** | Count inventory. |
+| **Service Requests** | Create and track service requests. |
+| **Work orders** | Create and manage work orders. |
 
-You can also use the search box at the top of the menu to find any app by name.
+To find any app, use the **Find navigation item** field at the top of the menu and search for the app name.
 
-`[TO DO: Add the menu locations of Service Requests and Work Order Summary.]`
+`[TO DO: Confirm whether the Work orders app in this table is the same as the Work Orders application at the start of this topic.]`
 
 `[SME confirmation required: Confirm the purpose of each app in the "Use it to" column.]`
 
@@ -62,10 +62,12 @@ The apps you see depend on the security group that your administrator assigned t
 | Security group | Apps |
 |----------------|------|
 | **System admin** | Service Requests |
-| **Supervisor** | Technician, Inspections, Inspection Forms, Work Order Summary, Service Requests, Asset Manager |
+| **Supervisor** | Technician, Inspections, Inspection Forms, Work orders, Service Requests, Asset Manager, Location Manager, Time Sheets, Crew Manager |
 | **Technician** | Technician, Inspections, Service Requests, Asset Manager |
 | **Requester** | Service Requests |
 | **Inventory clerk** | Issues and Transfers, Inventory Counting, Service Requests |
+
+To learn what Location Manager, Time Sheets, and Crew Manager do, see [What do the other apps in IBM Maximo Mobile do?](other-mobile-apps.md)
 
 `[SME confirmation required: Confirm this table against the security group descriptions in "How do I add users?". The security group descriptions are the source of truth. Technicians were given Inspections because they complete inspections. Confirm the other rows, including Service Requests for system admins and inventory clerks, and Inspection Forms for supervisors.]`
 
@@ -77,6 +79,7 @@ The apps you see depend on the security group that your administrator assigned t
 - [Technician: Complete your first work order](../first-task/technician-first-task.md): Complete a work order.
 - [How do I get IBM Maximo Mobile?](../first-task/get-maximo-mobile.md): Get the app that contains Technician, Inspections, and the other apps in Table 1.
 - [How do I add users?](../../get-work-done/setup-control/add-users.md): Assign the security group that gives a user access to apps.
+- [What do the other apps in IBM Maximo Mobile do?](other-mobile-apps.md): Learn about Timesheet, Crew Manager, Locations, Material Request, and Assets.
 
 ---
 
