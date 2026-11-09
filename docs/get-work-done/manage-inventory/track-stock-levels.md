@@ -373,6 +373,7 @@ Learn which inventory metrics matter and how to use them to keep parts available
 
 ## Related topics
 
+- [How do I get a new part into inventory?](get-part-into-inventory.md)
 - [How do I issue parts to a job?](issue-parts.md)
 - [What happens if stock is incorrect?](stock-incorrect.md)
 - [How do I plan recurring maintenance?](../plan-work/plan-recurring-maintenance.md)

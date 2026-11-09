@@ -76,6 +76,7 @@ plugins:
             Assets: Actifs
             Work orders: Ordres de travail
             Why apps overlap: Pourquoi des applications se chevauchent
+            Other mobile apps: Autres applications mobiles
             How inspections work: Fonctionnement des inspections
             Working offline: Travailler hors ligne
             How concepts work together: Articulation des concepts
@@ -119,6 +120,7 @@ plugins:
             Classify assets: Classer les actifs
             Asset failures: Pannes d'actifs
             Manage inventory: Gérer l'inventaire
+            Get a part into inventory: Mettre une pièce en stock
             Issue parts: Sortir des pièces
             Track stock levels: Suivre les niveaux de stock
             Incorrect stock: Stock incorrect
@@ -210,6 +212,7 @@ nav:
       - Work orders: start-fast/basics/what-is-work-order.md
       - How concepts work together: start-fast/basics/how-concepts-work-together.md
       - Why apps overlap: start-fast/basics/why-apps-overlap.md
+      - Other mobile apps: start-fast/basics/other-mobile-apps.md
       - How inspections work: start-fast/basics/how-inspections-work.md
       - Working offline: start-fast/basics/what-happens-offline.md
       - Term differences: start-fast/basics/why-do-terms-differ.md
@@ -221,6 +224,7 @@ nav:
         - Add users: get-work-done/setup-control/add-users.md
         - Set up labor, crafts, and crews: get-work-done/setup-control/set-up-labor-crafts-crews.md
         - Automate communication: get-work-done/setup-control/automate-communication.md
+        - Ticket templates: get-work-done/setup-control/ticket-templates.md
         - Set up maps: get-work-done/setup-control/set-up-maps.md
         - Configure Maximo Mobile: get-work-done/setup-control/configure-maximo-mobile.md
       - Load your data:
@@ -253,6 +257,7 @@ nav:
       - Classify assets: get-work-done/manage-assets/classify-assets.md
       - Asset failures: get-work-done/manage-assets/asset-fails.md
     - Manage inventory:
+      - Get a part into inventory: get-work-done/manage-inventory/get-part-into-inventory.md
       - Issue parts: get-work-done/manage-inventory/issue-parts.md
       - Track stock levels: get-work-done/manage-inventory/track-stock-levels.md
       - Incorrect stock: get-work-done/manage-inventory/stock-incorrect.md
