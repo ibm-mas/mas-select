@@ -16,7 +16,14 @@ Select includes some failure codes. You can use them as they are, or add your ow
 
 A failure hierarchy structures failure reporting from initial symptom down to corrective action.
 
-<img src="../../images/sample_failure_code_hierarchy.svg" alt="Four-tier failure code hierarchy architecture from Failure Class to Problem, Cause, and Remedy" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
+Figure 1 illustrates the four-tier failure hierarchy architecture:
+
+- **Tier 1 (Failure Class)**: broad equipment category, such as `PUMPS`.
+- **Tier 2 (Problem)**: observed operational symptom, such as `LEAK` for fluid leaks or `HIGH_TEMP` for heat issues.
+- **Tier 3 (Cause)**: underlying mechanical defect, such as `SEAL_WEAR`.
+- **Tier 4 (Remedy)**: corrective action taken, such as `REPLACE_SEAL`.
+
+<img src="../../images/sample_failure_code_hierarchy.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 1: Four-tier failure code hierarchy architecture</p>
 
 ### Table 1: Four-tier failure code hierarchy with plant examples
@@ -65,7 +72,14 @@ For technicians to select failure codes on work orders, the asset must have an a
 4. Select the matching failure class, such as `FILLERS` or `ROTATING_PUMP`.
 5. Click **Save**.
 
-<img src="../../images/sample_failure_class_inheritance.svg" alt="Failure class inheritance and field reporting flow on work orders" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
+Figure 2 outlines the failure class inheritance and field reporting workflow:
+
+1. **Asset record**: equipment record `Filler FL-02` holds configured failure class `PUMPS`.
+2. **Work order header**: when the asset is added to a corrective work order, `PUMPS` is inherited automatically.
+3. **Field closure**: during job completion, the technician accesses the Failure Reporting tab.
+4. **Cascading selection**: the technician navigates the filtered `PUMPS` hierarchy to log Problem `LEAK`, Cause `SEAL_WEAR`, and Remedy `REPLACE_SEAL`.
+
+<img src="../../images/sample_failure_class_inheritance.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 2: Failure class inheritance and field reporting flow</p>
 
 ## How failure codes behave on work orders

@@ -15,7 +15,13 @@ As outlined in [What is the correct load order?](correct-load-order.md), locatio
 
 Maximo Application Suite Select uses three distinct record types to track facilities, machinery, and replacement materials.
 
-<img src="../../images/sample_decision_location_asset_part.svg" alt="Diagram showing the 3-tier classification model: Location as a place containing Assets, which in turn reference Spare Parts on their Spare Parts tab." style="width: 100%; max-width: 580px; display: block; margin: 16px auto;">
+Figure 1 illustrates the three-tier classification hierarchy:
+
+1. **Location**: a physical place where work happens, such as `Filling line room`, which stays in place and retains room-level history.
+2. **Asset**: maintainable equipment operating within the location, such as `Filler FL-02`, including serialized child subassemblies such as drive motor `MTR-DRV-01`.
+3. **Spare part**: consumable replacement items cataloged in Item Master and referenced on the asset's **Spare Parts** tab, such as flange gaskets, o-rings, mechanical seals, and fuses.
+
+<img src="../../images/sample_decision_location_asset_part.svg" alt="Explained in body text" style="width: 100%; max-width: 580px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 1: The three-way classification model in Maximo Application Suite Select</p>
 
 ### 1. Location: A place where work happens
@@ -51,7 +57,14 @@ A spare part represents a stocked or non-stocked replacement material cataloged 
 
 To classify any physical item or facility entity, follow these four sequential decision questions:
 
-<img src="../../images/decision_framework_location_asset_part.svg" alt="Decision flowchart showing the four sequential questions to classify entities into Locations, Assets, Rotating Assets, or Spare Parts." style="width: 100%; max-width: 720px; display: block; margin: 16px auto;">
+Figure 2 outlines the decision pathway through the four classification questions:
+
+1. **Question 1 (Place)**: if the entity is a place where work happens, create a location in the Locations application. Otherwise, proceed to Question 2.
+2. **Question 2 (Maintainable equipment)**: if it is maintainable equipment with a serial number or nameplate, create an asset in the Assets application anchored to its location. Otherwise, proceed to Question 3.
+3. **Question 3 (Rebuildable storeroom unit)**: if it is a rebuildable unit cycling through storeroom inventory, create a rotating asset using Item Master and Assets. Otherwise, proceed to Question 4.
+4. **Question 4 (Consumable wear part)**: if it is a consumable wear part replaced during repairs, catalog it as a spare part in Item Master and link it to the asset's Spare Parts tab.
+
+<img src="../../images/decision_framework_location_asset_part.svg" alt="Explained in body text" style="width: 100%; max-width: 720px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 2: The four-question classification decision framework</p>
 
 ### Question 1: Is it a place where work happens?
@@ -102,7 +115,7 @@ Some physical items sit on the boundary between locations, assets, and spare par
 | **Cabinet power circuit breaker** | **Child asset** | Maintainable subassembly with its own trip testing and maintenance history. |
 | **Cabinet fuses and terminal blocks** | **Spare part** | Consumables cataloged in Item Master and issued to electrical repair work orders. |
 
-<img src="../../images/sample_problem_conveyor_classification.svg" alt="Diagram showing the classification breakdown of a conveyor system: Packaging zone location, Conveyor CV-01 parent asset, Drive motor child asset, and rollers and belts as spare parts." style="width: 100%; max-width: 580px; display: block; margin: 16px auto;">
+<img src="../../images/sample_problem_conveyor_classification.svg" alt="Explained in body text" style="width: 100%; max-width: 580px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 3: Boundary classification example for a conveyor system</p>
 
 In Figure 3, a conveyor line illustrates how to divide complex equipment across the three classification tiers:
@@ -126,7 +139,9 @@ Review these common planning scenarios to test your understanding before buildin
 
 A maintenance planner creates a separate location record for every pump, motor, and machine in the plant, such as creating `Filler FL-02 Operating Location` to hold `Filler FL-02`.
 
-<img src="../../images/sample_problem_one_to_one_location_asset.svg" alt="Diagram showing the 1:1 Location-to-Asset anti-pattern where artificial location records are created for each individual machine." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
+Figure 4 illustrates the anti-pattern where artificial location records are created for individual machines, showing `Filling line room` divided into duplicate locations `Filler FL-02 Operating Location` for asset `Filler FL-02` and `Syrup Pump P-101 Operating Location` for asset `Syrup Pump P-101`.
+
+<img src="../../images/sample_problem_one_to_one_location_asset.svg" alt="Explained in body text" style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 4: Problem 1: The 1:1 location-to-asset anti-pattern</p>
 
 What goes wrong when equipment is replaced or when technicians navigate in Maximo Mobile?
@@ -138,7 +153,9 @@ Creating a 1:1 location for every asset doubles data entry, clutters navigation 
 
 **What to do instead:** Create one location for the room, such as `Filling line room`, and place multiple assets directly inside that room location.
 
-<img src="../../images/sample_solution_one_to_many_location_asset.svg" alt="Diagram showing the correct model where one room location holds multiple independent assets." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
+Figure 5 shows the correct structure where the single room location `Filling line room` contains three independent assets: `Filler FL-02`, `Syrup Pump P-101`, and `Feed Conveyor CV-01`.
+
+<img src="../../images/sample_solution_one_to_many_location_asset.svg" alt="Explained in body text" style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 5: Solution 1: One location containing multiple assets</p>
 
 </details>

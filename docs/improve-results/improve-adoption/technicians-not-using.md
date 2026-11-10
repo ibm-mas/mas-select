@@ -18,8 +18,15 @@ To resolve low adoption, diagnose where field workers encounter resistance in th
 | **Incomplete parts recording** | Finding storeroom item numbers is slow or difficult | Pre-load expected materials on job plans so technicians select staged items with a single tap |
 | **Work orders left in progress** | Technicians forget to record stop times or final failure codes | Set up operational dashboard Work Queue cards that highlight open assignments directly to the team |
 
-<img src="../../images/sample_adoption_mobile_pathway.svg" alt="Streamlined mobile workflow overcoming adoption barriers" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
+<img src="../../images/sample_adoption_mobile_pathway.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 1: Streamlined mobile workflow overcoming adoption barriers</p>
+
+As shown in Figure 1, the streamlined mobile pathway overcomes adoption barriers across four connected elements:
+
+1. **Step 1: Start shift**: The technician begins their workday and opens the mobile interface.
+2. **Step 2: Mobile card views**: Concise card views replace complex desktop forms with touch-friendly assignment cards.
+3. **Offline data caching**: When technicians work in shielded environments like the Cold Storage Room, the mobile app queues all transactions locally and syncs automatically upon returning to wireless network coverage.
+4. **Pre-loaded job steps**: Structured task execution provides single-tap step check-offs and straightforward failure code selection directly on the device.
 
 ## Streamlining the user experience
 

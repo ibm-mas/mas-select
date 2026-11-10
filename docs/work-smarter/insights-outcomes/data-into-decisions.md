@@ -17,8 +17,20 @@ To transition from reactive firefighting to strategic asset management, connect 
 | **Staffing & craft planning** | Do we have sufficient mechanical and electrical staffing to handle the scheduled backlog? | Labor Utilization, Overdue Backlog Hours by Craft | Work Queue Manager, Supervisor Operational Dashboard |
 | **Inventory stocking** | Are we holding excess capital in slow-moving stock while stocking out of critical spares? | Inventory Turnover Ratio, Stockout Incidence Rate | Inventory, Inventory Clerk Operational Dashboard |
 
-<img src="../../images/sample_data_into_decisions_flow.svg" alt="Maintenance data aggregation and decision pipeline" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
+<img src="../../images/sample_data_into_decisions_flow.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 1: Maintenance data aggregation and decision pipeline</p>
+
+As shown in Figure 1, operational maintenance data moves through a four-stage decision pipeline from raw logging to strategic actions:
+
+1. **Data ingestion**: Field technicians and clerks log raw work logs, labor hours, and parts actuals.
+2. **Aggregation engines**: Data feeds in parallel into two core analytical modules:
+   - **KPI Manager**: Calculates compliance rates and measures performance against targets.
+   - **Failure Codes**: Tracks chronic root causes and failure trends.
+3. **Dashboards**: Operational dashboards aggregate these analytical streams into unified review screens.
+4. **Strategic actions**: Specific performance thresholds trigger targeted operational decisions:
+   - **PM Compliance below 85 percent**: Reallocate craft labor to clear maintenance backlogs.
+   - **Chronic failures**: Refine job plan instructions and maintenance tasks.
+   - **Repair cost exceeding 60 percent of asset value**: Initiate capital replacement planning.
 
 ## Monitoring metrics with KPI Manager and KPI Viewer
 
@@ -32,9 +44,9 @@ Targeting established industry benchmarks ensures your maintenance strategy driv
 
 | Key performance indicator | Benchmark target | Warning threshold | Critical action threshold |
 |---|---|---|---|
-| **PM Compliance Rate (10 percent rule)** | Greater than 90 percent | 80 to 89 percent | Below 80 percent |
+| **PM Compliance Rate with 10 percent grace rule** | Greater than 90 percent | 80 to 89 percent | Below 80 percent |
 | **Emergency Work Ratio** | Below 10 percent of total labor hours | 11 to 20 percent | Above 20 percent |
-| **Mean Time Between Failures (MTBF)** | Increasing month-over-month | Flat | Declining trend |
+| **Mean Time Between Failures, MTBF** | Increasing month-over-month | Flat | Declining trend |
 | **Schedule Compliance** | Greater than 85 percent | 70 to 84 percent | Below 70 percent |
 
 ### Creating a KPI in the desktop application

@@ -24,14 +24,17 @@ A work order is a request or instruction to perform maintenance work. It's the c
 - Measure performance and productivity
 
 ## Work order lifecycle
-1. **Created**: The work order is the working record for the job. It captures what needs to be done, where the work happens, how urgent it is, and any instructions the technician will need later.
-2. **Approved**: Approval means the work can move ahead. At this point, planned items can be reserved and the planned cost and rate information for the job is recorded.
-3. **Assigned**: Before work starts, check that the correct person owns the job and has the schedule, instructions, parts, and tools needed to do it.
-4. **In Progress**: Use this stage when physical work has actually started. Record labor, materials, services, and tools as the work happens so the record stays accurate.
-5. **Completed**: Use this when the physical work is finished. The record can still need final review or closeout, and some setups can move the work order forward automatically when assignments are completed.
-6. **Closed**: Closing finalizes the record. Unused item reservations are removed and the job becomes part of maintenance history.
 
-<img src="../../images/sample_work_order_lifecycle.svg" alt="A work order moves through six stages in order. The requester or the system creates it. A supervisor approves it. A supervisor or planner assigns it to a technician. The technician starts the job and records updates, then documents labor, parts, and notes. A supervisor or planner reviews completion and closes it." style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
+A work order progresses through six sequential stages from initial creation to final historical closeout:
+
+1. **Created**: The requester or the system creates the work order. It captures what needs to be done, where the work happens, how urgent it is, and any instructions the technician needs later.
+2. **Approved**: A supervisor reviews and approves the work. Approval confirms that the job can move ahead, reserves planned items, and records planned cost and rate information.
+3. **Assigned**: A supervisor or planner assigns the work to a technician. Before work starts, the planner checks that the assigned person has the schedule, instructions, parts, and tools needed.
+4. **In Progress**: The technician starts the job and records updates. Labor, materials, services, and tools are recorded as physical work happens so the record stays accurate.
+5. **Completed**: The technician documents labor, parts, and notes upon finishing the physical work. The record can still undergo final review or closeout.
+6. **Closed**: A supervisor or planner reviews completion and closes the work order. Closing finalizes the record, removes unused item reservations, and archives the job into maintenance history.
+
+<img src="../../images/sample_work_order_lifecycle.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 1: The lifecycle of a work order in Maximo Application Suite Select</p>
 
 A work order records maintenance work. It tells you what needs to be done, where the work happens, and which asset the work applies to.

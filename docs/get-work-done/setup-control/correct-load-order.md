@@ -2,7 +2,16 @@
 
 Import order matters. Referenced records must exist before records that use them, and parent records must exist before child records.
 
-<img src="../../images/data_onboarding_pathway.svg" alt="Five-step data onboarding pathway in Maximo Application Suite Select: 1. Understand the correct load order, 2. Plan your location and asset hierarchies, 3. Prepare data for import, 4. Get data into the system, 5. Fix import errors." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
+Figure 1 outlines the five sequential steps of the data onboarding pathway:
+
+1. **Understand the correct load order**: review dependency rules so supporting data and parent records load first.
+2. **Plan your location and asset hierarchies**: design physical places and equipment breakdown structures top-down.
+3. **Prepare data for import**: download CSV templates from Data Management, format columns as text, and validate fields.
+4. **Get data into the system**: upload files, run preview validation, and commit the import.
+5. **Fix import errors**: diagnose rejected records in error logs and re-import corrected rows.
+
+<img src="../../images/data_onboarding_pathway.svg" alt="Explained in body text" style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
+<p class="figure-caption">Figure 1: The five-step data onboarding pathway</p>
 
 ## Why does load order matter?
 

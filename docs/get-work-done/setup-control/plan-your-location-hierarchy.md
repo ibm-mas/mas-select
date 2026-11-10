@@ -94,7 +94,7 @@ In this sample ice cream plant, the structure follows the layout of the plant fr
 - **Mixing room**, **Filling line room**, and **Packaging zone** are child locations under Production building.
 - **Cold storage** and **Main storeroom** are separate operating locations directly under **Ice cream main plant**.
 
-<img src="../../images/sample_location_hierarchy.svg" alt="Location hierarchy for Ice cream main plant. Production building is a parent location with three child locations: Mixing room, Filling line room, and Packaging zone. Cold storage and Main storeroom are separate locations directly under Ice cream main plant." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
+<img src="../../images/sample_location_hierarchy.svg" alt="Explained in body text" style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 1: Sample location hierarchy for Ice cream main plant</p>
 
 ### Why this structure works
@@ -118,7 +118,9 @@ Review these common planning scenarios to test your understanding before buildin
 
 The plant has two restrooms. In the hierarchy below, both are placed under a separate parent location named `Restrooms`.
 
-<img src="../../images/sample_location_hierarchy_grouped_by_use.svg" alt="Location hierarchy for Ice cream main plant. Production building contains Mixing room, Filling line room, and Packaging zone. A separate location named Restrooms contains Production building restroom and Packaging zone restroom." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
+Figure 2 illustrates the flawed functional grouping where restrooms across different areas, `Production building restroom` and `Packaging zone restroom`, are grouped together under a separate `Restrooms` parent instead of within their respective physical buildings.
+
+<img src="../../images/sample_location_hierarchy_grouped_by_use.svg" alt="Explained in body text" style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 2: Problem 1: Restrooms grouped by functional use instead of physical location</p>
 
 A supervisor runs a cost and work history report for `Production building` for the past quarter. What goes wrong?
@@ -132,7 +134,9 @@ The hierarchy was grouped by functional use rather than physical location.
 
 **What to do instead:** Place each restroom under the physical area where it is located. `Production building restroom` belongs under `Production building`. `Packaging zone restroom` belongs under `Packaging zone`.
 
-<img src="../../images/sample_location_hierarchy_by_place.svg" alt="Corrected location hierarchy for Ice cream main plant. Production building contains Mixing room, Filling line room, Packaging zone, and Production building restroom. Packaging zone contains Packaging zone restroom. Cold storage sits directly under Ice cream main plant." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
+Figure 3 shows the corrected physical structure where `Production building restroom` sits directly under `Production building`, and `Packaging zone restroom` sits under `Packaging zone`.
+
+<img src="../../images/sample_location_hierarchy_by_place.svg" alt="Explained in body text" style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 3: Solution 1: Restrooms placed within their physical parent locations</p>
 
 If you need to find all restrooms across the plant, assign a common Classification or type rather than creating a functional branch in your location hierarchy.
@@ -143,7 +147,9 @@ If you need to find all restrooms across the plant, assign a common Classificati
 
 In the hierarchy below, `Packaging zone` was added without selecting a parent location.
 
-<img src="../../images/sample_location_hierarchy_missing_parent.svg" alt="Location hierarchy for Ice cream main plant. Production building contains Mixing room and Filling line room. Cold storage is a separate location. Packaging zone is an orphan record with no connecting line to a parent." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
+Figure 4 shows an orphaned record condition where `Packaging zone` is created without a parent connection, leaving it disconnected from `Production building`.
+
+<img src="../../images/sample_location_hierarchy_missing_parent.svg" alt="Explained in body text" style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 4: Problem 2: Packaging zone created as an orphaned record without a parent</p>
 
 What happens when a planner opens `Production building` in the drilldown tree?
@@ -157,7 +163,9 @@ Because `Packaging zone` has no parent, it exists as an orphaned record with no 
 
 **What to do instead:** Assign `Production building` as the parent location for `Packaging zone`.
 
-<img src="../../images/sample_location_hierarchy_with_parent.svg" alt="Corrected location hierarchy for Ice cream main plant. Production building contains Mixing room, Filling line room, and Packaging zone. Cold storage sits directly under Ice cream main plant." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
+Figure 5 shows the resolved hierarchy where `Packaging zone` is properly connected to parent location `Production building`.
+
+<img src="../../images/sample_location_hierarchy_with_parent.svg" alt="Explained in body text" style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 5: Solution 2: Packaging zone connected to Production building parent location</p>
 
 </details>

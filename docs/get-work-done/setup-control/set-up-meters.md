@@ -14,7 +14,13 @@ Setting up meters involves defining meter definitions at the system level, group
 
 Before creating meters, select the appropriate meter type based on how the measurement behaves.
 
-<img src="../../images/decision_framework_meter_types.svg" alt="Decision framework for selecting meter types and operational applications" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
+Figure 1 outlines the decision framework for selecting meter types:
+
+- **Continuous meter**: for cumulative values that always increment, such as run hours or cycles, driving usage-based preventive maintenance.
+- **Gauge meter**: for numeric values that fluctuate up and down, such as temperature or pressure, driving condition monitoring limits.
+- **Characteristic meter**: for qualitative observations, such as fluid clarity or physical wear, evaluating values from an ALN domain.
+
+<img src="../../images/decision_framework_meter_types.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 1: Decision framework for selecting meter types and operational applications</p>
 
 ### Table 1: Comparison of meter types and operational applications
@@ -79,7 +85,15 @@ Once meters and meter groups exist, attach them to equipment records on the Mete
    - In the **Rollover Point** field, enter the physical dial limit, such as `999999`.
 7. Click **Save**.
 
-<img src="../../images/sample_meter_pm_projection_flow.svg" alt="Continuous meter setup and automated preventive maintenance projection" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
+Figure 2 illustrates the continuous meter projection workflow across five stages:
+
+1. **Attach meter to asset**: assign the continuous meter to the equipment record.
+2. **Configure daily average**: establish the expected daily operating rate, such as 16 hours per day.
+3. **Log meter reading**: enter cumulative runtime observations, such as 1,200 operating hours.
+4. **Link to PM schedule**: define maintenance trigger intervals, such as every 500 runtime hours.
+5. **Project due date**: background processes calculate when thresholds will be reached and forecast work order generation.
+
+<img src="../../images/sample_meter_pm_projection_flow.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 2: Continuous meter setup and automated preventive maintenance projection</p>
 
 ## Step 4: Record and manage meter readings

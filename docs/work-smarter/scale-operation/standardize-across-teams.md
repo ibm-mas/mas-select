@@ -22,8 +22,17 @@ To establish consistent operational practices across all shifts and plant zones,
 | **Failure classification** | Failure Codes | Defines uniform Problem, Cause, and Remedy failure paths | Enables plant-wide reliability engineering and root cause comparison |
 | **Digital inspections** | Inspection Forms | Standardizes quality, sanitation, and safety audit sheets | Guarantees compliance records match regulatory audit requirements |
 
-<img src="../../images/sample_standardize_across_teams.svg" alt="Cross-shift standardization structure and unified reporting" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
+<img src="../../images/sample_standardize_across_teams.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 1: Cross-shift standardization structure and unified reporting</p>
+
+As shown in Figure 1, the cross-shift standardization architecture connects central standards to operational execution and executive reporting:
+
+1. **Enterprise Standards**: Central definitions establish baseline consistency:
+   - **Standard Crafts**: Enforce uniform labor billing rates and skill progressions.
+   - **Standard Job Plans**: Mandate identical procedural steps, safety controls, and required parts.
+   - **Standard Failure Codes**: Define uniform Problem, Cause, and Remedy failure options.
+2. **Shift Execution**: Both Day Maintenance and Night Maintenance follow the identical procedures and log data using the same failure codes.
+3. **Unified Reporting**: Operational execution feeds clean, structured data into KPI Viewer, enabling true benchmark comparisons across shifts and departments.
 
 ## Creating standardized Job Plans
 
@@ -56,10 +65,10 @@ Standardizing craft codes ensures that work plans accurately predict job costs r
 
 | Craft code | Description | Skill levels | Standard hourly rate |
 |---|---|---|---|
-| `MECH` | Mechanical Technician | Apprentice, Journeyman, Master | $45.00 - $65.00 |
-| `ELEC` | Electrical Technician | Journeyman, Master | $55.00 - $75.00 |
-| `HVAC` | Refrigeration Specialist | Journeyman, Master | $60.00 - $80.00 |
-| `LUBE` | Lubrication Technician | Standard | $35.00 - $45.00 |
+| `MECH` | Mechanical Technician | Apprentice, Journeyman, Master | $45.00 to $65.00 |
+| `ELEC` | Electrical Technician | Journeyman, Master | $55.00 to $75.00 |
+| `HVAC` | Refrigeration Specialist | Journeyman, Master | $60.00 to $80.00 |
+| `LUBE` | Lubrication Technician | Standard | $35.00 to $45.00 |
 
 ### Creating a Craft in the desktop application
 

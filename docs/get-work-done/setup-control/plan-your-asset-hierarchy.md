@@ -80,7 +80,7 @@ In this sample ice cream plant equipment model, the asset hierarchy represents t
 - **Nozzle body** and **Shutoff valve** are maintainable child components under Nozzle assembly.
 - Consumable seals, o-rings, and gaskets for the nozzle assembly live on the **Spare Parts** tab from Item Master, not as child asset records.
 
-<img src="../../images/sample_asset_hierarchy.svg" alt="Asset hierarchy diagram for the sample ice cream plant. Filler FL-02 is the parent asset, with Drive motor and Nozzle assembly as subassemblies. Nozzle body and Shutoff valve are child components under Nozzle assembly." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
+<img src="../../images/sample_asset_hierarchy.svg" alt="Explained in body text" style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 1: Sample asset hierarchy for the Filling line system</p>
 
 ### Why this structure works
@@ -102,7 +102,9 @@ Review these common planning scenarios to test your understanding before buildin
 
 Your maintenance planner wants to create child asset records under `Filler FL-02` for mechanical seals, o-rings, and flange gaskets so technicians can select them during repairs.
 
-<img src="../../images/sample_asset_hierarchy_over_assetized.svg" alt="Asset hierarchy diagram for Filler FL-02 showing consumable wear parts such as o-rings and flange gaskets incorrectly modeled as child asset records under Nozzle assembly." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
+Figure 2 shows the over-assetized hierarchy where consumable wear parts, including o-rings, mechanical seals, and flange gaskets, are incorrectly modeled as individual child asset records underneath `Nozzle assembly`.
+
+<img src="../../images/sample_asset_hierarchy_over_assetized.svg" alt="Explained in body text" style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 2: Problem 1: Over-assetized hierarchy with consumable parts modeled as child assets</p>
 
 What happens if you model these consumable items as child assets?
@@ -114,7 +116,9 @@ Creating asset records for consumables results in severe over-assetization. The 
 
 **What to do instead:** Keep consumable wear parts in the Item Master and link them to the parent asset using the **Spare Parts** tab. Technicians can view the approved bill of materials, check storeroom stock, and charge items directly to work orders.
 
-<img src="../../images/sample_asset_hierarchy_spare_parts_tab.svg" alt="Corrected asset hierarchy diagram for Filler FL-02 showing Nozzle body and Shutoff valve as maintainable child assets under Nozzle assembly, with consumable o-rings and gaskets organized on the Spare Parts tab from Item Master." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
+Figure 3 shows the corrected asset structure where maintainable child assets `Nozzle body` and `Shutoff valve` remain under `Nozzle assembly`, while consumable o-rings and gaskets are cataloged in Item Master and linked through the Spare Parts tab.
+
+<img src="../../images/sample_asset_hierarchy_spare_parts_tab.svg" alt="Explained in body text" style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 3: Solution 1: Correct asset hierarchy with consumable wear parts managed on the Spare Parts tab</p>
 
 </details>
@@ -130,7 +134,9 @@ How do child subassemblies, such as `Drive motor` and `Nozzle assembly`, handle 
 
 When a parent asset moves to a new operating location, all child assets in its hierarchy automatically move with it to the new location. The parent-child relationship remains intact, and historical work orders remain linked to both the equipment and the previous location.
 
-<img src="../../images/sample_asset_hierarchy_move_parent.svg" alt="Diagram showing the movement of parent asset Filler FL-02 from Filling line room to Packaging suite, demonstrating that all child subassemblies move to the new location automatically." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
+Figure 4 illustrates moving parent asset `Filler FL-02` from location `Filling line room` to location `Packaging suite`, showing how child subassemblies `Drive motor` and `Nozzle assembly` as well as child components `Nozzle body` and `Shutoff valve` automatically inherit the new location.
+
+<img src="../../images/sample_asset_hierarchy_move_parent.svg" alt="Explained in body text" style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 4: Problem 2: Child subassemblies automatically inherit parent asset relocation</p>
 
 **What to do instead:** Move the top-level parent asset record to the new location. The system updates the location reference across all child subassemblies in a single operation.
@@ -148,7 +154,9 @@ What goes wrong when supervisors run building maintenance reports?
 
 Buildings, rooms, and areas are places, not movable equipment. Modeling rooms as assets breaks cost roll-up by location, disables filtering by location in Maximo Mobile, and prevents accurate tracking when equipment moves between rooms.
 
-<img src="../../images/sample_asset_hierarchy_room_as_asset.svg" alt="Comparison diagram contrasting the incorrect model where Production building is created as an asset record against the correct model where Production building is a location record holding the equipment." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
+Figure 5 contrasts the incorrect model where `Production building` is created as an asset record holding `Filler FL-02` against the correct model where `Production building` is created as a location record holding asset `Filler FL-02`.
+
+<img src="../../images/sample_asset_hierarchy_room_as_asset.svg" alt="Explained in body text" style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 5: Problem 3: Comparison of modeling places as locations versus assets</p>
 
 **What to do instead:** Model buildings, floors, and rooms in the location hierarchy under the Locations application. Anchor equipment records, such as `Filler FL-02`, into their respective operating location records.

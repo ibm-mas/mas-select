@@ -23,7 +23,14 @@ Keep storeroom records strictly distinct from operating rooms:
 - **Operating location:** Where production occurs and machinery operates, such as `Filling line room`. Work orders and downtime roll up to operating locations.
 - **Storeroom location:** Where items and spare parts are securely held, received, and issued, such as `Main storeroom`. Inventory transactions, stock balances, and unit costs roll up to storerooms.
 
-<img src="../../images/sample_storeroom_work_order_flow.svg" alt="Financial and material flow between storeroom, work order, and operating location" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
+Figure 1 maps the material and financial flow from storeroom inventory to work orders and physical locations:
+
+- **Storeroom location**: `Main storeroom` holds stocked spare parts.
+- **Material issue**: items are issued and charged directly to an active work order, such as `Filler FL-02`.
+- **Operating location**: `Filling line room` provides the physical space where the equipment operates.
+- **Cost roll-up**: maintenance and material expenses roll up simultaneously to both the asset and the location.
+
+<img src="../../images/sample_storeroom_work_order_flow.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 1: Financial and material flow between storeroom, work order, and operating location</p>
 
 ### 2. Distinguish consumable materials from rotating rebuildable assets
@@ -57,9 +64,16 @@ Configure reorder parameters on the Inventory record for each stocked item:
 
 ## What a good storeroom strategy looks like
 
-In our sample ice cream plant, the inventory strategy combines a secure central storeroom, satellite staging cribs, and structured rotating pools:
+In our sample ice cream plant, the inventory strategy combines a secure central storeroom, satellite staging cribs, and structured rotating pools.
 
-<img src="../../images/sample_storeroom_topology.svg" alt="Sample storeroom topology and inventory replenishment flow" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
+Figure 2 illustrates the storeroom topology and replenishment architecture:
+
+- **Central storeroom**: `Main storeroom` securely stores high-value spares and rotating items.
+- **Issue counter**: handles rapid barcode checkout for major jobs like `Filler FL-02 overhaul`.
+- **Satellite crib**: receives bulk restocks from the main storeroom to hold consumable parts close to active areas like `Cold storage` for jobs like `Refrigeration routine`.
+- **Automated replenishment**: system calculations monitor stock buffers to trigger timely reorders before stockouts occur.
+
+<img src="../../images/sample_storeroom_topology.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 2: Sample storeroom topology and inventory replenishment flow</p>
 
 ### Why this strategy works

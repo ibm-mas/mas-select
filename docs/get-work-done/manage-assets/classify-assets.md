@@ -8,9 +8,9 @@ Use classifications to group similar assets together and add detailed specificat
 
 | Term | What it means |
 |------|---------------|
-| **Classification** | A category that describes what type of equipment you have (such as "Rotary Fillers" or "Spiral Freezers") |
-| **Attribute** | A specific detail about the equipment (such as "Manufacturer" or "Fill capacity") |
-| **Hierarchy** | How classifications are organized from broad to specific (such as Equipment → Filling and Packaging → Rotary Fillers) |
+| **Classification** | A category that describes what type of equipment you have, such as "Rotary Fillers" or "Spiral Freezers" |
+| **Attribute** | A specific detail about the equipment, such as "Manufacturer" or "Fill capacity" |
+| **Hierarchy** | How classifications are organized from broad to specific, such as Equipment to Filling and Packaging to Rotary Fillers |
 
 ---
 
@@ -68,9 +68,13 @@ Classifications are organized like a tree, from broad to specific:
 - **Mid level**: Specific types, such as "Filling and Packaging" or "Freezers"
 - **Bottom level**: Detailed subtypes, such as "Spiral Freezers" or "Rotary Fillers"
 
-Figure 1 shows an example hierarchy.
+Figure 1 illustrates an example classification tree branching from a top-level Equipment category into three distinct branches:
 
-<img src="../../images/sample_classification_hierarchy.svg" alt="Equipment divides into Filling and Packaging, Refrigeration, and Processing Equipment. Filling and Packaging contains Rotary Fillers, with the example Filler FL-02, and Case Packers. Refrigeration contains Freezers, which contain Spiral Freezers, with the example Spiral Freezer SF-01. Processing Equipment contains Mixers, with the example Batch Mixer MX-01." style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
+- **Filling and Packaging**: branches into Rotary Fillers, with example asset Filler FL-02, and Case Packers.
+- **Refrigeration**: branches into Freezers, which further branches into Spiral Freezers, with example asset Spiral Freezer SF-01.
+- **Processing Equipment**: branches into Mixers, with example asset Batch Mixer MX-01.
+
+<img src="../../images/sample_classification_hierarchy.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 1: An example classification hierarchy</p>
 
 Use the most specific classification that fits your equipment. This makes it easier to find and manage.

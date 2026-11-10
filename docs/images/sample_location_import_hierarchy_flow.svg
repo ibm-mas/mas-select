@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 520" width="1080" height="520" role="img" aria-labelledby="t d" style="background:#ffffff; font-family:'IBM Plex Sans', -apple-system, sans-serif;">
+  <title id="t">Location hierarchy import sequence and parent validation</title>
+  <desc id="d">Location records must be imported sequentially from top to bottom. Top-level locations must exist before second-level locations, which must exist before lower-level rooms. Importing a child before its parent causes import validation failure.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#161616"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <rect x="32" y="32" width="504" height="456" rx="8" fill="#f4f4f4" stroke="#8d8d8d" stroke-width="1"/>
+  <rect x="32" y="32" width="504" height="48" rx="8" fill="#e0e0e0"/>
+  <rect x="32" y="72" width="504" height="8" fill="#e0e0e0"/>
+<g transform="translate(48 44) scale(0.75)" fill="#161616"><path d="M14 21.414 9 16.413 10.413 15 14 18.586 21.585 11 23 12.415 14 21.414z"/><path d="M16,2A14,14,0,1,0,30,16,14,14,0,0,0,16,2Zm0,26A12,12,0,1,1,28,16,12,12,0,0,1,16,28Z"/></g>
+  <text x="88" y="62" font-size="16" font-weight="600" fill="#161616">Correct load sequence: Top-down</text>
+  <rect class="node" id="n_top" x="48" y="104" width="472" height="88" rx="8" fill="#ffffff" stroke="#0f62fe" stroke-width="1"/>
+  <path d="M 56 104 Q 48 104 48 112 V 184 Q 48 192 56 192 Z" fill="#0f62fe"/>
+<g transform="translate(64 136) scale(0.75)" fill="#161616"><path d="M16,18a5,5,0,1,1,5-5A5.0057,5.0057,0,0,1,16,18Zm0-8a3,3,0,1,0,3,3A3.0033,3.0033,0,0,0,16,10Z"/><path d="M16,30,7.5645,20.0513c-.0479-.0571-.3482-.4515-.3482-.4515A10.8888,10.8888,0,0,1,5,13a11,11,0,0,1,22,0,10.8844,10.8844,0,0,1-2.2148,6.5973l-.0015.0025s-.3.3944-.3447.4474ZM8.8125,18.395c.001.0007.2334.3082.2866.3744L16,26.9079l6.91-8.15c.0439-.0552.2783-.3649.2788-.3657A8.901,8.901,0,0,0,25,13,9,9,0,1,0,7,13a8.9054,8.9054,0,0,0,1.8125,5.395Z"/></g>
+  <text x="104" y="138" font-size="14" font-weight="600" fill="#161616">1. Top-level location: Ice cream main plant</text>
+  <text x="104" y="160" font-size="12" fill="#525252">Parent: none, loads first</text>
+  <rect class="node" id="n_mid" x="48" y="216" width="472" height="88" rx="8" fill="#ffffff" stroke="#007d79" stroke-width="1"/>
+  <path d="M 56 216 Q 48 216 48 224 V 296 Q 48 304 56 304 Z" fill="#007d79"/>
+<g transform="translate(64 248) scale(0.75)" fill="#161616"><path d="M16,18a5,5,0,1,1,5-5A5.0057,5.0057,0,0,1,16,18Zm0-8a3,3,0,1,0,3,3A3.0033,3.0033,0,0,0,16,10Z"/><path d="M16,30,7.5645,20.0513c-.0479-.0571-.3482-.4515-.3482-.4515A10.8888,10.8888,0,0,1,5,13a11,11,0,0,1,22,0,10.8844,10.8844,0,0,1-2.2148,6.5973l-.0015.0025s-.3.3944-.3447.4474ZM8.8125,18.395c.001.0007.2334.3082.2866.3744L16,26.9079l6.91-8.15c.0439-.0552.2783-.3649.2788-.3657A8.901,8.901,0,0,0,25,13,9,9,0,1,0,7,13a8.9054,8.9054,0,0,0,1.8125,5.395Z"/></g>
+  <text x="104" y="250" font-size="14" font-weight="600" fill="#161616">2. Second-level location: Production building</text>
+  <text x="104" y="272" font-size="12" fill="#525252">Parent: Ice cream main plant</text>
+  <rect class="node" id="n_bot" x="48" y="328" width="472" height="88" rx="8" fill="#ffffff" stroke="#8a3ffc" stroke-width="1"/>
+  <path d="M 56 328 Q 48 328 48 336 V 408 Q 48 416 56 416 Z" fill="#8a3ffc"/>
+<g transform="translate(64 360) scale(0.75)" fill="#161616"><path d="M16,18a5,5,0,1,1,5-5A5.0057,5.0057,0,0,1,16,18Zm0-8a3,3,0,1,0,3,3A3.0033,3.0033,0,0,0,16,10Z"/><path d="M16,30,7.5645,20.0513c-.0479-.0571-.3482-.4515-.3482-.4515A10.8888,10.8888,0,0,1,5,13a11,11,0,0,1,22,0,10.8844,10.8844,0,0,1-2.2148,6.5973l-.0015.0025s-.3.3944-.3447.4474ZM8.8125,18.395c.001.0007.2334.3082.2866.3744L16,26.9079l6.91-8.15c.0439-.0552.2783-.3649.2788-.3657A8.901,8.901,0,0,0,25,13,9,9,0,1,0,7,13a8.9054,8.9054,0,0,0,1.8125,5.395Z"/></g>
+  <text x="104" y="362" font-size="14" font-weight="600" fill="#161616">3. Lower-level location: Filling line room</text>
+  <text x="104" y="384" font-size="12" fill="#525252">Parent: Production building</text>
+  <rect x="552" y="32" width="496" height="456" rx="8" fill="#f4f4f4" stroke="#8d8d8d" stroke-width="1"/>
+  <rect x="552" y="32" width="496" height="48" rx="8" fill="#e0e0e0"/>
+  <rect x="552" y="72" width="496" height="8" fill="#e0e0e0"/>
+<g transform="translate(568 44) scale(0.75)" fill="#161616"><path d="M2,16H2A14,14,0,1,0,16,2,14,14,0,0,0,2,16Zm23.15,7.75L8.25,6.85a12,12,0,0,1,16.9,16.9ZM8.24,25.16A12,12,0,0,1,6.84,8.27L23.73,25.16a12,12,0,0,1-15.49,0Z"/></g>
+  <text x="608" y="62" font-size="16" font-weight="600" fill="#161616">Hierarchy import error condition</text>
+  <rect class="node" id="n_err_target" x="568" y="104" width="464" height="88" rx="8" fill="#ffffff" stroke="#0f62fe" stroke-width="1"/>
+  <path d="M 576 104 Q 568 104 568 112 V 184 Q 568 192 576 192 Z" fill="#0f62fe"/>
+<g transform="translate(584 136) scale(0.75)" fill="#161616"><path d="M16,18a5,5,0,1,1,5-5A5.0057,5.0057,0,0,1,16,18Zm0-8a3,3,0,1,0,3,3A3.0033,3.0033,0,0,0,16,10Z"/><path d="M16,30,7.5645,20.0513c-.0479-.0571-.3482-.4515-.3482-.4515A10.8888,10.8888,0,0,1,5,13a11,11,0,0,1,22,0,10.8844,10.8844,0,0,1-2.2148,6.5973l-.0015.0025s-.3.3944-.3447.4474ZM8.8125,18.395c.001.0007.2334.3082.2866.3744L16,26.9079l6.91-8.15c.0439-.0552.2783-.3649.2788-.3657A8.901,8.901,0,0,0,25,13,9,9,0,1,0,7,13a8.9054,8.9054,0,0,0,1.8125,5.395Z"/></g>
+  <text x="624" y="138" font-size="14" font-weight="600" fill="#161616">Import target: Filling line room</text>
+  <text x="624" y="160" font-size="12" fill="#525252">Specifies parent: Production building</text>
+  <rect class="node" id="n_err_cond" x="568" y="240" width="464" height="208" rx="8" fill="#ffffff" stroke="#fa4d56" stroke-width="1"/>
+  <path d="M 576 240 Q 568 240 568 248 V 440 Q 568 448 576 448 Z" fill="#fa4d56"/>
+<g transform="translate(584 264) scale(0.75)" fill="#fa4d56"><path d="M16,2C8.3,2,2,8.3,2,16s6.3,14,14,14s14-6.3,14-14C30,8.3,23.7,2,16,2z M14.9,8h2.2v11h-2.2V8z M16,25&#9;c-0.8,0-1.5-0.7-1.5-1.5S15.2,22,16,22c0.8,0,1.5,0.7,1.5,1.5S16.8,25,16,25z"/></g>
+  <text x="624" y="278" font-size="14" font-weight="600" fill="#fa4d56">Validation failure: Missing parent</text>
+  <text x="624" y="306" font-size="12" fill="#161616">• Production building record does not exist yet</text>
+  <text x="624" y="330" font-size="12" fill="#525252">• Child record rejected by data loader</text>
+  <text x="624" y="362" font-size="12" font-weight="600" fill="#007d79">How to fix:</text>
+  <text x="624" y="386" font-size="12" fill="#525252">1. Load Production building first</text>
+  <text x="624" y="408" font-size="12" fill="#525252">2. Re-import Filling line room</text>
+  <!-- Connectors -->
+  <path class="connector" id="k1" data-from="n_top" data-to="n_mid" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 280 192 V 216"/>
+  <path class="connector" id="k2" data-from="n_mid" data-to="n_bot" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 280 304 V 328"/>
+  <path class="connector" id="k3" data-from="n_err_target" data-to="n_err_cond" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 800 192 V 240"/>
+</svg>

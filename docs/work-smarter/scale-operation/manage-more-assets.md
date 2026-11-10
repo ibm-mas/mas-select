@@ -22,8 +22,13 @@ To scale equipment coverage without increasing administrative headcount, use fou
 | **Parent-child trees** | Assets | Establishes sub-assembly structures for components that move between machines | Tracking drive motors and gearboxes installed on Filler FL-02 |
 | **Bulk onboarding** | Data Management | Ingests large asset registries with classifications and specifications in batches | Commissioning 200 new assets for the Ice Cream Plant expansion |
 
-<img src="../../images/sample_scaling_master_pm_routes.svg" alt="Operational scaling through Master PMs and multi-stop routes" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
+<img src="../../images/sample_scaling_master_pm_routes.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 1: Operational scaling through Master PMs and multi-stop routes</p>
+
+As shown in Figure 1, operational scaling relies on two complementary consolidation mechanisms:
+
+- **Master PM cascading**: A single master template, such as the 50 HP Motor Template, links to and automatically updates individual maintenance schedules across the plant, including PM 1001 for Filler FL-01 Drive Motor, PM 1002 for Filler FL-02 Drive Motor, and PM 1003 for Filler FL-03 Drive Motor.
+- **Route consolidation**: A single route definition, such as the Cold Storage Daily Route, bundles multiple physical inspections into one unified work order with sequential stops, covering Stop 1: Production Room Compressor Valve, Stop 2: Cold Storage Evaporator Valve, and Stop 3: Filling Line Room Bypass Valve.
 
 ## Standardizing schedules with Master PMs
 

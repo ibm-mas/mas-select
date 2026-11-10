@@ -18,7 +18,13 @@ Before configuring schedules in the PM application, establish your maintenance s
 
 Equipment operating under constant loads benefits from calendar schedules, while machinery with fluctuating production cycles requires usage-based runtime triggers.
 
-<img src="../../images/decision_framework_pm_frequency.svg" alt="Decision framework for selecting preventive maintenance frequency based on equipment operating patterns" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
+Figure 1 outlines the decision framework for selecting maintenance frequencies based on operating patterns:
+
+- **24/7 continuous operation**: time-based schedule using fixed calendar days, weeks, or months.
+- **Variable batch production**: usage-based schedule driven by continuous run hours or cycles.
+- **Intermittent seasonal operation**: combined schedule triggered by whichever threshold occurs first, calendar elapsed time or meter run hours.
+
+<img src="../../images/decision_framework_pm_frequency.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 1: Decision framework for preventive maintenance frequency</p>
 
 ### Table 1: Matching equipment types to maintenance triggers
@@ -52,9 +58,16 @@ Set lead times based on your physical storeroom procurement cycles and shift pla
 
 ## What a good PM strategy looks like
 
-In our sample ice cream plant, the maintenance strategy combines calendar routines, usage-based triggers, and consolidated routes:
+In our sample ice cream plant, the maintenance strategy combines calendar routines, usage-based triggers, and consolidated routes.
 
-<img src="../../images/sample_pm_strategy_architecture.svg" alt="Architecture of an integrated plant preventive maintenance strategy with calendar, runtime, and route triggers" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
+Figure 2 illustrates the three maintenance streams that feed into the automated generation engine:
+
+- **Fixed calendar PMs**: recurring safety and facility audits scheduled on fixed calendar intervals.
+- **Meter run-hour PMs**: usage-based servicing for production machines like `Filler FL-02` and pumps.
+- **Multi-stop routes**: consolidated inspection rounds, such as the daily `Cold storage` walk-through.
+- **Automated cron processing**: background tasks evaluate lead times and generate work orders 7 days in advance for supervisor assignment.
+
+<img src="../../images/sample_pm_strategy_architecture.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 2: Architecture of an integrated plant preventive maintenance strategy</p>
 
 ### Why this strategy works

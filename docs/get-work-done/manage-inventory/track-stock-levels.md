@@ -131,8 +131,14 @@ For detailed tracking:
 - **Condition**: Monitor item condition changes
 - **Rotating assets**: Track individual asset items
 
-!!! warning "TODO: Add visual content"
-     A diagram showing bin and lot tracking would be useful here.
+Figure 1 illustrates the storeroom inventory hierarchy across three connected columns representing physical location, item tracking levels, and real-time balance calculations:
+
+- **Physical location**: Navigates from Main storeroom as the primary inventory site, down through aisle and shelf coordinates such as Row A, Shelf 03, to a specific storage compartment, BIN-04.
+- **Item tracking level**: From the physical bin, items branch into three tracking modes: standard inventory items tracked by item number, lot and batch tracking recording batch numbers and expiration dates, and rotating serialized assets tracking unique serial numbers.
+- **Balance calculation**: Tracks inventory availability across records, where a current physical balance of 25 items minus a reserved quantity of 5 items allocated to work orders yields an available balance of 20 items ready for issue.
+
+<img src="../../images/sample_bin_and_lot_tracking.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
+<p class="figure-caption">Figure 1: Storeroom hierarchy for bin, lot, and rotating asset tracking</p>
 
 ---
 
@@ -323,8 +329,16 @@ If item shows in stock but you can't find it:
 5. Perform physical count.
 6. Adjust if necessary.
 
-!!! warning "TODO: Add visual content"
-     A troubleshooting flowchart would be useful here.
+Figure 2 illustrates the diagnostic workflow when an item shows a positive stock balance in the system but cannot be found on the storeroom shelf:
+
+- **Diagnostic trigger**: Starts when the system balance shows stock on hand, but the item is missing from its primary shelf location.
+- **Step 1 (Verify bin locations)**: Check primary, secondary, and staging bins. If found in an alternate bin, pick the item and update the bin assignment in the system. If still missing, proceed to Step 2.
+- **Step 2 (Check transfers and receipts)**: Verify in-transit transfers between storerooms and recent receiving staging areas. If located in receiving or transit, complete the pending transaction. If still missing, proceed to Step 3.
+- **Step 3 (Check reservations and kits)**: Inspect active work orders and staged item kits. If the item was allocated to an active work order, it is already staged for maintenance. If still missing, proceed to Step 4.
+- **Step 4 (Conduct physical count)**: Count physical shelf stock across the storeroom. If a true variance is confirmed, enter an inventory adjustment in the Inventory application to reconcile the balance.
+
+<img src="../../images/sample_stock_level_troubleshooting.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
+<p class="figure-caption">Figure 2: Missing inventory item troubleshooting workflow</p>
 
 ---
 

@@ -49,8 +49,14 @@ Synonym domains allow organizations to define business-specific terms that map d
 
 For example, if the Ice Cream plant requires a specific sub-state for work orders awaiting food safety sign-off before work starts, add a synonym value `WFOODSAFE` mapped to the system base status Waiting on Approval, `WAPPR`.
 
-<img src="../../images/sample_synonym_domain_mapping.svg" alt="Synonym domain mapping to system base status" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
+<img src="../../images/sample_synonym_domain_mapping.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 1: Synonym domain mapping to system base status</p>
+
+As shown in Figure 1, the core system base status `WAPPR` branches into multiple user-facing display statuses:
+
+- **Standard Base Status**: Waiting on Approval, `WAPPR`, for general maintenance work orders.
+- **Synonym Value `WFOODSAFE`**: Waiting on Food Safety Sign-off for hygiene and sanitation hold points.
+- **Synonym Value `WENVPERMIT`**: Waiting on Environmental Permit for environmental compliance hold points.
 
 ### 💡 Tip: Keep domain lists concise and mutually exclusive
 Do not overload domains with dozens of overlapping choices. If a picklist exceeds fifteen options, users often pick the first available entry rather than scrolling to find the correct code. Review domain lists quarterly and deactivate obsolete values.
@@ -61,8 +67,15 @@ Classifications ensure that all assets of the same type store identical technica
 
 In the Classifications application, build an equipment hierarchy:
 
-<img src="../../images/sample_asset_classification_tree.svg" alt="Hierarchical asset classification and specification structure" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
+<img src="../../images/sample_asset_classification_tree.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 2: Hierarchical asset classification and specification structure</p>
+
+As shown in Figure 2, asset classifications organize specifications down a four-level hierarchy:
+
+1. **Level 1 (`PRODUCTION`)**: Encompasses all plant machinery.
+2. **Level 2 (`ROTATING`)**: Groups dynamic equipment families.
+3. **Level 3 (`MOTORS`)**: Defines electric drive units.
+4. **Level 4 (Attributes)**: Captures standardized technical specifications, including Horsepower or Kilowatts, Voltage or Phase, NEMA Frame, Rated RPM, and Bearing Type.
 
 When you classify the drive motor for Filler FL-02 under `MOTORS`, Maximo Application Suite Select prompts for each defined attribute. This structured capture enables engineers to search for all 50 HP motors across the Ice Cream Main Plant when planning standardized spares.
 

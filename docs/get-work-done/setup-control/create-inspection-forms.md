@@ -23,7 +23,16 @@ The Inspection Forms application gives you flexible ways to capture exact field 
 
 The application offers more ways to capture answers than these examples. Use them as a starting point, and explore the options when you design a question.
 
-<img src="../../images/sample_inspection_form_lifecycle.svg" alt="Inspection form design, configuration, and field execution lifecycle" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
+Figure 1 illustrates the inspection form lifecycle from initial authoring to field execution:
+
+1. **Step 1 (Design)**: build the form using three core question types:
+   - **Single or domain choice**: pass or fail checks and domain picklist selections.
+   - **Meter or numeric entry**: readings that update asset meters or track standalone values.
+   - **Media or signature**: photo attachments and digital sign-offs.
+2. **Step 2 (Activate and link)**: activate the draft template and attach it to PM schedules, route stops, or work orders.
+3. **Step 3 (Field execution)**: technicians complete the interactive checklist in the Inspections role-based app or on mobile work orders.
+
+<img src="../../images/sample_inspection_form_lifecycle.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 1: Inspection form design, configuration, and field execution lifecycle</p>
 
 ## Step 1: Create a form template

@@ -29,8 +29,14 @@ Calendars show when work can happen. They include:
 - Holidays and shutdowns
 - Days off
 
-!!! warning "TODO: Add visual content"
-     A diagram showing how calendars connect to labor, locations, and work scheduling would be useful here.
+Figure 1 shows how calendars connect to labor, equipment, and work scheduling across three areas:
+
+- **Calendar definition**: establishes shift patterns for working hours, standard work weeks for working days, and non-working time for holidays and shutdowns.
+- **Assigned records**: attaches calendars to labor records for individual worker availability, crew records for crew group availability, and locations or assets for shutdown windows.
+- **Work scheduling**: validates worker availability against open shifts to assign target start and finish dates.
+
+<img src="../../images/sample_calendar_scheduling_flow.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
+<p class="figure-caption">Figure 1: How calendars connect to labor, equipment, and work scheduling</p>
 
 ### When to use calendars
 
@@ -78,8 +84,14 @@ Select includes some calendars, such as a day shift and an evening shift. You ca
 
 Routes are lists of items that need regular inspection. Create one route. Generate work orders for all items at once.
 
-!!! warning "TODO: Add visual content"
-     A diagram showing a route with multiple stops and how it generates work orders would be useful here.
+Figure 2 illustrates how a multi-stop route generates work across inspection points:
+
+- **Multi-stop route**: defines sequential stops, such as Stop 1 (`Filler FL-02`), Stop 2 (`Spiral Freezer SF-01`), and Stop 3 (`Batch Mixer MX-01`).
+- **Option A (Separate work orders per stop)**: generates individual child work orders (`WO 101`, `WO 102`, `WO 103`) so each machine retains independent maintenance history and cost tracking.
+- **Option B (One work order with multiple tasks)**: generates a single consolidated work order containing sequential tasks (`Task 10`, `Task 20`, `Task 30`) with unified completion at the route level.
+
+<img src="../../images/sample_route_work_order_generation.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
+<p class="figure-caption">Figure 2: How routes generate work orders across multiple inspection stops</p>
 
 ### When to use routes
 

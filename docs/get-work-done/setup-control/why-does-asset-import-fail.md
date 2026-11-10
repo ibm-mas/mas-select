@@ -33,12 +33,17 @@ Child locations can't be created if their parent doesn't exist yet.
 
 **What to do**: Import locations in order:
 
-1. Top-level locations first, such as `Ice cream main plant`
-2. Second-level locations next, such as `Production building`
-3. Lowest-level locations last, such as `Filling line room`
+1. **Top-level locations first**: load facilities with no parent, such as `Ice cream main plant`.
+2. **Second-level locations next**: load buildings that reference the top-level plant, such as `Production building`.
+3. **Lowest-level locations last**: load rooms that reference the building, such as `Filling line room`.
 
-!!! warning "TODO: Add visual content"
-     A diagram showing location hierarchy structure from parent to child relationships would be useful here.
+Figure 1 contrasts the correct top-down import sequence with a missing-parent validation error:
+
+- **Correct top-down load sequence**: top-level location `Ice cream main plant` loads first with no parent, followed by second-level location `Production building` referencing the plant, followed by lower-level location `Filling line room` referencing the building.
+- **Hierarchy import error condition**: attempting to import child record `Filling line room` before its parent `Production building` exists causes the data loader to reject the child record with a validation failure. To fix this, import `Production building` first, then re-import `Filling line room`.
+
+<img src="../../images/sample_location_import_hierarchy_flow.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
+<p class="figure-caption">Figure 1: Location hierarchy import sequence and parent validation</p>
 
 #### Incorrect object structure
 
@@ -252,7 +257,7 @@ Excel can corrupt data in several ways:
 **What to do**: Format all columns as text in Excel before entering data, or use a plain text editor to create the CSV.
 
 !!! warning "TODO: Add visual content"
-     A screenshot showing Excel formatting options (Format Cells → Text) would be helpful.
+     A screenshot showing Excel formatting options, such as selecting Format Cells and then Text, would be helpful.
 
 ### Lack of pre-validation leads to late errors
 

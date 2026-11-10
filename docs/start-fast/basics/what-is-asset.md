@@ -25,13 +25,17 @@ An asset is any piece of equipment, machinery, or infrastructure that your organ
 ## Asset hierarchy
 
 <div style="width: 50%; float: right; margin-left: 20px; margin-bottom: 20px;">
-<img src="../../images/sample_asset_hierarchy.svg" alt="Asset hierarchy for the Filling line system. Filler FL-02, Conveyor CV-02, and Labeler LB-01 are parent assets. Each parent asset has child components, and the Nozzle assembly component has two parts: Nozzle body and Shutoff valve." style="width: 100%; display: block;">
+<img src="../../images/sample_asset_hierarchy.svg" alt="Explained in body text" style="width: 100%; display: block;">
 <p class="figure-caption">Figure 1: Sample asset hierarchy for an ice cream manufacturer</p>
 </div>
 
-An asset is a physical piece of equipment that you maintain. You can organize assets in a parent-child hierarchy to show how equipment is connected and to track maintenance at the correct level.
+An asset is a physical piece of equipment that you maintain. You can organize assets in a parent-child hierarchy to show how equipment connects and to track maintenance at the correct operational level.
 
-In figure 1, Filler FL-02, Conveyor CV-02, and Labeler LB-01 are parent assets in the Filling line system. Parent assets can include child assets. For example, Filler FL-02 includes the Nozzle assembly and Drive motor components. The Nozzle assembly includes the Nozzle body and Shutoff valve parts.
+In Figure 1, the top-level system is the Filling line system, which contains three parent assets:
+
+- **Filler FL-02**: Contains child components Drive motor and Nozzle assembly. The Nozzle assembly breaks down further into Part 1: Nozzle body and Part 2: Shutoff valve.
+- **Conveyor CV-02**: Contains child components Belt and Sensor.
+- **Labeler LB-01**: Contains child components Printhead and Label sensor.
 
 Assets are installed in locations, which show where the equipment operates.
 

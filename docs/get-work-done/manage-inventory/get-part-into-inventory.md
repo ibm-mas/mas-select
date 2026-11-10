@@ -19,7 +19,15 @@ For example, to stock a food-grade gasket kit for Filler FL-02, you create the i
 
 ## Quick reference
 
-<img src="../../images/sample_get_part_into_inventory.svg" alt="Five steps in order: create the item in Item Master, make sure the storeroom exists in Storerooms, add the item to the storeroom in Item Master, record the location and quantity in Inventory, and issue the part to a work order in Inventory." style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
+Figure 1 illustrates the five sequential steps required to get a new part into inventory and ready for work orders:
+
+1. **Item Master**: create the item record, specify what it is, and indicate whether it is rotating.
+2. **Storerooms**: verify that the target storeroom exists and is active.
+3. **Item Master**: add the item to the storeroom, which creates the inventory record.
+4. **Inventory**: record the physical location such as the bin and enter the quantity on hand.
+5. **Inventory**: issue the stocked part to an approved work order.
+
+<img src="../../images/sample_get_part_into_inventory.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 1: The steps to get a new part into inventory</p>
 
 ### Table 1: From a new part to a balance you can issue

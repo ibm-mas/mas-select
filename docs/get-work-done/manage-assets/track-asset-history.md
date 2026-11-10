@@ -146,8 +146,10 @@ Track:
 - Reliability trends over time
 - Whether equipment meets performance expectations
 
-!!! warning "TODO: Add visual content"
-     A diagram showing how to use history data for decision-making would be useful here.
+Figure 1 illustrates how continuous asset history records, including completed work orders, meter readings, downtime logs, and failure reports, feed equipment performance evaluations to drive preventive maintenance adjustments, spare parts planning, and repair versus replacement decisions.
+
+<img src="../../images/sample_asset_history_decision_flow.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
+<p class="figure-caption">Figure 1: Using asset history data for maintenance decisions</p>
 
 ---
 

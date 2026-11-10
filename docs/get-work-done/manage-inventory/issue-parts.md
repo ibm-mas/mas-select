@@ -18,8 +18,14 @@ Take parts from the storeroom and assign them to a work order.
 | **From storeroom** | When managing inventory directly |
 | **Mobile app** | When working in the field |
 
-!!! warning "TODO: Add visual content"
-     A diagram showing the parts issue workflow would be useful here.
+Figure 1 illustrates the end-to-end parts issue and material transaction workflow across three main stages:
+
+- **1. Issue entry methods**: Technicians or inventory clerks initiate an issue through one of three paths: from an active work order on the Materials tab, directly at the storeroom counter using the Inventory issue action, or in the field using barcode scanning in the Technician mobile app.
+- **2. Validation checks**: The system validates the transaction by confirming a valid storeroom and item number, verifying that the work order is in a chargeable status, checking that sufficient available storeroom balance exists, and confirming all required accounting fields are populated.
+- **3. Simultaneous updates**: Upon successful validation, the system executes three updates simultaneously: deducting the physical balance from the storeroom and logging an audit transaction, charging actual material costs directly to the work order, and evaluating reorder thresholds to trigger inventory replenishment if stock drops below minimum levels.
+
+<img src="../../images/sample_parts_issue_workflow.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
+<p class="figure-caption">Figure 1: Parts issue and material transaction workflow</p>
 
 ---
 
@@ -162,11 +168,17 @@ For urgent repairs:
 
 1. Issue parts immediately.
 2. Add to work order as soon as possible.
-3. Don't skip recording - it affects inventory.
+3. Don't skip recording: it affects inventory.
 4. Explain urgency in notes.
 
-!!! warning "TODO: Add visual content"
-     A flowchart for handling parts issues would be useful here.
+Figure 2 outlines the sequential resolution workflows for three common parts issue scenarios:
+
+- **Scenario 1 (Part not in stock)**: First check other storerooms across plant sites for available stock, then initiate a purchase requisition or storeroom transfer, and finally update the work order status to Waiting on Material.
+- **Scenario 2 (Quantity mismatch)**: For an under-issue where additional parts are needed, create an extra issue line for the difference. For an over-issue where too many parts were taken, use the Return action on the actuals tab to return extra parts to the storeroom. The system automatically adjusts storeroom balance and work order cost.
+- **Scenario 3 (Emergency repair)**: For urgent breakdowns, issue parts immediately to perform the repair, record the material actuals on the work order once the equipment is safe, and add explanatory documentation notes to the work log.
+
+<img src="../../images/sample_parts_issue_scenarios_decision_tree.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
+<p class="figure-caption">Figure 2: Decision tree for handling common parts issue scenarios</p>
 
 ---
 

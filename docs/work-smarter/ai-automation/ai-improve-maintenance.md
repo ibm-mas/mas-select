@@ -22,8 +22,17 @@ Integrating AI models with maintenance workflows provides several key operationa
 | **Attribute classification** | Recommends asset classification attributes for newly registered equipment | Asset specifications, manufacturer data sheets, and Classifications | Classifications, AI Configuration |
 | **Predictive threshold analysis** | Analyzes continuous meter trends to forecast when upper action limits will breach | Condition Monitoring meter history and run-hour readings | Condition Monitoring |
 
-<img src="../../images/sample_ai_maintenance_workflow.svg" alt="AI configuration service and maintenance workflow integration" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
+<img src="../../images/sample_ai_maintenance_workflow.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 1: AI configuration service and maintenance workflow integration</p>
+
+As shown in Figure 1, the AI integration workflow ingests technician logs and routes them through a central AI service to generate three operational outputs:
+
+1. **Input**: A technician records free-form work log text and actual repair notes on a work order.
+2. **AI Configuration gateway**: The system routes the text securely to the configured AI model endpoint, such as a watsonx service.
+3. **AI Outputs**: The model returns three distinct operational enhancements:
+   - **Failure code suggestions**: Analyzes unstructured repair descriptions to match and suggest standardized Problem, Cause, and Remedy codes.
+   - **Work order summarization**: Synthesizes lengthy maintenance histories into concise summaries for shift handoffs and management digests.
+   - **Attribute recommendations**: Evaluates manufacturer specifications to suggest classification attribute values for newly onboarded assets.
 
 ## Configuring AI integration in Maximo Application Suite Select
 

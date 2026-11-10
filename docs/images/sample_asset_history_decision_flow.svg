@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 520" width="1080" height="520" role="img" aria-labelledby="t d" style="background:#ffffff; font-family:'IBM Plex Sans', -apple-system, sans-serif;">
+  <title id="t">Using asset history data for maintenance decisions</title>
+  <desc id="d">Tracking work orders, meter readings, and maintenance costs over time provides the historical baseline to optimize preventive maintenance schedules, adjust spare parts inventory, and evaluate repair versus replacement.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#161616"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <rect x="32" y="32" width="312" height="456" rx="8" fill="#f4f4f4" stroke="#8d8d8d" stroke-width="1"/>
+  <rect x="32" y="32" width="312" height="48" rx="8" fill="#e0e0e0"/>
+  <rect x="32" y="72" width="312" height="8" fill="#e0e0e0"/>
+<g transform="translate(48 44) scale(0.75)" fill="#161616"><path d="M18.3115,29.8096l-.3281-1.9727c5.8037-.9648,10.0166-5.9434,10.0166-11.8369,0-6.6167-5.3828-12-12-12s-12,5.3833-12,12h-2c0-7.7197,6.2803-14,14-14s14,6.2803,14,14c0,6.876-4.916,12.6836-11.6885,13.8096ZM13.5537,29.7861c-1.6157-.2842-3.1558-.8467-4.5767-1.6719l1.0039-1.7305c1.2178.707,2.5361,1.1895,3.9194,1.4336l-.3467,1.9688ZM5.293,25.0205c-1.0537-1.25-1.873-2.6582-2.4351-4.1846l1.877-.6914c.4814,1.3086,1.1836,2.5156,2.0874,3.5869l-1.5293,1.2891ZM20.5586,21.9727l-5.5586-5.5586V7h2v8.5859l4.9727,4.9727-1.4141,1.4141Z"/></g>
+  <text x="88" y="62" font-size="16" font-weight="600" fill="#161616">Asset history records</text>
+  <rect x="48" y="104" width="280" height="88" rx="8" fill="#ffffff" stroke="#0f62fe" stroke-width="1"/>
+  <path d="M 56 104 Q 48 104 48 112 V 184 Q 48 192 56 192 Z" fill="#0f62fe"/>
+<g transform="translate(64 136) scale(0.75)" fill="#161616"><path d="M22 27.18 19.41 24.59 18 26 22 30 30 22 28.59 20.59 22 27.18z"/><path d="M25,5H22V4a2.0058,2.0058,0,0,0-2-2H12a2.0058,2.0058,0,0,0-2,2V5H7A2.0058,2.0058,0,0,0,5,7V28a2.0058,2.0058,0,0,0,2,2h9V28H7V7h3v3H22V7h3V18h2V7A2.0058,2.0058,0,0,0,25,5ZM20,8H12V4h8Z"/></g>
+  <text x="104" y="140" font-size="14" font-weight="600" fill="#161616">Completed work orders</text>
+  <text x="104" y="162" font-size="12" fill="#525252">Past repairs, labor, and materials</text>
+  <rect x="48" y="216" width="280" height="88" rx="8" fill="#ffffff" stroke="#007d79" stroke-width="1"/>
+  <path d="M 56 216 Q 48 216 48 224 V 296 Q 48 304 56 304 Z" fill="#007d79"/>
+<g transform="translate(64 248) scale(0.75)" fill="#161616"><path d="M26,16a9.9283,9.9283,0,0,0-1.1392-4.6182l-1.4961,1.4961A7.9483,7.9483,0,0,1,24,16Z"/><path d="M23.4141,10,22,8.5859l-4.7147,4.7147A2.9659,2.9659,0,0,0,16,13a3,3,0,1,0,3,3,2.9659,2.9659,0,0,0-.3006-1.2853ZM16,17a1,1,0,1,1,1-1A1.0013,1.0013,0,0,1,16,17Z"/><path d="M16,8a7.9515,7.9515,0,0,1,3.1223.6353l1.4961-1.4961A9.9864,9.9864,0,0,0,6,16H8A8.0092,8.0092,0,0,1,16,8Z"/><path d="M16,30A14,14,0,1,1,30,16,14.0158,14.0158,0,0,1,16,30ZM16,4A12,12,0,1,0,28,16,12.0137,12.0137,0,0,0,16,4Z"/></g>
+  <text x="104" y="252" font-size="14" font-weight="600" fill="#161616">Meter run hours</text>
+  <text x="104" y="274" font-size="12" fill="#525252">Continuous usage and operating cycles</text>
+  <rect x="48" y="328" width="280" height="88" rx="8" fill="#ffffff" stroke="#8a3ffc" stroke-width="1"/>
+  <path d="M 56 328 Q 48 328 48 336 V 408 Q 48 416 56 416 Z" fill="#8a3ffc"/>
+<g transform="translate(64 360) scale(0.75)" fill="#161616"><path d="M27,16h-2v2h-1c-1.1,0-2,.9-2,2v2c0,1.1.9,2,2,2h4v2h-6v2h3v2h2v-2h1c1.1,0,2-.9,2-2v-2c0-1.1-.9-2-2-2h-4v-2h6v-2h-3v-2ZM28,8h-6v-4c0-1.1-.9-2-2-2h-8c-1.1,0-2,.9-2,2v4h-6c-1.1,0-2,.9-2,2v14c0,1.1.9,2,2,2h15v-2H4v-14h24v4h2v-4c0-1.1-.9-2-2-2ZM20,8h-8v-4h8v4Z"/></g>
+  <text x="104" y="364" font-size="14" font-weight="600" fill="#161616">Cumulative costs</text>
+  <text x="104" y="386" font-size="12" fill="#525252">Total labor, parts, and downtime costs</text>
+  <rect class="node" id="n_hist" x="32" y="96" width="312" height="328" fill="none" stroke="none"/>
+  <rect x="384" y="32" width="312" height="456" rx="8" fill="#f4f4f4" stroke="#8d8d8d" stroke-width="1"/>
+  <rect x="384" y="32" width="312" height="48" rx="8" fill="#e0e0e0"/>
+  <rect x="384" y="72" width="312" height="8" fill="#e0e0e0"/>
+<g transform="translate(400 44) scale(0.75)" fill="#161616"><path d="M29,27.5859l-7.5521-7.5521a11.0177,11.0177,0,1,0-1.4141,1.4141L27.5859,29ZM4,13a9,9,0,1,1,9,9A9.01,9.01,0,0,1,4,13Z"/></g>
+  <text x="440" y="62" font-size="16" font-weight="600" fill="#161616">Performance evaluation</text>
+  <rect class="node" id="n_ev1" x="400" y="104" width="280" height="88" rx="8" fill="#ffffff" stroke="#fa4d56" stroke-width="1"/>
+  <path d="M 408 104 Q 400 104 400 112 V 184 Q 400 192 408 192 Z" fill="#fa4d56"/>
+<g transform="translate(416 136) scale(0.75)" fill="#fa4d56"><path d="M16,2C8.3,2,2,8.3,2,16s6.3,14,14,14s14-6.3,14-14C30,8.3,23.7,2,16,2z M14.9,8h2.2v11h-2.2V8z M16,25&#9;c-0.8,0-1.5-0.7-1.5-1.5S15.2,22,16,22c0.8,0,1.5,0.7,1.5,1.5S16.8,25,16,25z"/></g>
+  <text x="456" y="140" font-size="14" font-weight="600" fill="#161616">Recurring failure patterns</text>
+  <text x="456" y="162" font-size="12" fill="#525252">Detects repeat equipment problems</text>
+  <rect class="node" id="n_ev2" x="400" y="216" width="280" height="88" rx="8" fill="#ffffff" stroke="#007d79" stroke-width="1"/>
+  <path d="M 408 216 Q 400 216 400 224 V 296 Q 400 304 408 304 Z" fill="#007d79"/>
+<g transform="translate(416 248) scale(0.75)" fill="#161616"><path d="M4.67,28l6.39-12,7.3,6.49a2,2,0,0,0,1.7.47,2,2,0,0,0,1.42-1.07L27,10.9,25.18,10,19.69,21l-7.3-6.49A2,2,0,0,0,10.71,14a2,2,0,0,0-1.42,1L4,25V2H2V28a2,2,0,0,0,2,2H30V28Z"/></g>
+  <text x="456" y="252" font-size="14" font-weight="600" fill="#161616">Usage versus schedule</text>
+  <text x="456" y="274" font-size="12" fill="#525252">Compares calendar intervals to actual run hours</text>
+  <rect class="node" id="n_ev3" x="400" y="328" width="280" height="88" rx="8" fill="#ffffff" stroke="#8a3ffc" stroke-width="1"/>
+  <path d="M 408 328 Q 400 328 400 336 V 408 Q 400 416 408 416 Z" fill="#8a3ffc"/>
+<g transform="translate(416 360) scale(0.75)" fill="#161616"><path d="M20,16a5,5,0,0,0,10,0,1,1,0,0,0-.1055-.4473L25.896,7.5562a.8913.8913,0,0,0-.0454-.0816A1,1,0,0,0,25,7H18.8218A3.0155,3.0155,0,0,0,17,5.1841V2H15V5.1841A3.0155,3.0155,0,0,0,13.1782,7H7a1,1,0,0,0-.8945.5527l-4,8A1,1,0,0,0,2,16a5,5,0,0,0,10,0,1,1,0,0,0-.1055-.4473L8.6182,9h4.56A3.0147,3.0147,0,0,0,15,10.8154V28H6v2H26V28H17V10.8159A3.0155,3.0155,0,0,0,18.8218,9h4.56l-3.2763,6.5527A1,1,0,0,0,20,16ZM7,19a2.9958,2.9958,0,0,1-2.8152-2h5.63A2.9956,2.9956,0,0,1,7,19Zm2.3821-4H4.6179L7,10.2363ZM16,9a1,1,0,1,1,1-1A1.0009,1.0009,0,0,1,16,9Zm9,10a2.9958,2.9958,0,0,1-2.8152-2h5.63A2.9956,2.9956,0,0,1,25,19Zm0-8.7637L27.3821,15H22.6179Z"/></g>
+  <text x="456" y="364" font-size="14" font-weight="600" fill="#161616">Cost versus asset value</text>
+  <text x="456" y="386" font-size="12" fill="#525252">Evaluates repair and asset cost</text>
+  <rect x="736" y="32" width="312" height="456" rx="8" fill="#f4f4f4" stroke="#8d8d8d" stroke-width="1"/>
+  <rect x="736" y="32" width="312" height="48" rx="8" fill="#e0e0e0"/>
+  <rect x="736" y="72" width="312" height="8" fill="#e0e0e0"/>
+<g transform="translate(752 44) scale(0.75)" fill="#161616"><path d="M30,20A6,6,0,1,0,20,24.46V32l4-1.8936L28,32V24.46A5.98,5.98,0,0,0,30,20Zm-4,8.84-2-.9467L22,28.84V25.65a5.8877,5.8877,0,0,0,4,0ZM24,24a4,4,0,1,1,4-4A4.0045,4.0045,0,0,1,24,24Z"/><path d="M25,5H22V4a2.0058,2.0058,0,0,0-2-2H12a2.0058,2.0058,0,0,0-2,2V5H7A2.0058,2.0058,0,0,0,5,7V28a2.0058,2.0058,0,0,0,2,2h9V28H7V7h3v3H22V7h3v5h2V7A2.0058,2.0058,0,0,0,25,5ZM20,8H12V4h8Z"/></g>
+  <text x="792" y="62" font-size="16" font-weight="600" fill="#161616">Strategic decisions</text>
+  <rect class="node" id="n_dec1" x="752" y="104" width="280" height="88" rx="8" fill="#ffffff" stroke="#0f62fe" stroke-width="1"/>
+  <path d="M 760 104 Q 752 104 752 112 V 184 Q 752 192 760 192 Z" fill="#0f62fe"/>
+<g transform="translate(768 136) scale(0.75)" fill="#161616"><path d="M26,4h-4V2h-2v2h-8V2h-2v2H6C4.9,4,4,4.9,4,6v20c0,1.1,0.9,2,2,2h20c1.1,0,2-0.9,2-2V6C28,4.9,27.1,4,26,4z M26,26H6V12h20&#9;V26z M26,10H6V6h4v2h2V6h8v2h2V6h4V10z"/></g>
+  <text x="808" y="140" font-size="14" font-weight="600" fill="#161616">Optimize PM intervals</text>
+  <text x="808" y="162" font-size="12" fill="#525252">Align service with runtime</text>
+  <rect class="node" id="n_dec2" x="752" y="216" width="280" height="88" rx="8" fill="#ffffff" stroke="#8a3ffc" stroke-width="1"/>
+  <path d="M 760 216 Q 752 216 752 224 V 296 Q 752 304 760 304 Z" fill="#8a3ffc"/>
+<g transform="translate(768 248) scale(0.75)" fill="#161616"><path d="M20,21H12a2,2,0,0,1-2-2V17a2,2,0,0,1,2-2h8a2,2,0,0,1,2,2v2A2,2,0,0,1,20,21Zm-8-4v2h8V17Z"/><path d="M28,4H4A2,2,0,0,0,2,6v4a2,2,0,0,0,2,2V28a2,2,0,0,0,2,2H26a2,2,0,0,0,2-2V12a2,2,0,0,0,2-2V6A2,2,0,0,0,28,4ZM26,28H6V12H26Zm2-18H4V6H28v4Z"/></g>
+  <text x="808" y="252" font-size="14" font-weight="600" fill="#161616">Stock critical spares</text>
+  <text x="808" y="274" font-size="12" fill="#525252">Adjust stock for wear parts</text>
+  <rect class="node" id="n_dec3" x="752" y="328" width="280" height="88" rx="8" fill="#ffffff" stroke="#0f62fe" stroke-width="1"/>
+  <path d="M 760 328 Q 752 328 752 336 V 408 Q 752 416 760 416 Z" fill="#0f62fe"/>
+<g transform="translate(768 360) scale(0.75)" fill="#161616"><path d="M2 22H30V24H2z"/><path d="M2 26H30V28H2z"/><path d="M24,10a2,2,0,1,0,2,2,2,2,0,0,0-2-2Z"/><path d="M16,16a4,4,0,1,1,4-4A4.0045,4.0045,0,0,1,16,16Zm0-6a2,2,0,1,0,2,2A2.002,2.002,0,0,0,16,10Z"/><path d="M8,10a2,2,0,1,0,2,2,2,2,0,0,0-2-2Z"/><path d="M28,20H4a2.0051,2.0051,0,0,1-2-2V6A2.0051,2.0051,0,0,1,4,4H28a2.0051,2.0051,0,0,1,2,2V18A2.0027,2.0027,0,0,1,28,20ZM28,6H4V18H28Z"/></g>
+  <text x="808" y="364" font-size="14" font-weight="600" fill="#161616">Repair versus replace</text>
+  <text x="808" y="386" font-size="12" fill="#525252">Justify capital replacement</text>
+  <!-- Connectors -->
+  <path class="connector" id="k1" data-from="n_hist" data-to="n_ev1" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 344 144 H 400"/>
+  <path class="connector" id="k2" data-from="n_hist" data-to="n_ev2" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 344 256 H 400"/>
+  <path class="connector" id="k3" data-from="n_hist" data-to="n_ev3" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 344 368 H 400"/>
+  <path class="connector" id="k4" data-from="n_ev1" data-to="n_dec1" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 680 144 H 752"/>
+  <path class="connector" id="k5" data-from="n_ev2" data-to="n_dec2" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 680 256 H 752"/>
+  <path class="connector" id="k6" data-from="n_ev3" data-to="n_dec3" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 680 368 H 752"/>
+</svg>

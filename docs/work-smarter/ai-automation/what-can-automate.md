@@ -22,8 +22,19 @@ Automation in Maximo Application Suite Select addresses four major operational m
 | **Inventory reorder calculation** | Inventory, Cron Task lite | Calculates current balances against minimum thresholds and economic order quantities | Creating restock requisitions when food-grade lubricant stock drops below 5 drums |
 | **Mobile push alerts** | Push Notifications Administration | Dispatches immediate notifications directly to technician mobile devices | Alerting on-call technicians to emergency breakdowns in the Cold Storage Room |
 
-<img src="../../images/sample_automation_cron_architecture.svg" alt="Automated background processing architecture in Cron Task lite" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
+<img src="../../images/sample_automation_cron_architecture.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 1: Automated background processing architecture in Cron Task lite</p>
+
+As shown in Figure 1, the Cron Task lite background engine automates maintenance scheduling and inventory replenishment across three core tasks and two operational dispatch channels:
+
+1. **Background Engine (Cron Task lite)**: Executes automated background processing on configured schedules without manual user intervention.
+2. **Automated tasks**:
+   - **`PMWOGENCRONTASK`**: Evaluates active preventive maintenance intervals and automatically generates scheduled PM work orders within configured lead times.
+   - **`MEASUREPOINTWOGENCRONTASK`**: Evaluates condition monitoring meter logs and triggers corrective work orders when action limits are breached.
+   - **`REORDERCRONTASK`**: Scans current storeroom balances and automatically creates restock requisitions for low-stock items.
+3. **Dispatch outcomes**:
+   - **Work dispatch**: Routes generated PM and condition-based work orders directly to technician mobile push alerts and supervisor Work Queue cards.
+   - **Inventory dispatch**: Routes generated material requisitions directly to the storeroom restock queue.
 
 ## Scheduled background tasks in Cron Task lite
 

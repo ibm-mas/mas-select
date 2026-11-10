@@ -8,8 +8,16 @@ Optimizing maintenance performance in Maximo Application Suite Select involves c
 
 Effective maintenance programs follow a closed-loop refinement cycle:
 
-<img src="../../images/sample_continuous_optimization_cycle.svg" alt="Continuous maintenance performance optimization cycle" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
+<img src="../../images/sample_continuous_optimization_cycle.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 1: Continuous maintenance performance optimization cycle</p>
+
+As shown in Figure 1, continuous maintenance optimization operates as a closed-loop cycle across four progressive steps and an ongoing refinement loop:
+
+1. **Step 1: Execute work**: Technicians perform preventive, corrective, and inspection tasks in the field.
+2. **Step 2: Log actuals**: Technicians record accurate actual labor hours, materials used, and failure codes.
+3. **Step 3: Analyze KPIs**: Reliability engineers and supervisors evaluate key performance metrics, such as PM compliance and equipment availability.
+4. **Step 4: Identify changes**: The maintenance team pinpoints operational bottlenecks and formulates targeted process revisions.
+5. **Refinement actions**: Adjustments such as extending PM intervals, refining job plan torque specifications, and pre-staging replacement parts feed directly back into Step 1 for ongoing execution.
 
 ### Table 1: Maintenance optimization stages and techniques
 

@@ -4,8 +4,14 @@ Create job plans that list the steps, parts, and tools for common maintenance ta
 
 You plan the work once. Then you reuse the plan. This saves time and reduces mistakes.
 
-!!! warning "TODO: Add visual content"
-     A diagram showing how job plans flow into work orders would be useful here.
+Figure 1 illustrates how a job plan template flows into an approved work order:
+
+- **Job plan template**: defines sequential task steps, estimated labor and craft hours, required materials and quantities, special tools, and default work order priority.
+- **Application paths**: attached to a recurring preventive maintenance schedule or applied directly to an on-demand corrective work order.
+- **Approved work order outcome**: upon approval, the system automatically populates task checklists, schedules labor assignments, generates storeroom material reservations, and applies priority ratings.
+
+<img src="../../images/sample_job_plan_work_order_flow.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
+<p class="figure-caption">Figure 1: How job plans flow into work orders</p>
 
 ## 💡 Tips for success
 

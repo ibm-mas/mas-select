@@ -13,8 +13,10 @@ Record the failure using failure codes, create a work order to fix it, and track
 | **Cause** | Why it failed | Normal wear |
 | **Remedy** | How it was fixed | Replaced seal, cleaned nozzle assembly |
 
-!!! warning "TODO: Add visual content"
-     A diagram showing the failure reporting workflow would be useful here.
+Figure 1 illustrates the failure reporting workflow: when equipment breaks down, the technician selects the asset failure class, selects the specific problem code, identifies the root cause, records the remedy code, and logs asset downtime.
+
+<img src="../../images/sample_failure_reporting_flow.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
+<p class="figure-caption">Figure 1: Failure reporting workflow from asset class to remedy</p>
 
 ---
 
@@ -22,7 +24,7 @@ Record the failure using failure codes, create a work order to fix it, and track
 
 **Be specific:**
 
-- Don't just say "broken" - describe what failed
+- Don't just say "broken": describe what failed
 - Use correct failure codes
 - Include relevant details
 
@@ -179,8 +181,10 @@ Use failure data to:
 - Train operators on common issues
 - Budget for repairs and replacements
 
-!!! warning "TODO: Add visual content"
-     A diagram showing how to use failure data for decision-making would be useful here.
+Figure 2 illustrates how aggregated failure records and downtime metrics feed reliability analysis to optimize preventive maintenance schedules, guide operator training, and justify equipment replacement.
+
+<img src="../../images/sample_failure_decision_making_flow.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
+<p class="figure-caption">Figure 2: Using failure data for reliability decision making</p>
 
 ---
 

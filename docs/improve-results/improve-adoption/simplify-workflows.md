@@ -36,8 +36,17 @@ Maximo Application Suite Select provides both comprehensive desktop applications
 | **Maintenance Planner** | Work orders | Job Plans, PM, Routes | Build multi-step maintenance plans, schedule recurring PMs, coordinate craft routes |
 | **Reliability Engineer** | Asset Manager | Assets, Condition Monitoring, Failure Codes | Manage asset registries, configure upper and lower meter limits, analyze failure trends |
 
-<img src="../../images/sample_simplified_work_routing.svg" alt="Simplified work order routing and execution workflow" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
+<img src="../../images/sample_simplified_work_routing.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 1: Simplified work order routing and execution workflow</p>
+
+As shown in Figure 1, a simplified routing model processes maintenance work across four distinct stages:
+
+1. **Work ingestion**: The system or a requester generates a work order.
+2. **Triage and approval routing**: Work splits according to urgency:
+   - **Emergency and critical work**: Routes to the supervisor queue for direct supervisor review.
+   - **Routine PM and minor repairs**: Auto-approves to bypass administrative delays and routes directly to craft assignment.
+3. **Execution**: Both streams converge in the Technician app, where technicians view assigned work orders and execute tasks in the field.
+4. **Completion**: Technicians log labor hours, parts, and notes in the mobile interface, automatically triggering completion notifications to stakeholders.
 
 ## Configuring user profile defaults
 
