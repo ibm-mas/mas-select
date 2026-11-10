@@ -100,9 +100,6 @@ Location imports fail when they reference supporting records that don't exist in
 
 Asset imports fail due to object structure, data issues, or missing referenced records.
 
-!!! warning "TODO: Add visual content"
-     A screenshot showing typical asset import error messages would be useful here.
-
 ### Common asset import problems and solutions
 
 ### Table 1: Common asset import problems and solutions
@@ -201,8 +198,15 @@ Problems with the data itself cause import failures.
 
 **What to do**: Validate data against system values before importing.
 
-!!! warning "TODO: Add visual content"
-     A screenshot of an error file showing validation failures would be helpful.
+### Table 2: Common data import error messages and solutions
+
+| Error message or symptom | Cause | Corrective action |
+| :--- | :--- | :--- |
+| `Parent record not found` | Child location or asset is listed before its parent record | Sort spreadsheet rows top-down so parent records load before child records |
+| `Invalid site identifier` | `SITEID` column is blank or contains a site code that does not exist | Verify the exact `SITEID` code in the Organizations application |
+| `Leading zero truncated` | Spreadsheet software converted numerical ID columns to numbers | Format ID columns as Text before populating data or editing CSV files |
+| `Invalid status code` | Status column uses unapproved status values or non-standard synonyms | Use valid initial statuses such as `NOT READY`, `OPERATING`, or `DRAFT` |
+| `Referenced record does not exist` | Supporting failure class, craft, or GL account is missing | Create the supporting record in its respective application first |
 
 ### Why are only some asset records imported?
 
@@ -255,9 +259,6 @@ Excel can corrupt data in several ways:
 - **Long numbers**: Converts long numbers to scientific notation
 
 **What to do**: Format all columns as text in Excel before entering data, or use a plain text editor to create the CSV.
-
-!!! warning "TODO: Add visual content"
-     A screenshot showing Excel formatting options, such as selecting Format Cells and then Text, would be helpful.
 
 ### Lack of pre-validation leads to late errors
 

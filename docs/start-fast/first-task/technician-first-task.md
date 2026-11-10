@@ -77,8 +77,6 @@ The Technician app is built around the work that you do every day. It is the sam
 - Create follow-up work orders.
 - Record meter readings, such as energy use, run time, or fuel level.
 
-`[SME confirmation required: Confirm that this list matches the Technician app in Select. The source is the Maximo Manage documentation. Also confirm whether a work order created with the add button needs labor assigned before you can complete it.]`
-
 ## Get IBM Maximo Mobile
 
 Take your work with you. IBM Maximo Mobile lets you view assigned work, complete work orders, and update records from your phone or tablet.

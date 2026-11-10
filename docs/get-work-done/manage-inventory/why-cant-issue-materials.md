@@ -2,9 +2,6 @@
 
 Material issues fail when required fields or relationships are missing.
 
-!!! warning "TODO: Add visual content"
-     A screenshot showing the material issue screen with required fields highlighted would be useful here.
-
 ## What to check first
 
 ### Storeroom, item, and quantity are valid
@@ -151,15 +148,20 @@ If materials were reserved for a work order, issuing different materials can cau
 
 ---
 
-## What happens next?
+## Material issue troubleshooting checklist
 
-To resolve material issue problems:
+Use this checklist to identify why a material transaction failed to record:
 
-1. Verify all required information is correct
-2. Check work order status allows charging
-3. Confirm the transaction completed successfully
-4. Verify inventory updated correctly
-5. Contact your system administrator if problems persist
+### Table 1: Material issue troubleshooting checklist
+
+| Check | Item | What to verify |
+| :--- | :--- | :--- |
+| [ ] | Chargeable work order status | Work order is in an approved or in-progress status (APPR, WSCHED, or INPRG), not WAPPR, CAN, or CLOSE |
+| [ ] | Active storeroom | Selected storeroom record exists and is set to ACTIVE status |
+| [ ] | Inventory item record | Item is linked to the storeroom with an established inventory record |
+| [ ] | Bin balance availability | Storeroom bin has sufficient quantity on hand, or the storeroom allows negative balance |
+| [ ] | Unit of measure alignment | Issue unit on the transaction matches the inventory issue unit defined for the item |
+| [ ] | Storeroom user authorization | User account has security authorization to issue materials from the selected storeroom |
 
 ---
 

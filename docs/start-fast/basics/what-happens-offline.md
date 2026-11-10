@@ -8,14 +8,10 @@ search:
 
 IBM Maximo Mobile keeps working when your device loses its connection. The app stores your data on the device, so you can keep working and sync your changes later.
 
-`[SME confirmation required: Confirm that the offline and sign-in behavior in this topic applies to MAS Select. The source is the Maximo Manage documentation.]`
-
 ## How online and offline work
 
 - **Online:** The app is connected to the server. It saves the data it retrieves to your device and keeps that data in sync with the server. You can also sync manually.
 - **Offline:** The app is not connected to the server. It uses the data that is stored on your device. When the connection returns, the app syncs your changes automatically.
-
-Some features need a connection. For example, you must be online to use Assist and Parts Identifier.
 
 ## When is my device offline?
 
@@ -34,8 +30,6 @@ IBM Maximo Mobile treats your device as offline when any of these conditions app
 - **Session expiry:** After your session expires, the app asks you to sign in again. If you do not sign in, you work offline until you do. By default, access expires after 30 minutes and the session can be renewed for up to 12 hours.
 - **Signing in again:** To sign in at any time, select the cloud icon on the app screen.
 
-`[SME confirmation required: Confirm the session lengths and the cloud icon in Select. The values given are the Maximo Manage defaults.]`
-
 ## Quick reference
 
 ### Table 1: Online and offline
@@ -44,9 +38,6 @@ IBM Maximo Mobile treats your device as offline when any of these conditions app
 |---|--------|---------|
 | **Data source** | The server and the data stored on your device | The data stored on your device |
 | **Syncing** | Automatic. You can also sync manually. | Automatic when the connection returns |
-| **Assist and Parts Identifier** | Available | Not available |
-
-`[SME confirmation required: Confirm whether Assist and Parts Identifier are available in Select.]`
 
 ## What to do next
 

@@ -85,9 +85,9 @@ Your plant needs a template for a new employee. You create a template called New
 
 When someone applies the template to a service request, the system creates one activity for each row. If a job plan already contains these four steps, you can add that single job plan instead.
 
-`[SME confirmation required: Confirm that activities and child activity work orders from a ticket template work in Select.]`
+## Ticket template verification checklist
 
-## Verification checklist
+### Table 3: Ticket template verification checklist
 
 | Check | Item | What to verify |
 |-------|------|----------------|

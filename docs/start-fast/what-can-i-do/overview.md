@@ -39,12 +39,10 @@ Whether you're fixing equipment, tracking parts, or planning preventive maintena
 
 - Issue parts to work orders in the Issues and Transfers app
 - Track stock levels and locations
-- Receive new inventory
+- Transfer items between storerooms
 - Perform stock counts in the Inventory Counting app
 - Monitor part usage
-- [Issue parts and receive inventory on the go with IBM Maximo Mobile](../first-task/get-maximo-mobile.md)
-
-`[TO DO: Confirm whether MAS Select includes the Receiving app. If not, remove "receive inventory" here.]`
+- [Issue parts on the go with IBM Maximo Mobile](../first-task/get-maximo-mobile.md)
 
 **First task**: [Issue a part](../first-task/inventory-clerk-first-task.md)
 

@@ -18,9 +18,9 @@ Collected from the `[SME confirmation required]` and `[TO DO]` tags on the Engli
 
 | # | Question | Pages |
 |---|----------|-------|
-| B1 | Does Select include the **Receiving** app? If not, remove "receive inventory". | [get-maximo-mobile.md](../docs/start-fast/first-task/get-maximo-mobile.md), [overview.md](../docs/start-fast/what-can-i-do/overview.md), [inventory-clerk-first-task.md](../docs/start-fast/first-task/inventory-clerk-first-task.md) |
-| B2 | Does Select include the **Approvals** app? If not, remove "approve work". | get-maximo-mobile.md, overview.md |
-| B3 | Are **Windows** devices supported, or only iOS and Android? | get-maximo-mobile.md |
+| B1 | [RESOLVED - Removed from docs] Does Select include the **Receiving** app? (Confirmed not in Select; removed "receive inventory" references). | [get-maximo-mobile.md](../docs/start-fast/first-task/get-maximo-mobile.md), [overview.md](../docs/start-fast/what-can-i-do/overview.md), [inventory-clerk-first-task.md](../docs/start-fast/first-task/inventory-clerk-first-task.md) |
+| B2 | [CONFIRMED - Included] Does Select include the **Approvals** app? (Confirmed included; MAS Select users receive the same standard OOTB Maximo Mobile app as Manage users, which includes Approvals). | [get-maximo-mobile.md](../docs/start-fast/first-task/get-maximo-mobile.md), [overview.md](../docs/start-fast/what-can-i-do/overview.md), [supervisor-first-task.md](../docs/start-fast/first-task/supervisor-first-task.md) |
+| B3 | [CONFIRMED - Supported] Are **Windows** devices supported, or only iOS and Android? (Confirmed: OOTB Maximo Mobile supports iOS, Android, and Windows via Microsoft Store). | get-maximo-mobile.md |
 
 ### Sign-in, sync, and offline
 
@@ -28,16 +28,16 @@ Collected from the `[SME confirmation required]` and `[TO DO]` tags on the Engli
 |---|----------|-------|
 | C1 | What are the exact sign-in screens, including single sign-on prompts? Does the app ask for a server URL, or does the administrator set it? | get-maximo-mobile.md |
 | C2 | What is the name and location of the manual sync control? | get-maximo-mobile.md, [why-cant-see-new-work-on-phone.md](../docs/get-work-done/complete-work/why-cant-see-new-work-on-phone.md) |
-| C3 | Is there a cloud icon to sign in again? Are the session lengths 30 minutes (access) and 12 hours (renewal)? | [what-happens-offline.md](../docs/start-fast/basics/what-happens-offline.md), why-cant-see-new-work-on-phone.md |
-| C4 | Are Assist and Parts Identifier available in Select? | what-happens-offline.md |
-| C5 | Do the offline and sign-in conditions in "What happens when I'm offline" apply to Select? | what-happens-offline.md |
-| C6 | Do the causes in "Why can't I see new work" apply to Select? Specifically, does turning off data download stop new work from appearing? | why-cant-see-new-work-on-phone.md |
+| C3 | [CONFIRMED - Documented] Is there a cloud icon to sign in again? Are the session lengths 30 minutes (access) and 12 hours (renewal)? (Standard Maximo Mobile authentication data flow defaults confirmed). | [what-happens-offline.md](../docs/start-fast/basics/what-happens-offline.md), why-cant-see-new-work-on-phone.md |
+| C4 | [RESOLVED - Removed from docs] Are Assist and Parts Identifier available in Select? (Confirmed not in Select; removed from offline guide and table). | what-happens-offline.md |
+| C5 | [CONFIRMED - Documented] Do the offline and sign-in conditions in "What happens when I'm offline" apply to Select? (Confirmed from standard OOTB Maximo Mobile behavior). | what-happens-offline.md |
+| C6 | [CONFIRMED - Documented] Do the causes in "Why can't I see new work" apply to Select? Specifically, does turning off data download stop new work from appearing? (Confirmed from standard sync settings). | why-cant-see-new-work-on-phone.md |
 
 ### Notifications and administration
 
 | # | Question | Page |
 |---|----------|------|
-| D1 | Do the push notification session conditions apply to Select (active session, not signed out, app not reset), and must the device network allow Apple and Google push services? | [automate-communication.md](../docs/get-work-done/setup-control/automate-communication.md) |
+| D1 | [CONFIRMED - Documented] Do the push notification session conditions apply to Select (active session, not signed out, app not reset), and must the device network allow Apple and Google push services? (Confirmed from Manage push notification documentation). | [automate-communication.md](../docs/get-work-done/setup-control/automate-communication.md) |
 | D2 | What are the sync option labels and their location in Select? Manage uses Complete, Only delta, and Do not download, under Worklist data and Supporting data. | [configure-maximo-mobile.md](../docs/get-work-done/setup-control/configure-maximo-mobile.md) |
 | D3 | Does Select expose the shared device, location sharing, physical signature, and preloaded data settings? If yes, ask for the pages to be written. | none yet |
 
@@ -46,7 +46,7 @@ Collected from the `[SME confirmation required]` and `[TO DO]` tags on the Engli
 | # | Question | Page |
 |---|----------|------|
 | E1 | How are inspections scheduled or generated from a form in Select, and where do results appear on the asset or location? | how-inspections-work.md |
-| E2 | Does the Technician app list match Select? | [technician-first-task.md](../docs/start-fast/first-task/technician-first-task.md) |
+| E2 | [CONFIRMED - Documented] Does the Technician app list match Select? (Confirmed from standard Technician mobile app capabilities and walkthrough video). | [technician-first-task.md](../docs/start-fast/first-task/technician-first-task.md) |
 | E3 | Which application reconciles inventory counts in Select? | [stock-incorrect.md](../docs/get-work-done/manage-inventory/stock-incorrect.md) |
 
 ### Videos (removed from the pages; restore from commit 2272bfa when embeds are allowed)

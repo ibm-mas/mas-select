@@ -76,7 +76,7 @@ plugins:
             Assets: Actifs
             Work orders: Ordres de travail
             Why apps overlap: Pourquoi des applications se chevauchent
-            Other mobile apps: Autres applications mobiles
+            Mobile apps: Applications mobiles
             How inspections work: Fonctionnement des inspections
             Working offline: Travailler hors ligne
             How concepts work together: Articulation des concepts
@@ -212,7 +212,7 @@ nav:
       - Work orders: start-fast/basics/what-is-work-order.md
       - How concepts work together: start-fast/basics/how-concepts-work-together.md
       - Why apps overlap: start-fast/basics/why-apps-overlap.md
-      - Other mobile apps: start-fast/basics/other-mobile-apps.md
+      - Mobile apps: start-fast/basics/other-mobile-apps.md
       - How inspections work: start-fast/basics/how-inspections-work.md
       - Working offline: start-fast/basics/what-happens-offline.md
       - Term differences: start-fast/basics/why-do-terms-differ.md

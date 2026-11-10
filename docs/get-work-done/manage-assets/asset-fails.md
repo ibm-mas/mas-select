@@ -107,9 +107,6 @@ What was done to resolve the failure:
 
 Recording the remedy completes the picture. If the same problem keeps recurring with the same cause but different remedies, the data shows which fix actually works and which ones don't. Without remedy codes, pattern analysis stops at "what broke" and never reaches "what actually fixes it."
 
-!!! warning "TODO: Add visual content"
-     A screenshot showing the failure code hierarchy would be useful here.
-
 ---
 
 ## How do I report a failure?
@@ -145,9 +142,6 @@ Recording the remedy completes the picture. If the same problem keeps recurring 
    - Fix the problem
    - Document what you did
    - Close the work order
-
-!!! warning "TODO: Add visual content"
-     A video showing how to report a failure on a work order would be useful here.
 
 ---
 
@@ -226,7 +220,23 @@ If the cause isn't clear:
 1. Use "Unknown" or "Under Investigation".
 2. Add notes about what you observed.
 3. Update the failure code when cause is determined.
-4. Don't guess - inaccurate data is worse than incomplete data.
+4. Don't guess: inaccurate data is worse than incomplete data.
+
+---
+
+## Failure reporting verification checklist
+
+Use this checklist to ensure complete and actionable failure reporting on work orders:
+
+### Table 2: Failure reporting verification checklist
+
+| Check | Item | What to verify |
+| :--- | :--- | :--- |
+| [ ] | Failure class assigned | Operating equipment record has a valid Failure Class defined on its asset master |
+| [ ] | Problem code selected | Specific failure symptom is chosen on the Failure Reporting tab |
+| [ ] | Cause code identified | Root cause code is selected from the causes linked to the problem |
+| [ ] | Remedy code recorded | Action code describing how the failure was corrected is logged |
+| [ ] | Downtime recorded | Actual equipment downtime hours and timestamps are entered on the work order |
 
 ---
 

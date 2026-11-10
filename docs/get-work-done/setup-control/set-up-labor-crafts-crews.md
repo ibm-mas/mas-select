@@ -133,6 +133,7 @@ Once labor, crafts, and crews are set up:
 - [How do I assign the correct people?](../organize-people/assign-right-people.md): Assign labor or crews to work orders.
 - [How do I plan recurring maintenance?](../plan-work/plan-recurring-maintenance.md): Add labor requirements to job plans.
 - [How do I schedule work?](../plan-work/schedule-work.md): Use calendars and routes to organize your team's work.
+- [What apps are in IBM Maximo Mobile?](../../start-fast/basics/other-mobile-apps.md): Learn how field teams use Timesheet and Crew Manager on mobile devices.
 
 ---
 

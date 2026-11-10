@@ -13,9 +13,6 @@ Monitor what's in your storerooms so you know what's available, what needs reord
 | **Reserved quantity** | Parts allocated to work orders |
 | **Reorder point** | Minimum level before reordering |
 
-!!! warning "TODO: Add visual content"
-     A dashboard showing key inventory metrics would be useful here.
-
 ---
 
 ## 💡 Tips for success
@@ -106,9 +103,6 @@ How items are being consumed.
    - Reorder point and minimum stock level
 
 If the item is in multiple storerooms, you can view all locations on one screen and compare quantities across sites.
-
-!!! warning "TODO: Add visual content"
-     A screenshot showing the inventory balance view would be useful here.
 
 ### Check storeroom contents
 
@@ -210,9 +204,6 @@ The +1 means a reorder point of 0 still triggers an order when balance hits zero
    - Transfer from another storeroom
    - Adjust reorder settings if needed
 
-!!! warning "TODO: Add visual content"
-     A screenshot showing the reorder report would be useful here.
-
 ---
 
 ## How do I track item costs?
@@ -267,9 +258,6 @@ Use this information to:
 - Improve reorder quantities
 - Reduce excess inventory
 
-!!! warning "TODO: Add visual content"
-     A graph showing usage trends would be useful here.
-
 ---
 
 ## Special inventory types
@@ -292,8 +280,14 @@ For grouped items:
 - Maintain kit integrity
 - Simplify common issues
 
-!!! warning "TODO: Add visual content"
-     A comparison table of special item types would be useful here.
+### Table 3: Special item types comparison
+
+| Item type | How it works | Typical example |
+| :--- | :--- | :--- |
+| **Rotating items** | Rebuildable units tracked by inventory balance and individual asset serial number | 50 HP slurry pumps, electric drive motors, and gearboxes |
+| **Item kits** | Pre-assembled collections of items issued together under a single kit identifier | PM overhaul seal kits, filter replacement bundles |
+| **Condition-enabled items** | Items tracked and valued by distinct physical condition rates | Reconditioned spare valves, refurbished circuit breakers |
+| **Lotted items** | Batches tracked by unique lot identifiers for expiration and manufacturer traceability | Food-grade lubricants, chemical sanitizers, and specialty adhesives |
 
 ---
 

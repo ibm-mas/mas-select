@@ -206,7 +206,7 @@ A good asset hierarchy reflects how equipment is maintained, inspected, and repo
 
 ---
 
-## Planning checklist
+## Asset hierarchy planning checklist
 
 Before loading your asset hierarchy into Maximo Application Suite Select, verify each planning requirement:
 

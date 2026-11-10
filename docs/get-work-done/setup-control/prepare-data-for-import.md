@@ -2,9 +2,6 @@
 
 Proper data preparation prevents import failures and ensures data quality.
 
-!!! warning "TODO: Add visual content"
-     A screenshot showing a well-formatted import file would be useful here.
-
 ## 💡 Tips for success
 
 - **Start with a template**: Export existing records to see correct format
@@ -42,9 +39,6 @@ Excel can corrupt data in several ways:
 - **Long numbers**: Converts long numbers to scientific notation
 
 **What to do**: Format all columns as text in Excel before entering data, or use a plain text editor to create the CSV.
-
-!!! warning "TODO: Add visual content"
-     A screenshot showing Excel formatting options (Format Cells → Text) would be helpful.
 
 ### Clean your data
 
@@ -137,9 +131,6 @@ For locations and parent-child relationships:
 - Which records will fail
 - What errors need to be fixed
 
-!!! warning "TODO: Add visual content"
-     A screenshot of the import preview screen showing validation results would be useful here.
-
 !!! warning "Without validation"
     If you skip validation, errors are only discovered after processing. This can result in:
     
@@ -157,6 +148,25 @@ After preparing your data:
 2. Fix any errors identified
 3. Process the import
 4. Verify records were created successfully
+
+---
+
+## Pre-import data validation checklist
+
+Before uploading your file into Data Management, verify each data preparation step:
+
+### Table 3: Pre-import data validation checklist
+
+| Check | Item | What to verify |
+| :--- | :--- | :--- |
+| [ ] | CSV file encoding | File is saved in CSV format with UTF-8 encoding |
+| [ ] | Text column formatting | ID, code, and date columns are formatted as Text in spreadsheet software |
+| [ ] | Leading zeros preserved | Asset numbers, location codes, and part identifiers retain leading zeros |
+| [ ] | Header row alignment | Column names match system attribute names and case sensitivity |
+| [ ] | Mandatory site and org keys | Every row contains valid SITEID and ORGID values |
+| [ ] | Top-down hierarchical sort | Parent locations and parent assets appear in rows before their child records |
+| [ ] | Referenced data verified | Status codes, failure classes, crafts, and vendors exist in the system |
+| [ ] | Batch size limit | Large datasets are split into batches of 1,000 to 5,000 rows |
 
 ---
 

@@ -26,7 +26,7 @@ View all work orders, meter readings, and maintenance activities for any asset i
 
 ---
 
-## 💡 Tips for success
+### 💡 Tips: Best practices for asset history
 
 **For technicians:**
 

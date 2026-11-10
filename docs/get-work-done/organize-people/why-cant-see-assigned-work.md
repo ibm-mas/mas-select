@@ -2,9 +2,6 @@
 
 This is one of the most common issues. Work is assigned, but the technician can't see it in their queue.
 
-!!! warning "TODO: Add visual content"
-     A screenshot showing an empty work queue vs. a populated work queue would be useful here.
-
 ## Likely causes
 
 ### User permissions were updated but sessions weren't refreshed
@@ -92,9 +89,6 @@ Supervisors often struggle with visibility into team workload and assignments.
 - Ask your system administrator about available workload views
 - Consider using dashboards that show team assignments
 
-!!! warning "TODO: Add visual content"
-     A screenshot showing a supervisor dashboard with team workload distribution would be useful here.
-
 ---
 
 ## Why do assignments disappear after work order completion?
@@ -114,15 +108,21 @@ Assignments are typically removed when the work order is closed or completed.
 
 ---
 
-## What happens next?
+## Work assignment visibility checklist
 
-To resolve visibility issues:
+Use this checklist to diagnose and resolve missing work order assignments:
 
-1. Have technicians log out and back in
-2. Verify site access and permissions
-3. Check data restrictions
-4. Clear cached sessions if needed
-5. Contact your system administrator if problems persist
+### Table 1: Work assignment visibility checklist
+
+| Check | Item | What to verify |
+| :--- | :--- | :--- |
+| [ ] | Active labor record | Technician username is linked to an active Labor record in the Labor application |
+| [ ] | Craft and skill match | Labor record craft matches the craft required on the work order assignment |
+| [ ] | Shift calendar active | Calendar and shift assigned to the labor record cover the scheduled work date |
+| [ ] | Assignment dates valid | Labor assignment has an effective start date and no expired end date |
+| [ ] | Work order status | Work order is in APPR, WSCHED, or INPRG status, not WAPPR or CLOSE |
+| [ ] | Site security access | User security group grants permission to view records for the specific site |
+| [ ] | Session refreshed | Technician has signed out and signed back in after recent permission updates |
 
 ---
 

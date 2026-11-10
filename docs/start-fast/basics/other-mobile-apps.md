@@ -1,88 +1,133 @@
 ---
 search:
   boost: 2
-  keywords: timesheet crew manager locations material request assets asset manager mobile apps tiles labor hours crew work orders meter readings request parts which apps can I see
+  keywords: mobile apps maximo mobile technician inspections approvals issues and transfers inventory counting service requests timesheet crew manager locations material request assets asset manager tiles permissions offline
 ---
 
-# What do the other apps in IBM Maximo Mobile do?
+# What apps are in IBM Maximo Mobile?
 
-IBM Maximo Mobile has more apps than Technician and Inspections. Some help you review your hours, work as a crew, keep locations and assets up to date, or ask for parts while you are on site.
+IBM Maximo Mobile provides role-based applications on your mobile device or tablet. You can complete work orders, conduct inspections, manage storeroom inventory, approve work, review reported hours, and update asset and location records while in the field.
 
-The apps you see depend on the security group and permissions that your administrator gave you. If you cannot see an app that you expect, ask your administrator.
+The apps you see on your home screen depend on your role and the security groups assigned by your administrator. If an app you need is missing, contact your administrator.
 
 !!! note
     IBM Maximo Mobile is also used with IBM Maximo Manage. If you see references to Maximo Manage, you can ignore them.
 
 ## 💡 Tips for success
 
-- Use the app names on your home screen to find the app you need.
-- Work offline when you have to. The apps sync your changes when your device reconnects.
-- If an app is missing from your home screen, ask your administrator to check your permissions.
+- Use the search bar or app tiles on your home screen to find the app you need.
+- Work offline when you lose connectivity. Your updates save locally and sync automatically when your device reconnects.
+- If an app is missing from your home screen, ask your administrator to verify your security group permissions.
 
-## Timesheet
+## Work execution and supervisor apps
 
-Use Timesheet to review the hours that were reported for you. You can see your labor entries for today or yesterday, such as the work order, the asset or location, and the total hours.
+### Technician
 
-Timesheet is a read-only view of your labor transactions. It always shows the latest information from the server.
+Use the Technician app to review and complete your assigned work orders. You can view work on a map, follow job plans, log labor, tools, and materials, report failure codes, attach photos, and record meter readings.
 
-`[SME confirmation required: Confirm that Timesheet in Select is a read-only view and that reported hours appear as actuals on the work order.]`
+To get started with completing work orders, see [Technician: Complete your first work order](../first-task/technician-first-task.md).
 
-## Crew Manager
+### Inspections
 
-Use Crew Manager to work with the work orders that are assigned to a crew. A crew member or crew supervisor can start and stop work and travel timers for the whole crew. The app then creates labor for every active crew member. When the crew completes the work order, the open labor entries close.
+Use Inspections to complete inspection forms for assets and locations. You can answer required questions, record measurements, attach photos, and generate follow-up work orders.
 
-You set up crews in the Crews application. See [How do I set up labor, crafts, and crews?](../../get-work-done/setup-control/set-up-labor-crafts-crews.md)
+To learn more about how inspection forms and checklists operate, see [How do inspections work?](how-inspections-work.md).
 
-`[SME confirmation required: Confirm the name and availability of Crew Manager in Select, and whether administrators can turn crew work on or off with a security option.]`
+### Approvals
 
-## Locations
+Use Approvals to review, approve, and monitor work orders awaiting supervisor authorization. When notifications are enabled, you receive alerts on your device when a work order requires approval.
 
-Use Locations to create and update locations from your device. For example, you can add a new area to the Production building, such as Packaging zone. You can also see the location hierarchy, open a location on the map, and record meter readings for a location.
+To learn more about supervisor workflows, see [Supervisor: Assign and track work](../first-task/supervisor-first-task.md).
 
-Readings that you enter offline sync when your device reconnects.
+### Service Requests
 
-`[SME confirmation required: Confirm the name of this app in Select and the actions it offers.]`
+Use Service Requests to report issues or log maintenance requests directly from your device, and to monitor the status of requests you submitted earlier.
 
-## Material Request
+## Inventory management apps
 
-Use Material Request to ask for parts, tools, or services for a work order, and to check requests that you already made. For example, you might request a seal for a pump that you are repairing.
+### Issues and Transfers
 
-Material Request works offline. Your security group controls whether you can create, update, and approve requests.
+Use Issues and Transfers to issue parts and tools to work orders, issue items without a reservation, and transfer stock between storerooms.
+
+To get started with issuing inventory, see [Inventory clerk: Issue a part](../first-task/inventory-clerk-first-task.md).
+
+### Inventory Counting
+
+Use Inventory Counting to perform physical stock counts and cycle counts in storerooms using count books or ad hoc counts.
+
+To learn more about stock counts and count books, see [What happens if stock is incorrect?](../../get-work-done/manage-inventory/stock-incorrect.md).
+
+### Material Request
+
+Use Material Request to request parts, tools, or services for a work order from the field, and to track previous requests.
 
 `[SME confirmation required: Confirm that Material Request is available in Select and what happens after you submit a request, including whether a reservation is created.]`
 
-## Assets
+## People and team apps
 
-Use Assets to look up the assets that you work on and to keep them current. You can see details such as specifications and meters, view an asset on a map, and create an asset with a few details when you find one that is not in the system yet.
+### Timesheet
 
-On your home screen this app is called Assets. In other topics in this help center it is called Asset Manager, which tells it apart from the Assets application on the desktop.
+Use Timesheet to review your personal reported labor transactions. You can check labor entries recorded for today or earlier, including the associated work order, asset, location, and total hours.
+
+`[SME confirmation required: Confirm that Timesheet in Select is a read-only view and that reported hours appear as actuals on the work order.]`
+
+### Crew Manager
+
+Use Crew Manager to manage work orders assigned to a crew. A crew leader or supervisor can start and stop timers for the entire crew, recording labor for all active crew members simultaneously.
+
+To set up crews, see [How do I set up labor, crafts, and crews?](../../get-work-done/setup-control/set-up-labor-crafts-crews.md).
+
+`[SME confirmation required: Confirm the name and availability of Crew Manager in Select, and whether administrators can turn crew work on or off with a security option.]`
+
+## Asset and location management apps
+
+### Locations
+
+Use Locations to view, create, and update location records in the field. You can navigate location hierarchies, view locations on a map, and record location meter readings.
+
+To learn more about location structures, see [How do I plan my location hierarchy?](../../get-work-done/setup-control/plan-your-location-hierarchy.md).
+
+`[SME confirmation required: Confirm the name of this app in Select and the actions it offers.]`
+
+### Assets
+
+Use Assets, also known as Asset Manager, to look up equipment details, specifications, and meter readings, view asset locations on maps, and register new assets found in the field.
+
+To learn more about asset structures, see [How do I plan my asset hierarchy?](../../get-work-done/setup-control/plan-your-asset-hierarchy.md).
 
 `[SME confirmation required: Confirm that the Assets app on the home screen is the app called Asset Manager, and confirm which assets it shows to each user.]`
 
 ## Quick reference
 
-### Table 1: Other apps in IBM Maximo Mobile
+### Table 1: Apps in IBM Maximo Mobile
 
-| App | Use it to |
-|-----|-----------|
-| **Timesheet** | Review your reported labor hours. |
-| **Crew Manager** | Work on work orders assigned to a crew. |
-| **Locations** | Create, update, and review locations. |
-| **Material Request** | Ask for parts, tools, or services for a work order. |
-| **Assets** | Look up, update, and create assets. |
+| App | Primary use |
+|-----|-------------|
+| **Technician** | View and complete assigned work orders, report labor, materials, tools, and record meter readings. |
+| **Inspections** | Conduct scheduled and unscheduled inspections, complete checklists, and log results. |
+| **Approvals** | Review and approve work orders requiring supervisor sign-off. |
+| **Service Requests** | Create service requests to report issues and track request status. |
+| **Issues and Transfers** | Issue reserved or non-reserved parts to work orders and transfer items between storerooms. |
+| **Inventory Counting** | Perform physical stock counts and cycle counts. |
+| **Material Request** | Request parts, tools, or services for a work order from the field. |
+| **Timesheet** | Review reported labor entries and hours. |
+| **Crew Manager** | Track work and log collective labor hours for crew-assigned work orders. |
+| **Locations** | Review location hierarchies, update location records, and log location meters. |
+| **Assets** | Search equipment, view specifications and meters, and register new assets. |
 
 To find an app on the desktop, use the **Find navigation item** field at the top of the menu and search for the app name.
 
 ## What to do next
 
 - [How do I get IBM Maximo Mobile?](../first-task/get-maximo-mobile.md): Install the app and sign in.
-- [What happens when I'm offline in IBM Maximo Mobile?](what-happens-offline.md): Learn how the apps work without a connection.
-- [How do I add users?](../../get-work-done/setup-control/add-users.md): Assign the security group that gives a user access to apps.
+- [What happens when I'm offline in IBM Maximo Mobile?](what-happens-offline.md): Learn how the apps operate without a network connection.
+- [Why can I manage work orders in more than one place?](why-apps-overlap.md): Understand the relationship between mobile apps and desktop applications.
+- [How do I add users?](../../get-work-done/setup-control/add-users.md): Assign the security groups that control app access.
 
 ---
 
 ## Related topics
 
-- [Why can I manage work orders in more than one place?](why-apps-overlap.md)
 - [What is an asset?](what-is-asset.md)
 - [What is a location?](what-is-location.md)
+- [What is a work order?](what-is-work-order.md)

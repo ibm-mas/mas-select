@@ -8,8 +8,6 @@ search:
 
 You were assigned a work order, but it does not appear in IBM Maximo Mobile. In most cases, the app is offline, your session has expired, or the app has not synced yet.
 
-`[SME confirmation required: Confirm that these causes apply to MAS Select. The source is the Maximo Manage documentation.]`
-
 ## Quick reference
 
 ### Table 1: Causes and what to do
@@ -35,8 +33,6 @@ IBM Maximo Mobile treats your device as offline when it is in airplane mode, the
 After your session expires, the app asks you to sign in again. Until you do, you work offline and new work does not arrive.
 
 **What to do**: Select the cloud icon on the app screen and sign in again.
-
-`[SME confirmation required: Confirm the cloud icon and the session lengths in Select.]`
 
 ### The app has not synced yet
 

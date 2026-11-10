@@ -229,7 +229,7 @@ A simple hierarchy that reflects the layout of your operation is easier to maint
 
 ---
 
-## Planning checklist
+## Location hierarchy planning checklist
 
 Before loading your location hierarchy into Maximo Application Suite Select, verify each requirement:
 

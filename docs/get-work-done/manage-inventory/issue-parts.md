@@ -29,7 +29,7 @@ Figure 1 illustrates the end-to-end parts issue and material transaction workflo
 
 ---
 
-## 💡 Tips for success
+### 💡 Tips: Best practices for issuing parts
 
 **Before you start work:**
 
@@ -245,3 +245,4 @@ When the system and the shelf don't match, learn how to investigate and correct 
 - [What happens if stock is incorrect?](stock-incorrect.md)
 - [How do I complete a job?](../complete-work/complete-job.md)
 - [What if I can't complete a task?](../complete-work/cant-complete-task.md)
+- [What apps are in IBM Maximo Mobile?](../../start-fast/basics/other-mobile-apps.md)

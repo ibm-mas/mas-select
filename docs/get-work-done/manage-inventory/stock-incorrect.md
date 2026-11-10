@@ -26,7 +26,7 @@ Figure 1 outlines the sequential six-step inventory correction process:
 
 ---
 
-## 💡 Tips for success
+### 💡 Tips: Best practices for inventory accuracy
 
 **Daily habits:**
 

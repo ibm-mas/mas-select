@@ -91,8 +91,14 @@ Each classification can have attributes that define specific details:
 
 Once you add these details, they become searchable. You can find all fillers from a specific manufacturer or all mixers with a certain capacity.
 
-!!! warning "TODO: Add visual content"
-     A screenshot showing how attributes appear on an asset record would be useful here.
+### Table 2: Classification attribute data types
+
+| Data type | What it stores | Example attribute |
+| :--- | :--- | :--- |
+| **ALN** | Alphanumeric text strings | Model number, serial number, or manufacturer name |
+| **NUMERIC** | Numerical values with optional unit of measure | Horsepower (HP), operating voltage (V), or tank capacity (L) |
+| **TABLE** | Values validated against a predefined system lookup table or domain | Refrigerant type, frame size, or metallurgy grade |
+| **DATETIME** | Calendar dates and timestamps | Commissioning date, warranty expiration date |
 
 ---
 
@@ -117,9 +123,6 @@ Set a **failure class** on the asset record before or at the same time as the cl
 9. Save the asset.
 
 The system stores all classification data. The information appears on the asset record and becomes searchable.
-
-!!! warning "TODO: Add visual content"
-     A video showing how to classify an asset and add specifications would be useful here.
 
 ---
 
@@ -159,6 +162,22 @@ Select includes some classifications. If you need a classification that doesn't 
 2. Contact your administrator to create new classifications.
 3. Don't create duplicate classifications.
 4. Follow your organization's approval process.
+
+---
+
+## Asset classification verification checklist
+
+Use this checklist to ensure complete and standardized asset classification:
+
+### Table 3: Asset classification verification checklist
+
+| Check | Item | What to verify |
+| :--- | :--- | :--- |
+| [ ] | Most specific category | Asset is mapped to the lowest applicable branch of the classification hierarchy |
+| [ ] | Failure class aligned | Failure Class is populated on the asset master to enable failure reporting on work orders |
+| [ ] | Mandatory attributes filled | Essential specifications such as manufacturer, model, and serial number are entered |
+| [ ] | Standardized units of measure | Measurement attributes use consistent units, such as HP for horsepower and V for volts |
+| [ ] | Specification tab saved | Added classification and attributes are committed and visible on the Specifications tab |
 
 ---
 

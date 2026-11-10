@@ -97,7 +97,7 @@ Supervisors who follow a consistent 15-minute daily triage routine maintain sign
 
 ---
 
-## Verification checklist
+## Work order completion checklist
 
 Use this checklist to ensure that your organization maintains high work order completion rates.
 

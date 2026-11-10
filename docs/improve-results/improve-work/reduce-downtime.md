@@ -104,7 +104,7 @@ Follow this progressive roadmap to systematically reduce downtime across your fa
 
 ---
 
-## Verification checklist
+## Downtime reduction checklist
 
 Use this checklist to confirm that your downtime reduction processes are operating effectively.
 

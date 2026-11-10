@@ -94,7 +94,7 @@ Consider how the system administrator corrected data anomalies affecting the col
 
 ---
 
-## Verification checklist
+## Data quality verification checklist
 
 Use this checklist to maintain high data accuracy across assets, locations, and inventory.
 

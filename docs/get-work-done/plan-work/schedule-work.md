@@ -4,7 +4,7 @@ Use calendars to set working hours. Use routes to group inspection points. This 
 
 Calendars track when your team works. Routes let you create inspection work orders for multiple items at once.
 
-## 💡 Tips for success
+### 💡 Tips: Best practices for calendars and routes
 
 **For calendars:**
 
@@ -14,8 +14,8 @@ Calendars track when your team works. Routes let you create inspection work orde
 
 **For routes:**
 
-- Group equipment that's close together.
-- Keep routes focused. Don't mix unrelated items.
+- Group equipment that is close together.
+- Keep routes focused. Do not mix unrelated items.
 - Update routes when equipment changes.
 - Use clear names.
 
@@ -131,6 +131,20 @@ Use routes for:
 
 !!! warning "TODO: Add visual content"
      A video showing how to create a simple inspection route would be useful here.
+
+## Work scheduling and calendar readiness checklist
+
+Before assigning work orders or activating multi-stop routes, verify that working calendars, shift patterns, and route configurations are properly established.
+
+| Check | Item | What to verify |
+|---|---|---|
+| [ ] | Standard shift definition | Working days, start and end times, and shift hours are defined in the Calendar application. |
+| [ ] | Non-working time | Holidays, planned plant shutdowns, and non-working days are marked on the calendar. |
+| [ ] | Labor calendar association | Each technician and worker has their primary calendar and shift assigned on their Labor record so availability displays accurately. |
+| [ ] | Crew calendar assignment | Assigned crews have active calendars reflecting crew shift patterns. |
+| [ ] | Asset and location shutdown calendar | Equipment requiring shutdown windows has calendar constraints defined if scheduling calculations must enforce operating downtime. |
+| [ ] | Route stop sequence | Route stops list all inspection assets or locations in logical physical travel order. |
+| [ ] | Route generation type | Route options specify whether to generate child work orders per stop for separate asset history or multiple tasks on a single work order. |
 
 ---
 

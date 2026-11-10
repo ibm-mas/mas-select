@@ -65,8 +65,7 @@ When you finish, you can report the failure, your labor, and the materials and t
 - System tracks time from when you started
 - Adjust for breaks if needed
 - Time is used for costs and planning
-
-`[SME confirmation required: Confirm that a labor record is required to start work in Select, and that the failure, labor, materials, and tools are reported when you finish the work.]`
+- Your user account must have an active labor record assigned to start and report work
 
 **In practice**
 

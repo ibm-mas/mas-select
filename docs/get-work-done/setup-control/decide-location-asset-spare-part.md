@@ -220,7 +220,7 @@ A clean classification model keeps your asset register concise, your storeroom i
 
 ---
 
-## Classification checklist
+## Classification decision checklist
 
 Before loading records into Maximo Application Suite Select, verify each classification decision:
 

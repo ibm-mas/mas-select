@@ -42,8 +42,6 @@ Figure 1 illustrates the five sequential steps required to get a new part into i
 
 To find any of these applications, use the **Find navigation item** field at the top of the menu and search for the application name.
 
-`[SME confirmation required: Confirm the order in Table 1 for Select, including whether the storeroom must be active before you add items to it.]`
-
 ## What is the difference between an item and an inventory record?
 
 An item describes the part. An inventory record describes the part in one storeroom, including how many you have and where they are.

@@ -302,7 +302,7 @@
         
   
     <cds-side-nav-menu-item href="../../start-fast/basics/other-mobile-apps.html" class="nav-level-3">
-      Other mobile apps
+      Mobile apps
     </cds-side-nav-menu-item>
   
 
@@ -1262,6 +1262,8 @@
     
       <cds-select-item value="#what-happens-next">What happens next?</cds-select-item>
     
+      <cds-select-item value="#pre-import-data-validation-checklist">Pre-import data validation checklist</cds-select-item>
+    
       <cds-select-item value="#continue-building-your-skills">Continue building your skills</cds-select-item>
     
       <cds-select-item value="#related-topics">Related topics</cds-select-item>
@@ -1276,10 +1278,6 @@
             
             <h1 id="how-do-i-prepare-data-for-import">How do I prepare data for import?<a class="headerlink" href="#how-do-i-prepare-data-for-import" title="Permanent link">¤</a></h1>
 <p>Proper data preparation prevents import failures and ensures data quality.</p>
-<div class="admonition warning">
-<p class="admonition-title">TODO: Add visual content</p>
-<p>A screenshot showing a well-formatted import file would be useful here.</p>
-</div>
 <h2 id="tips-for-success">💡 Tips for success<a class="headerlink" href="#tips-for-success" title="Permanent link">¤</a></h2>
 <ul>
 <li><strong>Start with a template</strong>: Export existing records to see correct format</li>
@@ -1312,10 +1310,6 @@
 <li><strong>Long numbers</strong>: Converts long numbers to scientific notation</li>
 </ul>
 <p><strong>What to do</strong>: Format all columns as text in Excel before entering data, or use a plain text editor to create the CSV.</p>
-<div class="admonition warning">
-<p class="admonition-title">TODO: Add visual content</p>
-<p>A screenshot showing Excel formatting options (Format Cells → Text) would be helpful.</p>
-</div>
 <h3 id="clean-your-data">Clean your data<a class="headerlink" href="#clean-your-data" title="Permanent link">¤</a></h3>
 <p><strong>What to check</strong>:</p>
 <ul>
@@ -1437,10 +1431,6 @@
 <li>What errors need to be fixed</li>
 </ul>
 <div class="admonition warning">
-<p class="admonition-title">TODO: Add visual content</p>
-<p>A screenshot of the import preview screen showing validation results would be useful here.</p>
-</div>
-<div class="admonition warning">
 <p class="admonition-title">Without validation</p>
 <p>If you skip validation, errors are only discovered after processing. This can result in:</p>
 <ul>
@@ -1458,6 +1448,61 @@
 <li>Process the import</li>
 <li>Verify records were created successfully</li>
 </ol>
+<hr>
+<h2 id="pre-import-data-validation-checklist">Pre-import data validation checklist<a class="headerlink" href="#pre-import-data-validation-checklist" title="Permanent link">¤</a></h2>
+<p>Before uploading your file into Data Management, verify each data preparation step:</p>
+<h3 id="table-3-pre-import-data-validation-checklist">Table 3: Pre-import data validation checklist<a class="headerlink" href="#table-3-pre-import-data-validation-checklist" title="Permanent link">¤</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Check</th>
+<th style="text-align: left;"><abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">Item</abbr></th>
+<th style="text-align: left;">What to verify</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">[ ]</td>
+<td style="text-align: left;">CSV file encoding</td>
+<td style="text-align: left;">File is saved in CSV format with UTF-8 encoding</td>
+</tr>
+<tr>
+<td style="text-align: left;">[ ]</td>
+<td style="text-align: left;">Text column formatting</td>
+<td style="text-align: left;">ID, code, and date columns are formatted as Text in spreadsheet software</td>
+</tr>
+<tr>
+<td style="text-align: left;">[ ]</td>
+<td style="text-align: left;">Leading zeros preserved</td>
+<td style="text-align: left;"><abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">Asset</abbr> numbers, <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> codes, and part identifiers retain leading zeros</td>
+</tr>
+<tr>
+<td style="text-align: left;">[ ]</td>
+<td style="text-align: left;">Header row alignment</td>
+<td style="text-align: left;">Column names match system attribute names and case sensitivity</td>
+</tr>
+<tr>
+<td style="text-align: left;">[ ]</td>
+<td style="text-align: left;">Mandatory <abbr title="A data partitioning concept that represents a plant, facility, or business unit.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; plant, facility, or business unit">site</abbr> and org keys</td>
+<td style="text-align: left;">Every row contains valid SITEID and ORGID values</td>
+</tr>
+<tr>
+<td style="text-align: left;">[ ]</td>
+<td style="text-align: left;">Top-down hierarchical sort</td>
+<td style="text-align: left;">Parent <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr> and parent <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">assets</abbr> appear in rows before their child records</td>
+</tr>
+<tr>
+<td style="text-align: left;">[ ]</td>
+<td style="text-align: left;">Referenced data verified</td>
+<td style="text-align: left;"><abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">Status</abbr> codes, failure classes, <abbr title="Trades or skill types required for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; trades, skill types, or disciplines">crafts</abbr>, and vendors exist in the system</td>
+</tr>
+<tr>
+<td style="text-align: left;">[ ]</td>
+<td style="text-align: left;">Batch size limit</td>
+<td style="text-align: left;">Large datasets are split into batches of 1,000 to 5,000 rows</td>
+</tr>
+</tbody>
+</table>
 <hr>
 <h2 id="continue-building-your-skills">Continue building your skills<a class="headerlink" href="#continue-building-your-skills" title="Permanent link">¤</a></h2>
 <h3 id="recommended-next-step-get-data-into-the-system">Recommended next step: Get data into the system<a class="headerlink" href="#recommended-next-step-get-data-into-the-system" title="Permanent link">¤</a></h3>
@@ -1602,6 +1647,18 @@
                 <a href="#what-happens-next" class="md-toc__link" data-md-level="1">
                   What happens next?
                 </a>
+              </li>
+              <li class="md-toc__item">
+                <a href="#pre-import-data-validation-checklist" class="md-toc__link" data-md-level="1">
+                  Pre-import data validation checklist
+                </a>
+                  <ul class="md-toc__list">
+                      <li class="md-toc__item">
+                        <a href="#table-3-pre-import-data-validation-checklist" class="md-toc__link" data-md-level="2">
+                          Table 3: Pre-import data validation checklist
+                        </a>
+                      </li>
+                  </ul>
               </li>
               <li class="md-toc__item">
                 <a href="#continue-building-your-skills" class="md-toc__link" data-md-level="1">

@@ -49,8 +49,6 @@ Most of the menu is desktop applications. Only a smaller set of apps, such as Te
 
 To find any app, use the **Find navigation item** field at the top of the menu and search for the app name.
 
-`[TO DO: Confirm whether the Work orders app in this table is the same as the Work Orders application at the start of this topic.]`
-
 `[SME confirmation required: Confirm the purpose of each app in the "Use it to" column.]`
 
 ## Which apps can I see?
@@ -67,7 +65,7 @@ The apps you see depend on the security group that your administrator assigned t
 | **Requester** | Service Requests |
 | **Inventory clerk** | Issues and Transfers, Inventory Counting, Service Requests |
 
-To learn what Location Manager, Time Sheets, and Crew Manager do, see [What do the other apps in IBM Maximo Mobile do?](other-mobile-apps.md)
+To learn what Location Manager, Time Sheets, and Crew Manager do, see [What apps are in IBM Maximo Mobile?](other-mobile-apps.md)
 
 `[SME confirmation required: Confirm this table against the security group descriptions in "How do I add users?". The security group descriptions are the source of truth. Technicians were given Inspections because they complete inspections. Confirm the other rows, including Service Requests for system admins and inventory clerks, and Inspection Forms for supervisors.]`
 
@@ -79,7 +77,7 @@ To learn what Location Manager, Time Sheets, and Crew Manager do, see [What do t
 - [Technician: Complete your first work order](../first-task/technician-first-task.md): Complete a work order.
 - [How do I get IBM Maximo Mobile?](../first-task/get-maximo-mobile.md): Get the app that contains Technician, Inspections, and the other apps in Table 1.
 - [How do I add users?](../../get-work-done/setup-control/add-users.md): Assign the security group that gives a user access to apps.
-- [What do the other apps in IBM Maximo Mobile do?](other-mobile-apps.md): Learn about Timesheet, Crew Manager, Locations, Material Request, and Assets.
+- [What apps are in IBM Maximo Mobile?](other-mobile-apps.md): Overview of all role-based mobile applications.
 
 ---
 

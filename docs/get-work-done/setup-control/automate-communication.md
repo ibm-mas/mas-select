@@ -104,8 +104,6 @@ A user receives push notifications only when all of the following are true:
 
 If a user's session expires, notifications stop until the user signs in again. The network on the device must also allow connections to the Apple and Google push notification services.
 
-`[SME confirmation required: Confirm that these conditions apply to MAS Select, including the session length and whether the network must allow connections to the Apple and Google push notification services.]`
-
 ---
 
 ## Continue building your skills

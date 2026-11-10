@@ -6,9 +6,7 @@ search:
 
 # How do I get IBM Maximo Mobile?
 
-IBM Maximo Mobile lets you view assigned work, complete work orders, assign and approve work, issue parts, receive inventory, and update records from your phone or tablet.
-
-`[TO DO: Confirm whether MAS Select includes the Receiving and Approvals apps. Maximo Manage includes both, but they are not on the Select menu. If Select does not include them, remove "receive inventory" and "approve work" here, in "What can I do in my role?", and in the inventory clerk first task.]`
+IBM Maximo Mobile lets you view assigned work, complete work orders, assign and approve work, issue parts, and update records from your phone or tablet.
 
 Technicians, supervisors, and inventory clerks all use IBM Maximo Mobile.
 
@@ -23,16 +21,13 @@ Technicians, supervisors, and inventory clerks all use IBM Maximo Mobile.
 
 ## What you need before you start
 
-- A mobile device running iOS or Android.
-
-  `[TO DO: Confirm whether Windows devices are supported in Select. Maximo Manage supports iOS, Android, and Windows.]`
-
+- A mobile device or tablet running iOS, Android, or Windows.
 - Your Maximo Application Suite Select login credentials.
 - Your administrator must have configured IBM Maximo Mobile for your team. If the app is not yet available, contact your administrator.
 
 ## Download the app
 
-1. On your device, open the **App Store** on iOS or **Google Play** on Android.
+1. On your device, open the **App Store** on iOS, **Google Play** on Android, or the **Microsoft Store** on Windows.
 2. Search for **IBM Maximo Mobile**.
 3. Download and install the app.
 
@@ -59,7 +54,7 @@ While your device is online, the app syncs your work automatically. You can also
 - [What happens when I'm offline in IBM Maximo Mobile?](../basics/what-happens-offline.md): Learn how the app works without a connection.
 - [Why can't I see new work in IBM Maximo Mobile?](../../get-work-done/complete-work/why-cant-see-new-work-on-phone.md): Fix missing work on your device.
 - [How do I find my work?](../../get-work-done/complete-work/find-work.md): Find and filter your assigned work queue.
-- [What do the other apps in IBM Maximo Mobile do?](../basics/other-mobile-apps.md): Learn about Timesheet, Crew Manager, Locations, Material Request, and Assets.
+- [What apps are in IBM Maximo Mobile?](../basics/other-mobile-apps.md): Overview of all role-based mobile applications.
 - [How do I complete a work order?](../../get-work-done/complete-work/complete-job.md): Walk through the full work order completion workflow.
 
 ---

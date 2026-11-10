@@ -13,7 +13,7 @@ Figure 1 illustrates how a job plan template flows into an approved work order:
 <img src="../../images/sample_job_plan_work_order_flow.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 1: How job plans flow into work orders</p>
 
-## 💡 Tips for success
+### 💡 Tips: Best practices for job plans
 
 **Start with common tasks**
 Create plans for work you do most often.
@@ -88,6 +88,20 @@ To change a job plan that is already active, select **Revise Job Plan** from **M
 
 !!! warning "TODO: Add visual content"
      A video showing how to create a simple job plan would be useful here.
+
+## Job plan verification checklist
+
+Before activating a job plan or attaching it to preventive maintenance schedules, verify that all core planning fields, tasks, and resource estimates are complete.
+
+| Check | Item | What to verify |
+|---|---|---|
+| [ ] | Task sequence | All work steps are listed in sequential order with clear instructions and estimated durations. |
+| [ ] | Labor estimates and crafts | Craft, skill level, and estimated hours are specified for each task so automatic assignment records are generated upon work order approval. |
+| [ ] | Material reservations | Required item numbers, direct issue items, and quantities are entered with designated storerooms so inventory reservations generate automatically. |
+| [ ] | Tool requirements | Required tools and operational hour estimates are attached to tasks. |
+| [ ] | Work order priority | The **WO Priority** field is set so work orders generated from this plan sort correctly in dispatch and scheduling queues. |
+| [ ] | Safety precautions and hazards | Necessary safety steps, lockout or tagout precautions, and hazard warnings are documented on tasks. |
+| [ ] | Status activation | The job plan status is changed to **Active** so it is available for selection on work orders, preventive maintenance records, and routes. |
 
 ## Why job plans help
 

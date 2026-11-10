@@ -159,7 +159,7 @@ When technicians record meter readings during inspections, work orders can be ge
 
 ---
 
-## Verification checklist
+## Condition monitoring checklist
 
 Use this checklist to confirm that your condition monitoring point is properly configured and ready to protect equipment.
 

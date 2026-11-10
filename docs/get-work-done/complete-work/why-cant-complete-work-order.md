@@ -2,9 +2,6 @@
 
 You might see errors like "Status cannot be changed" or not see the Complete option at all.
 
-!!! warning "TODO: Add visual content"
-     A screenshot showing common error messages when trying to complete a work order would be useful here.
-
 ## Common causes
 
 ### You don't have permission
@@ -51,9 +48,6 @@ Your organization might have set up rules that hide the Complete status until ce
 
 **What to do**: Enter all required information, or ask your supervisor what conditions must be met.
 
-!!! warning "TODO: Add visual content"
-     A screenshot showing the work order status dropdown with and without the Complete option would be useful here.
-
 ### Required prerequisites
 
 Business rules can restrict which status transitions are available based on the current state and data of the work order.
@@ -92,14 +86,20 @@ Differences are usually caused by security groups or roles.
 
 ---
 
-## What happens next?
+## Work order completion blocker checklist
 
-Once you resolve the issue:
+Use this checklist to identify and resolve blockers preventing work order completion:
 
-1. Enter any missing required information
-2. Verify you have the necessary permissions
-3. Try completing the work order again
-4. If problems persist, contact your supervisor
+### Table 1: Work order completion blocker checklist
+
+| Check | Item | What to verify |
+| :--- | :--- | :--- |
+| [ ] | Work order in progress | Current work order status is set to INPRG, not WAPPR, WSCHED, or WMATL |
+| [ ] | Labor actuals entered | Actual labor hours with start and finish times are recorded for all assigned technicians |
+| [ ] | Material actuals recorded | Materials and parts used on the job are issued and charged to the work order |
+| [ ] | Child tasks completed | All child task assignments and mandatory inspection forms are marked completed |
+| [ ] | Failure reporting complete | Problem, Cause, and Remedy codes are selected if the asset has a failure class assigned |
+| [ ] | User security permission | User security group permits changing work order status to COMP |
 
 ---
 

@@ -111,7 +111,7 @@ Select includes some work queues. Administrators can use them as they are, or cr
 
 ---
 
-## Verification checklist
+## Alert and work queue checklist
 
 Use this checklist to confirm that dashboard alerting and work queues operate effectively for your team.
 
