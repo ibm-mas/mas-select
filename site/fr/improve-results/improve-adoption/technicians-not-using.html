@@ -301,6 +301,17 @@
       
         
   
+    <cds-side-nav-menu-item href="../../start-fast/basics/other-mobile-apps.html" class="nav-level-3">
+      Autres applications mobiles
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
     <cds-side-nav-menu-item href="../../start-fast/basics/how-inspections-work.html" class="nav-level-3">
       Fonctionnement des inspections
     </cds-side-nav-menu-item>
@@ -390,6 +401,17 @@
   
     <cds-side-nav-menu-item href="../../get-work-done/setup-control/automate-communication.html" class="nav-level-4">
       Automatiser la communication
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/setup-control/ticket-templates.html" class="nav-level-4">
+      Ticket templates
     </cds-side-nav-menu-item>
   
 
@@ -738,6 +760,17 @@
       
         
   <cds-side-nav-menu title="Gérer l'inventaire" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/manage-inventory/get-part-into-inventory.html" class="nav-level-3">
+      Mettre une pièce en stock
+    </cds-side-nav-menu-item>
+  
+
+      
     
       
       
@@ -1277,9 +1310,16 @@
 </tr>
 </tbody>
 </table>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../images/sample_adoption_mobile_pathway.svg" data-title="Streamlined mobile workflow overcoming adoption barriers" data-desc-position="bottom"><img src="../../../images/sample_adoption_mobile_pathway.svg" alt="Streamlined mobile workflow overcoming adoption barriers" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../images/sample_adoption_mobile_pathway.svg" data-title="Explained in body text" data-desc-position="bottom"><img src="../../../images/sample_adoption_mobile_pathway.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;"></a></p>
 <p class="figure-caption">Figure 1: Streamlined mobile workflow overcoming adoption barriers</p>
 
+<p>As shown in Figure 1, the streamlined mobile pathway overcomes adoption barriers across four connected elements:</p>
+<ol>
+<li><strong>Step 1: Start shift</strong>: The technician begins their workday and opens the mobile interface.</li>
+<li><strong>Step 2: Mobile card views</strong>: Concise card views replace complex desktop forms with touch-friendly assignment cards.</li>
+<li><strong>Offline data caching</strong>: When technicians work in shielded environments like the Cold Storage Room, the mobile app queues all transactions locally and syncs automatically upon returning to wireless network coverage.</li>
+<li><strong>Pre-loaded job steps</strong>: Structured task execution provides single-tap step check-offs and straightforward <abbr title="A standardized code used to categorize and track equipment failures.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; failure classification, breakdown code, or fault code">failure code</abbr> selection directly on the device.</li>
+</ol>
 <h2 id="streamlining-the-user-experience">Streamlining the user experience<a class="headerlink" href="#streamlining-the-user-experience" title="Permanent link">¤</a></h2>
 <p>Complex desktop screens designed for maintenance planners and database administrators create frustration when presented to field technicians wearing gloves or working on small screens.</p>
 <h3 id="switching-from-desktop-forms-to-the-technician-app">Switching from desktop forms to the Technician app<a class="headerlink" href="#switching-from-desktop-forms-to-the-technician-app" title="Permanent link">¤</a></h3>
@@ -1292,7 +1332,7 @@
 <h3 id="configuring-sync-parameters-in-mobile-properties">Configuring sync parameters in Mobile Properties<a class="headerlink" href="#configuring-sync-parameters-in-mobile-properties" title="Permanent link">¤</a></h3>
 <p>Adjust synchronization settings in the desktop application to prevent timeout errors and ensure responsive background syncing.</p>
 <ol>
-<li>Go to <strong>System Configuration &gt; Platform Configuration &gt; Mobile Properties</strong>.</li>
+<li>In the <strong>Find navigation <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr></strong> field, search for Mobile Properties and open it.</li>
 <li>In the <strong>Property Name</strong> filter, search for sync timeout and batch size properties.</li>
 <li>Select the property governing offline transaction batching, such as <code>si.offline.download.batchsize</code>.</li>
 <li>Update the <strong>Global Value</strong> to an appropriate batch limit, such as 50 records, to reduce synchronization latency over intermittent wireless connections.</li>

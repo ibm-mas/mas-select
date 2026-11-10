@@ -301,6 +301,17 @@
       
         
   
+    <cds-side-nav-menu-item href="../../start-fast/basics/other-mobile-apps.html" class="nav-level-3">
+      Autres applications mobiles
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
     <cds-side-nav-menu-item href="../../start-fast/basics/how-inspections-work.html" class="nav-level-3">
       Fonctionnement des inspections
     </cds-side-nav-menu-item>
@@ -390,6 +401,17 @@
   
     <cds-side-nav-menu-item href="../../get-work-done/setup-control/automate-communication.html" class="nav-level-4">
       Automatiser la communication
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/setup-control/ticket-templates.html" class="nav-level-4">
+      Ticket templates
     </cds-side-nav-menu-item>
   
 
@@ -738,6 +760,17 @@
       
         
   <cds-side-nav-menu title="Gérer l'inventaire" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/manage-inventory/get-part-into-inventory.html" class="nav-level-3">
+      Mettre une pièce en stock
+    </cds-side-nav-menu-item>
+  
+
+      
     
       
       
@@ -1281,14 +1314,23 @@
 </tr>
 </tbody>
 </table>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../images/sample_ai_maintenance_workflow.svg" data-title="AI configuration service and maintenance workflow integration" data-desc-position="bottom"><img src="../../../images/sample_ai_maintenance_workflow.svg" alt="AI configuration service and maintenance workflow integration" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../images/sample_ai_maintenance_workflow.svg" data-title="Explained in body text" data-desc-position="bottom"><img src="../../../images/sample_ai_maintenance_workflow.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;"></a></p>
 <p class="figure-caption">Figure 1: AI configuration service and maintenance workflow integration</p>
 
+<p>As shown in Figure 1, the AI integration workflow ingests technician logs and routes them through a central AI service to generate three operational outputs:</p>
+<ol>
+<li><strong>Input</strong>: A technician records free-form work log text and actual repair notes on a <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr>.</li>
+<li><strong>AI Configuration gateway</strong>: The system routes the text securely to the configured AI model endpoint, such as a watsonx service.</li>
+<li><strong>AI Outputs</strong>: The model returns three distinct operational enhancements:</li>
+<li><strong><abbr title="A standardized code used to categorize and track equipment failures.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; failure classification, breakdown code, or fault code">Failure code</abbr> suggestions</strong>: Analyzes unstructured repair descriptions to match and suggest standardized Problem, Cause, and Remedy codes.</li>
+<li><strong><abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">Work order</abbr> summarization</strong>: Synthesizes lengthy maintenance histories into concise summaries for shift handoffs and management digests.</li>
+<li><strong>Attribute recommendations</strong>: Evaluates manufacturer specifications to suggest classification attribute values for newly onboarded <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">assets</abbr>.</li>
+</ol>
 <h2 id="configuring-ai-integration-in-maximo-application-suite-select">Configuring AI integration in Maximo Application Suite Select<a class="headerlink" href="#configuring-ai-integration-in-maximo-application-suite-select" title="Permanent link">¤</a></h2>
 <p>System administrators configure AI model endpoints, credentials, and feature prompts in the AI Configuration application.</p>
 <h3 id="connecting-an-ai-model-provider-in-the-desktop-application">Connecting an AI model provider in the desktop application<a class="headerlink" href="#connecting-an-ai-model-provider-in-the-desktop-application" title="Permanent link">¤</a></h3>
 <ol>
-<li>Go to <strong>Integration &gt; AI Configuration</strong>.</li>
+<li>In the <strong>Find navigation <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr></strong> field, search for AI Configuration and open it.</li>
 <li>Click <strong>New AI Configuration</strong>.</li>
 <li>In the <strong>Configuration Name</strong> field, enter a unique identifier, such as <code>WATSONX_MAINT_AI</code>.</li>
 <li>In the <strong>Provider</strong> field, select your AI service provider.</li>

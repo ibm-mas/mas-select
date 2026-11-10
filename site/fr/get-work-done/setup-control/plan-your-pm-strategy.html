@@ -301,6 +301,17 @@
       
         
   
+    <cds-side-nav-menu-item href="../../start-fast/basics/other-mobile-apps.html" class="nav-level-3">
+      Autres applications mobiles
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
     <cds-side-nav-menu-item href="../../start-fast/basics/how-inspections-work.html" class="nav-level-3">
       Fonctionnement des inspections
     </cds-side-nav-menu-item>
@@ -390,6 +401,17 @@
   
     <cds-side-nav-menu-item href="automate-communication.html" class="nav-level-4">
       Automatiser la communication
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="ticket-templates.html" class="nav-level-4">
+      Ticket templates
     </cds-side-nav-menu-item>
   
 
@@ -738,6 +760,17 @@
       
         
   <cds-side-nav-menu title="Gérer l'inventaire" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../manage-inventory/get-part-into-inventory.html" class="nav-level-3">
+      Mettre une pièce en stock
+    </cds-side-nav-menu-item>
+  
+
+      
     
       
       
@@ -1245,7 +1278,13 @@
 <p>Before configuring schedules in the PM application, establish your maintenance strategy with your reliability engineers, planners, and operations team.</p>
 <h3 id="1-balance-time-based-and-usage-based-triggers">1. Balance time-based and usage-based triggers<a class="headerlink" href="#1-balance-time-based-and-usage-based-triggers" title="Permanent link">¤</a></h3>
 <p>Equipment operating under constant loads benefits from calendar schedules, while machinery with fluctuating production cycles requires usage-based runtime triggers.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../images/decision_framework_pm_frequency.svg" data-title="Decision framework for selecting preventive maintenance frequency based on equipment operating patterns" data-desc-position="bottom"><img src="../../../images/decision_framework_pm_frequency.svg" alt="Decision framework for selecting preventive maintenance frequency based on equipment operating patterns" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;"></a></p>
+<p>Figure 1 outlines the decision framework for selecting maintenance frequencies based on operating patterns:</p>
+<ul>
+<li><strong>24/7 continuous operation</strong>: time-based schedule using fixed calendar days, weeks, or months.</li>
+<li><strong>Variable batch production</strong>: usage-based schedule driven by continuous run hours or cycles.</li>
+<li><strong>Intermittent seasonal operation</strong>: combined schedule triggered by whichever threshold occurs first, calendar elapsed time or <abbr title="A counter that tracks equipment usage, such as hours, cycles, or miles.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; counter, runtime meter, or odometer">meter</abbr> run hours.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../images/decision_framework_pm_frequency.svg" data-title="Explained in body text" data-desc-position="bottom"><img src="../../../images/decision_framework_pm_frequency.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;"></a></p>
 <p class="figure-caption">Figure 1: Decision framework for preventive maintenance frequency</p>
 
 <h3 id="table-1-matching-equipment-types-to-maintenance-triggers">Table 1: Matching equipment types to maintenance triggers<a class="headerlink" href="#table-1-matching-equipment-types-to-maintenance-triggers" title="Permanent link">¤</a></h3>
@@ -1296,8 +1335,15 @@
 </ul>
 <hr>
 <h2 id="what-a-good-pm-strategy-looks-like">What a good PM strategy looks like<a class="headerlink" href="#what-a-good-pm-strategy-looks-like" title="Permanent link">¤</a></h2>
-<p>In our sample ice cream plant, the maintenance strategy combines calendar routines, usage-based triggers, and consolidated routes:</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../images/sample_pm_strategy_architecture.svg" data-title="Architecture of an integrated plant preventive maintenance strategy with calendar, runtime, and route triggers" data-desc-position="bottom"><img src="../../../images/sample_pm_strategy_architecture.svg" alt="Architecture of an integrated plant preventive maintenance strategy with calendar, runtime, and route triggers" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;"></a></p>
+<p>In our sample ice cream plant, the maintenance strategy combines calendar routines, usage-based triggers, and consolidated routes.</p>
+<p>Figure 2 illustrates the three maintenance streams that feed into the automated generation engine:</p>
+<ul>
+<li><strong>Fixed calendar PMs</strong>: recurring safety and facility audits scheduled on fixed calendar intervals.</li>
+<li><strong><abbr title="A counter that tracks equipment usage, such as hours, cycles, or miles.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; counter, runtime meter, or odometer">Meter</abbr> run-hour PMs</strong>: usage-based servicing for production machines like <code>Filler FL-02</code> and pumps.</li>
+<li><strong>Multi-stop routes</strong>: consolidated inspection rounds, such as the daily <code>Cold storage</code> walk-through.</li>
+<li><strong>Automated cron processing</strong>: background tasks evaluate lead times and generate <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> 7 days in advance for supervisor assignment.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../images/sample_pm_strategy_architecture.svg" data-title="Explained in body text" data-desc-position="bottom"><img src="../../../images/sample_pm_strategy_architecture.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;"></a></p>
 <p class="figure-caption">Figure 2: Architecture of an integrated plant preventive maintenance strategy</p>
 
 <h3 id="why-this-strategy-works">Why this strategy works<a class="headerlink" href="#why-this-strategy-works" title="Permanent link">¤</a></h3>

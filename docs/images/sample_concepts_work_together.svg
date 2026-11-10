@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 504" width="100%" height="100%" role="img" aria-labelledby="title desc" style="background:#ffffff; font-family:'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <title id="title">How locations, assets, and work orders work together</title>
+  <desc id="desc">Locations show where work happens, assets represent equipment maintained within those locations, and work orders track the maintenance performed on specific assets and locations.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#161616"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+
+  <!-- Column 1: Locations Container -->
+  <rect x="24" y="24" width="320" height="456" rx="8" ry="8" fill="#edf5ff" stroke="#0f62fe" stroke-width="1"/>
+  <rect x="24" y="24" width="320" height="40" rx="8" ry="8" fill="#0f62fe"/>
+  <rect x="24" y="56" width="320" height="8" fill="#0f62fe"/>
+  <g transform="translate(36 32) scale(0.75)" fill="#ffffff"><path d="M16,18a5,5,0,1,1,5-5A5.0057,5.0057,0,0,1,16,18Zm0-8a3,3,0,1,0,3,3A3.0033,3.0033,0,0,0,16,10Z"/><path d="M16,30,7.5645,20.0513c-.0479-.0571-.3482-.4515-.3482-.4515A10.8888,10.8888,0,0,1,5,13a11,11,0,0,1,22,0,10.8844,10.8844,0,0,1-2.2148,6.5973l-.0015.0025s-.3.3944-.3447.4474ZM8.8125,18.395c.001.0007.2334.3082.2866.3744L16,26.9079l6.91-8.15c.0439-.0552.2783-.3649.2788-.3657A8.901,8.901,0,0,0,25,13,9,9,0,1,0,7,13a8.9054,8.9054,0,0,0,1.8125,5.395Z"/></g>
+  <text x="68" y="49" font-size="14" font-weight="600" fill="#ffffff">Locations: where work happens</text>
+
+  <rect class="node" id="loc_plant" x="40" y="80" width="288" height="48" rx="8" ry="8" fill="#ffffff" stroke="#0f62fe" stroke-width="1"/>
+  <path d="M 48 80 Q 40 80 40 88 V 120 Q 40 128 48 128 Z" fill="#0f62fe"/>
+  <g transform="translate(52 92) scale(0.75)" fill="#161616"><path d="M16,18a5,5,0,1,1,5-5A5.0057,5.0057,0,0,1,16,18Zm0-8a3,3,0,1,0,3,3A3.0033,3.0033,0,0,0,16,10Z"/><path d="M16,30,7.5645,20.0513c-.0479-.0571-.3482-.4515-.3482-.4515A10.8888,10.8888,0,0,1,5,13a11,11,0,0,1,22,0,10.8844,10.8844,0,0,1-2.2148,6.5973l-.0015.0025s-.3.3944-.3447.4474ZM8.8125,18.395c.001.0007.2334.3082.2866.3744L16,26.9079l6.91-8.15c.0439-.0552.2783-.3649.2788-.3657A8.901,8.901,0,0,0,25,13,9,9,0,1,0,7,13a8.9054,8.9054,0,0,0,1.8125,5.395Z"/></g>
+  <text x="84" y="99" font-size="11" font-weight="600" fill="#525252">TOP-LEVEL LOCATION</text>
+  <text x="84" y="117" font-size="13" font-weight="600" fill="#161616">Ice cream main plant</text>
+
+  <rect class="node" id="loc_prod" x="56" y="144" width="272" height="48" rx="8" ry="8" fill="#ffffff" stroke="#0f62fe" stroke-width="1"/>
+  <path d="M 64 144 Q 56 144 56 152 V 184 Q 56 192 64 192 Z" fill="#0f62fe"/>
+  <g transform="translate(68 156) scale(0.75)" fill="#161616"><path d="M28,2H16a2.002,2.002,0,0,0-2,2V14H4a2.002,2.002,0,0,0-2,2V30H30V4A2.0023,2.0023,0,0,0,28,2ZM9,28V21h4v7Zm19,0H15V20a1,1,0,0,0-1-1H8a1,1,0,0,0-1,1v8H4V16H16V4H28Z"/><path d="M18 8H20V10H18z"/><path d="M24 8H26V10H24z"/><path d="M18 14H20V16H18z"/><path d="M24 14H26V16H24z"/><path d="M18 20H20V22H18z"/><path d="M24 20H26V22H24z"/><path d="M9,12H7a5.0059,5.0059,0,0,1,5-5V9A3.0033,3.0033,0,0,0,9,12Z"/><path d="M4,12H2A10.0114,10.0114,0,0,1,12,2V4A8.0092,8.0092,0,0,0,4,12Z"/></g>
+  <text x="100" y="163" font-size="11" font-weight="600" fill="#525252">PARENT LOCATION</text>
+  <text x="100" y="181" font-size="13" font-weight="600" fill="#161616">Production building</text>
+
+  <rect class="node" id="loc_mix" x="80" y="208" width="248" height="40" rx="8" ry="8" fill="#ffffff" stroke="#0f62fe" stroke-width="1"/>
+  <path d="M 88 208 Q 80 208 80 216 V 240 Q 80 248 88 248 Z" fill="#0f62fe"/>
+  <text x="96" y="225" font-size="11" font-weight="600" fill="#525252">CHILD LOCATION</text>
+  <text x="96" y="241" font-size="13" font-weight="600" fill="#161616">Mixing room</text>
+
+  <rect class="node" id="loc_fill" x="80" y="264" width="248" height="40" rx="8" ry="8" fill="#ffffff" stroke="#0f62fe" stroke-width="1.5"/>
+  <path d="M 88 264 Q 80 264 80 272 V 296 Q 80 304 88 304 Z" fill="#0f62fe"/>
+  <text x="96" y="281" font-size="11" font-weight="600" fill="#0f62fe">CHILD LOCATION (TARGET)</text>
+  <text x="96" y="297" font-size="13" font-weight="600" fill="#161616">Filling Line 2</text>
+
+  <rect class="node" id="loc_pack" x="80" y="320" width="248" height="40" rx="8" ry="8" fill="#ffffff" stroke="#0f62fe" stroke-width="1"/>
+  <path d="M 88 320 Q 80 320 80 328 V 352 Q 80 360 88 360 Z" fill="#0f62fe"/>
+  <text x="96" y="337" font-size="11" font-weight="600" fill="#525252">CHILD LOCATION</text>
+  <text x="96" y="353" font-size="13" font-weight="600" fill="#161616">Packaging zone</text>
+
+  <rect class="node" id="loc_cold" x="56" y="376" width="272" height="40" rx="8" ry="8" fill="#ffffff" stroke="#0f62fe" stroke-width="1"/>
+  <path d="M 64 376 Q 56 376 56 384 V 408 Q 56 416 64 416 Z" fill="#0f62fe"/>
+  <g transform="translate(68 384) scale(0.75)" fill="#161616"><path d="M10,30H4a2,2,0,0,1-2-2V16a2,2,0,0,1,2-2h6a2,2,0,0,1,2,2V28A2,2,0,0,1,10,30ZM4,16V28h6V16Z"/><path d="M28,4H6A2,2,0,0,0,4,6v6H6V6H28V20H14v2h2v4H14v2h9V26H18V22H28a2,2,0,0,0,2-2V6A2,2,0,0,0,28,4Z"/></g>
+  <text x="100" y="393" font-size="11" font-weight="600" fill="#525252">LOCATION</text>
+  <text x="100" y="409" font-size="13" font-weight="600" fill="#161616">Cold storage</text>
+
+  <rect class="node" id="loc_store" x="56" y="424" width="272" height="40" rx="8" ry="8" fill="#ffffff" stroke="#0f62fe" stroke-width="1"/>
+  <path d="M 64 424 Q 56 424 56 432 V 456 Q 56 464 64 464 Z" fill="#0f62fe"/>
+  <g transform="translate(68 432) scale(0.75)" fill="#161616"><path d="M20,21H12a2,2,0,0,1-2-2V17a2,2,0,0,1,2-2h8a2,2,0,0,1,2,2v2A2,2,0,0,1,20,21Zm-8-4v2h8V17Z"/><path d="M28,4H4A2,2,0,0,0,2,6v4a2,2,0,0,0,2,2V28a2,2,0,0,0,2,2H26a2,2,0,0,0,2-2V12a2,2,0,0,0,2-2V6A2,2,0,0,0,28,4ZM26,28H6V12H26Zm2-18H4V6H28v4Z"/></g>
+  <text x="100" y="441" font-size="11" font-weight="600" fill="#525252">LOCATION</text>
+  <text x="100" y="457" font-size="13" font-weight="600" fill="#161616">Main storeroom</text>
+
+  <!-- Column 2: Assets Container -->
+  <rect x="384" y="24" width="320" height="456" rx="8" ry="8" fill="#d9fbfb" stroke="#007d79" stroke-width="1"/>
+  <rect x="384" y="24" width="320" height="40" rx="8" ry="8" fill="#007d79"/>
+  <rect x="384" y="56" width="320" height="8" fill="#007d79"/>
+  <g transform="translate(396 32) scale(0.75)" fill="#ffffff"><path d="M12,24a4,4,0,1,1,4-4A4.0042,4.0042,0,0,1,12,24Zm0-6a2,2,0,1,0,2,2A2.0023,2.0023,0,0,0,12,18Z"/><path d="M30,6a4.0042,4.0042,0,0,0-4-4,3.949,3.949,0,0,0-1.8537.4768L7.7571,10.9579A9.9921,9.9921,0,1,0,21.066,24.1929l8.49-16.3994A3.9491,3.9491,0,0,0,30,6ZM26,4a2,2,0,1,1-2,2A2.0023,2.0023,0,0,1,26,4ZM22.0194,5.8083C22.0163,5.8732,22,5.9343,22,6a4.0042,4.0042,0,0,0,4,4c.0645,0,.1245-.016.1882-.019l-4.3318,8.3617a10.0168,10.0168,0,0,0-8.2158-8.1962ZM12,28a8,8,0,1,1,8-8A8.0092,8.0092,0,0,1,12,28Z"/></g>
+  <text x="428" y="49" font-size="14" font-weight="600" fill="#ffffff">Assets: equipment maintained</text>
+
+  <rect class="node" id="asset_mixer" x="400" y="80" width="288" height="64" rx="8" ry="8" fill="#ffffff" stroke="#007d79" stroke-width="1"/>
+  <path d="M 408 80 Q 400 80 400 88 V 136 Q 400 144 408 144 Z" fill="#007d79"/>
+  <g transform="translate(412 100) scale(0.75)" fill="#161616"><path d="M27,16.76c0-.25,0-.5,0-.76s0-.51,0-.77l1.92-1.68A2,2,0,0,0,29.3,11L26.94,7a2,2,0,0,0-1.73-1,2,2,0,0,0-.64.1l-2.43.82a11.35,11.35,0,0,0-1.31-.75l-.51-2.52a2,2,0,0,0-2-1.61H13.64a2,2,0,0,0-2,1.61l-.51,2.52a11.48,11.48,0,0,0-1.32.75L7.43,6.06A2,2,0,0,0,6.79,6,2,2,0,0,0,5.06,7L2.7,11a2,2,0,0,0,.41,2.51L5,15.24c0,.25,0,.5,0,.76s0,.51,0,.77L3.11,18.45A2,2,0,0,0,2.7,21L5.06,25a2,2,0,0,0,1.73,1,2,2,0,0,0,.64-.1l2.43-.82a11.35,11.35,0,0,0,1.31.75l.51,2.52a2,2,0,0,0,2,1.61h4.72a2,2,0,0,0,2-1.61l.51-2.52a11.48,11.48,0,0,0,1.32-.75l2.42.82a2,2,0,0,0,.64.1,2,2,0,0,0,1.73-1L29.3,21a2,2,0,0,0-.41-2.51ZM25.21,24l-3.43-1.16a8.86,8.86,0,0,1-2.71,1.57L18.36,28H13.64l-.71-3.55a9.36,9.36,0,0,1-2.7-1.57L6.79,24,4.43,20l2.72-2.4a8.9,8.9,0,0,1,0-3.13L4.43,12,6.79,8l3.43,1.16a8.86,8.86,0,0,1,2.71-1.57L13.64,4h4.72l.71,3.55a9.36,9.36,0,0,1,2.7,1.57L25.21,8,27.57,12l-2.72,2.4a8.9,8.9,0,0,1,0,3.13L27.57,20Z"/><path d="M16,22a6,6,0,1,1,6-6A5.94,5.94,0,0,1,16,22Zm0-10a3.91,3.91,0,0,0-4,4,3.91,3.91,0,0,0,4,4,3.91,3.91,0,0,0,4-4A3.91,3.91,0,0,0,16,12Z"/></g>
+  <text x="448" y="101" font-size="11" font-weight="600" fill="#525252">PARENT ASSET</text>
+  <text x="448" y="119" font-size="13" font-weight="600" fill="#161616">Batch mixer MX-01</text>
+  <text x="448" y="135" font-size="11" fill="#525252">Child: Agitator motor, Seal</text>
+
+  <rect class="node" id="asset_filler" x="400" y="168" width="288" height="88" rx="8" ry="8" fill="#ffffff" stroke="#007d79" stroke-width="1.5"/>
+  <path d="M 408 168 Q 400 168 400 176 V 248 Q 400 256 408 256 Z" fill="#007d79"/>
+  <g transform="translate(412 200) scale(0.75)" fill="#161616"><path d="M27,16.76c0-.25,0-.5,0-.76s0-.51,0-.77l1.92-1.68A2,2,0,0,0,29.3,11L26.94,7a2,2,0,0,0-1.73-1,2,2,0,0,0-.64.1l-2.43.82a11.35,11.35,0,0,0-1.31-.75l-.51-2.52a2,2,0,0,0-2-1.61H13.64a2,2,0,0,0-2,1.61l-.51,2.52a11.48,11.48,0,0,0-1.32.75L7.43,6.06A2,2,0,0,0,6.79,6,2,2,0,0,0,5.06,7L2.7,11a2,2,0,0,0,.41,2.51L5,15.24c0,.25,0,.5,0,.76s0,.51,0,.77L3.11,18.45A2,2,0,0,0,2.7,21L5.06,25a2,2,0,0,0,1.73,1,2,2,0,0,0,.64-.1l2.43-.82a11.35,11.35,0,0,0,1.31.75l.51,2.52a2,2,0,0,0,2,1.61h4.72a2,2,0,0,0,2-1.61l.51-2.52a11.48,11.48,0,0,0,1.32-.75l2.42.82a2,2,0,0,0,.64.1,2,2,0,0,0,1.73-1L29.3,21a2,2,0,0,0-.41-2.51ZM25.21,24l-3.43-1.16a8.86,8.86,0,0,1-2.71,1.57L18.36,28H13.64l-.71-3.55a9.36,9.36,0,0,1-2.7-1.57L6.79,24,4.43,20l2.72-2.4a8.9,8.9,0,0,1,0-3.13L4.43,12,6.79,8l3.43,1.16a8.86,8.86,0,0,1,2.71-1.57L13.64,4h4.72l.71,3.55a9.36,9.36,0,0,1,2.7,1.57L25.21,8,27.57,12l-2.72,2.4a8.9,8.9,0,0,1,0,3.13L27.57,20Z"/><path d="M16,22a6,6,0,1,1,6-6A5.94,5.94,0,0,1,16,22Zm0-10a3.91,3.91,0,0,0-4,4,3.91,3.91,0,0,0,4,4,3.91,3.91,0,0,0,4-4A3.91,3.91,0,0,0,16,12Z"/></g>
+  <text x="448" y="191" font-size="11" font-weight="600" fill="#007d79">PARENT ASSET (TARGET)</text>
+  <text x="448" y="209" font-size="13" font-weight="600" fill="#161616">Filler FL-02</text>
+  <text x="448" y="227" font-size="11" fill="#525252">Child: Nozzle assembly</text>
+  <text x="448" y="243" font-size="11" fill="#525252">Child: Drive motor</text>
+
+  <rect class="node" id="asset_conveyor" x="400" y="280" width="288" height="64" rx="8" ry="8" fill="#ffffff" stroke="#007d79" stroke-width="1"/>
+  <path d="M 408 280 Q 400 280 400 288 V 336 Q 400 344 408 344 Z" fill="#007d79"/>
+  <g transform="translate(412 300) scale(0.75)" fill="#161616"><path d="M27,16.76c0-.25,0-.5,0-.76s0-.51,0-.77l1.92-1.68A2,2,0,0,0,29.3,11L26.94,7a2,2,0,0,0-1.73-1,2,2,0,0,0-.64.1l-2.43.82a11.35,11.35,0,0,0-1.31-.75l-.51-2.52a2,2,0,0,0-2-1.61H13.64a2,2,0,0,0-2,1.61l-.51,2.52a11.48,11.48,0,0,0-1.32.75L7.43,6.06A2,2,0,0,0,6.79,6,2,2,0,0,0,5.06,7L2.7,11a2,2,0,0,0,.41,2.51L5,15.24c0,.25,0,.5,0,.76s0,.51,0,.77L3.11,18.45A2,2,0,0,0,2.7,21L5.06,25a2,2,0,0,0,1.73,1,2,2,0,0,0,.64-.1l2.43-.82a11.35,11.35,0,0,0,1.31.75l.51,2.52a2,2,0,0,0,2,1.61h4.72a2,2,0,0,0,2-1.61l.51-2.52a11.48,11.48,0,0,0,1.32-.75l2.42.82a2,2,0,0,0,.64.1,2,2,0,0,0,1.73-1L29.3,21a2,2,0,0,0-.41-2.51ZM25.21,24l-3.43-1.16a8.86,8.86,0,0,1-2.71,1.57L18.36,28H13.64l-.71-3.55a9.36,9.36,0,0,1-2.7-1.57L6.79,24,4.43,20l2.72-2.4a8.9,8.9,0,0,1,0-3.13L4.43,12,6.79,8l3.43,1.16a8.86,8.86,0,0,1,2.71-1.57L13.64,4h4.72l.71,3.55a9.36,9.36,0,0,1,2.7,1.57L25.21,8,27.57,12l-2.72,2.4a8.9,8.9,0,0,1,0,3.13L27.57,20Z"/><path d="M16,22a6,6,0,1,1,6-6A5.94,5.94,0,0,1,16,22Zm0-10a3.91,3.91,0,0,0-4,4,3.91,3.91,0,0,0,4,4,3.91,3.91,0,0,0,4-4A3.91,3.91,0,0,0,16,12Z"/></g>
+  <text x="448" y="301" font-size="11" font-weight="600" fill="#525252">PARENT ASSET</text>
+  <text x="448" y="319" font-size="13" font-weight="600" fill="#161616">Conveyor CV-02</text>
+  <text x="448" y="335" font-size="11" fill="#525252">Child: Belt, Sensor</text>
+
+  <rect class="node" id="asset_freezer" x="400" y="368" width="288" height="64" rx="8" ry="8" fill="#ffffff" stroke="#007d79" stroke-width="1"/>
+  <path d="M 408 368 Q 400 368 400 376 V 424 Q 400 432 408 432 Z" fill="#007d79"/>
+  <g transform="translate(412 388) scale(0.75)" fill="#161616"><path d="M27,16.76c0-.25,0-.5,0-.76s0-.51,0-.77l1.92-1.68A2,2,0,0,0,29.3,11L26.94,7a2,2,0,0,0-1.73-1,2,2,0,0,0-.64.1l-2.43.82a11.35,11.35,0,0,0-1.31-.75l-.51-2.52a2,2,0,0,0-2-1.61H13.64a2,2,0,0,0-2,1.61l-.51,2.52a11.48,11.48,0,0,0-1.32.75L7.43,6.06A2,2,0,0,0,6.79,6,2,2,0,0,0,5.06,7L2.7,11a2,2,0,0,0,.41,2.51L5,15.24c0,.25,0,.5,0,.76s0,.51,0,.77L3.11,18.45A2,2,0,0,0,2.7,21L5.06,25a2,2,0,0,0,1.73,1,2,2,0,0,0,.64-.1l2.43-.82a11.35,11.35,0,0,0,1.31.75l.51,2.52a2,2,0,0,0,2,1.61h4.72a2,2,0,0,0,2-1.61l.51-2.52a11.48,11.48,0,0,0,1.32-.75l2.42.82a2,2,0,0,0,.64.1,2,2,0,0,0,1.73-1L29.3,21a2,2,0,0,0-.41-2.51ZM25.21,24l-3.43-1.16a8.86,8.86,0,0,1-2.71,1.57L18.36,28H13.64l-.71-3.55a9.36,9.36,0,0,1-2.7-1.57L6.79,24,4.43,20l2.72-2.4a8.9,8.9,0,0,1,0-3.13L4.43,12,6.79,8l3.43,1.16a8.86,8.86,0,0,1,2.71-1.57L13.64,4h4.72l.71,3.55a9.36,9.36,0,0,1,2.7,1.57L25.21,8,27.57,12l-2.72,2.4a8.9,8.9,0,0,1,0,3.13L27.57,20Z"/><path d="M16,22a6,6,0,1,1,6-6A5.94,5.94,0,0,1,16,22Zm0-10a3.91,3.91,0,0,0-4,4,3.91,3.91,0,0,0,4,4,3.91,3.91,0,0,0,4-4A3.91,3.91,0,0,0,16,12Z"/></g>
+  <text x="448" y="389" font-size="11" font-weight="600" fill="#525252">PARENT ASSET</text>
+  <text x="448" y="407" font-size="13" font-weight="600" fill="#161616">Spiral freezer SF-01</text>
+  <text x="448" y="423" font-size="11" fill="#525252">Child: Belt drive, Sensor</text>
+
+  <!-- Column 3: Work Orders Container -->
+  <rect x="744" y="24" width="312" height="456" rx="8" ry="8" fill="#f6f2ff" stroke="#8a3ffc" stroke-width="1"/>
+  <rect x="744" y="24" width="312" height="40" rx="8" ry="8" fill="#8a3ffc"/>
+  <rect x="744" y="56" width="312" height="8" fill="#8a3ffc"/>
+  <g transform="translate(756 32) scale(0.75)" fill="#ffffff"><path d="M22 27.18 19.41 24.59 18 26 22 30 30 22 28.59 20.59 22 27.18z"/><path d="M15,28H8V4h8v6a2.0058,2.0058,0,0,0,2,2h6v6h2V10a.9092.9092,0,0,0-.3-.7l-7-7A.9087.9087,0,0,0,18,2H8A2.0058,2.0058,0,0,0,6,4V28a2.0058,2.0058,0,0,0,2,2h7ZM18,4.4,23.6,10H18Z"/></g>
+  <text x="788" y="49" font-size="14" font-weight="600" fill="#ffffff">Work orders: work performed</text>
+
+  <rect class="node" id="wo_card" x="760" y="144" width="280" height="224" rx="8" ry="8" fill="#ffffff" stroke="#8a3ffc" stroke-width="1.5"/>
+  <path d="M 768 144 Q 760 144 760 152 V 360 Q 760 368 768 368 Z" fill="#8a3ffc"/>
+  <g transform="translate(772 160) scale(0.75)" fill="#161616"><path d="M25.7,9.3l-7-7C18.5,2.1,18.3,2,18,2H8C6.9,2,6,2.9,6,4v24c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V10C26,9.7,25.9,9.5,25.7,9.3&#9;z M18,4.4l5.6,5.6H18V4.4z M24,28H8V4h8v6c0,1.1,0.9,2,2,2h6V28z"/><path d="M10 22H22V24H10z"/><path d="M10 16H22V18H10z"/></g>
+  <text x="808" y="167" font-size="11" font-weight="600" fill="#8a3ffc">WORK ORDER</text>
+  <text x="808" y="185" font-size="14" font-weight="600" fill="#161616">Inspect filler nozzles</text>
+
+  <!-- Divider -->
+  <line x1="772" y1="204" x2="1028" y2="204" stroke="#e0e0e0" stroke-width="1"/>
+
+  <!-- Field 1: Asset -->
+  <text x="772" y="228" font-size="12" font-weight="600" fill="#007d79">Asset</text>
+  <text x="840" y="228" font-size="13" font-weight="600" fill="#161616">Filler FL-02</text>
+
+  <!-- Field 2: Location -->
+  <text x="772" y="260" font-size="12" font-weight="600" fill="#0f62fe">Location</text>
+  <text x="840" y="260" font-size="13" font-weight="600" fill="#161616">Filling Line 2</text>
+
+  <!-- Field 3: Work Type -->
+  <text x="772" y="292" font-size="12" font-weight="600" fill="#525252">Type</text>
+  <text x="840" y="292" font-size="13" fill="#161616">Inspection</text>
+
+  <!-- Field 4: Parts -->
+  <text x="772" y="324" font-size="12" font-weight="600" fill="#525252">Parts</text>
+  <text x="840" y="324" font-size="13" fill="#161616">Food-grade seal kit</text>
+
+  <!-- Field 5: Site context -->
+  <text x="772" y="354" font-size="11" fill="#525252">Plant: Ice cream main plant</text>
+
+  <!-- Connector: Filler FL-02 installed at Filling Line 2 -->
+  <path class="connector" id="c_asset_loc" data-from="asset_filler" data-to="loc_fill" fill="none" stroke="#007d79" stroke-width="1.5" marker-end="url(#arrow)"
+        d="M 400 208 H 368 Q 360 208 360 216 V 272 Q 360 280 352 280 H 328"/>
+  <rect x="332" y="234" width="56" height="20" rx="4" fill="#ffffff" stroke="#007d79" stroke-width="1"/>
+  <text class="conn-label" x="360" y="248" font-size="10" font-weight="600" fill="#007d79" text-anchor="middle">Installed at</text>
+
+  <!-- Connector: Work order targets Filler FL-02 -->
+  <path class="connector" id="c_wo_asset" data-from="wo_card" data-to="asset_filler" fill="none" stroke="#8a3ffc" stroke-width="1.5" marker-end="url(#arrow)"
+        d="M 760 208 H 688"/>
+  <rect x="704" y="198" width="48" height="20" rx="4" fill="#ffffff" stroke="#8a3ffc" stroke-width="1"/>
+  <text class="conn-label" x="728" y="212" font-size="10" font-weight="600" fill="#8a3ffc" text-anchor="middle">Targets</text>
+</svg>

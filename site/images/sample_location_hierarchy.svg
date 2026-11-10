@@ -2,7 +2,7 @@
   <title>Sample location hierarchy for Ice cream main plant</title>
   <rect width="100%" height="100%" fill="#ffffff"/>
 
-  <!-- Site node -->
+  <!-- Top-level location node -->
   <g class="node">
     <rect x="16" y="16" width="448" height="48" fill="#ffffff" stroke="#0F62FE" stroke-width="1.5"/>
     <rect x="16" y="16" width="48" height="48" fill="#0F62FE"/>
@@ -10,7 +10,7 @@
       <path d="M16,18a5,5,0,1,1,5-5A5.0057,5.0057,0,0,1,16,18Zm0-8a3,3,0,1,0,3,3A3.0033,3.0033,0,0,0,16,10Z"/>
       <path d="M16,30,7.5645,20.0513c-.0479-.0571-.3482-.4515-.3482-.4515A10.8888,10.8888,0,0,1,5,13a11,11,0,0,1,22,0,10.8844,10.8844,0,0,1-2.2148,6.5973l-.0015.0025s-.3.3944-.3447.4474ZM8.8125,18.395c.001.0007.2334.3082.2866.3744L16,26.9079l6.91-8.15c.0439-.0552.2783-.3649.2788-.3657A8.901,8.901,0,0,0,25,13,9,9,0,1,0,7,13a8.9054,8.9054,0,0,0,1.8125,5.395Z"/>
     </g>
-    <text x="76" y="35" font-size="11" font-weight="600" fill="#525252" letter-spacing="0.2">SITE</text>
+    <text x="76" y="35" font-size="11" font-weight="600" fill="#525252" letter-spacing="0.2">TOP-LEVEL LOCATION</text>
     <text x="76" y="52" font-size="13" font-weight="600" fill="#161616">Ice cream main plant</text>
   </g>
 
@@ -25,7 +25,7 @@
     <text x="116" y="116" font-size="13" font-weight="600" fill="#161616">Production building</text>
   </g>
 
-  <!-- Connector: Site to Production building -->
+  <!-- Connector: Top-level location to Production building -->
   <g class="connector">
     <circle cx="36" cy="64" r="3" fill="#ffffff" stroke="#161616" stroke-width="1.5"/>
     <path d="M 36 64 V 96 Q 36 104 44 104 H 56" fill="none" stroke="#161616" stroke-width="1.5"/>
@@ -100,7 +100,7 @@
     <text x="116" y="380" font-size="13" font-weight="600" fill="#161616">Cold storage</text>
   </g>
 
-  <!-- Connector: Site to Cold storage -->
+  <!-- Connector: Top-level location to Cold storage -->
   <g class="connector">
     <circle cx="36" cy="64" r="3" fill="#ffffff" stroke="#161616" stroke-width="1.5"/>
     <path d="M 36 64 V 360 Q 36 368 44 368 H 56" fill="none" stroke="#161616" stroke-width="1.5"/>
@@ -118,7 +118,7 @@
     <text x="116" y="444" font-size="13" font-weight="600" fill="#161616">Main storeroom</text>
   </g>
 
-  <!-- Connector: Site to Main storeroom -->
+  <!-- Connector: Top-level location to Main storeroom -->
   <g class="connector">
     <circle cx="36" cy="64" r="3" fill="#ffffff" stroke="#161616" stroke-width="1.5"/>
     <path d="M 36 64 V 424 Q 36 432 44 432 H 56" fill="none" stroke="#161616" stroke-width="1.5"/>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 512" width="1080" height="512" role="img" aria-labelledby="t d" style="background:#ffffff; font-family:'IBM Plex Sans', -apple-system, sans-serif;">
+  <title id="t">Steps to get a new part into inventory</title>
+  <desc id="d">Five steps in order: create the item in Item Master, make sure the storeroom exists in Storerooms, add the item to the storeroom in Item Master, record the location and quantity in Inventory, and issue the part to a work order in Inventory.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#161616"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <rect class="node" id="s1" x="32" y="32" width="1016" height="64" rx="8" ry="8" fill="#ffffff" stroke="#0f62fe" stroke-width="1"/>
+  <path d="M 40 32 Q 32 32 32 40 V 88 Q 32 96 40 96 Z" fill="#0f62fe"/>
+  <g transform="translate(56 52) scale(0.75)" fill="#161616"><path d="M26,2H8A2,2,0,0,0,6,4V8H4v2H6v5H4v2H6v5H4v2H6v4a2,2,0,0,0,2,2H26a2,2,0,0,0,2-2V4A2,2,0,0,0,26,2Zm0,26H8V24h2V22H8V17h2V15H8V10h2V8H8V4H26Z"/><path d="M14 8H22V10H14z"/><path d="M14 15H22V17H14z"/><path d="M14 22H22V24H14z"/></g>
+  <text x="96" y="69" font-size="14" font-weight="600" fill="#161616">1. Item Master</text>
+  <text x="360" y="69" font-size="14" fill="#161616">Create the item. Say what it is and whether it is rotating.</text>
+  <rect class="node" id="s2" x="32" y="128" width="1016" height="64" rx="8" ry="8" fill="#ffffff" stroke="#007d79" stroke-width="1"/>
+  <path d="M 40 128 Q 32 128 32 136 V 184 Q 32 192 40 192 Z" fill="#007d79"/>
+  <g transform="translate(56 148) scale(0.75)" fill="#161616"><path d="M30,10.68l-2-6A1,1,0,0,0,27,4H5a1,1,0,0,0-1,.68l-2,6A1.19,1.19,0,0,0,2,11v6a1,1,0,0,0,1,1H4V28H6V18h6V28H28V18h1a1,1,0,0,0,1-1V11A1.19,1.19,0,0,0,30,10.68ZM26,26H14V18H26Zm2-10H24V12H22v4H17V12H15v4H10V12H8v4H4V11.16L5.72,6H26.28L28,11.16Z"/></g>
+  <text x="96" y="165" font-size="14" font-weight="600" fill="#161616">2. Storerooms</text>
+  <text x="360" y="165" font-size="14" fill="#161616">Make sure the storeroom exists and is active.</text>
+  <rect class="node" id="s3" x="32" y="224" width="1016" height="64" rx="8" ry="8" fill="#ffffff" stroke="#0f62fe" stroke-width="1"/>
+  <path d="M 40 224 Q 32 224 32 232 V 280 Q 32 288 40 288 Z" fill="#0f62fe"/>
+  <g transform="translate(56 244) scale(0.75)" fill="#161616"><path d="M17 15 17 8 15 8 15 15 8 15 8 17 15 17 15 24 17 24 17 17 24 17 24 15z"/></g>
+  <text x="96" y="261" font-size="14" font-weight="600" fill="#161616">3. Item Master</text>
+  <text x="360" y="261" font-size="14" fill="#161616">Add the item to the storeroom. This creates the inventory record.</text>
+  <rect class="node" id="s4" x="32" y="320" width="1016" height="64" rx="8" ry="8" fill="#ffffff" stroke="#8a3ffc" stroke-width="1"/>
+  <path d="M 40 320 Q 32 320 32 328 V 376 Q 32 384 40 384 Z" fill="#8a3ffc"/>
+  <g transform="translate(56 340) scale(0.75)" fill="#161616"><path d="M10 6H28V8H10z"/><path d="M10 24H28V26H10z"/><path d="M10 15H28V17H10z"/><path d="M4 15H6V17H4z"/><path d="M4 6H6V8H4z"/><path d="M4 24H6V26H4z"/></g>
+  <text x="96" y="357" font-size="14" font-weight="600" fill="#161616">4. Inventory</text>
+  <text x="360" y="357" font-size="14" fill="#161616">Record where the part is kept and how many you have.</text>
+  <rect class="node" id="s5" x="32" y="416" width="1016" height="64" rx="8" ry="8" fill="#ffffff" stroke="#8a3ffc" stroke-width="1"/>
+  <path d="M 40 416 Q 32 416 32 424 V 472 Q 32 480 40 480 Z" fill="#8a3ffc"/>
+  <g transform="translate(56 436) scale(0.75)" fill="#161616"><path d="M27.45,15.11l-22-11a1,1,0,0,0-1.08.12,1,1,0,0,0-.33,1L7,16,4,26.74A1,1,0,0,0,5,28a1,1,0,0,0,.45-.11l22-11a1,1,0,0,0,0-1.78Zm-20.9,10L8.76,17H18V15H8.76L6.55,6.89,24.76,16Z"/></g>
+  <text x="96" y="453" font-size="14" font-weight="600" fill="#161616">5. Inventory</text>
+  <text x="360" y="453" font-size="14" fill="#161616">Issue the part to a work order.</text>
+  <path class="connector" id="k1" data-from="s1" data-to="s2" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 64 96 V 128"/>
+  <path class="connector" id="k2" data-from="s2" data-to="s3" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 64 192 V 224"/>
+  <path class="connector" id="k3" data-from="s3" data-to="s4" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 64 288 V 320"/>
+  <path class="connector" id="k4" data-from="s4" data-to="s5" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 64 384 V 416"/>
+</svg>

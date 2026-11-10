@@ -301,6 +301,17 @@
       
         
   
+    <cds-side-nav-menu-item href="../../start-fast/basics/other-mobile-apps.html" class="nav-level-3">
+      Other mobile apps
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
     <cds-side-nav-menu-item href="../../start-fast/basics/how-inspections-work.html" class="nav-level-3">
       How inspections work
     </cds-side-nav-menu-item>
@@ -390,6 +401,17 @@
   
     <cds-side-nav-menu-item href="../setup-control/automate-communication.html" class="nav-level-4">
       Automate communication
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../setup-control/ticket-templates.html" class="nav-level-4">
+      Ticket templates
     </cds-side-nav-menu-item>
   
 
@@ -738,6 +760,17 @@
       
         
   <cds-side-nav-menu title="Manage inventory" active="" expanded="" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="get-part-into-inventory.html" class="nav-level-3">
+      Get a part into inventory
+    </cds-side-nav-menu-item>
+  
+
+      
     
       
       
@@ -1268,10 +1301,15 @@
 </tr>
 </tbody>
 </table>
-<div class="admonition warning">
-<p class="admonition-title">TODO: Add visual content</p>
-<p>A diagram showing the parts issue workflow would be useful here.</p>
-</div>
+<p>Figure 1 illustrates the end-to-end parts issue and material transaction workflow across three main stages:</p>
+<ul>
+<li><strong>1. Issue entry methods</strong>: Technicians or <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">inventory</abbr> clerks initiate an issue through one of three paths: from an active <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> on the Materials tab, directly at the storeroom counter using the <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">Inventory</abbr> issue action, or in the field using barcode scanning in the Technician mobile app.</li>
+<li><strong>2. Validation checks</strong>: The system validates the transaction by confirming a valid storeroom and <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr> number, verifying that the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> is in a chargeable <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr>, checking that sufficient available storeroom balance exists, and confirming all required accounting fields are populated.</li>
+<li><strong>3. Simultaneous updates</strong>: Upon successful validation, the system executes three updates simultaneously: deducting the physical balance from the storeroom and logging an audit transaction, charging actual material costs directly to the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr>, and evaluating reorder thresholds to trigger <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">inventory</abbr> replenishment if stock drops below minimum levels.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/sample_parts_issue_workflow.svg" data-title="Explained in body text" data-desc-position="bottom"><img src="../../images/sample_parts_issue_workflow.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;"></a></p>
+<p class="figure-caption">Figure 1: Parts issue and material transaction workflow</p>
+
 <hr>
 <h2 id="tips-for-success">💡 Tips for success<a class="headerlink" href="#tips-for-success" title="Permanent link">¤</a></h2>
 <p><strong>Before you start work:</strong></p>
@@ -1339,13 +1377,13 @@
 <li>Open the <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">Inventory</abbr> application.</li>
 <li>Search for the <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr> you need.</li>
 <li>Open the <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">inventory</abbr> record.</li>
-<li>Click <strong>Issue</strong> action.</li>
+<li>Click <strong>Issue Current <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">Item</abbr></strong>.</li>
 <li>Enter the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> number.</li>
 <li>Specify quantity.</li>
 <li>Confirm the issue.</li>
 </ol>
 <p>The system updates <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">inventory</abbr> balance, shows the material on the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr>, and records the cost.</p>
-<p><abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">Inventory</abbr> clerks can also use the Issues and Transfers app, from <strong><abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">Inventory</abbr> &gt; Issues and Transfers</strong> on the desktop or in IBM Maximo Mobile. Use it to issue <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; materials, spare parts, or stock keeping units (SKUs)">items</abbr> that are reserved for approved <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr>, issue <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; materials, spare parts, or stock keeping units (SKUs)">items</abbr> that are not reserved, and transfer <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; materials, spare parts, or stock keeping units (SKUs)">items</abbr> between storerooms.</p>
+<p><abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">Inventory</abbr> clerks can also use the Issues and Transfers app on the desktop or in IBM Maximo Mobile. Use it to issue <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; materials, spare parts, or stock keeping units (SKUs)">items</abbr> that are reserved for approved <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr>, issue <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; materials, spare parts, or stock keeping units (SKUs)">items</abbr> that are not reserved, and transfer <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; materials, spare parts, or stock keeping units (SKUs)">items</abbr> between storerooms or between bins.</p>
 <h3 id="method-3-use-mobile-app">Method 3: Use mobile app<a class="headerlink" href="#method-3-use-mobile-app" title="Permanent link">¤</a></h3>
 <p>On mobile devices:</p>
 <ul>
@@ -1391,13 +1429,18 @@
 <ol>
 <li>Issue parts immediately.</li>
 <li>Add to <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> as soon as possible.</li>
-<li>Don't skip recording - it affects <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">inventory</abbr>.</li>
+<li>Don't skip recording: it affects <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">inventory</abbr>.</li>
 <li>Explain urgency in notes.</li>
 </ol>
-<div class="admonition warning">
-<p class="admonition-title">TODO: Add visual content</p>
-<p>A flowchart for handling parts issues would be useful here.</p>
-</div>
+<p>Figure 2 outlines the sequential resolution workflows for three common parts issue scenarios:</p>
+<ul>
+<li><strong>Scenario 1 (Part not in stock)</strong>: First check other storerooms across plant <abbr title="Data partitioning concepts that represent plants, facilities, or business units.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; plants, facilities, or business units">sites</abbr> for available stock, then initiate a purchase requisition or storeroom transfer, and finally update the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr> to Waiting on Material.</li>
+<li><strong>Scenario 2 (Quantity mismatch)</strong>: For an under-issue where additional parts are needed, create an extra issue line for the difference. For an over-issue where too many parts were taken, use the Return action on the actuals tab to return extra parts to the storeroom. The system automatically adjusts storeroom balance and <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> cost.</li>
+<li><strong>Scenario 3 (Emergency repair)</strong>: For urgent breakdowns, issue parts immediately to perform the repair, record the material actuals on the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> once the equipment is safe, and add explanatory documentation notes to the work log.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/sample_parts_issue_scenarios_decision_tree.svg" data-title="Explained in body text" data-desc-position="bottom"><img src="../../images/sample_parts_issue_scenarios_decision_tree.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;"></a></p>
+<p class="figure-caption">Figure 2: Decision tree for handling common parts issue scenarios</p>
+
 <hr>
 <h2 id="how-do-i-return-unused-parts">How do I return unused parts?<a class="headerlink" href="#how-do-i-return-unused-parts" title="Permanent link">¤</a></h2>
 <p>If you have leftover parts:</p>
@@ -1451,7 +1494,7 @@
           <!-- Navigation footer (prev/next) -->
 <nav class="md-footer-nav" aria-label="Footer navigation">
   <div class="md-footer-nav__inner">
-    <a href="../manage-assets/asset-fails.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+    <a href="get-part-into-inventory.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
       <div class="md-footer-nav__direction">
         <svg class="md-footer-nav__icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"></path>
@@ -1459,7 +1502,7 @@
         <span>Previous</span>
       </div>
       <div class="md-footer-nav__title">
-        <span class="md-footer-nav__title-text">Asset failures</span>
+        <span class="md-footer-nav__title-text">Get a part into inventory</span>
       </div>
     </a>
     <a href="track-stock-levels.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">

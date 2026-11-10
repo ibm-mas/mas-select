@@ -301,6 +301,17 @@
       
         
   
+    <cds-side-nav-menu-item href="../../start-fast/basics/other-mobile-apps.html" class="nav-level-3">
+      Other mobile apps
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
     <cds-side-nav-menu-item href="../../start-fast/basics/how-inspections-work.html" class="nav-level-3">
       How inspections work
     </cds-side-nav-menu-item>
@@ -390,6 +401,17 @@
   
     <cds-side-nav-menu-item href="../../get-work-done/setup-control/automate-communication.html" class="nav-level-4">
       Automate communication
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/setup-control/ticket-templates.html" class="nav-level-4">
+      Ticket templates
     </cds-side-nav-menu-item>
   
 
@@ -738,6 +760,17 @@
       
         
   <cds-side-nav-menu title="Manage inventory" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/manage-inventory/get-part-into-inventory.html" class="nav-level-3">
+      Get a part into inventory
+    </cds-side-nav-menu-item>
+  
+
+      
     
       
       
@@ -1308,7 +1341,7 @@
 </tr>
 <tr>
 <td><strong>Maintenance Planner</strong></td>
-<td>Work Order Summary</td>
+<td><abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">Work orders</abbr></td>
 <td>Job Plans, PM, Routes</td>
 <td>Build multi-step maintenance plans, schedule recurring PMs, coordinate <abbr title="A trade or skill type required for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; trade, skill type, or discipline">craft</abbr> routes</td>
 </tr>
@@ -1320,9 +1353,18 @@
 </tr>
 </tbody>
 </table>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/sample_simplified_work_routing.svg" data-title="Simplified work order routing and execution workflow" data-desc-position="bottom"><img src="../../images/sample_simplified_work_routing.svg" alt="Simplified work order routing and execution workflow" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/sample_simplified_work_routing.svg" data-title="Explained in body text" data-desc-position="bottom"><img src="../../images/sample_simplified_work_routing.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;"></a></p>
 <p class="figure-caption">Figure 1: Simplified work order routing and execution workflow</p>
 
+<p>As shown in Figure 1, a simplified routing model processes maintenance work across four distinct stages:</p>
+<ol>
+<li><strong>Work ingestion</strong>: The system or a requester generates a <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr>.</li>
+<li><strong>Triage and approval routing</strong>: Work splits according to urgency:</li>
+<li><strong>Emergency and critical work</strong>: Routes to the supervisor queue for direct supervisor review.</li>
+<li><strong>Routine PM and minor repairs</strong>: Auto-approves to bypass administrative delays and routes directly to <abbr title="A trade or skill type required for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; trade, skill type, or discipline">craft</abbr> assignment.</li>
+<li><strong>Execution</strong>: Both streams converge in the Technician app, where technicians view assigned <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> and execute tasks in the field.</li>
+<li><strong>Completion</strong>: Technicians log <abbr title="Work time and effort assigned to a work order.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; technician time, work hours, or crew time">labor</abbr> hours, parts, and notes in the mobile interface, automatically triggering completion notifications to stakeholders.</li>
+</ol>
 <h2 id="configuring-user-profile-defaults">Configuring user profile defaults<a class="headerlink" href="#configuring-user-profile-defaults" title="Permanent link">¤</a></h2>
 <p>When technicians, supervisors, or storeroom clerks create records, having the system auto-populate their home <abbr title="A data partitioning concept that represents a plant, facility, or business unit.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; plant, facility, or business unit">Site</abbr> and default Storeroom eliminates repetitive keystrokes.</p>
 <h3 id="setting-default-insert-site-in-the-desktop-application">Setting default Insert <abbr title="A data partitioning concept that represents a plant, facility, or business unit.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; plant, facility, or business unit">Site</abbr> in the desktop application<a class="headerlink" href="#setting-default-insert-site-in-the-desktop-application" title="Permanent link">¤</a></h3>
@@ -1339,7 +1381,7 @@
 <p>Instead of requiring maintenance planners to send manual emails to production managers when equipment repairs finish, set up automated email notifications using Communication Templates.</p>
 <h3 id="creating-an-automated-notification-template">Creating an automated notification template<a class="headerlink" href="#creating-an-automated-notification-template" title="Permanent link">¤</a></h3>
 <ol>
-<li>Go to <strong>System Configuration &gt; Platform Configuration &gt; Communication Templates</strong>.</li>
+<li>In the <strong>Find navigation <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr></strong> field, search for Communication Templates and open it.</li>
 <li>Click <strong>New Communication Template</strong>.</li>
 <li>In the <strong>Template</strong> field, enter an identifier, such as <code>WO_COMPLETED_NOTIFY</code>.</li>
 <li>In the <strong>Applies to</strong> field, enter <code>WORKORDER</code>.</li>

@@ -301,6 +301,17 @@
       
         
   
+    <cds-side-nav-menu-item href="../../start-fast/basics/other-mobile-apps.html" class="nav-level-3">
+      Other mobile apps
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
     <cds-side-nav-menu-item href="../../start-fast/basics/how-inspections-work.html" class="nav-level-3">
       How inspections work
     </cds-side-nav-menu-item>
@@ -390,6 +401,17 @@
   
     <cds-side-nav-menu-item href="../../get-work-done/setup-control/automate-communication.html" class="nav-level-4">
       Automate communication
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/setup-control/ticket-templates.html" class="nav-level-4">
+      Ticket templates
     </cds-side-nav-menu-item>
   
 
@@ -738,6 +760,17 @@
       
         
   <cds-side-nav-menu title="Manage inventory" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/manage-inventory/get-part-into-inventory.html" class="nav-level-3">
+      Get a part into inventory
+    </cds-side-nav-menu-item>
+  
+
+      
     
       
       
@@ -1272,9 +1305,21 @@
 </tr>
 </tbody>
 </table>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/sample_data_into_decisions_flow.svg" data-title="Maintenance data aggregation and decision pipeline" data-desc-position="bottom"><img src="../../images/sample_data_into_decisions_flow.svg" alt="Maintenance data aggregation and decision pipeline" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/sample_data_into_decisions_flow.svg" data-title="Explained in body text" data-desc-position="bottom"><img src="../../images/sample_data_into_decisions_flow.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;"></a></p>
 <p class="figure-caption">Figure 1: Maintenance data aggregation and decision pipeline</p>
 
+<p>As shown in Figure 1, operational maintenance data moves through a four-stage decision pipeline from raw logging to strategic actions:</p>
+<ol>
+<li><strong>Data ingestion</strong>: Field technicians and clerks log raw work logs, <abbr title="Work time and effort assigned to a work order.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; technician time, work hours, or crew time">labor</abbr> hours, and parts actuals.</li>
+<li><strong>Aggregation engines</strong>: Data feeds in parallel into two core analytical modules:</li>
+<li><strong>KPI Manager</strong>: Calculates compliance rates and measures performance against targets.</li>
+<li><strong>Failure Codes</strong>: Tracks chronic root causes and failure trends.</li>
+<li><strong>Dashboards</strong>: Operational dashboards aggregate these analytical streams into unified review screens.</li>
+<li><strong>Strategic actions</strong>: Specific performance thresholds trigger targeted operational decisions:</li>
+<li><strong>PM Compliance below 85 percent</strong>: Reallocate <abbr title="A trade or skill type required for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; trade, skill type, or discipline">craft</abbr> <abbr title="Work time and effort assigned to a work order.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; technician time, work hours, or crew time">labor</abbr> to clear maintenance backlogs.</li>
+<li><strong>Chronic failures</strong>: Refine <abbr title="A template that defines standard tasks, materials, and labor for recurring maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; standard job, task template, or maintenance procedure">job plan</abbr> instructions and maintenance tasks.</li>
+<li><strong>Repair cost exceeding 60 percent of <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> value</strong>: Initiate capital replacement planning.</li>
+</ol>
 <h2 id="monitoring-metrics-with-kpi-manager-and-kpi-viewer">Monitoring metrics with KPI Manager and KPI Viewer<a class="headerlink" href="#monitoring-metrics-with-kpi-manager-and-kpi-viewer" title="Permanent link">¤</a></h2>
 <p>KPI Manager allows reliability managers to configure mathematical metrics, set performance targets, and define Green, Yellow, and Red alert thresholds.</p>
 <h3 id="key-performance-indicator-benchmarks">Key performance indicator benchmarks<a class="headerlink" href="#key-performance-indicator-benchmarks" title="Permanent link">¤</a></h3>
@@ -1291,7 +1336,7 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>PM Compliance Rate (10 percent rule)</strong></td>
+<td><strong>PM Compliance Rate with 10 percent grace rule</strong></td>
 <td>Greater than 90 percent</td>
 <td>80 to 89 percent</td>
 <td>Below 80 percent</td>
@@ -1303,7 +1348,7 @@
 <td>Above 20 percent</td>
 </tr>
 <tr>
-<td><strong>Mean Time Between Failures (MTBF)</strong></td>
+<td><strong>Mean Time Between Failures, MTBF</strong></td>
 <td>Increasing month-over-month</td>
 <td>Flat</td>
 <td>Declining trend</td>
@@ -1318,7 +1363,7 @@
 </table>
 <h3 id="creating-a-kpi-in-the-desktop-application">Creating a KPI in the desktop application<a class="headerlink" href="#creating-a-kpi-in-the-desktop-application" title="Permanent link">¤</a></h3>
 <ol>
-<li>Go to <strong>Analytics &gt; KPI Manager</strong>.</li>
+<li>In the <strong>Find navigation <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr></strong> field, search for KPI Manager and open it.</li>
 <li>Click <strong>New KPI</strong>.</li>
 <li>In the <strong>KPI</strong> field, enter a unique code, such as <code>KPI_PM_COMPLIANCE</code>.</li>
 <li>In the <strong>Description</strong> field, enter <code>Preventive Maintenance Compliance Rate</code>.</li>

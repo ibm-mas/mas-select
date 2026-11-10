@@ -301,6 +301,17 @@
       
         
   
+    <cds-side-nav-menu-item href="../../start-fast/basics/other-mobile-apps.html" class="nav-level-3">
+      Other mobile apps
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
     <cds-side-nav-menu-item href="../../start-fast/basics/how-inspections-work.html" class="nav-level-3">
       How inspections work
     </cds-side-nav-menu-item>
@@ -390,6 +401,17 @@
   
     <cds-side-nav-menu-item href="automate-communication.html" active="" expanded="" class="nav-level-4">
       Automate communication
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="ticket-templates.html" class="nav-level-4">
+      Ticket templates
     </cds-side-nav-menu-item>
   
 
@@ -738,6 +760,17 @@
       
         
   <cds-side-nav-menu title="Manage inventory" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../manage-inventory/get-part-into-inventory.html" class="nav-level-3">
+      Get a part into inventory
+    </cds-side-nav-menu-item>
+  
+
+      
     
       
       
@@ -1279,7 +1312,7 @@
 <p><abbr title="Reusable email templates that can be triggered automatically by workflows or escalations, or manually from records.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; email templates, notification templates, or message templates">Communication templates</abbr> automate outbound email for <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> assignments, <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr> changes, approvals, and other events. You create a template once, then attach it to an <abbr title="An automated rule that monitors the system for a condition and performs an action or sends a notification when that condition is met.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; alert rule, automated notification, or trigger">escalation</abbr>, a workflow, or trigger it manually from a record.</p>
 <h3 id="how-to-create-a-communication-template">How to create a <abbr title="A reusable email template that can be triggered automatically by a workflow or escalation, or manually from a record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; email template, notification template, or message template">communication template</abbr><a class="headerlink" href="#how-to-create-a-communication-template" title="Permanent link">¤</a></h3>
 <ol>
-<li>Go to <strong>Administration &gt; Communication Templates</strong>.</li>
+<li>In the <strong>Find navigation <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr></strong> field, search for Communication Templates and open it.</li>
 <li>Click <strong>New Communication Template</strong>.</li>
 <li>Enter a unique <strong>Template ID</strong> and a clear description.</li>
 <li>Set <strong>Accessible From</strong> to the context where this template will be used, such as <strong>APPS</strong> or <strong>ALL</strong>.</li>
@@ -1298,6 +1331,9 @@
 <li>Save the template.</li>
 <li>Use <strong>Change <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">Status</abbr></strong> to set the template <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr> to <strong>Active</strong>.</li>
 </ol>
+<h3 id="send-an-email-about-a-kpi">Send an email about a KPI<a class="headerlink" href="#send-an-email-about-a-kpi" title="Permanent link">¤</a></h3>
+<p>When a KPI reaches its caution or alert level, you can email the people who need to act. From the KPI, use the <strong>Create Communication</strong> action and choose a <abbr title="A reusable email template that can be triggered automatically by a workflow or escalation, or manually from a record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; email template, notification template, or message template">communication template</abbr> to fill in the subject and message. The email is recorded in the KPI's log.</p>
+<p><code>[SME confirmation required: Confirm that the Create Communication action is available for KPIs in Select, and whether an administrator can set up these emails to send automatically when a KPI reaches a threshold.]</code></p>
 <hr>
 <h2 id="push-notifications">Push notifications<a class="headerlink" href="#push-notifications" title="Permanent link">¤</a></h2>
 <p>Push notifications send real-time alerts to the IBM Maximo Mobile app on iOS and Android devices. Users receive a notification on their device when an event occurs, such as a <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> being assigned to them, without needing to have the app open.</p>
@@ -1366,7 +1402,7 @@
         <span class="md-footer-nav__title-text">Set up labor, crafts, and crews</span>
       </div>
     </a>
-    <a href="set-up-maps.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+    <a href="ticket-templates.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
       <div class="md-footer-nav__direction">
         <span>Next</span>
         <svg class="md-footer-nav__icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -1374,7 +1410,7 @@
         </svg>
       </div>
       <div class="md-footer-nav__title">
-        <span class="md-footer-nav__title-text">Set up maps</span>
+        <span class="md-footer-nav__title-text">Ticket templates</span>
       </div>
     </a>
   </div>
@@ -1415,6 +1451,11 @@
                       <li class="md-toc__item">
                         <a href="#how-to-create-a-communication-template" class="md-toc__link" data-md-level="2">
                           How to create a communication template
+                        </a>
+                      </li>
+                      <li class="md-toc__item">
+                        <a href="#send-an-email-about-a-kpi" class="md-toc__link" data-md-level="2">
+                          Send an email about a KPI
                         </a>
                       </li>
                   </ul>

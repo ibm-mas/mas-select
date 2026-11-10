@@ -301,6 +301,17 @@
       
         
   
+    <cds-side-nav-menu-item href="../../start-fast/basics/other-mobile-apps.html" class="nav-level-3">
+      Other mobile apps
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
     <cds-side-nav-menu-item href="../../start-fast/basics/how-inspections-work.html" class="nav-level-3">
       How inspections work
     </cds-side-nav-menu-item>
@@ -390,6 +401,17 @@
   
     <cds-side-nav-menu-item href="../../get-work-done/setup-control/automate-communication.html" class="nav-level-4">
       Automate communication
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/setup-control/ticket-templates.html" class="nav-level-4">
+      Ticket templates
     </cds-side-nav-menu-item>
   
 
@@ -738,6 +760,17 @@
       
         
   <cds-side-nav-menu title="Manage inventory" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/manage-inventory/get-part-into-inventory.html" class="nav-level-3">
+      Get a part into inventory
+    </cds-side-nav-menu-item>
+  
+
+      
     
       
       
@@ -1278,15 +1311,20 @@
 </tr>
 </tbody>
 </table>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/sample_scaling_master_pm_routes.svg" data-title="Operational scaling through Master PMs and multi-stop routes" data-desc-position="bottom"><img src="../../images/sample_scaling_master_pm_routes.svg" alt="Operational scaling through Master PMs and multi-stop routes" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/sample_scaling_master_pm_routes.svg" data-title="Explained in body text" data-desc-position="bottom"><img src="../../images/sample_scaling_master_pm_routes.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;"></a></p>
 <p class="figure-caption">Figure 1: Operational scaling through Master PMs and multi-stop routes</p>
 
+<p>As shown in Figure 1, operational scaling relies on two complementary consolidation mechanisms:</p>
+<ul>
+<li><strong>Master PM cascading</strong>: A single master template, such as the 50 HP Motor Template, links to and automatically updates individual maintenance schedules across the plant, including PM 1001 for Filler FL-01 Drive Motor, PM 1002 for Filler FL-02 Drive Motor, and PM 1003 for Filler FL-03 Drive Motor.</li>
+<li><strong>Route consolidation</strong>: A single route definition, such as the Cold Storage Daily Route, bundles multiple physical inspections into one unified <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> with sequential stops, covering Stop 1: Production Room Compressor Valve, Stop 2: Cold Storage Evaporator Valve, and Stop 3: Filling Line Room Bypass Valve.</li>
+</ul>
 <h2 id="standardizing-schedules-with-master-pms">Standardizing schedules with Master PMs<a class="headerlink" href="#standardizing-schedules-with-master-pms" title="Permanent link">¤</a></h2>
 <p>When your facility operates dozens of identical <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">assets</abbr>, such as motors, pumps, or conveyors, creating separate PM schedules for each machine causes maintenance drift. If the manufacturer updates the recommended lubrication interval, updating each PM manually is time-consuming and error-prone.</p>
 <p>A Master PM establishes the master frequency and attached Job Plan. When you modify the Master PM, Maximo Application Suite Select cascades the update to all linked individual <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> PM records.</p>
 <h3 id="creating-a-master-pm-in-the-desktop-application">Creating a Master PM in the desktop application<a class="headerlink" href="#creating-a-master-pm-in-the-desktop-application" title="Permanent link">¤</a></h3>
 <ol>
-<li>Go to <strong>Planning and Maintenance &gt; Master PM</strong>.</li>
+<li>In the <strong>Find navigation <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr></strong> field, search for Master PM and open it.</li>
 <li>Click <strong>New Master PM</strong>.</li>
 <li>In the <strong>Master PM</strong> field, enter a unique identifier, such as <code>MPM_50HP_MOTOR</code>.</li>
 <li>In the <strong>Description</strong> field, enter <code>Standard 50 HP Motor Quarterly Service</code>.</li>
@@ -1332,7 +1370,7 @@
 </table>
 <h3 id="creating-an-asset-route-in-the-desktop-application">Creating an <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> route in the desktop application<a class="headerlink" href="#creating-an-asset-route-in-the-desktop-application" title="Permanent link">¤</a></h3>
 <ol>
-<li>Go to <strong>Planning and Maintenance &gt; Routes</strong>.</li>
+<li>In the <strong>Find navigation <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr></strong> field, search for Routes and open it.</li>
 <li>Click <strong>New Route</strong>.</li>
 <li>In the <strong>Route</strong> field, enter an identifier, such as <code>RT_COLD_INSPECT</code>.</li>
 <li>In the <strong>Description</strong> field, enter <code>Cold Storage Daily Temperature and Valve Inspection</code>.</li>

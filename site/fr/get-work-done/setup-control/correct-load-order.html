@@ -301,6 +301,17 @@
       
         
   
+    <cds-side-nav-menu-item href="../../start-fast/basics/other-mobile-apps.html" class="nav-level-3">
+      Autres applications mobiles
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
     <cds-side-nav-menu-item href="../../start-fast/basics/how-inspections-work.html" class="nav-level-3">
       Fonctionnement des inspections
     </cds-side-nav-menu-item>
@@ -390,6 +401,17 @@
   
     <cds-side-nav-menu-item href="automate-communication.html" class="nav-level-4">
       Automatiser la communication
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="ticket-templates.html" class="nav-level-4">
+      Ticket templates
     </cds-side-nav-menu-item>
   
 
@@ -738,6 +760,17 @@
       
         
   <cds-side-nav-menu title="Gérer l'inventaire" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../manage-inventory/get-part-into-inventory.html" class="nav-level-3">
+      Mettre une pièce en stock
+    </cds-side-nav-menu-item>
+  
+
+      
     
       
       
@@ -1238,7 +1271,17 @@
             
             <h1 id="what-is-the-correct-load-order">What is the correct load order?<a class="headerlink" href="#what-is-the-correct-load-order" title="Permanent link">¤</a></h1>
 <p>Import order matters. Referenced records must exist before records that use them, and parent records must exist before child records.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../images/data_onboarding_pathway.svg" data-title="Five-step data onboarding pathway in Maximo Application Suite Select: 1. Understand the correct load order, 2. Plan your location hierarchy, 3. Prepare data for import, 4. Get data into the system, 5. Fix import errors." data-desc-position="bottom"><img src="../../../images/data_onboarding_pathway.svg" alt="Five-step data onboarding pathway in Maximo Application Suite Select: 1. Understand the correct load order, 2. Plan your location hierarchy, 3. Prepare data for import, 4. Get data into the system, 5. Fix import errors." style="width: 100%; max-width: 480px; display: block; margin: 16px auto;"></a></p>
+<p>Figure 1 outlines the five sequential steps of the data onboarding pathway:</p>
+<ol>
+<li><strong>Understand the correct load order</strong>: review dependency rules so supporting data and parent records load first.</li>
+<li><strong>Plan your <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> and <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> hierarchies</strong>: design physical places and equipment breakdown structures top-down.</li>
+<li><strong>Prepare data for import</strong>: download CSV templates from Data Management, format columns as text, and validate fields.</li>
+<li><strong>Get data into the system</strong>: upload files, run preview validation, and commit the import.</li>
+<li><strong>Fix import errors</strong>: diagnose rejected records in error logs and re-import corrected rows.</li>
+</ol>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../images/data_onboarding_pathway.svg" data-title="Explained in body text" data-desc-position="bottom"><img src="../../../images/data_onboarding_pathway.svg" alt="Explained in body text" style="width: 100%; max-width: 480px; display: block; margin: 16px auto;"></a></p>
+<p class="figure-caption">Figure 1: The five-step data onboarding pathway</p>
+
 <h2 id="why-does-load-order-matter">Why does load order matter?<a class="headerlink" href="#why-does-load-order-matter" title="Permanent link">¤</a></h2>
 <p>Child records reference parent records. If the parent does not exist yet, the child import fails. Similarly, if a record references supporting data that does not exist, the import fails.</p>
 <p><strong>Example</strong>: You cannot create <code>Ice cream main plant &gt; Production building &gt; Filling line room</code> if <code>Ice cream main plant</code> and <code>Production building</code> do not exist.</p>
@@ -1254,7 +1297,7 @@
 <li>Vendors and manufacturers</li>
 <li><abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">Asset</abbr> type values</li>
 <li>Classifications and specifications</li>
-<li><abbr title="A data partitioning concept that represents a plant, facility, or business unit.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; plant, facility, or business unit">Site</abbr> addresses, including bill-to and ship-to addresses</li>
+<li>Addresses, including bill-to and ship-to addresses</li>
 </ul>
 <p><strong>Why this matters</strong>: <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">Locations</abbr> and <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">assets</abbr> reference these records. If the referenced data does not exist, the import fails.</p>
 <h3 id="2-locations-in-hierarchy-order">2. <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">Locations</abbr> in hierarchy order<a class="headerlink" href="#2-locations-in-hierarchy-order" title="Permanent link">¤</a></h3>
@@ -1286,7 +1329,7 @@
 <ul>
 <li>Import parent <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">assets</abbr> before child <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">assets</abbr> or subassemblies</li>
 <li>Verify that each child <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> references the correct parent <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr></li>
-<li>Verify that the parent <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> exists at the expected <abbr title="A data partitioning concept that represents a plant, facility, or business unit.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; plant, facility, or business unit">site</abbr> and, if applicable, <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr></li>
+<li>Verify that the parent <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> exists and is at the expected <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr></li>
 </ul>
 <h3 id="4-other-records-that-reference-locations-or-assets">4. Other records that reference <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr> or <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">assets</abbr><a class="headerlink" href="#4-other-records-that-reference-locations-or-assets" title="Permanent link">¤</a></h3>
 <p>Import other records that depend on <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr> and <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">assets</abbr>:</p>
@@ -1298,10 +1341,10 @@
 <h3 id="location-hierarchies"><abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">Location</abbr> hierarchies<a class="headerlink" href="#location-hierarchies" title="Permanent link">¤</a></h3>
 <p><strong>Correct order</strong>:</p>
 <ol>
-<li><abbr title="A data partitioning concept that represents a plant, facility, or business unit.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; plant, facility, or business unit">Site</abbr>, such as <code>Ice cream main plant</code></li>
-<li>Building, such as <code>Production building</code></li>
-<li>Area or room, such as <code>Filling line room</code></li>
-<li>Sub-area, if applicable</li>
+<li>Top-level <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr>, such as <code>Ice cream main plant</code></li>
+<li>Second-level <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr>, such as <code>Production building</code></li>
+<li>Lower-level <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr>, such as <code>Filling line room</code></li>
+<li>Further sub-<abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr>, if applicable</li>
 </ol>
 <p><strong>What happens if you import in the wrong order</strong>: Child <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr> fail because their parent does not exist.</p>
 <p><strong>What to do</strong>: Sort your import file so parent records come before child records.</p>
@@ -1316,7 +1359,7 @@
 <ul>
 <li>Parent <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> IDs are correct</li>
 <li>Each child <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> references the correct parent</li>
-<li>Parent <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">assets</abbr> exist at the expected <abbr title="A data partitioning concept that represents a plant, facility, or business unit.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; plant, facility, or business unit">site</abbr> and <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr></li>
+<li>Parent <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">assets</abbr> exist at the expected <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr></li>
 </ul>
 <h3 id="parent-child-relationships">Parent-child relationships<a class="headerlink" href="#parent-child-relationships" title="Permanent link">¤</a></h3>
 <p><strong>General rule</strong>: Always import parents before children.</p>
@@ -1347,8 +1390,8 @@
 </tr>
 <tr>
 <td>2</td>
-<td><strong>Plan your <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> hierarchy</strong><br>Map your <abbr title="A data partitioning concept that represents a plant, facility, or business unit.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; plant, facility, or business unit">site</abbr>, buildings, and rooms top-down on paper before creating records.</td>
-<td><a href="plan-your-location-hierarchy.html">How do I plan my <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> hierarchy?</a></td>
+<td><strong>Plan your <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> and <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> hierarchies</strong><br>Map your <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr> and equipment top-down on paper before creating records.</td>
+<td><a href="plan-your-location-hierarchy.html">How do I plan my <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> hierarchy?</a><br><a href="plan-your-asset-hierarchy.html">How do I plan my <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> hierarchy?</a></td>
 </tr>
 <tr>
 <td>3</td>
@@ -1369,9 +1412,12 @@
 </table>
 <hr>
 <h2 id="continue-building-your-skills">Continue building your skills<a class="headerlink" href="#continue-building-your-skills" title="Permanent link">¤</a></h2>
-<h3 id="recommended-next-step-plan-your-location-hierarchy">Recommended next step: Plan your <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> hierarchy<a class="headerlink" href="#recommended-next-step-plan-your-location-hierarchy" title="Permanent link">¤</a></h3>
-<p>Before preparing spreadsheet files, sketch your <abbr title="A data partitioning concept that represents a plant, facility, or business unit.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; plant, facility, or business unit">site</abbr> and room structure to avoid orphan records and grouping errors.</p>
-<p><a href="plan-your-location-hierarchy.html">How do I plan my <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> hierarchy?</a></p>
+<h3 id="recommended-next-step-plan-your-hierarchies">Recommended next step: Plan your hierarchies<a class="headerlink" href="#recommended-next-step-plan-your-hierarchies" title="Permanent link">¤</a></h3>
+<p>Before preparing spreadsheet files, sketch your <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr> and equipment top-down to avoid orphan records and grouping errors.</p>
+<ol>
+<li><a href="plan-your-location-hierarchy.html">How do I plan my <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> hierarchy?</a></li>
+<li><a href="plan-your-asset-hierarchy.html">How do I plan my <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> hierarchy?</a></li>
+</ol>
 <h3 id="related-skills">Related skills<a class="headerlink" href="#related-skills" title="Permanent link">¤</a></h3>
 <ul>
 <li><a href="decide-location-asset-spare-part.html">How do I decide: <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr>, <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr>, or spare part?</a>: Classify every facility entity, machine, and consumable wear <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr> accurately.</li>
@@ -1501,8 +1547,8 @@
                 </a>
                   <ul class="md-toc__list">
                       <li class="md-toc__item">
-                        <a href="#recommended-next-step-plan-your-location-hierarchy" class="md-toc__link" data-md-level="2">
-                          Recommended next step: Plan your location hierarchy
+                        <a href="#recommended-next-step-plan-your-hierarchies" class="md-toc__link" data-md-level="2">
+                          Recommended next step: Plan your hierarchies
                         </a>
                       </li>
                       <li class="md-toc__item">

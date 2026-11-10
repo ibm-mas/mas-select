@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 520" width="1080" height="520" role="img" aria-labelledby="t d" style="background:#ffffff; font-family:'IBM Plex Sans', -apple-system, sans-serif;">
+  <title id="t">Storeroom inventory hierarchy: bin, lot, and item tracking</title>
+  <desc id="d">Inventory is organized hierarchically from storeroom to bin locations, tracking specific batches using lot numbers and serialized rotating equipment, with real-time balance calculations for current, reserved, and available quantities.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#161616"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <rect x="32" y="32" width="312" height="456" rx="8" fill="#f4f4f4" stroke="#8d8d8d" stroke-width="1"/>
+  <rect x="32" y="32" width="312" height="48" rx="8" fill="#e0e0e0"/>
+  <rect x="32" y="72" width="312" height="8" fill="#e0e0e0"/>
+<g transform="translate(48 44) scale(0.75)" fill="#161616"><path d="M30,10.68l-2-6A1,1,0,0,0,27,4H5a1,1,0,0,0-1,.68l-2,6A1.19,1.19,0,0,0,2,11v6a1,1,0,0,0,1,1H4V28H6V18h6V28H28V18h1a1,1,0,0,0,1-1V11A1.19,1.19,0,0,0,30,10.68ZM26,26H14V18H26Zm2-10H24V12H22v4H17V12H15v4H10V12H8v4H4V11.16L5.72,6H26.28L28,11.16Z"/></g>
+  <text x="88" y="62" font-size="16" font-weight="600" fill="#161616">1. Physical location</text>
+  <rect class="node" id="n_st" x="40" y="104" width="288" height="88" rx="8" fill="#ffffff" stroke="#0f62fe" stroke-width="1"/>
+  <path d="M 48 104 Q 40 104 40 112 V 184 Q 40 192 48 192 Z" fill="#0f62fe"/>
+<g transform="translate(64 136) scale(0.75)" fill="#161616"><path d="M30,10.68l-2-6A1,1,0,0,0,27,4H5a1,1,0,0,0-1,.68l-2,6A1.19,1.19,0,0,0,2,11v6a1,1,0,0,0,1,1H4V28H6V18h6V28H28V18h1a1,1,0,0,0,1-1V11A1.19,1.19,0,0,0,30,10.68ZM26,26H14V18H26Zm2-10H24V12H22v4H17V12H15v4H10V12H8v4H4V11.16L5.72,6H26.28L28,11.16Z"/></g>
+  <text x="104" y="140" font-size="14" font-weight="600" fill="#161616">Main storeroom</text>
+  <text x="104" y="162" font-size="12" fill="#525252">Primary inventory storeroom site</text>
+  <rect class="node" id="n_aisle" x="40" y="216" width="288" height="88" rx="8" fill="#ffffff" stroke="#007d79" stroke-width="1"/>
+  <path d="M 48 216 Q 40 216 40 224 V 296 Q 40 304 48 304 Z" fill="#007d79"/>
+<g transform="translate(64 248) scale(0.75)" fill="#161616"><path d="M16,18a5,5,0,1,1,5-5A5.0057,5.0057,0,0,1,16,18Zm0-8a3,3,0,1,0,3,3A3.0033,3.0033,0,0,0,16,10Z"/><path d="M16,30,7.5645,20.0513c-.0479-.0571-.3482-.4515-.3482-.4515A10.8888,10.8888,0,0,1,5,13a11,11,0,0,1,22,0,10.8844,10.8844,0,0,1-2.2148,6.5973l-.0015.0025s-.3.3944-.3447.4474ZM8.8125,18.395c.001.0007.2334.3082.2866.3744L16,26.9079l6.91-8.15c.0439-.0552.2783-.3649.2788-.3657A8.901,8.901,0,0,0,25,13,9,9,0,1,0,7,13a8.9054,8.9054,0,0,0,1.8125,5.395Z"/></g>
+  <text x="104" y="252" font-size="14" font-weight="600" fill="#161616">Aisle and shelf coordinates</text>
+  <text x="104" y="274" font-size="12" fill="#525252">Row A, Shelf 03 physical placement</text>
+  <rect class="node" id="n_bin" x="40" y="328" width="288" height="88" rx="8" fill="#ffffff" stroke="#8a3ffc" stroke-width="1"/>
+  <path d="M 48 328 Q 40 328 40 336 V 408 Q 40 416 48 416 Z" fill="#8a3ffc"/>
+<g transform="translate(64 360) scale(0.75)" fill="#161616"><path d="M20,21H12a2,2,0,0,1-2-2V17a2,2,0,0,1,2-2h8a2,2,0,0,1,2,2v2A2,2,0,0,1,20,21Zm-8-4v2h8V17Z"/><path d="M28,4H4A2,2,0,0,0,2,6v4a2,2,0,0,0,2,2V28a2,2,0,0,0,2,2H26a2,2,0,0,0,2-2V12a2,2,0,0,0,2-2V6A2,2,0,0,0,28,4ZM26,28H6V12H26Zm2-18H4V6H28v4Z"/></g>
+  <text x="104" y="364" font-size="14" font-weight="600" fill="#161616">Specific bin: BIN-04</text>
+  <text x="104" y="386" font-size="12" fill="#525252">Storage compartment for stock</text>
+  <rect x="384" y="32" width="312" height="456" rx="8" fill="#f4f4f4" stroke="#8d8d8d" stroke-width="1"/>
+  <rect x="384" y="32" width="312" height="48" rx="8" fill="#e0e0e0"/>
+  <rect x="384" y="72" width="312" height="8" fill="#e0e0e0"/>
+<g transform="translate(400 44) scale(0.75)" fill="#161616"><circle cx="10" cy="14" r="2"/><path d="M16,30a1,1,0,0,1-.71-.29L4.59,19A2,2,0,0,1,4,17.59V10A2,2,0,0,1,6,8h7.59A2,2,0,0,1,15,8.59l10.71,10.7a1,1,0,0,1,0,1.42l-9,9A1,1,0,0,1,16,30ZM6,10v7.59l10,10L23.59,20l-10-10Z"/><path d="M27.71,13.29,17,2.59A2,2,0,0,0,15.59,2H8A2,2,0,0,0,6,4V6H8V4h7.59l10,10-1.3,1.29,1.42,1.42,2-2A1,1,0,0,0,27.71,13.29Z"/></g>
+  <text x="440" y="62" font-size="16" font-weight="600" fill="#161616">2. Item tracking level</text>
+  <rect class="node" id="n_t1" x="400" y="104" width="280" height="88" rx="8" fill="#ffffff" stroke="#0f62fe" stroke-width="1"/>
+  <path d="M 408 104 Q 400 104 400 112 V 184 Q 400 192 408 192 Z" fill="#0f62fe"/>
+<g transform="translate(416 136) scale(0.75)" fill="#161616"><path d="M10,14a4,4,0,1,1,4-4A4.0045,4.0045,0,0,1,10,14Zm0-6a2,2,0,1,0,1.998,2.0044A2.002,2.002,0,0,0,10,8Z"/><path d="M16.6436,29.4145,2.5858,15.3555A2,2,0,0,1,2,13.9414V4A2,2,0,0,1,4,2h9.9413a2,2,0,0,1,1.4142.5858L29.4144,16.6436a2.0005,2.0005,0,0,1,0,2.8285l-9.9424,9.9425a2.0008,2.0008,0,0,1-2.8285,0ZM4,4v9.9417L18.0578,28,28,18.0579,13.9416,4Z"/></g>
+  <text x="456" y="140" font-size="14" font-weight="600" fill="#161616">Standard inventory item</text>
+  <text x="456" y="162" font-size="12" fill="#525252">Tracked by item number</text>
+  <rect class="node" id="n_t2" x="400" y="216" width="280" height="88" rx="8" fill="#ffffff" stroke="#8a3ffc" stroke-width="1"/>
+  <path d="M 408 216 Q 400 216 400 224 V 296 Q 400 304 408 304 Z" fill="#8a3ffc"/>
+<g transform="translate(416 248) scale(0.75)" fill="#161616"><path d="M22 27.18 19.41 24.59 18 26 22 30 30 22 28.59 20.59 22 27.18z"/><path d="M15,28H8V4h8v6a2.0058,2.0058,0,0,0,2,2h6v6h2V10a.9092.9092,0,0,0-.3-.7l-7-7A.9087.9087,0,0,0,18,2H8A2.0058,2.0058,0,0,0,6,4V28a2.0058,2.0058,0,0,0,2,2h7ZM18,4.4,23.6,10H18Z"/></g>
+  <text x="456" y="252" font-size="14" font-weight="600" fill="#161616">Lot and batch tracking</text>
+  <text x="456" y="274" font-size="12" fill="#525252">Tracks batch and expiry date</text>
+  <rect class="node" id="n_t3" x="400" y="328" width="280" height="88" rx="8" fill="#ffffff" stroke="#007d79" stroke-width="1"/>
+  <path d="M 408 328 Q 400 328 400 336 V 408 Q 400 416 408 416 Z" fill="#007d79"/>
+<g transform="translate(416 360) scale(0.75)" fill="#161616"><path d="M12,24a4,4,0,1,1,4-4A4.0042,4.0042,0,0,1,12,24Zm0-6a2,2,0,1,0,2,2A2.0023,2.0023,0,0,0,12,18Z"/><path d="M30,6a4.0042,4.0042,0,0,0-4-4,3.949,3.949,0,0,0-1.8537.4768L7.7571,10.9579A9.9921,9.9921,0,1,0,21.066,24.1929l8.49-16.3994A3.9491,3.9491,0,0,0,30,6ZM26,4a2,2,0,1,1-2,2A2.0023,2.0023,0,0,1,26,4ZM22.0194,5.8083C22.0163,5.8732,22,5.9343,22,6a4.0042,4.0042,0,0,0,4,4c.0645,0,.1245-.016.1882-.019l-4.3318,8.3617a10.0168,10.0168,0,0,0-8.2158-8.1962ZM12,28a8,8,0,1,1,8-8A8.0092,8.0092,0,0,1,12,28Z"/></g>
+  <text x="456" y="364" font-size="14" font-weight="600" fill="#161616">Rotating serialized assets</text>
+  <text x="456" y="386" font-size="12" fill="#525252">Tracks asset serial numbers</text>
+  <rect x="736" y="32" width="312" height="456" rx="8" fill="#f4f4f4" stroke="#8d8d8d" stroke-width="1"/>
+  <rect x="736" y="32" width="312" height="48" rx="8" fill="#e0e0e0"/>
+  <rect x="736" y="72" width="312" height="8" fill="#e0e0e0"/>
+<g transform="translate(752 44) scale(0.75)" fill="#161616"><path d="M26,4V28H6V4H26m0-2H6A2,2,0,0,0,4,4V28a2,2,0,0,0,2,2H26a2,2,0,0,0,2-2V4A2,2,0,0,0,26,2Z"/><path d="M9 23H11V25H9z"/><path d="M21 23H23V25H21z"/><path d="M9 18H11V20H9z"/><path d="M21 18H23V20H21z"/><path d="M9 13H11V15H9z"/><path d="M15 23H17V25H15z"/><path d="M15 18H17V20H15z"/><path d="M15 13H17V15H15z"/><path d="M21 13H23V15H21z"/><path d="M9 7H23V10H9z"/></g>
+  <text x="792" y="62" font-size="16" font-weight="600" fill="#161616">3. Balance calculation</text>
+  <rect class="node" id="n_b1" x="752" y="104" width="280" height="88" rx="8" fill="#ffffff" stroke="#0f62fe" stroke-width="1"/>
+  <path d="M 760 104 Q 752 104 752 112 V 184 Q 752 192 760 192 Z" fill="#0f62fe"/>
+<g transform="translate(768 136) scale(0.75)" fill="#161616"><path d="M20,21H12a2,2,0,0,1-2-2V17a2,2,0,0,1,2-2h8a2,2,0,0,1,2,2v2A2,2,0,0,1,20,21Zm-8-4v2h8V17Z"/><path d="M28,4H4A2,2,0,0,0,2,6v4a2,2,0,0,0,2,2V28a2,2,0,0,0,2,2H26a2,2,0,0,0,2-2V12a2,2,0,0,0,2-2V6A2,2,0,0,0,28,4ZM26,28H6V12H26Zm2-18H4V6H28v4Z"/></g>
+  <text x="808" y="140" font-size="14" font-weight="600" fill="#161616">Current balance: 25</text>
+  <text x="808" y="162" font-size="12" fill="#525252">Total physical quantity</text>
+  <rect class="node" id="n_b2" x="752" y="216" width="280" height="88" rx="8" fill="#ffffff" stroke="#8a3ffc" stroke-width="1"/>
+  <path d="M 760 216 Q 752 216 752 224 V 296 Q 752 304 760 304 Z" fill="#8a3ffc"/>
+<g transform="translate(768 248) scale(0.75)" fill="#161616"><path d="M27,30h-2v-9h2v9ZM23,30h-2v-9h2v9ZM17,30H7c-1.103,0-2-.8975-2-2V7c0-1.103.897-2,2-2h3v-1c0-1.103.897-2,2-2h8c1.1025,0,2,.897,2,2v1h3c1.1025,0,2,.897,2,2v10h-2V7h-3v3h-12v-3h-3v21h10v2ZM12,8h8v-4h-8v4Z"/></g>
+  <text x="808" y="252" font-size="14" font-weight="600" fill="#161616">Reserved quantity: 5</text>
+  <text x="808" y="274" font-size="12" fill="#525252">Allocated to work orders</text>
+  <rect class="node" id="n_b3" x="752" y="328" width="280" height="88" rx="8" fill="#ffffff" stroke="#007d79" stroke-width="1"/>
+  <path d="M 760 328 Q 752 328 752 336 V 408 Q 752 416 760 416 Z" fill="#007d79"/>
+<g transform="translate(768 360) scale(0.75)" fill="#161616"><path d="M14 21.414 9 16.413 10.413 15 14 18.586 21.585 11 23 12.415 14 21.414z"/><path d="M16,2A14,14,0,1,0,30,16,14,14,0,0,0,16,2Zm0,26A12,12,0,1,1,28,16,12,12,0,0,1,16,28Z"/></g>
+  <text x="808" y="364" font-size="14" font-weight="600" fill="#161616">Available balance: 20</text>
+  <text x="808" y="386" font-size="12" fill="#525252">Current minus reserved stock</text>
+  <!-- Connectors -->
+  <path class="connector" id="k1" data-from="n_st" data-to="n_aisle" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 184 192 V 216"/>
+  <path class="connector" id="k2" data-from="n_aisle" data-to="n_bin" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 184 304 V 328"/>
+  <path class="connector" id="k3" data-from="n_bin" data-to="n_t1" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 328 352 H 360 Q 368 352 368 344 V 152 Q 368 144 376 144 H 400"/>
+  <path class="connector" id="k4" data-from="n_bin" data-to="n_t2" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 328 368 H 360 Q 368 368 368 360 V 264 Q 368 256 376 256 H 400"/>
+  <path class="connector" id="k5" data-from="n_bin" data-to="n_t3" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 328 384 H 400"/>
+  <path class="connector" id="k6" data-from="n_t1" data-to="n_b1" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 680 144 H 752"/>
+  <path class="connector" id="k7" data-from="n_t2" data-to="n_b2" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 680 256 H 752"/>
+  <path class="connector" id="k8" data-from="n_t3" data-to="n_b3" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 680 368 H 752"/>
+</svg>

@@ -301,6 +301,17 @@
       
         
   
+    <cds-side-nav-menu-item href="../../start-fast/basics/other-mobile-apps.html" class="nav-level-3">
+      Autres applications mobiles
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
     <cds-side-nav-menu-item href="../../start-fast/basics/how-inspections-work.html" class="nav-level-3">
       Fonctionnement des inspections
     </cds-side-nav-menu-item>
@@ -390,6 +401,17 @@
   
     <cds-side-nav-menu-item href="../../get-work-done/setup-control/automate-communication.html" class="nav-level-4">
       Automatiser la communication
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/setup-control/ticket-templates.html" class="nav-level-4">
+      Ticket templates
     </cds-side-nav-menu-item>
   
 
@@ -738,6 +760,17 @@
       
         
   <cds-side-nav-menu title="Gérer l'inventaire" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-work-done/manage-inventory/get-part-into-inventory.html" class="nav-level-3">
+      Mettre une pièce en stock
+    </cds-side-nav-menu-item>
+  
+
+      
     
       
       
@@ -1240,9 +1273,17 @@
 <p>Optimizing maintenance performance in Maximo Application Suite Select involves conducting PM optimization reviews, fine-tuning condition monitoring limits, refining <abbr title="A template that defines standard tasks, materials, and labor for recurring maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; standard job, task template, or maintenance procedure">job plan</abbr> <abbr title="Work time and effort assigned to a work order.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; technician time, work hours, or crew time">labor</abbr> estimates, and eliminating chronic failure modes.</p>
 <h2 id="the-continuous-optimization-cycle">The continuous optimization cycle<a class="headerlink" href="#the-continuous-optimization-cycle" title="Permanent link">¤</a></h2>
 <p>Effective maintenance programs follow a closed-loop refinement cycle:</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../images/sample_continuous_optimization_cycle.svg" data-title="Continuous maintenance performance optimization cycle" data-desc-position="bottom"><img src="../../../images/sample_continuous_optimization_cycle.svg" alt="Continuous maintenance performance optimization cycle" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../images/sample_continuous_optimization_cycle.svg" data-title="Explained in body text" data-desc-position="bottom"><img src="../../../images/sample_continuous_optimization_cycle.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;"></a></p>
 <p class="figure-caption">Figure 1: Continuous maintenance performance optimization cycle</p>
 
+<p>As shown in Figure 1, continuous maintenance optimization operates as a closed-loop cycle across four progressive steps and an ongoing refinement loop:</p>
+<ol>
+<li><strong>Step 1: Execute work</strong>: Technicians perform preventive, corrective, and inspection tasks in the field.</li>
+<li><strong>Step 2: Log actuals</strong>: Technicians record accurate actual <abbr title="Work time and effort assigned to a work order.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; technician time, work hours, or crew time">labor</abbr> hours, materials used, and <abbr title="Standardized codes used to categorize and track equipment failures.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; failure classifications, breakdown codes, or fault codes">failure codes</abbr>.</li>
+<li><strong>Step 3: Analyze KPIs</strong>: Reliability engineers and supervisors evaluate key performance metrics, such as PM compliance and equipment availability.</li>
+<li><strong>Step 4: Identify changes</strong>: The maintenance team pinpoints operational bottlenecks and formulates targeted process revisions.</li>
+<li><strong>Refinement actions</strong>: Adjustments such as extending PM intervals, refining <abbr title="A template that defines standard tasks, materials, and labor for recurring maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; standard job, task template, or maintenance procedure">job plan</abbr> torque specifications, and pre-staging replacement parts feed directly back into Step 1 for ongoing execution.</li>
+</ol>
 <h3 id="table-1-maintenance-optimization-stages-and-techniques">Table 1: Maintenance optimization stages and techniques<a class="headerlink" href="#table-1-maintenance-optimization-stages-and-techniques" title="Permanent link">¤</a></h3>
 <table>
 <thead>
@@ -1263,7 +1304,7 @@
 <tr>
 <td><strong>Condition threshold calibration</strong></td>
 <td>Setting realistic warning and action limits</td>
-<td>Gauge <abbr title="A counter that tracks equipment usage, such as hours, cycles, or miles.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; counter, runtime meter, or odometer">meter</abbr> readings, historical sensor logs</td>
+<td>Gauge <abbr title="A counter that tracks equipment usage, such as hours, cycles, or miles.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; counter, runtime meter, or odometer">meter</abbr> readings, historical reading logs</td>
 <td>Preventing alarm fatigue while ensuring early anomaly detection</td>
 </tr>
 <tr>
@@ -1318,7 +1359,7 @@
 <p>When an <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> runs intermittently, calendar-based maintenance schedules generate premature <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr>. Converting calendar PMs to <abbr title="A counter that tracks equipment usage, such as hours, cycles, or miles.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; counter, runtime meter, or odometer">meter</abbr>-based schedules ensures servicing occurs only after true operating wear.</p>
 <h3 id="updating-a-pm-schedule-to-usage-based-triggers">Updating a PM schedule to usage-based triggers<a class="headerlink" href="#updating-a-pm-schedule-to-usage-based-triggers" title="Permanent link">¤</a></h3>
 <ol>
-<li>Go to <strong>Planning and Maintenance &gt; PM</strong>.</li>
+<li>In the <strong>Find navigation <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr></strong> field, search for PM and open it.</li>
 <li>Open the <abbr title="Scheduled routine maintenance performed to prevent equipment failures.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance plan, planned maintenance, or PM">preventive maintenance</abbr> record for the target <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr>, such as <code>PM_FILLER02_SVC</code>.</li>
 <li>In the <strong>Frequency</strong> tab, navigate to the <strong><abbr title="A counter that tracks equipment usage, such as hours, cycles, or miles.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; counter, runtime meter, or odometer">Meter</abbr> Based Frequency</strong> sub-tab.</li>
 <li>Click <strong>New Row</strong> to link a continuous <abbr title="A counter that tracks equipment usage, such as hours, cycles, or miles.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; counter, runtime meter, or odometer">meter</abbr>:</li>
@@ -1334,7 +1375,7 @@
 <p>Condition monitoring thresholds that are set too tight cause alarm fatigue, leading supervisors to ignore alerts. Thresholds set too loose fail to generate corrective <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> before catastrophic failure.</p>
 <h3 id="adjusting-action-limits-in-condition-monitoring">Adjusting Action Limits in Condition Monitoring<a class="headerlink" href="#adjusting-action-limits-in-condition-monitoring" title="Permanent link">¤</a></h3>
 <ol>
-<li>Go to <strong><abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">Assets</abbr> &gt; Condition Monitoring</strong>.</li>
+<li>In the <strong>Find navigation <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr></strong> field, search for Condition Monitoring and open it.</li>
 <li>Open the point record, such as <code>CP_FILLER02_MOTOR_VIB</code>.</li>
 <li>In the <strong>Action Limits</strong> table, review historical readings captured on recent <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr>.</li>
 <li>Update the <strong>Upper Action Limit</strong> to reflect the true ISO vibration velocity ceiling.</li>

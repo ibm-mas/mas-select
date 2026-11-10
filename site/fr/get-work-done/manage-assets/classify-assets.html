@@ -301,6 +301,17 @@
       
         
   
+    <cds-side-nav-menu-item href="../../start-fast/basics/other-mobile-apps.html" class="nav-level-3">
+      Autres applications mobiles
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
     <cds-side-nav-menu-item href="../../start-fast/basics/how-inspections-work.html" class="nav-level-3">
       Fonctionnement des inspections
     </cds-side-nav-menu-item>
@@ -390,6 +401,17 @@
   
     <cds-side-nav-menu-item href="../setup-control/automate-communication.html" class="nav-level-4">
       Automatiser la communication
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../setup-control/ticket-templates.html" class="nav-level-4">
+      Ticket templates
     </cds-side-nav-menu-item>
   
 
@@ -738,6 +760,17 @@
       
         
   <cds-side-nav-menu title="Gérer l'inventaire" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../manage-inventory/get-part-into-inventory.html" class="nav-level-3">
+      Mettre une pièce en stock
+    </cds-side-nav-menu-item>
+  
+
+      
     
       
       
@@ -1255,22 +1288,18 @@
 <tbody>
 <tr>
 <td><strong>Classification</strong></td>
-<td>A category that describes what type of equipment you have (such as "Rotary Fillers" or "Spiral Freezers")</td>
+<td>A category that describes what type of equipment you have, such as "Rotary Fillers" or "Spiral Freezers"</td>
 </tr>
 <tr>
 <td><strong>Attribute</strong></td>
-<td>A specific detail about the equipment (such as "Manufacturer" or "Fill capacity")</td>
+<td>A specific detail about the equipment, such as "Manufacturer" or "Fill capacity"</td>
 </tr>
 <tr>
 <td><strong>Hierarchy</strong></td>
-<td>How classifications are organized from broad to specific (such as Equipment → Filling and Packaging → Rotary Fillers)</td>
+<td>How classifications are organized from broad to specific, such as Equipment to Filling and Packaging to Rotary Fillers</td>
 </tr>
 </tbody>
 </table>
-<div class="admonition warning">
-<p class="admonition-title">TODO: Add visual content</p>
-<p>A diagram showing classification hierarchy (such as Equipment → Fillers → Rotary Fillers) would be useful here.</p>
-</div>
 <hr>
 <h2 id="tips-for-success">💡 Tips for success<a class="headerlink" href="#tips-for-success" title="Permanent link">¤</a></h2>
 <h3 id="choose-the-correct-classification">Choose the correct classification<a class="headerlink" href="#choose-the-correct-classification" title="Permanent link">¤</a></h3>
@@ -1316,19 +1345,15 @@
 <li><strong>Mid level</strong>: Specific types, such as "Filling and Packaging" or "Freezers"</li>
 <li><strong>Bottom level</strong>: Detailed subtypes, such as "Spiral Freezers" or "Rotary Fillers"</li>
 </ul>
-<p>Example:
-</p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Equipment
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  └─ Filling and Packaging
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>      ├─ Rotary Fillers        (for example, Filler FL-02)
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>      └─ Case Packers
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>  └─ Refrigeration
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>      └─ Freezers
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>          └─ Spiral Freezers   (for example, Spiral Freezer SF-01)
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>  └─ Processing Equipment
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>      └─ Mixers                (for example, Batch Mixer MX-01)
-</code></pre></div><p></p>
+<p>Figure 1 illustrates an example classification tree branching from a top-level Equipment category into three distinct branches:</p>
+<ul>
+<li><strong>Filling and Packaging</strong>: branches into Rotary Fillers, with example <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> Filler FL-02, and Case Packers.</li>
+<li><strong>Refrigeration</strong>: branches into Freezers, which further branches into Spiral Freezers, with example <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> Spiral Freezer SF-01.</li>
+<li><strong>Processing Equipment</strong>: branches into Mixers, with example <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> Batch Mixer MX-01.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../images/sample_classification_hierarchy.svg" data-title="Explained in body text" data-desc-position="bottom"><img src="../../../images/sample_classification_hierarchy.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;"></a></p>
+<p class="figure-caption">Figure 1: An example classification hierarchy</p>
+
 <p>Use the most specific classification that fits your equipment. This makes it easier to find and manage.</p>
 <h3 id="attributes-and-specifications">Attributes and specifications<a class="headerlink" href="#attributes-and-specifications" title="Permanent link">¤</a></h3>
 <p>Each classification can have attributes that define specific details:</p>
@@ -1392,7 +1417,7 @@
 <p>This makes it easy to analyze maintenance patterns and costs for specific types of equipment.</p>
 <hr>
 <h2 id="what-if-the-classification-doesnt-exist">What if the classification doesn't exist?<a class="headerlink" href="#what-if-the-classification-doesnt-exist" title="Permanent link">¤</a></h2>
-<p>If you need a classification that doesn't exist:</p>
+<p>Select includes some classifications. If you need a classification that doesn't exist:</p>
 <ol>
 <li>Check if a similar classification works.</li>
 <li>Contact your administrator to create new classifications.</li>
