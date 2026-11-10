@@ -1306,10 +1306,15 @@
 <hr>
 <h2 id="why-didnt-inventory-update-after-issuing">Why didn't <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">inventory</abbr> update after issuing?<a class="headerlink" href="#why-didnt-inventory-update-after-issuing" title="Permanent link">¤</a></h2>
 <p>Material issues should trigger <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">inventory</abbr> and cost updates simultaneously. If they didn't, something went wrong.</p>
-<div class="admonition warning">
-<p class="admonition-title">TODO: Add visual content</p>
-<p>A diagram showing the material issue workflow (issue → <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">inventory</abbr> update → cost recording) would be useful here.</p>
-</div>
+<p>Figure 1 illustrates the parts issue validation and update workflow:</p>
+<ul>
+<li><strong>1. Issue entry methods</strong>: Work begins from an active <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr>, at the storeroom counter, or via the mobile app.</li>
+<li><strong>2. Validation checks</strong>: The system checks four conditions: valid storeroom and <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr> number, chargeable <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr>, sufficient available storeroom balance, and populated required fields.</li>
+<li><strong>3. Simultaneous updates</strong>: When all validation checks pass, the system performs three actions at the same time: deducts the physical balance from the storeroom, records actual material costs on the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr>, and evaluates whether remaining stock breaches the reorder point. If any validation check fails, none of these updates occur.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../images/sample_parts_issue_workflow.svg" data-title="Explained in body text" data-desc-position="bottom"><img src="../../../images/sample_parts_issue_workflow.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;"></a></p>
+<p class="figure-caption">Figure 1: Parts issue and material transaction workflow</p>
+
 <h3 id="transaction-didnt-complete">Transaction didn't complete<a class="headerlink" href="#transaction-didnt-complete" title="Permanent link">¤</a></h3>
 <p>The issue might have failed partway through.</p>
 <p><strong>What to check</strong>:</p>

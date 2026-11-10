@@ -1288,10 +1288,15 @@
 <li>Holidays and shutdowns</li>
 <li>Days off</li>
 </ul>
-<div class="admonition warning">
-<p class="admonition-title">TODO: Add visual content</p>
-<p>A diagram showing how calendars connect to <abbr title="Work time and effort assigned to a work order.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; technician time, work hours, or crew time">labor</abbr>, <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr>, and work scheduling would be useful here.</p>
-</div>
+<p>Figure 1 shows how calendars connect to <abbr title="Work time and effort assigned to a work order.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; technician time, work hours, or crew time">labor</abbr>, equipment, and work scheduling across three areas:</p>
+<ul>
+<li><strong>Calendar definition</strong>: establishes shift patterns for working hours, standard work weeks for working days, and non-working time for holidays and shutdowns.</li>
+<li><strong>Assigned records</strong>: attaches calendars to <abbr title="Work time and effort assigned to a work order.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; technician time, work hours, or crew time">labor</abbr> records for individual worker availability, <abbr title="A named group of workers assembled to complete a job together, assigned as a team to a work order.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; work crew, team, or work gang">crew</abbr> records for <abbr title="A named group of workers assembled to complete a job together, assigned as a team to a work order.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; work crew, team, or work gang">crew</abbr> group availability, and <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr> or <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">assets</abbr> for shutdown windows.</li>
+<li><strong>Work scheduling</strong>: validates worker availability against open shifts to assign target start and finish dates.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/sample_calendar_scheduling_flow.svg" data-title="Explained in body text" data-desc-position="bottom"><img src="../../images/sample_calendar_scheduling_flow.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;"></a></p>
+<p class="figure-caption">Figure 1: How calendars connect to labor, equipment, and work scheduling</p>
+
 <h3 id="when-to-use-calendars">When to use calendars<a class="headerlink" href="#when-to-use-calendars" title="Permanent link">¤</a></h3>
 <p>Use calendars to:</p>
 <ul>
@@ -1347,10 +1352,15 @@
 </table>
 <h2 id="routes-group-inspection-points">Routes: Group inspection points<a class="headerlink" href="#routes-group-inspection-points" title="Permanent link">¤</a></h2>
 <p>Routes are lists of <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; materials, spare parts, or stock keeping units (SKUs)">items</abbr> that need regular inspection. Create one route. Generate <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> for all <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; materials, spare parts, or stock keeping units (SKUs)">items</abbr> at once.</p>
-<div class="admonition warning">
-<p class="admonition-title">TODO: Add visual content</p>
-<p>A diagram showing a route with multiple stops and how it generates <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> would be useful here.</p>
-</div>
+<p>Figure 2 illustrates how a multi-stop route generates work across inspection points:</p>
+<ul>
+<li><strong>Multi-stop route</strong>: defines sequential stops, such as Stop 1 (<code>Filler FL-02</code>), Stop 2 (<code>Spiral Freezer SF-01</code>), and Stop 3 (<code>Batch Mixer MX-01</code>).</li>
+<li><strong>Option A (Separate <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> per stop)</strong>: generates individual child <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> (<code>WO 101</code>, <code>WO 102</code>, <code>WO 103</code>) so each machine retains independent maintenance history and cost tracking.</li>
+<li><strong>Option B (One <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> with multiple tasks)</strong>: generates a single consolidated <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> containing sequential tasks (<code>Task 10</code>, <code>Task 20</code>, <code>Task 30</code>) with unified completion at the route level.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/sample_route_work_order_generation.svg" data-title="Explained in body text" data-desc-position="bottom"><img src="../../images/sample_route_work_order_generation.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;"></a></p>
+<p class="figure-caption">Figure 2: How routes generate work orders across multiple inspection stops</p>
+
 <h3 id="when-to-use-routes">When to use routes<a class="headerlink" href="#when-to-use-routes" title="Permanent link">¤</a></h3>
 <p>Use routes for:</p>
 <ul>

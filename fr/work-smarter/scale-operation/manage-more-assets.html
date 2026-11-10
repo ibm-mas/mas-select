@@ -1314,9 +1314,14 @@
 </tr>
 </tbody>
 </table>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../images/sample_scaling_master_pm_routes.svg" data-title="Operational scaling through Master PMs and multi-stop routes" data-desc-position="bottom"><img src="../../../images/sample_scaling_master_pm_routes.svg" alt="Operational scaling through Master PMs and multi-stop routes" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../images/sample_scaling_master_pm_routes.svg" data-title="Explained in body text" data-desc-position="bottom"><img src="../../../images/sample_scaling_master_pm_routes.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;"></a></p>
 <p class="figure-caption">Figure 1: Operational scaling through Master PMs and multi-stop routes</p>
 
+<p>As shown in Figure 1, operational scaling relies on two complementary consolidation mechanisms:</p>
+<ul>
+<li><strong>Master PM cascading</strong>: A single master template, such as the 50 HP Motor Template, links to and automatically updates individual maintenance schedules across the plant, including PM 1001 for Filler FL-01 Drive Motor, PM 1002 for Filler FL-02 Drive Motor, and PM 1003 for Filler FL-03 Drive Motor.</li>
+<li><strong>Route consolidation</strong>: A single route definition, such as the Cold Storage Daily Route, bundles multiple physical inspections into one unified <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> with sequential stops, covering Stop 1: Production Room Compressor Valve, Stop 2: Cold Storage Evaporator Valve, and Stop 3: Filling Line Room Bypass Valve.</li>
+</ul>
 <h2 id="standardizing-schedules-with-master-pms">Standardizing schedules with Master PMs<a class="headerlink" href="#standardizing-schedules-with-master-pms" title="Permanent link">¤</a></h2>
 <p>When your facility operates dozens of identical <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">assets</abbr>, such as motors, pumps, or conveyors, creating separate PM schedules for each machine causes maintenance drift. If the manufacturer updates the recommended lubrication interval, updating each PM manually is time-consuming and error-prone.</p>
 <p>A Master PM establishes the master frequency and attached Job Plan. When you modify the Master PM, Maximo Application Suite Select cascades the update to all linked individual <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> PM records.</p>

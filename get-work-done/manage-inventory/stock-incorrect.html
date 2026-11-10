@@ -1311,7 +1311,16 @@
 </tr>
 </tbody>
 </table>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/sample_inventory_correction_flow.svg" data-title="Six steps in order: verify the count, review transactions, check related records, get approval if needed, adjust the balance, and follow up." data-desc-position="bottom"><img src="../../images/sample_inventory_correction_flow.svg" alt="Six steps in order: verify the count, review transactions, check related records, get approval if needed, adjust the balance, and follow up." style="width: 100%; max-width: 680px; display: block; margin: 16px auto;"></a></p>
+<p>Figure 1 outlines the sequential six-step <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">inventory</abbr> correction process:</p>
+<ol>
+<li><strong>Verify the count</strong>: recount the <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr> to confirm physical quantities.</li>
+<li><strong>Review transactions</strong>: look at recent activity for missed entries.</li>
+<li><strong>Check related records</strong>: inspect <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> and receipts.</li>
+<li><strong>Get approval if needed</strong>: obtain supervisor sign-off for large adjustments.</li>
+<li><strong>Adjust the balance</strong>: update records by using <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">Inventory</abbr> Adjustments.</li>
+<li><strong>Follow up</strong>: resolve underlying causes to prevent recurrence.</li>
+</ol>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/sample_inventory_correction_flow.svg" data-title="Explained in body text" data-desc-position="bottom"><img src="../../images/sample_inventory_correction_flow.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;"></a></p>
 <p class="figure-caption">Figure 1: The inventory correction process</p>
 
 <hr>
@@ -1376,7 +1385,13 @@
 <li>System errors</li>
 <li>Integration problems</li>
 </ul>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/sample_inventory_error_sources.svg" data-title="Transaction errors, physical issues, and system issues can each lead to a stock discrepancy, where the system record does not match the physical count." data-desc-position="bottom"><img src="../../images/sample_inventory_error_sources.svg" alt="Transaction errors, physical issues, and system issues can each lead to a stock discrepancy, where the system record does not match the physical count." style="width: 100%; max-width: 680px; display: block; margin: 16px auto;"></a></p>
+<p>Figure 2 shows how three distinct sources of error result in a stock discrepancy:</p>
+<ul>
+<li><strong>Transaction errors</strong>: parts issued but not recorded, returns not processed, or wrong quantities entered.</li>
+<li><strong>Physical issues</strong>: <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; materials, spare parts, or stock keeping units (SKUs)">items</abbr> misplaced in the storeroom, wrong bin <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr>, or damaged and lost <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; materials, spare parts, or stock keeping units (SKUs)">items</abbr>.</li>
+<li><strong>System issues</strong>: data entry mistakes, timing differences, or incomplete transactions.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/sample_inventory_error_sources.svg" data-title="Explained in body text" data-desc-position="bottom"><img src="../../images/sample_inventory_error_sources.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;"></a></p>
 <p class="figure-caption">Figure 2: Common sources of inventory errors</p>
 
 <hr>
@@ -1465,7 +1480,14 @@
 <li><strong><abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">Inventory</abbr> transfers</strong>: Transfers completed properly?</li>
 <li><strong>Issues</strong>: <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; materials, spare parts, or stock keeping units (SKUs)">Items</abbr> picked and issued from storeroom?</li>
 </ul>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/sample_inventory_related_records.svg" data-title="When you find a stock discrepancy, check four related records: work orders, receipts, inventory transfers, and issues." data-desc-position="bottom"><img src="../../images/sample_inventory_related_records.svg" alt="When you find a stock discrepancy, check four related records: work orders, receipts, inventory transfers, and issues." style="width: 100%; max-width: 680px; display: block; margin: 16px auto;"></a></p>
+<p>Figure 3 maps the four related records to check when a stock discrepancy is identified:</p>
+<ul>
+<li><strong><abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">Work orders</abbr></strong>: verify whether materials were recorded correctly against work tasks.</li>
+<li><strong>Receipts</strong>: confirm whether all delivered stock was entered into the system.</li>
+<li><strong><abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">Inventory</abbr> transfers</strong>: check whether transfers completed properly across <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr>.</li>
+<li><strong>Issues</strong>: verify whether <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; materials, spare parts, or stock keeping units (SKUs)">items</abbr> were picked and issued from the storeroom.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/sample_inventory_related_records.svg" data-title="Explained in body text" data-desc-position="bottom"><img src="../../images/sample_inventory_related_records.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;"></a></p>
 <p class="figure-caption">Figure 3: Related records to check when stock is incorrect</p>
 
 <hr>
@@ -1645,7 +1667,13 @@
 <li>Consider <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr> changes.</li>
 <li>Monitor improvement.</li>
 </ol>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/sample_inventory_error_decision_tree.svg" data-title="A negative balance means correct it immediately, then investigate. A large discrepancy means do not adjust immediately, investigate, and get supervisor approval. Recurring errors mean analyze the pattern and fix the process." data-desc-position="bottom"><img src="../../images/sample_inventory_error_decision_tree.svg" alt="A negative balance means correct it immediately, then investigate. A large discrepancy means do not adjust immediately, investigate, and get supervisor approval. Recurring errors mean analyze the pattern and fix the process." style="width: 100%; max-width: 680px; display: block; margin: 16px auto;"></a></p>
+<p>Figure 4 outlines the decision paths and corrective actions for three <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">inventory</abbr> discrepancy situations:</p>
+<ul>
+<li><strong>Negative balance</strong>: when the system shows a negative quantity, correct it immediately by reviewing recent issues and looking for duplicate entries, then investigate the root cause.</li>
+<li><strong>Large discrepancy</strong>: when the difference is significant, do not adjust immediately; investigate thoroughly, obtain supervisor approval, and document the findings.</li>
+<li><strong>Recurring errors</strong>: when the same <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr> has frequent issues, fix the process by analyzing the error pattern, identifying the root cause, and retraining staff if needed.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/sample_inventory_error_decision_tree.svg" data-title="Explained in body text" data-desc-position="bottom"><img src="../../images/sample_inventory_error_decision_tree.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;"></a></p>
 <p class="figure-caption">Figure 4: How to handle different types of inventory error</p>
 
 <hr>

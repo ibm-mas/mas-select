@@ -1274,7 +1274,14 @@
 <p>Select includes some <abbr title="Standardized codes used to categorize and track equipment failures.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; failure classifications, breakdown codes, or fault codes">failure codes</abbr>. You can use them as they are, or add your own to match your equipment.</p>
 <h2 id="the-four-tier-failure-hierarchy-architecture">The four-tier failure hierarchy architecture<a class="headerlink" href="#the-four-tier-failure-hierarchy-architecture" title="Permanent link">¤</a></h2>
 <p>A failure hierarchy structures failure reporting from initial symptom down to corrective action.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/sample_failure_code_hierarchy.svg" data-title="Four-tier failure code hierarchy architecture from Failure Class to Problem, Cause, and Remedy" data-desc-position="bottom"><img src="../../images/sample_failure_code_hierarchy.svg" alt="Four-tier failure code hierarchy architecture from Failure Class to Problem, Cause, and Remedy" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;"></a></p>
+<p>Figure 1 illustrates the four-tier failure hierarchy architecture:</p>
+<ul>
+<li><strong>Tier 1 (Failure Class)</strong>: broad equipment category, such as <code>PUMPS</code>.</li>
+<li><strong>Tier 2 (Problem)</strong>: observed operational symptom, such as <code>LEAK</code> for fluid leaks or <code>HIGH_TEMP</code> for heat issues.</li>
+<li><strong>Tier 3 (Cause)</strong>: underlying mechanical defect, such as <code>SEAL_WEAR</code>.</li>
+<li><strong>Tier 4 (Remedy)</strong>: corrective action taken, such as <code>REPLACE_SEAL</code>.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/sample_failure_code_hierarchy.svg" data-title="Explained in body text" data-desc-position="bottom"><img src="../../images/sample_failure_code_hierarchy.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;"></a></p>
 <p class="figure-caption">Figure 1: Four-tier failure code hierarchy architecture</p>
 
 <h3 id="table-1-four-tier-failure-code-hierarchy-with-plant-examples">Table 1: Four-tier <abbr title="A standardized code used to categorize and track equipment failures.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; failure classification, breakdown code, or fault code">failure code</abbr> hierarchy with plant examples<a class="headerlink" href="#table-1-four-tier-failure-code-hierarchy-with-plant-examples" title="Permanent link">¤</a></h3>
@@ -1346,7 +1353,14 @@
 <li>Select the matching failure class, such as <code>FILLERS</code> or <code>ROTATING_PUMP</code>.</li>
 <li>Click <strong>Save</strong>.</li>
 </ol>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/sample_failure_class_inheritance.svg" data-title="Failure class inheritance and field reporting flow on work orders" data-desc-position="bottom"><img src="../../images/sample_failure_class_inheritance.svg" alt="Failure class inheritance and field reporting flow on work orders" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;"></a></p>
+<p>Figure 2 outlines the failure class inheritance and field reporting workflow:</p>
+<ol>
+<li><strong><abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">Asset</abbr> record</strong>: equipment record <code>Filler FL-02</code> holds configured failure class <code>PUMPS</code>.</li>
+<li><strong><abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">Work order</abbr> header</strong>: when the <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> is added to a corrective <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr>, <code>PUMPS</code> is inherited automatically.</li>
+<li><strong>Field closure</strong>: during job completion, the technician accesses the Failure Reporting tab.</li>
+<li><strong>Cascading selection</strong>: the technician navigates the filtered <code>PUMPS</code> hierarchy to log Problem <code>LEAK</code>, Cause <code>SEAL_WEAR</code>, and Remedy <code>REPLACE_SEAL</code>.</li>
+</ol>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/sample_failure_class_inheritance.svg" data-title="Explained in body text" data-desc-position="bottom"><img src="../../images/sample_failure_class_inheritance.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;"></a></p>
 <p class="figure-caption">Figure 2: Failure class inheritance and field reporting flow</p>
 
 <h2 id="how-failure-codes-behave-on-work-orders">How <abbr title="Standardized codes used to categorize and track equipment failures.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; failure classifications, breakdown codes, or fault codes">failure codes</abbr> behave on <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr><a class="headerlink" href="#how-failure-codes-behave-on-work-orders" title="Permanent link">¤</a></h2>
