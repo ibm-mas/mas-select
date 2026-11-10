@@ -10,6 +10,8 @@ Operational dashboards in Maximo Application Suite Select consolidate critical o
 
 Acting on alerts promptly prevents small anomalies, such as an overdue preventive maintenance inspection or a rising emergency backlog, from escalating into unplanned production downtime.
 
+*Looking to verify your alert response workflow right away? [Skip to alert and work queue checklist ↓](#alert-and-work-queue-checklist)*
+
 When you first sign in, Select shows the Operational Dashboard that matches your security group. Your administrator assigns the group. Select includes some dashboard content, and an administrator can edit the dashboard to add cards such as KPIs and work queues.
 
 ### 💡 Tips for success

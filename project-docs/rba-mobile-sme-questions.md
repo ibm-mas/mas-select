@@ -10,9 +10,9 @@ Collected from the `[SME confirmation required]` and `[TO DO]` tags on the Engli
 |---|----------|------|
 | A1 | What are the menu locations of **Service Requests** and **Work Order Summary**? | [why-apps-overlap.md](../docs/start-fast/basics/why-apps-overlap.md) |
 | A2 | Is the purpose of each app in the "Use it to" column correct (Technician, Inspections, Inspection Forms, Asset Manager, Issues and Transfers, Inventory Counting, Service Requests, Work Order Summary)? | why-apps-overlap.md |
-| A3 | Is Table 2 (apps by security group) correct? Open points: Service Requests for system admins and inventory clerks; Inspection Forms for supervisors; Inspections for technicians (based on the security group description). | why-apps-overlap.md |
+| A3 | [CONFIRMED] Apps by security group verified via Small SaaS persona table (Service Requests for Admin, Supervisor, Technician, Requester, Inventory Clerk; Ticket Templates for Supervisor; Conditional Expression Manager for Admin; Data-loading tool for Admin; Material Requests mobile for Technician and Inventory Clerk). | why-apps-overlap.md, [other-mobile-apps.md](../docs/start-fast/basics/other-mobile-apps.md) |
 | A4 | Are **Inspection Forms** and **Inspections** the app names and locations in Select (Planning > Inspection Forms, Work Orders > Inspections)? | [how-inspections-work.md](../docs/start-fast/basics/how-inspections-work.md) |
-| A5 | Are **Locations (mobile)** (Maximo Manage 9.2) and **Location Manager (Mobile)** the same app? If yes, which name appears in the Select menu and in the help? | None yet |
+| A5 | [CONFIRMED] **Location Manager (mobile)**, **Asset Manager (mobile)**, **Material Requests (mobile)**, **Crew Manager (mobile)**, and **Time Sheets (mobile)** confirmed in Select. | [other-mobile-apps.md](../docs/start-fast/basics/other-mobile-apps.md) |
 
 ### Apps that may not be in Select
 
@@ -21,6 +21,7 @@ Collected from the `[SME confirmation required]` and `[TO DO]` tags on the Engli
 | B1 | [RESOLVED - Removed from docs] Does Select include the **Receiving** app? (Confirmed not in Select; removed "receive inventory" references). | [get-maximo-mobile.md](../docs/start-fast/first-task/get-maximo-mobile.md), [overview.md](../docs/start-fast/what-can-i-do/overview.md), [inventory-clerk-first-task.md](../docs/start-fast/first-task/inventory-clerk-first-task.md) |
 | B2 | [CONFIRMED - Included] Does Select include the **Approvals** app? (Confirmed included; MAS Select users receive the same standard OOTB Maximo Mobile app as Manage users, which includes Approvals). | [get-maximo-mobile.md](../docs/start-fast/first-task/get-maximo-mobile.md), [overview.md](../docs/start-fast/what-can-i-do/overview.md), [supervisor-first-task.md](../docs/start-fast/first-task/supervisor-first-task.md) |
 | B3 | [CONFIRMED - Supported] Are **Windows** devices supported, or only iOS and Android? (Confirmed: OOTB Maximo Mobile supports iOS, Android, and Windows via Microsoft Store). | get-maximo-mobile.md |
+| B4 | [CONFIRMED - Included] Is **Material Request (mobile)** available in Select? (Confirmed included for Technicians and Inventory Clerks on Small SaaS persona slide). | [other-mobile-apps.md](../docs/start-fast/basics/other-mobile-apps.md) |
 
 ### Sign-in, sync, and offline
 

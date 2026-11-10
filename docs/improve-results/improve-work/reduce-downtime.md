@@ -10,6 +10,8 @@ Unplanned equipment downtime is one of the most costly disruptions in industrial
 
 Reducing downtime requires shifting your maintenance operation from reactive emergency response to proactive defect prevention. In Maximo Application Suite Select, this transformation rests on four core pillars: structured preventive maintenance, standardized failure reporting, condition monitoring, and critical spare parts availability.
 
+*Looking to verify your downtime reduction program right away? [Skip to downtime reduction checklist ↓](#downtime-reduction-checklist)*
+
 ### 💡 Tips for success
 
 - Maintain a preventive maintenance compliance rate of 85% or higher. When PMs are deferred, equipment failure rates increase dramatically within 30 to 60 days.

@@ -4,6 +4,8 @@ Your asset hierarchy is the equipment breakdown structure of your facility. It o
 
 When onboarding data into Maximo Application Suite Select, planning your asset hierarchy follows the creation of your location hierarchy, as outlined in [What is the correct load order?](correct-load-order.md) and [How do I plan my location hierarchy?](plan-your-location-hierarchy.md).
 
+*Looking to verify your asset hierarchy structure right away? [Skip to asset hierarchy planning checklist ↓](#asset-hierarchy-planning-checklist)*
+
 Work orders, maintenance costs, failure codes, and operating history roll up from child components to parent machines. A well-designed asset hierarchy allows maintenance teams to track the lifecycle of serialized equipment, schedule overhauls at the machine or component level, and move subassemblies across the plant without losing work history. A poorly designed hierarchy clutters drilldown trees with consumable parts and leads to misallocated maintenance costs.
 
 <div class="video-embed" markdown="1">

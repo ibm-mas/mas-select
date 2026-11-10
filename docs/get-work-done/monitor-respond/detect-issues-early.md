@@ -10,6 +10,8 @@ Equipment rarely breaks down without warning. Before a motor bearing seizes or a
 
 Condition monitoring allows you to track these physical indicators systematically. By defining acceptable limits for meter readings, Maximo Application Suite Select helps you identify developing defects and generate corrective maintenance before an unexpected breakdown halts operations.
 
+*Looking to verify your condition monitoring setup right away? [Skip to condition monitoring checklist ↓](#condition-monitoring-checklist)*
+
 In Maximo Application Suite Select, you enter meter readings manually. Select does not receive a continuous stream of readings from sensors or IoT devices.
 
 ### 💡 Tips for success

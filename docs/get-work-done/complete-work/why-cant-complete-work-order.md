@@ -2,6 +2,8 @@
 
 You might see errors like "Status cannot be changed" or not see the Complete option at all.
 
+*Looking to troubleshoot completion blockers right away? [Skip to work order completion blocker checklist ↓](#work-order-completion-blocker-checklist)*
+
 ## Common causes
 
 ### You don't have permission

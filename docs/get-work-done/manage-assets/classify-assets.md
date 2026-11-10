@@ -2,6 +2,8 @@
 
 Use classifications to group similar assets together and add detailed specifications.
 
+*Looking to verify your asset classification setup right away? [Skip to asset classification verification checklist ↓](#asset-classification-verification-checklist)*
+
 ## Quick reference
 
 ### Table 1: Classification terminology

@@ -1,14 +1,16 @@
 # How do I prepare data for import?
 
-Proper data preparation prevents import failures and ensures data quality.
+Data Management is the primary application used to import records into IBM Maximo Application Suite Select. Use this guide to clean, format, and structure your spreadsheets or legacy CSV files before uploading them into Data Management.
 
-## 💡 Tips for success
+*Looking to validate your CSV file right away? [Skip to pre-import data validation checklist ↓](#pre-import-data-validation-checklist)*
 
-- **Start with a template**: Export existing records to see correct format
-- **Validate data first**: Check all values against system data
-- **Use text format**: Prevent Excel from corrupting data
-- **Test with small batches**: Verify format before importing thousands of records
-- **Keep error logs**: Document what went wrong for future imports
+### 💡 Tips: Best practices for data preparation
+
+- **Start with a template**: Download official templates or export existing records directly from Data Management to see the required column names and structure.
+- **Validate data first**: Check all values against system data such as site IDs and failure classes before uploading.
+- **Use text format**: Prevent spreadsheet software from corrupting leading zeros or converting numbers to scientific notation.
+- **Test with small batches**: Verify format with a small batch of 5 to 10 records before importing thousands.
+- **Keep error logs**: Document preview errors to correct source files efficiently.
 
 ## Common preparation steps
 

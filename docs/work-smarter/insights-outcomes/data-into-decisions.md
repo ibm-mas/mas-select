@@ -4,6 +4,8 @@ Collecting thousands of work orders, meter logs, and parts transactions provides
 
 Turning maintenance data into actionable decisions in Maximo Application Suite Select involves monitoring performance indicators in KPI Manager and KPI Viewer, analyzing equipment failure trends, and leveraging role-based operational dashboards.
 
+*Looking to verify your decision analytics right away? [Skip to decision-making analytics checklist ↓](#decision-making-analytics-checklist)*
+
 ## Framework for data-driven maintenance decisions
 
 To transition from reactive firefighting to strategic asset management, connect operational metrics directly to business outcomes.

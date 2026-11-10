@@ -4,6 +4,8 @@ Reliable data enables accurate maintenance forecasting, automated work order gen
 
 To make operational data reliable across your organization, replace free text entry with controlled vocabularies, enforce mandatory fields, structure asset classifications, and conduct routine data health audits.
 
+*Looking to verify data reliability right away? [Skip to data reliability checklist ↓](#data-reliability-checklist)*
+
 ## Core principles of reliable data
 
 Reliable maintenance data rests on four structural pillars:

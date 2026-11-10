@@ -10,6 +10,8 @@ A successful preventive maintenance strategy prevents equipment breakdowns, stab
 
 Planning your preventive maintenance strategy in Maximo Application Suite Select involves selecting between time-based and usage-based frequencies, choosing fixed versus floating schedules, buffering lead times for parts staging, and organizing multi-stop routes.
 
+*Looking to verify your PM strategy right away? [Skip to PM strategy planning checklist ↓](#pm-strategy-planning-checklist)*
+
 ## Core principles for designing a PM strategy
 
 Before configuring schedules in the PM application, establish your maintenance strategy with your reliability engineers, planners, and operations team.

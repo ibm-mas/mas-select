@@ -2,6 +2,8 @@
 
 Material issues fail when required fields or relationships are missing.
 
+*Looking to troubleshoot material issues right away? [Skip to material issue troubleshooting checklist ↓](#material-issue-troubleshooting-checklist)*
+
 ## What to check first
 
 ### Storeroom, item, and quantity are valid

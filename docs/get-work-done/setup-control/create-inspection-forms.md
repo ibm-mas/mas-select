@@ -10,6 +10,8 @@ Digital inspection forms replace paper clipboards with structured, interactive c
 
 In Maximo Application Suite Select, you design forms in the Inspection Forms application. Technicians and inspectors complete them in the Inspections role-based app or directly within mobile work orders.
 
+*Looking to verify your inspection form setup right away? [Skip to inspection form verification checklist ↓](#inspection-form-verification-checklist)*
+
 ## What you can capture on an inspection form
 
 The Inspection Forms application gives you flexible ways to capture exact field observations. You can create questions such as:

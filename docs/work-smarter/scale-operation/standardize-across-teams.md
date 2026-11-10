@@ -4,6 +4,8 @@ When different maintenance shifts or plant areas follow disparate procedures, eq
 
 Standardizing maintenance across teams ensures uniform safety compliance, predictable job durations, consistent failure analysis, and accurate labor cost tracking. In Maximo Application Suite Select, standardization is achieved through shared Job Plans, uniform Craft definitions, standardized Failure Codes, and structured Inspection Forms.
 
+*Looking to verify standardization readiness right away? [Skip to cross-team standardization checklist ↓](#cross-team-standardization-checklist)*
+
 ## Core standardization pillars in Maximo Application Suite Select
 
 To establish consistent operational practices across all shifts and plant zones, standardize four primary elements:

@@ -2,6 +2,8 @@
 
 This is one of the most common issues. Work is assigned, but the technician can't see it in their queue.
 
+*Looking to troubleshoot assignment visibility right away? [Skip to work assignment visibility checklist ↓](#work-assignment-visibility-checklist)*
+
 ## Likely causes
 
 ### User permissions were updated but sessions weren't refreshed

@@ -4,6 +4,8 @@ Automating routine maintenance workflows eliminates repetitive manual scheduling
 
 In Maximo Application Suite Select, automation is driven by scheduled background tasks in Cron Task lite, condition monitoring triggers, communication templates, and mobile push notifications.
 
+*Looking to verify your automation readiness right away? [Skip to automation readiness checklist ↓](#automation-readiness-checklist)*
+
 ## Key automation capabilities in Maximo Application Suite Select
 
 Automation in Maximo Application Suite Select addresses four major operational maintenance areas:

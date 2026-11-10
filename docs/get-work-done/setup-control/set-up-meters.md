@@ -10,6 +10,8 @@ Meters track equipment usage, operating conditions, and physical measurements. I
 
 Setting up meters involves defining meter definitions at the system level, grouping related meters into reusable templates, and attaching those meters to assets and locations.
 
+*Looking to verify your meter setup right away? [Skip to meter setup verification checklist ↓](#meter-setup-verification-checklist)*
+
 ## The three meter types in Maximo Application Suite Select
 
 Before creating meters, select the appropriate meter type based on how the measurement behaves.

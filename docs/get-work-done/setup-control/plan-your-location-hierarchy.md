@@ -4,6 +4,8 @@ Your location hierarchy is the map of the places where your assets are operated,
 
 When loading data into Maximo Application Suite Select, planning your locations is the foundation of your setup. Locations must be established before you load equipment, inventory, or work orders, as outlined in [What is the correct load order?](correct-load-order.md).
 
+*Looking to verify your location hierarchy structure right away? [Skip to location hierarchy planning checklist ↓](#location-hierarchy-planning-checklist)*
+
 Work orders, maintenance history, safety requirements, and costs roll up through the location hierarchy. A well-planned structure lets you view all maintenance across an entire building or drill down to a single room. A poorly structured hierarchy leads to incomplete reports, lost history, and difficult reorganizations once data is in use.
 
 <div class="video-embed" markdown="1">

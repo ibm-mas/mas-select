@@ -4,6 +4,8 @@ When setting up Maximo Application Suite Select, every physical entity in your p
 
 Making the right classification before importing data ensures accurate maintenance history, simplified storeroom operations, and clean drilldown navigation in Maximo Mobile and desktop applications. Misclassifying entities leads to cluttered asset registers, broken cost roll-ups, and duplicate data entry.
 
+*Looking to verify your record classification right away? [Skip to classification decision checklist ↓](#classification-decision-checklist)*
+
 As outlined in [What is the correct load order?](correct-load-order.md), locations and items are loaded before maintainable assets are established.
 
 <div class="video-embed" markdown="1">

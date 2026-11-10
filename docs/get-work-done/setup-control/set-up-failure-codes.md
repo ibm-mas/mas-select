@@ -12,6 +12,8 @@ In Maximo Application Suite Select, failure codes are organized into a four-tier
 
 Select includes some failure codes. You can use them as they are, or add your own to match your equipment.
 
+*Looking to verify your failure code configuration right away? [Skip to failure code setup verification checklist ↓](#failure-code-setup-verification-checklist)*
+
 ## The four-tier failure hierarchy architecture
 
 A failure hierarchy structures failure reporting from initial symptom down to corrective action.

@@ -4,6 +4,8 @@ As manufacturing plants expand and new production lines are commissioned, mainte
 
 Scaling maintenance operations efficiently in Maximo Application Suite Select relies on Master PM templates, multi-asset Routes, parent and child equipment hierarchies, and bulk data onboarding via Data Management.
 
+*Looking to verify your scaling readiness right away? [Skip to scaling verification checklist ↓](#scaling-verification-checklist)*
+
 ## Core tools for scaling asset management
 
 To scale equipment coverage without increasing administrative headcount, use four core features:

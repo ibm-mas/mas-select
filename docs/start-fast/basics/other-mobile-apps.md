@@ -61,23 +61,17 @@ To learn more about stock counts and count books, see [What happens if stock is 
 
 Use Material Request to request parts, tools, or services for a work order from the field, and to track previous requests.
 
-`[SME confirmation required: Confirm that Material Request is available in Select and what happens after you submit a request, including whether a reservation is created.]`
-
 ## People and team apps
 
 ### Timesheet
 
 Use Timesheet to review your personal reported labor transactions. You can check labor entries recorded for today or earlier, including the associated work order, asset, location, and total hours.
 
-`[SME confirmation required: Confirm that Timesheet in Select is a read-only view and that reported hours appear as actuals on the work order.]`
-
 ### Crew Manager
 
 Use Crew Manager to manage work orders assigned to a crew. A crew leader or supervisor can start and stop timers for the entire crew, recording labor for all active crew members simultaneously.
 
 To set up crews, see [How do I set up labor, crafts, and crews?](../../get-work-done/setup-control/set-up-labor-crafts-crews.md).
-
-`[SME confirmation required: Confirm the name and availability of Crew Manager in Select, and whether administrators can turn crew work on or off with a security option.]`
 
 ## Asset and location management apps
 
@@ -87,15 +81,11 @@ Use Locations to view, create, and update location records in the field. You can
 
 To learn more about location structures, see [How do I plan my location hierarchy?](../../get-work-done/setup-control/plan-your-location-hierarchy.md).
 
-`[SME confirmation required: Confirm the name of this app in Select and the actions it offers.]`
-
 ### Assets
 
 Use Assets, also known as Asset Manager, to look up equipment details, specifications, and meter readings, view asset locations on maps, and register new assets found in the field.
 
 To learn more about asset structures, see [How do I plan my asset hierarchy?](../../get-work-done/setup-control/plan-your-asset-hierarchy.md).
-
-`[SME confirmation required: Confirm that the Assets app on the home screen is the app called Asset Manager, and confirm which assets it shows to each user.]`
 
 ## Quick reference
 

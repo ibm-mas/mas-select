@@ -4,6 +4,8 @@ Use calendars to set working hours. Use routes to group inspection points. This 
 
 Calendars track when your team works. Routes let you create inspection work orders for multiple items at once.
 
+*Looking to verify your work schedule right away? [Skip to work scheduling and calendar readiness checklist ↓](#work-scheduling-and-calendar-readiness-checklist)*
+
 ### 💡 Tips: Best practices for calendars and routes
 
 **For calendars:**

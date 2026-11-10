@@ -4,6 +4,8 @@ Continuous maintenance optimization transforms a routine preventive maintenance 
 
 Optimizing maintenance performance in Maximo Application Suite Select involves conducting PM optimization reviews, fine-tuning condition monitoring limits, refining job plan labor estimates, and eliminating chronic failure modes.
 
+*Looking to verify your optimization program right away? [Skip to performance optimization checklist ↓](#performance-optimization-checklist)*
+
 ## The continuous optimization cycle
 
 Effective maintenance programs follow a closed-loop refinement cycle:

@@ -2,6 +2,8 @@
 
 Record the failure using failure codes, create a work order to fix it, and track downtime.
 
+*Looking to validate failure reporting right away? [Skip to failure reporting verification checklist ↓](#failure-reporting-verification-checklist)*
+
 ## Quick reference
 
 ### Table 1: Failure code levels

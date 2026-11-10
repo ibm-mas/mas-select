@@ -4,6 +4,8 @@ Create job plans that list the steps, parts, and tools for common maintenance ta
 
 You plan the work once. Then you reuse the plan. This saves time and reduces mistakes.
 
+*Looking to validate a job plan right away? [Skip to job plan verification checklist ↓](#job-plan-verification-checklist)*
+
 Figure 1 illustrates how a job plan template flows into an approved work order:
 
 - **Job plan template**: defines sequential task steps, estimated labor and craft hours, required materials and quantities, special tools, and default work order priority.

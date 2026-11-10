@@ -10,6 +10,8 @@ A low work order completion rate is a warning signal that operational friction i
 
 Improving completion rates requires identifying and eliminating the specific bottlenecks that prevent technicians from finishing jobs on time. In Maximo Application Suite Select, this means aligning material readiness, craft qualifications, job plan clarity, and status lifecycle discipline.
 
+*Looking to verify completion workflows right away? [Skip to work order completion checklist ↓](#work-order-completion-checklist)*
+
 ### 💡 Tips for success
 
 - Review work orders in Waiting on Material status daily. A work order should not be approved or scheduled until all required parts are verified in stock.

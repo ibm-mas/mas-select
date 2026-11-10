@@ -4,6 +4,8 @@ Artificial intelligence features in maintenance management accelerate work order
 
 In Maximo Application Suite Select, AI capabilities focus on data enrichment, intelligent classification, and automated work summaries configured through the AI Configuration application.
 
+*Looking to verify your AI readiness right away? [Skip to AI configuration checklist ↓](#ai-configuration-checklist)*
+
 ## AI maintenance capabilities
 
 Integrating AI models with maintenance workflows provides several key operational improvements:

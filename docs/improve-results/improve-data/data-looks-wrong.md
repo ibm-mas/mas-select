@@ -10,6 +10,8 @@ When dashboard reports display unexpected figures, asset counts look inflated, i
 
 Inaccurate data undermines trust in your maintenance system and distorts performance metrics. In Maximo Application Suite Select, identifying the symptom and tracing it to the underlying configuration allows administrators to correct existing records and prevent recurring errors.
 
+*Looking to verify data integrity right away? [Skip to data quality verification checklist ↓](#data-quality-verification-checklist)*
+
 ### 💡 Tips for success
 
 - Check for duplicate asset records before modifying maintenance history. Duplicates frequently occur when identical machines are imported twice with slightly different naming conventions.

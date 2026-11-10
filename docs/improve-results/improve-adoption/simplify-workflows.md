@@ -4,6 +4,8 @@ Complex maintenance workflows with unnecessary approval stages, redundant data e
 
 Simplifying workflows involves matching user roles to purpose-built apps, configuring default profile values, automating routine notifications, and removing approval hurdles for low-risk work.
 
+*Looking to verify workflow simplification right away? [Skip to workflow simplification checklist ↓](#workflow-simplification-checklist)*
+
 ## Core strategies for workflow simplification
 
 To streamline maintenance operations across your plant, focus on four key areas:

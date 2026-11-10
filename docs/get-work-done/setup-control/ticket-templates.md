@@ -10,6 +10,8 @@ A ticket template is a saved set of values that fills in a service request for y
 
 When you apply a ticket template to a service request, the system fills in the fields that the template defines. It can also add the activities that the work needs.
 
+*Looking to verify a ticket template setup right away? [Skip to ticket template verification checklist ↓](#ticket-template-verification-checklist)*
+
 `[SME confirmation required: Confirm which classes Select ticket templates use, and whether Select has a Tickets application.]`
 
 ## 💡 Tips for success

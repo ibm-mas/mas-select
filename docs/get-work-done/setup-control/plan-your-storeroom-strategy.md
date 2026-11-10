@@ -10,6 +10,8 @@ An effective storeroom and inventory strategy ensures critical spare parts are o
 
 Planning your storeroom and inventory strategy in Maximo Application Suite Select involves designing physical storeroom layouts, classifying consumable versus rebuildable rotating items, establishing dynamic reorder points, and implementing regular cycle counts.
 
+*Looking to verify your storeroom and inventory strategy right away? [Skip to storeroom strategy planning checklist ↓](#storeroom-strategy-planning-checklist)*
+
 ## Core principles for designing a storeroom strategy
 
 Before cataloging items in the Item Master or creating warehouses in the Storerooms application, establish your inventory strategy with your maintenance, procurement, and warehouse teams.
