@@ -302,7 +302,7 @@
         
   
     <cds-side-nav-menu-item href="../../start-fast/basics/other-mobile-apps.html" class="nav-level-3">
-      Autres applications mobiles
+      Applications mobiles
     </cds-side-nav-menu-item>
   
 
@@ -1253,7 +1253,7 @@
     
       <cds-select-item value="#why-are-costs-or-usage-incorrect">Why are costs or usage incorrect?</cds-select-item>
     
-      <cds-select-item value="#what-happens-next">What happens next?</cds-select-item>
+      <cds-select-item value="#material-issue-troubleshooting-checklist">Material issue troubleshooting checklist</cds-select-item>
     
       <cds-select-item value="#continue-building-your-skills">Continue building your skills</cds-select-item>
     
@@ -1274,10 +1274,6 @@
             
             <h1 id="why-cant-i-issue-materials-to-a-work-order">Why can't I issue materials to a <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr>?<a class="headerlink" href="#why-cant-i-issue-materials-to-a-work-order" title="Permanent link">¤</a></h1>
 <p>Material issues fail when required fields or relationships are missing.</p>
-<div class="admonition warning">
-<p class="admonition-title">TODO: Add visual content</p>
-<p>A screenshot showing the material issue screen with required fields highlighted would be useful here.</p>
-</div>
 <h2 id="what-to-check-first">What to check first<a class="headerlink" href="#what-to-check-first" title="Permanent link">¤</a></h2>
 <h3 id="storeroom-item-and-quantity-are-valid">Storeroom, <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr>, and quantity are valid<a class="headerlink" href="#storeroom-item-and-quantity-are-valid" title="Permanent link">¤</a></h3>
 <p>The system needs to know:</p>
@@ -1385,15 +1381,50 @@
 <p>If materials were reserved for a <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr>, issuing different materials can cause confusion.</p>
 <p><strong>What to do</strong>: Issue the reserved materials when possible, or update the reservation if you need to use different materials.</p>
 <hr>
-<h2 id="what-happens-next">What happens next?<a class="headerlink" href="#what-happens-next" title="Permanent link">¤</a></h2>
-<p>To resolve material issue problems:</p>
-<ol>
-<li>Verify all required information is correct</li>
-<li>Check <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr> allows charging</li>
-<li>Confirm the transaction completed successfully</li>
-<li>Verify <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">inventory</abbr> updated correctly</li>
-<li>Contact your system administrator if problems persist</li>
-</ol>
+<h2 id="material-issue-troubleshooting-checklist">Material issue troubleshooting checklist<a class="headerlink" href="#material-issue-troubleshooting-checklist" title="Permanent link">¤</a></h2>
+<p>Use this checklist to identify why a material transaction failed to record:</p>
+<h3 id="table-1-material-issue-troubleshooting-checklist">Table 1: Material issue troubleshooting checklist<a class="headerlink" href="#table-1-material-issue-troubleshooting-checklist" title="Permanent link">¤</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Check</th>
+<th style="text-align: left;"><abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">Item</abbr></th>
+<th style="text-align: left;">What to verify</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">[ ]</td>
+<td style="text-align: left;">Chargeable <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr></td>
+<td style="text-align: left;"><abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">Work order</abbr> is in an approved or in-progress <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr> (APPR, WSCHED, or INPRG), not WAPPR, CAN, or CLOSE</td>
+</tr>
+<tr>
+<td style="text-align: left;">[ ]</td>
+<td style="text-align: left;">Active storeroom</td>
+<td style="text-align: left;">Selected storeroom record exists and is set to ACTIVE <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr></td>
+</tr>
+<tr>
+<td style="text-align: left;">[ ]</td>
+<td style="text-align: left;"><abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">Inventory</abbr> <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr> record</td>
+<td style="text-align: left;"><abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">Item</abbr> is linked to the storeroom with an established <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">inventory</abbr> record</td>
+</tr>
+<tr>
+<td style="text-align: left;">[ ]</td>
+<td style="text-align: left;">Bin balance availability</td>
+<td style="text-align: left;">Storeroom bin has sufficient quantity on hand, or the storeroom allows negative balance</td>
+</tr>
+<tr>
+<td style="text-align: left;">[ ]</td>
+<td style="text-align: left;">Unit of measure alignment</td>
+<td style="text-align: left;">Issue unit on the transaction matches the <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">inventory</abbr> issue unit defined for the <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr></td>
+</tr>
+<tr>
+<td style="text-align: left;">[ ]</td>
+<td style="text-align: left;">Storeroom user authorization</td>
+<td style="text-align: left;">User account has security authorization to issue materials from the selected storeroom</td>
+</tr>
+</tbody>
+</table>
 <hr>
 <h2 id="continue-building-your-skills">Continue building your skills<a class="headerlink" href="#continue-building-your-skills" title="Permanent link">¤</a></h2>
 <h3 id="know-what-you-have-before-you-issue">Know what you have before you issue<a class="headerlink" href="#know-what-you-have-before-you-issue" title="Permanent link">¤</a></h3>
@@ -1548,9 +1579,16 @@
                   </ul>
               </li>
               <li class="md-toc__item">
-                <a href="#what-happens-next" class="md-toc__link" data-md-level="1">
-                  What happens next?
+                <a href="#material-issue-troubleshooting-checklist" class="md-toc__link" data-md-level="1">
+                  Material issue troubleshooting checklist
                 </a>
+                  <ul class="md-toc__list">
+                      <li class="md-toc__item">
+                        <a href="#table-1-material-issue-troubleshooting-checklist" class="md-toc__link" data-md-level="2">
+                          Table 1: Material issue troubleshooting checklist
+                        </a>
+                      </li>
+                  </ul>
               </li>
               <li class="md-toc__item">
                 <a href="#continue-building-your-skills" class="md-toc__link" data-md-level="1">

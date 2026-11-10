@@ -302,7 +302,7 @@
         
   
     <cds-side-nav-menu-item href="../../start-fast/basics/other-mobile-apps.html" class="nav-level-3">
-      Autres applications mobiles
+      Applications mobiles
     </cds-side-nav-menu-item>
   
 
@@ -1253,7 +1253,7 @@
     
       <cds-select-item value="#why-do-assignments-disappear-after-work-order-completion">Why do assignments disappear after work order completion?</cds-select-item>
     
-      <cds-select-item value="#what-happens-next">What happens next?</cds-select-item>
+      <cds-select-item value="#work-assignment-visibility-checklist">Work assignment visibility checklist</cds-select-item>
     
       <cds-select-item value="#continue-building-your-skills">Continue building your skills</cds-select-item>
     
@@ -1274,10 +1274,6 @@
             
             <h1 id="why-dont-technicians-see-their-assigned-work">Why don't technicians see their assigned work?<a class="headerlink" href="#why-dont-technicians-see-their-assigned-work" title="Permanent link">¤</a></h1>
 <p>This is one of the most common issues. Work is assigned, but the technician can't see it in their queue.</p>
-<div class="admonition warning">
-<p class="admonition-title">TODO: Add visual content</p>
-<p>A screenshot showing an empty work queue vs. a populated work queue would be useful here.</p>
-</div>
 <h2 id="likely-causes">Likely causes<a class="headerlink" href="#likely-causes" title="Permanent link">¤</a></h2>
 <h3 id="user-permissions-were-updated-but-sessions-werent-refreshed">User permissions were updated but sessions weren't refreshed<a class="headerlink" href="#user-permissions-were-updated-but-sessions-werent-refreshed" title="Permanent link">¤</a></h3>
 <p>When permissions change, active sessions might not pick up the new access rights immediately.</p>
@@ -1343,10 +1339,6 @@
 <li>Ask your system administrator about available workload views</li>
 <li>Consider using dashboards that show team assignments</li>
 </ul>
-<div class="admonition warning">
-<p class="admonition-title">TODO: Add visual content</p>
-<p>A screenshot showing a supervisor dashboard with team workload distribution would be useful here.</p>
-</div>
 <hr>
 <h2 id="why-do-assignments-disappear-after-work-order-completion">Why do assignments disappear after <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> completion?<a class="headerlink" href="#why-do-assignments-disappear-after-work-order-completion" title="Permanent link">¤</a></h2>
 <p>Assignments are typically removed when the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> is closed or completed.</p>
@@ -1362,15 +1354,55 @@
 <li>Archive processes that preserve assignment information</li>
 </ul>
 <hr>
-<h2 id="what-happens-next">What happens next?<a class="headerlink" href="#what-happens-next" title="Permanent link">¤</a></h2>
-<p>To resolve visibility issues:</p>
-<ol>
-<li>Have technicians log out and back in</li>
-<li>Verify <abbr title="A data partitioning concept that represents a plant, facility, or business unit.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; plant, facility, or business unit">site</abbr> access and permissions</li>
-<li>Check data restrictions</li>
-<li>Clear cached sessions if needed</li>
-<li>Contact your system administrator if problems persist</li>
-</ol>
+<h2 id="work-assignment-visibility-checklist">Work assignment visibility checklist<a class="headerlink" href="#work-assignment-visibility-checklist" title="Permanent link">¤</a></h2>
+<p>Use this checklist to diagnose and resolve missing <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> assignments:</p>
+<h3 id="table-1-work-assignment-visibility-checklist">Table 1: Work assignment visibility checklist<a class="headerlink" href="#table-1-work-assignment-visibility-checklist" title="Permanent link">¤</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Check</th>
+<th style="text-align: left;"><abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">Item</abbr></th>
+<th style="text-align: left;">What to verify</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">[ ]</td>
+<td style="text-align: left;">Active <abbr title="Work time and effort assigned to a work order.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; technician time, work hours, or crew time">labor</abbr> record</td>
+<td style="text-align: left;">Technician username is linked to an active <abbr title="Work time and effort assigned to a work order.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; technician time, work hours, or crew time">Labor</abbr> record in the <abbr title="Work time and effort assigned to a work order.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; technician time, work hours, or crew time">Labor</abbr> application</td>
+</tr>
+<tr>
+<td style="text-align: left;">[ ]</td>
+<td style="text-align: left;"><abbr title="A trade or skill type required for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; trade, skill type, or discipline">Craft</abbr> and skill match</td>
+<td style="text-align: left;"><abbr title="Work time and effort assigned to a work order.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; technician time, work hours, or crew time">Labor</abbr> record <abbr title="A trade or skill type required for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; trade, skill type, or discipline">craft</abbr> matches the <abbr title="A trade or skill type required for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; trade, skill type, or discipline">craft</abbr> required on the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> assignment</td>
+</tr>
+<tr>
+<td style="text-align: left;">[ ]</td>
+<td style="text-align: left;">Shift calendar active</td>
+<td style="text-align: left;">Calendar and shift assigned to the <abbr title="Work time and effort assigned to a work order.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; technician time, work hours, or crew time">labor</abbr> record cover the scheduled work date</td>
+</tr>
+<tr>
+<td style="text-align: left;">[ ]</td>
+<td style="text-align: left;">Assignment dates valid</td>
+<td style="text-align: left;"><abbr title="Work time and effort assigned to a work order.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; technician time, work hours, or crew time">Labor</abbr> assignment has an effective start date and no expired end date</td>
+</tr>
+<tr>
+<td style="text-align: left;">[ ]</td>
+<td style="text-align: left;"><abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">Work order</abbr> <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr></td>
+<td style="text-align: left;"><abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">Work order</abbr> is in APPR, WSCHED, or INPRG <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr>, not WAPPR or CLOSE</td>
+</tr>
+<tr>
+<td style="text-align: left;">[ ]</td>
+<td style="text-align: left;"><abbr title="A data partitioning concept that represents a plant, facility, or business unit.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; plant, facility, or business unit">Site</abbr> security access</td>
+<td style="text-align: left;">User <abbr title="A collection of users who share the same application access and permissions.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; permission group, access group, user group, or role">security group</abbr> grants permission to view records for the specific <abbr title="A data partitioning concept that represents a plant, facility, or business unit.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; plant, facility, or business unit">site</abbr></td>
+</tr>
+<tr>
+<td style="text-align: left;">[ ]</td>
+<td style="text-align: left;">Session refreshed</td>
+<td style="text-align: left;">Technician has signed out and signed back in after recent permission updates</td>
+</tr>
+</tbody>
+</table>
 <hr>
 <h2 id="continue-building-your-skills">Continue building your skills<a class="headerlink" href="#continue-building-your-skills" title="Permanent link">¤</a></h2>
 <h3 id="know-what-work-matters">Know what work matters<a class="headerlink" href="#know-what-work-matters" title="Permanent link">¤</a></h3>
@@ -1505,9 +1537,16 @@
                   </ul>
               </li>
               <li class="md-toc__item">
-                <a href="#what-happens-next" class="md-toc__link" data-md-level="1">
-                  What happens next?
+                <a href="#work-assignment-visibility-checklist" class="md-toc__link" data-md-level="1">
+                  Work assignment visibility checklist
                 </a>
+                  <ul class="md-toc__list">
+                      <li class="md-toc__item">
+                        <a href="#table-1-work-assignment-visibility-checklist" class="md-toc__link" data-md-level="2">
+                          Table 1: Work assignment visibility checklist
+                        </a>
+                      </li>
+                  </ul>
               </li>
               <li class="md-toc__item">
                 <a href="#continue-building-your-skills" class="md-toc__link" data-md-level="1">

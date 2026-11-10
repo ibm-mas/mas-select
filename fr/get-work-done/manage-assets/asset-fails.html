@@ -302,7 +302,7 @@
         
   
     <cds-side-nav-menu-item href="../../start-fast/basics/other-mobile-apps.html" class="nav-level-3">
-      Autres applications mobiles
+      Applications mobiles
     </cds-side-nav-menu-item>
   
 
@@ -1261,6 +1261,8 @@
     
       <cds-select-item value="#what-if-i-dont-know-the-cause">What if I don't know the cause?</cds-select-item>
     
+      <cds-select-item value="#failure-reporting-verification-checklist">Failure reporting verification checklist</cds-select-item>
+    
       <cds-select-item value="#continue-building-your-skills">Continue building your skills</cds-select-item>
     
       <cds-select-item value="#related-topics">Related topics</cds-select-item>
@@ -1392,10 +1394,6 @@
 <li>Operator retraining</li>
 </ul>
 <p>Recording the remedy completes the picture. If the same problem keeps recurring with the same cause but different remedies, the data shows which fix actually works and which ones don't. Without remedy codes, pattern analysis stops at "what broke" and never reaches "what actually fixes it."</p>
-<div class="admonition warning">
-<p class="admonition-title">TODO: Add visual content</p>
-<p>A screenshot showing the <abbr title="A standardized code used to categorize and track equipment failures.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; failure classification, breakdown code, or fault code">failure code</abbr> hierarchy would be useful here.</p>
-</div>
 <hr>
 <h2 id="how-do-i-report-a-failure">How do I report a failure?<a class="headerlink" href="#how-do-i-report-a-failure" title="Permanent link">¤</a></h2>
 <div class="admonition note">
@@ -1443,10 +1441,6 @@
 <li>Document what you did</li>
 <li>Close the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr></li>
 </ol>
-<div class="admonition warning">
-<p class="admonition-title">TODO: Add visual content</p>
-<p>A video showing how to report a failure on a <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> would be useful here.</p>
-</div>
 <hr>
 <h2 id="how-do-i-use-failure-data">How do I use failure data?<a class="headerlink" href="#how-do-i-use-failure-data" title="Permanent link">¤</a></h2>
 <h3 id="identify-recurring-problems">Identify recurring problems<a class="headerlink" href="#identify-recurring-problems" title="Permanent link">¤</a></h3>
@@ -1511,8 +1505,48 @@
 <li>Use "Unknown" or "Under Investigation".</li>
 <li>Add notes about what you observed.</li>
 <li>Update the <abbr title="A standardized code used to categorize and track equipment failures.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; failure classification, breakdown code, or fault code">failure code</abbr> when cause is determined.</li>
-<li>Don't guess - inaccurate data is worse than incomplete data.</li>
+<li>Don't guess: inaccurate data is worse than incomplete data.</li>
 </ol>
+<hr>
+<h2 id="failure-reporting-verification-checklist">Failure reporting verification checklist<a class="headerlink" href="#failure-reporting-verification-checklist" title="Permanent link">¤</a></h2>
+<p>Use this checklist to ensure complete and actionable failure reporting on <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr>:</p>
+<h3 id="table-2-failure-reporting-verification-checklist">Table 2: Failure reporting verification checklist<a class="headerlink" href="#table-2-failure-reporting-verification-checklist" title="Permanent link">¤</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Check</th>
+<th style="text-align: left;"><abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">Item</abbr></th>
+<th style="text-align: left;">What to verify</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">[ ]</td>
+<td style="text-align: left;">Failure class assigned</td>
+<td style="text-align: left;">Operating equipment record has a valid Failure Class defined on its <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> master</td>
+</tr>
+<tr>
+<td style="text-align: left;">[ ]</td>
+<td style="text-align: left;">Problem code selected</td>
+<td style="text-align: left;">Specific failure symptom is chosen on the Failure Reporting tab</td>
+</tr>
+<tr>
+<td style="text-align: left;">[ ]</td>
+<td style="text-align: left;">Cause code identified</td>
+<td style="text-align: left;">Root cause code is selected from the causes linked to the problem</td>
+</tr>
+<tr>
+<td style="text-align: left;">[ ]</td>
+<td style="text-align: left;">Remedy code recorded</td>
+<td style="text-align: left;">Action code describing how the failure was corrected is logged</td>
+</tr>
+<tr>
+<td style="text-align: left;">[ ]</td>
+<td style="text-align: left;"><abbr title="The period when equipment is not operational or available for use.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; outage, production loss, or equipment unavailable">Downtime</abbr> recorded</td>
+<td style="text-align: left;">Actual equipment <abbr title="The period when equipment is not operational or available for use.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; outage, production loss, or equipment unavailable">downtime</abbr> hours and timestamps are entered on the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr></td>
+</tr>
+</tbody>
+</table>
 <hr>
 <h2 id="continue-building-your-skills">Continue building your skills<a class="headerlink" href="#continue-building-your-skills" title="Permanent link">¤</a></h2>
 <h3 id="see-the-full-picture">See the full picture<a class="headerlink" href="#see-the-full-picture" title="Permanent link">¤</a></h3>
@@ -1687,6 +1721,18 @@
                 <a href="#what-if-i-dont-know-the-cause" class="md-toc__link" data-md-level="1">
                   What if I don't know the cause?
                 </a>
+              </li>
+              <li class="md-toc__item">
+                <a href="#failure-reporting-verification-checklist" class="md-toc__link" data-md-level="1">
+                  Failure reporting verification checklist
+                </a>
+                  <ul class="md-toc__list">
+                      <li class="md-toc__item">
+                        <a href="#table-2-failure-reporting-verification-checklist" class="md-toc__link" data-md-level="2">
+                          Table 2: Failure reporting verification checklist
+                        </a>
+                      </li>
+                  </ul>
               </li>
               <li class="md-toc__item">
                 <a href="#continue-building-your-skills" class="md-toc__link" data-md-level="1">

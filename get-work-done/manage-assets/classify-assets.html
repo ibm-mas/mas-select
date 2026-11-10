@@ -302,7 +302,7 @@
         
   
     <cds-side-nav-menu-item href="../../start-fast/basics/other-mobile-apps.html" class="nav-level-3">
-      Other mobile apps
+      Mobile apps
     </cds-side-nav-menu-item>
   
 
@@ -1261,6 +1261,8 @@
     
       <cds-select-item value="#what-if-the-classification-doesnt-exist">What if the classification doesn't exist?</cds-select-item>
     
+      <cds-select-item value="#asset-classification-verification-checklist">Asset classification verification checklist</cds-select-item>
+    
       <cds-select-item value="#related-topics">Related topics</cds-select-item>
     
     </cds-select>
@@ -1362,10 +1364,38 @@
 <li><strong>Serial number</strong>: Unique identifier</li>
 </ul>
 <p>Once you add these details, they become searchable. You can find all fillers from a specific manufacturer or all mixers with a certain capacity.</p>
-<div class="admonition warning">
-<p class="admonition-title">TODO: Add visual content</p>
-<p>A screenshot showing how attributes appear on an <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> record would be useful here.</p>
-</div>
+<h3 id="table-2-classification-attribute-data-types">Table 2: Classification attribute data types<a class="headerlink" href="#table-2-classification-attribute-data-types" title="Permanent link">¤</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Data type</th>
+<th style="text-align: left;">What it stores</th>
+<th style="text-align: left;">Example attribute</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>ALN</strong></td>
+<td style="text-align: left;">Alphanumeric text strings</td>
+<td style="text-align: left;">Model number, serial number, or manufacturer name</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>NUMERIC</strong></td>
+<td style="text-align: left;">Numerical values with optional unit of measure</td>
+<td style="text-align: left;">Horsepower (HP), operating voltage (V), or tank capacity (L)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>TABLE</strong></td>
+<td style="text-align: left;">Values validated against a predefined system lookup table or <abbr title="A list of valid values attached to a field that controls what users can select in a dropdown.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; value list, lookup list, or picklist">domain</abbr></td>
+<td style="text-align: left;">Refrigerant type, frame size, or metallurgy grade</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DATETIME</strong></td>
+<td style="text-align: left;">Calendar dates and timestamps</td>
+<td style="text-align: left;">Commissioning date, warranty expiration date</td>
+</tr>
+</tbody>
+</table>
 <hr>
 <h2 id="how-do-i-classify-an-asset">How do I classify an <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr>?<a class="headerlink" href="#how-do-i-classify-an-asset" title="Permanent link">¤</a></h2>
 <h3 id="before-you-classify">Before you classify<a class="headerlink" href="#before-you-classify" title="Permanent link">¤</a></h3>
@@ -1385,10 +1415,6 @@
 <li>Save the <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr>.</li>
 </ol>
 <p>The system stores all classification data. The information appears on the <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> record and becomes searchable.</p>
-<div class="admonition warning">
-<p class="admonition-title">TODO: Add visual content</p>
-<p>A video showing how to classify an <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> and add specifications would be useful here.</p>
-</div>
 <hr>
 <h2 id="common-classifications">Common classifications<a class="headerlink" href="#common-classifications" title="Permanent link">¤</a></h2>
 <p>Typical classifications you might use:</p>
@@ -1421,6 +1447,46 @@
 <li>Don't create duplicate classifications.</li>
 <li>Follow your organization's approval process.</li>
 </ol>
+<hr>
+<h2 id="asset-classification-verification-checklist"><abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">Asset</abbr> classification verification checklist<a class="headerlink" href="#asset-classification-verification-checklist" title="Permanent link">¤</a></h2>
+<p>Use this checklist to ensure complete and standardized <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> classification:</p>
+<h3 id="table-3-asset-classification-verification-checklist">Table 3: <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">Asset</abbr> classification verification checklist<a class="headerlink" href="#table-3-asset-classification-verification-checklist" title="Permanent link">¤</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Check</th>
+<th style="text-align: left;"><abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">Item</abbr></th>
+<th style="text-align: left;">What to verify</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">[ ]</td>
+<td style="text-align: left;">Most specific category</td>
+<td style="text-align: left;"><abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">Asset</abbr> is mapped to the lowest applicable branch of the classification hierarchy</td>
+</tr>
+<tr>
+<td style="text-align: left;">[ ]</td>
+<td style="text-align: left;">Failure class aligned</td>
+<td style="text-align: left;">Failure Class is populated on the <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> master to enable failure reporting on <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr></td>
+</tr>
+<tr>
+<td style="text-align: left;">[ ]</td>
+<td style="text-align: left;">Mandatory attributes filled</td>
+<td style="text-align: left;">Essential specifications such as manufacturer, model, and serial number are entered</td>
+</tr>
+<tr>
+<td style="text-align: left;">[ ]</td>
+<td style="text-align: left;">Standardized units of measure</td>
+<td style="text-align: left;">Measurement attributes use consistent units, such as HP for horsepower and V for volts</td>
+</tr>
+<tr>
+<td style="text-align: left;">[ ]</td>
+<td style="text-align: left;">Specification tab saved</td>
+<td style="text-align: left;">Added classification and attributes are committed and visible on the Specifications tab</td>
+</tr>
+</tbody>
+</table>
 <hr>
 <h2 id="related-topics">Related topics<a class="headerlink" href="#related-topics" title="Permanent link">¤</a></h2>
 <ul>
@@ -1533,6 +1599,11 @@
                           Attributes and specifications
                         </a>
                       </li>
+                      <li class="md-toc__item">
+                        <a href="#table-2-classification-attribute-data-types" class="md-toc__link" data-md-level="2">
+                          Table 2: Classification attribute data types
+                        </a>
+                      </li>
                   </ul>
               </li>
               <li class="md-toc__item">
@@ -1566,6 +1637,18 @@
                 <a href="#what-if-the-classification-doesnt-exist" class="md-toc__link" data-md-level="1">
                   What if the classification doesn't exist?
                 </a>
+              </li>
+              <li class="md-toc__item">
+                <a href="#asset-classification-verification-checklist" class="md-toc__link" data-md-level="1">
+                  Asset classification verification checklist
+                </a>
+                  <ul class="md-toc__list">
+                      <li class="md-toc__item">
+                        <a href="#table-3-asset-classification-verification-checklist" class="md-toc__link" data-md-level="2">
+                          Table 3: Asset classification verification checklist
+                        </a>
+                      </li>
+                  </ul>
               </li>
               <li class="md-toc__item">
                 <a href="#related-topics" class="md-toc__link" data-md-level="1">
