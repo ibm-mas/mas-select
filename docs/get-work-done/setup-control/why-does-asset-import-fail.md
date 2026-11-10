@@ -317,7 +317,7 @@ Once your data is successfully loaded, track work orders, costs, and equipment h
 ### Related skills
 
 - [What is the correct load order?](correct-load-order.md): Review dependencies and ensure parent records exist before children.
-- [How do I plan my location hierarchy?](plan-your-location-hierarchy.md): Map physical places and prevent orphan records.
+- [How do I plan my location hierarchy?](plan-your-location-hierarchy.md): Map physical places and prevent orphan records. Plan before you load, because a hierarchy is hard to change once work history builds up.
 - [How do I plan my asset hierarchy?](plan-your-asset-hierarchy.md): Structure equipment packages and avoid over-assetization.
 - [How do I get data into the system?](get-data-into-system.md): Return to Data Management to re-import corrected rows.
 

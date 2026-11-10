@@ -72,7 +72,7 @@ Set the defaults that control how mobile devices sync data and which map app you
 
 ### Load your existing data
 
-Bring in your locations, assets, and inventory. Start by learning the order that avoids import errors.
+Bring in your locations, assets, and inventory. Start by learning the order that avoids import errors. Then plan your [location hierarchy](../../get-work-done/setup-control/plan-your-location-hierarchy.md) and [asset hierarchy](../../get-work-done/setup-control/plan-your-asset-hierarchy.md) before you load, because they are hard to change once work history builds up.
 
 [What is the correct load order?](../../get-work-done/setup-control/correct-load-order.md)
 

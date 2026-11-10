@@ -2,7 +2,7 @@
 
 When setting up Maximo Application Suite Select, every physical entity in your plant or facility must be classified as one of three primary record types: a location, an asset, or a spare part.
 
-Making the right classification before importing data ensures accurate maintenance history, simplified storeroom operations, and clean drilldown navigation in Maximo Mobile and desktop applications. Misclassifying entities leads to cluttered asset registers, broken cost roll-ups, and duplicate data entry.
+Making the right classification before importing data ensures accurate maintenance history, simplified storeroom operations, and clean drilldown navigation in Maximo Mobile and desktop applications. Misclassifying entities leads to cluttered asset registers, broken cost roll-ups, and duplicate data entry, and it is hard to correct once work history builds up. For the full warning, see [How do I plan my asset hierarchy?](plan-your-asset-hierarchy.md)
 
 *Looking to verify your record classification right away? [Skip to classification decision checklist ↓](#classification-decision-checklist)*
 

@@ -50,7 +50,7 @@
 <div class="home-cards" markdown>
 
 - [**Start fast**<br>Get from zero to first value in minutes.](start-fast/what-can-i-do/overview.md)
-- [**Set up and control**<br>Add users, load data, and configure Maximo Mobile for your team.](get-work-done/setup-control/add-users.md)
+- [**Set up and control**<br>Add users, plan and load your data, and configure Maximo Mobile for your team.](get-work-done/setup-control/add-users.md)
 - [**Get work done**<br>Complete everyday maintenance tasks.](get-work-done/plan-work/plan-recurring-maintenance.md)
 - [**Improve results**<br>Make your maintenance program more efficient.](improve-results/improve-work/reduce-downtime.md)
 - [**Work smarter**<br>Use Artificial Intelligence (AI), automation, and insights to scale.](work-smarter/ai-automation/ai-improve-maintenance.md)

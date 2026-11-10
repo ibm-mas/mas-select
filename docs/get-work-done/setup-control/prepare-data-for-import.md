@@ -2,6 +2,9 @@
 
 Data Management is the primary application used to import records into IBM Maximo Application Suite Select. Use this guide to clean, format, and structure your spreadsheets or legacy CSV files before uploading them into Data Management.
 
+!!! warning "Plan your hierarchies first"
+    Spreadsheet preparation checks format, not design. Plan your [location hierarchy](plan-your-location-hierarchy.md) and [asset hierarchy](plan-your-asset-hierarchy.md) before you load, because they are hard to change once work history builds up.
+
 *Looking to validate your CSV file right away? [Skip to pre-import data validation checklist ↓](#pre-import-data-validation-checklist)*
 
 ### 💡 Tips: Best practices for data preparation
@@ -167,6 +170,7 @@ Before uploading your file into Data Management, verify each data preparation st
 | [ ] | Header row alignment | Column names match system attribute names and case sensitivity |
 | [ ] | Mandatory site and org keys | Every row contains valid SITEID and ORGID values |
 | [ ] | Top-down hierarchical sort | Parent locations and parent assets appear in rows before their child records |
+| [ ] | Hierarchy plan agreed | Your location and asset hierarchies are planned and agreed with your planners and supervisors before you load |
 | [ ] | Referenced data verified | Status codes, failure classes, crafts, and vendors exist in the system |
 | [ ] | Batch size limit | Large datasets are split into batches of 1,000 to 5,000 rows |
 

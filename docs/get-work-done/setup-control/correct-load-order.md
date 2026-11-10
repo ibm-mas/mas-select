@@ -5,13 +5,16 @@ Import order matters. Referenced records must exist before records that use them
 Figure 1 outlines the five sequential steps of the data onboarding pathway:
 
 1. **Understand the correct load order**: review dependency rules so supporting data and parent records load first.
-2. **Plan your location and asset hierarchies**: design physical places and equipment breakdown structures top-down.
+2. **Plan your location and asset hierarchies**: design physical places and equipment breakdown structures top-down. This is the step that is hardest to redo later.
 3. **Prepare data for import**: download CSV templates from Data Management, format columns as text, and validate fields.
 4. **Get data into the system**: upload files, run preview validation, and commit the import.
 5. **Fix import errors**: diagnose rejected records in error logs and re-import corrected rows.
 
 <img src="../../images/data_onboarding_pathway.svg" alt="Explained in body text" style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 1: The five-step data onboarding pathway</p>
+
+!!! warning "Plan your hierarchies before you load data"
+    A hierarchy that does not fit how you work still imports without errors, and it is hard to change once work history builds up. Maximo customers report that correcting a poor structure later is slow and risky. Agree your structure with your maintenance planners, supervisors, and operations team before you load anything. See [How do I plan my location hierarchy?](plan-your-location-hierarchy.md) and [How do I plan my asset hierarchy?](plan-your-asset-hierarchy.md).
 
 ## Why does load order matter?
 
@@ -131,7 +134,7 @@ Follow these five steps in sequence to load your facility data:
 | Step | Action | Guide |
 |---|---|---|
 | 1 | **Understand load order**<br>Review dependencies and ensure referenced records and parent locations exist first. | [What is the correct load order?](correct-load-order.md) |
-| 2 | **Plan your location and asset hierarchies**<br>Map your locations and equipment top-down on paper before creating records. | [How do I plan my location hierarchy?](plan-your-location-hierarchy.md)<br>[How do I plan my asset hierarchy?](plan-your-asset-hierarchy.md) |
+| 2 | **Plan your location and asset hierarchies**<br>Map your locations and equipment top-down on paper before creating records. This is the step that is hardest to redo later. | [How do I plan my location hierarchy?](plan-your-location-hierarchy.md)<br>[How do I plan my asset hierarchy?](plan-your-asset-hierarchy.md) |
 | 3 | **Prepare data for import**<br>Download CSV templates from Data Management, format ID columns as text, and clean fields. | [How do I prepare data for import?](prepare-data-for-import.md) |
 | 4 | **Get data into the system**<br>Upload CSV files in Data Management, validate rows in preview mode, and commit the import. | [How do I get data into the system?](get-data-into-system.md) |
 | 5 | **Fix import errors**<br>Diagnose preview errors, correct source CSV rows, and re-import failed records. | [How do I fix import errors?](why-does-asset-import-fail.md) |
