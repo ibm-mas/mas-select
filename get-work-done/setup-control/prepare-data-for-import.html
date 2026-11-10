@@ -1246,7 +1246,7 @@
     <cds-select id="breadcrumbs-toc" inline="" placeholder="..." oninput="changeAnchor(this.value)">
     
     
-      <cds-select-item value="#tips-for-success">💡 Tips for success</cds-select-item>
+      <cds-select-item value="#tips-best-practices-for-data-preparation">💡 Tips: Best practices for data preparation</cds-select-item>
     
       <cds-select-item value="#common-preparation-steps">Common preparation steps</cds-select-item>
     
@@ -1277,14 +1277,15 @@
           <div class="rst-content">
             
             <h1 id="how-do-i-prepare-data-for-import">How do I prepare data for import?<a class="headerlink" href="#how-do-i-prepare-data-for-import" title="Permanent link">¤</a></h1>
-<p>Proper data preparation prevents import failures and ensures data quality.</p>
-<h2 id="tips-for-success">💡 Tips for success<a class="headerlink" href="#tips-for-success" title="Permanent link">¤</a></h2>
+<p>Data Management is the primary application used to import records into IBM Maximo Application Suite Select. Use this guide to clean, format, and structure your spreadsheets or legacy CSV files before uploading them into Data Management.</p>
+<p><em>Looking to validate your CSV file right away? <a href="#pre-import-data-validation-checklist">Skip to pre-import data validation checklist ↓</a></em></p>
+<h3 id="tips-best-practices-for-data-preparation">💡 Tips: Best practices for data preparation<a class="headerlink" href="#tips-best-practices-for-data-preparation" title="Permanent link">¤</a></h3>
 <ul>
-<li><strong>Start with a template</strong>: Export existing records to see correct format</li>
-<li><strong>Validate data first</strong>: Check all values against system data</li>
-<li><strong>Use text format</strong>: Prevent Excel from corrupting data</li>
-<li><strong>Test with small batches</strong>: Verify format before importing thousands of records</li>
-<li><strong>Keep error logs</strong>: Document what went wrong for future imports</li>
+<li><strong>Start with a template</strong>: Download official templates or export existing records directly from Data Management to see the required column names and structure.</li>
+<li><strong>Validate data first</strong>: Check all values against system data such as <abbr title="A data partitioning concept that represents a plant, facility, or business unit.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; plant, facility, or business unit">site</abbr> IDs and failure classes before uploading.</li>
+<li><strong>Use text format</strong>: Prevent spreadsheet software from corrupting leading zeros or converting numbers to scientific notation.</li>
+<li><strong>Test with small batches</strong>: Verify format with a small batch of 5 to 10 records before importing thousands.</li>
+<li><strong>Keep error logs</strong>: Document preview errors to correct source files efficiently.</li>
 </ul>
 <h2 id="common-preparation-steps">Common preparation steps<a class="headerlink" href="#common-preparation-steps" title="Permanent link">¤</a></h2>
 <h3 id="use-the-correct-file-format">Use the correct file format<a class="headerlink" href="#use-the-correct-file-format" title="Permanent link">¤</a></h3>
@@ -1565,8 +1566,8 @@
         <div class="md-toc__title">On this page</div>
         <ul class="md-toc__list">
               <li class="md-toc__item">
-                <a href="#tips-for-success" class="md-toc__link" data-md-level="1">
-                  💡 Tips for success
+                <a href="#tips-best-practices-for-data-preparation" class="md-toc__link" data-md-level="1">
+                  💡 Tips: Best practices for data preparation
                 </a>
               </li>
               <li class="md-toc__item">
