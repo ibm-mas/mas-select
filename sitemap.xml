@@ -225,6 +225,13 @@
         <xhtml:link rel="alternate" hreflang="fr" href="https://ibm-mas.github.io/mas-select/fr/get-work-done/plan-work/schedule-work.html"/>
     </url>
     <url>
+        <loc>https://ibm-mas.github.io/mas-select/get-work-done/plan-work/why-pm-not-generating-work-orders.html</loc>
+        <lastmod>2026-11-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ibm-mas.github.io/mas-select/get-work-done/plan-work/why-pm-not-generating-work-orders.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://ibm-mas.github.io/mas-select/fr/get-work-done/plan-work/why-pm-not-generating-work-orders.html"/>
+    </url>
+    <url>
         <loc>https://ibm-mas.github.io/mas-select/get-work-done/setup-control/add-users.html</loc>
         <lastmod>2026-11-11</lastmod>
         <changefreq>daily</changefreq>
@@ -790,6 +797,13 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="https://ibm-mas.github.io/mas-select/fr/get-work-done/plan-work/schedule-work.html"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://ibm-mas.github.io/mas-select/get-work-done/plan-work/schedule-work.html"/>
+    </url>
+    <url>
+        <loc>https://ibm-mas.github.io/mas-select/fr/get-work-done/plan-work/why-pm-not-generating-work-orders.html</loc>
+        <lastmod>2026-11-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://ibm-mas.github.io/mas-select/fr/get-work-done/plan-work/why-pm-not-generating-work-orders.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ibm-mas.github.io/mas-select/get-work-done/plan-work/why-pm-not-generating-work-orders.html"/>
     </url>
     <url>
         <loc>https://ibm-mas.github.io/mas-select/fr/get-work-done/setup-control/add-users.html</loc>
