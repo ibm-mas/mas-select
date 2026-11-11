@@ -107,6 +107,7 @@ plugins:
             Configure Maximo Mobile: Configurer Maximo Mobile
             Plan work: Planifier le travail
             Recurring maintenance: Maintenance récurrente
+            PM not generating work orders: La maintenance préventive ne génère pas d'ordres de travail
             Decide what work: Décider du travail à effectuer
             Schedule work: Planifier le travail
             Complete work: Terminer le travail
@@ -244,6 +245,7 @@ nav:
         - Create inspection forms: get-work-done/setup-control/create-inspection-forms.md
     - Plan work:
       - Recurring maintenance: get-work-done/plan-work/plan-recurring-maintenance.md
+      - PM not generating work orders: get-work-done/plan-work/why-pm-not-generating-work-orders.md
       - Decide what work: get-work-done/plan-work/decide-what-work.md
       - Schedule work: get-work-done/plan-work/schedule-work.md
     - Complete work:

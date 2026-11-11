@@ -10,6 +10,12 @@ Set up preventive maintenance (PM) schedules that automatically generate work or
 
 [I want to know more about planning recurring maintenance](../get-work-done/plan-work/plan-recurring-maintenance.md)
 
+### Why isn't my PM generating work orders?
+
+Check that the PM is active, that the asset or location is operating, and that a floating schedule is not waiting on an open work order. A PM might also not be due yet, or you might be generating from a child PM instead of the top level PM.
+
+[I want to know more about why a PM does not generate work orders](../get-work-done/plan-work/why-pm-not-generating-work-orders.md)
+
 ### How do I decide what work should be done?
 
 Prioritize work based on asset criticality, safety requirements, and operational impact. Use work order status and priority codes to manage what gets done first.
