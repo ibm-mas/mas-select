@@ -18,12 +18,12 @@ Use this reference to find the correct object structure for each data type.
 
 | Data type | Object structure | Notes |
 |-----------|-----------------|-------|
-| **Asset** | `MXAPIASSET` | Use for importing asset records, including asset numbers, descriptions, locations, and classifications. `[SME confirmation required: Confirm whether MXAPIASSET or MXAPIASSETS is the correct name in Maximo Application Suite Select.]` |
+| **Asset** | `MXAPIASSET` | Use for importing asset records, including asset numbers, descriptions, locations, and classifications. |
 | **Inventory** | `MXAPIINVENTORY` | `[SME confirmation required: Confirm the correct object structure name and usage for inventory imports in Maximo Application Suite Select.]` |
-| **Item** | `MXAPIITEM` | `[SME confirmation required: Confirm the correct object structure name and usage for item imports in Maximo Application Suite Select.]` |
+| **Item** | `MXAPIITEM` | Use for importing item records. |
 | **<abbr title="A reusable set of tasks, materials, and tools that can be applied to a work order">Job plan</abbr>** | `MXAPIJOBPLAN` | `[SME confirmation required: Confirm the correct object structure name and usage for job plan imports in Maximo Application Suite Select.]` |
 | **Labor** | `MXAPILABOR` | `[SME confirmation required: Confirm the correct object structure name and usage for labor imports in Maximo Application Suite Select.]` |
-| **Location** | `MXAPIOPERLOC` | Use for importing operating locations and location hierarchies. `[SME confirmation required: Confirm whether MXAPIOPERLOC or MXOPERLOC is the correct name in Maximo Application Suite Select.]` |
+| **Location** | `MXAPIOPERLOC` | Use for importing operating locations and location hierarchies. |
 | **Meter** | `MXAPIMETER` | `[SME confirmation required: Confirm the correct object structure name and usage for meter imports in Maximo Application Suite Select.]` |
 | **PM/Master PM** | `MXAPIPM` | `[SME confirmation required: Confirm the correct object structure name and usage for PM and Master PM imports in Maximo Application Suite Select.]` |
 | **Service Item** | `MXAPISERVITEM` | `[SME confirmation required: Confirm the correct object structure name and usage for service item imports in Maximo Application Suite Select.]` |

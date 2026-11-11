@@ -103,8 +103,6 @@ If your data exceeds 500 KB:
 2. Import each batch separately, in the same order.
 3. Wait for each batch to complete before importing the next.
 
-`[SME confirmation required: confirm the 500 KB limit applies in MAS Select — sourced from IBM Docs for MAS 9.1 but may differ in MAS Select SaaS context]`
-
 ---
 
 ## Continue building your skills

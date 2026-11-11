@@ -44,6 +44,8 @@ The primary location hierarchy usually follows the places where work happens, fo
 
 A location does not have to be a building with floors and rooms. It can be a section of a map grid or a telephone pole. Choose levels that fit how your operation is laid out.
 
+You can also organize locations into hierarchical systems or network systems. You can have more than one system, but each site must have only one primary system.
+
 Because costs, safety plans, and work orders roll up through parent locations, grouping locations by what they are used for, such as grouping all restrooms or all compressor rooms across multiple buildings under one branch, can break building-level reporting. A report run on `Production building` will miss any rooms placed outside that building's branch.
 
 ### 💡 Tip: Grouping by function
@@ -53,7 +55,7 @@ If you need to search or group locations by type or function, such as finding al
 Some organizations also define locations by function, so that history stays with the location as the assets in it are swapped. For example, an air conditioning compressor can be both an asset and a location in an HVAC system. For more about items that are both, see [How do I decide: location, asset, or spare part?](decide-location-asset-spare-part.md).
 
 !!! warning "TODO: Confirm with a subject matter expert"
-     [SME confirmation required: confirm how functional locations and location systems work in Maximo Application Suite Select, and how to describe an item that is both an asset and a location.]
+     [SME confirmation required: confirm how functional locations work in Maximo Application Suite Select, and how to describe an item that is both an asset and a location.]
 
 ### Quick test: Should this be a location?
 
@@ -256,7 +258,7 @@ Before loading your location hierarchy into Maximo Application Suite Select, ver
 | [ ] | **Top-down import sequence** | Spreadsheet rows are sorted so that parent locations exist before child records are imported. |
 
 !!! warning "TODO: Confirm with a subject matter expert"
-     [SME confirmation required: confirm that work and cost reports follow the location hierarchy in Maximo Application Suite Select, and whether location systems are available. The answers above use sources about Maximo Manage.]
+     [SME confirmation required: confirm that work and cost reports follow the location hierarchy in Maximo Application Suite Select. The answers above use sources about Maximo Manage.]
 
 ---
 

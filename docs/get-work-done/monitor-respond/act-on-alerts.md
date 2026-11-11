@@ -105,11 +105,11 @@ Select includes some work queues. Administrators can use them as they are, or cr
 
 1. Go to the target dashboard, such as **Operational Dashboard : Supervisor**.
 2. Click **Edit Dashboard**.
-3. Add a card that shows work orders as a table, and select your work queue for it.
+3. Add the **Work queues** card, and select your work queue from the list.
 4. Verify that your active work queue is selected.
 5. Click **Save Dashboard**.
 
-`[SME confirmation required: Confirm which card type shows a work queue on the dashboard in Select, and how you select the queue.]`
+If you added a person group to the work queue, the queue does not show on the **Work queues** card by default. People in that group can select the **Work queues** card, edit the dashboard, and select the queue on the **Advanced** tab of the card gallery.
 
 ---
 

@@ -38,7 +38,7 @@ Each data category offers the same three options. Choose the option that balance
 
 ## Open the mobile configuration
 
-`[SME confirmation required: Confirm the name of the mobile configuration application in Maximo Application Suite Select.]`
+Open the **Mobile properties** application.
 
 ## Choose how mobile data is synchronized
 
@@ -101,11 +101,9 @@ Select the priority value that reflects how your organization resolves address c
 
 ### Enable show all systems
 
-**Enable show all systems** controls whether technicians can see all systems when creating or viewing a service request.
+**Enable show all systems** controls whether users can select locations outside their primary system when they create service requests.
 
-Turn this setting on or off depending on whether your team needs access to all systems.
-
-`[SME confirmation required: Confirm what "systems" refers to in the Maximo Application Suite Select context and the effect of enabling or disabling this setting.]`
+Turn this setting on if your team reports problems at locations outside their own primary system.
 
 ## Configure work order behavior
 
@@ -135,7 +133,7 @@ The **Miscellaneous settings** section includes settings that control which date
 
 ## Configure travel guidance
 
-`[SME confirmation required: Confirm whether travel settings are exposed and supported in Maximo Application Suite Select. If confirmed, document Enable travel prompt and Travel radius. Do not describe triggers, measurement units, or geographic data requirements unless they are confirmed in the final design.]`
+The **Travel settings** section includes **Enable travel prompt** and **Travel radius**. Use these settings if your team tracks travel time to a work location.
 
 ## What to do next
 

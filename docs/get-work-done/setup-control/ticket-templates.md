@@ -12,7 +12,9 @@ When you apply a ticket template to a service request, the system fills in the f
 
 *Looking to verify a ticket template setup right away? [Skip to ticket template verification checklist ↓](#ticket-template-verification-checklist)*
 
-`[SME confirmation required: Confirm which classes Select ticket templates use, and whether Select has a Tickets application.]`
+Each ticket template has a class that sets the type of ticket it applies to. The three classes are service request, problem, and incident.
+
+`[SME confirmation required: Confirm whether Select has a Tickets application.]`
 
 ## 💡 Tips for success
 
@@ -66,7 +68,15 @@ Someone can apply a template to a service request when:
 
 A new or duplicated template starts in draft status. Change the status to ACTIVE before other people can use the template. A closed template can no longer have its classification changed.
 
-`[SME confirmation required: Confirm the ticket template statuses in Select and what each allows.]`
+### Table 2: Ticket template statuses
+
+| Status | What it allows |
+|--------|----------------|
+| **DRAFT** | Use this status while you create or finalize the template. When you move the template out of draft, you cannot set it back to draft |
+| **ACTIVE** | Other people can apply the template to a ticket |
+| **INACTIVE** | Other people cannot apply the template. Use it when you do not want people to use the template, when you are not using it now, or when you want to keep it for your records |
+
+Use the **Change Status** action to move a template between statuses.
 
 ## What happens when activities are added?
 
@@ -76,7 +86,7 @@ When you apply a template that has activities, the system creates a child activi
 
 Your plant needs a template for a new employee. You create a template called New Employee and add four activities in order.
 
-### Table 2: Activities in the New Employee template
+### Table 3: Activities in the New Employee template
 
 | Sequence | Description |
 |----------|-------------|
@@ -89,7 +99,7 @@ When someone applies the template to a service request, the system creates one a
 
 ## Ticket template verification checklist
 
-### Table 3: Ticket template verification checklist
+### Table 4: Ticket template verification checklist
 
 | Check | Item | What to verify |
 |-------|------|----------------|
