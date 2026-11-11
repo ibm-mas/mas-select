@@ -191,6 +191,7 @@ markdown_extensions:
 
 # Abbreviation tooltips: appended per page language by this hook
 hooks:
+  - tools/hooks/author_notes.py
   - tools/hooks/abbreviations.py
   - tools/hooks/fallback_assets.py
 
