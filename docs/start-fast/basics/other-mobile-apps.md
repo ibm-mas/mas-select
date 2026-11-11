@@ -105,7 +105,7 @@ To learn more about asset structures, see [How do I plan my asset hierarchy?](..
 | **Locations** | Review location hierarchies, update location records, and log location meters. |
 | **Assets** | Search equipment, view specifications and meters, and register new assets. |
 
-To find an app on the desktop, use the **Find navigation item** field at the top of the menu and search for the app name.
+To find an app on the desktop, use the **Find navigation item** field at the top of the menu and search for the app name. To return to the desktop applications after you open one of these apps on your computer, see [How do I get back to the desktop applications?](why-apps-overlap.md#how-do-i-get-back-to-the-desktop-applications)
 
 ## What to do next
 

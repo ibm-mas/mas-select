@@ -4,8 +4,12 @@ Find quick answers to common questions. All questions are organized by what you'
 
 ## Browse by topic
 
-- [Starting out](starting-out.md): Get started with Maximo Application Suite Select basics
-- [Getting work done](getting-work-done.md): Plan, complete, and manage work
-- [Improving results](improving-results.md): Improve work quality, data quality, and adoption
-- [Working smarter](working-smarter.md): Use Artificial Intelligence (AI), automation, and insights to optimize performance
-- [Managing security](security.md): Understand security features and best practices
+<div class="home-cards" markdown>
+
+- [**Starting out**<br>Get started with Maximo Application Suite Select basics.](starting-out.md)
+- [**Getting work done**<br>Plan, complete, and manage work.](getting-work-done.md)
+- [**Improving results**<br>Improve work quality, data quality, and adoption.](improving-results.md)
+- [**Working smarter**<br>Use Artificial Intelligence (AI), automation, and insights to optimize performance.](working-smarter.md)
+- [**Managing security**<br>Understand security features and best practices.](security.md)
+
+</div>
