@@ -191,6 +191,15 @@ body[data-carbon-theme="g100"] p img[src*="guided_steps_final"] {
     content: url("../../images/guided_steps_final.png");
 }
 
+/* Application menu icon: keep it inline with the sentence it appears in */
+p img[src*="application_menu_icon"] {
+    display: inline-block !important;
+    vertical-align: middle !important;
+    margin: 0 0.15em !important;
+    height: 1.5em !important;
+    width: auto !important;
+}
+
 
 /* Home page subtitle styling */
 .subtitle-help-center {
@@ -320,6 +329,20 @@ body[data-carbon-theme="g100"] p img[src*="guided_steps_final"] {
 
 .nav-search-input::placeholder {
     color: var(--cds-text-03, #a8a8a8);
+}
+
+/* Dark themes: set colours explicitly so the typed text and placeholder stay legible */
+[data-carbon-theme="g90"] .nav-search-input,
+[data-carbon-theme="g100"] .nav-search-input {
+    background-color: #262626;
+    color: #f4f4f4;
+    border-bottom-color: #8d8d8d;
+    caret-color: #f4f4f4;
+}
+
+[data-carbon-theme="g90"] .nav-search-input::placeholder,
+[data-carbon-theme="g100"] .nav-search-input::placeholder {
+    color: #a8a8a8;
 }
 
 .nav-search-input:focus {

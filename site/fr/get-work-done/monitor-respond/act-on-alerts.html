@@ -628,6 +628,17 @@
       
         
   
+    <cds-side-nav-menu-item href="../plan-work/why-pm-not-generating-work-orders.html" class="nav-level-3">
+      La maintenance préventive ne génère pas d'ordres de travail
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
     <cds-side-nav-menu-item href="../plan-work/decide-what-work.html" class="nav-level-3">
       Décider du travail à effectuer
     </cds-side-nav-menu-item>
@@ -1279,6 +1290,7 @@
             <h1 id="how-do-i-act-on-alerts">How do I act on alerts?<a class="headerlink" href="#how-do-i-act-on-alerts" title="Permanent link">¤</a></h1>
 <p>Operational dashboards in Maximo Application Suite Select consolidate critical operational signals into a single view. When a key performance indicator breaches an alert threshold, or when urgent maintenance enters a work queue, supervisors and administrators can review the situation and take immediate corrective action directly from the dashboard.</p>
 <p>Acting on alerts promptly prevents small anomalies, such as an overdue <abbr title="Scheduled routine maintenance performed to prevent equipment failures.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance plan, planned maintenance, or PM">preventive maintenance</abbr> inspection or a rising emergency backlog, from escalating into unplanned production <abbr title="The period when equipment is not operational or available for use.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; outage, production loss, or equipment unavailable">downtime</abbr>.</p>
+<p><em>Looking to verify your alert response workflow right away? <a href="#alert-and-work-queue-checklist">Skip to alert and work queue checklist ↓</a></em></p>
 <p>When you first sign in, Select shows the Operational Dashboard that matches your <abbr title="A collection of users who share the same application access and permissions.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; permission group, access group, user group, or role">security group</abbr>. Your administrator assigns the group. Select includes some dashboard content, and an administrator can edit the dashboard to add cards such as KPIs and work queues.</p>
 <h3 id="tips-for-success">💡 Tips for success<a class="headerlink" href="#tips-for-success" title="Permanent link">¤</a></h3>
 <ul>
@@ -1425,11 +1437,11 @@
 <ol>
 <li>Go to the target dashboard, such as <strong>Operational Dashboard : Supervisor</strong>.</li>
 <li>Click <strong>Edit Dashboard</strong>.</li>
-<li>Add a card that shows <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> as a table, and select your work queue for it.</li>
+<li>Add the <strong>Work queues</strong> card, and select your work queue from the list.</li>
 <li>Verify that your active work queue is selected.</li>
 <li>Click <strong>Save Dashboard</strong>.</li>
 </ol>
-<p><code>[SME confirmation required: Confirm which card type shows a work queue on the dashboard in Select, and how you select the queue.]</code></p>
+<p>If you added a person group to the work queue, the queue does not show on the <strong>Work queues</strong> card by default. People in that group can select the <strong>Work queues</strong> card, edit the dashboard, and select the queue on the <strong>Advanced</strong> tab of the card gallery.</p>
 <hr>
 <h2 id="alert-and-work-queue-checklist">Alert and work queue checklist<a class="headerlink" href="#alert-and-work-queue-checklist" title="Permanent link">¤</a></h2>
 <p>Use this checklist to confirm that dashboard alerting and work queues operate effectively for your team.</p>

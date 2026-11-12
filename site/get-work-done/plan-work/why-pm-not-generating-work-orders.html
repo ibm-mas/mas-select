@@ -1,0 +1,1496 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="robots" content="noindex, nofollow">
+    <title>PM not generating work orders - Maximo Application Suite Select help center</title>
+
+    <!-- Pure CSS (https://pure-css.github.io/) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/theme.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+    <script src="../../js/theme.js"></script>
+
+    <!-- Carbon theme zones (white, g10, g90, g100) -->
+    <link rel="stylesheet" href="https://1.www.s81c.com/common/carbon/web-components/tag/latest/themes.css">
+
+    <!-- The Carbon web-components/framework -->
+    <script type="module" src="https://1.www.s81c.com/common/carbon/web-components/version/v2.15.0/ui-shell.min.js"></script>
+    <script type="module" src="https://1.www.s81c.com/common/carbon/web-components/version/v2.15.0/accordion.min.js"></script>
+    <script type="module" src="https://1.www.s81c.com/common/carbon/web-components/version/v2.15.0/breadcrumb.min.js"></script>
+    <script type="module" src="https://1.www.s81c.com/common/carbon/web-components/version/v2.15.0/select.min.js"></script>
+    <script type="module" src="https://1.www.s81c.com/common/carbon/web-components/version/v2.15.0/tabs.min.js"></script>
+    <script type="module" src="https://1.www.s81c.com/common/carbon/web-components/version/v2.15.0/search.min.js"></script>
+
+    <!-- HighlightJS code formatting support -->
+    <link rel="stylesheet" id="hljs-light" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+    <link rel="stylesheet" id="hljs-dark" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled="">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- Required by MkDocs search -->
+    <script>var base_url = "../..";</script><script>var search_url = "../../search.html";</script>
+
+    <!-- User defined extras -->
+    
+    
+
+    
+    <link href="../../assets/stylesheets/extra.css" rel="stylesheet">
+    
+
+    
+    <script src="../../assets/javascripts/role-selector.js"></script>
+    
+    <script src="../../assets/javascripts/abbr-tooltips.js"></script>
+    
+    <script src="../../assets/javascripts/lifecycle-tooltips.js"></script>
+    
+    <script src="../../assets/javascripts/tips-wrapper.js"></script>
+    
+    <script src="../../assets/javascripts/page-feedback.js"></script>
+    
+    <script src="../../assets/javascripts/copy-table.js"></script>
+    
+    <script src="../../assets/javascripts/copy-inline-code.js"></script>
+    
+    <script src="../../assets/javascripts/scroll-spy.js"></script>
+    
+    <script src="../../assets/javascripts/search-highlight.js"></script>
+    
+    <script src="../../assets/javascripts/csh.js"></script>
+    
+    <script src="../../search/main.js"></script>
+    
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: black; }
+        </style></head>
+
+  <body class="md-grid" data-theme-default="g90">
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="cds--skip-to-content" tabindex="0">Skip to main content</a>
+
+    <!-- Header -->
+    <cds-header aria-label="Maximo Application Suite Select help center" class="md-header" role="banner">
+      <cds-header-menu-button button-label-active="Close menu" button-label-inactive="Open menu"></cds-header-menu-button>
+      <cds-header-name href="../.." prefix="IBM">Maximo Application Suite Select help center</cds-header-name>
+
+      <div class="cds--header__global">
+        <nav class="language-switcher" aria-label="Language">
+          <a href="why-pm-not-generating-work-orders.html" lang="en" hreflang="en" aria-current="true">English</a>
+          <a href="../../fr/get-work-done/plan-work/why-pm-not-generating-work-orders.html" lang="fr" hreflang="fr">Français</a>
+        </nav>
+<div class="md-theme-toggle" data-theme-default="g90">
+  <button class="md-theme-toggle__button" aria-label="Toggle theme" title="Toggle theme">
+    <svg class="md-theme-toggle__icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"></path>
+    </svg>
+  </button>
+  <div class="md-theme-toggle__menu" hidden="">
+    <button class="md-theme-toggle__option" data-theme="white">
+      <span class="md-theme-toggle__label">Light</span>
+      <span class="md-theme-toggle__preview md-theme-toggle__preview--white"></span>
+    </button>
+    <button class="md-theme-toggle__option" data-theme="g10">
+      <span class="md-theme-toggle__label">Light Gray</span>
+      <span class="md-theme-toggle__preview md-theme-toggle__preview--g10"></span>
+    </button>
+    <button class="md-theme-toggle__option" data-theme="g90">
+      <span class="md-theme-toggle__label">Dark Gray</span>
+      <span class="md-theme-toggle__preview md-theme-toggle__preview--g90"></span>
+    </button>
+    <button class="md-theme-toggle__option" data-theme="g100">
+      <span class="md-theme-toggle__label">Dark</span>
+      <span class="md-theme-toggle__preview md-theme-toggle__preview--g100"></span>
+    </button>
+  </div>
+</div>
+        
+      </div>
+
+      
+    </cds-header>
+
+    <!-- Main container with three-column layout -->
+    <div class="md-container">
+      <!-- Left sidebar - Navigation -->
+      <aside class="md-sidebar md-sidebar--primary" data-md-component="sidebar" role="navigation" aria-label="Main Navigation">
+        <div class="md-sidebar__scrollwrap">
+          <div class="md-sidebar__inner">
+            <cds-side-nav aria-label="Side navigation">
+              <div class="nav-search-container">
+                <input type="text" id="nav-search-input" class="nav-search-input" placeholder="Search" aria-label="Search navigation">
+              </div>
+              <cds-side-nav-items>
+                
+                  
+                  
+  
+    <cds-side-nav-link href="../../index.html">Home</cds-side-nav-link>
+  
+
+                
+                  
+                  
+  <cds-side-nav-menu title="Start fast" class="nav-level-1">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/what-is-mas-select.html" class="nav-level-2">
+      About the product
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/what-can-i-do/overview.html" class="nav-level-2">
+      Your role
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="First task" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/first-task/technician-first-task.html" class="nav-level-3">
+      Technician: Complete your first work order
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/first-task/supervisor-first-task.html" class="nav-level-3">
+      Supervisor: Assign and track work
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/first-task/inventory-clerk-first-task.html" class="nav-level-3">
+      Inventory clerk: Issue a part
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/first-task/administrator-first-task.html" class="nav-level-3">
+      Administrator: Add users
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/first-task/get-maximo-mobile.html" class="nav-level-3">
+      Get Maximo Mobile
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Basic concepts" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/basics/what-are-basic-concepts.html" class="nav-level-3">
+      Overview
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/basics/what-is-location.html" class="nav-level-3">
+      Locations
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/basics/what-is-asset.html" class="nav-level-3">
+      Assets
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/basics/what-is-work-order.html" class="nav-level-3">
+      Work orders
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/basics/how-concepts-work-together.html" class="nav-level-3">
+      How concepts work together
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/basics/why-apps-overlap.html" class="nav-level-3">
+      Why apps overlap
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/basics/other-mobile-apps.html" class="nav-level-3">
+      Mobile apps
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/basics/how-inspections-work.html" class="nav-level-3">
+      How inspections work
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/basics/what-happens-offline.html" class="nav-level-3">
+      Working offline
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/basics/why-do-terms-differ.html" class="nav-level-3">
+      Term differences
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../start-fast/basics/keyboard-shortcuts.html" class="nav-level-3">
+      Keyboard shortcuts
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+  </cds-side-nav-menu>
+
+                
+                  
+                  
+  <cds-side-nav-menu title="Get work done" active="" expanded="" class="nav-level-1">
+    
+      
+      
+        
+  <cds-side-nav-menu title="Set up and control" class="nav-level-2">
+    
+      
+      
+        
+  <cds-side-nav-menu title="Set up your team" class="nav-level-3">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../setup-control/add-users.html" class="nav-level-4">
+      Add users
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../setup-control/set-up-labor-crafts-crews.html" class="nav-level-4">
+      Set up labor, crafts, and crews
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../setup-control/automate-communication.html" class="nav-level-4">
+      Automate communication
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../setup-control/ticket-templates.html" class="nav-level-4">
+      Ticket templates
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../setup-control/set-up-maps.html" class="nav-level-4">
+      Set up maps
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../setup-control/configure-maximo-mobile.html" class="nav-level-4">
+      Configure Maximo Mobile
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Load your data" class="nav-level-3">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../setup-control/correct-load-order.html" class="nav-level-4">
+      Correct load order
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../setup-control/decide-location-asset-spare-part.html" class="nav-level-4">
+      Decide location, asset, or spare part
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../setup-control/plan-your-location-hierarchy.html" class="nav-level-4">
+      Plan your location hierarchy
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../setup-control/plan-your-asset-hierarchy.html" class="nav-level-4">
+      Plan your asset hierarchy
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../setup-control/prepare-data-for-import.html" class="nav-level-4">
+      Prepare data for import
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../setup-control/get-data-into-system.html" class="nav-level-4">
+      Get data into system
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../setup-control/why-does-asset-import-fail.html" class="nav-level-4">
+      Fix import errors
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../setup-control/object-structure-data-types.html" class="nav-level-4">
+      Data types
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Plan your strategy" class="nav-level-3">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../setup-control/plan-your-pm-strategy.html" class="nav-level-4">
+      Plan your preventive maintenance strategy
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../setup-control/plan-your-storeroom-strategy.html" class="nav-level-4">
+      Plan your storeroom and inventory strategy
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../setup-control/set-up-meters.html" class="nav-level-4">
+      Set up meters
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../setup-control/set-up-failure-codes.html" class="nav-level-4">
+      Set up failure codes
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../setup-control/create-inspection-forms.html" class="nav-level-4">
+      Create inspection forms
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Plan work" active="" expanded="" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="plan-recurring-maintenance.html" class="nav-level-3">
+      Recurring maintenance
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="why-pm-not-generating-work-orders.html" active="" expanded="" class="nav-level-3">
+      PM not generating work orders
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="decide-what-work.html" class="nav-level-3">
+      Decide what work
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="schedule-work.html" class="nav-level-3">
+      Schedule work
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Complete work" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../complete-work/find-work.html" class="nav-level-3">
+      Find work
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../complete-work/complete-job.html" class="nav-level-3">
+      Complete work order
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../complete-work/cant-complete-task.html" class="nav-level-3">
+      Task blocked
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../complete-work/why-cant-complete-work-order.html" class="nav-level-3">
+      Work order won't complete
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../complete-work/why-cant-see-new-work-on-phone.html" class="nav-level-3">
+      Can't see new work on phone
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Manage assets" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../manage-assets/track-asset-history.html" class="nav-level-3">
+      Asset history
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../manage-assets/classify-assets.html" class="nav-level-3">
+      Classify assets
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../manage-assets/asset-fails.html" class="nav-level-3">
+      Asset failures
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Manage inventory" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../manage-inventory/get-part-into-inventory.html" class="nav-level-3">
+      Get a part into inventory
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../manage-inventory/issue-parts.html" class="nav-level-3">
+      Issue parts
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../manage-inventory/track-stock-levels.html" class="nav-level-3">
+      Track stock levels
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../manage-inventory/stock-incorrect.html" class="nav-level-3">
+      Incorrect stock
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../manage-inventory/why-cant-issue-materials.html" class="nav-level-3">
+      Can't issue materials
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Monitor and respond" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../monitor-respond/detect-issues-early.html" class="nav-level-3">
+      Detect issues early
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../monitor-respond/what-metrics-matter.html" class="nav-level-3">
+      Important metrics
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../monitor-respond/act-on-alerts.html" class="nav-level-3">
+      Act on alerts
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Organize people and work" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../organize-people/assign-right-people.html" class="nav-level-3">
+      Assign people
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../organize-people/standardize-data.html" class="nav-level-3">
+      Customize dropdown values
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../organize-people/why-cant-see-assigned-work.html" class="nav-level-3">
+      Technicians can't see work
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+  </cds-side-nav-menu>
+
+                
+                  
+                  
+  <cds-side-nav-menu title="Improve results" class="nav-level-1">
+    
+      
+      
+        
+  <cds-side-nav-menu title="Improve work" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../improve-results/improve-work/reduce-downtime.html" class="nav-level-3">
+      Reduce downtime
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../improve-results/improve-work/improve-completion-rates.html" class="nav-level-3">
+      Improve completion rates
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Improve data quality" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../improve-results/improve-data/data-looks-wrong.html" class="nav-level-3">
+      Data looks wrong
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../improve-results/improve-data/make-data-reliable.html" class="nav-level-3">
+      Make data reliable
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Improve adoption" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../improve-results/improve-adoption/technicians-not-using.html" class="nav-level-3">
+      Technicians not using system
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../improve-results/improve-adoption/simplify-workflows.html" class="nav-level-3">
+      Simplify workflows
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+  </cds-side-nav-menu>
+
+                
+                  
+                  
+  <cds-side-nav-menu title="Work smarter" class="nav-level-1">
+    
+      
+      
+        
+  <cds-side-nav-menu title="AI and automation" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../work-smarter/ai-automation/ai-improve-maintenance.html" class="nav-level-3">
+      AI improves maintenance
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../work-smarter/ai-automation/what-can-automate.html" class="nav-level-3">
+      Automate tasks
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Scale operation" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../work-smarter/scale-operation/manage-more-assets.html" class="nav-level-3">
+      Manage more assets
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../work-smarter/scale-operation/standardize-across-teams.html" class="nav-level-3">
+      Standardize across teams
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+      
+      
+        
+  <cds-side-nav-menu title="Insights to outcomes" class="nav-level-2">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../work-smarter/insights-outcomes/data-into-decisions.html" class="nav-level-3">
+      Data into decisions
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../work-smarter/insights-outcomes/optimize-performance.html" class="nav-level-3">
+      Optimize performance
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+      
+    
+  </cds-side-nav-menu>
+
+                
+                  
+                  
+  <cds-side-nav-menu title="Get answers" class="nav-level-1">
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-answers/index.html" class="nav-level-2">
+      Overview
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-answers/starting-out.html" class="nav-level-2">
+      Starting out
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-answers/getting-work-done.html" class="nav-level-2">
+      Getting work done
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-answers/improving-results.html" class="nav-level-2">
+      Improving results
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-answers/working-smarter.html" class="nav-level-2">
+      Working smarter
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
+    <cds-side-nav-menu-item href="../../get-answers/security.html" class="nav-level-2">
+      Security
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+  </cds-side-nav-menu>
+
+                
+              </cds-side-nav-items>
+            </cds-side-nav>
+          </div>
+        </div>
+      </aside>
+      <script>
+      (function() {
+          var input = document.getElementById('nav-search-input');
+          if (!input) return;
+          input.addEventListener('keydown', function(e) {
+              if (e.key === 'Enter') {
+                  var query = input.value.trim();
+                  if (query) {
+                      window.location.href = search_url + '?q=' + encodeURIComponent(query);
+                  }
+              }
+          });
+          input.addEventListener('input', function() {
+              var query = input.value.toLowerCase().trim();
+              var navItems = document.querySelectorAll('cds-side-nav-menu-item, cds-side-nav-menu');
+              navItems.forEach(function(item) {
+                  if (query === '' || item.textContent.toLowerCase().includes(query)) {
+                      item.style.display = '';
+                      if (query && item.tagName === 'CDS-SIDE-NAV-MENU-ITEM') {
+                          var parent = item.closest('cds-side-nav-menu');
+                          if (parent) parent.setAttribute('expanded', '');
+                      }
+                  } else {
+                      item.style.display = 'none';
+                  }
+              });
+          });
+          document.querySelectorAll('cds-side-nav-menu-item').forEach(function(item) {
+              item.addEventListener('click', function() {
+                  var query = input.value.trim();
+                  if (query) {
+                      var href = item.getAttribute('href');
+                      if (href && !href.includes('highlight=')) {
+                          var sep = href.includes('?') ? '&' : '?';
+                          item.setAttribute('href', href + sep + 'highlight=' + encodeURIComponent(query));
+                      }
+                  }
+              });
+          });
+      })();
+      </script>
+
+      <!-- Main content area -->
+      <main id="main-content" class="md-content" data-md-component="content" tabindex="-1">
+        <article class="md-content__inner">
+          <!-- Breadcrumbs -->
+          <div class="md-breadcrumbs"><cds-breadcrumb no-trailing-slash="">
+  <cds-breadcrumb-item>
+    <cds-breadcrumb-link href="../../index.html">Home</cds-breadcrumb-link>
+  </cds-breadcrumb-item>
+      <cds-breadcrumb-item>Get work done</cds-breadcrumb-item>
+      <cds-breadcrumb-item>Plan work</cds-breadcrumb-item>
+  <cds-breadcrumb-item>
+    <cds-breadcrumb-link href="#why-isnt-my-pm-generating-work-orders">Why isn't my PM generating work orders?</cds-breadcrumb-link>
+  </cds-breadcrumb-item>
+
+  <cds-breadcrumb-item aria-current="page">
+    <cds-select id="breadcrumbs-toc" inline="" placeholder="..." oninput="changeAnchor(this.value)">
+    
+    
+      <cds-select-item value="#common-causes">Common causes</cds-select-item>
+    
+      <cds-select-item value="#why-did-only-some-work-orders-generate">Why did only some work orders generate?</cds-select-item>
+    
+      <cds-select-item value="#why-hasnt-the-work-order-appeared-yet-even-though-the-pm-is-active">Why hasn't the work order appeared yet, even though the PM is active?</cds-select-item>
+    
+      <cds-select-item value="#pm-generation-checklist">PM generation checklist</cds-select-item>
+    
+      <cds-select-item value="#related-topics">Related topics</cds-select-item>
+    
+      <cds-select-item value="#still-stuck">Still stuck?</cds-select-item>
+    
+    </cds-select>
+  </cds-breadcrumb-item>
+</cds-breadcrumb>
+          </div>
+
+          <!-- Page content -->
+          <div class="rst-content">
+            
+            <h1 id="why-isnt-my-pm-generating-work-orders">Why isn't my PM generating <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr>?<a class="headerlink" href="#why-isnt-my-pm-generating-work-orders" title="Permanent link">¤</a></h1>
+<p>You set up a <abbr title="Scheduled routine maintenance performed to prevent equipment failures.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance plan, planned maintenance, or PM">preventive maintenance</abbr> record, called a PM, but the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> you expected is not there. Or you try to generate a <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> and see a message such as "is not due yet".</p>
+<p><em>Looking to troubleshoot right away? <a href="#pm-generation-checklist">Skip to the PM generation checklist ↓</a></em></p>
+<h2 id="common-causes">Common causes<a class="headerlink" href="#common-causes" title="Permanent link">¤</a></h2>
+<h3 id="the-pm-is-not-active">The PM is not active<a class="headerlink" href="#the-pm-is-not-active" title="Permanent link">¤</a></h3>
+<p>A PM generates <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> only when its <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr> is Active. A PM that is still a draft, or one that was set to inactive, is skipped.</p>
+<p><strong>What to do</strong>: Open the PM and check its <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr>. If it is not Active, activate it.</p>
+<h3 id="the-asset-or-location-is-not-operating">The <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> or <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> is not operating<a class="headerlink" href="#the-asset-or-location-is-not-operating" title="Permanent link">¤</a></h3>
+<p>The <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> or <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> on the PM must have a <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr> of Operating. If it has a different <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr>, such as Not Ready, the system does not generate the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr>.</p>
+<p>You might see a message such as "The <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> or <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> associated with PM 1038 has a <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr> of NOT READY. Change the <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr> to an Active <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr> to generate <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr>."</p>
+<p><strong>What to do</strong>: Check the <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr> of the <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> or <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> on the PM. Change it to Operating if the equipment is in service.</p>
+<h3 id="a-floating-schedule-is-waiting-for-the-last-work-order">A floating schedule is waiting for the last <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr><a class="headerlink" href="#a-floating-schedule-is-waiting-for-the-last-work-order" title="Permanent link">¤</a></h3>
+<p>A floating schedule does not create the next <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> until the previous one is completed, closed, or cancelled. While the previous <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> is still open, you might see a message such as "PM IC-11460 is not due yet, or it does not fall within the active season."</p>
+<p><strong>What to do</strong>: Find the open <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> from the previous cycle and finish or close it. If the next <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> should not depend on the last one, change the PM to a fixed schedule. For the difference, see <a href="plan-recurring-maintenance.html#fixed-vs-floating-choose-carefully">Fixed vs. floating: choose carefully</a>.</p>
+<h3 id="the-pm-is-not-due-yet">The PM is not due yet<a class="headerlink" href="#the-pm-is-not-due-yet" title="Permanent link">¤</a></h3>
+<p>By default, the system checks the frequency of each PM and generates <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> only for PMs that are due. If you generate <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> by hand before the due date, nothing is created.</p>
+<p><strong>What to do</strong>: Check the next due date on the PM. If you need the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> now, clear <strong>Use Frequency Criteria</strong> in the Generate Work Orders dialog. The system then generates a <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> for the selected parent PM regardless of its due date.</p>
+<h3 id="you-tried-to-generate-from-a-child-pm">You tried to generate from a child PM<a class="headerlink" href="#you-tried-to-generate-from-a-child-pm" title="Permanent link">¤</a></h3>
+<p><abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">Work orders</abbr> can be generated only from the top level PM in a PM hierarchy. If you try it from a child PM, you might see a message such as "PM 1039 is not a top-level PM and cannot generate <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr>."</p>
+<p><strong>What to do</strong>: Open the PM Hierarchy tab, find the parent PM, and generate from there.</p>
+<hr>
+<h2 id="why-did-only-some-work-orders-generate">Why did only some <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> generate?<a class="headerlink" href="#why-did-only-some-work-orders-generate" title="Permanent link">¤</a></h2>
+<p>A parent PM can trigger <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> for its whole PM hierarchy. If one PM in the hierarchy has an <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> or <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> that is not Operating, the system skips that PM and the PMs below it. The rest of the hierarchy can still generate.</p>
+<p><strong>What to do</strong>: Check the <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> or <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr> for every PM in the hierarchy. When you change the <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr> of a parent <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> or <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr>, you can roll the <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr> down the hierarchy so the children stay consistent.</p>
+<hr>
+<h2 id="why-hasnt-the-work-order-appeared-yet-even-though-the-pm-is-active">Why hasn't the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> appeared yet, even though the PM is active?<a class="headerlink" href="#why-hasnt-the-work-order-appeared-yet-even-though-the-pm-is-active" title="Permanent link">¤</a></h2>
+<p>The system does not create <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> the moment you activate a PM. Generation runs on a schedule in the background.</p>
+<p><code>[SME confirmation required: Confirm how often work order generation runs in Select, and whether it runs overnight. The source describing a once a day, overnight run is a video transcript for Maximo Manage.]</code></p>
+<p><strong>What to do</strong>: Check again after the next generation run. If you need the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> now, generate it by hand with the Generate Work Orders action.</p>
+<hr>
+<h2 id="pm-generation-checklist">PM generation checklist<a class="headerlink" href="#pm-generation-checklist" title="Permanent link">¤</a></h2>
+<p>Use this checklist to find out why a PM is not creating <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr>:</p>
+<h3 id="table-1-pm-generation-checklist">Table 1: PM generation checklist<a class="headerlink" href="#table-1-pm-generation-checklist" title="Permanent link">¤</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Check</th>
+<th style="text-align: left;"><abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">Item</abbr></th>
+<th style="text-align: left;">What to verify</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">[ ]</td>
+<td style="text-align: left;">PM <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr></td>
+<td style="text-align: left;">The PM <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr> is Active, not draft or inactive</td>
+</tr>
+<tr>
+<td style="text-align: left;">[ ]</td>
+<td style="text-align: left;"><abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">Asset</abbr> or <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr></td>
+<td style="text-align: left;">The <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> or <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> on the PM has a <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr> of Operating</td>
+</tr>
+<tr>
+<td style="text-align: left;">[ ]</td>
+<td style="text-align: left;">Schedule type</td>
+<td style="text-align: left;">If the schedule is floating, the previous <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> is completed, closed, or cancelled</td>
+</tr>
+<tr>
+<td style="text-align: left;">[ ]</td>
+<td style="text-align: left;">Due date</td>
+<td style="text-align: left;">The PM is due, or <strong>Use Frequency Criteria</strong> is cleared for a manual generate</td>
+</tr>
+<tr>
+<td style="text-align: left;">[ ]</td>
+<td style="text-align: left;">PM hierarchy</td>
+<td style="text-align: left;">You generate from the top level PM, and every <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> or <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> in the hierarchy is Operating</td>
+</tr>
+<tr>
+<td style="text-align: left;">[ ]</td>
+<td style="text-align: left;">Generation timing</td>
+<td style="text-align: left;">Enough time has passed for the next background generation run</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="tip-close-work-orders-promptly-on-floating-schedules">💡 Tip: Close <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> promptly on floating schedules<a class="headerlink" href="#tip-close-work-orders-promptly-on-floating-schedules" title="Permanent link">¤</a></h3>
+<p>A floating schedule stops generating when one <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> is left open. Close or cancel finished <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> so the next one can generate.</p>
+<hr>
+<h2 id="related-topics">Related topics<a class="headerlink" href="#related-topics" title="Permanent link">¤</a></h2>
+<ul>
+<li><a href="plan-recurring-maintenance.html">How do I plan recurring maintenance?</a></li>
+<li><a href="../setup-control/plan-your-pm-strategy.html">How do I plan my <abbr title="Scheduled routine maintenance performed to prevent equipment failures.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance plan, planned maintenance, or PM">preventive maintenance</abbr> strategy?</a></li>
+<li><a href="decide-what-work.html">How do I decide what work should be done?</a></li>
+<li><a href="schedule-work.html">How do I schedule work?</a></li>
+</ul>
+<hr>
+<h2 id="still-stuck">Still stuck?<a class="headerlink" href="#still-stuck" title="Permanent link">¤</a></h2>
+<p>If this page did not answer your question:</p>
+<ul>
+<li><strong>Browse all Q&amp;A:</strong> <a href="../../get-answers/index.html">Get answers</a></li>
+<li><strong>In the product:</strong> Click the help icon (?) in the top right</li>
+<li><strong>For a specific field:</strong> Click the field name or press Alt+F1</li>
+</ul>
+            
+          </div>
+
+          <!-- Navigation footer (prev/next) -->
+<nav class="md-footer-nav" aria-label="Footer navigation">
+  <div class="md-footer-nav__inner">
+    <a href="plan-recurring-maintenance.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+      <div class="md-footer-nav__direction">
+        <svg class="md-footer-nav__icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"></path>
+        </svg>
+        <span>Previous</span>
+      </div>
+      <div class="md-footer-nav__title">
+        <span class="md-footer-nav__title-text">Recurring maintenance</span>
+      </div>
+    </a>
+    <a href="decide-what-work.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+      <div class="md-footer-nav__direction">
+        <span>Next</span>
+        <svg class="md-footer-nav__icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+        </svg>
+      </div>
+      <div class="md-footer-nav__title">
+        <span class="md-footer-nav__title-text">Decide what work</span>
+      </div>
+    </a>
+  </div>
+</nav>
+        </article>
+      </main>
+
+      <!-- Right sidebar - Table of Contents -->
+      <aside class="md-sidebar md-sidebar--secondary" data-md-component="toc" role="complementary" aria-label="Table of contents">
+<nav class="md-sidebar md-sidebar--secondary" aria-label="Table of contents">
+  <div class="md-sidebar__scrollwrap">
+    <div class="md-sidebar__inner">
+      <div class="md-toc">
+        <div class="md-toc__title">On this page</div>
+        <ul class="md-toc__list">
+              <li class="md-toc__item">
+                <a href="#common-causes" class="md-toc__link" data-md-level="1">
+                  Common causes
+                </a>
+                  <ul class="md-toc__list">
+                      <li class="md-toc__item">
+                        <a href="#the-pm-is-not-active" class="md-toc__link" data-md-level="2">
+                          The PM is not active
+                        </a>
+                      </li>
+                      <li class="md-toc__item">
+                        <a href="#the-asset-or-location-is-not-operating" class="md-toc__link" data-md-level="2">
+                          The asset or location is not operating
+                        </a>
+                      </li>
+                      <li class="md-toc__item">
+                        <a href="#a-floating-schedule-is-waiting-for-the-last-work-order" class="md-toc__link" data-md-level="2">
+                          A floating schedule is waiting for the last work order
+                        </a>
+                      </li>
+                      <li class="md-toc__item">
+                        <a href="#the-pm-is-not-due-yet" class="md-toc__link" data-md-level="2">
+                          The PM is not due yet
+                        </a>
+                      </li>
+                      <li class="md-toc__item">
+                        <a href="#you-tried-to-generate-from-a-child-pm" class="md-toc__link" data-md-level="2">
+                          You tried to generate from a child PM
+                        </a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="md-toc__item">
+                <a href="#why-did-only-some-work-orders-generate" class="md-toc__link" data-md-level="1">
+                  Why did only some work orders generate?
+                </a>
+              </li>
+              <li class="md-toc__item">
+                <a href="#why-hasnt-the-work-order-appeared-yet-even-though-the-pm-is-active" class="md-toc__link" data-md-level="1">
+                  Why hasn't the work order appeared yet, even though the PM is active?
+                </a>
+              </li>
+              <li class="md-toc__item">
+                <a href="#pm-generation-checklist" class="md-toc__link" data-md-level="1">
+                  PM generation checklist
+                </a>
+                  <ul class="md-toc__list">
+                      <li class="md-toc__item">
+                        <a href="#table-1-pm-generation-checklist" class="md-toc__link" data-md-level="2">
+                          Table 1: PM generation checklist
+                        </a>
+                      </li>
+                      <li class="md-toc__item">
+                        <a href="#tip-close-work-orders-promptly-on-floating-schedules" class="md-toc__link" data-md-level="2">
+                          💡 Tip: Close work orders promptly on floating schedules
+                        </a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="md-toc__item">
+                <a href="#related-topics" class="md-toc__link" data-md-level="1">
+                  Related topics
+                </a>
+              </li>
+              <li class="md-toc__item">
+                <a href="#still-stuck" class="md-toc__link" data-md-level="1">
+                  Still stuck?
+                </a>
+              </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+      </aside>
+    </div>
+
+    <!-- Footer - Full width outside container -->
+    <footer class="md-footer" role="contentinfo">
+      Built with <a href="https://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/durera/mkdocs-carbon">Carbon theme</a>
+    </footer>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": false, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+</script></body></html>
