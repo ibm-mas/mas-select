@@ -2,7 +2,7 @@
 
 Your location hierarchy is the map of the places where your assets are operated, stored, or repaired. It organizes those places into a clear parent-child structure. A place can be a building, a room, a section of a map grid, or a telephone pole.
 
-When loading data into Maximo Application Suite Select, planning your locations is the foundation of your setup. Locations must be established before you load equipment, inventory, or work orders, as outlined in [What is the correct load order?](correct-load-order.md).
+When loading data into Maximo Application Suite Select, locations must be established before you load equipment, inventory, or work orders, as outlined in [What is the correct load order?](correct-load-order.md).
 
 *Looking to verify your location hierarchy structure right away? [Skip to location hierarchy planning checklist ↓](#location-hierarchy-planning-checklist)*
 
@@ -84,6 +84,10 @@ For every level you consider adding, ask this rule-of-thumb question:
 - If **no**, stop at the parent level.
 
 For example, if maintenance is scheduled for `Cold storage` as an entire room, do not create sub-locations for every individual shelf or rack. Start with only the levels you need. A small operation might need only two or three levels, and a site with many buildings and floors might need more. You can add sub-locations later as your maintenance processes mature.
+
+### Do I need a deep hierarchy?
+
+Not always. A hierarchy helps most when you can use it to find things, such as picking a building and drilling down to a floor or room. If your locations do not nest, a flat list is fine. For example, a series of telephone poles does not need levels above or below them. Add structure only where it helps people find or group their work.
 
 ### 4. Connect every child location to a valid parent
 

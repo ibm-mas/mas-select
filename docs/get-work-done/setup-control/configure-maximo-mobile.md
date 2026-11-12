@@ -101,7 +101,7 @@ Select the priority value that reflects how your organization resolves address c
 
 ### Enable show all systems
 
-**Enable show all systems** controls whether users can select locations outside their primary system when they create service requests.
+A system is a hierarchy of locations. **Enable show all systems** controls whether users can select locations outside their primary system when they create service requests. For more about systems, see [Can I organize the same locations more than one way?](plan-your-location-hierarchy.md#can-i-organize-the-same-locations-more-than-one-way)
 
 Turn this setting on if your team reports problems at locations outside their own primary system.
 
