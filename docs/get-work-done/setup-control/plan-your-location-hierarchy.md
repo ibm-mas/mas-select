@@ -6,7 +6,7 @@ When loading data into Maximo Application Suite Select, planning your locations 
 
 *Looking to verify your location hierarchy structure right away? [Skip to location hierarchy planning checklist ↓](#location-hierarchy-planning-checklist)*
 
-Work orders, maintenance history, safety requirements, and costs roll up through the location hierarchy. A well-planned structure lets you view all maintenance across an entire building or drill down to a single room. A poorly structured hierarchy leads to incomplete reports, lost history, and difficult reorganizations once data is in use.
+A location hierarchy lets you find work across an entire building or drill down to a single room. How much structure you need depends on your operation. A plant with a few rooms needs far less than a site with many buildings and floors.
 
 <div class="video-embed" markdown="1">
 <img src="../../images/video_placeholder_location_hierarchy.svg" alt="Video preview: Building an effective location hierarchy (about 2 minutes)." style="width: 100%; border-radius: 4px; display: block;">
@@ -35,7 +35,7 @@ The primary location hierarchy usually follows the places where work happens, fo
 
 A location does not have to be a building with floors and rooms. It can be a section of a map grid or a telephone pole. Choose levels that fit how your operation is laid out.
 
-Because costs, safety plans, and work orders roll up through parent locations, grouping locations by what they are used for, such as grouping all restrooms or all compressor rooms across multiple buildings under one branch, can break building-level reporting. A report run on `Production building` will miss any rooms placed outside that building's branch.
+When you search for work in a building, the results include the locations under it. If you group locations by what they are used for, such as all restrooms or all compressor rooms across multiple buildings under one branch, a search for `Production building` will miss any rooms placed outside that building's branch.
 
 ### Can I organize the same locations more than one way?
 
@@ -44,7 +44,7 @@ Yes. Maximo Application Suite Select lets you organize locations into more than 
 - **Primary system**: The physical layout of your operation, such as plant, building, and room. You can have only one primary system.
 - **Secondary systems**: Other groupings of the same locations, based on how equipment works together, such as refrigeration, heating and cooling, or electrical.
 
-For example, in the ice cream plant, the primary system follows the physical layout. A secondary Refrigeration system can group `Cold storage` and `Freezer Tunnel`, so a supervisor can see everything that keeps product cold in one view. The primary system is not affected, and a report run on `Production building` still covers every room in that building's branch.
+For example, in the ice cream plant, the primary system follows the physical layout. A secondary Refrigeration system can group `Cold storage` and `Freezer Tunnel`, so a supervisor can see everything that keeps product cold in one view. The primary system is not affected, and a search for `Production building` still covers every room in that building's branch.
 
 Keep your primary system based on place. Use secondary systems for functional views, so you do not have to change the physical layout to get them.
 
@@ -74,7 +74,7 @@ If the item moves with the equipment when it is repaired, replaced, or transferr
 
 ### 3. Decide how deep to go: stop at the maintainable level
 
-A frequent design mistake is creating too many nested levels. Deep hierarchies make drilldown navigation slow and cumbersome for technicians in the field.
+More levels are not always better. Extra levels make drilldown navigation slower for technicians in the field.
 
 For every level you consider adding, ask this rule-of-thumb question:
 
@@ -83,13 +83,13 @@ For every level you consider adding, ask this rule-of-thumb question:
 - If **yes**, create the location record.
 - If **no**, stop at the parent level.
 
-For example, if maintenance is scheduled for `Cold storage` as an entire room, do not create sub-locations for every individual shelf or rack. Start with a clean, shallow structure of typically 3 to 5 levels. It is much easier to add sub-locations later as your maintenance processes mature than to remove unnecessary levels after work history is recorded.
+For example, if maintenance is scheduled for `Cold storage` as an entire room, do not create sub-locations for every individual shelf or rack. Start with only the levels you need. A small operation might need only two or three levels, and a site with many buildings and floors might need more. You can add sub-locations later as your maintenance processes mature.
 
 ### 4. Connect every child location to a valid parent
 
 Except for the top-level location, every operational location in your hierarchy must have an assigned parent location.
 
-Locations created without a parent become orphaned records. They do not appear in hierarchy drilldown navigation trees and are excluded from summary reports run on parent facilities.
+Locations created without a parent become orphaned records. They do not appear in hierarchy drilldown navigation trees and are not included when you search for a parent facility.
 
 ### 5. Standardize naming and import from the top down
 
@@ -119,7 +119,7 @@ In this sample ice cream plant, the structure follows the layout of the plant fr
 
 This layout succeeds because it mirrors the physical layout of the plant while meeting everyday operational and reporting needs:
 
-- **Accurate cost and work roll-up**: Work orders, labor hours, and maintenance costs assigned to `Mixing room`, `Filling line room`, or `Packaging zone` automatically roll up into summary reports for `Production building`. Supervisors can assess total building maintenance expenses or drill down into a single room.
+- **Work found by building**: Work orders assigned to `Mixing room`, `Filling line room`, or `Packaging zone` appear when you search for `Production building`. Supervisors can review work for the whole building or drill down into a single room.
 - **Targeted context for technicians**: When technicians open `Filling line room` in Maximo Mobile or the desktop application, they see only the equipment, safety requirements, and open work orders relevant to that specific room, without clutter from other areas.
 - **Clear separation of storerooms and production areas**: `Main storeroom` is designated as an inventory location for receiving, storing, and issuing parts. Keeping storerooms separate from operating production rooms prevents inventory transactions from mixing with equipment maintenance history.
 - **Independent tracking for standalone facilities**: `Cold storage` sits directly under `Ice cream main plant` because it is a separate physical structure with its own refrigeration systems and temperature controls, allowing its costs and work to be tracked independently of the main production building.
@@ -141,12 +141,12 @@ Figure 2 illustrates the flawed functional grouping where restrooms across diffe
 <img src="../../images/sample_location_hierarchy_grouped_by_use.svg" alt="Explained in body text" style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 2: Problem 1: Restrooms grouped by functional use instead of physical location</p>
 
-A supervisor runs a cost and work history report for `Production building` for the past quarter. What goes wrong?
+A supervisor searches for the work orders for `Production building` for the past quarter. What goes wrong?
 
 <details markdown="1">
 <summary>Show the answer</summary>
 
-The `Production building restroom` is omitted from the report because it sits under `Restrooms`, not under `Production building`.
+The `Production building restroom` is omitted from the results because it sits under `Restrooms`, not under `Production building`.
 
 The hierarchy was grouped by functional use rather than physical location.
 
@@ -175,7 +175,7 @@ What happens when a planner opens `Production building` in the drilldown tree?
 <details markdown="1">
 <summary>Show the answer</summary>
 
-`Production building` displays only `Mixing room` and `Filling line room`. `Packaging zone` is missing from the tree view and is excluded from building summary reports.
+`Production building` displays only `Mixing room` and `Filling line room`. `Packaging zone` is missing from the tree view and from searches for the building.
 
 Because `Packaging zone` has no parent, it exists as an orphaned record with no connection to `Production building`.
 
@@ -199,7 +199,7 @@ What question should you ask before creating these sub-locations?
 
 Ask: **"Will anyone plan, perform, or report maintenance work at an individual shelf level?"**
 
-If maintenance is performed on the refrigeration units, doors, and ambient room space, not individual storage shelves, stop at `Cold storage`. Adding unnecessary levels makes the hierarchy difficult to navigate without providing actionable maintenance data.
+If maintenance is performed on the refrigeration units, doors, and ambient room space, not individual storage shelves, stop at `Cold storage`. Adding unnecessary levels makes the hierarchy harder to navigate without providing actionable maintenance data. The right depth depends on your operation, so a small plant often needs fewer levels than a large site.
 
 If parts or items need shelf-level tracking, that is handled through inventory bins in storerooms, not operational location records.
 
@@ -243,7 +243,7 @@ When designing a location hierarchy, avoid these common mistakes:
 - Designing only for today's facility without considering future expansion.
 - Creating orphan locations that are not connected to a parent location.
 
-A simple hierarchy that reflects the layout of your operation is easier to maintain and usually produces more accurate reporting than a highly detailed hierarchy.
+A simple hierarchy that reflects the layout of your operation is easier to maintain than a highly detailed one.
 
 ---
 
@@ -258,12 +258,12 @@ Before loading your location hierarchy into Maximo Application Suite Select, ver
 | [ ] | **Places and positions** | Every location record represents a place where assets are operated, stored, or repaired, or a functional position, not a movable piece of equipment. |
 | [ ] | **One clear primary structure** | The primary system follows one consistent structure, usually from the top-level location to building to room. Functional views use secondary systems, and groupings by type use classifications. |
 | [ ] | **Valid parent connections** | Every child location connects to an existing parent location to prevent orphan records. |
-| [ ] | **Maintainable depth** | The structure stops at the level where work is planned, assigned, or reported, typically 3 to 5 levels. |
+| [ ] | **Maintainable depth** | The structure stops at the level where work is planned, assigned, or reported. A small operation might need only a few levels. |
 | [ ] | **Standardized naming** | Location codes and identifiers follow consistent naming conventions across the hierarchy. |
 | [ ] | **Top-down import sequence** | Spreadsheet rows are sorted so that parent locations exist before child records are imported. |
 
 !!! warning "TODO: Confirm with a subject matter expert"
-     [SME confirmation required: confirm that work and cost reports follow the location hierarchy in Maximo Application Suite Select. The answers above use sources about Maximo Manage.]
+     [SME confirmation required: confirm that searching for work orders by a parent location includes the locations under it in Maximo Application Suite Select. The answers above use sources about Maximo Manage.]
 
 ---
 

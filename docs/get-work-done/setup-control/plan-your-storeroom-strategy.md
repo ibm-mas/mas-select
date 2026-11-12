@@ -22,15 +22,15 @@ In Maximo Application Suite Select, a storeroom is a specialized location record
 
 Keep storeroom records strictly distinct from operating rooms:
 
-- **Operating location:** Where production occurs and machinery operates, such as `Filling line room`. Work orders and downtime roll up to operating locations.
-- **Storeroom location:** Where items and spare parts are securely held, received, and issued, such as `Main storeroom`. Inventory transactions, stock balances, and unit costs roll up to storerooms.
+- **Operating location:** Where production occurs and machinery operates, such as `Filling line room`. Work orders and downtime are tracked against operating locations.
+- **Storeroom location:** Where items and spare parts are securely held, received, and issued, such as `Main storeroom`. Inventory transactions, stock balances, and unit costs are tracked at storerooms.
 
 Figure 1 maps the material and financial flow from storeroom inventory to work orders and physical locations:
 
 - **Storeroom location**: `Main storeroom` holds stocked spare parts.
 - **Material issue**: items are issued and charged directly to an active work order, such as `Filler FL-02`.
 - **Operating location**: `Filling line room` provides the physical space where the equipment operates.
-- **Cost roll-up**: maintenance and material expenses roll up simultaneously to both the asset and the location.
+- **Cost tracking**: maintenance and material expenses are tracked against both the asset and the location.
 
 <img src="../../images/sample_storeroom_work_order_flow.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 1: Financial and material flow between storeroom, work order, and operating location</p>

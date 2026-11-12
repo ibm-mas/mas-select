@@ -2,7 +2,7 @@
 
 When setting up Maximo Application Suite Select, every physical entity in your plant or facility must be classified as one of three primary record types: a location, an asset, or a spare part.
 
-Making the right classification before importing data ensures accurate maintenance history, simplified storeroom operations, and clean drilldown navigation in Maximo Mobile and desktop applications. Misclassifying entities leads to cluttered asset registers, broken cost roll-ups, and duplicate data entry. For more about planning equipment structures, see [How do I plan my asset hierarchy?](plan-your-asset-hierarchy.md)
+Making the right classification before importing data ensures accurate maintenance history, simplified storeroom operations, and clean drilldown navigation in Maximo Mobile and desktop applications. Misclassifying entities leads to cluttered asset registers and duplicate data entry. For more about planning equipment structures, see [How do I plan my asset hierarchy?](plan-your-asset-hierarchy.md)
 
 *Looking to verify your record classification right away? [Skip to classification decision checklist ↓](#classification-decision-checklist)*
 
@@ -181,12 +181,12 @@ The database becomes flooded with thousands of static records that never receive
 
 A data team imports `Production building` and `Cold storage` as asset records so they can attach equipment as child assets.
 
-What happens when supervisors run facility-level cost reports?
+What happens when supervisors look for work across a facility?
 
 <details markdown="1">
 <summary>Show the answer</summary>
 
-Buildings and rooms are places, not maintainable equipment. Modeling places as assets breaks filtering by location in Maximo Mobile and prevents accurate roll-up of room and building maintenance costs.
+Buildings and rooms are places, not maintainable equipment. Modeling places as assets breaks filtering by location in Maximo Mobile and prevents accurate tracking of room and building maintenance.
 
 **What to do instead:** Model buildings, floors, and rooms in the location hierarchy under the Locations application. Anchor equipment records into their respective operating location records. Follow the layout guidelines in [How do I plan my location hierarchy?](plan-your-location-hierarchy.md).
 

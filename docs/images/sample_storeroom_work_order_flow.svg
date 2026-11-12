@@ -44,7 +44,7 @@
   <!-- Node 4: Financial Rollup -->
   <g class="node">
     <rect x="584" y="55" width="80" height="70" rx="2" fill="#EDF5FF" stroke="#0F62FE" stroke-width="1.5"/>
-    <text x="624" y="80" font-size="9" font-weight="600" fill="#0043CE" text-anchor="middle">COST ROLL-UP</text>
+    <text x="624" y="80" font-size="9" font-weight="600" fill="#0043CE" text-anchor="middle">COST TRACKING</text>
     <text x="624" y="96" font-size="10" font-weight="600" fill="#161616" text-anchor="middle">Asset and</text>
     <text x="624" y="110" font-size="10" font-weight="600" fill="#161616" text-anchor="middle">Location</text>
   </g>

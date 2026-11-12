@@ -6,7 +6,7 @@ When onboarding data into Maximo Application Suite Select, planning your asset h
 
 *Looking to verify your asset hierarchy structure right away? [Skip to asset hierarchy planning checklist ↓](#asset-hierarchy-planning-checklist)*
 
-Work orders, maintenance costs, failure codes, and operating history roll up from child components to parent machines. A well-designed asset hierarchy allows maintenance teams to track the lifecycle of serialized equipment, schedule overhauls at the machine or component level, and move subassemblies across the plant without losing work history. A poorly designed hierarchy clutters drilldown trees with consumable parts and leads to misallocated maintenance costs.
+An asset hierarchy organizes equipment into parent machines and their components. It allows maintenance teams to track the lifecycle of serialized equipment, schedule overhauls at the machine or component level, and move subassemblies across the plant without losing work history. A small operation can keep it simple. Avoid adding consumable parts, which clutter drilldown trees.
 
 <div class="video-embed" markdown="1">
 <img src="../../images/video_placeholder_asset_hierarchy.svg" alt="Video preview: Building an effective asset hierarchy (about 2 minutes)." style="width: 100%; border-radius: 4px; display: block;">
@@ -39,9 +39,9 @@ Create a child asset only if one or more of the following are true:
 
 If the component is simply replaced when it fails and does not require separate tracking, it is probably a spare part rather than an asset.
 
-### 2. Keep the hierarchy shallow: typically two to three levels
+### 2. Keep the hierarchy shallow
 
-While the database supports deep nesting, most Maximo Application Suite Select organizations succeed with asset hierarchies that are no more than two to three levels deep:
+While the database supports deep nesting, asset hierarchies work best when they stop at units that are maintained independently. Many organizations need only two or three levels:
 
 **Parent machine package** → **Subassembly** → **Maintainable component**
 
@@ -89,7 +89,7 @@ In this sample ice cream plant equipment model, the asset hierarchy represents t
 
 This equipment structure delivers clean maintenance history and streamlined navigation for everyday operations:
 
-- **Targeted work order history**: Technicians can raise a repair work order against `Drive motor` to log electrical diagnostics, or against `Filler FL-02` for general line servicing. All labor, parts, and downtime roll up to `Filler FL-02` for total cost of ownership reporting.
+- **Targeted work order history**: Technicians can raise a repair work order against `Drive motor` to log electrical diagnostics, or against `Filler FL-02` for general line servicing.
 - **Fast drilldown navigation**: Technicians navigating in Maximo Mobile or the desktop applications find any maintainable component in two to three clicks from the main filler record.
 - **Clean separation of wear parts**: Because o-rings and gaskets are cataloged on the Spare Parts tab, storeroom clerks issue parts against the work order without generating orphaned asset records.
 - **Independent equipment tracking**: If the `Drive motor` is swapped out during a breakdown, the motor asset record retains its full rebuild history as it moves to the repair shop, while the replacement motor links to `Filler FL-02`.
@@ -154,7 +154,7 @@ What goes wrong when supervisors run building maintenance reports?
 <details markdown="1">
 <summary>Show the answer</summary>
 
-Buildings, rooms, and areas are places, not movable equipment. Modeling rooms as assets breaks cost roll-up by location, disables filtering by location in Maximo Mobile, and prevents accurate tracking when equipment moves between rooms.
+Buildings, rooms, and areas are places, not movable equipment. Modeling rooms as assets disables filtering by location in Maximo Mobile and prevents accurate tracking when equipment moves between rooms.
 
 Figure 5 contrasts the incorrect model where `Production building` is created as an asset record holding `Filler FL-02` against the correct model where `Production building` is created as a location record holding asset `Filler FL-02`.
 
@@ -219,7 +219,7 @@ Before loading your asset hierarchy into Maximo Application Suite Select, verify
 | [ ] | **Maintainable equipment only** | Every asset record represents serialized, maintainable equipment, not consumable wear parts. |
 | [ ] | **Spare parts cataloged** | Consumables, o-rings, and gaskets are organized in Item Master for use on the Spare Parts tab. |
 | [ ] | **Valid operating locations** | Every top-level parent asset is assigned to an existing location record. |
-| [ ] | **Shallow hierarchy depth** | The equipment structure stops at maintainable units, with most organizations using two to three levels. |
+| [ ] | **Shallow hierarchy depth** | The equipment structure stops at maintainable units. Many organizations need only two or three levels. |
 | [ ] | **Standardized naming** | Equipment identifiers and asset tags follow consistent naming conventions. |
 | [ ] | **Top-down import sequence** | Spreadsheet records are ordered so parent assets and locations exist before child records load. |
 

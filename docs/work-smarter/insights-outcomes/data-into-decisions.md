@@ -89,7 +89,7 @@ Use this checklist to ensure your reporting framework supports sound management 
 | [ ] | Core KPI activation | PM compliance, emergency work ratio, and backlog hours are active in KPI Manager |
 | [ ] | Role dashboard deployment | Supervisors and inventory clerks review their respective Operational Dashboards daily |
 | [ ] | Failure data capture | Over 90 percent of corrective work orders have Problem, Cause, and Remedy codes populated |
-| [ ] | Asset cost tracking | Labor hours, storeroom parts, and contractor invoices roll up to parent asset records |
+| [ ] | Asset cost tracking | Labor hours, storeroom parts, and contractor invoices are tracked against asset records |
 | [ ] | Monthly review cadence | Reliability leaders meet monthly to review KPI trends and adjust maintenance frequencies |
 
 ## Related topics

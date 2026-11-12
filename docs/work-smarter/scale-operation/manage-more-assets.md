@@ -12,7 +12,7 @@ To scale equipment coverage without increasing administrative headcount, use fou
 
 1. **Master PM templates:** Maintain a single master maintenance schedule that automatically updates individual PM records across hundreds of identical machines.
 2. **Multi-stop routes:** Combine repetitive inspections across multiple assets or locations into a single consolidated work order.
-3. **Asset hierarchies:** Organize equipment into parent and child relationships to track sub-assemblies and roll up total cost of ownership.
+3. **Asset hierarchies:** Organize equipment into parent and child relationships to track sub-assemblies.
 4. **Data Management tool:** Bulk load newly commissioned assets, locations, and initial meter configurations using validated spreadsheet templates.
 
 ### Table 1: Scaling mechanisms and operational applications
