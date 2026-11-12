@@ -4,15 +4,6 @@ Your location hierarchy is the map of the places where your assets are operated,
 
 When loading data into Maximo Application Suite Select, planning your locations is the foundation of your setup. Locations must be established before you load equipment, inventory, or work orders, as outlined in [What is the correct load order?](correct-load-order.md).
 
-!!! warning "Plan your hierarchy before you load data"
-    Your location hierarchy is hard to change once work orders, costs, and history are recorded against it. Maximo customers who started with a structure that did not fit how they work report problems that are slow and risky to correct later, including:
-
-    - Reports that cannot show work orders or costs by area, because locations were grouped by use instead of by where they are.
-    - Crews who cannot find equipment, because the structure is incomplete or has too many levels.
-    - Cost and history corrections that require reopening closed work orders.
-
-    Sketch the structure on paper first and agree it with your maintenance planners, supervisors, and operations team before you load anything.
-
 *Looking to verify your location hierarchy structure right away? [Skip to location hierarchy planning checklist ↓](#location-hierarchy-planning-checklist)*
 
 Work orders, maintenance history, safety requirements, and costs roll up through the location hierarchy. A well-planned structure lets you view all maintenance across an entire building or drill down to a single room. A poorly structured hierarchy leads to incomplete reports, lost history, and difficult reorganizations once data is in use.
@@ -36,7 +27,7 @@ Before creating records in the system, sketch the facility on paper or a whitebo
 
 Ask yourself: *"Is this a place where work occurs, or a piece of equipment that could be moved, replaced, or overhauled?"*
 
-### 2. Choose one clear structure, usually based on place
+### 2. Choose one clear primary structure, usually based on place
 
 The primary location hierarchy usually follows the places where work happens, for example:
 
@@ -44,13 +35,27 @@ The primary location hierarchy usually follows the places where work happens, fo
 
 A location does not have to be a building with floors and rooms. It can be a section of a map grid or a telephone pole. Choose levels that fit how your operation is laid out.
 
-You can also organize locations into hierarchical systems or network systems. You can have more than one system, but each site must have only one primary system.
-
 Because costs, safety plans, and work orders roll up through parent locations, grouping locations by what they are used for, such as grouping all restrooms or all compressor rooms across multiple buildings under one branch, can break building-level reporting. A report run on `Production building` will miss any rooms placed outside that building's branch.
+
+### Can I organize the same locations more than one way?
+
+Yes. Maximo Application Suite Select lets you organize locations into more than one system. A system is a hierarchy of locations. The same location can belong to more than one system.
+
+- **Primary system**: The physical layout of your operation, such as plant, building, and room. You can have only one primary system.
+- **Secondary systems**: Other groupings of the same locations, based on how equipment works together, such as refrigeration, heating and cooling, or electrical.
+
+For example, in the ice cream plant, the primary system follows the physical layout. A secondary Refrigeration system can group `Cold storage` and `Freezer Tunnel`, so a supervisor can see everything that keeps product cold in one view. The primary system is not affected, and a report run on `Production building` still covers every room in that building's branch.
+
+Keep your primary system based on place. Use secondary systems for functional views, so you do not have to change the physical layout to get them.
+
+!!! warning "TODO: Confirm with a subject matter expert"
+     [SME confirmation required: confirm whether Maximo Application Suite Select also supports network systems, and how an administrator creates a secondary system. The previous version of this page mentioned network systems.]
 
 ### 💡 Tip: Grouping by function
 
-If you need to search or group locations by type or function, such as finding all restrooms or all electrical closets across a facility, use **Classifications** or location attributes rather than altering the primary hierarchy.
+If you want to view locations by how equipment works together, such as everything that keeps product cold, add a secondary system instead of changing the primary hierarchy. See [Can I organize the same locations more than one way?](#can-i-organize-the-same-locations-more-than-one-way)
+
+If you want to find locations by type, such as all restrooms or all electrical closets across a facility, use **Classifications** or location attributes.
 
 Some organizations also define locations by function, so that history stays with the location as the assets in it are swapped. For example, an air conditioning compressor can be both an asset and a location in an HVAC system. For more about items that are both, see [How do I decide: location, asset, or spare part?](decide-location-asset-spare-part.md).
 
@@ -152,7 +157,7 @@ Figure 3 shows the corrected physical structure where `Production building restr
 <img src="../../images/sample_location_hierarchy_by_place.svg" alt="Explained in body text" style="width: 100%; max-width: 480px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 3: Solution 1: Restrooms placed within their physical parent locations</p>
 
-If you need to find all restrooms across the plant, assign a common Classification or type rather than creating a functional branch in your location hierarchy.
+If you need to find all restrooms across the plant, assign a common Classification or type rather than creating a functional branch in your primary location hierarchy.
 
 </details>
 
@@ -232,7 +237,7 @@ Always verify your import count against the number of rows in your source spread
 
 When designing a location hierarchy, avoid these common mistakes:
 
-- Grouping locations by function when you need reports by building or area.
+- Grouping locations by function in your primary hierarchy when you need reports by building or area. Use a secondary system for functional views.
 - Creating a location for every movable piece of equipment.
 - Adding levels that nobody will maintain, report on, or navigate to.
 - Designing only for today's facility without considering future expansion.
@@ -251,7 +256,7 @@ Before loading your location hierarchy into Maximo Application Suite Select, ver
 | Check | Planning item | What to verify |
 |---|---|---|
 | [ ] | **Places and positions** | Every location record represents a place where assets are operated, stored, or repaired, or a functional position, not a movable piece of equipment. |
-| [ ] | **One clear structure** | The hierarchy follows one consistent structure, usually from the top-level location to building to room, and other groupings use classifications. |
+| [ ] | **One clear primary structure** | The primary system follows one consistent structure, usually from the top-level location to building to room. Functional views use secondary systems, and groupings by type use classifications. |
 | [ ] | **Valid parent connections** | Every child location connects to an existing parent location to prevent orphan records. |
 | [ ] | **Maintainable depth** | The structure stops at the level where work is planned, assigned, or reported, typically 3 to 5 levels. |
 | [ ] | **Standardized naming** | Location codes and identifiers follow consistent naming conventions across the hierarchy. |

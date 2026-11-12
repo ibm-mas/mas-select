@@ -39,7 +39,7 @@ In Figure 1, the top-level location is Ice cream main plant, which branches into
 
 Want to see how this connects to assets and work orders? See [How do locations, assets, and work orders work together?](how-concepts-work-together.md)
 
-Your hierarchy is hard to change once work history builds up, so plan it before you load data. See [How do I plan my location hierarchy?](../../get-work-done/setup-control/plan-your-location-hierarchy.md)
+To plan your own hierarchy, see [How do I plan my location hierarchy?](../../get-work-done/setup-control/plan-your-location-hierarchy.md)
 
 <div style="clear: both;"></div>
 

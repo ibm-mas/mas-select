@@ -29,9 +29,6 @@ Use Data Management to import your existing records into IBM Maximo Application 
 
 ---
 
-!!! warning "The import preview does not check your hierarchy design"
-    The preview checks the format of your rows and whether parent records exist. It does not check whether your hierarchy fits how you work. A structure that does not fit still imports cleanly, and it is hard to change once work history builds up. Before you import locations or assets, plan them with your maintenance planners, supervisors, and operations team. See [How do I plan my location hierarchy?](plan-your-location-hierarchy.md) and [How do I plan my asset hierarchy?](plan-your-asset-hierarchy.md).
-
 ## How to get the correct template
 
 Before filling in your data, use the Data Management application to download a template or export sample records with the correct column names and structure.

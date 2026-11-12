@@ -220,7 +220,7 @@ Every physical entity in your plant or facility must be classified as one of thr
 
 ### How do I plan my location and asset hierarchies?
 
-A location hierarchy is the physical map of your facility. An asset hierarchy is the equipment breakdown structure that operates within those locations. Plan locations first, then assets. Plan both before you load data, because the structure is hard to change once work history builds up.
+A location hierarchy is the physical map of your facility. An asset hierarchy is the equipment breakdown structure that operates within those locations. Plan locations first, then assets.
 
 [How do I plan my location hierarchy?](../get-work-done/setup-control/plan-your-location-hierarchy.md)
 
