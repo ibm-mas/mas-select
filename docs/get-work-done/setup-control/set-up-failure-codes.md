@@ -10,7 +10,7 @@ Structured failure codes convert subjective technician remarks into standardized
 
 In Maximo Application Suite Select, failure codes are organized into a four-tier hierarchy headed by a Failure Class, followed by Problem, Cause, and Remedy codes configured in the Failure Codes application.
 
-Select includes some failure codes. You can use them as they are, or add your own to match your equipment.
+Maximo Application Suite Select includes some failure codes. You can use them as they are, or add your own to match your equipment.
 
 *Looking to verify your failure code configuration right away? [Skip to failure code setup verification checklist ↓](#failure-code-setup-verification-checklist)*
 

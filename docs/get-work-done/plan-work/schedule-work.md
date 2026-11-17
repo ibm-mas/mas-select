@@ -64,7 +64,7 @@ Use calendars to:
 - Apply shifts to show the work schedule
 - Mark holidays, shutdowns, and days off as non-working time
 
-Select includes some calendars, such as a day shift and an evening shift. You can use them as they are or duplicate them to make your own.
+Maximo Application Suite Select includes some calendars, such as a day shift and an evening shift. You can use them as they are or duplicate them to make your own.
 
 `[SME confirmation required: Confirm which calendars Select includes and that you can duplicate them.]`
 

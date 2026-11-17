@@ -12,7 +12,7 @@ Acting on alerts promptly prevents small anomalies, such as an overdue work orde
 
 *Looking to verify your alert response workflow right away? [Skip to alert and work queue checklist ↓](#alert-and-work-queue-checklist)*
 
-When you first sign in, Select shows the Operational Dashboard that matches your security group. Your administrator assigns the group. Select includes some dashboard content, and an administrator can edit the dashboard to add cards such as KPIs and work queues.
+When you first sign in, Maximo Application Suite Select shows the Operational Dashboard that matches your security group. Your administrator assigns the group. Some dashboard content is included, and an administrator can edit the dashboard to add cards such as KPIs and work queues.
 
 A work queue is a list of records that match a query, such as overdue work orders. It groups similar issues into one view, so supervisors can review, assign, and address them from the dashboard.
 

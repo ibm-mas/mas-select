@@ -54,7 +54,7 @@ A template can also include:
 
 ## How do ticket templates work with service requests?
 
-Select includes some ticket templates. Service request categories use them. When a requester picks a category, the template for that category can ask questions that fit it, such as whether there is a leak or a spill. A category that does not need questions can ask for a general summary of the request.
+Maximo Application Suite Select includes some ticket templates. Service request categories use them. When a requester picks a category, the template for that category can ask questions that fit it, such as whether there is a leak or a spill. A category that does not need questions can ask for a general summary of the request.
 
 `[SME confirmation required: Confirm how service request categories use ticket templates in Select, how the questions and answers are defined, and which templates are included.]`
 

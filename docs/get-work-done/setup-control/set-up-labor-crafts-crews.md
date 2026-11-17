@@ -41,7 +41,7 @@ Crafts → Calendar → Labor → Crew type → Crew
 
 ## Step 1: Create crafts
 
-Crafts represent the skills in your workforce. Select includes some crafts and skill levels. You can use them as they are, or add your own.
+Crafts represent the skills in your workforce. Maximo Application Suite Select includes some crafts and skill levels. You can use them as they are, or add your own.
 
 1. In the **Find navigation item** field, search for Crafts and open it.
 2. Create a new craft record.
@@ -63,7 +63,7 @@ See [How do I schedule work?](../plan-work/schedule-work.md) for steps to create
 
 ## Step 3: Create labor records
 
-Labor records represent the individuals who perform work. Select creates a labor record for a person when you create their user, so you usually update the existing record instead of creating a new one.
+Labor records represent the individuals who perform work. A labor record is created for a person when you create their user, so you usually update the existing record instead of creating a new one.
 
 `[SME confirmation required: Confirm that Select creates a labor record automatically when you create a user, and when you need to create a labor record yourself.]`
 

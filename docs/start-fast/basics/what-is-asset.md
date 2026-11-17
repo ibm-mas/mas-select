@@ -53,7 +53,7 @@ To plan your own hierarchy, see [How do I plan my asset hierarchy?](../../get-wo
 
 ## Rotating and non-rotating assets
 
-Some assets stay where they are installed. Others move between machines, storerooms, and a repair shop. Select calls the second group rotating assets.
+Some assets stay where they are installed. Others move between machines, storerooms, and a repair shop. The second group is called rotating assets.
 
 A rotating asset is an interchangeable asset that you can move in and out of service as needed. You repair or refurbish it rather than replace it. Every rotating asset starts from an item in Item Master that is marked as rotating, and each unit then has its own asset record. A non-rotating asset is not created from a rotating item. It is a single record that you track where it is installed.
 
