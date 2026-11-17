@@ -56,7 +56,7 @@ Maintaining disciplined status progression prevents work orders from getting los
 
 ## Pre-job staging: Eliminating parts delays
 
-The single largest cause of stalled work orders in manufacturing and facilities operations is the lack of replacement parts when the technician arrives at the asset.
+The single largest cause of stalled work orders in manufacturing operations is the lack of replacement parts when the technician arrives at the asset.
 
 ### How to verify and reserve parts before work begins
 

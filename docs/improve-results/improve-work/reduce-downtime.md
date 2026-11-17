@@ -6,7 +6,7 @@ search:
 
 # How do I reduce downtime?
 
-Unplanned equipment downtime is one of the most costly disruptions in industrial and facilities operations. When critical machinery stops unexpectedly, production halts, maintenance costs surge, and emergency repairs replace planned work.
+Unplanned equipment downtime is one of the most costly disruptions in industrial operations. When critical machinery stops unexpectedly, production halts, maintenance costs surge, and emergency repairs replace planned work.
 
 Reducing downtime requires shifting your maintenance operation from reactive emergency response to proactive defect prevention. In Maximo Application Suite Select, this transformation rests on four core pillars: structured preventive maintenance, standardized failure reporting, condition monitoring, and critical spare parts availability.
 
