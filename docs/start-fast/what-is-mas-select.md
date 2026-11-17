@@ -22,7 +22,7 @@ Maximo Application Suite Select is delivered as a Software-as-a-Service solution
 
 ## Who is this for?
 
-Maximo Application Suite Select is designed for lean maintenance teams in smaller to mid-sized operations. It supports maintenance and facilities teams and plant operations in industries such as:
+Maximo Application Suite Select is designed for lean maintenance teams in smaller to mid-sized operations. It supports maintenance teams and plant operations in industries such as:
 
 - Light manufacturing, such as fabrication, plastics, packaging, and assembly
 - Food and beverage and cold chain
