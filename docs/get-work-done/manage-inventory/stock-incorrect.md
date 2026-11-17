@@ -4,14 +4,6 @@ When physical inventory doesn't match system records, you need to investigate an
 
 ## Quick reference
 
-### Table 1: Common causes of stock discrepancies
-
-| Common cause | What to check |
-|--------------|---------------|
-| **Transaction errors** | Parts issued but not recorded, returns not processed |
-| **Physical issues** | Items misplaced, wrong bin locations, damaged items |
-| **System issues** | Data entry mistakes, incomplete transactions |
-
 Figure 1 outlines the sequential six-step inventory correction process:
 
 1. **Verify the count**: recount the item to confirm physical quantities.
@@ -24,34 +16,9 @@ Figure 1 outlines the sequential six-step inventory correction process:
 <img src="../../images/sample_inventory_correction_flow.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 1: The inventory correction process</p>
 
+Looking to plan or run a count? See [How do I count stock?](count-stock.md).
+
 ---
-
-### 💡 Tips: Best practices for inventory accuracy
-
-**Daily habits:**
-
-- Record transactions immediately
-- Verify before confirming
-- Return items promptly
-- Keep storeroom organized
-- Report issues quickly
-
-**Weekly tasks:**
-
-- Review high-value items
-- Check reorder items
-- Spot check locations
-- Investigate variances
-- Update procedures
-
-**Monthly activities:**
-
-- Analyze error patterns
-- Review adjustment reports
-- Conduct cycle counts
-- Train as needed
-- Improve processes
-
 
 ## Why fix inventory errors quickly?
 
@@ -70,35 +37,15 @@ Regular counting and prompt adjustments keep your inventory data trustworthy.
 
 ## What causes inventory errors?
 
-### Transaction errors
+### Table 1: Common causes of stock discrepancies
 
-- Parts issued but not recorded
-- Returns not processed
-- Wrong quantities entered
-- Duplicate transactions
-- Missing receipts
+| Common cause | Examples |
+| :--- | :--- |
+| **Transaction errors** | Parts issued but not recorded, returns not processed, wrong quantities entered, duplicate transactions, missing receipts |
+| **Physical issues** | Items misplaced in the storeroom, wrong bin locations, damaged or lost items, theft or shrinkage, items in the wrong storeroom |
+| **System issues** | Data entry mistakes, timing differences, incomplete transactions, system errors, integration problems |
 
-### Physical issues
-
-- Items misplaced in storeroom
-- Wrong bin locations
-- Damaged or lost items
-- Theft or shrinkage
-- Items in wrong storeroom
-
-### System issues
-
-- Data entry mistakes
-- Timing differences
-- Incomplete transactions
-- System errors
-- Integration problems
-
-Figure 2 shows how three distinct sources of error result in a stock discrepancy:
-
-- **Transaction errors**: parts issued but not recorded, returns not processed, or wrong quantities entered.
-- **Physical issues**: items misplaced in the storeroom, wrong bin locations, or damaged and lost items.
-- **System issues**: data entry mistakes, timing differences, or incomplete transactions.
+Figure 2 shows how transaction errors, physical issues, and system issues each lead to a stock discrepancy.
 
 <img src="../../images/sample_inventory_error_sources.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 2: Common sources of inventory errors</p>
@@ -107,35 +54,15 @@ Figure 2 shows how three distinct sources of error result in a stock discrepancy
 
 ## How do I identify discrepancies?
 
-### During work
+### Table 2: Where you notice a discrepancy
 
-You might notice:
+| Where | What you see |
+| :--- | :--- |
+| **During work** | An item shows in stock but you can't find it; the physical count doesn't match the system; a bin is empty but the system shows a quantity; the wrong item is in a labeled bin; unexpected items are in the storeroom |
+| **Through cycle counts** | Quantity differences, location errors, missing items, extra items, condition issues |
+| **From reports** | Negative balances, which are physically impossible; unusually high balances; no movement for long periods; frequent adjustments; cost variances |
 
-- Item shows in stock but can't find it
-- Physical count doesn't match system
-- Bin is empty but system shows quantity
-- Wrong item in labeled bin
-- Unexpected items in storeroom
-
-### Through cycle counts
-
-Regular counting reveals:
-
-- Quantity differences
-- Location errors
-- Missing items
-- Extra items
-- Condition issues
-
-### From reports
-
-System reports show:
-
-- Negative balances, which are physically impossible
-- Unusually high balances
-- No movement for long periods
-- Frequent adjustments
-- Cost variances
+For more about counts, see [How do I count stock?](count-stock.md).
 
 !!! warning "TODO: Add visual content"
      A screenshot showing an inventory discrepancy report would be useful here.
@@ -169,9 +96,6 @@ Before adjusting the system:
 - Receipts being entered
 - Transfers pending
 
-!!! warning "TODO: Add visual content"
-     A checklist for investigating discrepancies would be useful here.
-
 ### Step 2: Review transaction history
 
 Check recent activity:
@@ -191,19 +115,16 @@ Look for patterns:
 
 ### Step 3: Check related records
 
-Verify:
+### Table 3: Related records to check
 
-- **Work orders**: Materials recorded correctly?
-- **Receipts**: All delivered stock entered?
-- **Inventory transfers**: Transfers completed properly?
-- **Issues**: Items picked and issued from storeroom?
+| Record | What to verify |
+| :--- | :--- |
+| **Work orders** | Materials recorded correctly against work tasks |
+| **Receipts** | All delivered stock entered into the system |
+| **Inventory transfers** | Transfers completed properly across locations |
+| **Issues** | Items picked and issued from the storeroom |
 
-Figure 3 maps the four related records to check when a stock discrepancy is identified:
-
-- **Work orders**: verify whether materials were recorded correctly against work tasks.
-- **Receipts**: confirm whether all delivered stock was entered into the system.
-- **Inventory transfers**: check whether transfers completed properly across locations.
-- **Issues**: verify whether items were picked and issued from the storeroom.
+Figure 3 maps the four related records to check when a stock discrepancy is identified.
 
 <img src="../../images/sample_inventory_related_records.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 3: Related records to check when stock is incorrect</p>
@@ -232,139 +153,30 @@ The system updates balance, adjusts cost, records transaction, and creates audit
 !!! warning "TODO: Add visual content"
      A video showing how to adjust inventory would be useful here.
 
-### Adjustment best practices
-
-**Always document:**
-
-- What you found
-- What you expected
-- Why the error occurred
-- Who discovered it
-- When it was found
-- Corrective action taken
-
-**Get approval if needed:**
-
-- Large adjustments
-- High-value items
-- Frequent corrections
-- Unusual circumstances
-
-**Follow up:**
-
-- Prevent recurrence
-- Train if needed
-- Improve processes
-- Monitor for patterns
-
 ---
 
 ## Types of adjustments
 
-### Quantity adjustments
+### Table 4: Types of adjustments
 
-**Increase balance:**
-
-- Found items not recorded
-- Receipt was missed
-- Return not processed
-- Transfer not completed
-
-**Decrease balance:**
-
-- Items issued but not recorded
-- Damaged or lost items
-- Theft or shrinkage
-- Items moved to another location
-
-### Location adjustments
-
-**Moving items:**
-
-- Wrong bin recorded
-- Reorganizing storeroom
-- Consolidating locations
-- Correcting bin assignments
-
-### Cost adjustments
-
-**Correcting costs:**
-
-- Wrong price entered
-- Cost method changed
-- Vendor price correction
-- Currency adjustments
-
-!!! warning "TODO: Add visual content"
-     A table comparing adjustment types would be useful here.
+| Adjustment | Use it when |
+| :--- | :--- |
+| **Increase quantity** | You found items that were not recorded, a receipt was missed, a return was not processed, or a transfer was not completed |
+| **Decrease quantity** | Items were issued but not recorded, items are damaged or lost, items were stolen or lost to shrinkage, or items moved to another location |
+| **Move location** | The wrong bin was recorded, you are reorganizing the storeroom, you are consolidating locations, or you are correcting bin assignments |
+| **Correct cost** | The wrong price was entered, the cost method changed, the vendor price was corrected, or currency needs adjusting |
 
 ---
 
-## How do I prevent inventory errors?
+## Adjustment best practices
 
-### Good practices
+### Table 5: Adjustment best practices
 
-**At issue time:**
-
-- Record transactions immediately
-- Verify quantities
-- Check item numbers
-- Confirm locations
-- Complete transactions fully
-
-**At receipt time:**
-
-- Count carefully
-- Match to purchase order
-- Verify item numbers
-- Put in correct location
-- Record promptly
-
-**During returns:**
-
-- Process immediately
-- Verify condition
-- Return to correct bin
-- Update system
-- Note any issues
-
-### Regular cycle counting
-
-**Count frequently:**
-
-- High-value items weekly
-- Fast-moving items monthly
-- All items quarterly
-- Random spot checks
-
-**Count systematically:**
-
-- Follow schedule
-- Use count books
-- Verify before adjusting
-- Document findings
-- Analyze patterns
-
-!!! warning "TODO: Add visual content"
-     A sample cycle count schedule would be useful here.
-
-### Storeroom organization
-
-**Keep organized:**
-
-- Clear bin labels
-- Logical layout
-- Similar items separated
-- Regular housekeeping
-- Defined locations
-
-**Control access:**
-
-- Authorized personnel only
-- Proper training
-- Clear procedures
-- Accountability
-- Security measures
+| Practice | What to do |
+| :--- | :--- |
+| **Always document** | Record what you found, what you expected, why the error occurred, who discovered it, when it was found, and the corrective action taken |
+| **Get approval if needed** | Get approval for large adjustments, high-value items, frequent corrections, and unusual circumstances |
+| **Follow up** | Prevent recurrence, train if needed, improve processes, and monitor for patterns |
 
 ---
 
@@ -414,113 +226,54 @@ Figure 4 outlines the decision paths and corrective actions for three inventory 
 
 ---
 
+## How do I prevent inventory errors?
+
+### Table 6: Good practices to prevent errors
+
+| When | Good practices |
+| :--- | :--- |
+| **At issue time** | Record transactions immediately, verify quantities, check item numbers, confirm locations, and complete transactions fully |
+| **At receipt time** | Count carefully, match to the purchase order, verify item numbers, put items in the correct location, and record promptly |
+| **During returns** | Process immediately, verify condition, return to the correct bin, update the system, and note any issues |
+| **Daily** | Record transactions immediately, verify before confirming, return items promptly, keep the storeroom organized, and report issues quickly |
+| **Weekly** | Review high-value items, check reorder items, spot check locations, investigate variances, and update procedures |
+| **Monthly** | Analyze error patterns, review adjustment reports, conduct cycle counts, train as needed, and improve processes |
+| **Storeroom organization** | Use clear bin labels, a logical layout, separated similar items, regular housekeeping, and defined locations |
+| **Access control** | Allow authorized personnel only, provide proper training, keep clear procedures, assign accountability, and apply security measures |
+
+For how to schedule counts, see [How do I count stock?](count-stock.md).
+
+---
+
 ## What's the impact of inventory errors?
 
-### On operations
+### Table 7: Impact of inventory errors
 
-**Stockouts:**
-
-- Work delays
-- Emergency orders
-- Higher costs
-- Service issues
-
-**Excess inventory:**
-
-- Wasted space
-- Tied-up cash
-- Obsolescence risk
-- Carrying costs
-
-### On costs
-
-**Direct costs:**
-
-- Incorrect work order costs
-- Wrong inventory valuation
-- Budget variances
-- Financial reporting errors
-
-**Indirect costs:**
-
-- Time investigating
-- Emergency purchases
-- Lost productivity
-- Customer dissatisfaction
-
-### On planning
-
-**Poor decisions:**
-
-- Wrong reorder quantities
-- Incorrect stock levels
-- Bad purchasing decisions
-- Inefficient operations
-
-!!! warning "TODO: Add visual content"
-     An infographic showing error impacts would be useful here.
+| Area | Effects |
+| :--- | :--- |
+| **Stockouts** | Work delays, emergency orders, higher costs, service issues |
+| **Excess inventory** | Wasted space, tied-up cash, obsolescence risk, carrying costs |
+| **Direct costs** | Incorrect work order costs, wrong inventory valuation, budget variances, financial reporting errors |
+| **Indirect costs** | Time investigating, emergency purchases, lost productivity, customer dissatisfaction |
+| **Planning** | Wrong reorder quantities, incorrect stock levels, bad purchasing decisions, inefficient operations |
 
 ---
 
-## When should I perform physical inventory?
+## Stock correction checklist
 
-### Full physical count
+Use this checklist to confirm that a stock correction is complete:
 
-Do complete inventory when:
+### Table 8: Stock correction checklist
 
-- Annual audit required
-- Major discrepancies found
-- System implementation
-- Storeroom reorganization
-- Change in responsibility
-
-### Cycle counting
-
-Regular partial counts:
-
-- Less disruptive
-- Continuous accuracy
-- Catches errors early
-- Maintains reliability
-- Spreads workload
-
----
-
-## How do I use count books?
-
-Count books help organize counting:
-
-- Group items logically
-- Schedule counts
-- Assign counters
-- Track completion
-- Record results
-- Analyze variances
-
-The system can:
-
-- Generate count books
-- Assign to users
-- Track progress
-- Record counts
-- Calculate differences
-- Create adjustments
-
-You create count books in the Count Books application. You count items in the Inventory Counting app on the desktop or in IBM Maximo Mobile. In Inventory Counting, you can:
-
-- Count the items in a count book.
-- Count items that are not in a count book.
-- Count items and rotating assets.
-- Set tolerances that allow for small differences between the system balance and the physical count.
-- See alerts for differences that need a recount.
-- Count in batches as part of a cycle count.
-
-After you count, the **Reconciled?** checkbox on the inventory balance shows whether the count is reconciled.
-
-`[SME confirmation required: Confirm that you can open Inventory Counting in a desktop browser in Select as well as in IBM Maximo Mobile, and confirm where counts are reconciled.]`
-
-!!! warning "TODO: Add visual content"
-     A screenshot showing a count book would be useful here.
+| Check | Item | What to verify |
+| :--- | :--- | :--- |
+| [ ] | Count verified | You rechecked all bins and nearby locations and confirmed the item number |
+| [ ] | Reserved items checked | Pick lists, work order allocations, transfers, and staged materials are accounted for |
+| [ ] | Transactions reviewed | Recent issues, receipts, returns, transfers, and earlier adjustments are checked |
+| [ ] | Related records checked | Work orders, receipts, inventory transfers, and issues are correct |
+| [ ] | Approval obtained | A supervisor approved any large, high-value, or unusual adjustment |
+| [ ] | Adjustment made | Inventory Adjustments shows the correct physical quantity, a reason, and detailed notes |
+| [ ] | Cause followed up | You acted on the cause so the error does not recur |
 
 ---
 
@@ -536,6 +289,7 @@ Learn which inventory metrics matter and how to use them to keep parts available
 
 ## Related topics
 
+- [How do I count stock?](count-stock.md)
 - [How do I track stock levels?](track-stock-levels.md)
 - [How do I issue parts to a job?](issue-parts.md)
 - [How do I complete a job?](../complete-work/complete-job.md)

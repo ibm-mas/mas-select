@@ -48,7 +48,7 @@ Collected from the `[SME confirmation required]` and `[TO DO]` tags on the Engli
 |---|----------|------|
 | E1 | How are inspections scheduled or generated from a form in Select, and where do results appear on the asset or location? | how-inspections-work.md |
 | E2 | [CONFIRMED - Documented] Does the Technician app list match Select? (Confirmed from standard Technician mobile app capabilities and walkthrough video). | [technician-first-task.md](../docs/start-fast/first-task/technician-first-task.md) |
-| E3 | Which application reconciles inventory counts in Select? | [stock-incorrect.md](../docs/get-work-done/manage-inventory/stock-incorrect.md) |
+| E3 | Which application reconciles inventory counts in Select? | [count-stock.md](../docs/get-work-done/manage-inventory/count-stock.md) |
 
 ### Videos (removed from the pages; restore from commit 2272bfa when embeds are allowed)
 

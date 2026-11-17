@@ -55,7 +55,7 @@ To get started with issuing inventory, see [Inventory clerk: Issue a part](../fi
 
 Use Inventory Counting to perform physical stock counts and cycle counts in storerooms using count books or ad hoc counts.
 
-To learn more about stock counts and count books, see [What happens if stock is incorrect?](../../get-work-done/manage-inventory/stock-incorrect.md).
+To learn more about stock counts and count books, see [How do I count stock?](../../get-work-done/manage-inventory/count-stock.md).
 
 ### Material Request
 

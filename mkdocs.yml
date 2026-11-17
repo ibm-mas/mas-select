@@ -125,6 +125,7 @@ plugins:
             Issue parts: Sortir des pièces
             Track stock levels: Suivre les niveaux de stock
             Incorrect stock: Stock incorrect
+            Count stock: Compter le stock
             Can't issue materials: Impossible de sortir des matériaux
             Monitor and respond: Surveiller et réagir
             Detect issues early: Détecter les problèmes tôt
@@ -264,6 +265,7 @@ nav:
       - Issue parts: get-work-done/manage-inventory/issue-parts.md
       - Track stock levels: get-work-done/manage-inventory/track-stock-levels.md
       - Incorrect stock: get-work-done/manage-inventory/stock-incorrect.md
+      - Count stock: get-work-done/manage-inventory/count-stock.md
       - Can't issue materials: get-work-done/manage-inventory/why-cant-issue-materials.md
     - Monitor and respond:
       - Detect issues early: get-work-done/monitor-respond/detect-issues-early.md
