@@ -820,6 +820,17 @@
       
         
   
+    <cds-side-nav-menu-item href="count-stock.html" class="nav-level-3">
+      Compter le stock
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
     <cds-side-nav-menu-item href="why-cant-issue-materials.html" class="nav-level-3">
       Impossible de sortir des matériaux
     </cds-side-nav-menu-item>
@@ -1446,7 +1457,7 @@
 </ol>
 <p>Figure 2 outlines the sequential resolution workflows for three common parts issue scenarios:</p>
 <ul>
-<li><strong>Scenario 1 (Part not in stock)</strong>: First check other storerooms across plant <abbr title="Data partitioning concepts that represent plants, facilities, or business units.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; plants, facilities, or business units">sites</abbr> for available stock, then initiate a purchase requisition or storeroom transfer, and finally update the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr> to Waiting on Material.</li>
+<li><strong>Scenario 1 (Part not in stock)</strong>: First check other storerooms for available stock, then initiate a purchase requisition or storeroom transfer, and finally update the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr> to Waiting on Material.</li>
 <li><strong>Scenario 2 (Quantity mismatch)</strong>: For an under-issue where additional parts are needed, create an extra issue line for the difference. For an over-issue where too many parts were taken, use the Return action on the actuals tab to return extra parts to the storeroom. The system automatically adjusts storeroom balance and <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> cost.</li>
 <li><strong>Scenario 3 (Emergency repair)</strong>: For urgent breakdowns, issue parts immediately to perform the repair, record the material actuals on the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> once the equipment is safe, and add explanatory documentation notes to the work log.</li>
 </ul>
