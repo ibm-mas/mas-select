@@ -49,6 +49,19 @@ Collected from the `[SME confirmation required]` and `[TO DO]` tags on the Engli
 | E1 | How are inspections scheduled or generated from a form in Select, and where do results appear on the asset or location? | how-inspections-work.md |
 | E2 | [CONFIRMED - Documented] Does the Technician app list match Select? (Confirmed from standard Technician mobile app capabilities and walkthrough video). | [technician-first-task.md](../docs/start-fast/first-task/technician-first-task.md) |
 | E3 | Which application reconciles inventory counts in Select? | [count-stock.md](../docs/get-work-done/manage-inventory/count-stock.md) |
+### Work queues on the Operational Dashboard
+
+These questions come from the out of the box work queue ticket (MAXUIF-4540 prerequisite). The queries in the ticket are marked as drafts, and three queues have actions marked "TBD".
+
+| # | Question | Page |
+|---|----------|------|
+| G1 | Are the five out of the box work queues shipped with Select, and are they active by default? The queues are Pending service requests, Open work orders, Completed work orders, Assets with no active PM, and Overdue work orders. | [act-on-alerts.md](../docs/get-work-done/monitor-respond/act-on-alerts.md), [find-work.md](../docs/get-work-done/complete-work/find-work.md) |
+| G2 | Are the three default work queues from Maximo Manage 9.1 also included? | act-on-alerts.md |
+| G3 | What actions will Open work orders, Completed work orders, and Assets with no active PM offer? Overdue work orders has none, and Pending service requests has Create work order, Cancel, and View SR. | act-on-alerts.md |
+| G4 | Which object structure and launch application belong in the configuration steps: MXAPIWO and WOSUMMARY, as in the ticket, or MXAPIWODETAIL and WOTRACK, as in the current text? | act-on-alerts.md |
+| G5 | Is the Supervisor dashboard section from MAXUIF-4540 released, and does the Work queues card show these queues? | act-on-alerts.md |
+
+
 
 ### Videos (removed from the pages; restore from commit 2272bfa when embeds are allowed)
 
