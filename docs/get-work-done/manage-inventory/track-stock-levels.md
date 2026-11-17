@@ -102,7 +102,7 @@ How items are being consumed.
    - Cost information
    - Reorder point and minimum stock level
 
-If the item is in multiple storerooms, you can view all locations on one screen and compare quantities across sites.
+If the item is in multiple storerooms, you can view all locations on one screen and compare quantities across storerooms.
 
 ### Check storeroom contents
 
