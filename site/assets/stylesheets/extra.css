@@ -1673,3 +1673,18 @@ body[data-carbon-theme="g90"] .home-cards li a:hover,
 body[data-carbon-theme="g100"] .home-cards li a:hover {
     border-color: #78a9ff;
 }
+
+/* Persona icons in role page headings. The source PNGs are white, so light themes invert them to black. */
+/* !important is needed to beat the theme's display:block and auto margins on .rst-content img */
+.rst-content h2 img.role-heading-icon {
+    display: inline-block !important;
+    width: 40px !important;
+    height: 40px !important;
+    margin: 0 12px 0 0 !important;
+    vertical-align: middle !important;
+}
+
+body[data-carbon-theme="white"] .rst-content h2 img.role-heading-icon,
+body[data-carbon-theme="g10"] .rst-content h2 img.role-heading-icon {
+    filter: invert(1);
+}

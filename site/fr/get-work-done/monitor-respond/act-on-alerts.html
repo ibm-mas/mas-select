@@ -820,6 +820,17 @@
       
         
   
+    <cds-side-nav-menu-item href="../manage-inventory/count-stock.html" class="nav-level-3">
+      Compter le stock
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
     <cds-side-nav-menu-item href="../manage-inventory/why-cant-issue-materials.html" class="nav-level-3">
       Impossible de sortir des matériaux
     </cds-side-nav-menu-item>
@@ -1288,16 +1299,17 @@
           <div class="rst-content">
             
             <h1 id="how-do-i-act-on-alerts">How do I act on alerts?<a class="headerlink" href="#how-do-i-act-on-alerts" title="Permanent link">¤</a></h1>
-<p>Operational dashboards in Maximo Application Suite Select consolidate critical operational signals into a single view. When a key performance indicator breaches an alert threshold, or when urgent maintenance enters a work queue, supervisors and administrators can review the situation and take immediate corrective action directly from the dashboard.</p>
-<p>Acting on alerts promptly prevents small anomalies, such as an overdue <abbr title="Scheduled routine maintenance performed to prevent equipment failures.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance plan, planned maintenance, or PM">preventive maintenance</abbr> inspection or a rising emergency backlog, from escalating into unplanned production <abbr title="The period when equipment is not operational or available for use.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; outage, production loss, or equipment unavailable">downtime</abbr>.</p>
-<p><em>Looking to verify your alert response workflow right away? <a href="#alert-and-work-queue-checklist">Skip to alert and work queue checklist ↓</a></em></p>
-<p>When you first sign in, Select shows the Operational Dashboard that matches your <abbr title="A collection of users who share the same application access and permissions.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; permission group, access group, user group, or role">security group</abbr>. Your administrator assigns the group. Select includes some dashboard content, and an administrator can edit the dashboard to add cards such as KPIs and work queues.</p>
+<p>Operational dashboards in Maximo Application Suite Select consolidate critical operational signals into a single view. When a key performance indicator breaches an alert threshold, or when urgent maintenance enters a <abbr title="A list of records that match a query, such as overdue work orders, shown in one view so you can review and act on them.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; saved list, filtered list, or worklist">work queue</abbr>, supervisors and administrators can review the situation and take immediate corrective action directly from the dashboard.</p>
+<p>Acting on alerts promptly prevents small anomalies, such as an overdue <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> or a growing backlog of service requests, from escalating into unplanned production <abbr title="The period when equipment is not operational or available for use.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; outage, production loss, or equipment unavailable">downtime</abbr>.</p>
+<p><em>Looking to verify your alert response workflow right away? <a href="#alert-and-work-queue-checklist">Skip to alert and <abbr title="A list of records that match a query, such as overdue work orders, shown in one view so you can review and act on them.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; saved list, filtered list, or worklist">work queue</abbr> checklist ↓</a></em></p>
+<p>When you first sign in, Select shows the Operational Dashboard that matches your <abbr title="A collection of users who share the same application access and permissions.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; permission group, access group, user group, or role">security group</abbr>. Your administrator assigns the group. Select includes some dashboard content, and an administrator can edit the dashboard to add cards such as KPIs and <abbr title="Lists of records that match a query, such as overdue work orders, shown in one view so you can review and act on them.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; saved lists, filtered lists, or worklists">work queues</abbr>.</p>
+<p>A <abbr title="A list of records that match a query, such as overdue work orders, shown in one view so you can review and act on them.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; saved list, filtered list, or worklist">work queue</abbr> is a list of records that match a query, such as overdue <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr>. It groups similar issues into one view, so supervisors can review, assign, and address them from the dashboard.</p>
 <h3 id="tips-for-success">💡 Tips for success<a class="headerlink" href="#tips-for-success" title="Permanent link">¤</a></h3>
 <ul>
 <li>Check your Operational Dashboard at the start of each shift. Review red threshold breaches first, followed by yellow caution indicators.</li>
-<li>Use work queue cards to take direct action. You can assign <abbr title="Work time and effort assigned to a work order.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; technician time, work hours, or crew time">labor</abbr>, update <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr>, or open the full record without navigating through the main menu.</li>
-<li>Ensure newly created work queues are activated. In Work Queue Manager, new queues default to inactive until an administrator explicitly sets their <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr> to active.</li>
-<li>Customize work queue queries so they capture only actionable records. Queues containing thousands of general records dilute focus and cause alert fatigue.</li>
+<li>Use <abbr title="A list of records that match a query, such as overdue work orders, shown in one view so you can review and act on them.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; saved list, filtered list, or worklist">work queue</abbr> cards to act on records. Depending on the queue, you can take an action such as creating a <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> from a service request, or open the full record without navigating through the main menu.</li>
+<li>Ensure newly created <abbr title="Lists of records that match a query, such as overdue work orders, shown in one view so you can review and act on them.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; saved lists, filtered lists, or worklists">work queues</abbr> are activated. In Work Queue Manager, new queues default to inactive until an administrator explicitly sets their <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr> to active.</li>
+<li>Customize <abbr title="A list of records that match a query, such as overdue work orders, shown in one view so you can review and act on them.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; saved list, filtered list, or worklist">work queue</abbr> queries so they capture only actionable records. Queues containing thousands of general records dilute focus and cause alert fatigue.</li>
 </ul>
 <hr>
 <h2 id="where-alerts-appear-on-your-dashboard">Where alerts appear on your dashboard<a class="headerlink" href="#where-alerts-appear-on-your-dashboard" title="Permanent link">¤</a></h2>
@@ -1320,15 +1332,15 @@
 <td style="text-align: left;">Use the card menu to open the KPI in KPI Viewer and analyze the underlying historical records</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Work queues card</strong></td>
-<td style="text-align: left;">Table of urgent work categories, such as overdue work or emergency requests</td>
+<td style="text-align: left;"><strong><abbr title="Lists of records that match a query, such as overdue work orders, shown in one view so you can review and act on them.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; saved lists, filtered lists, or worklists">Work queues</abbr> card</strong></td>
+<td style="text-align: left;">Table of urgent work categories, such as overdue <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> or pending service requests</td>
 <td style="text-align: left;">Badge count increases when new records match the queue query</td>
-<td style="text-align: left;">Select a queue to inspect records, assign technicians, or update <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr> directly</td>
+<td style="text-align: left;">Select a queue to inspect records, take the actions that the queue offers, or open the full record</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Condition monitoring alerts</strong></td>
 <td style="text-align: left;"><abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">Assets</abbr> exceeding measurement action limits</td>
-<td style="text-align: left;">Corrective <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> appear in unassigned or emergency work queues</td>
+<td style="text-align: left;">Corrective <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> appear in the <abbr title="Lists of records that match a query, such as overdue work orders, shown in one view so you can review and act on them.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; saved lists, filtered lists, or worklists">work queues</abbr> that list them</td>
 <td style="text-align: left;">Review the <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> condition history and dispatch qualified personnel</td>
 </tr>
 </tbody>
@@ -1349,7 +1361,7 @@
 <tr>
 <td style="text-align: left;"><strong>PM compliance below 85%</strong></td>
 <td style="text-align: left;">Routine inspections and servicing are falling behind schedule</td>
-<td style="text-align: left;">Open the Overdue PMs work queue and reschedule delayed maintenance to available shifts</td>
+<td style="text-align: left;">Open the Overdue <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> <abbr title="A list of records that match a query, such as overdue work orders, shown in one view so you can review and act on them.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; saved list, filtered list, or worklist">work queue</abbr> and reschedule delayed maintenance to available shifts</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Emergency <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> spike</strong></td>
@@ -1369,9 +1381,9 @@
 </tbody>
 </table>
 <hr>
-<h2 id="processing-work-items-from-a-work-queue-card">Processing work <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; materials, spare parts, or stock keeping units (SKUs)">items</abbr> from a work queue card<a class="headerlink" href="#processing-work-items-from-a-work-queue-card" title="Permanent link">¤</a></h2>
-<p>The Work queues card on the supervisor dashboard allows you to triage and process work without opening multiple menu screens.</p>
-<h3 id="table-3-actions-available-within-the-work-queue-card">Table 3: Actions available within the work queue card<a class="headerlink" href="#table-3-actions-available-within-the-work-queue-card" title="Permanent link">¤</a></h3>
+<h2 id="processing-work-items-from-a-work-queue-card">Processing work <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; materials, spare parts, or stock keeping units (SKUs)">items</abbr> from a <abbr title="A list of records that match a query, such as overdue work orders, shown in one view so you can review and act on them.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; saved list, filtered list, or worklist">work queue</abbr> card<a class="headerlink" href="#processing-work-items-from-a-work-queue-card" title="Permanent link">¤</a></h2>
+<p>The <abbr title="Lists of records that match a query, such as overdue work orders, shown in one view so you can review and act on them.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; saved lists, filtered lists, or worklists">Work queues</abbr> card on the supervisor dashboard allows you to triage and process work without opening multiple menu screens. The actions that you can take depend on the queue. For example, the Pending service requests queue offers Create <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr>, Cancel, and View SR.</p>
+<h3 id="table-3-actions-available-within-the-work-queue-card">Table 3: Actions available within the <abbr title="A list of records that match a query, such as overdue work orders, shown in one view so you can review and act on them.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; saved list, filtered list, or worklist">work queue</abbr> card<a class="headerlink" href="#table-3-actions-available-within-the-work-queue-card" title="Permanent link">¤</a></h3>
 <table>
 <thead>
 <tr>
@@ -1382,19 +1394,14 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Assign <abbr title="Work time and effort assigned to a work order.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; technician time, work hours, or crew time">labor</abbr></strong></td>
-<td style="text-align: left;">Select the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> row, click Assign, and select a qualified technician</td>
-<td style="text-align: left;">Assigns the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> and sends it directly to the technician mobile work list</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Update <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr></strong></td>
-<td style="text-align: left;">Select the record and choose a new <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr>, such as Approved or Canceled</td>
-<td style="text-align: left;">Advances the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> lifecycle and removes it from unapproved queues</td>
+<td style="text-align: left;"><strong>Take a queue action</strong></td>
+<td style="text-align: left;">Select the record and choose one of the actions that the queue offers, such as Create <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr></td>
+<td style="text-align: left;">Moves the record to the next step without opening the full record</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Open record</strong></td>
-<td style="text-align: left;">Click the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> number link</td>
-<td style="text-align: left;">Launches the full Work Orders application for detailed planning and <abbr title="A template that defines standard tasks, materials, and labor for recurring maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; standard job, task template, or maintenance procedure">job plan</abbr> adjustments</td>
+<td style="text-align: left;">Click the record number link</td>
+<td style="text-align: left;">Opens the record in the application that the queue launches, for detailed review and planning</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Filter table</strong></td>
@@ -1410,15 +1417,21 @@
 <ol>
 <li>The supervisor opens <strong>Operational Dashboard : Supervisor</strong>.</li>
 <li><strong>KPI Card 1, PM Compliance:</strong> Displays 78%, highlighted in red alert <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr> because the threshold is 85%.</li>
-<li><strong>Work Queues Card:</strong> Displays <code>Overdue PMs (Count: 4)</code> and <code>Emergency Work Orders (Count: 1)</code>.</li>
-<li>The supervisor clicks <strong>Emergency Work Orders</strong>. The table displays <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> <code>WO-10492</code> for <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> <code>Drive motor</code> on filling line filler FL-02, generated by a condition monitoring high vibration action limit.</li>
-<li>Direct action: The supervisor clicks <strong>Assign</strong>, selects a mechanical technician certified in drive alignments, and updates the <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr> to Approved, <code>APPR</code>.</li>
-<li>Next, the supervisor clicks <strong>Overdue PMs</strong>, reviews the four routine filter changes, and allocates them to the afternoon shift schedule.</li>
+<li><strong>Work Queues Card:</strong> Displays <code>Overdue work orders (Count: 4)</code> and <code>Pending service requests (Count: 1)</code>.</li>
+<li>The supervisor clicks <strong>Pending service requests</strong>. The table displays service request <code>SR-10492</code> for <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> <code>Drive motor</code> on filling line filler FL-02, which reports high vibration.</li>
+<li>Direct action: The supervisor selects the request and clicks <strong>Create <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr></strong>, so the repair can be planned and assigned.</li>
+<li>Next, the supervisor clicks <strong>Overdue <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr></strong>, reviews the four routine filter changes, and reschedules them to the afternoon shift.</li>
 </ol>
 <hr>
-<h2 id="how-to-configure-work-queues-in-work-queue-manager">How to configure work queues in Work Queue Manager<a class="headerlink" href="#how-to-configure-work-queues-in-work-queue-manager" title="Permanent link">¤</a></h2>
-<p>Select includes some work queues. Administrators can use them as they are, or create and manage their own for the operational dashboards.</p>
-<h3 id="step-1-create-the-work-queue-definition">Step 1: Create the work queue definition<a class="headerlink" href="#step-1-create-the-work-queue-definition" title="Permanent link">¤</a></h3>
+<h2 id="how-to-configure-work-queues-in-work-queue-manager">How to configure <abbr title="Lists of records that match a query, such as overdue work orders, shown in one view so you can review and act on them.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; saved lists, filtered lists, or worklists">work queues</abbr> in Work Queue Manager<a class="headerlink" href="#how-to-configure-work-queues-in-work-queue-manager" title="Permanent link">¤</a></h2>
+<p>Some <abbr title="Lists of records that match a query, such as overdue work orders, shown in one view so you can review and act on them.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; saved lists, filtered lists, or worklists">work queues</abbr> are available when you first sign in. For example, Overdue <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> lists the approved or in progress <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> that are past their target completion date, so supervisors can see late work without searching for it. Administrators can use the <abbr title="Lists of records that match a query, such as overdue work orders, shown in one view so you can review and act on them.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; saved lists, filtered lists, or worklists">work queues</abbr> as they are, or create and manage their own for the operational dashboards.</p>
+<p>Create your own <abbr title="Lists of records that match a query, such as overdue work orders, shown in one view so you can review and act on them.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; saved lists, filtered lists, or worklists">work queues</abbr> when the ones that are available do not cover the work your team needs to watch. A <abbr title="A list of records that match a query, such as overdue work orders, shown in one view so you can review and act on them.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; saved list, filtered list, or worklist">work queue</abbr> lets you:</p>
+<ul>
+<li>See the records that need attention in one view, so supervisors do not have to search for them.</li>
+<li>Limit a queue to a person group, so each team sees the queues that apply to them.</li>
+<li>Take action on the records, such as creating a <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> from a service request, without opening each full record.</li>
+</ul>
+<h3 id="step-1-create-the-work-queue-definition">Step 1: Create the <abbr title="A list of records that match a query, such as overdue work orders, shown in one view so you can review and act on them.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; saved list, filtered list, or worklist">work queue</abbr> definition<a class="headerlink" href="#step-1-create-the-work-queue-definition" title="Permanent link">¤</a></h3>
 <ol>
 <li>In the <strong>Find navigation <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr></strong> field, search for Work Queue Manager and open it.</li>
 <li>Click <strong>New Work Queue</strong>.</li>
@@ -1430,22 +1443,22 @@
 <h3 id="step-2-define-the-query-and-person-group-access">Step 2: Define the query and person group access<a class="headerlink" href="#step-2-define-the-query-and-person-group-access" title="Permanent link">¤</a></h3>
 <ol>
 <li>In the <strong>Query</strong> field, select the saved public query that filters the records, such as <code>OVERDUE_PMS</code>.</li>
-<li>To restrict the queue to specific roles, add the target group in the <strong>Person Groups</strong> table, such as <code>SUP_MAINT</code>. If left blank, the queue is available across all dashboards with work queue cards.</li>
+<li>To restrict the queue to specific roles, add the target group in the <strong>Person Groups</strong> table, such as <code>SUP_MAINT</code>. If left blank, the queue is available across all dashboards with <abbr title="A list of records that match a query, such as overdue work orders, shown in one view so you can review and act on them.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; saved list, filtered list, or worklist">work queue</abbr> cards.</li>
 <li>In the <strong><abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">Status</abbr></strong> field, change the value to <code>ACTIVE</code>.</li>
 </ol>
-<h3 id="step-3-add-the-work-queue-card-to-the-operational-dashboard">Step 3: Add the work queue card to the operational dashboard<a class="headerlink" href="#step-3-add-the-work-queue-card-to-the-operational-dashboard" title="Permanent link">¤</a></h3>
+<h3 id="step-3-add-the-work-queue-card-to-the-operational-dashboard">Step 3: Add the <abbr title="A list of records that match a query, such as overdue work orders, shown in one view so you can review and act on them.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; saved list, filtered list, or worklist">work queue</abbr> card to the operational dashboard<a class="headerlink" href="#step-3-add-the-work-queue-card-to-the-operational-dashboard" title="Permanent link">¤</a></h3>
 <ol>
 <li>Go to the target dashboard, such as <strong>Operational Dashboard : Supervisor</strong>.</li>
 <li>Click <strong>Edit Dashboard</strong>.</li>
-<li>Add the <strong>Work queues</strong> card, and select your work queue from the list.</li>
-<li>Verify that your active work queue is selected.</li>
+<li>Add the <strong><abbr title="Lists of records that match a query, such as overdue work orders, shown in one view so you can review and act on them.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; saved lists, filtered lists, or worklists">Work queues</abbr></strong> card, and select your <abbr title="A list of records that match a query, such as overdue work orders, shown in one view so you can review and act on them.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; saved list, filtered list, or worklist">work queue</abbr> from the list.</li>
+<li>Verify that your active <abbr title="A list of records that match a query, such as overdue work orders, shown in one view so you can review and act on them.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; saved list, filtered list, or worklist">work queue</abbr> is selected.</li>
 <li>Click <strong>Save Dashboard</strong>.</li>
 </ol>
-<p>If you added a person group to the work queue, the queue does not show on the <strong>Work queues</strong> card by default. People in that group can select the <strong>Work queues</strong> card, edit the dashboard, and select the queue on the <strong>Advanced</strong> tab of the card gallery.</p>
+<p>If you added a person group to the <abbr title="A list of records that match a query, such as overdue work orders, shown in one view so you can review and act on them.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; saved list, filtered list, or worklist">work queue</abbr>, the queue does not show on the <strong><abbr title="Lists of records that match a query, such as overdue work orders, shown in one view so you can review and act on them.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; saved lists, filtered lists, or worklists">Work queues</abbr></strong> card by default. People in that group can select the <strong><abbr title="Lists of records that match a query, such as overdue work orders, shown in one view so you can review and act on them.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; saved lists, filtered lists, or worklists">Work queues</abbr></strong> card, edit the dashboard, and select the queue on the <strong>Advanced</strong> tab of the card gallery.</p>
 <hr>
-<h2 id="alert-and-work-queue-checklist">Alert and work queue checklist<a class="headerlink" href="#alert-and-work-queue-checklist" title="Permanent link">¤</a></h2>
-<p>Use this checklist to confirm that dashboard alerting and work queues operate effectively for your team.</p>
-<h3 id="table-4-alert-and-work-queue-verification-checklist">Table 4: Alert and work queue verification checklist<a class="headerlink" href="#table-4-alert-and-work-queue-verification-checklist" title="Permanent link">¤</a></h3>
+<h2 id="alert-and-work-queue-checklist">Alert and <abbr title="A list of records that match a query, such as overdue work orders, shown in one view so you can review and act on them.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; saved list, filtered list, or worklist">work queue</abbr> checklist<a class="headerlink" href="#alert-and-work-queue-checklist" title="Permanent link">¤</a></h2>
+<p>Use this checklist to confirm that dashboard alerting and <abbr title="Lists of records that match a query, such as overdue work orders, shown in one view so you can review and act on them.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; saved lists, filtered lists, or worklists">work queues</abbr> operate effectively for your team.</p>
+<h3 id="table-4-alert-and-work-queue-verification-checklist">Table 4: Alert and <abbr title="A list of records that match a query, such as overdue work orders, shown in one view so you can review and act on them.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; saved list, filtered list, or worklist">work queue</abbr> verification checklist<a class="headerlink" href="#table-4-alert-and-work-queue-verification-checklist" title="Permanent link">¤</a></h3>
 <table>
 <thead>
 <tr>
@@ -1463,12 +1476,12 @@
 <tr>
 <td style="text-align: left;">[ ]</td>
 <td style="text-align: left;">Public visibility enabled</td>
-<td style="text-align: left;">KPIs and work queues are marked public or assigned to the correct <abbr title="A collection of users who share the same application access and permissions.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; permission group, access group, user group, or role">security group</abbr></td>
+<td style="text-align: left;">KPIs and <abbr title="Lists of records that match a query, such as overdue work orders, shown in one view so you can review and act on them.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; saved lists, filtered lists, or worklists">work queues</abbr> are marked public or assigned to the correct <abbr title="A collection of users who share the same application access and permissions.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; permission group, access group, user group, or role">security group</abbr></td>
 </tr>
 <tr>
 <td style="text-align: left;">[ ]</td>
 <td style="text-align: left;">Active queue <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr></td>
-<td style="text-align: left;">All required work queues in Work Queue Manager are set to Active</td>
+<td style="text-align: left;">All required <abbr title="Lists of records that match a query, such as overdue work orders, shown in one view so you can review and act on them.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; saved lists, filtered lists, or worklists">work queues</abbr> in Work Queue Manager are set to Active</td>
 </tr>
 <tr>
 <td style="text-align: left;">[ ]</td>
@@ -1478,14 +1491,14 @@
 <tr>
 <td style="text-align: left;">[ ]</td>
 <td style="text-align: left;">Direct actions tested</td>
-<td style="text-align: left;">Supervisors can assign <abbr title="Work time and effort assigned to a work order.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; technician time, work hours, or crew time">labor</abbr> and approve <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> directly from the dashboard card</td>
+<td style="text-align: left;">Supervisors can take the actions that each queue offers, such as creating a <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> from a service request, directly from the dashboard card</td>
 </tr>
 </tbody>
 </table>
 <hr>
 <h2 id="continue-building-your-skills">Continue building your skills<a class="headerlink" href="#continue-building-your-skills" title="Permanent link">¤</a></h2>
 <h3 id="detect-developing-equipment-problems">Detect developing equipment problems<a class="headerlink" href="#detect-developing-equipment-problems" title="Permanent link">¤</a></h3>
-<p>Condition monitoring feeds automated defect alerts into your emergency work queues. Learn how to configure gauge and characteristic measurement limits.</p>
+<p>Condition monitoring feeds automated defect alerts into your <abbr title="Lists of records that match a query, such as overdue work orders, shown in one view so you can review and act on them.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; saved lists, filtered lists, or worklists">work queues</abbr>. Learn how to configure gauge and characteristic measurement limits.</p>
 <p><a href="detect-issues-early.html">How do I detect issues early?</a></p>
 <h3 id="prioritize-incoming-work-requests">Prioritize incoming work requests<a class="headerlink" href="#prioritize-incoming-work-requests" title="Permanent link">¤</a></h3>
 <p>Combine dashboard alerts with structured prioritization criteria based on <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> criticality and safety requirements.</p>

@@ -820,6 +820,17 @@
       
         
   
+    <cds-side-nav-menu-item href="../manage-inventory/count-stock.html" class="nav-level-3">
+      Compter le stock
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
     <cds-side-nav-menu-item href="../manage-inventory/why-cant-issue-materials.html" class="nav-level-3">
       Impossible de sortir des matériaux
     </cds-side-nav-menu-item>
@@ -1332,8 +1343,7 @@
 <li>Set <strong>Accessible From</strong> to the context where this template will be used, such as <strong>APPS</strong> or <strong>ALL</strong>.</li>
 <li>Enter a <strong>Send From</strong> email address. This is the address recipients will see as the sender.</li>
 <li>Enter a <strong>Subject</strong> line. Use substitution variables to include record data, for example:
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Work order :wonum has been assigned to you
-</code></pre></div></li>
+   <pre class="highlight"><code>Work order :wonum has been assigned to you</code></pre></li>
 <li>Enter the message body. You can use substitution variables here too, for example <code>:description</code> to include the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> description.</li>
 <li>Go to the <strong>Recipients</strong> tab.</li>
 <li>Add recipients using one or more of the following:</li>
@@ -1365,11 +1375,9 @@
 <li>In MAS, click the <strong>Administration</strong> icon and go to <strong>Configurations</strong>.</li>
 <li>In the <strong>Users and Identity</strong> section, click <strong>Push Notifications</strong>.</li>
 <li>In the <strong>Bundle Identifier</strong> field, enter:
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>com.ibm.iot.maximo.mobile
-</code></pre></div></li>
+   <pre class="highlight"><code>com.ibm.iot.maximo.mobile</code></pre></li>
 <li>In the <strong>URL</strong> field, enter:
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>https://pushnotification.suite.maximo.com/pushnotification/sendMessage
-</code></pre></div></li>
+   <pre class="highlight"><code>https://pushnotification.suite.maximo.com/pushnotification/sendMessage</code></pre></li>
 <li>In the <strong>API Key</strong> field, paste the key you generated in Step 1.</li>
 <li>Save the configuration.</li>
 </ol>

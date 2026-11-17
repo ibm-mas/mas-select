@@ -22,3 +22,4 @@ Locations.xlsx
 
 # Internal deployment guide
 GITHUB_PAGES_DEPLOYMENT_GUIDE.md
+.venv/

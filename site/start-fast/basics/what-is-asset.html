@@ -820,6 +820,17 @@
       
         
   
+    <cds-side-nav-menu-item href="../../get-work-done/manage-inventory/count-stock.html" class="nav-level-3">
+      Count stock
+    </cds-side-nav-menu-item>
+  
+
+      
+    
+      
+      
+        
+  
     <cds-side-nav-menu-item href="../../get-work-done/manage-inventory/why-cant-issue-materials.html" class="nav-level-3">
       Can't issue materials
     </cds-side-nav-menu-item>
@@ -1262,6 +1273,8 @@
     
       <cds-select-item value="#asset-hierarchy">Asset hierarchy</cds-select-item>
     
+      <cds-select-item value="#rotating-and-non-rotating-assets">Rotating and non-rotating assets</cds-select-item>
+    
       <cds-select-item value="#naming-assets">Naming assets</cds-select-item>
     
       <cds-select-item value="#related-topics">Related topics</cds-select-item>
@@ -1316,6 +1329,51 @@
 <p>To plan your own hierarchy, see <a href="../../get-work-done/setup-control/plan-your-asset-hierarchy.html">How do I plan my <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> hierarchy?</a></p>
 <div style="clear: both;"></div>
 
+<h2 id="rotating-and-non-rotating-assets">Rotating and non-rotating <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">assets</abbr><a class="headerlink" href="#rotating-and-non-rotating-assets" title="Permanent link">¤</a></h2>
+<p>Some <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">assets</abbr> stay where they are installed. Others move between machines, storerooms, and a repair shop. Select calls the second group rotating <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">assets</abbr>.</p>
+<p>A rotating <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> is an interchangeable <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> that you can move in and out of service as needed. You repair or refurbish it rather than replace it. Every rotating <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> starts from an <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr> in <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">Item</abbr> Master that is marked as rotating, and each unit then has its own <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> record. A non-rotating <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> is not created from a <abbr title="A repairable spare part that can be tracked individually by serial number.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; repairable spare, rotable, or serialized spare">rotating item</abbr>. It is a single record that you track where it is installed.</p>
+<h3 id="table-1-rotating-and-non-rotating-assets-compared">Table 1: Rotating and non-rotating <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">assets</abbr> compared<a class="headerlink" href="#table-1-rotating-and-non-rotating-assets-compared" title="Permanent link">¤</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: left;">Rotating <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr></th>
+<th style="text-align: left;">Non-rotating <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Where it comes from</strong></td>
+<td style="text-align: left;">A <abbr title="A repairable spare part that can be tracked individually by serial number.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; repairable spare, rotable, or serialized spare">rotating item</abbr> in <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">Item</abbr> Master</td>
+<td style="text-align: left;">An <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> record that you create in <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">Assets</abbr></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>How you track it</strong></td>
+<td style="text-align: left;">By its own <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> number, and as a group by the shared <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr> number</td>
+<td style="text-align: left;">By its <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> number</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Where it is</strong></td>
+<td style="text-align: left;">On a machine, in a storeroom, or in the repair shop</td>
+<td style="text-align: left;">Installed in a <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>When it fails</strong></td>
+<td style="text-align: left;">You repair or refurbish it, then return it to the storeroom</td>
+<td style="text-align: left;">You maintain it in its <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Examples</strong></td>
+<td style="text-align: left;">50 HP drive motor, sanitary pump, gearbox</td>
+<td style="text-align: left;">Filler FL-02, Conveyor CV-02, Spiral freezer SF-01</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example-a-drive-motor-that-returns-to-stock">Example: A drive motor that returns to stock<a class="headerlink" href="#example-a-drive-motor-that-returns-to-stock" title="Permanent link">¤</a></h3>
+<p>The Drive motor on Filler FL-02 fails. A technician installs a spare 50 HP motor from Main storeroom, and the failed motor goes to the repair shop. After the repair, the motor is moved back to Main storeroom, ready to be issued again. Because each motor has its own <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> record, you can see where each one has been and what work was done on it.</p>
+<p>A part such as a flange gasket or an o-ring is different. It is a non-<abbr title="A repairable spare part that can be tracked individually by serial number.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; repairable spare, rotable, or serialized spare">rotating item</abbr>. You track it by quantity in the storeroom, and it has no <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> record. When a technician uses it on a <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr>, it is consumed.</p>
+<h3 id="tip-ask-whether-you-would-repair-it-and-use-it-again">💡 Tip: Ask whether you would repair it and use it again<a class="headerlink" href="#tip-ask-whether-you-would-repair-it-and-use-it-again" title="Permanent link">¤</a></h3>
+<p>If you would repair the unit and put it back in stock, make it a <abbr title="A repairable spare part that can be tracked individually by serial number.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; repairable spare, rotable, or serialized spare">rotating item</abbr> before you create <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">inventory</abbr> balances. If you would use it up and replace it with new stock, track it as a non-<abbr title="A repairable spare part that can be tracked individually by serial number.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; repairable spare, rotable, or serialized spare">rotating item</abbr>. For the full decision, see <a href="../../get-work-done/setup-control/decide-location-asset-spare-part.html">How do I decide: <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr>, <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr>, or spare part?</a></p>
 <h2 id="naming-assets">Naming <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">assets</abbr><a class="headerlink" href="#naming-assets" title="Permanent link">¤</a></h2>
 <p><strong>✓ Do</strong></p>
 <ul>
@@ -1340,6 +1398,7 @@
 <li><a href="how-concepts-work-together.html">How do <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr>, <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">assets</abbr>, and <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> work together?</a></li>
 <li><a href="../../get-work-done/setup-control/decide-location-asset-spare-part.html">How do I decide: <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr>, <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr>, or spare part?</a></li>
 <li><a href="../../get-work-done/setup-control/plan-your-asset-hierarchy.html">How do I plan my <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> hierarchy?</a></li>
+<li><a href="../../get-work-done/setup-control/plan-your-storeroom-strategy.html">How do I plan my storeroom and <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">inventory</abbr> strategy?</a></li>
 <li><a href="../../get-work-done/manage-assets/track-asset-history.html">How do I track <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> history?</a></li>
 <li><a href="../../work-smarter/scale-operation/manage-more-assets.html">How do I manage more <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">assets</abbr>?</a></li>
 </ul>
@@ -1398,6 +1457,28 @@
                 <a href="#asset-hierarchy" class="md-toc__link" data-md-level="1">
                   Asset hierarchy
                 </a>
+              </li>
+              <li class="md-toc__item">
+                <a href="#rotating-and-non-rotating-assets" class="md-toc__link" data-md-level="1">
+                  Rotating and non-rotating assets
+                </a>
+                  <ul class="md-toc__list">
+                      <li class="md-toc__item">
+                        <a href="#table-1-rotating-and-non-rotating-assets-compared" class="md-toc__link" data-md-level="2">
+                          Table 1: Rotating and non-rotating assets compared
+                        </a>
+                      </li>
+                      <li class="md-toc__item">
+                        <a href="#example-a-drive-motor-that-returns-to-stock" class="md-toc__link" data-md-level="2">
+                          Example: A drive motor that returns to stock
+                        </a>
+                      </li>
+                      <li class="md-toc__item">
+                        <a href="#tip-ask-whether-you-would-repair-it-and-use-it-again" class="md-toc__link" data-md-level="2">
+                          💡 Tip: Ask whether you would repair it and use it again
+                        </a>
+                      </li>
+                  </ul>
               </li>
               <li class="md-toc__item">
                 <a href="#naming-assets" class="md-toc__link" data-md-level="1">
