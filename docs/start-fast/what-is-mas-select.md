@@ -6,9 +6,9 @@ search:
 
 # What is Maximo Application Suite Select?
 
-Maximo Application Suite Select is a ready-to-use Software-as-a-Service (SaaS) solution for tracking equipment, managing work, and keeping operations running smoothly.
+Keep production and operations moving with Maximo Application Suite Select, the computerized maintenance management system, or CMMS, that connects maintenance, inspections, and inventory.
 
-No installation. No configuration. No customization needed. Just log in and start working:
+Maximo Application Suite Select is delivered as a Software-as-a-Service solution. With it, you can:
 
 - Track assets
 - Create and complete work orders
@@ -17,6 +17,16 @@ No installation. No configuration. No customization needed. Just log in and star
 - Monitor performance
 
 ## Who is this for?
+
+Maximo Application Suite Select is designed for lean maintenance and facility teams in smaller to mid-sized operations, beginning with a single site. It supports maintenance and facilities teams and plant operations in industries such as:
+
+- Light manufacturing, such as fabrication, plastics, packaging, and assembly
+- Food and beverage and cold chain
+- Warehousing and logistics
+- Commercial facilities
+- Regional or municipal utilities
+
+Within these teams, people use the product in four roles:
 
 - **Technicians** can find and complete work orders, for example, complete work on Filler FL-02.
 - **Supervisors** can plan, assign, and track maintenance work, for example, assign preventive maintenance for Spiral freezer SF-01.
