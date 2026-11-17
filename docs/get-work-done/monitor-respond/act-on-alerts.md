@@ -14,6 +14,8 @@ Acting on alerts promptly prevents small anomalies, such as an overdue preventiv
 
 When you first sign in, Select shows the Operational Dashboard that matches your security group. Your administrator assigns the group. Select includes some dashboard content, and an administrator can edit the dashboard to add cards such as KPIs and work queues.
 
+A work queue is a list of records that match a query, such as overdue work orders. It groups similar issues into one view, so supervisors can review, assign, and address them from the dashboard.
+
 ### 💡 Tips for success
 
 - Check your Operational Dashboard at the start of each shift. Review red threshold breaches first, followed by yellow caution indicators.
@@ -85,6 +87,12 @@ Consider how a supervisor at the ice cream main plant responds to morning dashbo
 ## How to configure work queues in Work Queue Manager
 
 Select includes some work queues. Administrators can use them as they are, or create and manage their own for the operational dashboards.
+
+Create your own work queues when the ones that Select includes do not cover the work your team needs to watch. A work queue lets you:
+
+- Show the work that needs attention in one place, with a count on the Work queues card, so supervisors do not have to search for it.
+- Limit a queue to a person group, so each team sees the queues that apply to them.
+- Act from the dashboard, because supervisors can assign labor and update status without opening the full record.
 
 ### Step 1: Create the work queue definition
 
