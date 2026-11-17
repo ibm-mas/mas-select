@@ -264,12 +264,7 @@ Use this information to:
 
 ### Rotating items
 
-For serialized assets:
-
-- Track individual items
-- Monitor asset condition
-- See installation history
-- Manage asset rotation
+Rotating items are units that you repair and reuse, such as a 50 HP drive motor. Each unit has its own asset record, so you can see where it has been and what work was done on it. For examples, see [What is an asset?](../../start-fast/basics/what-is-asset.md#rotating-and-non-rotating-assets)
 
 ### Item kits
 

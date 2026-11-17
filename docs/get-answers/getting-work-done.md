@@ -44,7 +44,9 @@ A count book defines a structured approach to validating inventory accuracy. It 
 
 ### What is the difference between rotating and non-rotating items?
 
-Rotating items are interchangeable assets that are tracked individually over their lifecycle. Non-rotating items are tracked only by quantity and are consumed when used. This distinction reflects whether individual history and movement are important to manage.
+Rotating items are interchangeable assets that you repair and reuse, so each unit is tracked individually over its lifecycle. A 50 HP drive motor is an example. Non-rotating items are tracked only by quantity and are consumed when used. A flange gasket is an example. This distinction reflects whether individual history and movement are important to manage.
+
+[I want to know more about rotating and non-rotating assets](../start-fast/basics/what-is-asset.md#rotating-and-non-rotating-assets)
 
 [I want to know more about storeroom and inventory strategy](../get-work-done/setup-control/plan-your-storeroom-strategy.md)
 
