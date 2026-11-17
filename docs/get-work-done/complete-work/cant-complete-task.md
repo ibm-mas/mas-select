@@ -11,6 +11,8 @@ Add notes explaining the issue, change the work order status to show it's blocke
 
 Sometimes you can't finish work because parts aren't available, you need help, or you discover a bigger problem. That's normal. The important thing is to document what's blocking you so others can help resolve it.
 
+*Looking to document blocked work right away? [Skip to blocked work checklist ↓](#blocked-work-checklist)*
+
 ## 💡 Tips for handling blocked work
 
 - Document issues as soon as you discover them. Don't wait until later.
@@ -176,6 +178,25 @@ Help prevent similar issues:
 - Verify you have the correct tools and equipment before starting
 - Ask questions if instructions are unclear. Don't guess.
 - Report recurring problems to your supervisor so they can be fixed systematically
+
+---
+
+## Blocked work checklist
+
+Use this checklist to confirm that blocked work is documented so your supervisor can resolve it:
+
+### Table 1: Blocked work checklist
+
+| Check | Item | What to verify |
+| :--- | :--- | :--- |
+| [ ] | Block described | Notes explain what you were trying to do and what is blocking you |
+| [ ] | Progress recorded | Notes list what you have already completed and what is still needed |
+| [ ] | Needs stated | Notes say exactly what is needed to continue, such as parts, tools, help, or access |
+| [ ] | Evidence added | Photos of the problem are attached, if you can take them |
+| [ ] | Status changed | Work order status is On Hold, Waiting on Parts, Waiting on Assignment, or Waiting, not In Progress |
+| [ ] | Supervisor notified | Your supervisor has been told about the block |
+| [ ] | Other work picked up | You have moved to other work while you wait |
+| [ ] | Notes kept current | Notes are updated if the situation changes or you learn more |
 
 ---
 
