@@ -173,7 +173,7 @@ For urgent repairs:
 
 Figure 2 outlines the sequential resolution workflows for three common parts issue scenarios:
 
-- **Scenario 1 (Part not in stock)**: First check other storerooms across plant sites for available stock, then initiate a purchase requisition or storeroom transfer, and finally update the work order status to Waiting on Material.
+- **Scenario 1 (Part not in stock)**: First check other storerooms for available stock, then initiate a purchase requisition or storeroom transfer, and finally update the work order status to Waiting on Material.
 - **Scenario 2 (Quantity mismatch)**: For an under-issue where additional parts are needed, create an extra issue line for the difference. For an over-issue where too many parts were taken, use the Return action on the actuals tab to return extra parts to the storeroom. The system automatically adjusts storeroom balance and work order cost.
 - **Scenario 3 (Emergency repair)**: For urgent breakdowns, issue parts immediately to perform the repair, record the material actuals on the work order once the equipment is safe, and add explanatory documentation notes to the work log.
 
