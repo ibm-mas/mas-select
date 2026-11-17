@@ -16,6 +16,10 @@ Maximo Application Suite Select is delivered as a Software-as-a-Service solution
 - Manage parts inventory
 - Monitor performance
 
+![Roles use one product that covers assets, work orders, inspections, and inventory, with dashboards to monitor performance](../images/sample_what_is_mas_select.svg)
+
+<p class="figure-caption">Figure 1: How Maximo Application Suite Select connects roles, product areas, and performance monitoring</p>
+
 ## Who is this for?
 
 Maximo Application Suite Select is designed for lean maintenance and facility teams in smaller to mid-sized operations, beginning with a single site. It supports maintenance and facilities teams and plant operations in industries such as:
@@ -28,10 +32,14 @@ Maximo Application Suite Select is designed for lean maintenance and facility te
 
 Within these teams, people use the product in four roles:
 
-- **Technicians** can find and complete work orders, for example, complete work on Filler FL-02.
-- **Supervisors** can plan, assign, and track maintenance work, for example, assign preventive maintenance for Spiral freezer SF-01.
-- **Inventory clerks** can manage parts and supplies, for example, issue parts from Main storeroom.
-- **Administrators** can load data and set up users, for example, load users for Ice cream plant A.
+### Table 1: Roles and what each role can do
+
+| Role | What the role can do | Example |
+|------|----------------------|---------|
+| **Technicians** | Find and complete work orders | Complete work on Filler FL-02 |
+| **Supervisors** | Plan, assign, and track maintenance work | Assign preventive maintenance for Spiral freezer SF-01 |
+| **Inventory clerks** | Manage parts and supplies | Issue parts from Main storeroom |
+| **Administrators** | Load data and set up users | Load users for Ice cream plant A |
 
 To see what you can do in your role, go to [What can I do in my role?](what-can-i-do/overview.md)
 
