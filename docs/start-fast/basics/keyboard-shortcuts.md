@@ -35,8 +35,9 @@ Use these shortcuts to move through fields, select controls, and get contextual 
 | Select or clear a check box | Spacebar |
 | Show a description of the selected field | Alt+F1 |
 
-!!! tip "Mac users"
-    On a Mac, press **Option+Fn+F1** to show a description of the selected field.
+### 💡 Tip: Mac users
+
+On a Mac, press **Option+Fn+F1** to show a description of the selected field.
 
 ---
 

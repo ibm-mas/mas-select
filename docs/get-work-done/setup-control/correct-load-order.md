@@ -53,8 +53,9 @@ Import locations from top to bottom of the hierarchy:
 - Confirm that system location references use valid values
 - Confirm that each child location references the correct parent
 
-!!! tip "Import hierarchies sequentially"
-    Hierarchies require sequential loading from the top down. Import parent locations first, then their children.
+### 💡 Tip: Import hierarchies sequentially
+
+Hierarchies require sequential loading from the top down. Import parent locations first, then their children.
 
 ### 3. Assets and asset relationships
 

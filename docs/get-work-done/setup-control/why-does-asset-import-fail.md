@@ -63,8 +63,9 @@ Parent-child relationships must be defined correctly in the import file.
 
 **What to do**: Verify all parent locations exist before importing child locations.
 
-!!! tip "Import hierarchies sequentially"
-    Hierarchies require sequential loading from the top down. Import parent locations first, then their children.
+### 💡 Tip: Import hierarchies sequentially
+
+Hierarchies require sequential loading from the top down. Import parent locations first, then their children.
 
 ### Location referenced data does not exist
 

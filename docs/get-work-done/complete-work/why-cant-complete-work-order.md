@@ -2,7 +2,7 @@
 
 You might see errors like "Status cannot be changed" or not see the Complete option at all.
 
-*Looking to troubleshoot completion blockers right away? [Skip to work order completion blocker checklist ↓](#work-order-completion-blocker-checklist)*
+*Looking to troubleshoot completion blockers right away? [Skip to completion blocker checklist ↓](#completion-blocker-checklist)*
 
 ## Common causes
 
@@ -70,8 +70,9 @@ Completion can fail if required data is missing, even if the physical work is co
 
 **What to do**: Review the work order to ensure all required information is entered, then try completing again.
 
-!!! tip "Document as you go"
-    Record labor, materials, and other information while doing the work, not after. This prevents completion delays and ensures accurate records.
+### 💡 Tip: Document as you go
+
+Record labor, materials, and other information while doing the work, not after. This prevents completion delays and ensures accurate records.
 
 ---
 
@@ -88,11 +89,11 @@ Differences are usually caused by security groups or roles.
 
 ---
 
-## Work order completion blocker checklist
+## Completion blocker checklist
 
 Use this checklist to identify and resolve blockers preventing work order completion:
 
-### Table 1: Work order completion blocker checklist
+### Table 1: Completion blocker checklist
 
 | Check | Item | What to verify |
 | :--- | :--- | :--- |

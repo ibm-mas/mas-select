@@ -12,8 +12,9 @@ When permissions change, active sessions might not pick up the new access rights
 
 **What to do**: Have the technician log out of all sessions completely, then log back in. This forces the system to reload their current permissions.
 
-!!! tip "Clear all sessions"
-    Logging out of all sessions (including mobile devices and any open browser tabs) often resolves visibility issues immediately.
+### 💡 Tip: Clear all sessions
+
+Logging out of all sessions, including mobile devices and any open browser tabs, often resolves visibility issues immediately.
 
 ### Missing site or data access
 
