@@ -90,9 +90,9 @@ Select includes some work queues. Administrators can use them as they are, or cr
 
 Create your own work queues when the ones that Select includes do not cover the work your team needs to watch. A work queue lets you:
 
-- Show the work that needs attention in one place, with a count on the Work queues card, so supervisors do not have to search for it.
+- See the records that need attention in one view, so supervisors do not have to search for them.
 - Limit a queue to a person group, so each team sees the queues that apply to them.
-- Act from the dashboard, because supervisors can assign labor and update status without opening the full record.
+- Take action on the records, such as changing status, without opening each full record.
 
 ### Step 1: Create the work queue definition
 
