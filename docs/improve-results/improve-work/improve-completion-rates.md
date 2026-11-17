@@ -32,7 +32,7 @@ When work orders stall, the cause usually falls into one of four operational cat
 | **Material availability** | Work order stuck in `WMATL` status | Required spare parts are out of stock or not reserved in advance | Use the Storerooms application to check balances and reserve parts before approving work |
 | **Craft mismatch** | Long duration in `INPRG` status | Technician lacks the specialized certification or tools for the task | Check craft and skill requirements in Labor and match assignments accordingly |
 | **Unclear scope** | Task marked incomplete or rejected | Work order description lacks specific instructions or safety procedures | Attach a standardized Job Plan with documented task steps and safety requirements |
-| **Approval delay** | Accumulation of `WAPPR` records | Supervisors lack a consolidated daily review routine | Use the Work queues card on the supervisor Operational Dashboard to approve work in batches |
+| **Approval delay** | Accumulation of `WAPPR` records | Supervisors lack a consolidated daily review routine | Use a work queue on the supervisor Operational Dashboard, such as Open work orders, to review the records that wait for approval |
 
 ---
 
@@ -93,7 +93,7 @@ Supervisors who follow a consistent 15-minute daily triage routine maintain sign
 
 | Time | Action | Application | Focus |
 | :--- | :--- | :--- | :--- |
-| **Shift start (10 min)** | Review `WAPPR` and `WMATL` queues | Operational Dashboard | Approve verified work and allocate to technicians based on craft availability |
+| **Shift start (10 min)** | Review `WAPPR` and `WMATL` work orders | Operational Dashboard | Approve verified work and allocate to technicians based on craft availability |
 | **Mid-shift (5 min)** | Check long-running `INPRG` records | Work Orders | Identify technicians who encounter unexpected blockers or scope changes |
 | **Shift end (10 min)** | Review `COMP` work orders | Work Orders | Verify actual labor hours, materials used, and failure codes before closing |
 
@@ -107,7 +107,7 @@ Use this checklist to ensure that your organization maintains high work order co
 
 | Check | Item | What to verify |
 | :--- | :--- | :--- |
-| [ ] | Daily queue review | Supervisor checks the WAPPR work queue on the dashboard at the start of every shift |
+| [ ] | Daily queue review | Supervisor reviews the work orders in WAPPR status on the dashboard at the start of every shift |
 | [ ] | Materials confirmed | No work order is released to INPRG without confirmed parts availability in Storerooms |
 | [ ] | Craft alignment | Assigned labor craft matches the skill requirements listed on the job plan |
 | [ ] | Mobile completion | Technicians log labor actuals, materials used, and failure codes directly on mobile |

@@ -34,22 +34,7 @@ Work queues help you:
 
 ## How work queues work
 
-Your administrator creates work queues that filter and show relevant work. Common types:
-
-**My work orders**  
-All work orders assigned to you.
-
-**Overdue work**  
-Work that should be done already.
-
-**High priority**  
-Urgent work that needs immediate attention.
-
-**Team work**  
-Work assigned to your crew or department.
-
-**Pending approval**  
-Work waiting for your review.
+Some work queues are available when you first sign in. For example, Overdue work orders lists the approved or in progress work orders that are past their target completion date. Your administrator can also create work queues that filter and show the work that matters to your team.
 
 ---
 
