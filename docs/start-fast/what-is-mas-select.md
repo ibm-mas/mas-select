@@ -6,7 +6,7 @@ search:
 
 # What is Maximo Application Suite Select?
 
-Keep production and operations moving with Maximo Application Suite Select, the computerized maintenance management system, or CMMS, that connects maintenance, inspections, and inventory.
+Keep production and operations moving with Maximo Application Suite Select, the computerized maintenance management system (CMMS) that connects maintenance, inspections, asset performance, and inventory.
 
 Maximo Application Suite Select is delivered as a Software-as-a-Service solution. With it, you can:
 

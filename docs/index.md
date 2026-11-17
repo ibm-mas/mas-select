@@ -4,7 +4,7 @@
 
 <span class="subtitle-help-center" style="display: block; margin-top: 0; margin-bottom: 4px;">Help center</span>
 
-<p style="margin-top: 8px; margin-bottom: 8px;">Keep production and operations moving with Maximo Application Suite Select, the computerized maintenance management system, or CMMS, that connects maintenance, inspections, and inventory.</p>
+<p style="margin-top: 8px; margin-bottom: 8px;">Keep production and operations moving with Maximo Application Suite Select, the computerized maintenance management system (CMMS) that connects maintenance, inspections, asset performance, and inventory.</p>
 
 <p style="margin-top: 8px; margin-bottom: 16px;">Find how-to instructions, troubleshooting guidance, and key concepts for Maximo Application Suite Select.</p>
 
