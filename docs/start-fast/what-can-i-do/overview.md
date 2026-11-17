@@ -8,7 +8,7 @@ Whether you're fixing equipment, tracking parts, or planning preventive maintena
 
 ---
 
-## What can I do as a technician?
+## <img src="../../images/technician_final.png" alt="" class="role-heading-icon no-lightbox"> What can I do as a technician?
 
 - View your assigned work orders in the Technician app
 - Complete tasks and record what you did
@@ -22,7 +22,7 @@ Whether you're fixing equipment, tracking parts, or planning preventive maintena
 
 ---
 
-## What can I do as a supervisor?
+## <img src="../../images/supervisor_final.png" alt="" class="role-heading-icon no-lightbox"> What can I do as a supervisor?
 
 - Create and assign work orders in the Work Orders application
 - Schedule preventive maintenance
@@ -35,7 +35,7 @@ Whether you're fixing equipment, tracking parts, or planning preventive maintena
 
 ---
 
-## What can I do as an inventory clerk?
+## <img src="../../images/inventory%20clerk.png" alt="" class="role-heading-icon no-lightbox"> What can I do as an inventory clerk?
 
 - Issue parts to work orders in the Issues and Transfers app
 - Track stock levels and locations
@@ -48,7 +48,7 @@ Whether you're fixing equipment, tracking parts, or planning preventive maintena
 
 ---
 
-## What can I do as an administrator?
+## <img src="../../images/Admin_final.png" alt="" class="role-heading-icon no-lightbox"> What can I do as an administrator?
 
 - Load user and asset data
 - Set up communication templates
