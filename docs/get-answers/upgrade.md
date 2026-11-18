@@ -15,10 +15,10 @@ Find quick answers to common questions about the features and capabilities avail
   </div>
   <div class="story-content">
     <p class="story-quote-text">
-      "I wish I could create a PR that is directly connected to this filler valve."
+      <strong>Example scenario:</strong> "I wish I could create a PR that is directly connected to this filler valve."
     </p>
     <p class="story-author-text">
-      — Maintenance technician
+      Maintenance technician
     </p>
     <p class="story-solution-text">
       <strong>The Solution:</strong> Link your purchase requests directly to physical asset records on the fly. This connects maintenance needs immediately to procurement data, getting you the correct parts faster.
@@ -44,6 +44,23 @@ Yes, integration can exchange purchasing information with an existing procuremen
 
 ### What financial features are available with an upgrade?
 
+<div class="story-callout">
+  <div class="story-avatar-container">
+    <img src="../images/inventory_clerk_final.png" alt="Inventory clerk" class="story-avatar-img">
+  </div>
+  <div class="story-content">
+    <p class="story-quote-text">
+      <strong>Example scenario:</strong> "When I issue parts to a job, I want the cost to land on the right account."
+    </p>
+    <p class="story-author-text">
+      Inventory clerk
+    </p>
+    <p class="story-solution-text">
+      <strong>The Solution:</strong> Classify costs with financial accounts and keep them connected to work orders and assets. You can see where each cost was allocated and which job generated it.
+    </p>
+  </div>
+</div>
+
 Track maintenance costs using financial accounts to classify transactions, use budgets to help you monitor spending, and keep cost information connected to work orders, assets, or projects. For example, you can track the total maintenance spend on **Spiral freezer SF-01** against your annual facility budget. Support for financial periods, currencies, and exchange rates helps align maintenance activity with your organization’s financial structure.
 
 ### How are maintenance costs recorded against work orders?
@@ -61,6 +78,23 @@ Integration connects maintenance activity with financial processes managed in yo
 </summary>
 
 ### What scheduling features are included with an upgrade?
+
+<div class="story-callout">
+  <div class="story-avatar-container">
+    <img src="../images/supervisor_final.png" alt="Supervisor" class="story-avatar-img">
+  </div>
+  <div class="story-content">
+    <p class="story-quote-text">
+      <strong>Example scenario:</strong> "I can see all the open work, but I can't tell who is free to take it on."
+    </p>
+    <p class="story-author-text">
+      Maintenance supervisor
+    </p>
+    <p class="story-solution-text">
+      <strong>The Solution:</strong> Use Graphical Assignment to match technicians and crews to work based on skills and availability. You can see who is free before you dispatch the job.
+    </p>
+  </div>
+</div>
 
 Graphical schedules and dashboards help planners organize upcoming work and balance workloads against available resources, while assignment and dispatching tools help match technicians and crews with the work based on skills, availability, and work requirements.
 
@@ -80,6 +114,23 @@ Use the Planning dashboard to review work, resources, and costs when developing 
 
 ### What safety features are available with an upgrade?
 
+<div class="story-callout">
+  <div class="story-avatar-container">
+    <img src="../images/technician_final.png" alt="Technician" class="story-avatar-img">
+  </div>
+  <div class="story-content">
+    <p class="story-quote-text">
+      <strong>Example scenario:</strong> "Before I open this mixer, I need to know the exact lockout steps and what protective gear to wear."
+    </p>
+    <p class="story-author-text">
+      Maintenance technician
+    </p>
+    <p class="story-solution-text">
+      <strong>The Solution:</strong> Apply a safety plan to the work order so hazards, precautions, and tagout procedures appear in the work record. You can review them while you plan and perform the job.
+    </p>
+  </div>
+</div>
+
 Include hazards, precautions, permits, and tagout procedures in maintenance planning and work performance. Keeping incident and near-miss information connected to the operational context in which it occurred makes relevant safety information easier to access and review.
 
 ### How does safety information connect with work orders?
@@ -98,6 +149,23 @@ Integration can exchange incident information with an existing system without re
 
 ### What asset health features are available with an upgrade?
 
+<div class="story-callout">
+  <div class="story-avatar-container">
+    <img src="../images/supervisor_final.png" alt="Supervisor" class="story-avatar-img">
+  </div>
+  <div class="story-content">
+    <p class="story-quote-text">
+      <strong>Example scenario:</strong> "I want to know which compressor is likely to fail before it stops the line."
+    </p>
+    <p class="story-author-text">
+      Maintenance supervisor
+    </p>
+    <p class="story-solution-text">
+      <strong>The Solution:</strong> Use health scores and predictive insights to see which assets have an increased probability of failure. Then decide whether to inspect the asset or adjust planned maintenance.
+    </p>
+  </div>
+</div>
+
 Bring asset condition, criticality, and risk together to identify assets that need attention. Health scores and work queues help teams prioritize reviews, while advanced analysis can reveal failure patterns and support maintenance and asset decisions.
 
 ### How can predictive insights support maintenance work?
@@ -115,6 +183,23 @@ Start with reliable asset and maintenance information already available in your 
 </summary>
 
 ### What configuration features are available with an upgrade?
+
+<div class="story-callout">
+  <div class="story-avatar-container">
+    <img src="../images/Admin_final.png" alt="Administrator" class="story-avatar-img">
+  </div>
+  <div class="story-content">
+    <p class="story-quote-text">
+      <strong>Example scenario:</strong> "I need to test a workflow change before it reaches the people who use it every day."
+    </p>
+    <p class="story-author-text">
+      System administrator
+    </p>
+    <p class="story-solution-text">
+      <strong>The Solution:</strong> Develop and test configuration changes outside production, then move supported changes between environments in a controlled way. Your team can review and verify each change before it reaches users.
+    </p>
+  </div>
+</div>
 
 Configure workflows, applications, and business rules to support your organization's operational processes. Administrators can guide records through defined workflows, tailor parts of the user experience, automate selected actions, and move supported configuration changes between environments.
 

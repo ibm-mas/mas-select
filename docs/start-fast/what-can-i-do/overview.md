@@ -35,7 +35,7 @@ Whether you're fixing equipment, tracking parts, or planning preventive maintena
 
 ---
 
-## <img src="../../images/inventory%20clerk.png" alt="" class="role-heading-icon no-lightbox"> What can I do as an inventory clerk?
+## <img src="../../images/inventory_clerk_final.png" alt="" class="role-heading-icon no-lightbox"> What can I do as an inventory clerk?
 
 - Issue parts to work orders in the Issues and Transfers app
 - Track stock levels and locations

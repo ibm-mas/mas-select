@@ -77,7 +77,7 @@
             clerk: {
                 name: 'Inventory Clerk',
                 icon: '📦',
-                image: 'images/inventory clerk.png',
+                image: 'images/inventory_clerk_final.png',
                 color: '#8a3ffc',
                 firstTask: {
                     title: 'Issue a part',
@@ -161,7 +161,7 @@
             clerk: {
                 name: 'Magasinier',
                 icon: '📦',
-                image: 'images/inventory clerk.png',
+                image: 'images/inventory_clerk_final.png',
                 color: '#8a3ffc',
                 firstTask: {
                     title: 'Sortir une pièce',
@@ -251,7 +251,7 @@
                         '<span class="role-name">' + roles.supervisor.name + '</span>' +
                     '</button>' +
                     '<button class="role-button" data-role="clerk">' +
-                        '<img src="' + imgBase + 'inventory clerk.png" class="role-icon" alt="' + roles.clerk.name + '">' +
+                        '<img src="' + imgBase + 'inventory_clerk_final.png" class="role-icon" alt="' + roles.clerk.name + '">' +
                         '<span class="role-name">' + roles.clerk.name + '</span>' +
                     '</button>' +
                     '<button class="role-button" data-role="administrator">' +
