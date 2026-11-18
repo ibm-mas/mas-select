@@ -161,6 +161,7 @@ plugins:
             Improving results: Améliorer les résultats
             Working smarter: Travailler plus intelligemment
             Security: Sécurité
+            upgrading: Mise à niveau
   - search:
       lang: en
       separator: '[\s\-\.]+'
@@ -305,5 +306,6 @@ nav:
     - Improving results: get-answers/improving-results.md
     - Working smarter: get-answers/working-smarter.md
     - Security: get-answers/security.md
+    - Upgrading: get-answers/upgrade.md
 
 # Made with Bob
