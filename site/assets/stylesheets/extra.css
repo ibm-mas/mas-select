@@ -1688,3 +1688,161 @@ body[data-carbon-theme="white"] .rst-content h2 img.role-heading-icon,
 body[data-carbon-theme="g10"] .rst-content h2 img.role-heading-icon {
     filter: invert(1);
 }
+
+
+/* Storytelling persona callouts */
+.story-callout {
+    background-color: #f4f4f4;
+    border-left: 4px solid #0f62fe;
+    padding: 16px 20px;
+    margin: 24px 0;
+    border-radius: 4px;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    max-width: 760px;
+}
+
+/* Dark mode styling for story-callout */
+body[data-carbon-theme="g90"] .story-callout,
+body[data-carbon-theme="g100"] .story-callout {
+    background-color: #262626;
+    border-left-color: #78a9ff;
+}
+
+.story-avatar-container {
+    flex-shrink: 0;
+    background-color: #0f62fe; /* Solid IBM Blue so white icon pop in light mode */
+    padding: 4px;
+    border-radius: 50%;
+    border: 1px solid #0f62fe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+}
+
+/* Dark mode avatar background */
+body[data-carbon-theme="g90"] .story-avatar-container,
+body[data-carbon-theme="g100"] .story-avatar-container {
+    background-color: #393939; /* Dark grey for dark mode */
+    border-color: #525252;
+}
+
+.story-avatar-img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    display: block !important;
+}
+
+.story-content {
+    flex: 1;
+}
+
+.story-quote-text {
+    margin: 0 0 8px 0 !important;
+    font-style: italic;
+    color: #161616;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+body[data-carbon-theme="g90"] .story-quote-text,
+body[data-carbon-theme="g100"] .story-quote-text {
+    color: #f4f4f4;
+}
+
+.story-author-text {
+    margin: 0 0 12px 0 !important;
+    font-weight: 600;
+    color: #525252;
+    font-size: 12px;
+}
+
+body[data-carbon-theme="g90"] .story-author-text,
+body[data-carbon-theme="g100"] .story-author-text {
+    color: #a8a8a8;
+}
+
+.story-solution-text {
+    margin: 12px 0 0 0 !important;
+    color: #161616;
+    font-size: 14px;
+    line-height: 1.5;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 12px;
+}
+
+body[data-carbon-theme="g90"] .story-solution-text,
+body[data-carbon-theme="g100"] .story-solution-text {
+    color: #f4f4f4;
+    border-top-color: #393939;
+}
+/* Carbon Accordion styles */
+.carbon-accordion-item {
+    border-bottom: 1px solid #e0e0e0;
+    margin: 16px 0;
+    padding-bottom: 16px;
+}
+
+body[data-carbon-theme="g90"] .carbon-accordion-item,
+body[data-carbon-theme="g100"] .carbon-accordion-item {
+    border-bottom-color: #393939;
+}
+
+/* Hide default details caret */
+.carbon-accordion-summary {
+    list-style: none; /* Chrome/Safari */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    outline: none;
+    padding: 12px 16px;
+    background: transparent;
+    border-radius: 4px;
+    transition: background-color 0.15s ease;
+}
+
+.carbon-accordion-summary::-webkit-details-marker {
+    display: none; /* Safari */
+}
+
+/* Custom caret aligned to the right */
+.carbon-accordion-summary::after {
+    content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='16' height='16' fill='%230f62fe'><path d='M12 8l10 8-10 8z'/></svg>");
+    transition: transform 0.2s ease;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+body[data-carbon-theme="g90"] .carbon-accordion-summary::after,
+body[data-carbon-theme="g100"] .carbon-accordion-summary::after {
+    content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='16' height='16' fill='%2378a9ff'><path d='M12 8l10 8-10 8z'/></svg>");
+}
+
+.carbon-accordion-item[open] .carbon-accordion-summary::after {
+    transform: rotate(90deg);
+}
+
+.carbon-accordion-summary:hover {
+    background-color: rgba(15, 98, 254, 0.04);
+}
+
+body[data-carbon-theme="g90"] .carbon-accordion-summary:hover,
+body[data-carbon-theme="g100"] .carbon-accordion-summary:hover {
+    background-color: rgba(120, 169, 255, 0.06);
+}
+
+.carbon-accordion-summary h2 {
+    margin: 0 !important;
+    border: none !important;
+    display: flex !important;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.5rem !important;
+}
