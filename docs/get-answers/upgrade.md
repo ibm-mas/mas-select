@@ -83,7 +83,7 @@ Integration connects maintenance activity with financial processes managed in yo
   </div>
   <div class="story-content">
     <p class="story-quote-text">
-      <strong>Example scenario:</strong> "When a breakdown hits, I'm juggling who has the right skills and who is already booked."
+      <strong>Example scenario:</strong> "When a breakdown hits, I'm juggling who has the correct skills and who is already booked."
     </p>
     <p class="story-author-text">
       Supervisor
