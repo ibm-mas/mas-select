@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 520" width="1080" height="520" role="img" aria-labelledby="t d" style="background:#ffffff; font-family:'IBM Plex Sans', -apple-system, sans-serif;">
   <title id="t">Parts issue and material transaction workflow</title>
-  <desc id="d">When parts are issued from a work order, storeroom counter, or mobile app, the system validates the request and simultaneously updates storeroom balance, records actual costs to the work order, and checks replenishment reorder points.</desc>
+  <desc id="d">When parts are issued from a work order, storeroom counter, or mobile app, the system validates the request and simultaneously updates storeroom balance, records actual costs to the work order, and records the usage in the transaction history.</desc>
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
       <path d="M 0 1 L 10 5 L 0 9 z" fill="#161616"/>
@@ -54,8 +54,8 @@
   <rect class="node" id="n_o3" x="752" y="328" width="280" height="88" rx="8" fill="#ffffff" stroke="#8a3ffc" stroke-width="1"/>
   <path d="M 760 328 Q 752 328 752 336 V 408 Q 752 416 760 416 Z" fill="#8a3ffc"/>
 <g transform="translate(768 360) scale(0.75)" fill="#161616"><path d="M4.67,28l6.39-12,7.3,6.49a2,2,0,0,0,1.7.47,2,2,0,0,0,1.42-1.07L27,10.9,25.18,10,19.69,21l-7.3-6.49A2,2,0,0,0,10.71,14a2,2,0,0,0-1.42,1L4,25V2H2V28a2,2,0,0,0,2,2H30V28Z"/></g>
-  <text x="808" y="364" font-size="14" font-weight="600" fill="#161616">Reorder evaluation</text>
-  <text x="808" y="386" font-size="12" fill="#525252">Triggers reorder if stock is low</text>
+  <text x="808" y="364" font-size="14" font-weight="600" fill="#161616">Usage history</text>
+  <text x="808" y="386" font-size="12" fill="#525252">Records what was used and when</text>
   <!-- Connectors -->
   <path class="connector" id="k1" data-from="n_m1" data-to="n_val" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 328 144 H 344 Q 352 144 352 152 V 200 Q 352 208 360 208 H 384"/>
   <path class="connector" id="k2" data-from="n_m2" data-to="n_val" fill="none" stroke="#161616" stroke-width="1" marker-end="url(#arrow)" d="M 328 256 H 384"/>

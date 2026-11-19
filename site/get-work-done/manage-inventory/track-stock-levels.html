@@ -1290,7 +1290,7 @@
     
       <cds-select-item value="#how-do-i-understand-inventory-balances">How do I understand inventory balances?</cds-select-item>
     
-      <cds-select-item value="#how-do-i-monitor-reorder-needs">How do I monitor reorder needs?</cds-select-item>
+      <cds-select-item value="#how-do-i-monitor-stock-that-is-running-low">How do I monitor stock that is running low?</cds-select-item>
     
       <cds-select-item value="#how-do-i-track-item-costs">How do I track item costs?</cds-select-item>
     
@@ -1315,7 +1315,7 @@
           <div class="rst-content">
             
             <h1 id="how-do-i-track-stock-levels">How do I track stock levels?<a class="headerlink" href="#how-do-i-track-stock-levels" title="Permanent link">¤</a></h1>
-<p>Monitor what's in your storerooms so you know what's available, what needs reordering, and where <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; materials, spare parts, or stock keeping units (SKUs)">items</abbr> are located.</p>
+<p>Monitor what's in your storerooms so you know what's available, what is running low, and where <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; materials, spare parts, or stock keeping units (SKUs)">items</abbr> are located.</p>
 <h2 id="quick-reference">Quick reference<a class="headerlink" href="#quick-reference" title="Permanent link">¤</a></h2>
 <h3 id="table-1-stock-balance-types">Table 1: Stock balance types<a class="headerlink" href="#table-1-stock-balance-types" title="Permanent link">¤</a></h3>
 <table>
@@ -1338,10 +1338,6 @@
 <td><strong>Reserved quantity</strong></td>
 <td>Parts allocated to <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr></td>
 </tr>
-<tr>
-<td><strong>Reorder point</strong></td>
-<td>Minimum level before reordering</td>
-</tr>
 </tbody>
 </table>
 <hr>
@@ -1349,7 +1345,7 @@
 <p><strong>Regular monitoring:</strong></p>
 <ul>
 <li>Check stock levels daily</li>
-<li>Review reorder needs weekly</li>
+<li>Review low stock weekly</li>
 <li>Analyze usage monthly</li>
 <li>Audit <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">inventory</abbr> quarterly</li>
 </ul>
@@ -1362,7 +1358,7 @@
 </ul>
 <p><strong>Optimize levels:</strong></p>
 <ul>
-<li>Adjust reorder points based on usage</li>
+<li>Adjust minimum quantities based on usage</li>
 <li>Reduce slow-moving <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">inventory</abbr></li>
 <li>Increase stock of critical <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; materials, spare parts, or stock keeping units (SKUs)">items</abbr></li>
 <li>Balance cost versus availability</li>
@@ -1370,7 +1366,6 @@
 <p><strong>Use reports:</strong></p>
 <ul>
 <li>Stock <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr> reports</li>
-<li>Reorder reports</li>
 <li>Usage analysis</li>
 <li>Cost reports</li>
 <li>ABC analysis: prioritize high-value <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; materials, spare parts, or stock keeping units (SKUs)">items</abbr></li>
@@ -1380,7 +1375,7 @@
 <p>When you track stock levels, you can:</p>
 <ul>
 <li>Know what's available right now</li>
-<li>See what needs reordering</li>
+<li>See what is running low</li>
 <li>Find where <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; materials, spare parts, or stock keeping units (SKUs)">items</abbr> are located</li>
 <li>Control costs</li>
 <li>Optimize storeroom space</li>
@@ -1395,8 +1390,6 @@ How many <abbr title="Inventory master data for materials and spare parts.&lt;br
 Which storeroom and bin.</p>
 <p><strong>Cost</strong>
 Current value of <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">inventory</abbr>.</p>
-<p><strong>Reorder <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr></strong>
-<abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; materials, spare parts, or stock keeping units (SKUs)">Items</abbr> below minimum levels.</p>
 <p><strong>Reserved <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; materials, spare parts, or stock keeping units (SKUs)">items</abbr></strong>
 Parts allocated to <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr>.</p>
 <p><strong>Usage history</strong>
@@ -1413,7 +1406,6 @@ How <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&
 <li>Current quantity on hand</li>
 <li>Available balance: not reserved</li>
 <li>Cost information</li>
-<li>Reorder point and minimum stock level</li>
 </ol>
 <p>If the <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr> is in multiple storerooms, you can view all <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr> on one screen and compare quantities across storerooms.</p>
 <h3 id="check-storeroom-contents">Check storeroom contents<a class="headerlink" href="#check-storeroom-contents" title="Permanent link">¤</a></h3>
@@ -1423,7 +1415,6 @@ How <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&
 <li>Select your storeroom.</li>
 <li>View all <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; materials, spare parts, or stock keeping units (SKUs)">items</abbr> stocked there:</li>
 <li>Current quantities</li>
-<li><abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; materials, spare parts, or stock keeping units (SKUs)">Items</abbr> below reorder point</li>
 <li>Reserved quantities</li>
 <li><abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; materials, spare parts, or stock keeping units (SKUs)">Items</abbr> in pick lists</li>
 </ol>
@@ -1473,51 +1464,44 @@ How <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&
 <li>Not yet issued to <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr></li>
 </ul>
 <hr>
-<h2 id="how-do-i-monitor-reorder-needs">How do I monitor reorder needs?<a class="headerlink" href="#how-do-i-monitor-reorder-needs" title="Permanent link">¤</a></h2>
-<h3 id="reorder-point-system">Reorder point system<a class="headerlink" href="#reorder-point-system" title="Permanent link">¤</a></h3>
-<p>The system tracks:</p>
-<h3 id="table-2-reorder-settings-and-when-each-is-required">Table 2: Reorder settings and when each is required<a class="headerlink" href="#table-2-reorder-settings-and-when-each-is-required" title="Permanent link">¤</a></h3>
+<h2 id="how-do-i-monitor-stock-that-is-running-low">How do I monitor stock that is running low?<a class="headerlink" href="#how-do-i-monitor-stock-that-is-running-low" title="Permanent link">¤</a></h2>
+<h3 id="decide-when-stock-is-low">Decide when stock is low<a class="headerlink" href="#decide-when-stock-is-low" title="Permanent link">¤</a></h3>
+<p>Agree on a minimum quantity for each <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr> you stock. When the available balance reaches that quantity, stock is low and someone needs to know.</p>
+<h3 id="table-2-values-to-agree-on-for-items-that-can-run-low">Table 2: Values to agree on for <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; materials, spare parts, or stock keeping units (SKUs)">items</abbr> that can run low<a class="headerlink" href="#table-2-values-to-agree-on-for-items-that-can-run-low" title="Permanent link">¤</a></h3>
 <table>
 <thead>
 <tr>
-<th>Setting</th>
-<th>Required when</th>
+<th>Value</th>
+<th>Use it when</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Reorder point</strong></td>
-<td>You want the system to flag <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; materials, spare parts, or stock keeping units (SKUs)">items</abbr> for reordering automatically</td>
+<td><strong>Minimum quantity</strong></td>
+<td>You want to know when an <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr> needs to be topped up</td>
 </tr>
 <tr>
-<td><strong>Lead time</strong></td>
-<td>The reorder calculation should account for procurement time. Without it, <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; materials, spare parts, or stock keeping units (SKUs)">items</abbr> may be flagged too late</td>
-</tr>
-<tr>
-<td><strong>Order quantity (EOQ)</strong></td>
-<td>You want the system to recommend how much to order, not just flag that an order is needed</td>
+<td><strong>Replacement time</strong></td>
+<td>The minimum quantity should account for how long it takes to get the part back on the shelf. Without it, you may find out too late</td>
 </tr>
 <tr>
 <td><strong>Safety stock</strong></td>
-<td>Only when demand is unpredictable and you need a buffer above the reorder point</td>
+<td>Only when demand is unpredictable and you need a buffer above the minimum quantity</td>
 </tr>
 </tbody>
 </table>
-<p>When balance drops below reorder point, the system flags the <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr> so you can replenish stock.</p>
-<h4 id="how-the-reorder-calculation-works">How the reorder calculation works<a class="headerlink" href="#how-the-reorder-calculation-works" title="Permanent link">¤</a></h4>
-<p>The system uses this formula: <strong>Order quantity = Reorder point + 1, minus quantity on order, minus available balance.</strong></p>
-<p>The +1 means a reorder point of 0 still triggers an order when balance hits zero. Setting your reorder point equal to your minimum-on-hand target is a common misconfiguration that causes reorders to trigger one unit too early and leads to excess stock over time.</p>
-<h3 id="check-items-to-reorder">Check <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; materials, spare parts, or stock keeping units (SKUs)">items</abbr> to reorder<a class="headerlink" href="#check-items-to-reorder" title="Permanent link">¤</a></h3>
+<p>When the available balance drops to the minimum quantity, tell the person who restocks parts for your <abbr title="A data partitioning concept that represents a plant, facility, or business unit.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; plant, facility, or business unit">site</abbr>.</p>
+<h3 id="check-items-that-are-running-low">Check <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; materials, spare parts, or stock keeping units (SKUs)">items</abbr> that are running low<a class="headerlink" href="#check-items-that-are-running-low" title="Permanent link">¤</a></h3>
 <p><strong>What to do:</strong></p>
 <ol>
-<li>Filter for <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; materials, spare parts, or stock keeping units (SKUs)">items</abbr> below reorder point.</li>
-<li>See recommended order quantities.</li>
-<li>Check vendor information.</li>
-<li>Review lead times.</li>
+<li>Open the <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">Inventory</abbr> application and check the available balance of your critical <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; materials, spare parts, or stock keeping units (SKUs)">items</abbr>.</li>
+<li>Compare each balance with the minimum quantity you agreed.</li>
+<li>Check reservations that will use the stock.</li>
+<li>Consider how long it takes to replace the part.</li>
 <li>Take action:</li>
-<li>Order parts from supplier or request replenishment</li>
 <li>Transfer from another storeroom</li>
-<li>Adjust reorder settings if needed</li>
+<li>Tell the person who restocks parts for your <abbr title="A data partitioning concept that represents a plant, facility, or business unit.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; plant, facility, or business unit">site</abbr></li>
+<li>Adjust your minimum quantities if needed</li>
 </ol>
 <hr>
 <h2 id="how-do-i-track-item-costs">How do I track <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr> costs?<a class="headerlink" href="#how-do-i-track-item-costs" title="Permanent link">¤</a></h2>
@@ -1525,23 +1509,23 @@ How <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&
 <p>For each <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr>, see:</p>
 <ul>
 <li><strong>Average cost</strong>: Current average unit cost</li>
-<li><strong>Last cost</strong>: Most recent purchase price</li>
+<li><strong>Last cost</strong>: Most recent unit cost recorded for the <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr></li>
 <li><strong>Standard cost</strong>: Planned or budgeted cost</li>
 <li><strong>Total value</strong>: Quantity × cost</li>
 </ul>
 <h3 id="how-costs-are-calculated">How costs are calculated<a class="headerlink" href="#how-costs-are-calculated" title="Permanent link">¤</a></h3>
 <p><strong>Average cost method</strong></p>
 <ul>
-<li>Weighted average of all purchases</li>
+<li>Weighted average of the unit costs recorded for the <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr></li>
 <li>Updates with each receipt</li>
 <li>Smooths price fluctuations</li>
 <li>Most common method</li>
 </ul>
-<p>If a high-value emergency purchase is received, it raises the average cost for all future issues of that <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr> until the balance normalises. This can distort maintenance cost reports for that period. For frequently used spare parts such as nozzle seals for Filler FL-02, average cost is usually appropriate. For low-volume, high-value <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; materials, spare parts, or stock keeping units (SKUs)">items</abbr>, consider whether standard cost gives you more predictable reporting.</p>
+<p>If a high-cost batch of stock is added, it raises the average cost for all future issues of that <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr> until the balance normalises. This can distort maintenance cost reports for that period. For frequently used spare parts such as nozzle seals for Filler FL-02, average cost is usually appropriate. For low-volume, high-value <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; materials, spare parts, or stock keeping units (SKUs)">items</abbr>, consider whether standard cost gives you more predictable reporting.</p>
 <p><strong>Standard cost method</strong></p>
 <ul>
 <li>Fixed cost set in advance</li>
-<li>Doesn't change with purchases</li>
+<li>Doesn't change as new stock is added</li>
 <li>Variances tracked separately</li>
 <li>Used for budgeting</li>
 </ul>
@@ -1561,7 +1545,6 @@ How <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&
 <li>Identify fast-moving <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; materials, spare parts, or stock keeping units (SKUs)">items</abbr></li>
 <li>Spot slow-moving <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">inventory</abbr></li>
 <li>Adjust stock levels</li>
-<li>Improve reorder quantities</li>
 <li>Reduce excess <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">inventory</abbr></li>
 </ul>
 <hr>
@@ -1613,10 +1596,11 @@ How <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&
 <h3 id="item-running-low"><abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">Item</abbr> running low<a class="headerlink" href="#item-running-low" title="Permanent link">¤</a></h3>
 <p>When stock is getting low:</p>
 <ol>
-<li>Check reorder settings.</li>
-<li>Verify lead time.</li>
-<li>Order replacement stock or transfer from another storeroom.</li>
-<li>Update reorder point if needed.</li>
+<li>Check the available balance and any reservations.</li>
+<li>Check how long it takes to replace the part.</li>
+<li>Transfer stock from another storeroom.</li>
+<li>Tell the person who restocks parts for your <abbr title="A data partitioning concept that represents a plant, facility, or business unit.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; plant, facility, or business unit">site</abbr>.</li>
+<li>Adjust your minimum quantity if needed.</li>
 </ol>
 <h3 id="excess-inventory">Excess <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">inventory</abbr><a class="headerlink" href="#excess-inventory" title="Permanent link">¤</a></h3>
 <p>If you have too much:</p>
@@ -1624,7 +1608,7 @@ How <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&
 <li>Review usage history.</li>
 <li>Check for obsolete <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; materials, spare parts, or stock keeping units (SKUs)">items</abbr>.</li>
 <li>Transfer to other <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr>.</li>
-<li>Adjust reorder quantities.</li>
+<li>Adjust your minimum quantities.</li>
 <li>Consider disposal if appropriate.</li>
 </ol>
 <h3 id="cant-find-item">Can't find <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr><a class="headerlink" href="#cant-find-item" title="Permanent link">¤</a></h3>
@@ -1655,7 +1639,7 @@ How <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&
 <li>Parts available when needed</li>
 <li>No work delays</li>
 <li>Better service levels</li>
-<li>Fewer emergency orders</li>
+<li>Fewer urgent requests for parts</li>
 </ul>
 <p><strong>Controls costs:</strong></p>
 <ul>
@@ -1666,9 +1650,9 @@ How <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&
 </ul>
 <p><strong>Improves planning:</strong></p>
 <ul>
-<li>Better reorder decisions</li>
+<li>Better decisions about minimum quantities</li>
 <li>Accurate budgeting</li>
-<li>Informed purchasing</li>
+<li>Informed stocking decisions</li>
 <li>Efficient operations</li>
 </ul>
 <hr>
@@ -1793,23 +1777,23 @@ How <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&
                   </ul>
               </li>
               <li class="md-toc__item">
-                <a href="#how-do-i-monitor-reorder-needs" class="md-toc__link" data-md-level="1">
-                  How do I monitor reorder needs?
+                <a href="#how-do-i-monitor-stock-that-is-running-low" class="md-toc__link" data-md-level="1">
+                  How do I monitor stock that is running low?
                 </a>
                   <ul class="md-toc__list">
                       <li class="md-toc__item">
-                        <a href="#reorder-point-system" class="md-toc__link" data-md-level="2">
-                          Reorder point system
+                        <a href="#decide-when-stock-is-low" class="md-toc__link" data-md-level="2">
+                          Decide when stock is low
                         </a>
                       </li>
                       <li class="md-toc__item">
-                        <a href="#table-2-reorder-settings-and-when-each-is-required" class="md-toc__link" data-md-level="2">
-                          Table 2: Reorder settings and when each is required
+                        <a href="#table-2-values-to-agree-on-for-items-that-can-run-low" class="md-toc__link" data-md-level="2">
+                          Table 2: Values to agree on for items that can run low
                         </a>
                       </li>
                       <li class="md-toc__item">
-                        <a href="#check-items-to-reorder" class="md-toc__link" data-md-level="2">
-                          Check items to reorder
+                        <a href="#check-items-that-are-running-low" class="md-toc__link" data-md-level="2">
+                          Check items that are running low
                         </a>
                       </li>
                   </ul>
