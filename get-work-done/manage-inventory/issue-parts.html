@@ -1336,7 +1336,7 @@
 <ul>
 <li><strong>1. Issue entry methods</strong>: Technicians or <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">inventory</abbr> clerks initiate an issue through one of three paths: from an active <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> on the Materials tab, directly at the storeroom counter using the <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">Inventory</abbr> issue action, or in the field using barcode scanning in the Technician mobile app.</li>
 <li><strong>2. Validation checks</strong>: The system validates the transaction by confirming a valid storeroom and <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr> number, verifying that the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> is in a chargeable <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr>, checking that sufficient available storeroom balance exists, and confirming all required accounting fields are populated.</li>
-<li><strong>3. Simultaneous updates</strong>: Upon successful validation, the system executes three updates simultaneously: deducting the physical balance from the storeroom and logging an audit transaction, charging actual material costs directly to the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr>, and evaluating reorder thresholds to trigger <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">inventory</abbr> replenishment if stock drops below minimum levels.</li>
+<li><strong>3. Simultaneous updates</strong>: Upon successful validation, the system executes three updates simultaneously: deducting the physical balance from the storeroom and logging an audit transaction, charging actual material costs directly to the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr>, and recording the usage in the transaction history.</li>
 </ul>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/sample_parts_issue_workflow.svg" data-title="Explained in body text" data-desc-position="bottom"><img src="../../images/sample_parts_issue_workflow.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;"></a></p>
 <p class="figure-caption">Figure 1: Parts issue and material transaction workflow</p>
@@ -1370,7 +1370,6 @@
 <li>Updates <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">inventory</abbr> levels automatically</li>
 <li>Records costs to the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr></li>
 <li>Tracks what materials were used</li>
-<li>Helps with reordering decisions</li>
 </ul>
 <p>This ensures accurate <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">inventory</abbr> counts and a complete record of what each job cost.</p>
 <hr>
@@ -1434,7 +1433,6 @@
 <li>Reduces <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">inventory</abbr>: storeroom balance goes down</li>
 <li>Records cost: material cost is added to the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr></li>
 <li>Tracks usage: creates transaction history</li>
-<li>Updates reorder: triggers reorder if below minimum</li>
 <li>Logs who and when: records who issued and when</li>
 </ul>
 <hr>
@@ -1443,7 +1441,7 @@
 <p>If the part you need isn't available:</p>
 <ol>
 <li>Check other storeroom <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr>.</li>
-<li>Request a purchase.</li>
+<li>Request a transfer from another storeroom.</li>
 <li>Use an alternate part if approved.</li>
 <li>Update <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr> to "Waiting on Parts".</li>
 </ol>
@@ -1465,7 +1463,7 @@
 </ol>
 <p>Figure 2 outlines the sequential resolution workflows for three common parts issue scenarios:</p>
 <ul>
-<li><strong>Scenario 1 (Part not in stock)</strong>: First check other storerooms for available stock, then initiate a purchase requisition or storeroom transfer, and finally update the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr> to Waiting on Material.</li>
+<li><strong>Scenario 1 (Part not in stock)</strong>: First check other storerooms for available stock, then initiate a storeroom transfer, and finally update the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr> to Waiting on Material.</li>
 <li><strong>Scenario 2 (Quantity mismatch)</strong>: For an under-issue where additional parts are needed, create an extra issue line for the difference. For an over-issue where too many parts were taken, use the Return action on the actuals tab to return extra parts to the storeroom. The system automatically adjusts storeroom balance and <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> cost.</li>
 <li><strong>Scenario 3 (Emergency repair)</strong>: For urgent breakdowns, issue parts immediately to perform the repair, record the material actuals on the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> once the equipment is safe, and add explanatory documentation notes to the work log.</li>
 </ul>
@@ -1489,7 +1487,7 @@
 <ul>
 <li>Correct <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">inventory</abbr> counts</li>
 <li>Accurate cost tracking</li>
-<li>Better reorder planning</li>
+<li>Better stock level planning</li>
 <li>Reliable stock levels</li>
 </ul>
 <p><strong>For you:</strong></p>

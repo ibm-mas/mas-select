@@ -22,7 +22,7 @@
   <path d="M 56 216 Q 48 216 48 224 V 296 Q 48 304 56 304 Z" fill="#fa4d56"/>
 <g transform="translate(64 248) scale(0.75)" fill="#161616"><path d="M14 21.414 9 16.413 10.413 15 14 18.586 21.585 11 23 12.415 14 21.414z"/><path d="M16,2A14,14,0,1,0,30,16,14,14,0,0,0,16,2Zm0,26A12,12,0,1,1,28,16,12,12,0,0,1,16,28Z"/></g>
   <text x="104" y="252" font-size="13" font-weight="600" fill="#161616">2. Request part transfer</text>
-  <text x="104" y="274" font-size="11" fill="#525252">Initiate purchase or transfer</text>
+  <text x="104" y="274" font-size="11" fill="#525252">Initiate a transfer</text>
   <rect class="node" id="n_sc1_s3" x="48" y="328" width="280" height="88" rx="8" fill="#ffffff" stroke="#fa4d56" stroke-width="1"/>
   <path d="M 56 328 Q 48 328 48 336 V 408 Q 48 416 56 416 Z" fill="#fa4d56"/>
 <g transform="translate(64 360) scale(0.75)" fill="#161616"><path d="M14 21.414 9 16.413 10.413 15 14 18.586 21.585 11 23 12.415 14 21.414z"/><path d="M16,2A14,14,0,1,0,30,16,14,14,0,0,0,16,2Zm0,26A12,12,0,1,1,28,16,12,12,0,0,1,16,28Z"/></g>

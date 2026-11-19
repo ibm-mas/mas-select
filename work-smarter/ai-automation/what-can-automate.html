@@ -1301,11 +1301,10 @@
 <p>In Maximo Application Suite Select, automation is driven by scheduled background tasks in Cron Task lite, condition monitoring triggers, <abbr title="Reusable email templates that can be triggered automatically by workflows or escalations, or manually from records.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; email templates, notification templates, or message templates">communication templates</abbr>, and mobile push notifications.</p>
 <p><em>Looking to verify your automation readiness right away? <a href="#automation-readiness-checklist">Skip to automation readiness checklist ↓</a></em></p>
 <h2 id="key-automation-capabilities-in-maximo-application-suite-select">Key automation capabilities in Maximo Application Suite Select<a class="headerlink" href="#key-automation-capabilities-in-maximo-application-suite-select" title="Permanent link">¤</a></h2>
-<p>Automation in Maximo Application Suite Select addresses four major operational maintenance areas:</p>
+<p>Automation in Maximo Application Suite Select addresses three major operational maintenance areas:</p>
 <ol>
 <li><strong><abbr title="Scheduled routine maintenance performed to prevent equipment failures.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance plan, planned maintenance, or PM">Preventive maintenance</abbr> generation:</strong> Automatically creates scheduled <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> ahead of due dates based on elapsed calendar time or accumulated run hours.</li>
 <li><strong>Condition-based work triggers:</strong> Generates corrective <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> when the gauge readings that you enter exceed defined action thresholds.</li>
-<li><strong>Automated <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">inventory</abbr> reordering:</strong> Flags storeroom parts that drop below their minimum reorder point and creates restock requests.</li>
 <li><strong>Instant stakeholder alerts:</strong> Dispatches email and push notifications when <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> are approved, delayed, or completed.</li>
 </ol>
 <h3 id="table-1-automation-mechanisms-and-operational-applications">Table 1: Automation mechanisms and operational applications<a class="headerlink" href="#table-1-automation-mechanisms-and-operational-applications" title="Permanent link">¤</a></h3>
@@ -1332,12 +1331,6 @@
 <td>Generating an urgent inspection <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> when drive motor bearing temperature exceeds 80 degrees Celsius</td>
 </tr>
 <tr>
-<td><strong><abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">Inventory</abbr> reorder calculation</strong></td>
-<td><abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">Inventory</abbr>, Cron Task lite</td>
-<td>Calculates current balances against minimum thresholds and economic order quantities</td>
-<td>Creating restock requisitions when food-grade lubricant stock drops below 5 drums</td>
-</tr>
-<tr>
 <td><strong>Mobile push alerts</strong></td>
 <td>Push Notifications Administration</td>
 <td>Dispatches immediate notifications directly to technician mobile devices</td>
@@ -1348,16 +1341,14 @@
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/sample_automation_cron_architecture.svg" data-title="Explained in body text" data-desc-position="bottom"><img src="../../images/sample_automation_cron_architecture.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;"></a></p>
 <p class="figure-caption">Figure 1: Automated background processing architecture in Cron Task lite</p>
 
-<p>As shown in Figure 1, the Cron Task lite background engine automates maintenance scheduling and <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">inventory</abbr> replenishment across three core tasks and two operational dispatch channels:</p>
+<p>As shown in Figure 1, the Cron Task lite background engine automates maintenance scheduling across two core tasks and one operational dispatch channel:</p>
 <ol>
 <li><strong>Background Engine (Cron Task lite)</strong>: Executes automated background processing on configured schedules without manual user intervention.</li>
 <li><strong>Automated tasks</strong>:</li>
 <li><strong><code>PMWOGENCRONTASK</code></strong>: Evaluates active <abbr title="Scheduled routine maintenance performed to prevent equipment failures.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance plan, planned maintenance, or PM">preventive maintenance</abbr> intervals and automatically generates scheduled PM <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> within configured lead times.</li>
 <li><strong><code>MEASUREPOINTWOGENCRONTASK</code></strong>: Evaluates condition monitoring <abbr title="A counter that tracks equipment usage, such as hours, cycles, or miles.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; counter, runtime meter, or odometer">meter</abbr> logs and triggers corrective <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> when action limits are breached.</li>
-<li><strong><code>REORDERCRONTASK</code></strong>: Scans current storeroom balances and automatically creates restock requisitions for low-stock <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; materials, spare parts, or stock keeping units (SKUs)">items</abbr>.</li>
 <li><strong>Dispatch outcomes</strong>:</li>
 <li><strong>Work dispatch</strong>: Routes generated PM and condition-based <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> directly to technician mobile push alerts and supervisor Work Queue cards.</li>
-<li><strong><abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">Inventory</abbr> dispatch</strong>: Routes generated material requisitions directly to the storeroom restock queue.</li>
 </ol>
 <h2 id="scheduled-background-tasks-in-cron-task-lite">Scheduled background tasks in Cron Task lite<a class="headerlink" href="#scheduled-background-tasks-in-cron-task-lite" title="Permanent link">¤</a></h2>
 <p>Cron tasks run on configured background schedules without requiring user intervention. System administrators manage execution intervals and parameters in the desktop application.</p>
@@ -1380,11 +1371,6 @@
 <td><code>MeasurePointWoGenCronTask</code></td>
 <td>Every 15 minutes</td>
 <td>Evaluates condition monitoring <abbr title="A counter that tracks equipment usage, such as hours, cycles, or miles.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; counter, runtime meter, or odometer">meter</abbr> points against defined action limits</td>
-</tr>
-<tr>
-<td><code>ReorderCronTask</code></td>
-<td>Daily</td>
-<td>Analyzes storeroom balances and initiates replenishment for low-stock <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; materials, spare parts, or stock keeping units (SKUs)">items</abbr></td>
 </tr>
 </tbody>
 </table>
@@ -1432,11 +1418,6 @@
 <td>[ ]</td>
 <td>Condition monitoring task active</td>
 <td><code>MeasurePointWoGenCronTask</code> executes periodically and converts breached limits into work</td>
-</tr>
-<tr>
-<td>[ ]</td>
-<td><abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">Inventory</abbr> reorder task active</td>
-<td><code>ReorderCronTask</code> flags low-stock <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; materials, spare parts, or stock keeping units (SKUs)">items</abbr> for procurement</td>
 </tr>
 <tr>
 <td>[ ]</td>
