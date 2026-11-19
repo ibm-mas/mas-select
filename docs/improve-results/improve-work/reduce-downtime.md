@@ -32,7 +32,7 @@ World-class maintenance programs keep unplanned downtime below 10% of total oper
 | **Preventive Maintenance (PM)** | Generates recurring inspections and servicing before equipment degrades | Prevents up to 70% of mechanical and electrical wear failures | PM |
 | **Condition Monitoring** | Triggers corrective work orders when meter readings breach action limits | Detects impending failures days or weeks before catastrophic breakdown | Condition Monitoring |
 | **Failure Code Hierarchies** | Captures structured Problem, Cause, and Remedy data on work orders | Reveals recurring defect trends across equipment classes | Failure Codes |
-| **Storeroom Reorder Points** | Automates reorder notifications when stock falls below safety levels | Eliminates repair delays caused by missing replacement parts | Storerooms |
+| **Storeroom balances** | Tracks stock balances and reservations for spare parts | Reduces repair delays caused by missing replacement parts | Storerooms and Inventory |
 
 ---
 
@@ -101,7 +101,7 @@ Follow this progressive roadmap to systematically reduce downtime across your fa
 | :--- | :--- | :--- | :--- |
 | **Stage 1: Basic control** | Achieve 85%+ PM compliance | All critical production assets have active PM schedules generated on time | PM Compliance > 85% |
 | **Stage 2: Failure tracking** | Enforce failure code entry | Technicians select Problem, Cause, and Remedy on 100% of emergency work | Failure Code Capture > 90% |
-| **Stage 3: Parts alignment** | Secure critical spare parts | All high-risk failure components have active reorder points in Storerooms | Stock-Out Rate < 2% |
+| **Stage 3: Parts alignment** | Secure critical spare parts | All high-risk failure components are stocked, with a minimum quantity agreed for each | Stock-Out Rate < 2% |
 | **Stage 4: Early detection** | Implement condition monitoring | Critical drives and compressors use gauge meters to detect early wear | Reactive Work Ratio < 15% |
 
 ---

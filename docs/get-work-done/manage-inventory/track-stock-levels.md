@@ -1,6 +1,6 @@
 # How do I track stock levels?
 
-Monitor what's in your storerooms so you know what's available, what needs reordering, and where items are located.
+Monitor what's in your storerooms so you know what's available, what is running low, and where items are located.
 
 ## Quick reference
 
@@ -11,7 +11,6 @@ Monitor what's in your storerooms so you know what's available, what needs reord
 | **Current balance** | Total quantity in storeroom (includes reserved items) |
 | **Available balance** | What you can actually use (current minus reserved) |
 | **Reserved quantity** | Parts allocated to work orders |
-| **Reorder point** | Minimum level before reordering |
 
 ---
 
@@ -20,7 +19,7 @@ Monitor what's in your storerooms so you know what's available, what needs reord
 **Regular monitoring:**
 
 - Check stock levels daily
-- Review reorder needs weekly
+- Review low stock weekly
 - Analyze usage monthly
 - Audit inventory quarterly
 
@@ -33,7 +32,7 @@ Monitor what's in your storerooms so you know what's available, what needs reord
 
 **Optimize levels:**
 
-- Adjust reorder points based on usage
+- Adjust minimum quantities based on usage
 - Reduce slow-moving inventory
 - Increase stock of critical items
 - Balance cost versus availability
@@ -41,7 +40,6 @@ Monitor what's in your storerooms so you know what's available, what needs reord
 **Use reports:**
 
 - Stock status reports
-- Reorder reports
 - Usage analysis
 - Cost reports
 - ABC analysis: prioritize high-value items
@@ -54,7 +52,7 @@ Good inventory tracking prevents stockouts and ensures parts are available when 
 When you track stock levels, you can:
 
 - Know what's available right now
-- See what needs reordering
+- See what is running low
 - Find where items are located
 - Control costs
 - Optimize storeroom space
@@ -75,9 +73,6 @@ Which storeroom and bin.
 
 **Cost**
 Current value of inventory.
-
-**Reorder status**
-Items below minimum levels.
 
 **Reserved items**
 Parts allocated to work orders.
@@ -100,7 +95,6 @@ How items are being consumed.
    - Current quantity on hand
    - Available balance: not reserved
    - Cost information
-   - Reorder point and minimum stock level
 
 If the item is in multiple storerooms, you can view all locations on one screen and compare quantities across storerooms.
 
@@ -112,7 +106,6 @@ If the item is in multiple storerooms, you can view all locations on one screen 
 2. Select your storeroom.
 3. View all items stocked there:
    - Current quantities
-   - Items below reorder point
    - Reserved quantities
    - Items in pick lists
 
@@ -168,41 +161,34 @@ Reservations are either hard or soft. A **hard reservation** immediately reduces
 
 ---
 
-## How do I monitor reorder needs?
+## How do I monitor stock that is running low?
 
-### Reorder point system
+### Decide when stock is low
 
-The system tracks:
+Agree on a minimum quantity for each item you stock. When the available balance reaches that quantity, stock is low and someone needs to know.
 
-### Table 2: Reorder settings and when each is required
+### Table 2: Values to agree on for items that can run low
 
-| Setting | Required when |
+| Value | Use it when |
 |---|---|
-| **Reorder point** | You want the system to flag items for reordering automatically |
-| **Lead time** | The reorder calculation should account for procurement time. Without it, items may be flagged too late |
-| **Order quantity (EOQ)** | You want the system to recommend how much to order, not just flag that an order is needed |
-| **Safety stock** | Only when demand is unpredictable and you need a buffer above the reorder point |
+| **Minimum quantity** | You want to know when an item needs to be topped up |
+| **Replacement time** | The minimum quantity should account for how long it takes to get the part back on the shelf. Without it, you may find out too late |
+| **Safety stock** | Only when demand is unpredictable and you need a buffer above the minimum quantity |
 
-When balance drops below reorder point, the system flags the item so you can replenish stock.
+When the available balance drops to the minimum quantity, tell the person who restocks parts for your site.
 
-#### How the reorder calculation works
-
-The system uses this formula: **Order quantity = Reorder point + 1, minus quantity on order, minus available balance.**
-
-The +1 means a reorder point of 0 still triggers an order when balance hits zero. Setting your reorder point equal to your minimum-on-hand target is a common misconfiguration that causes reorders to trigger one unit too early and leads to excess stock over time.
-
-### Check items to reorder
+### Check items that are running low
 
 **What to do:**
 
-1. Filter for items below reorder point.
-2. See recommended order quantities.
-3. Check vendor information.
-4. Review lead times.
+1. Open the Inventory application and check the available balance of your critical items.
+2. Compare each balance with the minimum quantity you agreed.
+3. Check reservations that will use the stock.
+4. Consider how long it takes to replace the part.
 5. Take action:
-   - Order parts from supplier or request replenishment
    - Transfer from another storeroom
-   - Adjust reorder settings if needed
+   - Tell the person who restocks parts for your site
+   - Adjust your minimum quantities if needed
 
 ---
 
@@ -213,7 +199,7 @@ The +1 means a reorder point of 0 still triggers an order when balance hits zero
 For each item, see:
 
 - **Average cost**: Current average unit cost
-- **Last cost**: Most recent purchase price
+- **Last cost**: Most recent unit cost recorded for the item
 - **Standard cost**: Planned or budgeted cost
 - **Total value**: Quantity × cost
 
@@ -221,17 +207,17 @@ For each item, see:
 
 **Average cost method**
 
-- Weighted average of all purchases
+- Weighted average of the unit costs recorded for the item
 - Updates with each receipt
 - Smooths price fluctuations
 - Most common method
 
-If a high-value emergency purchase is received, it raises the average cost for all future issues of that item until the balance normalises. This can distort maintenance cost reports for that period. For frequently used spare parts such as nozzle seals for Filler FL-02, average cost is usually appropriate. For low-volume, high-value items, consider whether standard cost gives you more predictable reporting.
+If a high-cost batch of stock is added, it raises the average cost for all future issues of that item until the balance normalises. This can distort maintenance cost reports for that period. For frequently used spare parts such as nozzle seals for Filler FL-02, average cost is usually appropriate. For low-volume, high-value items, consider whether standard cost gives you more predictable reporting.
 
 **Standard cost method**
 
 - Fixed cost set in advance
-- Doesn't change with purchases
+- Doesn't change as new stock is added
 - Variances tracked separately
 - Used for budgeting
 
@@ -255,7 +241,6 @@ Use this information to:
 - Identify fast-moving items
 - Spot slow-moving inventory
 - Adjust stock levels
-- Improve reorder quantities
 - Reduce excess inventory
 
 ---
@@ -292,10 +277,11 @@ For grouped items:
 
 When stock is getting low:
 
-1. Check reorder settings.
-2. Verify lead time.
-3. Order replacement stock or transfer from another storeroom.
-4. Update reorder point if needed.
+1. Check the available balance and any reservations.
+2. Check how long it takes to replace the part.
+3. Transfer stock from another storeroom.
+4. Tell the person who restocks parts for your site.
+5. Adjust your minimum quantity if needed.
 
 ### Excess inventory
 
@@ -304,7 +290,7 @@ If you have too much:
 1. Review usage history.
 2. Check for obsolete items.
 3. Transfer to other locations.
-4. Adjust reorder quantities.
+4. Adjust your minimum quantities.
 5. Consider disposal if appropriate.
 
 ### Can't find item
@@ -338,7 +324,7 @@ Figure 2 illustrates the diagnostic workflow when an item shows a positive stock
 - Parts available when needed
 - No work delays
 - Better service levels
-- Fewer emergency orders
+- Fewer urgent requests for parts
 
 **Controls costs:**
 
@@ -349,9 +335,9 @@ Figure 2 illustrates the diagnostic workflow when an item shows a positive stock
 
 **Improves planning:**
 
-- Better reorder decisions
+- Better decisions about minimum quantities
 - Accurate budgeting
-- Informed purchasing
+- Informed stocking decisions
 - Efficient operations
 
 ---

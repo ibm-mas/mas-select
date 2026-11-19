@@ -46,7 +46,7 @@ Figure 1 illustrates the parts issue validation and update workflow:
 
 - **1. Issue entry methods**: Work begins from an active work order, at the storeroom counter, or via the mobile app.
 - **2. Validation checks**: The system checks four conditions: valid storeroom and item number, chargeable work order status, sufficient available storeroom balance, and populated required fields.
-- **3. Simultaneous updates**: When all validation checks pass, the system performs three actions at the same time: deducts the physical balance from the storeroom, records actual material costs on the work order, and evaluates whether remaining stock breaches the reorder point. If any validation check fails, none of these updates occur.
+- **3. Simultaneous updates**: When all validation checks pass, the system performs three actions at the same time: deducts the physical balance from the storeroom, records actual material costs on the work order, and records the usage in the transaction history. If any validation check fails, none of these updates occur.
 
 <img src="../../images/sample_parts_issue_workflow.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 1: Parts issue and material transaction workflow</p>

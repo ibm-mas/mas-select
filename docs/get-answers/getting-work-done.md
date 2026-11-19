@@ -138,7 +138,7 @@ Select the work order, add the items needed, specify quantities, and issue them 
 
 ### How do I track stock levels?
 
-View current balances, reorder points, and usage history for each item. Set up alerts to notify you when stock runs low so you can reorder before running out.
+View current balances and usage history for each item, so you can spot stock that is running low before it runs out.
 
 [I want to know more about tracking stock levels](../get-work-done/manage-inventory/track-stock-levels.md)
 

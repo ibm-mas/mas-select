@@ -79,7 +79,7 @@ Inventory clerks use metrics to ensure parts are available when work demands the
 |--------|------------------|------------------|
 | **Stock-outs** | How often a required part was unavailable when needed. Frequent stock-outs delay work and increase downtime. | Operational Dashboard, Inventory Clerk |
 | **Inventory turnover** | How quickly stock is consumed and replenished. Low turnover may mean overstocking; high turnover may indicate understocking. | Operational Dashboard, Inventory Clerk |
-| **Parts requested vs. available** | The gap between what technicians need and what is in stock. Helps prioritize reordering. | Operational Dashboard, Inventory Clerk |
+| **Parts requested vs. available** | The gap between what technicians need and what is in stock. Helps prioritize which parts to stock. | Operational Dashboard, Inventory Clerk |
 
 ---
 

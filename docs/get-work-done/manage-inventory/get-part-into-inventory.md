@@ -14,7 +14,7 @@ For example, to stock a food-grade gasket kit for Filler FL-02, you create the i
 
 - Describe each part once in Item Master. Add it to as many storerooms as you need.
 - Decide the issue unit before you add the item to a storeroom. It is the unit you use when you take the part out, such as each.
-- If you buy a part in a different unit than you issue it, set up the conversion between the two first. For example, you might buy gaskets by the box and issue them one at a time.
+- If a part arrives in a different unit than you issue it, set up the conversion between the two first. For example, gaskets might arrive by the box and you issue them one at a time.
 - Make sure the storeroom exists before you add items to it.
 
 ## Quick reference
@@ -73,7 +73,7 @@ Check that the part has a balance in the storeroom. For other causes, see [Why c
 ## What to do next
 
 - [How do I issue parts to a job?](issue-parts.md): Take the part out of the storeroom for a work order.
-- [How do I track stock levels?](track-stock-levels.md): Watch your balances and reorder needs.
+- [How do I track stock levels?](track-stock-levels.md): Watch your balances and low stock.
 - [How do I plan my storeroom and inventory strategy?](../setup-control/plan-your-storeroom-strategy.md): Decide how to organize storerooms and items before you load them.
 
 ---

@@ -22,7 +22,7 @@ Figure 1 illustrates the end-to-end parts issue and material transaction workflo
 
 - **1. Issue entry methods**: Technicians or inventory clerks initiate an issue through one of three paths: from an active work order on the Materials tab, directly at the storeroom counter using the Inventory issue action, or in the field using barcode scanning in the Technician mobile app.
 - **2. Validation checks**: The system validates the transaction by confirming a valid storeroom and item number, verifying that the work order is in a chargeable status, checking that sufficient available storeroom balance exists, and confirming all required accounting fields are populated.
-- **3. Simultaneous updates**: Upon successful validation, the system executes three updates simultaneously: deducting the physical balance from the storeroom and logging an audit transaction, charging actual material costs directly to the work order, and evaluating reorder thresholds to trigger inventory replenishment if stock drops below minimum levels.
+- **3. Simultaneous updates**: Upon successful validation, the system executes three updates simultaneously: deducting the physical balance from the storeroom and logging an audit transaction, charging actual material costs directly to the work order, and recording the usage in the transaction history.
 
 <img src="../../images/sample_parts_issue_workflow.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 1: Parts issue and material transaction workflow</p>
@@ -60,7 +60,6 @@ When you issue parts correctly, the system:
 - Updates inventory levels automatically
 - Records costs to the work order
 - Tracks what materials were used
-- Helps with reordering decisions
 
 This ensures accurate inventory counts and a complete record of what each job cost.
 
@@ -137,7 +136,6 @@ The system automatically:
 - Reduces inventory: storeroom balance goes down
 - Records cost: material cost is added to the work order
 - Tracks usage: creates transaction history
-- Updates reorder: triggers reorder if below minimum
 - Logs who and when: records who issued and when
 
 ---
@@ -149,7 +147,7 @@ The system automatically:
 If the part you need isn't available:
 
 1. Check other storeroom locations.
-2. Request a purchase.
+2. Request a transfer from another storeroom.
 3. Use an alternate part if approved.
 4. Update work order status to "Waiting on Parts".
 
@@ -173,7 +171,7 @@ For urgent repairs:
 
 Figure 2 outlines the sequential resolution workflows for three common parts issue scenarios:
 
-- **Scenario 1 (Part not in stock)**: First check other storerooms for available stock, then initiate a purchase requisition or storeroom transfer, and finally update the work order status to Waiting on Material.
+- **Scenario 1 (Part not in stock)**: First check other storerooms for available stock, then initiate a storeroom transfer, and finally update the work order status to Waiting on Material.
 - **Scenario 2 (Quantity mismatch)**: For an under-issue where additional parts are needed, create an extra issue line for the difference. For an over-issue where too many parts were taken, use the Return action on the actuals tab to return extra parts to the storeroom. The system automatically adjusts storeroom balance and work order cost.
 - **Scenario 3 (Emergency repair)**: For urgent breakdowns, issue parts immediately to perform the repair, record the material actuals on the work order once the equipment is safe, and add explanatory documentation notes to the work log.
 
@@ -203,7 +201,7 @@ The system increases inventory balance, adjusts cost on work order, and records 
 
 - Correct inventory counts
 - Accurate cost tracking
-- Better reorder planning
+- Better stock level planning
 - Reliable stock levels
 
 **For you:**

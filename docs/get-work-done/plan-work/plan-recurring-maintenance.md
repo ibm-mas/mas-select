@@ -14,7 +14,7 @@ This helps you maintain equipment before it breaks. You set up the schedule once
 
 - Start with a small number of critical assets, such as 5 to 10, then expand once the process works reliably
 - Always create job plans before setting up schedules. They ensure consistent work.
-- Set lead times based on your actual parts procurement time plus a buffer, typically 7 to 14 days
+- Set lead times based on how long it takes to have parts available, plus a buffer, typically 7 to 14 days
 - Review completed work orders monthly and adjust schedules based on actual equipment performance
 - Activate schedules gradually to avoid overwhelming your team with work orders
 
@@ -88,7 +88,7 @@ Lead time tells the system when to create the work order before it's due.
 
 Example: Set 7 days lead time. The system creates the work order a week early. This gives you time to get parts and schedule workers.
 
-If lead time is too short, parts and labor won't be ready when the work order is generated. If it's left at zero, the work order appears on its due date, leaving no time to prepare. A lead time shorter than your parts procurement time virtually guarantees a delayed job.
+If lead time is too short, parts and labor won't be ready when the work order is generated. If it's left at zero, the work order appears on its due date, leaving no time to prepare. A lead time shorter than the time it takes to have parts available virtually guarantees a delayed job.
 
 ### Step 5: Add the job plan
 
@@ -125,7 +125,7 @@ The cycle repeats until you stop it.
 - Setting unrealistic frequencies, either too often or not often enough
 - Not linking job plans, so technicians don't know what to do
 - Forgetting to activate schedules after creating them
-- Setting lead times that are too short for parts procurement
+- Setting lead times that are too short to have parts available
 
 ---
 

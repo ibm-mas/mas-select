@@ -19,7 +19,7 @@ Prefer to learn in the application? Log in and open your Operational dashboard t
 - Keep storeroom organized and labeled
 - Issue parts promptly to avoid work delays
 - Record transactions immediately
-- Check for reorder needs after issuing
+- Check for low stock after issuing
 
 ## What to do
 

@@ -16,7 +16,7 @@ Inaccurate data undermines trust in your maintenance system and distorts perform
 
 - Check for duplicate asset records before modifying maintenance history. Duplicates frequently occur when identical machines are imported twice with slightly different naming conventions.
 - Verify parent location links when assets do not appear in hierarchy drill-downs. An operating location without a parent is treated as an isolated top-level site record.
-- Reconcile physical inventory with Count Books when stock balances show negative numbers. Issuing parts before recording purchase receipts creates temporary negative balance discrepancies.
+- Reconcile physical inventory with Count Books when stock balances show negative numbers. Issuing parts before recording the stock you received creates temporary negative balance discrepancies.
 - Establish standardized classification attributes so that all assets in the same category display consistent technical specifications.
 
 ---

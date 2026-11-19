@@ -1,20 +1,20 @@
 ---
 search:
   boost: 2
-  keywords: storeroom inventory strategy item master rotating items reorder points safety stock count books
+  keywords: storeroom inventory strategy item master rotating items minimum quantities safety stock count books
 ---
 
 # How do I plan my storeroom and inventory strategy?
 
 An effective storeroom and inventory strategy ensures critical spare parts are on hand when machines break down, prevents expensive stockouts, and eliminates excess capital tied up in slow-moving materials. Without structured storeroom management, maintenance teams suffer frequent job delays and inventory counts drift into inaccurate negative balances.
 
-Planning your storeroom and inventory strategy in Maximo Application Suite Select involves designing physical storeroom layouts, classifying consumable versus rebuildable rotating items, establishing dynamic reorder points, and implementing regular cycle counts.
+Planning your storeroom and inventory strategy in Maximo Application Suite Select involves designing physical storeroom layouts, classifying consumable versus rebuildable rotating items, setting minimum quantities, and implementing regular cycle counts.
 
 *Looking to verify your storeroom and inventory strategy right away? [Skip to storeroom strategy planning checklist ↓](#storeroom-strategy-planning-checklist)*
 
 ## Core principles for designing a storeroom strategy
 
-Before cataloging items in the Item Master or creating warehouses in the Storerooms application, establish your inventory strategy with your maintenance, procurement, and warehouse teams.
+Before cataloging items in the Item Master or creating warehouses in the Storerooms application, establish your inventory strategy with your maintenance and warehouse teams.
 
 ### 1. Separate physical storerooms from operational locations
 
@@ -52,15 +52,15 @@ Every item stocked in inventory must be categorized as either a consumable item 
 ### 💡 Tip: Use the Attach to Parent Asset on Issue toggle
 For rotating items that operate as subassemblies on parent machines, enable **Attach to Parent Asset on Issue** in the Item Master. When a storeroom clerk issues the replacement motor to `Filler FL-02`, Maximo Application Suite Select automatically links the new motor as a child asset to the filler in a single transaction.
 
-### 3. Establish automated reorder points and safety stock
+### 3. Set minimum quantities and safety stock
 
-Automating inventory replenishment prevents emergency stockouts while avoiding over-purchasing.
+Agreeing on how much of each part to keep prevents emergency stockouts while avoiding excess stock.
 
-Configure reorder parameters on the Inventory record for each stocked item:
+Decide these values for each stocked item:
 
-- **Safety stock:** Minimum buffer held to protect against supplier shipping delays or unexpected breakdown spikes.
-- **Reorder point:** Threshold that triggers reordering when the calculation `Current Balance + On Order - Reserved` drops to or below this level.
-- **Economic order quantity:** Minimum cost-effective batch size to purchase from vendors.
+- **Safety stock:** Minimum buffer held to protect against slow replacement or unexpected breakdown spikes.
+- **Minimum quantity:** The level at which someone is told that stock is low, so that the balance does not fall below safety stock while the part is replaced.
+- **Replacement time:** How long it takes to get the part back on the shelf. A longer time calls for a higher minimum quantity and more safety stock.
 
 ---
 
@@ -68,22 +68,22 @@ Configure reorder parameters on the Inventory record for each stocked item:
 
 In our sample ice cream plant, the inventory strategy combines a secure central storeroom, satellite staging cribs, and structured rotating pools.
 
-Figure 2 illustrates the storeroom topology and replenishment architecture:
+Figure 2 illustrates the storeroom topology and stock transfer flow:
 
 - **Central storeroom**: `Main storeroom` securely stores high-value spares and rotating items.
 - **Issue counter**: handles rapid barcode checkout for major jobs like `Filler FL-02 overhaul`.
-- **Satellite crib**: receives bulk restocks from the main storeroom to hold consumable parts close to active areas like `Cold storage` for jobs like `Refrigeration routine`.
-- **Automated replenishment**: system calculations monitor stock buffers to trigger timely reorders before stockouts occur.
+- **Satellite crib**: receives bulk transfers from the main storeroom to hold consumable parts close to active areas like `Cold storage` for jobs like `Refrigeration routine`.
+- **Minimum quantity review**: balances are compared with minimum quantities so that stock can be topped up before stockouts occur.
 
 <img src="../../images/sample_storeroom_topology.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
-<p class="figure-caption">Figure 2: Sample storeroom topology and inventory replenishment flow</p>
+<p class="figure-caption">Figure 2: Sample storeroom topology and stock transfer flow</p>
 
 ### Why this strategy works
 
 - **Secures high-value rotating spares:** Rebuildable motors and expensive sanitary valves remain controlled in the central warehouse until officially reserved on approved work orders.
 - **Minimizes technician transit time:** High-frequency consumables like sanitizing lubricants and cold-temperature seals live in an unlocked satellite cabinet near the cold storage facility.
 - **Maintains 100% stock accuracy:** Storeroom staff conduct weekly cycle counts using Count Books, preventing inventory balance discrepancies before scheduled PMs run.
-- **Prevents stockouts on critical lines:** Automated reorder calculations alert procurement two weeks before packaging line consumables deplete.
+- **Prevents stockouts on critical lines:** Regular reviews against minimum quantities flag low packaging line consumables two weeks before they deplete.
 
 ---
 
@@ -108,7 +108,7 @@ The system shows 4 seals in stock, so the work order is approved. However, when 
 
 ### Problem 2: Over-stocking low-cost bolts while stocking out of critical seals
 
-A facility stocks $40,000 worth of standard hardware bolts that can be purchased locally in 2 hours, but holds zero custom mechanical seal kits for Filler FL-02 that have an 8-week supplier lead time.
+A facility stocks $40,000 worth of standard hardware bolts that are available locally within 2 hours, but holds zero custom mechanical seal kits for Filler FL-02 that take 8 weeks to replace.
 
 What happens when Filler FL-02 suffers an unexpected seal failure?
 
@@ -117,13 +117,13 @@ What happens when Filler FL-02 suffers an unexpected seal failure?
 
 The filling line is shut down for weeks waiting for international replacement shipments, costing tens of thousands of dollars in lost production, while valuable working capital sits locked up in excess hardware bolts.
 
-**What to do instead:** Conduct an inventory criticality review. Set high safety stock and automated reorder points on long-lead critical spares, and maintain lean just-in-time minimums for locally available commercial hardware.
+**What to do instead:** Conduct an inventory criticality review. Set high safety stock and minimum quantities on critical spares that take a long time to replace, and keep lean minimums for locally available commercial hardware.
 
 </details>
 
 ### Problem 3: The throwaway motor trap
 
-A maintenance team purchases ten 50 HP drive motors for production pumps. In Item Master, the planner forgets to check the **Rotating?** box and catalogs the motors as standard consumable items.
+A maintenance team installs ten 50 HP drive motors for production pumps. In Item Master, the planner forgets to check the **Rotating?** box and catalogs the motors as standard consumable items.
 
 What happens when the first motor fails and is replaced?
 
@@ -140,7 +140,7 @@ The technician issues the replacement motor as a consumable material. The old mo
 
 A data entry clerk creates `Main storeroom` as an asset record in the Assets application so that equipment can be linked to it.
 
-What happens when inventory clerks attempt to receive purchase orders or issue parts?
+What happens when inventory clerks attempt to issue or transfer parts?
 
 <details markdown="1">
 <summary>Show the answer</summary>
@@ -159,7 +159,7 @@ When planning your storerooms and inventory catalogs, avoid these frequent mista
 
 - Allowing open, unmonitored access to storeroom bins without barcode issue logging.
 - Failing to mark rebuildable motors and pumps as Rotating items in Item Master.
-- Setting reorder points to zero, disabling automated stock replenishment calculations.
+- Setting minimum quantities to zero, which removes any early warning of low stock.
 - Neglecting to link stocked items to the Spare Parts tab of parent asset records.
 - Skipping periodic cycle counts, which allows physical stock and database balances to drift.
 
@@ -175,7 +175,7 @@ Use this checklist to confirm your inventory strategy is ready for operations.
 |---|---|---|
 | [ ] | Dedicated storerooms | Storerooms are created in the Storerooms application, separate from operating locations and assets |
 | [ ] | Rotating items classified | Rebuildable motors and pumps have the Rotating checkbox enabled in Item Master |
-| [ ] | Critical spares identified | Long-lead replacement parts have defined safety stock and reorder points in Inventory |
+| [ ] | Critical spares identified | Parts that take a long time to replace have a safety stock and a minimum quantity defined |
 | [ ] | Spare Parts tabs linked | Consumable gaskets and seals are linked to parent machines for fast technician lookup |
 | [ ] | Barcode issue process ready | Storeroom counter staff use Issues and Transfers for rapid material checkout |
 | [ ] | Cycle counting schedule set | Periodic physical inventory audits are planned using Count Books |
@@ -188,7 +188,7 @@ Use this checklist to confirm your inventory strategy is ready for operations.
 
 1. [How do I decide: location, asset, or spare part?](decide-location-asset-spare-part.md): Master the four-question classification framework.
 2. [How do I issue parts?](../manage-inventory/issue-parts.md): Execute fast counter checkouts using the Issues and Transfers app.
-3. [How do I track stock levels?](../manage-inventory/track-stock-levels.md): Monitor minimum balances, reservations, and reorder triggers.
+3. [How do I track stock levels?](../manage-inventory/track-stock-levels.md): Monitor minimum balances, reservations, and low stock.
 
 ---
 

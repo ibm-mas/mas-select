@@ -51,7 +51,7 @@ While a floating PM work order remains open in In Progress or Waiting on Materia
 
 Lead time specifies how many days before the maintenance due date Maximo Application Suite Select generates the work order.
 
-Set lead times based on your physical storeroom procurement cycles and shift planning routines:
+Set lead times based on how long it takes to have parts available in the storeroom and on your shift planning routines:
 
 - **Standard lead time: 7 to 14 days:** Gives supervisors time to verify parts availability in the storeroom, assign qualified crafts, and coordinate equipment downtime with production supervisors.
 - **Zero lead time penalty:** If lead time is left at zero, work orders appear on their due date, leaving zero preparation time and causing immediate parts shortages.
@@ -124,9 +124,9 @@ What happens at the storeroom counter?
 <details markdown="1">
 <summary>Show the answer</summary>
 
-The required mechanical seal kits are out of stock. Because the work order generated on its due date, the inventory clerk had zero advance notice to reorder parts. The work order stalls in Waiting on Material status for two weeks, turning a planned PM into an overdue compliance failure.
+The required mechanical seal kits are out of stock. Because the work order generated on its due date, the inventory clerk had zero advance notice to restock parts. The work order stalls in Waiting on Material status for two weeks, turning a planned PM into an overdue compliance failure.
 
-**What to do instead:** Configure a 14-day lead time on the PM record. When the work order generates two weeks early, the system reserves storeroom stock and alerts the inventory clerk to replenish low balances before work starts.
+**What to do instead:** Configure a 14-day lead time on the PM record. When the work order generates two weeks early, the system reserves storeroom stock, which gives the inventory clerk time to restock low balances before work starts.
 
 </details>
 

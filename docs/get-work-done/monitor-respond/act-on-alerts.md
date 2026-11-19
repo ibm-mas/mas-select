@@ -50,7 +50,7 @@ When a KPI card changes to yellow or red, investigate the underlying cause befor
 | **PM compliance below 85%** | Routine inspections and servicing are falling behind schedule | Open the Overdue work orders work queue and reschedule delayed maintenance to available shifts |
 | **Emergency work order spike** | Unplanned equipment breakdowns are consuming maintenance capacity | Review recent failure codes in the Work Orders application to identify repeat defect patterns |
 | **Overdue work order accumulation** | Team capacity is mismatched with incoming work demand | Reassign low priority backlog work and focus available crafts on critical production assets |
-| **Stock-out frequency increase** | Essential spare parts were unavailable when requested | Coordinate with the inventory clerk to expedite reorders and adjust reorder points in the Storeroom |
+| **Stock-out frequency increase** | Essential spare parts were unavailable when requested | Coordinate with the inventory clerk to transfer stock from another storeroom and to review the minimum quantities for those parts |
 
 ---
 

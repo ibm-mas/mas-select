@@ -83,7 +83,7 @@ Verify that supporting records exist before importing locations or assets. Missi
 | Service addresses | Assets need to appear on maps or work order dispatch |
 | Failure classes | Technicians need to select failure codes on work orders for this asset. Without this, the Failure Reporting tab is empty |
 | Rotating items | Only when the asset is a rotating, serialised item tracked by individual asset record |
-| Vendors and manufacturers | Tracking warranty, procurement, or service history by supplier |
+| Vendors and manufacturers | Tracking warranty or service history by supplier |
 | Classifications and specifications | You want to search, filter, or report on assets by type or specification |
 
 **What to do**: Verify all referenced records exist before importing assets. Create missing records or correct values in the import file.

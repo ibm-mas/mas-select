@@ -164,7 +164,7 @@ The system updates balance, adjusts cost, records transaction, and creates audit
 | **Increase quantity** | You found items that were not recorded, a receipt was missed, a return was not processed, or a transfer was not completed |
 | **Decrease quantity** | Items were issued but not recorded, items are damaged or lost, items were stolen or lost to shrinkage, or items moved to another location |
 | **Move location** | The wrong bin was recorded, you are reorganizing the storeroom, you are consolidating locations, or you are correcting bin assignments |
-| **Correct cost** | The wrong price was entered, the cost method changed, the vendor price was corrected, or currency needs adjusting |
+| **Correct cost** | The wrong price was entered, the cost method changed, or currency needs adjusting |
 
 ---
 
@@ -233,10 +233,10 @@ Figure 4 outlines the decision paths and corrective actions for three inventory 
 | When | Good practices |
 | :--- | :--- |
 | **At issue time** | Record transactions immediately, verify quantities, check item numbers, confirm locations, and complete transactions fully |
-| **At receipt time** | Count carefully, match to the purchase order, verify item numbers, put items in the correct location, and record promptly |
+| **At receipt time** | Count carefully, match to the delivery documents, verify item numbers, put items in the correct location, and record promptly |
 | **During returns** | Process immediately, verify condition, return to the correct bin, update the system, and note any issues |
 | **Daily** | Record transactions immediately, verify before confirming, return items promptly, keep the storeroom organized, and report issues quickly |
-| **Weekly** | Review high-value items, check reorder items, spot check locations, investigate variances, and update procedures |
+| **Weekly** | Review high-value items, check items that are running low, spot check locations, investigate variances, and update procedures |
 | **Monthly** | Analyze error patterns, review adjustment reports, conduct cycle counts, train as needed, and improve processes |
 | **Storeroom organization** | Use clear bin labels, a logical layout, separated similar items, regular housekeeping, and defined locations |
 | **Access control** | Allow authorized personnel only, provide proper training, keep clear procedures, assign accountability, and apply security measures |
@@ -251,11 +251,11 @@ For how to schedule counts, see [How do I count stock?](count-stock.md).
 
 | Area | Effects |
 | :--- | :--- |
-| **Stockouts** | Work delays, emergency orders, higher costs, service issues |
+| **Stockouts** | Work delays, rushed repairs, higher costs, service issues |
 | **Excess inventory** | Wasted space, tied-up cash, obsolescence risk, carrying costs |
 | **Direct costs** | Incorrect work order costs, wrong inventory valuation, budget variances, financial reporting errors |
-| **Indirect costs** | Time investigating, emergency purchases, lost productivity, customer dissatisfaction |
-| **Planning** | Wrong reorder quantities, incorrect stock levels, bad purchasing decisions, inefficient operations |
+| **Indirect costs** | Time investigating, lost productivity, customer dissatisfaction |
+| **Planning** | Incorrect stock levels, poor stocking decisions, inefficient operations |
 
 ---
 
