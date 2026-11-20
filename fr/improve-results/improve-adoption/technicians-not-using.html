@@ -1325,7 +1325,7 @@
 <tr>
 <td><strong>Data loss complaints in shielded areas</strong></td>
 <td>Wireless drops in refrigerated or concrete structures</td>
-<td>Enable offline data caching in Mobile Properties so data queues locally and syncs automatically</td>
+<td>Choose the <abbr title="The process of transferring record, lookup, and map data between the server and a mobile device.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; synchronization, offline sync, or data refresh">data sync</abbr> settings in Mobile Configuration so devices hold the data they need and sync when they return to coverage</td>
 </tr>
 <tr>
 <td><strong>Vague work descriptions</strong></td>
@@ -1362,17 +1362,16 @@
 <p>Audit the mandatory fields required to complete a <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr>. Every additional mandatory field increases the temptation for technicians to bypass the system or enter dummy placeholder data. Only enforce fields that directly drive regulatory compliance, failure tracking, or <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">inventory</abbr> reconciliation.</p>
 <h2 id="optimizing-offline-and-mobile-connectivity">Optimizing offline and mobile connectivity<a class="headerlink" href="#optimizing-offline-and-mobile-connectivity" title="Permanent link">¤</a></h2>
 <p>In facilities like the Ice Cream Main Plant, technicians frequently work in heavily insulated areas such as the Cold Storage Room where cellular and WiFi signals cannot penetrate. If the mobile app requires constant connectivity, technicians abandon the device.</p>
-<p>Configuring offline caching ensures technicians can view job instructions, complete inspection checklists, and record used parts without an active network connection. The device stores all transactions locally and synchronizes with the server once the technician re-enters network coverage.</p>
-<h3 id="configuring-sync-parameters-in-mobile-properties">Configuring sync parameters in Mobile Properties<a class="headerlink" href="#configuring-sync-parameters-in-mobile-properties" title="Permanent link">¤</a></h3>
-<p>Adjust synchronization settings in the desktop application to prevent timeout errors and ensure responsive background syncing.</p>
+<p>Technicians can view job instructions, complete inspection checklists, and record used parts without an active network connection. The device stores all transactions locally and synchronizes with the server once the technician re-enters network coverage.</p>
+<h3 id="choosing-what-data-devices-download">Choosing what data devices download<a class="headerlink" href="#choosing-what-data-devices-download" title="Permanent link">¤</a></h3>
+<p>What a device downloads decides how long a sync takes. A device that holds only what the technician needs syncs faster over an intermittent wireless connection.</p>
 <ol>
-<li>In the <strong>Find navigation <abbr title="Inventory master data for materials and spare parts.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; material, spare part, or stock keeping unit (SKU)">item</abbr></strong> field, search for Mobile Properties and open it.</li>
-<li>In the <strong>Property Name</strong> filter, search for sync timeout and batch size properties.</li>
-<li>Select the property governing offline transaction batching, such as <code>si.offline.download.batchsize</code>.</li>
-<li>Update the <strong>Global Value</strong> to an appropriate batch limit, such as 50 records, to reduce synchronization latency over intermittent wireless connections.</li>
-<li>In the <strong>Select Action</strong> menu, click <strong>Save Properties</strong>.</li>
-<li>Click <strong>Live Refresh</strong> to apply the updated properties without restarting system services.</li>
+<li>Open the <strong>Mobile Configuration</strong> application and select <strong>Mobile properties</strong>.</li>
+<li>Under <strong>Mobile foundation</strong>, select <strong>Default <abbr title="The process of transferring record, lookup, and map data between the server and a mobile device.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; synchronization, offline sync, or data refresh">data sync</abbr> settings</strong>.</li>
+<li>Set <strong>Worklist data</strong> to <strong>Update recent changes</strong> so a sync downloads only what is new. Set <strong>Supporting data</strong> the same way.</li>
+<li>To avoid slow first-time downloads of large lookup data, such as <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">assets</abbr> and <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr>, turn on a preloaded database in <strong>Preloaded Database</strong>.</li>
 </ol>
+<p>For all the settings, see <a href="../../get-work-done/setup-control/configure-maximo-mobile.html">How do I configure IBM Maximo Mobile for my team?</a></p>
 <h2 id="engaging-technicians-through-better-job-preparation">Engaging technicians through better job preparation<a class="headerlink" href="#engaging-technicians-through-better-job-preparation" title="Permanent link">¤</a></h2>
 <p>Technicians actively embrace the system when it helps them complete repairs faster rather than acting as a digital time clock. When a <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> opens with exact safety procedures, equipment <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> details, and pre-staged parts lists, the software becomes an indispensable tool.</p>
 <h3 id="table-2-elements-of-high-value-work-order-preparation">Table 2: Elements of high-value <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> preparation<a class="headerlink" href="#table-2-elements-of-high-value-work-order-preparation" title="Permanent link">¤</a></h3>
@@ -1533,8 +1532,8 @@
                 </a>
                   <ul class="md-toc__list">
                       <li class="md-toc__item">
-                        <a href="#configuring-sync-parameters-in-mobile-properties" class="md-toc__link" data-md-level="2">
-                          Configuring sync parameters in Mobile Properties
+                        <a href="#choosing-what-data-devices-download" class="md-toc__link" data-md-level="2">
+                          Choosing what data devices download
                         </a>
                       </li>
                   </ul>

@@ -1372,27 +1372,20 @@
 <hr>
 <h2 id="push-notifications">Push notifications<a class="headerlink" href="#push-notifications" title="Permanent link">¤</a></h2>
 <p>Push notifications send real-time alerts to the IBM Maximo Mobile app on iOS and Android devices. Users receive a notification on their device when an event occurs, such as a <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> being assigned to them, without needing to have the app open.</p>
-<p>Setting up push notifications is a two-step process: generate an API key from the IBM push notification portal, then configure it in MAS.</p>
-<h3 id="step-1-generate-an-api-key">Step 1: Generate an API key<a class="headerlink" href="#step-1-generate-an-api-key" title="Permanent link">¤</a></h3>
+<p>You set up push notifications in the <strong>Mobile Configuration</strong> application. The <strong>Push Notification settings</strong> section has an API key and a token life setting.</p>
+<h3 id="generate-an-api-key">Generate an API key<a class="headerlink" href="#generate-an-api-key" title="Permanent link">¤</a></h3>
 <ol>
-<li>Open <a href="https://pushnotification.suite.maximo.com">https://pushnotification.suite.maximo.com</a> in a browser.</li>
-<li>Sign in with your IBMid.</li>
-<li>Enter a meaningful name for the API key, for example <strong>MAS-PROD-PushNotif</strong>.</li>
-<li>Click <strong>Generate API Key</strong>.</li>
-<li>Copy the API key immediately. It will not be shown again once you leave the page. Store it securely.</li>
+<li>Open the <strong>Mobile Configuration</strong> application and select <strong>Mobile properties</strong>.</li>
+<li>Under <strong>Common app settings</strong>, select <strong>Push Notification settings</strong>.</li>
+<li>Next to <strong>API Key</strong>, select <strong>Generate API Key</strong>. This opens the push notification service and generates a key. The key lets Maximo connect securely to the service.</li>
+<li>Save your changes. The API key cannot be retrieved after it is saved, so store a copy securely.</li>
 </ol>
-<h3 id="step-2-configure-push-notifications-in-mas">Step 2: Configure push notifications in MAS<a class="headerlink" href="#step-2-configure-push-notifications-in-mas" title="Permanent link">¤</a></h3>
-<ol>
-<li>In MAS, click the <strong>Administration</strong> icon and go to <strong>Configurations</strong>.</li>
-<li>In the <strong>Users and Identity</strong> section, click <strong>Push Notifications</strong>.</li>
-<li>In the <strong>Bundle Identifier</strong> field, enter:
-   <pre class="highlight"><code>com.ibm.iot.maximo.mobile</code></pre></li>
-<li>In the <strong>URL</strong> field, enter:
-   <pre class="highlight"><code>https://pushnotification.suite.maximo.com/pushnotification/sendMessage</code></pre></li>
-<li>In the <strong>API Key</strong> field, paste the key you generated in Step 1.</li>
-<li>Save the configuration.</li>
-</ol>
-<p>To confirm the setup is working, ask a user to log in via the IBM Maximo Mobile app and trigger a relevant event such as a workflow assignment. The notification should arrive on their device within a few seconds.</p>
+<p><code>[SME confirmation required: Confirm what the user does in the push notification service after selecting Generate API Key, and how the generated key gets into the API Key field. Confirm how to save the page.]</code></p>
+<h3 id="set-how-long-a-token-stays-active">Set how long a token stays active<a class="headerlink" href="#set-how-long-a-token-stays-active" title="Permanent link">¤</a></h3>
+<p><strong>Token life extension</strong> is the number of days that a push notification token stays active after the user's last sign in on a mobile device. The field shows 10 days.</p>
+<p><code>[SME confirmation required: Confirm the full help text for Token life extension, which is cut off on the screen, and whether 10 days is the default.]</code></p>
+<p><code>[SME confirmation required: Review the push notification topics together. Confirm how the Push Notification settings in Mobile Configuration relate to the Push Notifications Administration application, which chooses the events that send notifications, and confirm the order in which an administrator uses them.]</code></p>
+<p>To confirm the setup is working, ask a user to sign in to IBM Maximo Mobile and trigger a relevant event such as a <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> assignment. The notification should arrive on their device within a few seconds.</p>
 <h3 id="when-users-receive-push-notifications">When users receive push notifications<a class="headerlink" href="#when-users-receive-push-notifications" title="Permanent link">¤</a></h3>
 <p>A user receives push notifications only when all of the following are true:</p>
 <ul>
@@ -1498,13 +1491,13 @@
                 </a>
                   <ul class="md-toc__list">
                       <li class="md-toc__item">
-                        <a href="#step-1-generate-an-api-key" class="md-toc__link" data-md-level="2">
-                          Step 1: Generate an API key
+                        <a href="#generate-an-api-key" class="md-toc__link" data-md-level="2">
+                          Generate an API key
                         </a>
                       </li>
                       <li class="md-toc__item">
-                        <a href="#step-2-configure-push-notifications-in-mas" class="md-toc__link" data-md-level="2">
-                          Step 2: Configure push notifications in MAS
+                        <a href="#set-how-long-a-token-stays-active" class="md-toc__link" data-md-level="2">
+                          Set how long a token stays active
                         </a>
                       </li>
                       <li class="md-toc__item">
