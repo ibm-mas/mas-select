@@ -220,7 +220,7 @@ A named group of workers assembled to complete a job together, assigned as a tea
 **Want to know more?** [How do I set up labor, crafts, and crews?](../../get-work-done/setup-control/set-up-labor-crafts-crews.md) · [How do I assign the correct people?](../../get-work-done/organize-people/assign-right-people.md)
 
 ### Data sync
-The process of transferring record, lookup, and map data between the server and a mobile device.
+The process of transferring worklist, supporting, and map data between the server and a mobile device.
 *You might know this as:* synchronization, offline sync, or data refresh
 
 **Want to know more?** [How do I configure IBM Maximo Mobile for my team?](../../get-work-done/setup-control/configure-maximo-mobile.md)

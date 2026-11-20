@@ -15,7 +15,7 @@ To resolve low adoption, diagnose where field workers encounter resistance in th
 | Observed symptom | Root cause | Corrective action |
 |---|---|---|
 | **End of shift batch logging** | Work entry forms require too many clicks during active work | Deploy the Technician role-based app with streamlined card views instead of desktop forms |
-| **Data loss complaints in shielded areas** | Wireless drops in refrigerated or concrete structures | Enable offline data caching in Mobile Properties so data queues locally and syncs automatically |
+| **Data loss complaints in shielded areas** | Wireless drops in refrigerated or concrete structures | Choose the data sync settings in Mobile Configuration so devices hold the data they need and sync when they return to coverage |
 | **Vague work descriptions** | Free text fields with no structured checklist guidance | Attach standardized Job Plans with numbered task steps to preventive maintenance records |
 | **Incomplete parts recording** | Finding storeroom item numbers is slow or difficult | Pre-load expected materials on job plans so technicians select staged items with a single tap |
 | **Work orders left in progress** | Technicians forget to record stop times or final failure codes | Set up operational dashboard Work Queue cards that highlight open assignments directly to the team |
@@ -45,18 +45,18 @@ Audit the mandatory fields required to complete a work order. Every additional m
 
 In facilities like the Ice Cream Main Plant, technicians frequently work in heavily insulated areas such as the Cold Storage Room where cellular and WiFi signals cannot penetrate. If the mobile app requires constant connectivity, technicians abandon the device.
 
-Configuring offline caching ensures technicians can view job instructions, complete inspection checklists, and record used parts without an active network connection. The device stores all transactions locally and synchronizes with the server once the technician re-enters network coverage.
+Technicians can view job instructions, complete inspection checklists, and record used parts without an active network connection. The device stores all transactions locally and synchronizes with the server once the technician re-enters network coverage.
 
-### Configuring sync parameters in Mobile Properties
+### Choosing what data devices download
 
-Adjust synchronization settings in the desktop application to prevent timeout errors and ensure responsive background syncing.
+What a device downloads decides how long a sync takes. A device that holds only what the technician needs syncs faster over an intermittent wireless connection.
 
-1. In the **Find navigation item** field, search for Mobile Properties and open it.
-2. In the **Property Name** filter, search for sync timeout and batch size properties.
-3. Select the property governing offline transaction batching, such as `si.offline.download.batchsize`.
-4. Update the **Global Value** to an appropriate batch limit, such as 50 records, to reduce synchronization latency over intermittent wireless connections.
-5. In the **Select Action** menu, click **Save Properties**.
-6. Click **Live Refresh** to apply the updated properties without restarting system services.
+1. Open the **Mobile Configuration** application and select **Mobile properties**.
+2. Under **Mobile foundation**, select **Default data sync settings**.
+3. Set **Worklist data** to **Update recent changes** so a sync downloads only what is new. Set **Supporting data** the same way.
+4. To avoid slow first-time downloads of large lookup data, such as assets and locations, turn on a preloaded database in **Preloaded Database**.
+
+For all the settings, see [How do I configure IBM Maximo Mobile for my team?](../../get-work-done/setup-control/configure-maximo-mobile.md)
 
 ## Engaging technicians through better job preparation
 

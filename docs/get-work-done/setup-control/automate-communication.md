@@ -67,32 +67,26 @@ When a KPI reaches its caution or alert level, you can email the people who need
 
 Push notifications send real-time alerts to the IBM Maximo Mobile app on iOS and Android devices. Users receive a notification on their device when an event occurs, such as a work order being assigned to them, without needing to have the app open.
 
-Setting up push notifications is a two-step process: generate an API key from the IBM push notification portal, then configure it in MAS.
+You set up push notifications in the **Mobile Configuration** application. The **Push Notification settings** section has an API key and a token life setting.
 
-### Step 1: Generate an API key
+### Generate an API key
 
-1. Open [https://pushnotification.suite.maximo.com](https://pushnotification.suite.maximo.com) in a browser.
-2. Sign in with your IBMid.
-3. Enter a meaningful name for the API key, for example **MAS-PROD-PushNotif**.
-4. Click **Generate API Key**.
-5. Copy the API key immediately. It will not be shown again once you leave the page. Store it securely.
+1. Open the **Mobile Configuration** application and select **Mobile properties**.
+2. Under **Common app settings**, select **Push Notification settings**.
+3. Next to **API Key**, select **Generate API Key**. This opens the push notification service and generates a key. The key lets Maximo connect securely to the service.
+4. Save your changes. The API key cannot be retrieved after it is saved, so store a copy securely.
 
-### Step 2: Configure push notifications in MAS
+`[SME confirmation required: Confirm what the user does in the push notification service after selecting Generate API Key, and how the generated key gets into the API Key field. Confirm how to save the page.]`
 
-1. In MAS, click the **Administration** icon and go to **Configurations**.
-2. In the **Users and Identity** section, click **Push Notifications**.
-3. In the **Bundle Identifier** field, enter:
-   ```
-   com.ibm.iot.maximo.mobile
-   ```
-4. In the **URL** field, enter:
-   ```
-   https://pushnotification.suite.maximo.com/pushnotification/sendMessage
-   ```
-5. In the **API Key** field, paste the key you generated in Step 1.
-6. Save the configuration.
+### Set how long a token stays active
 
-To confirm the setup is working, ask a user to log in via the IBM Maximo Mobile app and trigger a relevant event such as a workflow assignment. The notification should arrive on their device within a few seconds.
+**Token life extension** is the number of days that a push notification token stays active after the user's last sign in on a mobile device. The field shows 10 days.
+
+`[SME confirmation required: Confirm the full help text for Token life extension, which is cut off on the screen, and whether 10 days is the default.]`
+
+`[SME confirmation required: Review the push notification topics together. Confirm how the Push Notification settings in Mobile Configuration relate to the Push Notifications Administration application, which chooses the events that send notifications, and confirm the order in which an administrator uses them.]`
+
+To confirm the setup is working, ask a user to sign in to IBM Maximo Mobile and trigger a relevant event such as a work order assignment. The notification should arrive on their device within a few seconds.
 
 ### When users receive push notifications
 

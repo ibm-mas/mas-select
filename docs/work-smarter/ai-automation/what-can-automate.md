@@ -62,7 +62,9 @@ Always configure a lead time on your PM generation cron task. Generating work or
 
 ## Mobile push notifications for urgent work
 
-When equipment breaks down unexpectedly, supervisors must alert field technicians immediately. The Push Notifications Administration application routes urgent work alerts directly to technician tablets and mobile devices.
+When equipment breaks down unexpectedly, supervisors must alert field technicians immediately. The Push Notifications Administration application routes urgent work alerts directly to technician tablets and mobile devices. Before alerts can reach devices, an administrator sets up push notifications in the Mobile Configuration application. See [Push notifications](../../get-work-done/setup-control/automate-communication.md#push-notifications).
+
+`[SME confirmation required: Review this section and the push notification section in How do I automate communication? Confirm how the Push Notifications Administration application relates to the Push Notification settings in Mobile Configuration, and confirm the steps and event names below, such as Emergency Work Orders.]`
 
 ### Enabling mobile push alerts for emergency work
 

@@ -18,7 +18,7 @@ You were assigned a work order, but it does not appear in IBM Maximo Mobile. In 
 | Your session has expired | Select the cloud icon to sign in again. |
 | The app has not synced yet | Sync the app manually. |
 | The work order is not assigned to you | Ask your supervisor to check the assignment. |
-| Your administrator turned off data download | Ask your administrator to check the sync settings. |
+| Your administrator turned off data download | Ask your administrator to check the data sync settings. |
 
 ## Likely causes
 
@@ -50,9 +50,9 @@ The work order might be assigned to another person, or it might not be in a stat
 
 ### Your administrator turned off data download
 
-Administrators set which data IBM Maximo Mobile downloads to devices. If the download of work data is turned off, new work does not appear after a sync.
+Administrators set which data IBM Maximo Mobile downloads to devices. If **Worklist data** is set to **Do not download**, new work does not appear after a sync.
 
-**What to do**: Ask your administrator to check the sync settings. For administrators, see [How do I configure IBM Maximo Mobile for my team?](../setup-control/configure-maximo-mobile.md)
+**What to do**: Ask your administrator to check the data sync settings. For administrators, see [How do I configure IBM Maximo Mobile for my team?](../setup-control/configure-maximo-mobile.md)
 
 ## Notifications about new work
 

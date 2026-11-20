@@ -1,52 +1,58 @@
 ---
 search:
   boost: 2
-  keywords: mobile configuration maximo mobile data sync map service request work order technician supervisor inventory clerk administrator configure
+  keywords: mobile configuration maximo mobile mobile properties data sync worklist supporting map preloaded database push notification service request technician timer quick work order administrator configure
 ---
 
 # How do I configure IBM Maximo Mobile for my team?
 
-IBM Maximo Mobile lets technicians, supervisors, and inventory clerks view and complete work, manage inventory, and update records from their mobile device. As an administrator, you configure the defaults that control how mobile devices sync data, which map app your team uses for navigation, and how service requests and work orders behave in the app.
+IBM Maximo Mobile lets technicians, supervisors, and inventory clerks view and complete work, manage inventory, and update records from their mobile device. In the **Mobile Configuration** application, you set the defaults that control how mobile devices sync data, which map app your team uses for navigation, how push notifications and preloaded databases work, and how the Service Request and Technician apps behave.
 
 ## 💡 Tips for success
 
 - Configure mobile settings before your team downloads and signs in to IBM Maximo Mobile. Changes to defaults apply to all users.
 - Set up Map Manager before configuring mobile map settings. The map app you choose here opens the map that Map Manager provides.
 - Start with the defaults and adjust after your team has used the app in the field. Most settings can be changed at any time.
+- Give each user enough data for the role, not a full copy of the server. There is no single record limit, because performance depends on server resources, data complexity, device hardware, and network conditions.
+- Use a preloaded database for large lookup data, such as assets and locations. Devices receive the data when the app is set up, which removes slow syncs on later use.
+- Store a copy of the push notification API key when you generate it. You cannot retrieve it after you save it.
 
 ## Quick reference
 
 ### Table 1: Data sync options
 
-Each data category offers the same three options. Choose the option that balances data freshness against bandwidth and device storage for your team.
+Worklist data and Supporting data offer the same three options. Choose the option that balances data freshness against bandwidth and device storage for your team. Map data is a single checkbox.
 
 | Option | What it does |
 |--------|--------------|
-| **Reload all data** | Downloads the full data set each time a sync runs. Use when you need your team to have complete, current data regardless of what changed. |
-| **Update recent changes** | Downloads only data that changed since the last sync. Faster and lighter on bandwidth. Suitable for most teams. |
-| **Do not download data** | Skips this data category during sync. Use when the data is not needed on the device. |
-
-`[SME confirmation required: Confirm the option labels and where you set them in Select. The Maximo Manage documentation calls the options "Complete", "Only delta", and "Do not download", and lists them under "Worklist data" and "Supporting data" in the Mobile administration app. This page uses "Record data" and "Supporting data".]`
+| **Update recent changes** | Syncs only what is new. Downloads only data that changed since the last sync. |
+| **Reload all data** | Replaces everything with the latest. Downloads the full data set. |
+| **Do not download** | Does not download this data by default. |
 
 ## Before you start
 
-- Confirm that your role has permission to update mobile configuration settings in Maximo Application Suite Select.
+- Confirm that your role has permission to update mobile configuration settings.
 - Confirm that Map Manager is configured if you plan to use map navigation. See [How do I set up maps?](set-up-maps.md).
 - Confirm that labor records and security groups are set up so technicians can be assigned work. See [How do I set up labor, crafts, and crews?](set-up-labor-crafts-crews.md).
 
-`[SME confirmation required: Identify which Maximo Application Suite Select roles can update mobile configuration settings.]`
+`[SME confirmation required: Identify which roles can open the Mobile Configuration application and update mobile properties.]`
 
-## Open the mobile configuration
+## Open the Mobile Configuration application
 
-Open the **Mobile properties** application.
+Open the **Mobile Configuration** application. The page shows two cards:
+
+- **Mobile properties**: Configure system properties that affect Maximo Mobile apps.
+- **Preloaded databases**: Manage and monitor the progress of preloaded database creation.
+
+Select **Mobile properties** to change settings. The left navigation groups the settings under **Mobile foundation**, **Common app settings**, **Service requests app**, and **Technician app**.
 
 ## Choose how mobile data is synchronized
 
-The **Default data sync settings** section controls what data mobile devices download when a user syncs the app. Configure each category separately.
+The **Default data sync settings** section, under **Mobile foundation**, controls what data mobile devices download when a user syncs the app. Configure each category separately.
 
-### Record data
+### Worklist data
 
-**Record data** controls how work orders and service requests are synced to the device.
+**Worklist data** controls how the records in a user's worklist, such as work orders, are synced to the device.
 
 Select one of the three options described in [Table 1](#table-1-data-sync-options).
 
@@ -58,46 +64,54 @@ Select one of the three options described in [Table 1](#table-1-data-sync-option
 
 ### Map data
 
-**Map data** controls whether map data is downloaded to the device.
+**Map data** controls whether map data is downloaded to the device. Select **Download map data** to download and sync map data to mobile devices. Clear the checkbox to skip map data.
 
-- Select **Update recent changes** or **Reload all data** to download map data to devices.
-- Select **Do not download data** to skip map data during sync.
+## Set up preloaded databases
 
-`[SME confirmation required: Confirm the exact option labels for map data in the Maximo Application Suite Select design. The Maximo Manage equivalent is a single "Download map data" toggle rather than the three-option model.]`
+A preloaded database bundles supporting data so a new device does not have to download it record by record. Each database is built for a person group, so make sure each user belongs to the right group.
+
+In the **Preloaded Database** section, under **Mobile foundation**, set:
+
+- **Enable preloaded database**: Turns preloaded database generation on or off.
+- **Generation start time**: The time that generation starts.
+- **Time zone**: The time zone for the start time.
+
+To check progress, go back to the Mobile Configuration page and select the **Preloaded databases** card. The page lists each preloaded database with details such as site, language, person group, start time, end time, and duration.
 
 ## Choose the map app
 
-The **Map settings** section controls which map application IBM Maximo Mobile opens when a user navigates to a location.
+The **Map settings** section, under **Common app settings**, controls which map app IBM Maximo Mobile opens when a user navigates to a location. Choose one app for each platform:
 
-The available options are:
+- **Navigation for Android**
+- **Navigation for iOS**
+- **Navigation for Windows**
 
-- **Apple Maps**
-- **Google Maps**
-- **Waze**
+Each platform offers **Apple Maps**, **Google Maps**, and **Waze**. Select the map app that your team uses on each platform.
 
-Select the map app that your team uses.
+## Set up push notifications
 
-`[SME confirmation required: Confirm whether map app options are platform-specific (for example, Apple Maps on iOS only) or available on all supported platforms. Confirm whether a browser fallback option appears in the final Maximo Application Suite Select design.]`
+The **Push Notification settings** section, under **Common app settings**, connects Maximo to the push notification service for IBM Maximo Mobile. It has two settings:
+
+- **API Key**: Select **Generate API Key** to open the push notification service and generate a key. The key lets Maximo connect securely to the service. The key cannot be retrieved after it is saved.
+- **Token life extension**: The number of days a push notification token stays active after the user's last sign in on a mobile device.
+
+For the full setup, see [How do I automate communication?](automate-communication.md#push-notifications).
 
 ## Configure service request behavior
 
-The **SR mobile settings** section controls how the service request experience works in IBM Maximo Mobile.
+The **SR mobile settings** section, under **Service requests app**, controls how the service request experience works in IBM Maximo Mobile.
 
 ### Enable follow similar requests
 
-**Enable follow similar requests** allows technicians to see service requests that are similar to the one they are creating or viewing.
+**Enable follow similar requests** turns on the Follow Similar Requests feature on the mobile device. Turn this setting on or off depending on whether your team uses this feature.
 
-Turn this setting on or off depending on whether your team uses this feature.
-
-`[SME confirmation required: Confirm the exact effect of enabling or disabling this setting, and whether "similar requests" is defined by a matching location, asset, description, or another criterion.]`
+`[SME confirmation required: Confirm what a user sees when Follow Similar Requests is on, and how similar requests are matched, for example by location, asset, or description.]`
 
 ### Service address priority
 
-**Service address priority** determines which address IBM Maximo Mobile uses when a service request has more than one address associated with it.
+**Service address priority** controls where the service address comes from when a user creates a service request. It has three options: **ASSET**, **LOCATION**, and **NONE**. Select the source that your organization uses for service addresses.
 
-Select the priority value that reflects how your organization resolves address conflicts.
-
-`[SME confirmation required: Confirm the available priority values and their order of precedence in the final Maximo Application Suite Select design.]`
+`[SME confirmation required: Confirm what NONE does, and whether LOCATION, the option selected on the screen, is the default. The Maximo Manage documentation says the property defaults to ASSET and can be set to LOCATION or an empty value.]`
 
 ### Enable show all systems
 
@@ -105,35 +119,35 @@ A system is a hierarchy of locations. **Enable show all systems** controls wheth
 
 Turn this setting on if your team reports problems at locations outside their own primary system.
 
-## Configure work order behavior
+### Default priority and high priority
 
-Two sections control how work orders behave in IBM Maximo Mobile: **Work order status** and **Miscellaneous settings**.
+The **SR mobile settings** section also has two number fields. **Default priority** sets the default priority value for service requests. **High priority** sets the high priority value for service requests. The **Default priority** field shows 3.
+
+`[SME confirmation required: Confirm the valid values for Default priority and High priority, and how the high priority value is used on a service request. The screen shows 3 for Default priority, and the High priority value is cut off.]`
+
+## Configure Technician app settings
+
+The **Technician app** group has three sections: **Work order status**, **Timer settings**, and **Quick work order**.
 
 ### Work order status
 
-**Work order status** controls which status values are available to technicians when they update a work order in the app.
+**Work order status** has one setting, **Complete status**. It sets the status that a work order gets when a technician taps **Complete work** in IBM Maximo Mobile. The field shows COMP.
 
-**Complete status** sets the status value that IBM Maximo Mobile applies when a technician marks a work order as complete.
+### Timer settings
 
-`[SME confirmation required: Confirm whether COMP is the default complete status value in the Maximo Application Suite Select design, and whether technicians see the status code or a plain-language label.]`
+**Timer settings** controls how timers behave in the Technician app:
 
-### Allow go to report work
+- **Allow multiple timers**: Lets a technician start more than one timer at the same time.
+- **Use timer on Start Work**: Controls whether the timer starts automatically when a technician taps **Start Work**. The checkbox is labeled **Enable user timer**. Turn it off to change the status without starting the timer.
 
-**Allow go to report work** controls whether technicians see an option to navigate to the report work view from the work order.
+If you turn off **Allow multiple timers**, the limit applies only within the same list view. A technician can still start a timer from a different list view.
 
-Turn this on if your team records labor, materials, or other actuals directly against work orders in the mobile app.
+### Quick work order
 
-`[SME confirmation required: Confirm the exact label used in the Maximo Application Suite Select interface for the report work view. Do not use "Report Works" or "Actuals" unless those terms appear in the final product interface.]`
+**Quick work order** sets the values for work orders that technicians create with Quick Reporting on mobile devices:
 
-### Date attributes
-
-The **Miscellaneous settings** section includes settings that control which date attributes are visible in the app.
-
-`[SME confirmation required: Confirm which date attributes are exposed in the Maximo Application Suite Select design (for example, scheduled start, scheduled finish, target start) and whether the SCHEDULE default selection is confirmed in the final design.]`
-
-## Configure travel guidance
-
-The **Travel settings** section includes **Enable travel prompt** and **Travel radius**. Use these settings if your team tracks travel time to a work location.
+- **Define priority for quick work order**: The priority of the work order. The default is 1.
+- **Define work type for quick work order**: The work type of the work order. The default is EM.
 
 ## What to do next
 
