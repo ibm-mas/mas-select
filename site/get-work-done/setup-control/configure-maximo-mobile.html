@@ -1285,17 +1285,19 @@
     
       <cds-select-item value="#before-you-start">Before you start</cds-select-item>
     
-      <cds-select-item value="#open-the-mobile-configuration">Open the mobile configuration</cds-select-item>
+      <cds-select-item value="#open-the-mobile-configuration-application">Open the Mobile Configuration application</cds-select-item>
     
       <cds-select-item value="#choose-how-mobile-data-is-synchronized">Choose how mobile data is synchronized</cds-select-item>
     
+      <cds-select-item value="#set-up-preloaded-databases">Set up preloaded databases</cds-select-item>
+    
       <cds-select-item value="#choose-the-map-app">Choose the map app</cds-select-item>
+    
+      <cds-select-item value="#set-up-push-notifications">Set up push notifications</cds-select-item>
     
       <cds-select-item value="#configure-service-request-behavior">Configure service request behavior</cds-select-item>
     
-      <cds-select-item value="#configure-work-order-behavior">Configure work order behavior</cds-select-item>
-    
-      <cds-select-item value="#configure-travel-guidance">Configure travel guidance</cds-select-item>
+      <cds-select-item value="#configure-technician-app-settings">Configure Technician app settings</cds-select-item>
     
       <cds-select-item value="#what-to-do-next">What to do next</cds-select-item>
     
@@ -1314,16 +1316,19 @@
           <div class="rst-content">
             
             <h1 id="how-do-i-configure-ibm-maximo-mobile-for-my-team">How do I configure IBM Maximo Mobile for my team?<a class="headerlink" href="#how-do-i-configure-ibm-maximo-mobile-for-my-team" title="Permanent link">¤</a></h1>
-<p>IBM Maximo Mobile lets technicians, supervisors, and <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">inventory</abbr> clerks view and complete work, manage <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">inventory</abbr>, and update records from their mobile device. As an administrator, you configure the defaults that control how mobile devices sync data, which map app your team uses for navigation, and how service requests and <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> behave in the app.</p>
+<p>IBM Maximo Mobile lets technicians, supervisors, and <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">inventory</abbr> clerks view and complete work, manage <abbr title="Materials and spare parts stored for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; stock, stores, or warehouse">inventory</abbr>, and update records from their mobile device. In the <strong>Mobile Configuration</strong> application, you set the defaults that control how mobile devices sync data, which map app your team uses for navigation, how push notifications and preloaded databases work, and how the Service Request and Technician apps behave.</p>
 <h2 id="tips-for-success">💡 Tips for success<a class="headerlink" href="#tips-for-success" title="Permanent link">¤</a></h2>
 <ul>
 <li>Configure mobile settings before your team downloads and signs in to IBM Maximo Mobile. Changes to defaults apply to all users.</li>
 <li>Set up Map Manager before configuring mobile map settings. The map app you choose here opens the map that Map Manager provides.</li>
 <li>Start with the defaults and adjust after your team has used the app in the field. Most settings can be changed at any time.</li>
+<li>Give each user enough data for the role, not a full copy of the server. There is no single record limit, because performance depends on server resources, data complexity, device hardware, and network conditions.</li>
+<li>Use a preloaded database for large lookup data, such as <abbr title="Pieces of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machines, or units">assets</abbr> and <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr>. Devices receive the data when the app is set up, which removes slow syncs on later use.</li>
+<li>Store a copy of the push notification API key when you generate it. You cannot retrieve it after you save it.</li>
 </ul>
 <h2 id="quick-reference">Quick reference<a class="headerlink" href="#quick-reference" title="Permanent link">¤</a></h2>
 <h3 id="table-1-data-sync-options">Table 1: <abbr title="The process of transferring record, lookup, and map data between the server and a mobile device.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; synchronization, offline sync, or data refresh">Data sync</abbr> options<a class="headerlink" href="#table-1-data-sync-options" title="Permanent link">¤</a></h3>
-<p>Each data category offers the same three options. Choose the option that balances data freshness against bandwidth and device storage for your team.</p>
+<p>Worklist data and Supporting data offer the same three options. Choose the option that balances data freshness against bandwidth and device storage for your team. Map data is a single checkbox.</p>
 <table>
 <thead>
 <tr>
@@ -1333,82 +1338,98 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Reload all data</strong></td>
-<td>Downloads the full data set each time a sync runs. Use when you need your team to have complete, current data regardless of what changed.</td>
-</tr>
-<tr>
 <td><strong>Update recent changes</strong></td>
-<td>Downloads only data that changed since the last sync. Faster and lighter on bandwidth. Suitable for most teams.</td>
+<td>Syncs only what is new. Downloads only data that changed since the last sync.</td>
 </tr>
 <tr>
-<td><strong>Do not download data</strong></td>
-<td>Skips this data category during sync. Use when the data is not needed on the device.</td>
+<td><strong>Reload all data</strong></td>
+<td>Replaces everything with the latest. Downloads the full data set.</td>
+</tr>
+<tr>
+<td><strong>Do not download</strong></td>
+<td>Does not download this data by default.</td>
 </tr>
 </tbody>
 </table>
-<p><code>[SME confirmation required: Confirm the option labels and where you set them in Select. The Maximo Manage documentation calls the options "Complete", "Only delta", and "Do not download", and lists them under "Worklist data" and "Supporting data" in the Mobile administration app. This page uses "Record data" and "Supporting data".]</code></p>
 <h2 id="before-you-start">Before you start<a class="headerlink" href="#before-you-start" title="Permanent link">¤</a></h2>
 <ul>
-<li>Confirm that your role has permission to update mobile configuration settings in Maximo Application Suite Select.</li>
+<li>Confirm that your role has permission to update mobile configuration settings.</li>
 <li>Confirm that Map Manager is configured if you plan to use map navigation. See <a href="set-up-maps.html">How do I set up maps?</a>.</li>
 <li>Confirm that <abbr title="Work time and effort assigned to a work order.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; technician time, work hours, or crew time">labor</abbr> records and <abbr title="Collections of users who share the same application access and permissions.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; permission groups, access groups, user groups, or roles">security groups</abbr> are set up so technicians can be assigned work. See <a href="set-up-labor-crafts-crews.html">How do I set up <abbr title="Work time and effort assigned to a work order.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; technician time, work hours, or crew time">labor</abbr>, <abbr title="Trades or skill types required for maintenance work.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; trades, skill types, or disciplines">crafts</abbr>, and <abbr title="Named groups of workers assembled to complete jobs together, assigned as teams to work orders.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; work crews, teams, or work gangs">crews</abbr>?</a>.</li>
 </ul>
-<p><code>[SME confirmation required: Identify which Maximo Application Suite Select roles can update mobile configuration settings.]</code></p>
-<h2 id="open-the-mobile-configuration">Open the mobile configuration<a class="headerlink" href="#open-the-mobile-configuration" title="Permanent link">¤</a></h2>
-<p>Open the <strong>Mobile properties</strong> application.</p>
+<p><code>[SME confirmation required: Identify which roles can open the Mobile Configuration application and update mobile properties.]</code></p>
+<h2 id="open-the-mobile-configuration-application">Open the Mobile Configuration application<a class="headerlink" href="#open-the-mobile-configuration-application" title="Permanent link">¤</a></h2>
+<p>Open the <strong>Mobile Configuration</strong> application. The page shows two cards:</p>
+<ul>
+<li><strong>Mobile properties</strong>: Configure system properties that affect Maximo Mobile apps.</li>
+<li><strong>Preloaded databases</strong>: Manage and monitor the progress of preloaded database creation.</li>
+</ul>
+<p>Select <strong>Mobile properties</strong> to change settings. The left navigation groups the settings under <strong>Mobile foundation</strong>, <strong>Common app settings</strong>, <strong>Service requests app</strong>, and <strong>Technician app</strong>.</p>
 <h2 id="choose-how-mobile-data-is-synchronized">Choose how mobile data is synchronized<a class="headerlink" href="#choose-how-mobile-data-is-synchronized" title="Permanent link">¤</a></h2>
-<p>The <strong>Default <abbr title="The process of transferring record, lookup, and map data between the server and a mobile device.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; synchronization, offline sync, or data refresh">data sync</abbr> settings</strong> section controls what data mobile devices download when a user syncs the app. Configure each category separately.</p>
-<h3 id="record-data">Record data<a class="headerlink" href="#record-data" title="Permanent link">¤</a></h3>
-<p><strong>Record data</strong> controls how <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> and service requests are synced to the device.</p>
+<p>The <strong>Default <abbr title="The process of transferring record, lookup, and map data between the server and a mobile device.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; synchronization, offline sync, or data refresh">data sync</abbr> settings</strong> section, under <strong>Mobile foundation</strong>, controls what data mobile devices download when a user syncs the app. Configure each category separately.</p>
+<h3 id="worklist-data">Worklist data<a class="headerlink" href="#worklist-data" title="Permanent link">¤</a></h3>
+<p><strong>Worklist data</strong> controls how the records in a user's worklist, such as <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr>, are synced to the device.</p>
 <p>Select one of the three options described in <a href="#table-1-data-sync-options">Table 1</a>.</p>
 <h3 id="supporting-data">Supporting data<a class="headerlink" href="#supporting-data" title="Permanent link">¤</a></h3>
 <p><strong>Supporting data</strong> controls how lookup data, such as <abbr title="Any piece of equipment, machinery, or infrastructure that your organization maintains.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; equipment, machine, or unit">asset</abbr> records and <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr> lists, is synced to the device.</p>
 <p>Select one of the three options described in <a href="#table-1-data-sync-options">Table 1</a>.</p>
 <h3 id="map-data">Map data<a class="headerlink" href="#map-data" title="Permanent link">¤</a></h3>
-<p><strong>Map data</strong> controls whether map data is downloaded to the device.</p>
+<p><strong>Map data</strong> controls whether map data is downloaded to the device. Select <strong>Download map data</strong> to download and sync map data to mobile devices. Clear the checkbox to skip map data.</p>
+<h2 id="set-up-preloaded-databases">Set up preloaded databases<a class="headerlink" href="#set-up-preloaded-databases" title="Permanent link">¤</a></h2>
+<p>A preloaded database bundles supporting data so a new device does not have to download it record by record. Each database is built for a person group, so make sure each user belongs to the right group.</p>
+<p>In the <strong>Preloaded Database</strong> section, under <strong>Mobile foundation</strong>, set:</p>
 <ul>
-<li>Select <strong>Update recent changes</strong> or <strong>Reload all data</strong> to download map data to devices.</li>
-<li>Select <strong>Do not download data</strong> to skip map data during sync.</li>
+<li><strong>Enable preloaded database</strong>: Turns preloaded database generation on or off.</li>
+<li><strong>Generation start time</strong>: The time that generation starts.</li>
+<li><strong>Time zone</strong>: The time zone for the start time.</li>
 </ul>
-<p><code>[SME confirmation required: Confirm the exact option labels for map data in the Maximo Application Suite Select design. The Maximo Manage equivalent is a single "Download map data" toggle rather than the three-option model.]</code></p>
+<p>To check progress, go back to the Mobile Configuration page and select the <strong>Preloaded databases</strong> card. The page lists each preloaded database with details such as <abbr title="A data partitioning concept that represents a plant, facility, or business unit.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; plant, facility, or business unit">site</abbr>, language, person group, start time, end time, and duration.</p>
 <h2 id="choose-the-map-app">Choose the map app<a class="headerlink" href="#choose-the-map-app" title="Permanent link">¤</a></h2>
-<p>The <strong>Map settings</strong> section controls which map application IBM Maximo Mobile opens when a user navigates to a <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr>.</p>
-<p>The available options are:</p>
+<p>The <strong>Map settings</strong> section, under <strong>Common app settings</strong>, controls which map app IBM Maximo Mobile opens when a user navigates to a <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr>. Choose one app for each platform:</p>
 <ul>
-<li><strong>Apple Maps</strong></li>
-<li><strong>Google Maps</strong></li>
-<li><strong>Waze</strong></li>
+<li><strong>Navigation for Android</strong></li>
+<li><strong>Navigation for iOS</strong></li>
+<li><strong>Navigation for Windows</strong></li>
 </ul>
-<p>Select the map app that your team uses.</p>
-<p><code>[SME confirmation required: Confirm whether map app options are platform-specific (for example, Apple Maps on iOS only) or available on all supported platforms. Confirm whether a browser fallback option appears in the final Maximo Application Suite Select design.]</code></p>
+<p>Each platform offers <strong>Apple Maps</strong>, <strong>Google Maps</strong>, and <strong>Waze</strong>. Select the map app that your team uses on each platform.</p>
+<h2 id="set-up-push-notifications">Set up push notifications<a class="headerlink" href="#set-up-push-notifications" title="Permanent link">¤</a></h2>
+<p>The <strong>Push Notification settings</strong> section, under <strong>Common app settings</strong>, connects Maximo to the push notification service for IBM Maximo Mobile. It has two settings:</p>
+<ul>
+<li><strong>API Key</strong>: Select <strong>Generate API Key</strong> to open the push notification service and generate a key. The key lets Maximo connect securely to the service. The key cannot be retrieved after it is saved.</li>
+<li><strong>Token life extension</strong>: The number of days a push notification token stays active after the user's last sign in on a mobile device.</li>
+</ul>
+<p>For the full setup, see <a href="automate-communication.html#push-notifications">How do I automate communication?</a>.</p>
 <h2 id="configure-service-request-behavior">Configure service request behavior<a class="headerlink" href="#configure-service-request-behavior" title="Permanent link">¤</a></h2>
-<p>The <strong>SR mobile settings</strong> section controls how the service request experience works in IBM Maximo Mobile.</p>
+<p>The <strong>SR mobile settings</strong> section, under <strong>Service requests app</strong>, controls how the service request experience works in IBM Maximo Mobile.</p>
 <h3 id="enable-follow-similar-requests">Enable follow similar requests<a class="headerlink" href="#enable-follow-similar-requests" title="Permanent link">¤</a></h3>
-<p><strong>Enable follow similar requests</strong> allows technicians to see service requests that are similar to the one they are creating or viewing.</p>
-<p>Turn this setting on or off depending on whether your team uses this feature.</p>
-<p><code>[SME confirmation required: Confirm the exact effect of enabling or disabling this setting, and whether "similar requests" is defined by a matching location, asset, description, or another criterion.]</code></p>
+<p><strong>Enable follow similar requests</strong> turns on the Follow Similar Requests feature on the mobile device. Turn this setting on or off depending on whether your team uses this feature.</p>
+<p><code>[SME confirmation required: Confirm what a user sees when Follow Similar Requests is on, and how similar requests are matched, for example by location, asset, or description.]</code></p>
 <h3 id="service-address-priority">Service address priority<a class="headerlink" href="#service-address-priority" title="Permanent link">¤</a></h3>
-<p><strong>Service address priority</strong> determines which address IBM Maximo Mobile uses when a service request has more than one address associated with it.</p>
-<p>Select the priority value that reflects how your organization resolves address conflicts.</p>
-<p><code>[SME confirmation required: Confirm the available priority values and their order of precedence in the final Maximo Application Suite Select design.]</code></p>
+<p><strong>Service address priority</strong> controls where the service address comes from when a user creates a service request. It has three options: <strong>ASSET</strong>, <strong>LOCATION</strong>, and <strong>NONE</strong>. Select the source that your organization uses for service addresses.</p>
+<p><code>[SME confirmation required: Confirm what NONE does, and whether LOCATION, the option selected on the screen, is the default. The Maximo Manage documentation says the property defaults to ASSET and can be set to LOCATION or an empty value.]</code></p>
 <h3 id="enable-show-all-systems">Enable show all systems<a class="headerlink" href="#enable-show-all-systems" title="Permanent link">¤</a></h3>
 <p>A system is a hierarchy of <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr>. <strong>Enable show all systems</strong> controls whether users can select <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr> outside their primary system when they create service requests. For more about systems, see <a href="plan-your-location-hierarchy.html#can-i-organize-the-same-locations-more-than-one-way">Can I organize the same <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr> more than one way?</a></p>
 <p>Turn this setting on if your team reports problems at <abbr title="Functional locations or operating areas where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional locations, areas, or site areas">locations</abbr> outside their own primary system.</p>
-<h2 id="configure-work-order-behavior">Configure <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> behavior<a class="headerlink" href="#configure-work-order-behavior" title="Permanent link">¤</a></h2>
-<p>Two sections control how <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> behave in IBM Maximo Mobile: <strong><abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">Work order</abbr> <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr></strong> and <strong>Miscellaneous settings</strong>.</p>
+<h3 id="default-priority-and-high-priority">Default priority and high priority<a class="headerlink" href="#default-priority-and-high-priority" title="Permanent link">¤</a></h3>
+<p>The <strong>SR mobile settings</strong> section also has two number fields. <strong>Default priority</strong> sets the default priority value for service requests. <strong>High priority</strong> sets the high priority value for service requests. The <strong>Default priority</strong> field shows 3.</p>
+<p><code>[SME confirmation required: Confirm the valid values for Default priority and High priority, and how the high priority value is used on a service request. The screen shows 3 for Default priority, and the High priority value is cut off.]</code></p>
+<h2 id="configure-technician-app-settings">Configure Technician app settings<a class="headerlink" href="#configure-technician-app-settings" title="Permanent link">¤</a></h2>
+<p>The <strong>Technician app</strong> group has three sections: <strong><abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">Work order</abbr> <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr></strong>, <strong>Timer settings</strong>, and <strong>Quick <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr></strong>.</p>
 <h3 id="work-order-status"><abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">Work order</abbr> <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr><a class="headerlink" href="#work-order-status" title="Permanent link">¤</a></h3>
-<p><strong><abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">Work order</abbr> <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr></strong> controls which <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr> values are available to technicians when they update a <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> in the app.</p>
-<p><strong>Complete <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr></strong> sets the <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr> value that IBM Maximo Mobile applies when a technician marks a <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> as complete.</p>
-<p><code>[SME confirmation required: Confirm whether COMP is the default complete status value in the Maximo Application Suite Select design, and whether technicians see the status code or a plain-language label.]</code></p>
-<h3 id="allow-go-to-report-work">Allow go to report work<a class="headerlink" href="#allow-go-to-report-work" title="Permanent link">¤</a></h3>
-<p><strong>Allow go to report work</strong> controls whether technicians see an option to navigate to the report work view from the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr>.</p>
-<p>Turn this on if your team records <abbr title="Work time and effort assigned to a work order.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; technician time, work hours, or crew time">labor</abbr>, materials, or other actuals directly against <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> in the mobile app.</p>
-<p><code>[SME confirmation required: Confirm the exact label used in the Maximo Application Suite Select interface for the report work view. Do not use "Report Works" or "Actuals" unless those terms appear in the final product interface.]</code></p>
-<h3 id="date-attributes">Date attributes<a class="headerlink" href="#date-attributes" title="Permanent link">¤</a></h3>
-<p>The <strong>Miscellaneous settings</strong> section includes settings that control which date attributes are visible in the app.</p>
-<p><code>[SME confirmation required: Confirm which date attributes are exposed in the Maximo Application Suite Select design (for example, scheduled start, scheduled finish, target start) and whether the SCHEDULE default selection is confirmed in the final design.]</code></p>
-<h2 id="configure-travel-guidance">Configure travel guidance<a class="headerlink" href="#configure-travel-guidance" title="Permanent link">¤</a></h2>
-<p>The <strong>Travel settings</strong> section includes <strong>Enable travel prompt</strong> and <strong>Travel radius</strong>. Use these settings if your team tracks travel time to a work <abbr title="A functional location or operating area where assets are installed or work is performed.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; functional location, area, or site area">location</abbr>.</p>
+<p><strong><abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">Work order</abbr> <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr></strong> has one setting, <strong>Complete <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr></strong>. It sets the <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr> that a <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr> gets when a technician taps <strong>Complete work</strong> in IBM Maximo Mobile. The field shows COMP.</p>
+<h3 id="timer-settings">Timer settings<a class="headerlink" href="#timer-settings" title="Permanent link">¤</a></h3>
+<p><strong>Timer settings</strong> controls how timers behave in the Technician app:</p>
+<ul>
+<li><strong>Allow multiple timers</strong>: Lets a technician start more than one timer at the same time.</li>
+<li><strong>Use timer on Start Work</strong>: Controls whether the timer starts automatically when a technician taps <strong>Start Work</strong>. The checkbox is labeled <strong>Enable user timer</strong>. Turn it off to change the <abbr title="The lifecycle state of a work order or record.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; lifecycle state, order state, or workflow stage">status</abbr> without starting the timer.</li>
+</ul>
+<p>If you turn off <strong>Allow multiple timers</strong>, the limit applies only within the same list view. A technician can still start a timer from a different list view.</p>
+<h3 id="quick-work-order">Quick <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr><a class="headerlink" href="#quick-work-order" title="Permanent link">¤</a></h3>
+<p><strong>Quick <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr></strong> sets the values for <abbr title="Requests or instructions to perform maintenance work that track everything about maintenance jobs.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance orders, jobs, or tickets">work orders</abbr> that technicians create with Quick Reporting on mobile devices:</p>
+<ul>
+<li><strong>Define priority for quick <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr></strong>: The priority of the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr>. The default is 1.</li>
+<li><strong>Define work type for quick <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr></strong>: The work type of the <abbr title="A request or instruction to perform maintenance work that tracks everything about a maintenance job.&lt;br&gt;&lt;br&gt;&lt;strong&gt;You might know this as:&lt;/strong&gt; maintenance order, job, or ticket">work order</abbr>. The default is EM.</li>
+</ul>
 <h2 id="what-to-do-next">What to do next<a class="headerlink" href="#what-to-do-next" title="Permanent link">¤</a></h2>
 <p>After you configure IBM Maximo Mobile, prepare your team to use it:</p>
 <ul>
@@ -1495,8 +1516,8 @@
                 </a>
               </li>
               <li class="md-toc__item">
-                <a href="#open-the-mobile-configuration" class="md-toc__link" data-md-level="1">
-                  Open the mobile configuration
+                <a href="#open-the-mobile-configuration-application" class="md-toc__link" data-md-level="1">
+                  Open the Mobile Configuration application
                 </a>
               </li>
               <li class="md-toc__item">
@@ -1505,8 +1526,8 @@
                 </a>
                   <ul class="md-toc__list">
                       <li class="md-toc__item">
-                        <a href="#record-data" class="md-toc__link" data-md-level="2">
-                          Record data
+                        <a href="#worklist-data" class="md-toc__link" data-md-level="2">
+                          Worklist data
                         </a>
                       </li>
                       <li class="md-toc__item">
@@ -1522,8 +1543,18 @@
                   </ul>
               </li>
               <li class="md-toc__item">
+                <a href="#set-up-preloaded-databases" class="md-toc__link" data-md-level="1">
+                  Set up preloaded databases
+                </a>
+              </li>
+              <li class="md-toc__item">
                 <a href="#choose-the-map-app" class="md-toc__link" data-md-level="1">
                   Choose the map app
+                </a>
+              </li>
+              <li class="md-toc__item">
+                <a href="#set-up-push-notifications" class="md-toc__link" data-md-level="1">
+                  Set up push notifications
                 </a>
               </li>
               <li class="md-toc__item">
@@ -1546,11 +1577,16 @@
                           Enable show all systems
                         </a>
                       </li>
+                      <li class="md-toc__item">
+                        <a href="#default-priority-and-high-priority" class="md-toc__link" data-md-level="2">
+                          Default priority and high priority
+                        </a>
+                      </li>
                   </ul>
               </li>
               <li class="md-toc__item">
-                <a href="#configure-work-order-behavior" class="md-toc__link" data-md-level="1">
-                  Configure work order behavior
+                <a href="#configure-technician-app-settings" class="md-toc__link" data-md-level="1">
+                  Configure Technician app settings
                 </a>
                   <ul class="md-toc__list">
                       <li class="md-toc__item">
@@ -1559,21 +1595,16 @@
                         </a>
                       </li>
                       <li class="md-toc__item">
-                        <a href="#allow-go-to-report-work" class="md-toc__link" data-md-level="2">
-                          Allow go to report work
+                        <a href="#timer-settings" class="md-toc__link" data-md-level="2">
+                          Timer settings
                         </a>
                       </li>
                       <li class="md-toc__item">
-                        <a href="#date-attributes" class="md-toc__link" data-md-level="2">
-                          Date attributes
+                        <a href="#quick-work-order" class="md-toc__link" data-md-level="2">
+                          Quick work order
                         </a>
                       </li>
                   </ul>
-              </li>
-              <li class="md-toc__item">
-                <a href="#configure-travel-guidance" class="md-toc__link" data-md-level="1">
-                  Configure travel guidance
-                </a>
               </li>
               <li class="md-toc__item">
                 <a href="#what-to-do-next" class="md-toc__link" data-md-level="1">
