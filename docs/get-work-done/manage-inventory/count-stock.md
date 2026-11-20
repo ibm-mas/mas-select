@@ -48,7 +48,7 @@ Count systematically:
 
 Count books group items logically, schedule counts, assign counters, track completion, record results, and show variances. The system can generate count books, assign them to users, track progress, record counts, calculate differences, and create adjustments.
 
-You create count books in the Count Books application. You count items in the Inventory Counting app on the desktop or in IBM Maximo Mobile. In Inventory Counting, you can:
+You create count books in the Count Books desktop application. You count items in the Inventory Counting mobile app in IBM Maximo Mobile. In Inventory Counting, you can:
 
 - Count the items in a count book.
 - Count items that are not in a count book.
@@ -57,12 +57,11 @@ You create count books in the Count Books application. You count items in the In
 - See alerts for differences that need a recount.
 - Count in batches as part of a cycle count.
 
-After you count, the **Reconciled?** checkbox on the inventory balance shows whether the count is reconciled.
+You reconcile counts in the Inventory application. Under **Inventory Adjustments**, selecting **Reconcile Balances** reconciles the balances. After you reconcile, the **Reconciled?** checkbox on the inventory balance shows whether the count is reconciled.
 
-`[SME confirmation required: Confirm that you can open Inventory Counting in a desktop browser in Select as well as in IBM Maximo Mobile, and confirm where counts are reconciled.]`
+![The Count Books application showing count book 1003, Food-grade gasket kit count, for the storeroom MAIN-STORE with the reason ANNUAL, the selection type ITEM, the Item Summary section, and the Select Items table](../../images/count_books_form.png){ style="width: 100%; max-width: 900px; display: block; margin: 16px auto;" }
 
-!!! warning "TODO: Add visual content"
-     A screenshot showing a count book would be useful here.
+<p class="figure-caption">Figure 1: A count book in the Count Books application</p>
 
 ---
 
