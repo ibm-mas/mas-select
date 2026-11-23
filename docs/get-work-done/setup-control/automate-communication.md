@@ -80,9 +80,9 @@ You set up push notifications in the **Mobile Configuration** application. The *
 
 ### Set how long a token stays active
 
-**Token life extension** is the number of days that a push notification token stays active after the user's last sign in on a mobile device. The field shows 10 days.
+**Token life extension** is the number of days that a push notification token is kept active after the user's last sign in on a mobile device. The field shows 10 days.
 
-`[SME confirmation required: Confirm the full help text for Token life extension, which is cut off on the screen, and whether 10 days is the default.]`
+`[SME confirmation required: Confirm whether 10 days is the default for Token life extension.]`
 
 `[SME confirmation required: Review the push notification topics together. Confirm how the Push Notification settings in Mobile Configuration relate to the Push Notifications Administration application, which chooses the events that send notifications, and confirm the order in which an administrator uses them.]`
 
