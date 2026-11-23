@@ -8,6 +8,19 @@ Whether you're fixing equipment, tracking parts, or planning preventive maintena
 
 ---
 
+## <img src="../../images/supervisor_final.png" alt="" class="role-heading-icon no-lightbox"> What can I do as a supervisor?
+
+- Create and assign work orders in the Work Orders application
+- Schedule preventive maintenance
+- Track work progress and completion
+- Monitor team workload
+- Review maintenance costs and performance
+- [Assign and approve work on the go with IBM Maximo Mobile](../first-task/get-maximo-mobile.md)
+
+**First task**: [Assign and track work](../first-task/supervisor-first-task.md)
+
+---
+
 ## <img src="../../images/technician_final.png" alt="" class="role-heading-icon no-lightbox"> What can I do as a technician?
 
 - View your assigned work orders in the Technician app
@@ -19,19 +32,6 @@ Whether you're fixing equipment, tracking parts, or planning preventive maintena
 - [Complete work on the go with IBM Maximo Mobile](../first-task/get-maximo-mobile.md)
 
 **First task**: [Complete a work order](../first-task/technician-first-task.md)
-
----
-
-## <img src="../../images/supervisor_final.png" alt="" class="role-heading-icon no-lightbox"> What can I do as a supervisor?
-
-- Create and assign work orders in the Work Orders application
-- Schedule preventive maintenance
-- Track work progress and completion
-- Monitor team workload
-- Review maintenance costs and performance
-- [Assign and approve work on the go with IBM Maximo Mobile](../first-task/get-maximo-mobile.md)
-
-**First task**: [Assign and track work](../first-task/supervisor-first-task.md)
 
 ---
 

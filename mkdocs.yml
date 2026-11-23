@@ -204,8 +204,8 @@ nav:
     - About the product: start-fast/what-is-mas-select.md
     - Your role: start-fast/what-can-i-do/overview.md
     - First task:
-      - "Technician: Complete your first work order": start-fast/first-task/technician-first-task.md
       - "Supervisor: Assign and track work": start-fast/first-task/supervisor-first-task.md
+      - "Technician: Complete your first work order": start-fast/first-task/technician-first-task.md
       - "Inventory clerk: Issue a part": start-fast/first-task/inventory-clerk-first-task.md
       - "Administrator: Add users": start-fast/first-task/administrator-first-task.md
       - Get Maximo Mobile: start-fast/first-task/get-maximo-mobile.md

@@ -66,8 +66,8 @@ Aucune installation. Aucune configuration. Aucune personnalisation nécessaire. 
 
 ## À qui s'adresse-t-il ? { #who-is-this-for }
 
-- Les **techniciens** peuvent rechercher et terminer des ordres de travail, par exemple terminer le travail sur Filler FL-02.
 - Les **superviseurs** peuvent planifier, affecter et suivre le travail de maintenance, par exemple affecter la maintenance préventive de Spiral freezer SF-01.
+- Les **techniciens** peuvent rechercher et terminer des ordres de travail, par exemple terminer le travail sur Filler FL-02.
 - Les **magasiniers** peuvent gérer les pièces et les fournitures, par exemple sortir des pièces de Main storeroom.
 - Les **administrateurs** peuvent charger des données et configurer des utilisateurs, par exemple charger des utilisateurs pour Ice cream plant A.
 

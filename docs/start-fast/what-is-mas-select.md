@@ -36,8 +36,8 @@ Within these teams, people use the product in four roles:
 
 | Role | What the role can do | Example |
 |------|----------------------|---------|
-| **Technicians** | Find and complete work orders | Complete work on Filler FL-02 |
 | **Supervisors** | Plan, assign, and track maintenance work | Assign preventive maintenance for Spiral freezer SF-01 |
+| **Technicians** | Find and complete work orders | Complete work on Filler FL-02 |
 | **Inventory clerks** | Manage parts and supplies | Issue parts from Main storeroom |
 | **Administrators** | Load data and set up users | Load users for Ice cream plant A |
 
