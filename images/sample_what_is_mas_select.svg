@@ -1,21 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 512" width="100%" height="100%" role="img" aria-labelledby="title desc" style="background:#ffffff; font-family:'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
   <title id="title">How Maximo Application Suite Select connects maintenance, inspections, assets, and inventory</title>
-  <desc id="desc">Technicians, supervisors, inventory clerks, and administrators use one product that covers assets, work orders, inspections, and inventory, with dashboards and key performance indicators to monitor performance.</desc>
+  <desc id="desc">Supervisors, technicians, inventory clerks, and administrators use one product that covers assets, work orders, inspections, and inventory, with dashboards and key performance indicators to monitor performance.</desc>
   <rect width="100%" height="100%" fill="#ffffff"/>
   <rect x="24" y="24" width="1032" height="152" rx="8" ry="8" fill="#f4f4f4" stroke="#6f6f6f" stroke-width="1"/>
   <text x="40" y="48" font-size="14" font-weight="600" fill="#161616">Roles</text>
   <rect class="node" id="r1" x="40" y="64" width="232" height="96" rx="8" ry="8" fill="#ffffff" stroke="#161616" stroke-width="1"/>
   <path d="M 48 64 Q 40 64 40 72 V 152 Q 40 160 48 160 Z" fill="#161616"/>
   <g transform="translate(64 80) scale(0.75)" fill="#161616"><path d="M16,4a5,5,0,1,1-5,5,5,5,0,0,1,5-5m0-2a7,7,0,1,0,7,7A7,7,0,0,0,16,2Z"/><path d="M26,30H24V25a5,5,0,0,0-5-5H13a5,5,0,0,0-5,5v5H6V25a7,7,0,0,1,7-7h6a7,7,0,0,1,7,7Z"/></g>
-  <text x="104" y="96" font-size="14" font-weight="600" fill="#161616">Technicians</text>
-  <text x="64" y="124" font-size="14" fill="#161616">Find work orders</text>
-  <text x="64" y="142" font-size="14" fill="#161616">Complete work orders</text>
+  <text x="104" y="96" font-size="14" font-weight="600" fill="#161616">Supervisors</text>
+  <text x="64" y="124" font-size="14" fill="#161616">Plan work</text>
+  <text x="64" y="142" font-size="14" fill="#161616">Assign and track work</text>
   <rect class="node" id="r2" x="296" y="64" width="232" height="96" rx="8" ry="8" fill="#ffffff" stroke="#161616" stroke-width="1"/>
   <path d="M 304 64 Q 296 64 296 72 V 152 Q 296 160 304 160 Z" fill="#161616"/>
   <g transform="translate(320 80) scale(0.75)" fill="#161616"><path d="M16,4a5,5,0,1,1-5,5,5,5,0,0,1,5-5m0-2a7,7,0,1,0,7,7A7,7,0,0,0,16,2Z"/><path d="M26,30H24V25a5,5,0,0,0-5-5H13a5,5,0,0,0-5,5v5H6V25a7,7,0,0,1,7-7h6a7,7,0,0,1,7,7Z"/></g>
-  <text x="360" y="96" font-size="14" font-weight="600" fill="#161616">Supervisors</text>
-  <text x="320" y="124" font-size="14" fill="#161616">Plan work</text>
-  <text x="320" y="142" font-size="14" fill="#161616">Assign and track work</text>
+  <text x="360" y="96" font-size="14" font-weight="600" fill="#161616">Technicians</text>
+  <text x="320" y="124" font-size="14" fill="#161616">Find work orders</text>
+  <text x="320" y="142" font-size="14" fill="#161616">Complete work orders</text>
   <rect class="node" id="r3" x="552" y="64" width="232" height="96" rx="8" ry="8" fill="#ffffff" stroke="#161616" stroke-width="1"/>
   <path d="M 560 64 Q 552 64 552 72 V 152 Q 552 160 560 160 Z" fill="#161616"/>
   <g transform="translate(576 80) scale(0.75)" fill="#161616"><path d="M16,4a5,5,0,1,1-5,5,5,5,0,0,1,5-5m0-2a7,7,0,1,0,7,7A7,7,0,0,0,16,2Z"/><path d="M26,30H24V25a5,5,0,0,0-5-5H13a5,5,0,0,0-5,5v5H6V25a7,7,0,0,1,7-7h6a7,7,0,0,1,7,7Z"/></g>
