@@ -1,7 +1,7 @@
 ---
 search:
   boost: 2
-  keywords: glossary terminology definitions object structure domain escalation communication template crew inventory basemap plan work log communications log material request reservation issue role person default application authorized users start workflow API calls upgrade
+  keywords: glossary terminology definitions data object object structure domain escalation communication template crew inventory basemap plan work log communications log material request reservation issue role person default application authorized users start workflow API calls upgrade
 ---
 
 # Why do some terms differ from what I'm used to?
@@ -185,11 +185,11 @@ A service request or incident report.
 
 ## Configuration and data
 
-### Object structure
+### Data object
 Defines the records and related fields that are available for importing, exporting, or exchanging data.
-*You might know this as:* data structure, import template, or record definition
+*You might know this as:* object structure, import template, or record definition
 
-**Want to know more?** [Which object structure do I use for each data type?](../../get-work-done/setup-control/object-structure-data-types.md) · [How do I get data into the system?](../../get-work-done/setup-control/get-data-into-system.md)
+**Want to know more?** [Which data object do I use for each data type?](../../get-work-done/setup-control/object-structure-data-types.md) · [How do I get data into the system?](../../get-work-done/setup-control/get-data-into-system.md)
 
 ### Domain
 A list of valid values attached to a field that controls what users can select in a dropdown.

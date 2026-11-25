@@ -192,7 +192,7 @@ With your CSV files prepared and validated, upload them into Data Management and
 
 ## Related topics
 
-- [Which object structure do I use for each data type?](object-structure-data-types.md)
+- [Which data object do I use for each data type?](object-structure-data-types.md)
 - [How do I standardize data?](../organize-people/standardize-data.md)
 - [Locations](../../start-fast/basics/what-is-location.md)
 - [What is an asset?](../../start-fast/basics/what-is-asset.md)

@@ -298,4 +298,4 @@ With your location hierarchy planned, organize your machinery, subassemblies, an
 - [Why does my data look wrong?](../../improve-results/improve-data/data-looks-wrong.md)
 - [How do I make data reliable?](../../improve-results/improve-data/make-data-reliable.md)
 - [How do locations, assets, and work orders work together?](../../start-fast/basics/how-concepts-work-together.md)
-- [Which object structure do I use for each data type?](object-structure-data-types.md)
+- [Which data object do I use for each data type?](object-structure-data-types.md)

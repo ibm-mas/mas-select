@@ -246,11 +246,11 @@ Import errors can occur with locations or assets. A troubleshooting guide helps 
 
 [I want to know more about fixing import errors](../get-work-done/setup-control/why-does-asset-import-fail.md)
 
-### Which object structure do I use for each data type?
+### Which data object do I use for each data type?
 
-An object structure defines what you are loading, much like a spreadsheet template defines the columns available for a type of data. You pick the one that matches the data you are loading.
+A data object defines what you are loading, much like a spreadsheet template defines the columns available for a type of data. You pick the one that matches the data you are loading.
 
-[I want to know more about object structures](../get-work-done/setup-control/object-structure-data-types.md)
+[I want to know more about data objects](../get-work-done/setup-control/object-structure-data-types.md)
 
 ### How do I set up meters, failure codes, and inspection forms?
 

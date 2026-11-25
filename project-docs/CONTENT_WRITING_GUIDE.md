@@ -285,15 +285,15 @@ For a page like "How do I fix import errors?" with sections for Location, Asset,
 
 ```markdown
 ## Location import errors
-Location hierarchies require specific object structure in the import file.
+Location hierarchies require a specific data object in the import file.
 [First use in Location section - tooltip appears]
 
 ## Asset import errors
-The import file must match the expected object structure exactly.
+The import file must match the expected data object exactly.
 [First use in Asset section - tooltip appears]
 
 ## User import errors
-File doesn't match the expected USER object structure.
+File doesn't match the expected USER data object.
 [First use in User section - tooltip appears]
 ```
 
@@ -303,7 +303,7 @@ See `docs/.snippets` for the complete list of available tooltips including:
 - asset/assets
 - work order/work orders
 - location/locations
-- object structure/object structures
+- data object/data objects
 - And many more...
 
 ## Common Patterns

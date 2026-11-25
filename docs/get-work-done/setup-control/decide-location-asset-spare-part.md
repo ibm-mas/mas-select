@@ -265,4 +265,4 @@ With your classification decisions established, plan the location and equipment 
 - [Locations](../../start-fast/basics/what-is-location.md)
 - [What is an asset?](../../start-fast/basics/what-is-asset.md)
 - [How do locations, assets, and work orders work together?](../../start-fast/basics/how-concepts-work-together.md)
-- [Which object structure do I use for each data type?](object-structure-data-types.md)
+- [Which data object do I use for each data type?](object-structure-data-types.md)

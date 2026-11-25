@@ -254,4 +254,4 @@ With your location and asset hierarchies planned, download CSV templates from Da
 - [How do I manage more assets?](../../work-smarter/scale-operation/manage-more-assets.md)
 - [How do I make data reliable?](../../improve-results/improve-data/make-data-reliable.md)
 - [How do locations, assets, and work orders work together?](../../start-fast/basics/how-concepts-work-together.md)
-- [Which object structure do I use for each data type?](object-structure-data-types.md)
+- [Which data object do I use for each data type?](object-structure-data-types.md)

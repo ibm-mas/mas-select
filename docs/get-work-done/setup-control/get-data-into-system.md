@@ -36,12 +36,12 @@ Before filling in your data, use the Data Management application to download a t
 **What to do:**
 
 1. In the **Find navigation item** field, search for Data Management and open it.
-2. Select the data type or object structure you want to import, such as locations or assets.
+2. Select the data type or data object you want to import, such as locations or assets.
 3. Click **Export data** or download the template for that data type.
 4. Open the downloaded CSV file in a spreadsheet application to review the required columns and format.
 
 !!! note
-    If you need a breakdown of the specific column fields for each data type, see [Which object structure do I use for each data type?](object-structure-data-types.md) and [How do I prepare data for import?](prepare-data-for-import.md).
+    If you need a breakdown of the specific column fields for each data type, see [Which data object do I use for each data type?](object-structure-data-types.md) and [How do I prepare data for import?](prepare-data-for-import.md).
 
 ---
 
@@ -52,7 +52,7 @@ Once your CSV file is prepared and validated:
 **What to do:**
 
 1. In the **Find navigation item** field, search for Data Management and open it.
-2. Select the data type or object structure that matches your file.
+2. Select the data type or data object that matches your file.
 3. Click **Import data**.
 4. Click **Browse** and select your prepared CSV file.
 5. Select **Import preview** to check for errors before committing the import.
@@ -121,7 +121,7 @@ Not every import goes smoothly. Learn how to diagnose preview errors, correct so
 
 ## Related topics
 
-- [Which object structure do I use for each data type?](object-structure-data-types.md)
+- [Which data object do I use for each data type?](object-structure-data-types.md)
 - [How do I prepare data for import?](prepare-data-for-import.md)
 - [Administrator: Add users](../../start-fast/first-task/administrator-first-task.md)
 - [How do I standardize data?](../organize-people/standardize-data.md)

@@ -45,9 +45,9 @@ Figure 1 contrasts the correct top-down import sequence with a missing-parent va
 <img src="../../images/sample_location_import_hierarchy_flow.svg" alt="Explained in body text" style="width: 100%; max-width: 680px; display: block; margin: 16px auto;">
 <p class="figure-caption">Figure 1: Location hierarchy import sequence and parent validation</p>
 
-#### Incorrect object structure
+#### Incorrect data object
 
-Location hierarchies require specific <abbr title="Defines the records and related fields that are available for importing, exporting, or exchanging data. You might know this as: data structure, import template, or record definition">object structure</abbr> in the import file.
+Location hierarchies require a specific <abbr title="Defines the records and related fields that are available for importing, exporting, or exchanging data. You might know this as: object structure, import template, or record definition">data object</abbr> in the import file.
 
 **What to do**: Use the system's location hierarchy template or export an existing hierarchy to see the correct format.
 
@@ -99,7 +99,7 @@ Location imports fail when they reference supporting records that don't exist in
 
 ## Asset import errors
 
-Asset imports fail due to object structure, data issues, or missing referenced records.
+Asset imports fail due to an incorrect data object, data issues, or missing referenced records.
 
 ### Common asset import problems and solutions
 
@@ -161,9 +161,9 @@ Asset imports fail when they reference supporting records that don't exist in th
 
 ### Common causes of asset import failures
 
-#### Wrong object structure
+#### Wrong data object
 
-The import file must match the expected object structure exactly.
+The import file must match the expected data object exactly.
 
 **What to check**:
 
@@ -326,7 +326,7 @@ Once your data is successfully loaded, track work orders, costs, and equipment h
 
 ## Related topics
 
-- [Which object structure do I use for each data type?](object-structure-data-types.md)
+- [Which data object do I use for each data type?](object-structure-data-types.md)
 - [How do I prepare data for import?](prepare-data-for-import.md)
 - [How do I standardize data?](../organize-people/standardize-data.md)
 - [What is an asset?](../../start-fast/basics/what-is-asset.md)

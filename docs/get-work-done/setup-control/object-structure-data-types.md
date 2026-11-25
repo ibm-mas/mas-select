@@ -1,32 +1,32 @@
 ---
 search:
   boost: 2
-  keywords: object structure data type import MXAPIASSET MXAPIOPERLOC assets locations work orders inventory reference guide
+  keywords: data object object structure data type import MXAPIASSET MXAPIOPERLOC assets locations work orders inventory reference guide
 ---
 
-# Which object structure do I use for each data type?
+# Which data object do I use for each data type?
 
-When you import data into Maximo Application Suite Select, you use an object structure to define what you're loading. Think of an object structure as a spreadsheet template that defines the columns available for a particular type of data, such as assets or locations. You pick the template that matches what you're loading, then fill it with your data.
+When you import data into Maximo Application Suite Select, you use a data object to define what you're loading. Think of a data object as a spreadsheet template that defines the columns available for a particular type of data, such as assets or locations. You pick the template that matches what you're loading, then fill it with your data.
 
-Use this reference to find the correct object structure for each data type.
+Use this reference to find the correct data object for each data type.
 
 ## Quick reference
 
-### Table 1: Object structure by data type
+### Table 1: Data object by data type
 
-`[SME confirmation required: Verify all object structure names against the Maximo Application Suite Select Data Management application before publishing. Names noted with * are unconfirmed and may differ from standard Maximo Manage names.]`
+`[SME confirmation required: Verify all data object names against the Maximo Application Suite Select Data Management application before publishing. Names noted with * are unconfirmed and may differ from standard Maximo Manage names.]`
 
-| Data type | Object structure | Notes |
+| Data type | Data object | Notes |
 |-----------|-----------------|-------|
 | **Asset** | `MXAPIASSET` | Use for importing asset records, including asset numbers, descriptions, locations, and classifications. |
-| **Inventory** | `MXAPIINVENTORY` | `[SME confirmation required: Confirm the correct object structure name and usage for inventory imports in Maximo Application Suite Select.]` |
+| **Inventory** | `MXAPIINVENTORY` | `[SME confirmation required: Confirm the correct data object name and usage for inventory imports in Maximo Application Suite Select.]` |
 | **Item** | `MXAPIITEM` | Use for importing item records. |
-| **<abbr title="A reusable set of tasks, materials, and tools that can be applied to a work order">Job plan</abbr>** | `MXAPIJOBPLAN` | `[SME confirmation required: Confirm the correct object structure name and usage for job plan imports in Maximo Application Suite Select.]` |
-| **Labor** | `MXAPILABOR` | `[SME confirmation required: Confirm the correct object structure name and usage for labor imports in Maximo Application Suite Select.]` |
+| **<abbr title="A reusable set of tasks, materials, and tools that can be applied to a work order">Job plan</abbr>** | `MXAPIJOBPLAN` | `[SME confirmation required: Confirm the correct data object name and usage for job plan imports in Maximo Application Suite Select.]` |
+| **Labor** | `MXAPILABOR` | `[SME confirmation required: Confirm the correct data object name and usage for labor imports in Maximo Application Suite Select.]` |
 | **Location** | `MXAPIOPERLOC` | Use for importing operating locations and location hierarchies. |
-| **Meter** | `MXAPIMETER` | `[SME confirmation required: Confirm the correct object structure name and usage for meter imports in Maximo Application Suite Select.]` |
-| **PM/Master PM** | `MXAPIPM` | `[SME confirmation required: Confirm the correct object structure name and usage for PM and Master PM imports in Maximo Application Suite Select.]` |
-| **Service Item** | `MXAPISERVITEM` | `[SME confirmation required: Confirm the correct object structure name and usage for service item imports in Maximo Application Suite Select.]` |
+| **Meter** | `MXAPIMETER` | `[SME confirmation required: Confirm the correct data object name and usage for meter imports in Maximo Application Suite Select.]` |
+| **PM/Master PM** | `MXAPIPM` | `[SME confirmation required: Confirm the correct data object name and usage for PM and Master PM imports in Maximo Application Suite Select.]` |
+| **Service Item** | `MXAPISERVITEM` | `[SME confirmation required: Confirm the correct data object name and usage for service item imports in Maximo Application Suite Select.]` |
 
 ## Common fields by data type
 
@@ -34,7 +34,7 @@ Use this reference to find the correct object structure for each data type.
 
 `[SME confirmation required: Confirm the required and commonly used fields for asset imports in Maximo Application Suite Select. The following are common fields in standard Maximo Manage and require validation.]`
 
-### Table 2: Location fields by object structure
+### Table 2: Location fields by data object
 
 | Field | Description | Required |
 |-------|-------------|---------|
@@ -51,7 +51,7 @@ Use this reference to find the correct object structure for each data type.
 
 `[SME confirmation required: Confirm the required and commonly used fields for location imports in Maximo Application Suite Select. The following are common fields in standard Maximo Manage and require validation.]`
 
-### Table 3: Asset fields by object structure
+### Table 3: Asset fields by data object
 
 | Field | Description | Required |
 |-------|-------------|---------|
