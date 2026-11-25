@@ -8,6 +8,15 @@ search:
 
 An asset is any piece of equipment, machinery, or infrastructure that your organization maintains. Assets are the physical things you work on.
 
+<div class="video-embed" markdown="1">
+<video controls preload="metadata" poster="../../assets/videos/what-is-asset-poster.png" title="Video showing why asset records matter, using a conveyor in an ice cream factory">
+<source src="../../assets/videos/what-is-asset.mp4" type="video/mp4">
+<track kind="captions" src="../../assets/videos/what-is-asset-captions.vtt" srclang="en" label="English" default>
+Your browser does not support embedded video. <a href="https://mediacenter.ibm.com/media/1_7zuhu7mp">Watch on IBM Mediacenter</a>.
+</video>
+</div>
+<p class="video-caption">Video 1: Why asset records matter, about 1 minute. <a href="https://mediacenter.ibm.com/media/1_7zuhu7mp">Watch on IBM Mediacenter</a>. <a href="#video-transcript">Read the transcript</a>.</p>
+
 ## Examples of assets
 - **Production equipment**: Filler FL-02, Conveyor CV-02, Labeler LB-01
 - **Process equipment**: Pumps, motors, compressors, heat exchangers, chillers
@@ -94,6 +103,28 @@ If you would repair the unit and put it back in stock, make it a rotating item b
 **Example assets**: Filler FL-02, Conveyor CV-02, Labeler LB-01.
 
 **Example descriptions**: Filler FL-02, cone filling station; Labeler LB-01, carton labeling station.
+
+## Video transcript
+
+The transcript for Video 1: Why asset records matter.
+
+In a busy ice cream factory, one stopped conveyor can slow the entire production line.
+
+The conveyor is an Asset: Equipment your team maintains.
+
+Its asset record shows its location, maintenance history, costs, risk, and criticality.
+
+Risk and criticality help your team prioritize work.
+
+Accurate asset records provide the foundation for improving availability and uptime.
+
+They bring maintenance, operating, and lifecycle costs together, helping you identify high-cost equipment and make informed repair-or-replace decisions.
+
+You can organize assets into hierarchies. For example, a production line might include conveyors, motors, and sensors.
+
+Asset hierarchies show how equipment is related and help you understand where maintenance work occurs within a larger system.
+
+By maintaining accurate asset records, your team gains the information it needs to keep operations running reliably.
 
 ---
 

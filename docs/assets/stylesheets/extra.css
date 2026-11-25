@@ -1574,7 +1574,8 @@ body[data-carbon-theme="g100"] .copy-inline-tooltip {
     background: #161616;
 }
 
-.video-embed iframe {
+.video-embed iframe,
+.video-embed video {
     position: absolute;
     inset: 0;
     width: 100%;

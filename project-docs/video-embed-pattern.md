@@ -28,6 +28,30 @@ Then add the transcript lower on the page, under a heading such as `## Video tra
 8. **Do not replace the text.** A video supports the page. The page must still make sense without it.
 9. **Respect the content rules for the apps.** A tour of the experience is fine. Do not turn the video into the only step-by-step instructions, and do not describe the apps as needing no instructions.
 
+## Self-hosted video (alternative to the iframe)
+
+Use this when the Mediacenter iframe is blocked on the help center domain, as described under "Known limitation: domain restriction". Keep the caption line, the "Watch on IBM Mediacenter" link, and the transcript exactly as in the main pattern.
+
+```html
+<div class="video-embed" markdown="1">
+<video controls preload="metadata" poster="../../assets/videos/NAME-poster.png" title="SHORT DESCRIPTIVE TITLE">
+<source src="../../assets/videos/NAME.mp4" type="video/mp4">
+<track kind="captions" src="../../assets/videos/NAME-captions.vtt" srclang="en" label="English" default>
+Your browser does not support embedded video. <a href="MEDIACENTER_PAGE_URL">Watch on IBM Mediacenter</a>.
+</video>
+</div>
+```
+
+Rules for self-hosted video:
+
+- Save the files in `docs/assets/videos/`: the `.mp4` (H.264 and AAC), a poster image, and a WebVTT captions file.
+- Name the captions file `NAME-captions.vtt`. Do not use `NAME.en.vtt`: the i18n plugin treats `.en` as a language suffix and the file is not copied to the build.
+- Convert the captions from the Mediacenter SRT. Change commas to periods in timestamps, add a `WEBVTT` header, and drop empty cues.
+- Keep each file under 100 MB, the GitHub limit.
+- If the Mediacenter video changes, replace the local copy too.
+
+First used on `start-fast/basics/what-is-asset.md`.
+
 ## French
 
 The French site uses the same video unless a French version exists. Until then, add a line under the caption in the French page: that the video is in English, with captions. Decide with the translation owner whether to request French captions or a re-recorded video.
